@@ -1,3 +1,23 @@
-.navbar-default{
-	background-color: #0087a2;
+.navbar-default {
+  background-color: #0087a2;
+}
+#content {
+  margin-top: 65px;
+}
+#content .left,#content .right{
+	background-color: white;
+}
+input.filter{
+	width: 100%;
+	display: inline;
+}
+#icon-map{
+	display: inline;
+	position: absolute;
+	top: 16px;
+	right: 28px;
+	font-size: 20px;
+}
+#content .left{
+	padding: 10px;
 }
