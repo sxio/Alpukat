@@ -21,3 +21,9 @@ input.filter{
 #content .left{
 	padding: 10px;
 }
+#accordion,#drop{
+	margin-top: 10px;
+}
+#drop button{
+	width: 100%;
+}
