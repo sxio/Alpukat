@@ -1,0 +1,97 @@
+body{
+	background-color: #eaeaea;
+}
+.navbar-fixed-top{
+	background-color:transparent;
+    transition: all 1s ease;
+    top:0;
+    width:100%;
+    padding-bottom: 10px;
+    border: none;
+    height: 20px;
+}
+.container #myNavbar ul li a, .container .navbar-header a.navbar-brand{
+	color: white;
+	font-weight: bold;
+}
+.container #myNavbar ul li a:hover{
+	color: lightblue;
+	border-radius: 5px;
+}
+.jumbotron{
+	height: 650px;
+	background-image: url("../img/health.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 200px;
+	color: white;
+}
+.jumbotron h3{
+	font-style: italic;
+}
+#startchange{
+	text-align: justify;
+}
+#startchange .cmain{
+	width: 95%;
+	background-color: #cecece;
+	padding: 10px 30px;
+	box-shadow: 10px 10px 5px grey;
+	margin-bottom: 30px;
+}
+#startchange .cmain h2{
+	color:white;
+}
+#startchange .container .row .col-sm-6 h2{
+	font-weight: bold;
+}
+#startchange .container .row .leftedge{
+	padding: 20px 30px;
+	background-color: white;
+}
+#startchange .container .row .rightedge{
+	padding: 0px 30px;
+}
+#startchange .container .row .leftedge #myCarousel{
+	box-shadow: 50px;
+}
+#startchange .container .row .leftedge #myCarousel .carousel-inner a{
+	color: white;
+}
+#startchange .container .row .leftedge #myCarousel .carousel-inner .carousel-caption{
+	top: 35%;
+	left: 5%;
+	text-align: justify;
+}
+#startchange .container .row .leftedge a.news:hover{
+	text-decoration: none;
+}
+#startchange .container .row .rightedge .today_news{
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 9px;
+	border-left: 5px solid orange;
+}
+#startchange .container .row .rightedge .today_news:hover{
+	transform: scale(1.05,1.1);
+	border-left: 10px solid orange;
+}
+#startchange .container .row .rightedge .news_image{
+	padding: 0;
+}
+#startchange .container .row .rightedge .news_image img{
+	width: 135px;
+	height: 85px;
+}
+#startchange .container .row .rightedge .news_title{
+	text-align: left;
+}
+#about{
+	background-color: white;
+	text-align: justify;
+	padding-top: 10px;
+}
+#about .img_about img{
+	width: 450px;
+	height: 450px;
+}

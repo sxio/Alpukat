@@ -1,0 +1,26 @@
+.nav {
+    background-color:transparent;
+    color:#fff;
+    transition: all 0.25s ease;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#ccc;
+    padding:1em 0;
+    /* make sure to add vendor prefixes here */
+}
+
+.nav.past-main {
+    background-color:#000;
+    color:#444;
+}
+
+#main {
+  height:500px;
+  background-color:red;
+}
+
+#below-main {
+  height:1000px;
+  background-color:#eee;
+}
