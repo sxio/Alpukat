@@ -2,13 +2,9 @@
 <html>
 <head>
 	<title>AVOCADO</title>
-	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="CSS/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
-	<link rel="icon" href="img/avocado.png">
-	<script src="../JS/jquery-3.1.1.min.js"></script>
-	<script src="../JS/bootstrap.min.js"></script>
-	<script src="../JS/main.js"></script>
+	<?php require '/PARTIAL/head.php'; ?>
+
+	<script src="JS/main.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
