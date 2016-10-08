@@ -2,32 +2,13 @@
 <html>
 <head>
 	<title>AVOCADO</title>
-	<?php require '/PARTIAL/head.php'; ?>
+	<?php require __DIR__."/PARTIAL/head.php"; ?>
 
 	<script src="JS/main.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#myPage">AVOCADO</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#startchange"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
-	        <li><a href="#startchange"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
-	        <li><a href="#portfolio"><i class="fa fa-user fa-fw"></i> USER</a></li>
-	        <li><a href="#pricing"><i class="fa fa-tags fa-fw"></i> PRICING</a></li>
-	        <li><a href="#contact"><i class="fa fa-book fa-fw"></i> CONTACT</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+	<?php require __DIR__."/PARTIAL/nav.php" ?>
+
 	<div class="jumbotron text-center">
 	  <h1>AVOCADO</h1>
 	  <h3>We specialize in Health Care Application</h3>
