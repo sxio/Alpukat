@@ -14,15 +14,15 @@
 					$path = $_SERVER['REQUEST_URI'];
 					$filename = basename($path);
 					$news = "";
-					if($filename === "index" || $filename === "Alpukat"){
+					if($filename == "index" || $filename == "Alpukat"){
 						$news = "#startchange";
 					}
-					else if($filename === "list"){
+					else if($filename == "list"){
 						$news = "#about";
 					}
 				?>
 				<li><a href="<?php echo $news; ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
-				<li><a href="#startchange"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
+				<li><a href="#about"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
 				<li><a href="#portfolio"><i class="fa fa-user fa-fw"></i> USER</a></li>
 				<li><a href="#pricing"><i class="fa fa-tags fa-fw"></i> PRICING</a></li>
 				<li><a href="#contact"><i class="fa fa-book fa-fw"></i> CONTACT</a></li>
