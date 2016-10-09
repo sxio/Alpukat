@@ -53,7 +53,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="panel panel-warning">
+						<div class="panel panel-info">
 							<div class="panel-heading text-center">
 								<h3>Education & Experience</h3>
 							</div>
@@ -66,7 +66,7 @@
 										<li>SMA :</li>
 										<li>S1 :</li>
 										<li>S2 :</li>
-										<li>Dr :</li>
+										<li>DR :</li>
 									</ul>
 									<li>Experience :</li>
 									</li>
@@ -77,7 +77,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="panel panel-success">
+						<div class="panel panel-info">
 							<div class="panel-heading text-center">
 								<h3>Hospital Information</h3>
 							</div>
