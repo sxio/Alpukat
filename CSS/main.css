@@ -95,3 +95,25 @@ body{
 	width: 450px;
 	height: 450px;
 }
+
+/*MODALS*/
+#sign hr{
+	border-color: darkblue;
+	width: 48%;
+	margin: 10px 0px;
+}
+#sign input.form-control,
+#sign button.form-control{
+	width: 48%;
+}
+#sign #forgotPwd{
+	margin-left: 27%;
+}
+#sign .nav-pills > li > a {
+  border-radius: 0;
+  padding-left: 102px;
+  padding-right: 102px;
+}
+#sign .tab-content {
+
+}
