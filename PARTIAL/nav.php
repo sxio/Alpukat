@@ -14,7 +14,7 @@
 					$path = $_SERVER['REQUEST_URI'];
 					$filename = basename($path);
 					$news = "";
-					if($filename === "index"){
+					if($filename === "index" || $filename === "Alpukat"){
 						$news = "#startchange";
 					}
 					else if($filename === "list"){
