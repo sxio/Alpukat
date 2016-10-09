@@ -14,78 +14,9 @@
 	<section id="content">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-3">
-					<div class="left">
-						<input class="form-control filter" type="text" placeholder="Masukkan lokasi Anda" name="location"><i class="fa fa-map-marker fa-fw" id="icon-map"></i>
-
-						<!-- dropdown list -->
-						<div class="dropdown" id="drop">
-						    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Jenis Kelamin
-						    <span class="caret"></span></button>
-						    <ul class="dropdown-menu">
-						      <li><a class="male" href="#">Pria</a></li>
-						      <li><a class="female" href="#">Wanita</a></li>
-						    </ul>
-						</div>
-
-						<!-- collapse list -->
-						<div id="expand_and_collapse">
-					    	<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Jenis Dokter <i class="fa fa-plus fa-fw exp"></i>
-						    </a>
-						  	<div id="thelist" class="collapse">
-							    <div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Umum</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Gigi</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Saraf</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Penyakit Dalam</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Jantung</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Mata</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Kandungan</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter THT</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Psikiater</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Bedah</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Nutrisi</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Penyakit Anak</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Ahli Akupuntur</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Fisioterapis</label>
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox" value="">Dokter Tulang</label>
-								</div>
-						  	</div>
-						</div>
-					</div>
-					<!-- end of left -->
-				</div>
 				<!-- start of query -->
 				<div class="col-sm-9">
-					<div class="right list_dokter">
+					<div class="kiri">
 						<div class="row">
 							<div class="col-sm-3">
 								<img class="doctors" src="img/user.jpg">
@@ -223,9 +154,90 @@
 						<!-- end of dokter 3 -->
 					</div>
 				</div>
-
-
 				<!-- end of query -->
+				<div class="col-sm-3">
+					<div class="kanan">
+						<fieldset>
+							<legend>Filter</legend>
+							<input class="form-control filter" type="text" placeholder="Masukkan lokasi Anda" name="location"><i class="fa fa-map-marker fa-fw" id="icon-map"></i>
+
+							<!-- dropdown list -->
+							<div class="dropdown" id="drop">
+							    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Jenis Kelamin
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu">
+							      <li><a class="male" href="#">Pria</a></li>
+							      <li><a class="female" href="#">Wanita</a></li>
+							    </ul>
+							</div>
+
+							<!-- collapse list -->
+							<div id="expand_and_collapse">
+						    	<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Jenis Dokter <i class="fa fa-plus fa-fw exp"></i>
+							    </a>
+							  	<div id="thelist" class="collapse">
+								    <div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Umum</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Gigi</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Saraf</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Penyakit Dalam</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Jantung</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Mata</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Kandungan</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter THT</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Psikiater</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Bedah</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Nutrisi</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Penyakit Anak</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Ahli Akupuntur</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Fisioterapis</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Dokter Tulang</label>
+									</div>
+							  	</div>
+							</div>
+							<button type="button" class="btn btn-primary" id="search">Search</button>
+						</fieldset>
+			            <div id="imaginary_container"> 
+			                <div class="input-group stylish-input-group">
+			                    <input type="text" class="form-control"  placeholder="Cari dokter langsung" >
+			                    <span class="input-group-addon">
+			                        <button type="submit">
+			                            <span class="glyphicon glyphicon-search"></span>
+			                        </button>  
+			                    </span>
+			                </div>
+			            </div>
+					</div>
+					<!-- end of kanan -->
+				</div>
 			</div>
 		</div>
 	</section>
