@@ -271,7 +271,7 @@
 							  	</div>
 							</div>
 							<button type="button" class="btn btn-primary" id="search">Search</button>
-			            <div id="imaginary_container"> 
+			            <div id="imaginary_container">
 		                	<form>
 		                		<legend>Cari Langsung</legend>
 				                <div class="input-group stylish-input-group">
@@ -279,7 +279,7 @@
 				                    <span class="input-group-addon">
 				                        <button type="submit">
 				                            <span class="glyphicon glyphicon-search"></span>
-				                        </button>  
+				                        </button>
 				                    </span>
 				                </div>
 		                	</form>
@@ -290,6 +290,9 @@
 			</div>
 		</div>
 	</section>
+
+	<?php require __DIR__."/PARTIAL/modals.php"; ?>
+
 	<script>
 	$(document).ready(function(){
 	  $("#thelist").on("hide.bs.collapse", function(){
