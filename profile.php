@@ -23,7 +23,7 @@
 						<ul class="list-unstyled info text-left">
 								<li>ID : </li>
 								<li>Name : </li>
-								<li>Gender  : </li> 
+								<li>Gender  : </li>
 								<li>Place , Date of Birth :</li>
 								<li>Address : </li>
 								<li>Status : </li>
@@ -83,7 +83,7 @@
 							</div>
 							<div class="panel-body">
 								<ul class="list-unstyled">
-									<li>Location </li> 
+									<li>Location </li>
 									<li>Contact Number :
 									<ul>
 										<li>Telephone :</li>
@@ -92,12 +92,13 @@
 									</ul>
 								</ul>
 							</div>
-						</div> 
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<?php require __DIR__."/PARTIAL/modals.php"; ?>
 </body>
 </html>
