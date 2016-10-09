@@ -190,7 +190,7 @@
 
 	</section>
 
-
+	<?php require __DIR__."/PARTIAL/modals.php" ?>
 
 </body>
 </html>

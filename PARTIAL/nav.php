@@ -23,7 +23,7 @@
 				?>
 				<li><a href="<?php echo $news; ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li><a href="#about"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
-				<li><a href="#portfolio"><i class="fa fa-user fa-fw"></i> USER</a></li>
+				<li><a href="#user" data-toggle="modal" data-target="#signIn_signUp"><i class="fa fa-user fa-fw"></i> USER</a></li>
 				<li><a href="#pricing"><i class="fa fa-tags fa-fw"></i> PRICING</a></li>
 				<li><a href="#contact"><i class="fa fa-book fa-fw"></i> CONTACT</a></li>
 			</ul>
