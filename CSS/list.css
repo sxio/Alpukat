@@ -6,6 +6,7 @@
 }
 #content .left,#content .right{
 	background-color: white;
+	text-align: justify;
 }
 input.filter{
 	width: 100%;
@@ -26,4 +27,52 @@ input.filter{
 }
 #drop button{
 	width: 100%;
+}
+#expand_and_collapse{
+	margin-top: 10px;
+}
+#expand_and_collapse a{
+	text-decoration: none;
+}
+.exp{
+	margin-left: 190px;
+}
+.right{
+}
+.right .row{
+	border-top: 1px solid;
+	padding: 30px;
+}
+img.doctors{
+	height: auto;
+	max-height: 170px;
+	max-width: 80%;
+}
+.profil_singkat h2,.profil_singkat h3,.profil_singkat h4{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.profil_singkat h3{
+	font-size: 20px;
+	font-weight: 5px;
+}
+.profil_singkat h4{
+	font-size: 15px;
+	font-weight: 600;
+}
+.harga{
+	margin-top: 0px;
+}
+.waktu i, .harga i{
+	position: absolute;
+	left: 17px;
+	margin-top: 3px;
+}
+.hargadanwaktu{
+	padding-left: 40px;
+}
+.gbr_lokasi{
+	height: auto;
+	max-width: 20%;
+	max-height: 20%;
 }
