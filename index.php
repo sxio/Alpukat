@@ -12,9 +12,9 @@
 	<div class="jumbotron text-center">
 	  <h1>AVOCADO</h1>
 	  <h3>We specialize in Health Care Application</h3>
-	  <form class="form-inline">
+	  <form class="form-inline" action="list.php">
 	    <input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
-	    <button type="button" class="btn btn-info">Search</button>
+	    <a href="list.php" type="button" class="btn btn-info">Search</a>
 	  </form>
 	</div>
 	<section id="startchange">
@@ -107,58 +107,58 @@
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/stomach.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/hands.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/jiwa.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Pertolongan Pertama untuk Masalah Kesehatan Jiwa</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/october.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Oktober, Bulan Terbaik untuk Mulai Berdiet</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/perfect.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Berita 5</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/health.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Berita 6</a>
 						</div>
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<img src="img/stomach.jpg">
+							<a href=""><img src="img/stomach.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Perut Buncit Coyy!!!</a>
+							<a href="#">Berita 7</a>
 						</div>
 					</div>
 				</div>
