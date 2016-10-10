@@ -36,6 +36,7 @@ body{
 .jumbotron h1{
 	font-family: acceleration;
 	font-size: 150px;
+	margin-bottom: 0px;
 }
 #startchange{
 	text-align: justify;
