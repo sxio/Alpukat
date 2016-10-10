@@ -111,11 +111,6 @@ body {
   height: 450px;
 }
 /*MODALS*/
-#sign hr {
-  border-color: darkblue;
-  width: 48%;
-  margin: 10px 0px;
-}
 #sign input.form-control,
 #sign button.form-control {
   width: 48%;

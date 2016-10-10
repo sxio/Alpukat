@@ -12,8 +12,7 @@
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4> -->
+				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
 				<ul class="nav nav-pills">
 					<li class="active"><a  href="#signIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Sign In</a></li>
 					<li><a href="#signUp" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Sign Up</a></li>
@@ -22,9 +21,7 @@
 			<div class="modal-body">
 				<div id="sign" class="container">
 					<div class="tab-content clearfix">
-						<!-- <hr> -->
 						<div class="tab-pane active" id="signIn">
-							<br>
 							<form id="formSignIn">
 								<div class="form-group">
 									<label for="usernameIn">Username:</label>
@@ -42,7 +39,6 @@
 							</form>
 						</div>
 						<div class="tab-pane" id="signUp">
-							<br>
 							<form id="formSignUp">
 								<div class="form-group">
 									<label for="email">Email:</label>
