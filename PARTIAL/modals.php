@@ -1,11 +1,3 @@
-<!-- <style>
-	hr {
-	height: 1px;
-	width: 100%;
-	background-color: #e2e1e1;
-	border: none;
-	}
-</style> -->
 <!-- Modal -->
 <div id="signIn_signUp" class="modal fade" role="dialog">
 	<div class="modal-dialog">

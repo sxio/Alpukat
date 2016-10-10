@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Doctor Profile</title>
-<?php require __DIR__."/PARTIAL/head.php"; ?>
+	<title>Doctor Profile</title>
+	<?php require __DIR__."/PARTIAL/head.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="CSS/profile.css">
-<script src="JS/main.js"></script>
-<script type="JS/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/profile.css">
+	<script src="JS/main.js"></script>
 </head>
 <body>
 <?php require __DIR__."/PARTIAL/nav.php" ?>
@@ -97,7 +96,7 @@
 							</div>
 							<div class="panel-body">
 								<ul class="list-unstyled">
-									<li>Education </li>	
+									<li>Education </li>
 									<ul>
 										<li>SD :</li>
 										<li>SMP :</li>
@@ -125,7 +124,7 @@
 								<ul class="list-unstyled">
 									<li>Hospital Location:</li>
 									<li>Schedule:</li>
-									<li>Contact Number :</li>	
+									<li>Contact Number :</li>
 									<ul>
 										<li>Telephone :</li>
 										<li>Handphone :</li>

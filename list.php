@@ -6,7 +6,6 @@
 
 	<link rel="stylesheet" type="text/css" href="CSS/list.css">
 	<link rel="stylesheet" type="text/css" href="CSS/rating.css">
-	<!-- <script src="../JS/main.js"></script> -->
 </head>
 <body>
 	<?php require __DIR__."/PARTIAL/nav.php" ?>
