@@ -15,14 +15,12 @@
 				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title">Modal Header</h4> -->
 				<ul class="nav nav-pills">
-						<li class="active"><a  href="#signIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Sign In</a></li>
-						<li><a href="#signUp" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Sign Up</a></li>
-					</ul>
+					<li class="active"><a  href="#signIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Sign In</a></li>
+					<li><a href="#signUp" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Sign Up</a></li>
+				</ul>
 			</div>
 			<div class="modal-body">
-
 				<div id="sign" class="container">
-
 					<div class="tab-content clearfix">
 						<!-- <hr> -->
 						<div class="tab-pane active" id="signIn">
