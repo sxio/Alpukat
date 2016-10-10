@@ -1,22 +1,30 @@
+<!-- <style>
+	hr {
+	height: 1px;
+	width: 100%;
+	background-color: #e2e1e1;
+	border: none;
+	}
+</style> -->
 <!-- Modal -->
 <div id="signIn_signUp" class="modal fade" role="dialog">
 	<div class="modal-dialog">
 		<!-- Modal content-->
 		<div class="modal-content">
-			<!-- <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4>
-			</div> -->
-			<div class="modal-body">
-
-				<div id="sign" class="container">
-					<ul class="nav nav-pills">
+			<div class="modal-header">
+				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Modal Header</h4> -->
+				<ul class="nav nav-pills">
 						<li class="active"><a  href="#signIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Sign In</a></li>
 						<li><a href="#signUp" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Sign Up</a></li>
 					</ul>
+			</div>
+			<div class="modal-body">
+
+				<div id="sign" class="container">
 
 					<div class="tab-content clearfix">
-						<hr>
+						<!-- <hr> -->
 						<div class="tab-pane active" id="signIn">
 							<br>
 							<form id="formSignIn">
@@ -39,6 +47,10 @@
 							<br>
 							<form id="formSignUp">
 								<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
+								<div class="form-group">
 									<label for="usernameUp">Username:</label>
 									<input type="username" class="form-control" id="usernameUp" placeholder="Username">
 								</div>
@@ -49,10 +61,6 @@
 								<div class="form-group">
 									<label for="pwdUpConf">Confirm Password:</label>
 									<input type="password" class="form-control" id="pwdUpConf" placeholder="Confirm Password">
-								</div>
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
 								</div>
 								<button type="submit" class="btn btn-info form-control"><i class="fa fa-paper-plane fa-fw"></i> Submit</button>
 							</form>
