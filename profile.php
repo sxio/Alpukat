@@ -16,7 +16,7 @@
 			<div class="col-md-4 text-center">
 				<div class="panel panel-success">
 					<div class="panel panel-heading">
-						<img src="img/user.jpg" class="img-circle" id="foto">
+						<img src="IMG/user.jpg" class="img-circle" id="foto">
 						<h2><i class="fa fa-user fa-fw"></i>Personal Information</h2>
 					</div>
 					<div class="panel-body">
