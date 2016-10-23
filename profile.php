@@ -5,7 +5,7 @@
 	<?php require __DIR__."/partial/head.php"; ?>
 
 	<link rel="stylesheet" type="text/css" href="css/profile.css">
-	<script src="JS/main.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 <?php require __DIR__."/partial/nav.php" ?>
