@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Doctors List</title>
-	<?php require __DIR__."/PARTIAL/head.php"; ?>
+	<?php require __DIR__."/partial/head.php"; ?>
 
-	<link rel="stylesheet" type="text/css" href="CSS/list.css">
-	<link rel="stylesheet" type="text/css" href="CSS/rating.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<link rel="stylesheet" type="text/css" href="css/rating.css">
 </head>
 <body>
-	<?php require __DIR__."/PARTIAL/nav.php" ?>
+	<?php require __DIR__."/partial/nav.php" ?>
 
 	<section id="content">
 		<div class="container-fluid">
@@ -18,7 +18,7 @@
 					<div class="kiri">
 						<div class="row">
 							<div class="col-sm-3">
-								<img class="doctors" src="IMG/user.jpg">
+								<img class="doctors" src="img/user.jpg">
 							</div>
 							<div class="col-sm-5 profil_singkat">
 								<h2 class="nama"><a href="#lamanprofildokternya">dr. Dokter 1</a></h2>
@@ -54,16 +54,16 @@
 							<div class="col-sm-4">
 								<div class="lokasi">
 									<h4>Tempat Praktek</h4>
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
 								</div>
 							</div>
 						</div>
 						<!-- end of dokter1 -->
 						<div class="row">
 							<div class="col-sm-3">
-								<img class="doctors" src="IMG/user.jpg">
+								<img class="doctors" src="img/user.jpg">
 							</div>
 							<div class="col-sm-5 profil_singkat">
 								<h2 class="nama"><a href="#lamanprofildokternya">dr. Dokter 2</a></h2>
@@ -99,16 +99,16 @@
 							<div class="col-sm-4">
 								<div class="lokasi">
 									<h4>Tempat Praktek</h4>
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
 								</div>
 							</div>
 						</div>
 						<!-- end of dokter2 -->
 						<div class="row">
 							<div class="col-sm-3">
-								<img class="doctors" src="IMG/user.jpg">
+								<img class="doctors" src="img/user.jpg">
 							</div>
 							<div class="col-sm-5 profil_singkat">
 								<h2 class="nama"><a href="#lamanprofildokternya">dr. Dokter 3</a></h2>
@@ -144,16 +144,16 @@
 							<div class="col-sm-4">
 								<div class="lokasi">
 									<h4>Tempat Praktek</h4>
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
 								</div>
 							</div>
 						</div>
 						<!-- end of dokter 3 -->
 						<div class="row">
 							<div class="col-sm-3">
-								<img class="doctors" src="IMG/user.jpg">
+								<img class="doctors" src="img/user.jpg">
 							</div>
 							<div class="col-sm-5 profil_singkat">
 								<h2 class="nama"><a href="#lamanprofildokternya">dr. Dokter 4</a></h2>
@@ -189,9 +189,9 @@
 							<div class="col-sm-4">
 								<div class="lokasi">
 									<h4>Tempat Praktek</h4>
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
-									<img class="gbr_lokasi" src="IMG/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
+									<img class="gbr_lokasi" src="img/location.png">
 								</div>
 							</div>
 						</div>
@@ -290,7 +290,7 @@
 		</div>
 	</section>
 
-	<?php require __DIR__."/PARTIAL/modals.php"; ?>
+	<?php require __DIR__."/partial/modals.php"; ?>
 
 	<script>
 	$(document).ready(function(){

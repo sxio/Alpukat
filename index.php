@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>AVOCADO</title>
-	<?php require __DIR__."/PARTIAL/head.php"; ?>
+	<?php require __DIR__."/partial/head.php"; ?>
 
 	<script src="JS/main.js"></script>
 </head>
 <body>
-	<?php require __DIR__."/PARTIAL/nav.php" ?>
+	<?php require __DIR__."/partial/nav.php" ?>
 
 	<div class="jumbotron text-center">
 	  <h1>Avocado</h1>
@@ -34,7 +34,7 @@
 						  <!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
 						    <div class="item active">
-						      <img src="IMG/stomach.jpg" alt="perut">
+						      <img src="img/stomach.jpg" alt="perut">
 						      <div class="carousel-caption">
 						        <h3>Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</h3>
 						        <a href="#">Read More...</a>
@@ -48,7 +48,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="IMG/jiwa.jpg" alt="jiwa">
+						      <img src="img/jiwa.jpg" alt="jiwa">
 						      <div class="carousel-caption">
 						        <h3>Pertolongan Pertama untuk Masalah Kesehatan Jiwa</h3>
 						        <a href="#">Read More...</a>
@@ -62,7 +62,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="IMG/hands.jpg" alt="tangan">
+						      <img src="img/hands.jpg" alt="tangan">
 						      <div class="carousel-caption">
 						        <h3>Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</h3>
 						        <a href="#">Read More...</a>
@@ -76,7 +76,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="IMG/october.jpg" alt="october">
+						      <img src="img/october.jpg" alt="october">
 						      <div class="carousel-caption">
 						        <h3>Oktober, Bulan Terbaik untuk Mulai Berdiet</h3>
 						        <a href="#">Read More...</a>
@@ -107,7 +107,7 @@
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/stomach.jpg"></a>
+							<a href=""><img src="img/stomach.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
@@ -115,7 +115,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/hands.jpg"></a>
+							<a href=""><img src="img/hands.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</a>
@@ -123,7 +123,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/jiwa.jpg"></a>
+							<a href=""><img src="img/jiwa.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Pertolongan Pertama untuk Masalah Kesehatan Jiwa</a>
@@ -131,7 +131,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/october.jpg"></a>
+							<a href=""><img src="img/october.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Oktober, Bulan Terbaik untuk Mulai Berdiet</a>
@@ -139,7 +139,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/perfect.jpg"></a>
+							<a href=""><img src="img/perfect.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 5</a>
@@ -147,7 +147,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/health.jpg"></a>
+							<a href=""><img src="img/health.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 6</a>
@@ -155,7 +155,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="IMG/stomach.jpg"></a>
+							<a href=""><img src="img/stomach.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 7</a>
@@ -183,14 +183,14 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div class="col-sm-5 img_about">
-					<img src="IMG/avocado.png">
+					<img src="img/avocado.png">
 				</div>
 			</div>
 		</div>
 
 	</section>
 
-	<?php require __DIR__."/PARTIAL/modals.php" ?>
+	<?php require __DIR__."/partial/modals.php" ?>
 
 </body>
 </html>

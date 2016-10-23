@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Doctor Profile</title>
-	<?php require __DIR__."/PARTIAL/head.php"; ?>
+	<?php require __DIR__."/partial/head.php"; ?>
 
-	<link rel="stylesheet" type="text/css" href="CSS/profile.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
 	<script src="JS/main.js"></script>
 </head>
 <body>
-<?php require __DIR__."/PARTIAL/nav.php" ?>
+<?php require __DIR__."/partial/nav.php" ?>
 
 <section id="content">
 	<div class="container-fluid">
@@ -16,7 +16,7 @@
 			<div class="col-md-4 text-center">
 				<div class="panel panel-success">
 					<div class="panel panel-heading">
-						<img src="IMG/user.jpg" class="img-circle" id="foto">
+						<img src="img/user.jpg" class="img-circle" id="foto">
 						<h2><i class="fa fa-user fa-fw"></i>Personal Information</h2>
 					</div>
 					<div class="panel-body">
@@ -138,6 +138,6 @@
 		</div>
 	</div>
 </section>
-<?php require __DIR__."/PARTIAL/modals.php"; ?>
+<?php require __DIR__."/partial/modals.php"; ?>
 </body>
 </html>
