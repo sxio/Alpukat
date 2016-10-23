@@ -102,7 +102,7 @@
 						    <span class="sr-only">Next</span>
 						  </a> -->
 						</div>
-						<a href="list" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
 					</div>
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
