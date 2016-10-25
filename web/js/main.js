@@ -12,9 +12,10 @@ $(document).ready(function(){
        }
     });
   }
+  setInterval(blinker,1000);
+  //stephen 25-10-16
 });
 function blinker(){
   $('.blink_me').fadeOut(500);
   $('.blink_me').fadeIn(500);
 }
-setInterval(blinker,1000)
