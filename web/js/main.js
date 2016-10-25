@@ -12,7 +12,7 @@ $(document).ready(function(){
        }
     });
   }
-  setInterval(blinker,1000);
+  setInterval(blinker,1500);
   //stephen 25-10-16
 });
 function blinker(){

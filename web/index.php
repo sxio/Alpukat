@@ -10,7 +10,7 @@
 	<?php require __DIR__."/partial/nav.php" ?>
 
 	<div class="jumbotron text-center">
-	  <h1>Avocado</h1>
+	  <h1 class="blink_me">Avocado</h1><!--// Meikelwis 25/10/16-->
 	  <h3>We specialize in Health Care Application</h3>
 	  <form class="form-inline" action="list.php">
 	    <input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
