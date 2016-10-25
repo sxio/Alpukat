@@ -17,7 +17,7 @@
 				<div class="panel panel-success">
 					<div class="panel panel-heading">
 						<img src="img/user.jpg" class="img-circle" id="foto">
-						<h2><i class="fa fa-user fa-fw"></i>Personal Information</h2>
+						<h2><i class="fa fa-user fa-fw blink_me">Personal Information</i></h2> // Meikelwis 25/10/16
 					</div>
 					<div class="panel-body">
 						<ul class="list-unstyled info text-left">
@@ -122,7 +122,15 @@
 							</div>
 							<div class="panel-body">
 								<ul class="list-unstyled">
-									<li>Hospital Location:</li>
+									<li>Hospital Location:
+									<h3>Maps</h3>
+									<div id="map">
+										Hospital</div>
+									</li>
+									//Meikelwis Sisain tempat untuk ini soalnya mau buat google mapnya
+									//Surce : https://developers.google.com/maps/articles/phpsqlajax_v3
+									//Nanti baru buat soalnya mau pake db juga
+									//api key : AIzaSyDGJqRDpxUJqXhZZ2As2luILJHG9__f9jc
 									<li>Schedule:</li>
 									<li>Contact Number :</li>
 									<ul>
