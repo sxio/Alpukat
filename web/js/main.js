@@ -24,6 +24,7 @@ $(document).ready(function(){
       s0.parentNode.insertBefore(s1,s0);
     })();
   });
+//Meikelwis 25-10-16
 function blinker(){
   $('.blink_me').fadeOut(500);
   $('.blink_me').fadeIn(500);
