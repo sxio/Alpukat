@@ -170,6 +170,57 @@
 		</div>
 
 	</section>
+	<footer class="foot">
+		<!-- <h1 class="text-center"></h1> -->
+		<!-- <h4 class="info text-center">This is our information</h4> -->
+		<div class="row">
+			<div class="col-sm-4 surel">		
+				<ul class="list-unstyled">
+					<li><i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Mikroskil Gedung B</a></li>
+					<li><i class="fa fa-phone fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="">(+62)812345678910</a></li>
+					<li><i class="fa fa-envelope fa-3x"></i> <a href="">stephen.huang96@gmail.com</a></li>
+					<li><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> &nbsp;&nbsp;<a href="">Alpukat</a></li>
+					<li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>  &nbsp;<a href="">Alpukat</a></li>
+					<li><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> &nbsp;<a href="">Alpukat</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4 complain-form">
+				<form class="complain">
+				  	<div class="form-group">
+				    	<label for="email">Email address:</label>
+				    	<input type="email" class="form-control" id="email" required>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="pwd">Password:</label>
+				    	<input type="password" class="form-control" id="pwd" required>
+				  	</div>
+				  	<div class="checkbox">
+				    	<label><input type="checkbox"> Remember me</label>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="comment">Comment:</label>
+      					<textarea class="form-control" rows="5" id="comment" required></textarea>
+				  	</div>
+				  	<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="col-sm-4 services">
+				<h3>FAQ</h3>
+				<ul class="list-unstyled">
+					<li>Apakah Stephen sedang belajar ?</li>
+					<li>Apakah yang sedang dilakukan Meikelwis ?</li>
+					<li>Bagaimana caranya Stephen mendapatkan ilham ketika sedang berak ?</li>
+					<li>Bagaimanakah caranya Meikelwis mendapat ilham ?</li>
+					<li>Apa yang harus dilakukan agar dapat menghapal semua isi website w3schools ?</li>
+				</ul>
+			</div>
+		</div>
 
+	</footer>
+	<div>
+		<br>
+		<br> 
+		<br>
+	</div>
 </body>
 </html>
