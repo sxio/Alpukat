@@ -176,12 +176,12 @@
 		<div class="row">
 			<div class="col-sm-4 surel">		
 				<ul class="list-unstyled">
-					<li><i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Mikroskil Gedung B</a></li>
-					<li><i class="fa fa-phone fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="">(+62)812345678910</a></li>
-					<li><i class="fa fa-envelope fa-3x"></i> <a href="">stephen.huang96@gmail.com</a></li>
-					<li><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> &nbsp;&nbsp;<a href="">Alpukat</a></li>
-					<li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>  &nbsp;<a href="">Alpukat</a></li>
-					<li><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> &nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="">Mikroskil Gedung B</a></li>
+					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="">(+62)812345678910</a></li>
+					<li><a href=""><i class="fa fa-envelope fa-2x"></i></a> <a href="">stephen.huang96@gmail.com</a></li>
+					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-4 complain-form">
@@ -201,7 +201,7 @@
 				    	<label for="comment">Comment:</label>
       					<textarea class="form-control" rows="5" id="comment" required></textarea>
 				  	</div>
-				  	<button type="submit" class="btn btn-default">Submit</button>
+				  	<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 			</div>
 			<div class="col-sm-4 services">
@@ -215,12 +215,9 @@
 				</ul>
 			</div>
 		</div>
+		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
+		<p class="text-center">All Rights reserved</p>
 
 	</footer>
-	<div>
-		<br>
-		<br> 
-		<br>
-	</div>
 </body>
 </html>

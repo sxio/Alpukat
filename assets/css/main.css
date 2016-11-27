@@ -7,6 +7,8 @@
 body {
   background-color: skyblue;
   font-family: 'Poiret One';
+  font-weight: bold;
+  font-size: 18px;
 }
 .navbar-fixed-top {
   background-color: transparent;
@@ -72,7 +74,7 @@ body {
   color: white;
 }
 #startchange .container .row .leftedge #myCarousel .carousel-inner .carousel-caption {
-  top: 35%;
+  top: 30%;
   left: 5%;
   text-align: justify;
 }
@@ -133,6 +135,7 @@ footer.foot{
 }
 footer.foot .row{
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 footer.foot .complain-form{
   margin-top: 10px;
@@ -154,6 +157,25 @@ footer.foot div.surel ul.list-unstyled li a:hover{
 footer.foot div.surel ul.list-unstyled li i{
   margin-right: 10px;
   vertical-align: middle;
+  background-color: white;
+  padding: 10px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i:hover{
+  background-color: darkblue;
+  color: white;
+}
+footer.foot div.surel ul.list-unstyled li i.oval{
+  padding: 10px 17px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i.oval_t{
+  padding: 10px 15px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i.round{
+  padding: 10px 13px;
+  border-radius: 200px; 
 }
 footer.foot .services{
   text-align: left;
