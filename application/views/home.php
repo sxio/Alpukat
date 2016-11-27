@@ -19,18 +19,10 @@
 	<section id="startchange">
 		<div class="container cmain">
 			<div class="row">
-			<h2 class="text-center"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
+			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
 				<div class="col-sm-6 leftedge">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  	<!-- <ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						    <li data-target="#myCarousel" data-slide-to="1"></li>
-						    <li data-target="#myCarousel" data-slide-to="2"></li>
-						    <li data-target="#myCarousel" data-slide-to="3"></li>
-					  	</ol> -->
-
-						  <!-- Wrapper for slides -->
+						<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
 						    <div class="item active">
 						      <img src="<?php echo base_url() ?>assets/img/stomach.jpg" alt="perut">
@@ -90,16 +82,6 @@
 						</div>
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/9G95EYym4NM" frameborder="0" allowfullscreen></iframe>
 
-						  <!-- Left and right controls -->
-						  <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-
-						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						    <span class="sr-only">Next</span>
-						  </a> -->
 						</div>
 						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
 					</div>
@@ -186,40 +168,55 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<footer class="foot">
-		<h1 class="text-center">CONTACT</h1>
-		<h4 class="info text-center">This is our information</h4>
+		<!-- <h1 class="text-center"></h1> -->
+		<!-- <h4 class="info text-center">This is our information</h4> -->
 		<div class="row">
-			<div class="col-sm-4 surel">		
-				<h3 class="awesome"><i class="fa fa-envelope"></i> Founders E-mail :</h3>
+			<div class="col-sm-4 surel">
 				<ul class="list-unstyled">
-					<li>kenedylukito@yahoo.com</li>
-					<li>meikelwis.wijaya@gmail.com</li>
-					<li>stephen.huang96@gmail.com</li>
+					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="">Mikroskil Gedung B</a></li>
+					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="">(+62)812345678910</a></li>
+					<li><a href=""><i class="fa fa-envelope fa-2x"></i></a> <a href="">stephen.huang96@gmail.com</a></li>
+					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 complain-form">
 				<form class="complain">
 				  	<div class="form-group">
 				    	<label for="email">Email address:</label>
-				    	<input type="email" class="form-control" id="email">
+				    	<input type="email" class="form-control" id="email" required>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="pwd">Password:</label>
-				    	<input type="password" class="form-control" id="pwd">
+				    	<input type="password" class="form-control" id="pwd" required>
 				  	</div>
 				  	<div class="checkbox">
 				    	<label><input type="checkbox"> Remember me</label>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="comment">Comment:</label>
-      					<textarea class="form-control" rows="5" id="comment"></textarea>
+      					<textarea class="form-control" rows="5" id="comment" required></textarea>
 				  	</div>
-				  	<button type="submit" class="btn btn-default">Submit</button>
+				  	<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 			</div>
+			<div class="col-sm-4 services">
+				<h3>FAQ</h3>
+				<ul class="list-unstyled">
+					<li>Apakah Stephen sedang belajar ?</li>
+					<li>Apakah yang sedang dilakukan Meikelwis ?</li>
+					<li>Bagaimana caranya Stephen mendapatkan ilham ketika sedang berak ?</li>
+					<li>Bagaimanakah caranya Meikelwis mendapat ilham ?</li>
+					<li>Apa yang harus dilakukan agar dapat menghapal semua isi website w3schools ?</li>
+				</ul>
+			</div>
 		</div>
+		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
+		<p class="text-center">All Rights reserved</p>
 
 	</footer>
 	<div>

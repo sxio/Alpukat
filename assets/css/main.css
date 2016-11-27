@@ -4,8 +4,15 @@
   font-family: acceleration;
   src: url("../fonts/Acceleration & Reaction.ttf");
 }
+
+.hitam{
+  color: black!important;
+}
+
 body {
-  background-color: #eaeaea;
+  background-color: skyblue;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
 }
 .navbar-fixed-top {
   background-color: transparent;
@@ -47,6 +54,7 @@ body {
 #startchange .cmain {
   width: 95%;
   background-color: #cecece;
+  /*background-color: rgba(26, 188, 156, 0.65);*/
   padding: 10px 30px;
   box-shadow: 10px 10px 5px grey;
   margin-bottom: 30px;
@@ -71,7 +79,7 @@ body {
   color: white;
 }
 #startchange .container .row .leftedge #myCarousel .carousel-inner .carousel-caption {
-  top: 35%;
+  top: 30%;
   left: 5%;
   text-align: justify;
 }
@@ -126,20 +134,58 @@ body {
   padding-right: 106px;
 }
 footer.foot{
-  padding: 20px 100px;
+  padding: 10px 70px;
+  color: darkblue;
+  font-weight: bolder;
+}
+footer.foot .row{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+footer.foot .complain-form{
+  margin-top: 10px;
 }
 footer.foot h4.info{
   margin-bottom: 40px;
 }
-footer.foot div.surel ul.list-unstyled{
-  list-style-type: none;
-  margin-left: 0;
-  text-align: left;
-  padding-left: 33px;
-}
 footer.foot div.surel ul.list-unstyled li{
+  padding-left: 33px;
   margin: 10px 0;
+  font-weight: bold;
 }
-footer.foot div.surel h3.awesome{
+footer.foot div.surel ul.list-unstyled li a{
+  color: darkblue;
+}
+footer.foot div.surel ul.list-unstyled li a:hover{
+  text-decoration: none;
+}
+footer.foot div.surel ul.list-unstyled li i{
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: white;
+  padding: 10px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i:hover{
+  background-color: darkblue;
+  color: white;
+}
+footer.foot div.surel ul.list-unstyled li i.oval{
+  padding: 10px 17px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i.oval_t{
+  padding: 10px 15px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i.round{
+  padding: 10px 13px;
+  border-radius: 200px;
+}
+footer.foot .services{
   text-align: left;
+  /*padding: 0 10px;*/
+}
+footer.foot .services li{
+  margin: 10px 0;
 }
