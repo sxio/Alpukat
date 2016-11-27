@@ -19,7 +19,7 @@
 	<section id="startchange">
 		<div class="container cmain">
 			<div class="row">
-			<h2 class="text-center"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
+			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
 				<div class="col-sm-6 leftedge">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
@@ -174,7 +174,7 @@
 		<!-- <h1 class="text-center"></h1> -->
 		<!-- <h4 class="info text-center">This is our information</h4> -->
 		<div class="row">
-			<div class="col-sm-4 surel">		
+			<div class="col-sm-4 surel">
 				<ul class="list-unstyled">
 					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="">Mikroskil Gedung B</a></li>
 					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="">(+62)812345678910</a></li>
@@ -219,5 +219,13 @@
 		<p class="text-center">All Rights reserved</p>
 
 	</footer>
+<<<<<<< HEAD
+=======
+	<div>
+		<br>
+		<br>
+		<br>
+	</div>
+>>>>>>> a91554266810a22a1682d121851925e442c3bc64
 </body>
 </html>
