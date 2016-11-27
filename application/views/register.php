@@ -1,4 +1,4 @@
-<!--Meikelwis 27 Nov 16*/-->
+<!-- Meikelwis 27 Nov 16 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,17 +18,17 @@
 				  <legend><span class="number">1</span>Your basic info</legend>
 				  <label for="name">Name:</label>
 				  <input type="text" id="name" name="user_name">
-				  
+
 				  <label for="mail">Email:</label>
 				  <input type="email" id="mail" name="user_email">
-				  
+
 				  <label for="password">Password:</label>
 				  <input type="password" id="password" name="user_password">
-				  
+
 				  <label for="date_birth">Date Time:</label>
 				  <input type="date" id="date_birth" name="date_birth">
 
-				  
+
 				  <label>Age:</label>
 				  <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
 				  <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
@@ -42,7 +42,7 @@
 
 				  <label for="handphone">Handphone</label>
 				  <input type="tel" id="handphone" name="handphone">
-				  
+
 				  <label for="telephone">Telephone</label>
 				  <input type="tel" id="telephone" name="telephone">
 				<label for="job">Role:</label>
@@ -69,9 +69,9 @@
 				<button type="submit">Sign Up</button>
 			</div>
 		</div>
-		
 
-		
+
+
 	</form>
 </body>
 </html>

@@ -1,14 +1,5 @@
 /*Meikelwis 27 Nov 16*/
-
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 form.register {
-  font-family: 'Nunito', sans-serif;
   color: #384047;
   max-width: 800px;
   margin: 10px auto;
@@ -22,19 +13,18 @@ h1 {
   text-align: center;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
+.register input[type="text"],
+.register input[type="password"],
+.register input[type="date"],
+.register input[type="datetime"],
+.register input[type="email"],
+.register input[type="number"],
+.register input[type="search"],
+.register input[type="tel"],
+.register input[type="time"],
+.register input[type="url"],
+.register textarea,
+.register select {
   border: none;
   font-size: 16px;
   height: auto;
@@ -43,37 +33,37 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  font-weight: 800;
+  color: #000;
   margin-bottom: 30px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.register input[type="radio"],
+.register input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
-select {
+.register select {
   padding: 6px;
   height: 32px;
   border-radius: 2px;
 }
 
-button {
+.register button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: #2196F3;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
+  border: 1px solid #2196F3;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
 }
-fieldset{
+.register fieldset{
   display: block;
 }
 fieldset.register{
@@ -81,12 +71,12 @@ fieldset.register{
   border: none;
 }
 
-legend {
+.register legend {
   font-size: 1.4em;
   margin-bottom: 10px;
 }
 
-label {
+.register label {
   display: block;
   margin-bottom: 8px;
 }
@@ -97,7 +87,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: #2196F3;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -114,6 +104,5 @@ label.light {
   form {
     max-width: 480px;
   }
-
 }
 
