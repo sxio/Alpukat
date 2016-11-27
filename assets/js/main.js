@@ -14,6 +14,7 @@ $(document).ready(function(){
   }
   setInterval(blinker,1500);
 
+});
 //Meikelwis 25-10-16
 function blinker(){
   $('.blink_me').fadeOut(500);

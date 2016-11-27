@@ -189,6 +189,5 @@
 
 	</section>
 
-	<?php require_once __DIR__.'/templates/bsModals.php'; ?>
 </body>
 </html>
