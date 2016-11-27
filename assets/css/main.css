@@ -11,13 +11,8 @@
 
 body {
   background-color: skyblue;
-<<<<<<< HEAD
-  font-family: 'Poiret One';
   font-weight: bold;
-  font-size: 18px;
-=======
   font-family: 'Comfortaa', cursive;
->>>>>>> a91554266810a22a1682d121851925e442c3bc64
 }
 .navbar-fixed-top {
   background-color: transparent;
@@ -185,7 +180,7 @@ footer.foot div.surel ul.list-unstyled li i.oval_t{
 }
 footer.foot div.surel ul.list-unstyled li i.round{
   padding: 10px 13px;
-  border-radius: 200px; 
+  border-radius: 200px;
 }
 footer.foot .services{
   text-align: left;

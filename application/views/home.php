@@ -219,13 +219,10 @@
 		<p class="text-center">All Rights reserved</p>
 
 	</footer>
-<<<<<<< HEAD
-=======
 	<div>
 		<br>
 		<br>
 		<br>
 	</div>
->>>>>>> a91554266810a22a1682d121851925e442c3bc64
 </body>
 </html>
