@@ -186,8 +186,46 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
+	<footer class="foot">
+		<h1 class="text-center">CONTACT</h1>
+		<h4 class="info text-center">This is our information</h4>
+		<div class="row">
+			<div class="col-sm-4 surel">		
+				<h3 class="awesome"><i class="fa fa-envelope"></i> Founders E-mail :</h3>
+				<ul class="list-unstyled">
+					<li>kenedylukito@yahoo.com</li>
+					<li>meikelwis.wijaya@gmail.com</li>
+					<li>stephen.huang96@gmail.com</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<form class="complain">
+				  	<div class="form-group">
+				    	<label for="email">Email address:</label>
+				    	<input type="email" class="form-control" id="email">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="pwd">Password:</label>
+				    	<input type="password" class="form-control" id="pwd">
+				  	</div>
+				  	<div class="checkbox">
+				    	<label><input type="checkbox"> Remember me</label>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="comment">Comment:</label>
+      					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  	</div>
+				  	<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
 
+	</footer>
+	<div>
+		<br>
+		<br>
+		<br>
+	</div>
 </body>
 </html>
