@@ -9,14 +9,44 @@
 <body>
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<div class="jumbotron text-center">
-	  <h1 class="blink_me">Avocado</h1><!--// Meikelwis 25/10/16-->
+	  <h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 	  <h3>We specialize in Health Care Application</h3>
 	  <form class="form-inline" action="list">
 	    <input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
-	    <a href="list" type="button" class="btn btn-info">Search</a>
+	    <a href="list" type="button" class="btn btn-danger">Search</a>
 	  </form>
 	</div>
 	<section id="startchange">
+		<h1 class="text-center">
+			Our Services
+		</h1>
+		<div class="row first_service">
+			<div class="col-sm-3 serve text-center">
+				<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
+			</div>
+			<div class="col-sm-3 serve text-center">
+				<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
+			</div>
+			<div class="col-sm-3 serve text-center">
+				<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
+			</div>
+			<div class="col-sm-3 serve text-center">
+				<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
+			</div>
+		</div>
+		<div class="row second_service">
+			<div class="col-sm-4 serve text-center">
+				<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Consultation</h4></a>
+			</div>
+			<div class="col-sm-4 serve text-center">
+				<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Consultation</h4></a>
+			</div>
+			<div class="col-sm-4 serve text-center">
+				<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>Consultation</h4></a>
+			</div>
+		</div>
+	</section>
+	<section id="n_feature">
 		<div class="container cmain">
 			<div class="row">
 			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
@@ -84,6 +114,7 @@
 
 						</div>
 						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+	
 					</div>
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
@@ -128,7 +159,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/health.jpg"></a>
+							<a href=""><img src="<?php echo base_url() ?>assets/img/perfect.jpg"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 6</a>
@@ -145,11 +176,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<section id="services">
-		<h1 class="text-center">
-			Our Services
-		</h1>
 	</section>
 	<section id="about">
 		<div class="container">
@@ -181,12 +207,12 @@
 		<div class="row">
 			<div class="col-sm-4 surel">
 				<ul class="list-unstyled">
-					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="">Mikroskil Gedung B</a></li>
-					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="">(+62)812345678910</a></li>
-					<li><a href=""><i class="fa fa-envelope fa-2x"></i></a> <a href="">stephen.huang96@gmail.com</a></li>
-					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
-					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
-					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Mikroskil Gedung B</a></li>
+					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">(+62)812345678910</a></li>
+					<li><a href=""><i class="fa fa-envelope fa-2x"></i></a> <a href="" class="inform">stephen.huang96@gmail.com</a></li>
+					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-4 complain-form">
@@ -206,7 +232,7 @@
 				    	<label for="comment">Comment:</label>
       					<textarea class="form-control" rows="5" id="comment" required></textarea>
 				  	</div>
-				  	<button type="submit" class="btn btn-primary">Submit</button>
+				  	<button type="submit" class="btn btn-danger">Submit</button>
 				</form>
 			</div>
 			<div class="col-sm-4 services">
@@ -224,10 +250,5 @@
 		<p class="text-center">All Rights reserved</p>
 
 	</footer>
-	<div>
-		<br>
-		<br>
-		<br>
-	</div>
 </body>
 </html>
