@@ -146,6 +146,11 @@
 			</div>
 		</div>
 	</section>
+	<section id="services">
+		<h1 class="text-center">
+			Our Services
+		</h1>
+	</section>
 	<section id="about">
 		<div class="container">
 			<div class="row">

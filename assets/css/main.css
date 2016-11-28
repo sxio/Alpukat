@@ -7,10 +7,11 @@
 
 .hitam{
   color: black!important;
+  margin-bottom: 30px!important;
 }
 
 body {
-  background-color: skyblue;
+  background-color: white;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
 }
@@ -39,6 +40,7 @@ body {
   background-size: 100%;
   padding-top: 150px;
   color: white;
+  margin-bottom: 0;
 }
 .jumbotron h3 {
   font-style: italic;
@@ -53,10 +55,10 @@ body {
 }
 #startchange .cmain {
   width: 95%;
-  background-color: #cecece;
+  /*background-color: white;*/
   /*background-color: rgba(26, 188, 156, 0.65);*/
   padding: 10px 30px;
-  box-shadow: 10px 10px 5px grey;
+  /*box-shadow: 10px 10px 5px black;*/
   margin-bottom: 30px;
 }
 #startchange .cmain h2 {
@@ -111,8 +113,10 @@ body {
 #startchange .container .row .rightedge .news_title {
   text-align: left;
 }
+#services{
+  background-color: red;
+}
 #about {
-  background-color: white;
   text-align: justify;
   padding-top: 10px;
 }
