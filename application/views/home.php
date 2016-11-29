@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AVOCADO</title>
+	<title>Avocado</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
@@ -43,6 +43,23 @@
 			</div>
 			<div class="col-sm-4 serve text-center">
 				<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+			</div>
+		</div>
+	</section>
+	<section id="best">
+		<h1 class="text-center">Here Is  Our Best Doctor of The Month</h1>
+		<div class="row text-center doc">
+			<div class="col-sm-4">
+				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+				<h3>Doctor 1</h3>
+			</div>
+			<div class="col-sm-4">
+				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+				<h3>Doctor 1</h3>
+			</div>
+			<div class="col-sm-4">
+				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+				<h3>Doctor 1</h3>
 			</div>
 		</div>
 	</section>
