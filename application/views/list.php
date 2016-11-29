@@ -7,10 +7,12 @@
 	<?php echo link_tag('assets/css/list.css') ?>
 	<?php echo link_tag('assets/css/rating.css') ?>
 
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/list.js"></script>
-	<!--<script src="-->
-	<?/*php echo base_url() */?><!--assets/js/main.js">
-	</script>30-Nov-16 Meikelwis Remark Sementara kayaknya gak ad effect ntar baru dipake-->
+	<!-- <script type="text/javascript" src=" -->
+	<?
+	// php echo base_url() 
+	?>
+	<!-- assets/js/list.js"></script> 30-Nov-16 Meikelwis Remark Sementara kayaknya gak ad effect ntar baru dipake-->
+	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
 	<?php require_once __DIR__."/templates/nav.php"; ?>
