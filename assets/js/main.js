@@ -8,10 +8,20 @@ $(document).ready(function(){
       if(scroll_start > offset.top) {
           $(".navbar-default").css('background-color', '#e60000');
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
+          $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
+            $(this).css('color','black');
+          },function(){
+            $(this).css('color','white');
+          });
             
        } else {
           $('.navbar-default').css('background-color', 'transparent');
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','black');
+          $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
+            $(this).css('color','white');
+          }, function(){
+            $(this).css('color','black');
+          });
        }
     });
   }

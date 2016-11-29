@@ -156,6 +156,9 @@
   transition: all 0.1s ease-out;
   border-bottom-width: 7px;
 }
+.login button:hover{
+  background-color: #a81701;
+}
 .login button .spinner {
   display: block;
   width: 40px;
