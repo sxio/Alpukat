@@ -27,7 +27,7 @@ body {
 }
 .container #myNavbar ul li a,
 .container .navbar-header a.navbar-brand{
-  color: black;
+  color: white;
 }
 .container .navbar-header a.navbar-brand{
   font-size: 80px;
@@ -35,7 +35,7 @@ body {
   font-family: acceleration;
 }
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
-  color: white;
+  color: #16BFFD;
 }
 .jumbotron {
   height: 650px;
@@ -44,11 +44,13 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 100px;
-  color: red;
+  color: white;
   margin-bottom: 0;
 }
 .jumbotron h3 {
   font-style: italic;
+  color: white;
+  font-weight: bold;
 }
 .jumbotron h1 {
   font-family: acceleration;
@@ -56,7 +58,7 @@ body {
   margin-bottom: 0px;
 }
 #n_feature {
-  background-color: #e60000;
+  background-color: #4286f4;
   text-align: justify;
 }
 #n_feature .cmain {
@@ -97,7 +99,7 @@ body {
   background-color: white;
   padding: 10px;
   margin-bottom: 9px;
-  border-left: 5px solid #ff6666;
+  border-left: 5px solid #001e4f;
 }
 #n_feature .container .row .rightedge .today_news .news_title a {
   color: black;
@@ -106,7 +108,7 @@ body {
 }
 #n_feature .container .row .rightedge .today_news:hover {
   transform: scale(1.05, 1.1);
-  border-left: 10px solid orange;
+  border-left: 10px solid black;
 }
 #n_feature .container .row .rightedge .news_image {
   padding: 0;
@@ -125,9 +127,10 @@ body {
   margin-bottom: 80px;
 }
 #startchange .serve i{
-  background-color: #e60000;
+  background-color: #4286f4;
   color: white;
   border-radius: 500px;
+  transition: 0.5s;
 }
 #startchange .serve i.new{
   padding: 17px 80px 17px 13px;
@@ -146,12 +149,12 @@ body {
 }
 #startchange .serve a{
   text-decoration: none;
-  color: #e60000;
+  color: #4286f4;
   font-weight: bold;
 }
 #startchange .serve a:hover i{
-  background-color: #800000;
-  color: red;
+  transform: scale(1.05, 1.1);
+  transition: 0.5s;
 }
 #startchange .serve h4{
   display: inline-block;
@@ -164,9 +167,9 @@ body {
   margin-bottom: 80px;
 }
 #best{
-  background-color: #e60000;
+  background-color: #4286f4;
   padding: 60px;
-  color:white;
+  color:black;
 }
 #best h1{
   margin-bottom: 50px;
@@ -199,7 +202,7 @@ body {
   padding-right: 106px;
 }
 footer.foot{
-  background-color: #e60000;
+  background-color: #4286f4;
   padding: 10px 70px;
   color: white;
   font-weight: bolder;

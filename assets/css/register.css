@@ -52,20 +52,20 @@ h1 {
 .register button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #e60000;
+  background-color: #4286f4;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #a81701;
+  border: 1px solid #0575e6;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 -1px 0 #0575e6 inset;
   margin-bottom: 10px;
 }
 
 .register button:hover{
-  background-color: #a81701;
+  background-color: #0575e6;
 }
 
 .register fieldset{
@@ -92,7 +92,7 @@ label.light {
 }
 
 .number {
-  background-color: #e60000;
+  background-color: #4286f4;
   color: #fff;
   height: 30px;
   width: 30px;

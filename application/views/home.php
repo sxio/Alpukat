@@ -13,7 +13,7 @@
 	  <h3>We specialize in Health Care Application</h3>
 	  <form class="form-inline" action="list">
 	    <input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
-	    <a href="list" type="button" class="btn btn-danger">Search</a>
+	    <a href="list" type="button" class="btn btn-info">Search</a>
 	  </form>
 	</div>
 	<section id="startchange">
@@ -47,7 +47,7 @@
 		</div>
 	</section>
 	<section id="best">
-		<h1 class="text-center">Here Is  Our Best Doctor of The Month</h1>
+		<h1 class="text-center">Here Are  Our Best Doctors of The Month</h1>
 		<div class="row text-center doc">
 			<div class="col-sm-4">
 				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
@@ -249,7 +249,7 @@
 				    	<label for="comment">Comment:</label>
       					<textarea class="form-control" rows="5" id="comment" required></textarea>
 				  	</div>
-				  	<button type="submit" class="btn btn-danger">Submit</button>
+				  	<button type="submit" class="btn btn-info">Submit</button>
 				</form>
 			</div>
 			<div class="col-sm-4 services">

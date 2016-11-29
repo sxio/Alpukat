@@ -6,7 +6,7 @@ $(document).ready(function(){
     $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#e60000');
+          $(".navbar-default").css('background-color', '#4286f4');
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
           $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
             $(this).css('color','black');
@@ -16,18 +16,18 @@ $(document).ready(function(){
             
        } else {
           $('.navbar-default').css('background-color', 'transparent');
-          $("ul.navbar-nav > li > a, .navbar-brand").css('color','black');
+          $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
           $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
-            $(this).css('color','white');
+            $(this).css('color','#16BFFD');
           }, function(){
-            $(this).css('color','black');
+            $(this).css('color','white');
           });
        }
     });
   }
   setInterval(blinker,1500);
-
 });
+
 //Meikelwis 25-10-16
 function blinker(){
   $('.blink_me').fadeOut(500);
