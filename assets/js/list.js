@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$("#accordion").hide();
 
 	$("#drop").click(function(){
@@ -13,3 +13,5 @@ $(document).ready(function(){
 		$("#expcoll").html('Jenis Dokter <i class="fa fa-minus fa-fw exp"></i>');
 	});
 });
+30-Nov-16 Meikelwis Remark Sementara kayaknya gak ad effect ntar baru dipake
+*/

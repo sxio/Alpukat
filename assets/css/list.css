@@ -1,101 +1,17 @@
 @import url('nav.css');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 #content {
   margin-top: 65px;
-}
-#content .kanan,#content .kiri{
-	background-color: white;
-	text-align: justify;
+  font-family: 'Muli', sans-serif;
 }
 input.filter{
 	width: 100%;
 	display: inline;
 }
-#icon-map{
-	display: inline;
-	position: absolute;
-	top: 67px;
-	right: 28px;
-	font-size: 20px;
-}
-#content .kanan{
-	padding: 10px;
-}
-#content .kanan #submit{
-	margin-top: 10px;
-}
-#accordion,#drop{
-	margin-top: 10px;
-}
-#drop button{
-	width: 100%;
-}
-#expand_and_collapse{
-	margin-top: 10px;
-}
-#expand_and_collapse a{
-	text-decoration: none;
-}
-.exp{
-	float: right;
-}
-.kiri{
-	padding: 0px 15px;
-}
-.kiri .row{
-	border-bottom: 1px dotted grey;
-	padding: 30px;
 
-}
-img.doctors{
-	height: auto;
-	max-height: 170px;
-	max-width: 80%;
-}
-.profil_singkat h2,.profil_singkat h3,.profil_singkat h4{
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-.profil_singkat h3{
-	font-size: 20px;
-	font-weight: 5px;
-}
-.profil_singkat h4{
-	font-size: 15px;
-	font-weight: 600;
-}
-.harga{
-	margin-top: 0px;
-}
-.waktu i, .harga i{
-	position: absolute;
-	left: 17px;
-	margin-top: 3px;
-}
-.hargadanwaktu{
-	padding-left: 40px;
-}
-.gbr_lokasi{
-	height: auto;
-	max-width: 20%;
-	max-height: 20%;
-}
-/*direct*/
-#imaginary_container{
-	margin-top: 10px;
-}
-.stylish-input-group .input-group-addon{
-    background: white !important;
-}
-.stylish-input-group .form-control{
-	border-right:0;
-	box-shadow:0 0 0;
-	border-color:#ccc;
+img{
 	width: 100%;
 }
-.stylish-input-group button{
-    border:0;
-    background:transparent;
-}
-#search{
-	margin-top:10px;
+.profile{
+	padding :20px;
 }
