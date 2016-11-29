@@ -1,7 +1,10 @@
-<div class="fa fa-comments fa-fw my_popup_open" id="chatIcon"></div>
+<span class="fa-stack fa-lg chat_open" id="chatIcon">
+	<div class="fa fa-circle fa-stack-2x"></div>
+	<div class="fa fa-comments fa-stack-1x fa-inverse"></div>
+</span>
 
 <!-- Chat Feature -->
-<div id="my_popup">
+<div id="chat_popup">
 	<div id="wrapper">
 		<div id="menu">
 			<p class="welcome">Welcome, <b id="userid"></b>
@@ -11,7 +14,7 @@
 				</select>
 				<button id="refresh">refresh</button>
 			</p>
-			<p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+			<button class="chat_close btn btn-link"><i class="fa fa-remove fa-fw"></i></button>
 			<div style="clear:both"></div>
 		</div>
 		<div id="chatbox"></div>
@@ -21,7 +24,4 @@
 			<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
 		</form>
 	</div>
-
-	<!-- Add an optional button to close the popup -->
-	<button class="my_popup_close">Close</button>
 </div>

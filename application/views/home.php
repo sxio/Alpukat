@@ -219,8 +219,6 @@
 
 	</section>
 
-	<?php require_once __DIR__.'/templates/chat.php'; ?>
-
 	<footer class="foot">
 		<!-- <h1 class="text-center"></h1> -->
 		<!-- <h4 class="info text-center">This is our information</h4> -->
@@ -269,5 +267,6 @@
 		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
 		<p class="text-center">All Rights reserved</p>
 	</footer>
+	<?php require_once __DIR__.'/templates/chat.php'; ?>
 </body>
 </html>

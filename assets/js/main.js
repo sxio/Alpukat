@@ -27,10 +27,11 @@ $(document).ready(function(){
   }
   setInterval(blinker,1500);
   // Initialize the chat plugin
-  $('#my_popup').popup({
-    background: true,
+  $('#chat_popup').popup({
     blur: false,
-    transition: 'all 1s'
+    transition: 'all 0.8s',
+    openelement: '.chat_open',
+    closeelement: '.chat_close'
   });
 });
 

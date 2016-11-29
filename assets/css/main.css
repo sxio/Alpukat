@@ -11,24 +11,6 @@
   margin-bottom: 30px!important;
 }
 
-#chatIcon{
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  font-size: 70px;
-  text-decoration: none;
-  color: red;
-  outline: none;
-  transition: all 0.3s;
-  z-index: 1000;
-  cursor: pointer;
-}
-#chatIcon:hover{
-  color: #FB3636;
-  transform: scale(1.08);
-  transition: all 0.3s;
-}
-
 body {
   background-color: white;
   font-weight: bold;
@@ -211,24 +193,85 @@ body {
   width: 450px;
   height: 450px;
 }
-/*MODALS*/
-#sign input.form-control,
-#sign button.form-control {
-  width: 48%;
+
+/*CHAT*/
+#chatIcon{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 40px;
+  text-decoration: none;
+  color: red;
+  outline: none;
+  transition: all 0.3s;
+  z-index: 1000;
+  cursor: pointer;
 }
-#sign #forgotPwd {
-  margin-left: 27%;
+#chatIcon:hover{
+  color: #FB3636;
+  transform: scale(1.08);
+  transition: all 0.3s;
 }
-#signIn_signUp .nav-pills > li > a {
-  border-radius: 0;
-  padding-left: 106px;
-  padding-right: 106px;
+
+#wrapper, #loginform {
+  margin        :0 auto;
+  padding-bottom:25px;
+  background    :#EBF4FB;
+  width         :504px;
+  border        :1px solid #ACD8F0;
 }
+
+#loginform {
+  padding-top:18px;
+}
+
+#loginform p {
+    margin: 5px;
+  }
+
+#chatbox {
+  text-align   : left;
+  margin       : 0 auto;
+  margin-bottom: 25px;
+  padding      : 10px;
+  background   : #fff;
+  height       : 270px;
+  width        : 430px;
+  border       : 1px solid #ACD8F0;
+  overflow     : auto;
+}
+#usermsg {
+  width : 395px;
+  border: 1px solid #ACD8F0;
+}
+#submit {
+  width: 60px;
+}
+.error {
+  color: #ff0000;
+}
+#menu {
+  padding: 12.5px 25px 12.5px 25px;
+}
+.welcome {
+  float: left;
+}
+.chat_close {
+  float: right;
+  outline: none;
+  color: red;
+  font-size: 16px;
+}
+.msgln {
+  margin: 0 0 2px 0;
+}
+/*END CHAT*/
+
 footer.foot{
   background-color: #4286f4;
-  padding: 10px 70px;
-  color: white;
-  font-weight: bolder;
+  padding         : 10px 70px;
+  color           : white;
+  font-weight     : bolder;
 }
 footer.foot .row{
   margin-top: 40px;
