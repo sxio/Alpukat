@@ -11,6 +11,24 @@
   margin-bottom: 30px!important;
 }
 
+#chatIcon{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 70px;
+  text-decoration: none;
+  color: red;
+  outline: none;
+  transition: all 0.3s;
+  z-index: 1000;
+  cursor: pointer;
+}
+#chatIcon:hover{
+  color: #FB3636;
+  transform: scale(1.08);
+  transition: all 0.3s;
+}
+
 body {
   background-color: white;
   font-weight: bold;
@@ -31,7 +49,7 @@ body {
 }
 .container .navbar-header a.navbar-brand{
   font-size: 80px;
-  font-weight: normal;  
+  font-weight: normal;
   font-family: acceleration;
 }
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{

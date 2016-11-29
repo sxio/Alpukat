@@ -131,7 +131,7 @@
 
 						</div>
 						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
-	
+
 					</div>
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
@@ -218,6 +218,9 @@
 		</div>
 
 	</section>
+
+	<?php require_once __DIR__.'/templates/chat.php'; ?>
+
 	<footer class="foot">
 		<!-- <h1 class="text-center"></h1> -->
 		<!-- <h4 class="info text-center">This is our information</h4> -->
@@ -265,7 +268,6 @@
 		</div>
 		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
 		<p class="text-center">All Rights reserved</p>
-
 	</footer>
 </body>
 </html>

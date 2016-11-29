@@ -13,7 +13,7 @@ $(document).ready(function(){
           },function(){
             $(this).css('color','white');
           });
-            
+
        } else {
           $('.navbar-default').css('background-color', 'transparent');
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
@@ -26,6 +26,12 @@ $(document).ready(function(){
     });
   }
   setInterval(blinker,1500);
+  // Initialize the chat plugin
+  $('#my_popup').popup({
+    background: true,
+    blur: false,
+    transition: 'all 1s'
+  });
 });
 
 //Meikelwis 25-10-16
