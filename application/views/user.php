@@ -5,10 +5,8 @@
 	<title><?php echo ucfirst($title) ?></title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
-	<?php echo link_tag('assets/css/main.css') ?>
+	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/login.css') ?>
-	<?php echo link_tag('assets/css/register.css') ?>
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
 <body>

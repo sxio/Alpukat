@@ -12,13 +12,13 @@
 #user{
   margin-top: 65px;
 }
-.container #myNavbar ul li a,
+/*.container #myNavbar ul li a,
 .container .navbar-header a.navbar-brand{
   color: white;
 }
 .navbar-default {
   background-color: #e60000;
-}
+}*/
 #user .nav-pills{
   width: 500px;
   margin: 0 auto;
