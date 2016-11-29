@@ -256,10 +256,10 @@
 			<div class="col-sm-4 services">
 				<h3>FAQ</h3>
 				<ul class="list-unstyled">
-					<li>Apakah Stephen sedang belajar ?</li>
-					<li>Apakah yang sedang dilakukan Meikelwis ?</li>
-					<li>Bagaimana caranya Stephen mendapatkan ilham ketika sedang berak ?</li>
-					<li>Bagaimanakah caranya Meikelwis mendapat ilham ?</li>
+					<li>Apakah A sedang belajar ?</li>
+					<li>Apakah yang sedang dilakukan B ?</li>
+					<li>Bagaimana caranya A mendapatkan ilham ?</li>
+					<li>Bagaimanakah caranya B mendapat ilham ?</li>
 					<li>Apa yang harus dilakukan agar dapat menghapal semua isi website w3schools ?</li>
 				</ul>
 			</div>
