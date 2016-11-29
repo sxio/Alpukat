@@ -8,11 +8,11 @@
 	<div id="wrapper">
 		<div id="menu">
 			<p class="welcome">Welcome, <b id="userid"></b>
-				, Chat with
-				<select id="contact">
+				Chat with
+				<select class="form-control" id="contact">
 					<option value=""></option>
 				</select>
-				<button id="refresh">refresh</button>
+				<button class="btn btn-link" id="refresh"><i class="fa fa-refresh fa-fw"></i></button>
 			</p>
 			<button class="chat_close btn btn-link"><i class="fa fa-remove fa-fw"></i></button>
 			<div style="clear:both"></div>
@@ -20,8 +20,7 @@
 		<div id="chatbox"></div>
 
 		<form name="message" action="">
-			<input name="usermsg" type="text" id="usermsg" size="63" />
-			<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+			<input class="form-control" name="usermsg" type="text" id="usermsg"><button class="btn btn-success" id="submitmsg"><i class="fa fa-paper-plane"></i></button>
 		</form>
 	</div>
 </div>

@@ -1,0 +1,81 @@
+/*CHAT*/
+#chatIcon{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 40px;
+  text-decoration: none;
+  color: red;
+  outline: none;
+  transition: all 0.3s;
+  z-index: 1000;
+  cursor: pointer;
+}
+#chatIcon:hover{
+  color: #FB3636;
+  transform: scale(1.08);
+  transition: all 0.3s;
+}
+
+#wrapper, #loginform {
+  margin        :0 auto;
+  padding-bottom:25px;
+  background    :#EBF4FB;
+  width         :504px;
+  border        :1px solid #ACD8F0;
+}
+
+#loginform {
+  padding-top:18px;
+}
+
+#loginform p {
+    margin: 5px;
+  }
+
+#chatbox {
+  text-align   : left;
+  margin       : 0 auto;
+  margin-bottom: 25px;
+  padding      : 10px;
+  background   : #fff;
+  height       : 270px;
+  width        : 430px;
+  border       : 1px solid #ACD8F0;
+  overflow     : auto;
+}
+#usermsg {
+  width : 390px;
+  margin-left: 35px;
+  display: inline-block;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#submitmsg {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: -2px;
+}
+#contact{
+  display: inline-block;
+  width: 100px;
+}
+.error {
+  color: #ff0000;
+}
+#menu {
+  padding: 12.5px 25px 12.5px 25px;
+}
+.welcome {
+  float: left;
+}
+.chat_close {
+  float: right;
+  outline: none;
+  color: red;
+  font-size: 16px;
+}
+.msgln {
+  margin: 0 0 2px 0;
+}
+/*END CHAT*/
