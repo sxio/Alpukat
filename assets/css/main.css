@@ -120,61 +120,66 @@ body {
 #n_feature .container .row .rightedge .news_title {
   text-align: left;
 }
-#startchange{
+#o_services{
   padding: 120px 40px;
+  border-bottom: 5px solid #4286f4;
+  border-top: 5px solid #4286f4;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-#startchange h1{
+#o_services h1{
   margin-bottom: 80px;
 }
-#startchange .serve i{
+#o_services .serve i{
   background-color: #4286f4;
   color: white;
   border-radius: 500px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
-#startchange .serve i.new{
+#o_services .serve i.new{
   padding: 17px 80px 17px 13px;
 }
-#startchange .serve i.forums{
+#o_services .serve i.forums{
   padding: 10px 5px 10px 10px;
 }
-#startchange .serve i.store{
+#o_services .serve i.store{
   padding: 10px 50px 10px 10px;
 }
-#startchange .serve i.consul, i.bell, i.histo{
+#o_services .serve i.consul, i.bell, i.histo{
   padding: 10px;
 }
-#startchange .serve i.money{
+#o_services .serve i.money{
   padding: 17px 74px 17px 15px;
 }
-#startchange .serve a{
+#o_services .serve a{
   text-decoration: none;
   color: #4286f4;
   font-weight: bold;
 }
-#startchange .serve a:hover i{
+#o_services .serve a:hover i{
   transform: scale(1.05, 1.1);
-  transition: 0.5s;
+  transition: 0.2s;
 }
-#startchange .serve h4{
+#o_services .serve h4{
   display: inline-block;
 }
-#startchange .serve h4:hover{
+#o_services .serve h4:hover{
   color: black;
   font-weight: bolder;
 }
-#startchange .first_service{
+#o_services .first_service{
   margin-bottom: 80px;
 }
-#best{
+#startchange{
   background-color: #4286f4;
   padding: 60px;
-  color:black;
+  color:white;
+  /*border-bottom: 5px solid white; */
 }
-#best h1{
+#startchange h1{
   margin-bottom: 50px;
 }
-#best .doc img{
+#startchange .doc img{
   width: 120px;
   height: 120px;
   border-radius: 100px;
@@ -254,10 +259,10 @@ footer.foot div.surel ul.list-unstyled li i.round{
   padding: 10px 13px;
   border-radius: 200px;
 }
-footer.foot .startchange{
+footer.foot .services{
   text-align: left;
   /*padding: 0 10px;*/
 }
-footer.foot .startchange li{
+footer.foot .services li{
   margin: 10px 0;
 }
