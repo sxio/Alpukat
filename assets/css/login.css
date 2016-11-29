@@ -12,8 +12,12 @@
 #user{
   margin-top: 65px;
 }
+.container #myNavbar ul li a,
+.container .navbar-header a.navbar-brand{
+  color: white;
+}
 .navbar-default {
-  background-color: #0087a2;
+  background-color: #e60000;
 }
 #user .nav-pills{
   width: 500px;
@@ -23,6 +27,12 @@
 #user .nav-pills > li > a {
   border-radius: 0;
   width: 248px;
+  color: red;
+  font-weight: bold;
+}
+#user .nav-pills > li.active a{
+  background-color: #e60000;
+  color: white;
 }
 
 @keyframes spinner {
@@ -65,13 +75,15 @@
 .login.loading button {
   max-height: 100%;
   padding-top: 50px;
+  background-color: yellow;
+  color: black;
 }
 .login.loading button .spinner {
   opacity: 1;
   top: 40%;
 }
 .login.ok button {
-  background-color: #8bc34a;
+  background-color: green;
 }
 .login.ok button .spinner {
   border-radius: 0;
@@ -103,7 +115,7 @@
 .login input:focus {
   outline: none;
   color: #444;
-  border-color: #2196F3;
+  border-color: #e60000;
   border-left-width: 35px;
 }
 .login input:focus + i.fa {
@@ -129,7 +141,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 10px;
-  background: #2196F3;
+  background: #e60000;
   color: #fff;
   display: block;
   border: none;
@@ -171,4 +183,5 @@
 #forgotPass{
   font-weight: 800;
   font-size: 15px;
+  color: red;
 }
