@@ -18,177 +18,203 @@
 	</div>
 	<section id="startchange">
 		<h1 class="text-center">Here Are  Our Best Doctors of The Month</h1>
-		<div class="row text-center doc">
-			<div class="col-sm-4">
-				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
-				<h3>Doctor 1</h3>
-			</div>
-			<div class="col-sm-4">
-				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
-				<h3>Doctor 1</h3>
-			</div>
-			<div class="col-sm-4">
-				<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
-				<h3>Doctor 1</h3>
+		<div class="container">
+			<div class="row text-center doc">
+				<div class="col-sm-4">
+					<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+					<h3>Doctor 1</h3>
+				</div>
+				<div class="col-sm-4">
+					<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+					<h3>Doctor 2</h3>
+				</div>
+				<div class="col-sm-4">
+					<a href=""><img src="<?php echo base_url() ?>assets/img/doctor.jpg"></a>
+					<h3>Doctor 3</h3>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="o_services">
-		<h1 class="text-center">
-			Our Services
-		</h1>
-		<div class="row first_service">
-			<div class="col-sm-3 serve text-center">
-				<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
-			</div>
-			<div class="col-sm-3 serve text-center">
-				<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
-			</div>
-			<div class="col-sm-3 serve text-center">
-				<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
-			</div>
-			<div class="col-sm-3 serve text-center">
-				<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
-			</div>
-		</div>
-		<div class="row second_service">
-			<div class="col-sm-4 serve text-center">
-				<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
-			</div>
-			<div class="col-sm-4 serve text-center">
-				<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
-			</div>
-			<div class="col-sm-4 serve text-center">
-				<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 fe">
+					<h1 class="text-center">
+						Our Services
+					</h1>
+					<!-- <div class="container"> -->
+						
+						<div class="row first_service">
+							<div class="col-sm-3 serve text-center">
+								<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
+							</div>
+							<div class="col-sm-3 serve text-center">
+								<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
+							</div>
+							<div class="col-sm-3 serve text-center">
+								<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
+							</div>
+							<div class="col-sm-3 serve text-center">
+								<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
+							</div>
+						</div>
+						<div class="row second_service">
+							<div class="col-sm-4 serve text-center">
+								<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
+							</div>
+							<div class="col-sm-4 serve text-center">
+								<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
+							</div>
+							<div class="col-sm-4 serve text-center">
+								<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+				<div class="col-sm-4 explain">
+					<!-- <img src="<?php echo base_url() ?>assets/img/doc.jpg"> -->
+					<h4 class="text-justify">SAYA MAU TARUH SESUATU DISINI</h4>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section id="n_feature">
-		<div class="container cmain">
+	<section id="wts">
+		<h1 class="text-center say">
+			What They Say
+		</h1>
+	<!-- carousel start -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  	<!-- <ol class="carousel-indicators">
+		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    	<li data-target="#myCarousel" data-slide-to="1"></li>
+		    	<li data-target="#myCarousel" data-slide-to="2"></li>
+		    	<li data-target="#myCarousel" data-slide-to="3"></li>
+		  	</ol> -->
+
+		  <!-- Wrapper for slides -->
+		  	<div class="carousel-inner" role="listbox">
+		    	<div class="item active">
+			  		<div class="container">
+				  		<div class="row">
+				  			<div class="col-sm-2">
+					      		<img src="<?php echo base_url() ?>assets/img/doctor.jpg" alt="Chania">
+				  			</div>
+					      	<div class="carousel-caption col-sm-10">
+					        	<h3 class="text-center">Stephen</h3>
+					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					      	</div>
+				    	</div>
+				  	</div>
+		  		</div>
+
+			    <div class="item">
+			  		<div class="container">
+				  		<div class="row">
+					      	<div class="col-sm-2">
+					      		<img src="<?php echo base_url() ?>assets/img/doctor.jpg" alt="Chania">
+				  			</div>
+					      	<div class="carousel-caption col-sm-10">
+					        	<h3 class="text-center">Meikelwis</h3>
+					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					      	</div>
+				    	</div>
+				  	</div>
+		  		</div>
+
+			    <div class="item">
+			  		<div class="container">
+				  		<div class="row">
+					      	<div class="col-sm-2">
+					      		<img src="<?php echo base_url() ?>assets/img/doctor.jpg" alt="Chania">
+				  			</div>
+					      	<div class="carousel-caption col-sm-10">
+					        	<h3 class="text-center">Stephen Wijaya</h3>
+					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					      	</div>
+				    	</div>
+				  	</div>
+		  		</div>
+
+			    <div class="item">
+			  		<div class="container">
+				  		<div class="row">
+					      	<div class="col-sm-2">
+					      		<img src="<?php echo base_url() ?>assets/img/doctor.jpg" alt="Chania">
+				  			</div>
+					      	<div class="carousel-caption col-sm-10">
+					        	<h3 class="text-center">Meikelwis Huang</h3>
+					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					      	</div>
+				    	</div>
+				  	</div>
+		  		</div>
+		  	</div>
+		  	<!-- <a class="carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		  		<span class="fa fa-chevron-circle-left fa-fw" aria-hidden="true"></span>
+		    	<span class="sr-only">Previous</span>
+		  	</a> -->
+		  <!-- Left and right controls -->
+		  <a class="left_fa carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right_fa carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+<!-- carousel end -->
+	</section>
+	<!-- BAGIAN INI (DEAL) AKAN SAYA BUAT UNTUK REVIEW PENAWARAN DARI E-SHOP KITA -->
+	<section id="deal">
+		<div class="container">
 			<div class="row">
-			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
-				<div class="col-sm-6 leftedge">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-						<!-- Wrapper for slides -->
-					  	<div class="carousel-inner" role="listbox">
-						    <div class="item active">
-						      <img src="<?php echo base_url() ?>assets/img/stomach.jpg" alt="perut">
-						      <div class="carousel-caption">
-						        <h3>Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
-
-						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/jiwa.jpg" alt="jiwa">
-						      <div class="carousel-caption">
-						        <h3>Pertolongan Pertama untuk Masalah Kesehatan Jiwa</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
-
-						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/hands.jpg" alt="tangan">
-						      <div class="carousel-caption">
-						        <h3>Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
-
-						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/october.jpg" alt="october">
-						      <div class="carousel-caption">
-						        <h3>Oktober, Bulan Terbaik untuk Mulai Berdiet</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
-						</div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/9G95EYym4NM" frameborder="0" allowfullscreen></iframe>
-
-						</div>
-						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
-
+				<div class="col-sm-3">
+					<div class="item1">
+						<h1>DEAL</h1>
+						<img src="<?php echo base_url() ?>assets/img/poster.jpg">
 					</div>
-				<div class="col-sm-6 rightedge">
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/stomach.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
-						</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="item1">
+						<h1>DEAL</h1>
+						<h1>DEAL</h1>
+						<img src="<?php echo base_url() ?>assets/img/poster2.jpg">
 					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/hands.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</a>
-						</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="item1">
+						<h1>DEAL</h1>
+						<h1>DEAL</h1>
+						<img src="<?php echo base_url() ?>assets/img/poster.jpg">
 					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/jiwa.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Pertolongan Pertama untuk Masalah Kesehatan Jiwa</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/october.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Oktober, Bulan Terbaik untuk Mulai Berdiet</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/perfect.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 5</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/perfect.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 6</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/stomach.jpg"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 7</a>
-						</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="item1">
+						<h1>DEAL</h1>
+						<h1>DEAL</h1>
+						<img src="<?php echo base_url() ?>assets/img/poster2.jpg">
 					</div>
 				</div>
 			</div>
