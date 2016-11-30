@@ -59,18 +59,22 @@ body {
   margin-bottom: 0px;
 }
 #o_services{
-  color: #545659;
-  /*padding: 50px 40px;*/
+  color: black;
+  padding: 30px 40px;
   /*border-bottom: 5px solid #4286f4;*/
   /*border-top: 5px solid #4286f4;*/
-  margin-bottom: 5px;
-  margin-top: 5px;
+  /*margin-bottom: 5px;*/
+  /*margin-top: 5px;*/
+  background-image: url('../img/bg1.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 #o_services .fe{
-  padding : 50px 40px;
+  /*padding : 50px 40px;*/
 }
 #o_services h1{
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 #o_services .serve i{
   background-color: #4286f4;
@@ -114,17 +118,22 @@ body {
 }
 #o_services .explain{
   /*margin-top: 100px;*/
-  border: 2px solid black;
+  background-color: white;
+  border-radius:10px;
+  padding: 10px;
+  box-shadow: 5px 7px grey;
+  /*color: white;*/
 }
 #o_services .explain img{
-  
+  width: 100%;
+  margin: 0 
 }
 #startchange{
   /*background-color: #4286f4;*/
   /*background-image: url('../img/dots.png');*/
   padding: 60px;
   color:#545659;
-  border-bottom: 1px solid grey; 
+  /*border-bottom: 1px solid grey; */
 }
 #startchange h1{
   margin-bottom: 50px;
@@ -184,16 +193,24 @@ body {
   height: 350px;
   border-radius: 10px;
 }
-#about {
+#complain_id{
+  background-color: #f2f2f2;
   color: #545659;
   text-align: justify;
-  padding-top: 10px;
+  padding: 30px;
 }
-#about .img_about img {
+#complain_id img.csg{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#complain_id h1.cs{
+  margin-bottom: 50px;
+}
+#complain_id .img_complain_id img {
   width: 450px;
   height: 450px;
 }
-
 footer.foot{
   background-color: #4286f4;
   padding         : 10px 70px;
@@ -209,6 +226,10 @@ footer.foot .complain-form{
 }
 footer.foot h4.info{
   margin-bottom: 40px;
+}
+footer.foot div.surel{
+  padding: 0;
+  border-right: 1px solid black;
 }
 footer.foot div.surel ul.list-unstyled li{
   padding-left: 33px;
@@ -246,6 +267,9 @@ footer.foot div.surel ul.list-unstyled li i.oval_t{
 footer.foot div.surel ul.list-unstyled li i.round{
   padding: 10px 13px;
   border-radius: 200px;
+}
+footer.foot .corporated{
+  border-right: 1px solid black;
 }
 footer.foot .services{
   text-align: left;

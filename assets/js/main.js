@@ -33,6 +33,9 @@ $(document).ready(function(){
     openelement: '.chat_open',
     closeelement: '.chat_close'
   });
+  $("#chat_open").click(function(){
+    alert("hello");
+  });
 });
 
 //Meikelwis 25-10-16

@@ -9,12 +9,12 @@
 <body>
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<div class="jumbotron text-center">
-	  <h1>Avocado</h1><!--// Meikelwis 25/10/16-->
-	  <h3>We specialize in Health Care Application</h3>
-	  <form class="form-inline" action="list">
-	    <input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
-	    <a href="list" type="button" class="btn btn-info">Search</a>
-	  </form>
+	  	<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
+	  	<h3>We specialize in Health Care Application</h3>
+	  	<form class="form-inline" action="list">
+	    	<input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
+	    	<a href="list" type="button" class="btn btn-info">Search</a>
+	  	</form>
 	</div>
 	<section id="startchange">
 		<h1 class="text-center">Here Are  Our Best Doctors of The Month</h1>
@@ -35,45 +35,58 @@
 			</div>
 		</div>
 	</section>
+
 	<section id="o_services">
-		<div class="container">
+		<h1 class="about_us text-center">ABOUT US</h1>
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8 fe">
 					<h1 class="text-center">
 						Our Services
 					</h1>
-					<!-- <div class="container"> -->
 						
-						<div class="row first_service">
-							<div class="col-sm-3 serve text-center">
-								<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
-							</div>
-							<div class="col-sm-3 serve text-center">
-								<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
-							</div>
-							<div class="col-sm-3 serve text-center">
-								<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
-							</div>
-							<div class="col-sm-3 serve text-center">
-								<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
-							</div>
+					<div class="row first_service">
+						<div class="col-sm-3 serve text-center">
+							<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
 						</div>
-						<div class="row second_service">
-							<div class="col-sm-4 serve text-center">
-								<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
-							</div>
-							<div class="col-sm-4 serve text-center">
-								<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
-							</div>
-							<div class="col-sm-4 serve text-center">
-								<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
-							</div>
+						<div class="col-sm-3 serve text-center">
+							<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
 						</div>
-					<!-- </div> -->
+						<div class="col-sm-3 serve text-center">
+							<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
+						</div>
+						<div class="col-sm-3 serve text-center">
+							<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
+						</div>
+					</div>
+					<div class="row second_service">
+						<div class="col-sm-4 serve text-center">
+							<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
+						</div>
+						<div class="col-sm-4 serve text-center">
+							<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
+						</div>
+						<div class="col-sm-4 serve text-center">
+							<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4 explain">
-					<!-- <img src="<?php echo base_url() ?>assets/img/doc.jpg"> -->
-					<h4 class="text-justify">SAYA MAU TARUH SESUATU DISINI</h4>
+					<div class="col-sm-5 img_about">
+						<img src="<?php echo base_url() ?>assets/img/avocado.png">
+					</div>
+					<h1>What is Avocado <i class="fa fa-question-circle" aria-hidden="true"></i></h1>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
 		</div>
@@ -175,14 +188,14 @@
 		    	<span class="sr-only">Previous</span>
 		  	</a> -->
 		  <!-- Left and right controls -->
-		  <a class="left_fa carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right_fa carousel-control" href="#myCarousel" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+			<a class="left_fa carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right_fa carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
 <!-- carousel end -->
 	</section>
@@ -220,26 +233,35 @@
 			</div>
 		</div>
 	</section>
-	<section id="about">
+	<section id="complain_id">
+		<h1 class="cs text-center">
+			Critics and Suggestions Are To Build Better Than Before
+		</h1>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-7">
-					<h1>What is Avocado <i class="fa fa-question-circle" aria-hidden="true"></i></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-sm-4">
+					<img class="csg" src="<?php echo base_url() ?>assets/img/cs.jpg">
 				</div>
-				<div class="col-sm-5 img_about">
-					<img src="<?php echo base_url() ?>assets/img/avocado.png">
-				</div>
+				<div class="col-sm-8">
+					<form class="complain">
+					  	<div class="form-group">
+					    	<label for="email">Email address:</label>
+					    	<input type="email" class="form-control" id="email" required>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="txt">Subject:</label>
+					    	<input type="text" class="form-control" id="txt" required>
+					  	</div>
+					  	<!-- <div class="checkbox">
+					    	<label><input type="checkbox"> Remember me</label>
+					  	</div> -->
+					  	<div class="form-group">
+					    	<label for="comment">Comment:</label>
+	      					<textarea class="form-control" rows="5" id="comment" required></textarea>
+					  	</div>
+					  	<button type="submit" class="btn btn-info">Submit</button>
+					</form>
+				</div>		
 			</div>
 		</div>
 
@@ -259,35 +281,34 @@
 					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4 complain-form">
-				<form class="complain">
-				  	<div class="form-group">
-				    	<label for="email">Email address:</label>
-				    	<input type="email" class="form-control" id="email" required>
-				  	</div>
-				  	<div class="form-group">
-				    	<label for="pwd">Password:</label>
-				    	<input type="password" class="form-control" id="pwd" required>
-				  	</div>
-				  	<div class="checkbox">
-				    	<label><input type="checkbox"> Remember me</label>
-				  	</div>
-				  	<div class="form-group">
-				    	<label for="comment">Comment:</label>
-      					<textarea class="form-control" rows="5" id="comment" required></textarea>
-				  	</div>
-				  	<button type="submit" class="btn btn-info">Submit</button>
-				</form>
+			<div class="col-sm-4 corporated">
+				<h3 class="text-center">In Corporation With</h3>
 			</div>
 			<div class="col-sm-4 services">
-				<h3>FAQ</h3>
-				<ul class="list-unstyled">
-					<li>Apakah A sedang belajar ?</li>
-					<li>Apakah yang sedang dilakukan B ?</li>
-					<li>Bagaimana caranya A mendapatkan ilham ?</li>
-					<li>Bagaimanakah caranya B mendapat ilham ?</li>
-					<li>Apa yang harus dilakukan agar dapat menghapal semua isi website w3schools ?</li>
-				</ul>
+				<h3>Donation Report</h3>
+				<table class="table">
+			    <!-- <thead>
+			     	<tr>
+			       		<th>Firstname</th>
+			        	<th>Lastname</th>
+			        	<th>Email</th>
+			      	</tr>
+			    </thead> -->
+			    <tbody>
+					<tr>
+						<td>Today`s Donation</td>
+						<td>1,000,000</td>
+					</tr>
+					<tr>
+						<td>Total Donation</td>
+						<td>100,000,000</td>
+					</tr>
+					<tr>
+						<td>Total Donated</td>
+						<td>254,500,000</td>
+					</tr>
+			    </tbody>
+			  </table>
 			</div>
 		</div>
 		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
