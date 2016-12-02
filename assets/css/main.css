@@ -197,7 +197,7 @@ body {
   background-color: #f2f2f2;
   color: #545659;
   text-align: justify;
-  padding: 30px;
+  padding: 40px 30px;
 }
 #complain_id img.csg{
   width: 100%;
@@ -277,4 +277,10 @@ footer.foot .services{
 }
 footer.foot .services li{
   margin: 10px 0;
+}
+div.cpr{
+  padding: 20px;
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
 }

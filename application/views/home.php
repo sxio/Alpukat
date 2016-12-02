@@ -311,9 +311,11 @@
 			  </table>
 			</div>
 		</div>
-		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
-		<p class="text-center">All Rights reserved</p>
 	</footer>
+	<div class="cpr">
+			<p class="text-center">Copyright &copy; Alpukat 2017.</p>
+			<p class="text-center">All Rights reserved</p>
+		</div>
 	<?php require_once __DIR__.'/templates/chat.php'; ?>
 </body>
 </html>
