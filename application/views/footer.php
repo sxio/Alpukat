@@ -2,7 +2,7 @@
 		<!-- <h1 class="text-center"></h1> -->
 		<!-- <h4 class="info text-center">This is our information</h4> -->
 		<div class="row">
-			<div class="col-sm-4 surel">
+			<div class="col-sm-3 surel">
 				<ul class="list-unstyled">
 					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Mikroskil Gedung B</a></li>
 					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">(+62)812345678910</a></li>
@@ -12,17 +12,12 @@
 					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4 corporated">
-					<div class="row">
-						<div class="col-sm-6">
-							<img src="<?php echo base_url() ?>assets/img/bootstrap.png">
-						</div>
-						<div class="col-sm-6">
-							<img class="w3" src="<?php echo base_url() ?>assets/img/w3.png">
-						</div>
-					</div>
+			<div class="col-sm-6 corporated">
+				<h2 class="payment text-center">Payment Partner :</h2>
+							<img class="bca" src="<?php echo base_url() ?>assets/img/banks.png">
+						
 			</div>
-			<div class="col-sm-4 services">
+			<div class="col-sm-3 services">
 				<h3>Donation Report</h3>
 				<table class="table">
 			    <!-- <thead>
