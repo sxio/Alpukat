@@ -1,6 +1,7 @@
 #n_feature {
-  background-color: #4286f4;
+  background-color: #f2f2f2;
   text-align: justify;
+  margin-top: 50px;
 }
 #n_feature .cmain {
   width: 95%;
@@ -9,8 +10,8 @@
   padding: 10px 30px;
   /*box-shadow: 10px 10px 5px black;*/
 }
-#n_feature .cmain h2 {
-  color: white;
+#n_feature .cmain .hitam{
+  color: black;
 }
 #n_feature .container .row .col-sm-6 h2 {
   font-weight: bold;
@@ -18,6 +19,7 @@
 #n_feature .container .row .leftedge {
   padding: 20px 30px;
   background-color: white;
+  border:1px solid black;
 }
 #n_feature .container .row .rightedge {
   padding: 0px 30px;
@@ -39,7 +41,8 @@
 #n_feature .container .row .rightedge .today_news {
   background-color: white;
   padding: 10px;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
+  border:1px solid black;
   border-left: 5px solid #001e4f;
 }
 #n_feature .container .row .rightedge .today_news .news_title a {
@@ -60,4 +63,84 @@
 }
 #n_feature .container .row .rightedge .news_title {
   text-align: left;
+}
+#other_detail{
+  padding: 50px;
+  padding-bottom: 0;
+  /*border-bottom: 1px solid grey;*/
+  /*background-color: black;*/
+}
+#other_detail .container-fluid{
+  border-bottom: 1px solid grey;
+  padding: 0 40px;
+}
+#other_detail .left-nav .tab-content .block{
+  padding: 20px;
+  border-bottom: 1px solid grey;
+}
+#other_detail .left-nav .tab-content .detail_img img{
+  width: 170px;
+  height: 120px;
+}
+#other_detail .left-nav .tab-content .detail_news a{
+  text-decoration: none;
+  color: black;
+}
+#other_detail .left-nav .tab-content .detail_news a:hover{
+  color: orange;
+  font-weight: bold;
+}
+#other_detail .left-nav .tab-content .block-last{
+  border-bottom: none;
+  padding: 20px;
+}
+#other_detail .right-ad .ad{
+  width: 100%;
+  height: 40%;
+  border:1px solid black;
+  margin-bottom: 10px;
+}
+#other_detail .right-ad .ad img{
+  width: 100%;
+  height: 100%;
+}
+#other_detail .right-ad .adv img{
+  width: 100%;
+  height: 100%;
+  border:1px solid black;
+}
+#tips{
+  padding: 50px;
+}
+#tips .tip{
+  border-right: 1px solid grey;
+}
+#tips .tip a{
+  text-decoration: none;
+  color: black;
+}
+#tips .tip a:hover{
+  color: grey;
+}
+#tips .tip img{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+#car{
+  /*background-color: #f2f2f2;*/
+  background-image: url('../img/c3.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 40px 10px;
+  color: white;
+}
+#car #qCarousel{
+  padding: 0 100px;
+}
+#car .right_fa{
+  right: 0;
+  left: auto;
+  padding-left: 100px;
 }

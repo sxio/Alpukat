@@ -1,4 +1,16 @@
-<section id="n_feature">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+	<?php require_once __DIR__.'/templates/header.php'; ?>
+	<?php echo link_tag('assets/css/nav.css') ?>
+	<?php echo link_tag('assets/css/news.css') ?>
+
+	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+</head>
+<body>
+	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<section id="n_feature">
 		<div class="container cmain">
 			<div class="row">
 			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
@@ -129,3 +141,217 @@
 			</div>
 		</div>
 	</section>
+	<section id="other_detail">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 left-nav">
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+						<li><a data-toggle="tab" href="#menu1">Women`s Health</a></li>
+						<li><a data-toggle="tab" href="#menu2">Men`s Health</a></li>
+						<li><a data-toggle="tab" href="#menu3">Children`s Health</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="home" class="tab-pane fade in active">
+							<div class="block">
+								<div class="row">
+									<div class="col-sm-3 detail_img">
+										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+									</div>
+									<div class="col-sm-9 detail_news">
+										<a href="">
+											<h3>HOME</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<div class="row">
+									<div class="col-sm-3 detail_img">
+										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+									</div>
+									<div class="col-sm-9 detail_news">
+										<a href="">
+											<h3>HOME</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<div class="row">
+									<div class="col-sm-3 detail_img">
+										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+									</div>
+									<div class="col-sm-9 detail_news">
+										<a href="">
+											<h3>HOME</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<div class="row">
+									<div class="col-sm-3 detail_img">
+										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+									</div>
+									<div class="col-sm-9 detail_news">
+										<a href="">
+											<h3>HOME</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-last">
+								<div class="row">
+									<div class="col-sm-3 detail_img">
+										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+									</div>
+									<div class="col-sm-9 detail_news">
+										<a href="">
+											<h3>HOME</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</a>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div id="menu1" class="tab-pane fade">
+								<div class="block">
+								<h3>HOME</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+								<div class="block">
+								<h3>HOME</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div id="menu3" class="tab-pane fade">
+							<div class="block">
+								<h3>HOME</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div id="menu3" class="tab-pane fade">
+							<div class="block">
+								<h3>HOME</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 right-ad">
+					<div class="ad">
+						<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					</div>
+					<div class="row">
+						<div class="col-sm-6 adv">
+							<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+						</div>
+						<div class="col-sm-6 adv">
+							<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="tips">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 tip">
+					<a href="">
+					<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p></a>
+				</div>
+				<div class="col-sm-3 tip">
+					<a href="">
+					<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p></a>
+				</div>
+				<div class="col-sm-3 tip">
+					<a href="">
+					<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p></a>
+				</div>
+				<div class="col-sm-3 tip">
+					<a href="">
+					<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="car">
+		<h1 class="quote text-center">Quote</h1>
+		<div id="qCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  	<!-- <ol class="carousel-indicators">
+		    	<li data-target="#qCarousel" data-slide-to="0" class="active"></li>
+		    	<li data-target="#qCarousel" data-slide-to="1"></li>
+		    	<li data-target="#qCarousel" data-slide-to="2"></li>
+		    	<li data-target="#qCarousel" data-slide-to="3"></li>
+		  	</ol> -->
+
+		  <!-- Wrapper for slides -->
+		  	<div class="carousel-inner" role="listbox">
+		    	<div class="item active">
+			  		<!-- <div class="container"> -->
+				  		<!-- <div class="row"> -->
+				  			<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
+				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
+				    	<!-- </div> -->
+				  	<!-- </div> -->
+		  		</div>
+
+			    <div class="item">
+			  		<!-- <div class="container"> -->
+				  		<!-- <div class="row"> -->
+					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
+				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
+				    	<!-- </div> -->
+				  	<!-- </div> -->
+		  		</div>
+
+			    <div class="item">
+			  		<!-- <div class="container"> -->
+				  		<!-- <div class="row"> -->
+					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
+				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
+				    	<!-- </div> -->
+				  	<!-- </div> -->
+		  		</div>
+
+			    <div class="item">
+			  		<!-- <div class="container"> -->
+				  		<!-- <div class="row"> -->
+					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
+				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
+				    	<!-- </div> -->
+				  	<!-- </div> -->
+		  		</div>
+		  	</div>
+		  <!-- Left and right controls -->
+			<a class="left_fa carousel-control" href="#qCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right_fa carousel-control" href="#qCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+	<?php require_once __DIR__.'/footer.php'; ?>
+</body>
+</html>
