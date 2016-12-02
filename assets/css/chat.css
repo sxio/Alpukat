@@ -20,18 +20,29 @@
 #wrapper, #loginform {
   margin        :0 auto;
   padding-bottom:25px;
-  background    :#EBF4FB;
+  background    :#4286f4;
   width         :504px;
-  border        :1px solid #ACD8F0;
+  border        :3px solid #083d91;
+  border-radius: 5px;
 }
-
+#wrapper{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#wrapper h1.c{
+  padding: 0;
+  border-bottom: 1px solid grey;
+  /*padding: 10px 20px 20px 10px;*/
+  font-family: acceleration;
+  font-size: 100px;
+}
 #loginform {
   padding-top:18px;
 }
 
 #loginform p {
     margin: 5px;
-  }
+}
 
 #chatbox {
   text-align   : left;
@@ -40,13 +51,13 @@
   padding      : 10px;
   background   : #fff;
   height       : 270px;
-  width        : 430px;
+  width        : 450px;
   border       : 1px solid #ACD8F0;
   overflow     : auto;
 }
 #usermsg {
-  width : 390px;
-  margin-left: 35px;
+  width : 414px;
+  margin-left: 13px;
   display: inline-block;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -57,14 +68,15 @@
   margin-top: -2px;
 }
 #contact{
+  margin-left: 20px;
   display: inline-block;
-  width: 100px;
+  width: 200px;
 }
 .error {
   color: #ff0000;
 }
 #menu {
-  padding: 12.5px 25px 12.5px 25px;
+  padding: 12.5px 23px 12.5px 23px;
 }
 .welcome {
   float: left;
