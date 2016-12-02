@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>News</title>
+	<title>Avocado | News</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/news.css') ?>
