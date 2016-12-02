@@ -33,11 +33,11 @@
 						<td>1,000,000</td>
 					</tr>
 					<tr>
-						<td>Total Donation</td>
+						<td>Donation Received</td>
 						<td>100,000,000</td>
 					</tr>
 					<tr>
-						<td>Total Donated</td>
+						<td>Donated Spent</td>
 						<td>254,500,000</td>
 					</tr>
 			    </tbody>
