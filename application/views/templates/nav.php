@@ -23,9 +23,9 @@
 				?>
 				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> USER</a></li>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
+				<li><a href="#pricing"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
+				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-SOTRE</a></li>
 				<li><a href="#about"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
-				<li><a href="#pricing"><i class="fa fa-tags fa-fw"></i> PRICING</a></li>
-				<li><a href="#contact"><i class="fa fa-book fa-fw"></i> CONTACT</a></li>
 			</ul>
 		</div>
 	</div>

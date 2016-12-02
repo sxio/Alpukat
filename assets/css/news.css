@@ -10,8 +10,10 @@
   padding: 10px 30px;
   /*box-shadow: 10px 10px 5px black;*/
 }
-#n_feature .cmain .hitam{
+#n_feature .cmain h2.hitam{
   color: black;
+  font-size: 50px;
+  font-weight: bold;
 }
 #n_feature .container .row .col-sm-6 h2 {
   font-weight: bold;
@@ -111,6 +113,10 @@
 }
 #tips{
   padding: 50px;
+  padding-top: 30px;
+}
+#tips h1.ht{
+  margin-bottom: 40px;
 }
 #tips .tip{
   border-right: 1px solid grey;

@@ -263,6 +263,7 @@
 		</div>
 	</section>
 	<section id="tips">
+		<h1 class="ht text-center">Health Tips</h1>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 tip">
@@ -295,50 +296,25 @@
 	<section id="car">
 		<h1 class="quote text-center">Quote</h1>
 		<div id="qCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  	<!-- <ol class="carousel-indicators">
-		    	<li data-target="#qCarousel" data-slide-to="0" class="active"></li>
-		    	<li data-target="#qCarousel" data-slide-to="1"></li>
-		    	<li data-target="#qCarousel" data-slide-to="2"></li>
-		    	<li data-target="#qCarousel" data-slide-to="3"></li>
-		  	</ol> -->
-
-		  <!-- Wrapper for slides -->
 		  	<div class="carousel-inner" role="listbox">
 		    	<div class="item active">
-			  		<!-- <div class="container"> -->
-				  		<!-- <div class="row"> -->
 				  			<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
 				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
-				    	<!-- </div> -->
-				  	<!-- </div> -->
 		  		</div>
 
 			    <div class="item">
-			  		<!-- <div class="container"> -->
-				  		<!-- <div class="row"> -->
 					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
 				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
-				    	<!-- </div> -->
-				  	<!-- </div> -->
 		  		</div>
 
 			    <div class="item">
-			  		<!-- <div class="container"> -->
-				  		<!-- <div class="row"> -->
 					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
 				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
-				    	<!-- </div> -->
-				  	<!-- </div> -->
 		  		</div>
 
 			    <div class="item">
-			  		<!-- <div class="container"> -->
-				  		<!-- <div class="row"> -->
 					      	<h3 class="the-quote text-center"><i>"There is one cosolation in being sick; and that is the POSSIBILITY that you may recover to a better state than you were ever in before"</i></h3>
 				  			<p class="text-center"><i>-Henry David Thoreau-</i></p>
-				    	<!-- </div> -->
-				  	<!-- </div> -->
 		  		</div>
 		  	</div>
 		  <!-- Left and right controls -->

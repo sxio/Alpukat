@@ -37,15 +37,19 @@
 						<td>100,000,000</td>
 					</tr>
 					<tr>
-						<td>Donated Spent</td>
+						<td>Donation Spent</td>
 						<td>254,500,000</td>
 					</tr>
 			    </tbody>
 			  </table>
+			  <div class="who">
+			  	<h4 class="d-partner text-center">Donation Partner : </h4>
+			  	<img class="img-responsive" src="<?php echo base_url() ?>assets/img/who.png">
+			  </div>
 			</div>
 		</div>
 	</footer>
 	<div class="cpr">
-		<p class="text-center">Copyright &copy; Alpukat 2017.</p>
-		<p class="text-center">All Rights reserved</p>
+		<p class="text-center">Copyright &copy; Avocado 2017.
+		 All Rights Reserved.</p>
 	</div>

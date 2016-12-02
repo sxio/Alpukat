@@ -50,7 +50,7 @@
 							<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center">
-							<a href=""><i class="fa fa-check-square-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
+							<a href=""><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center">
 							<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
@@ -235,7 +235,7 @@
 	</section>
 	<section id="complain_id">
 		<h1 class="cs text-center">
-			Critics and Suggestions Are To Build Better Than Before
+			Critics and Suggestions Are Accepted for Improvement
 		</h1>
 		<div class="container">
 			<div class="row">
@@ -264,7 +264,6 @@
 				</div>		
 			</div>
 		</div>
-
 	</section>
 	<?php require_once __DIR__.'/footer.php'; ?>
 	<?php require_once __DIR__.'/templates/chat.php'; ?>
