@@ -7,4 +7,4 @@
 	<script src="<?php echo base_url() ?>assets/js/jquery-3.1.1.min.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
 	<!-- Include jQuery Popup Overlay -->
-	<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.popupoverlay.js"></script>

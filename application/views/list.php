@@ -7,11 +7,7 @@
 	<?php echo link_tag('assets/css/list.css') ?>
 	<?php echo link_tag('assets/css/rating.css') ?>
 
-	<!-- <script type="text/javascript" src=" -->
-	<?
-	// php echo base_url() 
-	?>
-	<!-- assets/js/list.js"></script> 30-Nov-16 Meikelwis Remark Sementara kayaknya gak ad effect ntar baru dipake-->
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/list.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
@@ -20,17 +16,25 @@
 	<section id="content">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-1">
-					
-				</div>
+				<div class="col-sm-1"></div>
 				<div class="col-sm-10 text-left">
+					<div class="row">
+	                	<legend>FIND DIRECTLY</legend>
+	                	<div class="row">
+	                		<form id="profile_search">
+								<div class="col-sm-12">
+				                    <input type="text" class="form-control"  placeholder="Find Doctor Directly" id="findDoctor"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
+								</div>
+                			</form>
+						</div>
+					</div>
 					<div class="row">
 						<legend>LOCATION</legend>
 						<input class="form-control filter" type="text" placeholder="Input your Location" name="location"><i class="fa fa-map-marker fa-fw" id="icon-map"></i>
 						<!-- dropdown list -->
 						<div class="dropdown" id="drop">
 							<form>
-								<legend>DETAIL DOCTER</legend>
+								<legend>DETAIL DOCTOR</legend>
 							    <div class="radio">
 									<label><input type="radio" name="optradio">Male</label>
 								</div>
@@ -92,35 +96,14 @@
 							</div>
 				  		</div>
 				  	</div>
-					<div class="row">
-	                	<legend>FIND DIRECTLY</legend>
-	                	<div class="row">
-	                		<form id="profile_search">
-							<div class="col-sm-8">
-				                <div class="input-group stylish-input-group">
-				                    <input type="text" class="form-control"  placeholder="Find Doctor Directly" >
-				                    <span class="input-group-addon">
-				                        <button type="submit">
-				                            <span class="glyphicon glyphicon-search"></span>
-				                        </button>
-				                    </span>
-			                	</div>
-							</div>
-                			</form>
-						<div class="col-sm-4">
-							<button type="button" class="btn btn-primary left" id="search">Search</button>
-						</div>
-						</div>
-					</div>
-		        <div class="col-sm-1">
 				</div>
+		        <div class="col-sm-1"></div>
 			</div>
 		</div>
 		</br>
 		</br>
 		<div class="row">
 			<div class="col-sm-1">
-				
 			</div>
 			<div class="col-sm-10">
 				<div class="panel panel-info">
@@ -198,7 +181,7 @@
 				</div>
 			</div>
 			<div class="col-sm-1">
-				
+
 			</div>
 		</div>
 	</section>
