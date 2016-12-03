@@ -42,23 +42,27 @@
 			<!--	-->
 			<div class="tab-pane" id="register">
 				<!-- Meikelwis 27 Nov 16 -->
-				<form action="index.html" method="post" class="register" id="formRegister">
+				<!-- <form action="index.html" method="post" class="register" id="formRegister"> -->
+				<?php
+					$attrib = array('class' => 'register');
+					echo form_open('register/regis', $attrib);
+				?>
 					<h1>Sign Up</h1>
 					<div class="row">
 						<div class="col-sm-6">
 							<fieldset class="register" id="basic">
 								<legend><span class="number">1</span>Your basic info</legend>
 								<label for="userid">Username:</label>
-								<input type="text" id="userid" name="user_id">
+								<input type="text" id="userid" name="user_id" required>
 
 								<label for="name">Full Name:</label>
-								<input type="text" id="name" name="user_name">
+								<input type="text" id="name" name="user_name" required>
 
 								<label for="mail">Email:</label>
-								<input type="email" id="mail" name="user_email">
+								<input type="email" id="mail" name="user_email" required>
 
 								<label for="password">Password:</label>
-								<input type="password" id="password" name="user_password">
+								<input type="password" id="password" name="user_password" required>
 
 
 							</fieldset>
@@ -67,29 +71,23 @@
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
 								<label for="date_birth">Birthday:</label>
-								<input type="date" id="date_birth" name="date_birth">
+								<input type="date" id="date_birth" name="date_birth" required>
 
 								<label for="handphone">Handphone</label>
-								<input type="tel" id="handphone" name="handphone">
+								<input type="tel" id="handphone" name="handphone" required>
 
 								<label for="telephone">Telephone</label>
-								<input type="tel" id="telephone" name="telephone">
+								<input type="tel" id="telephone" name="telephone" required>
 
 								<label for="job">Role:</label>
-								<select id="job" name="user_role">
+								<select id="job" name="user_role" required>
 									<optgroup label="Doctor">
-										<option value="doctor">Doctor</option>
-										<option value="specialict_doctor">Specialist Doctor</option>
+										<option value="2">Doctor</option>
+										<option value="3">Specialist Doctor</option>
 									</optgroup>
 									<optgroup label="Pacient">
-										<option value="pacient">Pacient</option>
+										<option value="1">Pacient</option>
 									</optgroup>
-									<optgroup label="User">
-										<option value="user">User</option>
-									</optgroup>
-									<!-- <optgroup label="Administrator">
-										<option value="admin">Addministrator</option>
-									</optgroup> -->
 								</select>
 							</fieldset>
 							<button type="submit">Sign Up</button>
