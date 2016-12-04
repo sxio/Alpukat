@@ -1,5 +1,5 @@
 <?php
-	class model_Register extends CI_Model{
+	class Register_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
 		}
