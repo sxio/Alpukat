@@ -12,7 +12,7 @@
 			$query = $this->db->get_where('MSTUSER', $data);
 			$row = $query->num_rows();
 			if($row === 1){
-				foreach($query->row_array() as $mstuser){
+				foreach($query->result_array() as $mstuser){
 					$this->session->nama = $mstuser['USER_NAME'];
 					break;
 				}
