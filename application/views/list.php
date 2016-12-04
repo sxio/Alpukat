@@ -123,8 +123,14 @@
 					<div class="panel panel-body">
 						<div class="row">
 							<div class="col-sm-2 text-left">
-					        	<div class="profile_image">
-								<img src="<?php echo base_url() ?>assets/img/doctor.jpg">
+								<div class="row">
+						        	<div class="profile_image">
+									<img src="<?php echo base_url() ?>assets/img/doctor.jpg">
+									</div>
+								</div>
+								<div class="row text-center">
+									</br>
+									<button type="button" class="btn btn-primary btnBooking">Booking</button>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
