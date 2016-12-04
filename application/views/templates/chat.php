@@ -1,4 +1,6 @@
-<?php echo link_tag('assets/css/main.css') ?>
+<?php
+	if($this->session->tempdata('username') != NULL) {
+?>
 <span class="fa-stack fa-lg chat_open" id="chatIcon">
 	<div class="fa fa-circle fa-stack-2x"></div>
 	<div class="fa fa-comments fa-stack-1x fa-inverse"></div>
@@ -26,3 +28,4 @@
 		</form>
 	</div>
 </div>
+<?php } ?>

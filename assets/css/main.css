@@ -27,7 +27,7 @@ body {
   border: none;
   height: 20px;
 }
-.container #myNavbar ul li a,
+.container #myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{
   color: white;
 }
@@ -127,7 +127,7 @@ body {
 }
 #o_services .explain img{
   width: 100%;
-  margin: 0 
+  margin: 0
 }
 #startchange{
   /*background-color: #4286f4;*/

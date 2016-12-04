@@ -14,7 +14,7 @@
 				if($res === 1){
 					$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Login Success!</div>');
 					sleep(1.5);
-					redirect('home');
+					redirect();
 				} else{
 					// error => duplicate
 					$this->session->set_flashdata('msgLogin','<div class="alert alert-danger text-center">Login Failed. Try Again!</div>');

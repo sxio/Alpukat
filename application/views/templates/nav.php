@@ -10,14 +10,28 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<?php 
-					if(isset($this->session->nama)){
-						$loginUser = $this->session->nama;
+				<?php
+					if($this->session->tempdata('nama') != NULL){
+						$loginUser = $this->session->tempdata('nama');
 					} else{
 						$loginUser = "USER";
 					}
 				?>
-				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
+				<?php
+					if($this->session->tempdata('username') == NULL){
+				?>
+						<li><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
+				<?php } else { ?>
+						<li class="dropdown">
+							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?>
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="<?php base_url()?>logout/log_out"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+							</ul>
+						</li>
+				<?php
+					}
+				?>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
 				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
