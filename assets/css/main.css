@@ -32,6 +32,7 @@ body {
 }
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
   color: #16BFFD;
+  cursor: pointer;
 }
 
 .container #myNavbar .nav .open>a,

@@ -1,7 +1,7 @@
 .navbar-default{
 	background-color: #4286f4!important;
 }
-#myNavbar ul li a,
+#myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{
 	color: white!important;
 }
