@@ -12,17 +12,26 @@
 </head>
 <body>
 	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php 
+		if($this->session->flashdata('msgRegis') != NULL){
+			$activeL = '';
+			$activeR = 'active';
+		} else{
+			$activeL = 'active';
+			$activeR = '';
+		}
+	?>
 	<!-- Tab -->
 	<div class="container text-center" id="user">
 		<ul class="nav nav-pills">
-			<li class="active"><a href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
-			<li><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
+			<li class="<?php echo $activeL; ?>"><a href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
+			<li class="<?php echo $activeR; ?>"><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
 		</ul>
 	</div>
 	<!-- Tab Content -->
 	<div id="account" class="container">
 		<div class="tab-content clearfix">
-			<div class="tab-pane active" id="logIn">
+			<div class="tab-pane <?php echo $activeL; ?>" id="logIn">
 				<div class="wrapper">
 					<form class="login">
 						<h1>Log In</h1>
@@ -40,7 +49,7 @@
 				</div>
 			</div>
 			<!--	-->
-			<div class="tab-pane" id="register">
+			<div class="tab-pane <?php echo $activeR; ?>" id="register">
 				<!-- Meikelwis 27 Nov 16 -->
 				<!-- <form action="index.html" method="post" class="register" id="formRegister"> -->
 				<?php
@@ -48,6 +57,7 @@
 					echo form_open('register/regis', $attrib);
 				?>
 					<h1>Sign Up</h1>
+					<?php echo $this->session->flashdata('msgRegis'); ?>
 					<div class="row">
 						<div class="col-sm-6">
 							<fieldset class="register" id="basic">
