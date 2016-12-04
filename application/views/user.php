@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo ucfirst($title) ?></title>
+	<title>Avocado | User</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<?php echo link_tag('assets/css/login.css') ?>
