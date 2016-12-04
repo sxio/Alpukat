@@ -10,7 +10,7 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
-<body>
+<body id="bckimg">		
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<?php 
 		if($this->session->flashdata('msgRegis') != NULL || validation_errors() != null){

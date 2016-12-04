@@ -4,7 +4,7 @@
   box-sizing: border-box;
   outline: none;
 }
-body{
+body#bckimg{
   background-image: url('../img/doctor wall 3.jpg');
   background-size: 100%;
   background-attachment: fixed;
