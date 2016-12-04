@@ -12,7 +12,7 @@
 	  	<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 	  	<h3>We specialize in Health Care Application</h3>
 	  	<form class="form-inline" action="list">
-	    	<input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required>
+	    	<input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
 	    	<a href="list" type="button" class="btn btn-info">Search</a>
 	  	</form>
 	</div>
@@ -44,10 +44,10 @@
 					<h1 class="text-center">
 						Our Services
 					</h1>
-						
+
 					<div class="row first_service">
 						<div class="col-sm-3 serve text-center">
-							<a href=""><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
+							<a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center">
 							<a href=""><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
@@ -261,7 +261,7 @@
 					  	</div>
 					  	<button type="submit" class="btn btn-info">Submit</button>
 					</form>
-				</div>		
+				</div>
 			</div>
 		</div>
 	</section>

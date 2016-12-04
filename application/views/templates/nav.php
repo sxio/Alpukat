@@ -23,7 +23,11 @@
 				?>
 				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> USER</a></li>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
+<<<<<<< HEAD
 				<li><a target="_blank" href="http://alpukat.indonesianforum.net/"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
+=======
+				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
+>>>>>>> 2873b272e5a972e5025b22eaded6672d814d4663
 				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
 				<li><a href="#about"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
 			</ul>
