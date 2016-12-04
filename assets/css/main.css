@@ -211,3 +211,7 @@ body {
   width: 450px;
   height: 450px;
 }
+/*FADE IN EFFECT FOR JQUERY*/
+.fades{
+  opacity :0;
+}
