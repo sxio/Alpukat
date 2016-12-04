@@ -10,7 +10,14 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> USER</a></li>
+				<?php 
+					if(isset($this->session->nama)){
+						$loginUser = $this->session->nama;
+					} else{
+						$loginUser = "USER";
+					}
+				?>
+				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
 				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>

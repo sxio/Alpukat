@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo ucfirst($title) ?></title>
+	<title>Avocado | User</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<?php echo link_tag('assets/css/login.css') ?>
@@ -10,10 +10,10 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
-<body>
+<body id="bckimg">		
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<?php 
-		if($this->session->flashdata('msgRegis') != NULL || validation_errors() != null){
+		if(isset($err_regis) || $this->session->flashdata('msgRegis') != NULL){
 			$activeL = '';
 			$activeR = 'active';
 		} else{
@@ -33,8 +33,20 @@
 		<div class="tab-content clearfix">
 			<div class="tab-pane <?php echo $activeL; ?>" id="logIn">
 				<div class="wrapper">
-					<form class="login">
+					<?php
+						$attrib = array('class' => 'login');
+						echo form_open('login/log_in', $attrib);
+					?>
 						<h1>Log In</h1>
+						<?php
+							if($this->session->flashdata('msgLogin') != NULL){
+								echo $this->session->flashdata('msgLogin');
+							}
+							if(isset($err_login) && $err_login != NULL){
+								$validError = "<div class='alert alert-danger text-center'>". $err_login . "</div>";
+								echo $validError;
+							}
+						?>
 						<input type="text" placeholder="Username" name="LuserName">
 						<i class="fa fa-user"></i>
 
@@ -62,8 +74,8 @@
 						if($this->session->flashdata('msgRegis') != NULL){
 							echo $this->session->flashdata('msgRegis');
 						}
-						if(validation_errors() != NULL){
-							$validError = "<div class='alert alert-danger text-center'>". validation_errors(). "</div>";
+						if(isset($err_regis) && $err_regis != NULL){
+							$validError = "<div class='alert alert-danger text-center'>". $err_regis. "</div>";
 							echo $validError;
 						}
 					?>
@@ -81,12 +93,16 @@
 								<input type="email" name="user_email" value="<?php echo set_value('user_email') ?>">
 
 								<label for="password">Password:</label>
-								<input type="password" name="user_password" value="<?php echo set_value('user_password') ?>">
+								<input type="password" name="user_password">
+
+								<label for="password">Confirm Password:</label>
+								<input type="password" name="user_password_conf">
 							</fieldset>
 						</div>
 						<div class="col-sm-6">
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
+								
 								<label for="date_birth">Birthday:</label>
 								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 
