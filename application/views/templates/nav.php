@@ -25,7 +25,7 @@
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
 				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
-				<li><a href="#about"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
+				<li><a href="<?php echo base_url('about_us') ?>"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
 			</ul>
 		</div>
 	</div>
