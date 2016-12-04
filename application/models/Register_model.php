@@ -15,7 +15,8 @@
 				'TELEPHONE' => $this->input->post('telephone'),
 				'USER_LEVEL' => $this->input->post('user_role')
 			);
-			return $this->db->insert('MSTUSER',$data);
+			$this->db->insert('MSTUSER',$data);
+			return $this->db->error();
 		}
 	}
 ?>
