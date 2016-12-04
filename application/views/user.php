@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo ucfirst($title) ?></title>
+	<title>Avocado | User</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<?php echo link_tag('assets/css/login.css') ?>
@@ -10,7 +10,7 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
-<body>
+<body id="bckimg">		
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<?php 
 		if(isset($err_regis) || $this->session->flashdata('msgRegis') != NULL){
