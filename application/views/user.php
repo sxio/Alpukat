@@ -35,17 +35,18 @@
 				<div class="wrapper">
 					<form class="login">
 						<h1>Log In</h1>
-						<input type="text" placeholder="Username" autofocus/>
+						<input type="text" placeholder="Username" name="LuserName">
 						<i class="fa fa-user"></i>
-						<input type="password" placeholder="Password" />
+
+						<input type="password" placeholder="Password" name="Lpassword">
 						<i class="fa fa-key"></i>
+
 						<a href="#" id="forgotPass">Forgot your password <i class="fa fa-question-circle fa-fw"></i></a>
 						<button id="btnLogIn">
 							<i class="spinner"></i>
 							<span class="state">Log in</span>
 						</button>
 					</form>
-					</p>
 				</div>
 			</div>
 			<!--	-->
@@ -71,34 +72,32 @@
 							<fieldset class="register" id="basic">
 								<legend><span class="number">1</span>Your basic info</legend>
 								<label for="userid">Username:</label>
-								<input type="text" id="userid" name="user_id" value="<?php echo set_value('user_id') ?>">
+								<input type="text" name="user_id" value="<?php echo set_value('user_id') ?>">
 
 								<label for="name">Full Name:</label>
-								<input type="text" id="name" name="user_name" value="<?php echo set_value('user_name') ?>">
+								<input type="text" name="user_name" value="<?php echo set_value('user_name') ?>">
 
 								<label for="mail">Email:</label>
-								<input type="email" id="mail" name="user_email" value="<?php echo set_value('user_email') ?>">
+								<input type="email" name="user_email" value="<?php echo set_value('user_email') ?>">
 
 								<label for="password">Password:</label>
-								<input type="password" id="password" name="user_password" value="<?php echo set_value('user_password') ?>">
-
-
+								<input type="password" name="user_password" value="<?php echo set_value('user_password') ?>">
 							</fieldset>
 						</div>
 						<div class="col-sm-6">
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
 								<label for="date_birth">Birthday:</label>
-								<input type="date" id="date_birth" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
+								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 
 								<label for="handphone">Handphone</label>
-								<input type="tel" id="handphone" name="handphone" value="<?php echo set_value('handphone') ?>">
+								<input type="tel" name="handphone" value="<?php echo set_value('handphone') ?>">
 
 								<label for="telephone">Telephone</label>
-								<input type="tel" id="telephone" name="telephone" value="<?php echo set_value('telephone') ?>">
+								<input type="tel" name="telephone" value="<?php echo set_value('telephone') ?>">
 
 								<label for="job">Role:</label>
-								<select id="job" name="user_role" value="<?php echo set_value('user_role') ?>">
+								<select name="user_role" value="<?php echo set_value('user_role') ?>">
 									<optgroup label="Doctor">
 										<option value="2">Doctor</option>
 										<option value="3">Specialist Doctor</option>
