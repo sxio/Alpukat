@@ -6,15 +6,38 @@ $(document).ready(function(){
     $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#0087a2');
+          $(".navbar-default").css('background-color', '#4286f4');
+          $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
+          $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
+            $(this).css('color','black');
+          },function(){
+            $(this).css('color','white');
+          });
+
        } else {
           $('.navbar-default').css('background-color', 'transparent');
+          $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
+          $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
+            $(this).css('color','#16BFFD');
+          }, function(){
+            $(this).css('color','white');
+          });
        }
     });
   }
   setInterval(blinker,1500);
-
+  // Initialize the chat plugin
+  $('#chat_popup').popup({
+    blur: false,
+    transition: 'all 0.8s',
+    openelement: '.chat_open',
+    closeelement: '.chat_close'
+  });
+  $("#chat_open").click(function(){
+    alert("hello");
+  });
 });
+
 //Meikelwis 25-10-16
 function blinker(){
   $('.blink_me').fadeOut(500);

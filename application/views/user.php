@@ -2,102 +2,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo ucfirst($title) ?></title>
+	<title>Avocado | User</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
-	<?php echo link_tag('assets/css/main.css') ?>
 	<?php echo link_tag('assets/css/login.css') ?>
 	<?php echo link_tag('assets/css/register.css') ?>
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
-<body>
+<body id="bckimg">		
 	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php 
+		if(isset($err_regis) || $this->session->flashdata('msgRegis') != NULL){
+			$activeL = '';
+			$activeR = 'active';
+		} else{
+			$activeL = 'active';
+			$activeR = '';
+		}
+	?>
 	<!-- Tab -->
 	<div class="container text-center" id="user">
 		<ul class="nav nav-pills">
-			<li class="active"><a  href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
-			<li><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
+			<li class="<?php echo $activeL; ?>"><a href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
+			<li class="<?php echo $activeR; ?>"><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
 		</ul>
 	</div>
 	<!-- Tab Content -->
 	<div id="account" class="container">
 		<div class="tab-content clearfix">
-			<div class="tab-pane active" id="logIn">
+			<div class="tab-pane <?php echo $activeL; ?>" id="logIn">
 				<div class="wrapper">
-					<form class="login">
+					<?php
+						$attrib = array('class' => 'login');
+						echo form_open('login/log_in', $attrib);
+					?>
 						<h1>Log In</h1>
-						<input type="text" placeholder="Username" autofocus/>
+						<?php
+							if($this->session->flashdata('msgLogin') != NULL){
+								echo $this->session->flashdata('msgLogin');
+							}
+							if(isset($err_login) && $err_login != NULL){
+								$validError = "<div class='alert alert-danger text-center'>". $err_login . "</div>";
+								echo $validError;
+							}
+						?>
+						<input type="text" placeholder="Username" name="LuserName">
 						<i class="fa fa-user"></i>
-						<input type="password" placeholder="Password" />
+
+						<input type="password" placeholder="Password" name="Lpassword">
 						<i class="fa fa-key"></i>
+
 						<a href="#" id="forgotPass">Forgot your password <i class="fa fa-question-circle fa-fw"></i></a>
 						<button id="btnLogIn">
 							<i class="spinner"></i>
 							<span class="state">Log in</span>
 						</button>
 					</form>
-					</p>
 				</div>
 			</div>
-			<!--  -->
-			<div class="tab-pane" id="register">
+			<!--	-->
+			<div class="tab-pane <?php echo $activeR; ?>" id="register">
 				<!-- Meikelwis 27 Nov 16 -->
-				<form action="index.html" method="post" class="register" id="formRegister">
+				<!-- <form action="index.html" method="post" class="register" id="formRegister"> -->
+				<?php
+					$attrib = array('class' => 'register');
+					echo form_open('register/regis', $attrib);
+				?>
 					<h1>Sign Up</h1>
+					<?php
+						if($this->session->flashdata('msgRegis') != NULL){
+							echo $this->session->flashdata('msgRegis');
+						}
+						if(isset($err_regis) && $err_regis != NULL){
+							$validError = "<div class='alert alert-danger text-center'>". $err_regis. "</div>";
+							echo $validError;
+						}
+					?>
 					<div class="row">
 						<div class="col-sm-6">
 							<fieldset class="register" id="basic">
-							  <legend><span class="number">1</span>Your basic info</legend>
-							  <label for="name">Name:</label>
-							  <input type="text" id="name" name="user_name">
+								<legend><span class="number">1</span>Your basic info</legend>
+								<label for="userid">Username:</label>
+								<input type="text" name="user_id" value="<?php echo set_value('user_id') ?>">
 
-							  <label for="mail">Email:</label>
-							  <input type="email" id="mail" name="user_email">
+								<label for="name">Full Name:</label>
+								<input type="text" name="user_name" value="<?php echo set_value('user_name') ?>">
 
-							  <label for="password">Password:</label>
-							  <input type="password" id="password" name="user_password">
+								<label for="mail">Email:</label>
+								<input type="email" name="user_email" value="<?php echo set_value('user_email') ?>">
 
-							  <label for="date_birth">Date Time:</label>
-							  <input type="date" id="date_birth" name="date_birth">
+								<label for="password">Password:</label>
+								<input type="password" name="user_password">
 
-
-							  <label>Age:</label>
-							  <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-							  <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
+								<label for="password">Confirm Password:</label>
+								<input type="password" name="user_password_conf">
 							</fieldset>
 						</div>
 						<div class="col-sm-6">
 							<fieldset class="register" id="profile">
-							  <legend><span class="number">2</span>Your profile</legend>
-							  <label for="bio">Biography:</label>
-							  <textarea id="bio" name="user_bio"></textarea>
+								<legend><span class="number">2</span>Your profile</legend>
+								
+								<label for="date_birth">Birthday:</label>
+								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 
-							  <label for="handphone">Handphone</label>
-							  <input type="tel" id="handphone" name="handphone">
+								<label for="handphone">Handphone</label>
+								<input type="tel" name="handphone" value="<?php echo set_value('handphone') ?>">
 
-							  <label for="telephone">Telephone</label>
-							  <input type="tel" id="telephone" name="telephone">
-							<label for="job">Role:</label>
-							<select id="job" name="user_role">
-							  <optgroup label="Doctor">
-							    <option value="doctor">Doctor</option>
-							    <option value="specialict_doctor">Specialist Doctor</option>
-							  </optgroup>
-							  <optgroup label="Pacient">
-							    <option value="pacient">Pacient</option>
-							  </optgroup>
-							  <optgroup label="User">
-							    <option value="user">User</option>
-							  </optgroup>
-							  <optgroup label="Administrator">
-							    <option value="admin">Addministrator</option>
-							  </optgroup>
-							</select>
-							  <label>Interests:</label>
-							  <input type="checkbox" id="health" value="health" name="user_interest"><label class="light" for="health">Health</label><br>
-							    <input type="checkbox" id="charity" value="charity" name="user_interest"><label class="light" for="donate">Charity</label><br>
-							  <input type="checkbox" id="business" value="business" name="user_interest"><label class="light" for="business">Business</label>
+								<label for="telephone">Telephone</label>
+								<input type="tel" name="telephone" value="<?php echo set_value('telephone') ?>">
+
+								<label for="job">Role:</label>
+								<select name="user_role" value="<?php echo set_value('user_role') ?>">
+									<optgroup label="Doctor">
+										<option value="2">Doctor</option>
+										<option value="3">Specialist Doctor</option>
+									</optgroup>
+									<optgroup label="Pacient">
+										<option value="1">Pacient</option>
+									</optgroup>
+								</select>
 							</fieldset>
 							<button type="submit">Sign Up</button>
 						</div>

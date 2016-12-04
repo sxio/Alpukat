@@ -4,7 +4,12 @@
   box-sizing: border-box;
   outline: none;
 }
-
+body#bckimg{
+  background-image: url('../img/doctor wall 3.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 #account,
 .nav-pills{
   font-family: 'Poiret One', cursive;
@@ -12,17 +17,21 @@
 #user{
   margin-top: 65px;
 }
-.navbar-default {
-  background-color: #0087a2;
-}
+
 #user .nav-pills{
   width: 500px;
   margin: 0 auto;
   font-size: 20px;
 }
 #user .nav-pills > li > a {
-  border-radius: 0;
+  border-radius: 5px;
   width: 248px;
+  color: #4286f4;
+  font-weight: bold;
+}
+#user .nav-pills > li.active a{
+  background-color: #4286f4;
+  color: white;
 }
 
 @keyframes spinner {
@@ -65,13 +74,15 @@
 .login.loading button {
   max-height: 100%;
   padding-top: 50px;
+  background-color: yellow;
+  color: black;
 }
 .login.loading button .spinner {
   opacity: 1;
   top: 40%;
 }
 .login.ok button {
-  background-color: #8bc34a;
+  background-color: green;
 }
 .login.ok button .spinner {
   border-radius: 0;
@@ -103,7 +114,7 @@
 .login input:focus {
   outline: none;
   color: #444;
-  border-color: #2196F3;
+  border-color: #4286f4;
   border-left-width: 35px;
 }
 .login input:focus + i.fa {
@@ -129,7 +140,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 10px;
-  background: #2196F3;
+  background: #4286f4;
   color: #fff;
   display: block;
   border: none;
@@ -138,11 +149,14 @@
   left: 0;
   bottom: 0;
   max-height: 60px;
-  border: 0px solid rgba(0, 0, 0, 0.1);
+  border: 0px solid #0575e6;
   border-radius: 0 0 2px 2px;
   transform: rotateZ(0deg);
   transition: all 0.1s ease-out;
   border-bottom-width: 7px;
+}
+.login button:hover{
+  background-color: #0575e6;
 }
 .login button .spinner {
   display: block;
@@ -171,4 +185,5 @@
 #forgotPass{
   font-weight: 800;
   font-size: 15px;
+  color: #4286f4;
 }

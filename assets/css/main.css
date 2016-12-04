@@ -1,16 +1,19 @@
 @import url('login.css');
+@import url('chat.css');
 
 @font-face {
   font-family: acceleration;
   src: url("../fonts/Acceleration & Reaction.ttf");
 }
 
-.hitam{
-  color: black!important;
+/*.hitam{
+  font-weight: bold;
+  color: white!important;
+  margin-bottom: 30px!important;
 }
-
+*/
 body {
-  background-color: skyblue;
+  background-color: white;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
 }
@@ -24,168 +27,199 @@ body {
   height: 20px;
 }
 .container #myNavbar ul li a,
-.container .navbar-header a.navbar-brand {
+.container .navbar-header a.navbar-brand{
   color: white;
-  font-weight: bold;
 }
-.container #myNavbar ul li a:hover {
-  color: lightblue;
-  border-radius: 5px;
+.container .navbar-header a.navbar-brand{
+  font-size: 80px;
+  font-weight: normal;
+  font-family: acceleration;
+}
+.container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
+  color: #16BFFD;
 }
 .jumbotron {
   height: 650px;
-  background-image: url("../img/health.jpg");
+  background-image: url("../img/runner.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 150px;
+  padding-top: 100px;
   color: white;
+  margin-bottom: 0;
 }
 .jumbotron h3 {
   font-style: italic;
+  color: white;
+  font-weight: bold;
 }
 .jumbotron h1 {
   font-family: acceleration;
-  font-size: 150px;
+  font-size: 200px;
   margin-bottom: 0px;
 }
-#startchange {
-  text-align: justify;
-}
-#startchange .cmain {
-  width: 95%;
-  background-color: #cecece;
-  /*background-color: rgba(26, 188, 156, 0.65);*/
-  padding: 10px 30px;
-  box-shadow: 10px 10px 5px grey;
-  margin-bottom: 30px;
-}
-#startchange .cmain h2 {
-  color: white;
-}
-#startchange .container .row .col-sm-6 h2 {
-  font-weight: bold;
-}
-#startchange .container .row .leftedge {
-  padding: 20px 30px;
-  background-color: white;
-}
-#startchange .container .row .rightedge {
-  padding: 0px 30px;
-}
-#startchange .container .row .leftedge #myCarousel {
-  box-shadow: 50px;
-}
-#startchange .container .row .leftedge #myCarousel .carousel-inner a {
-  color: white;
-}
-#startchange .container .row .leftedge #myCarousel .carousel-inner .carousel-caption {
-  top: 30%;
-  left: 5%;
-  text-align: justify;
-}
-#startchange .container .row .leftedge a.news:hover {
-  text-decoration: none;
-}
-#startchange .container .row .rightedge .today_news {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 9px;
-  border-left: 5px solid orange;
-}
-#startchange .container .row .rightedge .today_news .news_title a {
+#o_services{
   color: black;
+  padding: 30px 40px;
+  /*border-bottom: 5px solid #4286f4;*/
+  /*border-top: 5px solid #4286f4;*/
+  /*margin-bottom: 5px;*/
+  /*margin-top: 5px;*/
+  background-image: url('../img/bg1.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#o_services .fe{
+  /*padding : 50px 40px;*/
+}
+#o_services h1{
+  margin-bottom: 40px;
+}
+#o_services .serve i{
+  background-color: #4286f4;
+  color: white;
+  border-radius: 500px;
+  transition: 0.2s;
+}
+#o_services .serve i.new{
+  padding: 17px 80px 17px 13px;
+}
+#o_services .serve i.forums{
+  padding: 10px 5px 10px 10px;
+}
+#o_services .serve i.store{
+  padding: 10px 50px 10px 10px;
+}
+#o_services .serve i.consul, i.bell, i.histo{
+  padding: 10px;
+}
+#o_services .serve i.money{
+  padding: 17px 74px 17px 15px;
+}
+#o_services .serve a{
+  text-decoration: none;
+  color: #4286f4;
   font-weight: bold;
-  font-size: 15px;
 }
-#startchange .container .row .rightedge .today_news:hover {
+#o_services .serve a:hover i{
   transform: scale(1.05, 1.1);
-  border-left: 10px solid orange;
+  transition: 0.2s;
 }
-#startchange .container .row .rightedge .news_image {
-  padding: 0;
+#o_services .serve h4{
+  display: inline-block;
 }
-#startchange .container .row .rightedge .news_image img {
-  width: 135px;
-  height: 85px;
+#o_services .serve h4:hover{
+  color: black;
+  font-weight: bolder;
 }
-#startchange .container .row .rightedge .news_title {
-  text-align: left;
+#o_services .first_service{
+  margin-bottom: 80px;
 }
-#about {
+#o_services .explain{
+  /*margin-top: 100px;*/
   background-color: white;
-  text-align: justify;
-  padding-top: 10px;
+  border-radius:10px;
+  padding: 10px;
+  box-shadow: 5px 7px grey;
+  /*color: white;*/
 }
-#about .img_about img {
+#o_services .explain img{
+  width: 100%;
+  margin: 0 
+}
+#startchange{
+  /*background-color: #4286f4;*/
+  /*background-image: url('../img/dots.png');*/
+  padding: 60px;
+  color:#545659;
+  /*border-bottom: 1px solid grey; */
+}
+#startchange h1{
+  margin-bottom: 50px;
+}
+#startchange .doc img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  border:2px solid grey;
+}
+#wts{
+  background-color: #4286f4;
+  padding: 50px;
+}
+#wts h1.say{
+  margin-bottom: 50px;
+  color: white;
+}
+#wts #myCarousel{
+  padding: 0 100px;
+}
+#wts #myCarousel .carousel-inner img{
+  /*margin: 0 auto;*/
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+#wts #myCarousel .carousel-inner .carousel-caption{
+  padding: 60px 70px;
+  /*text-align: justify;*/
+}
+#wts #myCarousel a.left_fa{
+  padding-right: 100px;
+}
+#wts #myCarousel a.right_fa{
+  right: 0;
+  left: auto;
+}
+#deal{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+#deal .item1{
+  border-radius: 10px;
+  /*padding: 30px;*/
+  background: #00fff2;
+  position: relative;
+}
+#deal .item1 h1{
+  position: absolute;
+  margin:20px;
+}
+#deal .item1 img{
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+#complain_id{
+  background-color: #f2f2f2;
+  color: #545659;
+  text-align: justify;
+  padding: 40px 30px;
+}
+#complain_id img.csg{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#complain_id h1.cs{
+  margin-bottom: 50px;
+}
+#complain_id .img_complain_id img {
   width: 450px;
   height: 450px;
 }
-/*MODALS*/
-#sign input.form-control,
-#sign button.form-control {
-  width: 48%;
+/*FADE IN EFFECT FOR JQUERY*/
+.fadesleft{
+  opacity :0;
+  left: -250px;
 }
-#sign #forgotPwd {
-  margin-left: 27%;
+.fadesright{
+  opacity :0;
+  right: -250px;
 }
-#signIn_signUp .nav-pills > li > a {
-  border-radius: 0;
-  padding-left: 106px;
-  padding-right: 106px;
-}
-footer.foot{
-  padding: 10px 70px;
-  color: darkblue;
-  font-weight: bolder;
-}
-footer.foot .row{
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-footer.foot .complain-form{
-  margin-top: 10px;
-}
-footer.foot h4.info{
-  margin-bottom: 40px;
-}
-footer.foot div.surel ul.list-unstyled li{
-  padding-left: 33px;
-  margin: 10px 0;
-  font-weight: bold;
-}
-footer.foot div.surel ul.list-unstyled li a{
-  color: darkblue;
-}
-footer.foot div.surel ul.list-unstyled li a:hover{
-  text-decoration: none;
-}
-footer.foot div.surel ul.list-unstyled li i{
-  margin-right: 10px;
-  vertical-align: middle;
-  background-color: white;
-  padding: 10px;
-  border-radius: 200px;
-}
-footer.foot div.surel ul.list-unstyled li i:hover{
-  background-color: darkblue;
-  color: white;
-}
-footer.foot div.surel ul.list-unstyled li i.oval{
-  padding: 10px 17px;
-  border-radius: 200px;
-}
-footer.foot div.surel ul.list-unstyled li i.oval_t{
-  padding: 10px 15px;
-  border-radius: 200px;
-}
-footer.foot div.surel ul.list-unstyled li i.round{
-  padding: 10px 13px;
-  border-radius: 200px;
-}
-footer.foot .services{
-  text-align: left;
-  /*padding: 0 10px;*/
-}
-footer.foot .services li{
-  margin: 10px 0;
+.fades{
+  opacity :0;
 }

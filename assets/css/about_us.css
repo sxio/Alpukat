@@ -1,0 +1,10 @@
+#us{
+	margin-top: 50px;
+	padding-top: 170px;
+}
+#us .member img{
+	width: 200px;
+	height: 200px;
+	border-radius: 500px;
+	margin: 0 auto;
+}

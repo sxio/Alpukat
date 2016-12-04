@@ -1,0 +1,11 @@
+.navbar-default{
+	background-color: #4286f4!important;
+}
+#myNavbar ul li a, 
+.container .navbar-header a.navbar-brand{
+	color: white!important;
+}
+#myNavbar ul li a:hover, 
+.navbar-default .container .navbar-header a.navbar-brand:hover{
+	color: black!important;
+}
