@@ -16,6 +16,7 @@ body {
   background-color: white;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
 }
 .navbar-fixed-top {
   background-color: transparent;
