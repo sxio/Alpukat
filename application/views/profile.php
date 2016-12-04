@@ -16,8 +16,13 @@
 				<div class="col-md-4 text-center">
 					<div class="panel panel-success">
 						<div class="panel panel-heading">
-							<img src="assets/img/user.jpg" class="img-circle" id="foto">
-							<h2><i class="fa fa-user fa-fw">Personal Information</i></h2> <!--// Meikelwis 25/10/16-->
+							<div class="row">
+								<section>
+									<img src="assets/img/doctor.jpg" class="img-circle" id="foto">
+									
+									<h2>Personal Information</h2>	
+								</section>
+							</div>
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled info text-left">

@@ -130,29 +130,14 @@
 								</div>
 								<div class="row text-center">
 									</br>
-									<button type="button" class="btn btn-primary btnBooking">Booking</button>
+									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
+									<a type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
 								<h2 class="name"><a href="#">dr. Dokter 1</a></h2>
 								<h3 class="specialist">Specialist : Ahli Bedah</h3>
 								<h4 class="experience">Experience :30 Tahun</h4>
-								<!-- rating system -->
-								<div class="stars">
-								  	<form action="">
-								    	<input class="star star-5" id="star-52" type="radio" name="star"/>
-									    <label class="star star-5" for="star-52"></label>
-									    <input class="star star-4" id="star-42" type="radio" name="star"/>
-									    <label class="star star-4" for="star-42"></label>
-									    <input class="star star-3" id="star-32" type="radio" name="star"/>
-									    <label class="star star-3" for="star-32"></label>
-									    <input class="star star-2" id="star-22" type="radio" name="star"/>
-									    <label class="star star-2" for="star-22"></label>
-									    <input class="star star-1" id="star-12" type="radio" name="star"/>
-									    <label class="star star-1" for="star-12"></label>
-									 </form>
-								</div>
-								<!-- end of rating system -->
 								<div class="hargadanwaktu">
 									<div class="harga">
 										<i class="fa fa-money fa-fw"></i> <span class="nilai"><strong>Rp 100.000,-</strong></span>

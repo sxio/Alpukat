@@ -93,12 +93,16 @@
 								<input type="email" name="user_email" value="<?php echo set_value('user_email') ?>">
 
 								<label for="password">Password:</label>
-								<input type="password" name="user_password" value="<?php echo set_value('user_password') ?>">
+								<input type="password" name="user_password">
+
+								<label for="password">Confirm Password:</label>
+								<input type="password" name="user_password_conf">
 							</fieldset>
 						</div>
 						<div class="col-sm-6">
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
+								
 								<label for="date_birth">Birthday:</label>
 								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 
