@@ -130,8 +130,8 @@
 								</div>
 								<div class="row text-center">
 									</br>
-									<button type="button" class="btn btn-primary btnBooking">Booking</button>
-									<button type="button" class="btn btn-danger btnProfile">Profile</button>
+									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
+									<a type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
