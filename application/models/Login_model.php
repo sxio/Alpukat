@@ -13,6 +13,7 @@
 			$row = $query->num_rows();
 			if($row === 1){
 				foreach($query->result_array() as $mstuser){
+					$this->session->username = $mstuser['USER_ID'];
 					$this->session->nama = $mstuser['USER_NAME'];
 					break;
 				}
