@@ -6,12 +6,6 @@
   src: url("../fonts/Acceleration & Reaction.ttf");
 }
 
-/*.hitam{
-  font-weight: bold;
-  color: white!important;
-  margin-bottom: 30px!important;
-}
-*/
 body {
   background-color: white;
   font-weight: bold;
@@ -39,6 +33,21 @@ body {
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
   color: #16BFFD;
 }
+
+.container #myNavbar .nav .open>a,
+.container #myNavbar .nav .open>a:focus,
+.container #myNavbar .nav .open>a:hover{
+  background-color: transparent!important;
+}
+
+.container #myNavbar .navbar-default .navbar-nav>.open>a,
+.container #myNavbar .navbar-default .navbar-nav>.open>a:focus,
+.container #myNavbar .navbar-default .navbar-nav>.open>a:hover{
+  background-color: transparent!important;
+}
+
+@import url('nav.css');
+
 .jumbotron {
   height: 650px;
   background-image: url("../img/runner.jpg");
