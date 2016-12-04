@@ -4,3 +4,30 @@
   margin-top: 65px;
   font-family: 'Muli', sans-serif;
 }
+input.filter{
+	width: 50%;
+	display: inline-block;
+}
+input#findDoctor{
+	width: 46.65%;
+	display: inline-block;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+img{
+	width: 100%;
+}
+.profile{
+	padding :20px;
+}
+
+#icon-map{
+	margin-left: -30px;
+}
+#icon-search{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: 0;
+	margin-top: -2px;
+}

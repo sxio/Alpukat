@@ -7,9 +7,9 @@
 					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Mikroskil Gedung B</a></li>
 					<li><a href=""><i class="fa fa-phone fa-2x oval_t" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">(+62)812345678910</a></li>
 					<li><a href=""><i class="fa fa-envelope fa-2x"></i></a> <a href="" class="inform">stephen.huang96@gmail.com</a></li>
-					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
-					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
-					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Alpukat</a></li>
+					<li><a href=""><i class="fa fa-facebook-official fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Avocado</a></li>
+					<li><a href=""><i class="fa fa-twitter fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Avocado</a></li>
+					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Avocado</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 corporated">

@@ -10,17 +10,6 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<?php
-					$path = $_SERVER['REQUEST_URI'];
-					$filename = basename($path);
-					$news = "";
-					if($filename == "index" || $filename == "Alpukat"){
-						$news = "#startchange";
-					}
-					else if($filename == "list"){
-						$news = "#about";
-					}
-				?>
 				<li><a href="<?php echo base_url('user') ?>"><i class="fa fa-user fa-fw"></i> USER</a></li>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
