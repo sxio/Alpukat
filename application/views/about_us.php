@@ -19,14 +19,14 @@
 					<p class="text-center">141110043</p>
 				</div>
 				<div class="col-sm-4 member">
-					<img class="img-responsive" src="<?php echo base_url() ?>assets/img/141110868.jpg">
-					<p class="text-center">Stephen</p>
-					<p class="text-center">141110868</p>
-				</div>
-				<div class="col-sm-4 member">
 					<img class="img-responsive" src="<?php echo base_url() ?>assets/img/141112460.jpg">
 					<p class="text-center">Meikelwis Wijaya</p>
 					<p class="text-center">141112460</p>
+				</div>
+				<div class="col-sm-4 member">
+					<img class="img-responsive" src="<?php echo base_url() ?>assets/img/141110868.jpg">
+					<p class="text-center">Stephen</p>
+					<p class="text-center">141110868</p>
 				</div>
 			</div>
 		</div>

@@ -12,7 +12,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},1500);
+                $(this).animate({'opacity':'1'},700);
             }
             
         });
@@ -27,7 +27,7 @@ $(document).ready(function() {
                 $(this).animate({
                     'opacity':'1',
                     'left': '0px'
-                },1500);
+                },700);
                 
             }
             
@@ -43,7 +43,7 @@ $(document).ready(function() {
                 $(this).animate({
                     'opacity':'1',
                     'left': '0px'
-                },700);
+                },500);
                 
             }
             
@@ -59,7 +59,7 @@ $(document).ready(function() {
                 $(this).animate({
                     'opacity':'1',
                     'right': '0px'
-                },700);
+                },500);
                 
             }
             
