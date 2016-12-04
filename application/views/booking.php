@@ -4,7 +4,7 @@
 	<title>Doctors List</title>
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
-	<?php echo link_tag('assets/css/list.css') ?>
+	<?php echo link_tag('assets/css/booking.css') ?>
 	<?php echo link_tag('assets/css/rating.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
@@ -18,7 +18,7 @@
 				<div class="row">
 					<div class="panel panel-info">
 						<div class="panel-heading text-center">
-							<h4>Booking Transaction</h4>
+							<h3>Booking Transaction</h3>
 						</div>
 						<div class="panel-body">
 							<div class="booking-header">
@@ -58,7 +58,7 @@
 															<input type="text" class="form-control" id="BookCount">	
 														</div>
 														<div class="col-sm-3">
-															<input type="text" class="form-control" id="TotalAmount">	
+															<input type="text" class="form-control" id="TotalAmount">
 														</div>
 														<div class="col-sm-1">
 															<button type="submit" class="btn btn-primary btnSubmit">Submit</button>
@@ -67,69 +67,104 @@
 												</form>
 											</div>
 											<div class="panel-body">
-												<h3>Views</h3>
-												<form id = "viewBooking">
+												<form id = "booking-list text-left">
+													<h4>List Booking Doctor</h4>
+													</br>
 													<div class="form-group row">
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="DoctorsName" placeholder ="Doctor1" disabled>	
-														</div>
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="ServiceName" placeholder ="Service1" disabled>
-														</div>
-														<div class="col-sm-2">
-															<input type="text" class="form-control" id="BookCount" placeholder ="BookCount1" disabled>	
-														</div>
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="TotalAmount" placeholder ="TotalAmount1" disabled>	
-														</div>
-														<div class="col-sm-1">
-															<button type="submit" class="btn btn-primary btnRem">Remove</button>
-														</div>
-													</div>
-													<div class="form-group row">
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="DoctorsName" placeholder ="Doctor2" disabled>	
-														</div>
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="ServiceName" placeholder ="Service2" disabled>
-														</div>
-														<div class="col-sm-2">
-															<input type="text" class="form-control" id="BookCount" placeholder ="BookCount2" disabled>	
-														</div>
-														<div class="col-sm-3">
-															<input type="text" class="form-control" id="TotalAmount" placeholder ="TotalAmount2" disabled>	
-														</div>
-														<div class="col-sm-1">
-															<button type="submit" class="btn btn-primary btnRem">Remove</button>
-														</div>
+														<table class="table booking-list table-bordered table-responsive">
+														    <thead>
+														      <tr>
+														        <th class="col-sm-3">DoctorName</th>
+														        <th class="col-sm-3">ServiceName</th>
+														        <th class="col-sm-2">Count</th>
+														        <th class="col-sm-3">Total Amount</th>
+														      </tr>
+														    </thead>
+														    <tbody>
+														      <tr>
+														        <td class="col-sm-3">John</td>
+														        <td class="col-sm-3">Doe</td>
+														        <td class="col-sm-3">1</td>
+														        <td class="col-sm-3">2000000</td>
+														      </tr>
+														      <tr>
+														        <td class="col-sm-3">Mary</td>
+														        <td class="col-sm-3">Moe</td>
+														        <td class="col-sm-3">3</td>
+														        <td class="col-sm-3">35000000</td>
+														      </tr>
+														      <tr>
+														        <td class="col-sm-3">July</td>
+														        <td class="col-sm-3">Dooley</td>
+														        <td class="col-sm-3">4</td>
+														        <td class="col-sm-3">400000000</td>
+														      </tr>
+														    </tbody>
+														</table>
 													</div>
 												</form>
 											</div>
 										</div>
 									</div>
 									<div class="form-group row text-left">
-										<div class="col-sm-6"></div>
-										<label for="otherPayment" class="col-sm-2">
-											Other Payment
-										</label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" id="otherPayment" disabled>	
+										<div class="row">
+											<div class="col-sm-6"></div>
+											<div class="col-sm-6">
+												<div class="form-group row text-left">
+													<label for="otherPayment" class="col-sm-4">
+													Other Payment
+													</label>
+													<div class="col-sm-6">
+														<input type="text" class="form-control" id="otherPayment" disabled>	
+													</div>
+												</div>
+												<div class="form-group row text-left">
+													<label for="totalPayment" class="col-sm-4">
+														Total Payment
+													</label>
+													<div class="col-sm-6">
+														<input type="text" class="form-control" id="totalPayment" disabled>	
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div class="form-group row text-left">
-										<div class="col-sm-6"></div>
-										<label for="totalPayment" class="col-sm-2">
-											Total Payment
-										</label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" id="totalPayment" disabled>	
-										</div>
-									</div>
-								</form>
+									</div>	
+								</div>
 							</div>
-						<div class="panel-footer">
-							
-						</div>
+							<div class="panel-footer">
+								<div class="row">
+									<div class="col-sm-6">
+										<h4>History User</h4>
+										<table class="table booking-history">
+										    <thead>
+										      <tr>
+										        <th>DoctorName</th>
+										        <th>Total Booking</th>
+										        <th>Total Amount</th>
+										      </tr>
+										    </thead>
+										    <tbody>
+										      <tr>
+										        <td>John</td>
+										        <td>100</td>
+										        <td>2000000</td>
+										      </tr>
+										      <tr>
+										        <td>Mary</td>
+										        <td>22</td>
+										        <td>35000000</td>
+										      </tr>
+										      <tr>
+										        <td>July</td>
+										        <td>3</td>
+										        <td>400000000</td>
+										      </tr>
+										    </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</form>
