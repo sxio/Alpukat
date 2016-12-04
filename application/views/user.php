@@ -13,7 +13,7 @@
 <body>
 	<?php require_once __DIR__."/templates/nav.php"; ?>
 	<?php 
-		if($this->session->flashdata('msgRegis') != NULL || validation_errors() != null){
+		if(isset($err_regis) || $this->session->flashdata('msgRegis') != NULL){
 			$activeL = '';
 			$activeR = 'active';
 		} else{
@@ -33,8 +33,20 @@
 		<div class="tab-content clearfix">
 			<div class="tab-pane <?php echo $activeL; ?>" id="logIn">
 				<div class="wrapper">
-					<form class="login">
+					<?php
+						$attrib = array('class' => 'login');
+						echo form_open('login/log_in', $attrib);
+					?>
 						<h1>Log In</h1>
+						<?php
+							if($this->session->flashdata('msgLogin') != NULL){
+								echo $this->session->flashdata('msgLogin');
+							}
+							if(isset($err_login) && $err_login != NULL){
+								$validError = "<div class='alert alert-danger text-center'>". $err_login . "</div>";
+								echo $validError;
+							}
+						?>
 						<input type="text" placeholder="Username" name="LuserName">
 						<i class="fa fa-user"></i>
 
@@ -62,8 +74,8 @@
 						if($this->session->flashdata('msgRegis') != NULL){
 							echo $this->session->flashdata('msgRegis');
 						}
-						if(validation_errors() != NULL){
-							$validError = "<div class='alert alert-danger text-center'>". validation_errors(). "</div>";
+						if(isset($err_regis) && $err_regis != NULL){
+							$validError = "<div class='alert alert-danger text-center'>". $err_regis. "</div>";
 							echo $validError;
 						}
 					?>
