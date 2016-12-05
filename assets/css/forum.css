@@ -1,5 +1,10 @@
 @import url('nav.css');
 @import url('https://fonts.googleapis.com/css?family=Muli');
+
+.forum{
+	font-family: 'Muli';
+	font-size: 14px;
+}
 .forum.table > tbody > tr > td {
     vertical-align: middle;
 }
