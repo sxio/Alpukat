@@ -1,8 +1,10 @@
 @import url('nav.css');
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
-.forum{
+.container{
 	font-family: 'Muli';
+}
+.forum{
 	font-size: 14px;
 }
 .forum.table > tbody > tr > td {

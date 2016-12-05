@@ -12,7 +12,7 @@
 	<section id="content">
 		<div class="container" style="margin-top: 35px">
 			<div class="page-header page-heading">
-				<h1 class="pull-left">Forums</h1>
+				<h2 class="pull-left">Forums</h1>
 				<ol class="breadcrumb pull-right where-am-i">
 				  <li><a href="#">Forums</a></li>
 				  <li class="active">List of topics</li>
