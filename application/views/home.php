@@ -13,7 +13,7 @@
 	  	<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 	  	<h3>We specialize in Health Care Application</h3>
 	  	<form class="form-inline" action="list">
-	    	<input type="email" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
+	    	<input type="text" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
 	    	<a href="list" type="button" class="btn btn-info">Search</a>
 	  	</form>
 	</div>
@@ -107,7 +107,7 @@
 		  	</ol> -->
 
 		  <!-- Wrapper for slides -->
-		  	<div class="carousel-inner" role="listbox">
+		  	<div class="carousel-inner in" role="listbox">
 		    	<div class="item active">
 			  		<div class="container">
 				  		<div class="row">
@@ -263,7 +263,7 @@
 			</div>
 		</div>
 	</section>
-	<?php require_once __DIR__.'/footer.php'; ?>
+	<?php require_once __DIR__.'/templates/footer.php'; ?>
 	<?php require_once __DIR__.'/templates/chat.php'; ?>
 </body>
 </html>

@@ -33,8 +33,13 @@
 					}
 				?>
 				<li><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
+<<<<<<< HEAD
 				<li><a href="<?php echo base_url('forum/forum-home') ?>"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
 				<li><a href="#contact"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
+=======
+				<li><a href="http://alpukat.indonesianforum.net/" target="_blank"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
+				<li><a href="<?php echo base_url('estore') ?>"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
+>>>>>>> 1b0d3df9a04a898e0e375aee4695e1998c4677b3
 				<li><a href="<?php echo base_url('about_us') ?>"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li>
 			</ul>
 		</div>
