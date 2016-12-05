@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['logout/log_out'] = 'logout/log_out';
 $route['login/log_in'] = 'login/log_in';
 $route['register/regis'] = 'register/regis';
-$route['estore'] = 'estore/index';
+$route['estore'] = 'estore/view';
 $route['booking'] = 'booking/view';
 $route['profile'] = 'profile/view';
 $route['forum'] = 'forum/view';
