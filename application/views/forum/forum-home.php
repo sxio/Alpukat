@@ -11,7 +11,7 @@
   <?php require_once __DIR__."/../templates/nav.php"; ?>
 		<div id="forum-home" class="container">
 			<div class="page-header page-heading">
-				<h2 class="pull-left">Forums</h1>
+				<h2 class="pull-left">Forum</h1>
 				<ol class="breadcrumb pull-right where-am-i">
 				  <li><a href="#">Forums</a></li>
 				  <li class="active">List of topics</li>

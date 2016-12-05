@@ -6,6 +6,11 @@
 	padding: 0px;
 	font-family: 'Muli';
 }
+
 table.booking-list{
-	margin: 0px 10px;
+	margin: 0 auto;
+}
+
+.btnBook{
+	width: 100%;
 }

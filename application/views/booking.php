@@ -66,8 +66,8 @@
 											</form>
 										</div>
 										<div class="panel-body">
-											<form id = "booking-list text-left">
-												<h4>List Transactions</h4>
+											<form id = "booking-detail text-left">
+												<h4>Detail Transactions</h4>
 												</br>
 												<div class="form-group row">
 													<table class="table booking-list table-bordered table-responsive">
@@ -120,7 +120,7 @@
 												<label for="otherPayment" class="col-sm-4">
 												Other Payment
 												</label>
-												<div class="col-sm-6">
+												<div class="col-sm-7">
 													<input type="text" class="form-control" id="otherPayment" disabled>	
 												</div>
 											</div>
@@ -128,12 +128,16 @@
 												<label for="totalPayment" class="col-sm-4">
 													Total Payment
 												</label>
-												<div class="col-sm-6">
+												<div class="col-sm-7">
 													<input type="text" class="form-control" id="totalPayment" disabled>	
 												</div>
 											</div>
 										</div>
 									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6"></div>
+									<div class="col-sm-6"><button type="submit" class="btn btn-primary btnBook">Book Now</button></div>
 								</div>	
 							</div>
 						</div>
@@ -141,15 +145,17 @@
 						</br>
 						<div class="panel-footer">
 							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-12">
 									<h4>History User</h4>
-									<table class="table booking-history">
+									<table class="table table-bordered booking-history">
 									    <thead>
 									      <tr>
 									        <th>Booking No</th>
 									        <th>DoctorName</th>
 									        <th>Total Booking</th>
+									        <th>Total Other Payment</th>
 									        <th>Total Amount</th>
+									        <th>Last Booking Date</th>
 									      </tr>
 									    </thead>
 									    <tbody>
@@ -157,19 +163,25 @@
 									      	<td>BO16012343</td>
 									        <td>John</td>
 									        <td>100</td>
+									        <td>500000</td>
 									        <td>2000000</td>
+									        <td>11/01/2016</td>
 									      </tr>
 									      <tr>
 									      	<td>BO16012344</td>
 									        <td>Mary</td>
 									        <td>22</td>
+									        <td>300000</td>
 									        <td>35000000</td>
+									        <td>09/01/2016</td>
 									      </tr>
 									      <tr>
 									      	<td>BO16012348</td>
 									        <td>July</td>
 									        <td>3</td>
-									        <td>400000000</td>
+									        <td>40000</td>
+									        <td>40000000</td>
+									        <td>11/02/2016</td>
 									      </tr>
 									    </tbody>
 									</table>
