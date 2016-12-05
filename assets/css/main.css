@@ -6,16 +6,11 @@
   src: url("../fonts/Acceleration & Reaction.ttf");
 }
 
-/*.hitam{
-  font-weight: bold;
-  color: white!important;
-  margin-bottom: 30px!important;
-}
-*/
 body {
   background-color: white;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
 }
 .navbar-fixed-top {
   background-color: transparent;
@@ -26,7 +21,7 @@ body {
   border: none;
   height: 20px;
 }
-.container #myNavbar ul li a,
+.container #myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{
   color: white;
 }
@@ -34,10 +29,27 @@ body {
   font-size: 80px;
   font-weight: normal;
   font-family: acceleration;
+  padding-top: 10px;
 }
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
   color: #16BFFD;
+  cursor: pointer;
 }
+
+.container #myNavbar .nav .open>a,
+.container #myNavbar .nav .open>a:focus,
+.container #myNavbar .nav .open>a:hover{
+  background-color: transparent!important;
+}
+
+.container #myNavbar .navbar-default .navbar-nav>.open>a,
+.container #myNavbar .navbar-default .navbar-nav>.open>a:focus,
+.container #myNavbar .navbar-default .navbar-nav>.open>a:hover{
+  background-color: transparent!important;
+}
+
+@import url('nav.css');
+
 .jumbotron {
   height: 650px;
   background-image: url("../img/runner.jpg");
@@ -126,7 +138,7 @@ body {
 }
 #o_services .explain img{
   width: 100%;
-  margin: 0 
+  margin: 0
 }
 #startchange{
   /*background-color: #4286f4;*/
@@ -156,13 +168,13 @@ body {
 #wts #myCarousel{
   padding: 0 100px;
 }
-#wts #myCarousel .carousel-inner img{
+#wts #myCarousel .in img{
   /*margin: 0 auto;*/
   width: 250px;
   height: 250px;
   border-radius: 10px;
 }
-#wts #myCarousel .carousel-inner .carousel-caption{
+#wts #myCarousel .in .carousel-caption{
   padding: 60px 70px;
   /*text-align: justify;*/
 }

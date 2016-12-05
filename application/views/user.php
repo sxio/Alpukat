@@ -1,4 +1,5 @@
 <!-- Stephen 27 Nov 16 -->
+<?php if($this->session->tempdata('username') != NULL) redirect() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +11,9 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
 </head>
-<body id="bckimg">		
+<body id="bckimg">
 	<?php require_once __DIR__."/templates/nav.php"; ?>
-	<?php 
+	<?php
 		if(isset($err_regis) || $this->session->flashdata('msgRegis') != NULL){
 			$activeL = '';
 			$activeR = 'active';
@@ -102,7 +103,7 @@
 						<div class="col-sm-6">
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
-								
+
 								<label for="date_birth">Birthday:</label>
 								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 

@@ -13,7 +13,10 @@
 			$row = $query->num_rows();
 			if($row === 1){
 				foreach($query->result_array() as $mstuser){
-					$this->session->nama = $mstuser['USER_NAME'];
+					// $this->session->username = $mstuser['USER_ID'];
+					$this->session->set_tempdata('username', $mstuser['USER_ID'], 3600);
+					// $this->session->nama = $mstuser['USER_NAME'];
+					$this->session->set_tempdata('nama', $mstuser['USER_NAME'], 3600);
 					break;
 				}
 			}
