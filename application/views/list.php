@@ -5,7 +5,6 @@
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<?php echo link_tag('assets/css/list.css') ?>
-	<?php echo link_tag('assets/css/rating.css') ?>
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/list.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
@@ -131,7 +130,7 @@
 								<div class="row text-center">
 									</br>
 									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
-									<a type="button" class="btn btn-danger btnProfile">Profile</a>
+									<a href="<?php echo base_url('profile'); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">

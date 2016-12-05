@@ -5,7 +5,6 @@
 	<?php require_once __DIR__.'/templates/header.php'; ?>
 
 	<?php echo link_tag('assets/css/booking.css') ?>
-	<?php echo link_tag('assets/css/rating.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
@@ -168,7 +167,6 @@
 					</div>
 				</div>
 			</form>
-		</div>
 		</div>
 	</section>
 	<footer>
