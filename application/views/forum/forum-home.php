@@ -103,9 +103,7 @@
 			</table>
 		</div>
 	</section>
-	<footer>
-  <?php require_once __DIR__.'/../templates/footer.php'; ?>
-  <?php require_once __DIR__.'/../templates/chat.php'; ?>
-	</footer>
+	<?php require_once __DIR__.'/../templates/footer.php'; ?>
+	<?php require_once __DIR__.'/../templates/chat.php'; ?>
 </body>
 </html>
