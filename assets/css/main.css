@@ -167,13 +167,13 @@ body {
 #wts #myCarousel{
   padding: 0 100px;
 }
-#wts #myCarousel .carousel-inner img{
+#wts #myCarousel .in img{
   /*margin: 0 auto;*/
   width: 250px;
   height: 250px;
   border-radius: 10px;
 }
-#wts #myCarousel .carousel-inner .carousel-caption{
+#wts #myCarousel .in .carousel-caption{
   padding: 60px 70px;
   /*text-align: justify;*/
 }
