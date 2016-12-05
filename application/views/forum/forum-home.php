@@ -9,8 +9,7 @@
 </head>
 <body>
   <?php require_once __DIR__."/../templates/nav.php"; ?>
-	<section id="content">
-		<div class="container" style="margin-top: 35px">
+		<div id="forum-home" class="container">
 			<div class="page-header page-heading">
 				<h2 class="pull-left">Forums</h1>
 				<ol class="breadcrumb pull-right where-am-i">
@@ -102,7 +101,6 @@
 				</tbody>
 			</table>
 		</div>
-	</section>
 	<?php require_once __DIR__.'/../templates/footer.php'; ?>
 	<?php require_once __DIR__.'/../templates/chat.php'; ?>
 </body>

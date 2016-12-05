@@ -4,6 +4,9 @@
 .container{
 	font-family: 'Muli';
 }
+#forum-home{
+	margin-top: 40px;
+}
 .forum{
 	font-size: 14px;
 }
