@@ -150,19 +150,19 @@ ul.dropdown-cart li .item-right button{
   width: 100%;
 }
 
-#itemslider h4, #saleslider h4{
+#itemslider h4, #saleslider h4, #topslider h4{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   margin: 10px auto 3px;
 }
-#itemslider h5, #saleslider h5{
+#itemslider h5, #saleslider h5, #topslider h5{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-size: 12px;
   margin: 3px auto 2px;
 }
-#itemslider h6, #saleslider h6{
+#itemslider h6, #saleslider h6, #topslider h6{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;;
   font-size: 10px;

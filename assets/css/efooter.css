@@ -22,9 +22,10 @@ footer.efoot .payment{
 footer.efoot .payment img.banks{
   width: 100%;
   height: 100%;
-  border-right: 1px solid white;
+  /*border-right: 1px solid white;*/
   padding-right: 50px; 
 }
-footer.efoot .bot .comp{
-	/*padding: 10px;*/
+footer.efoot .bot .complain{
+	padding-left: 30px;
+	border-left: 1px solid white;
 }
