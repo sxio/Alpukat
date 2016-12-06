@@ -26,20 +26,8 @@
 #secondpart{
 	padding: 30px;
 }
-#secondpart .clearleft{
-	float: left;
-}
-#secondpart .clearright{
-	width: 80%;
-	float: left;
-	margin-left: 5px;
-}
-#secondpart .clearright .col-sm-5{
-	padding: 5px;
-}
-#secondpart .clearright img{
-	width: 100%;
-	height: 100%;
+#secondpart .container-fluid .col-sm-8{
+	margin-top: 20px;
 }
 /*CART*/
 ul.dropdown-cart{

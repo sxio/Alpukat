@@ -159,20 +159,30 @@
 		</div>
 	</section>
 	<section id="secondpart">
-		<div class="container">
-			<div class="clearleft">
+		<div class="container-fluid">
+			<div class="col-sm-2">
 				<img src="<?php echo base_url() ?>assets/img/bklpk.jpg">
 			</div>
-			<div class="row clearright">
-				<div class="col-sm-5">
-					<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+			<div class="col-sm-7">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+					</div>
+					<div class="col-sm-6">
+						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+					</div>
 				</div>
-				<div class="col-sm-5">
-					<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+					</div>
+					<div class="col-sm-6">
+						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
+					</div>
 				</div>
-				<div class="col-sm-2">
-					<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
-				</div>
+			</div>
+			<div class="col-sm-2">
+				<img src="<?php echo base_url() ?>assets/img/bklpk.jpg">
 			</div>
 		</div>
 	</section>
