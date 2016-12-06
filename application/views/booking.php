@@ -2,14 +2,13 @@
 <html>
 <head>
 	<title>Doctors List</title>
-	<?php require_once __DIR__.'/templates/header.php'; ?>
-
+	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/booking.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
-	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php echo $nav; ?>
 
 	<div id="booking" class="container">
 		<form id="frmBooking">
@@ -193,8 +192,6 @@
 			</div>
 		</form>
 	</div>
-	<footer>
-		<?php require_once __DIR__.'/templates/chat.php'; ?>
-	</footer>
+	<?php echo $chat; ?>
 </body>
 </html>

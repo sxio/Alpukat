@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Avocado | Avocado`s Store</title>
-	<?php require_once __DIR__.'/../templates/header.php'; ?>
+	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/ehome.css') ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/efooter.css') ?>
 	
 </head>
 <body>
-	<?php require_once __DIR__.'/../templates/nav.php'; ?>
+	<?php echo $nav; ?>
 	<section id="enav">
 		<div class="container">
 			<div class="row">
@@ -429,7 +429,7 @@
 			</div>
 		</div>
 	</section>
-	<?php require_once __DIR__.'/../templates/efooter.php'; ?>
+	<?php echo $efooter; ?>
 	<script src="<?php echo base_url() ?>assets/js/slider.js"></script>
 </body>
 </html>

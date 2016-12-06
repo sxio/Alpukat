@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Doctor Profile</title>
-	<?php require_once __DIR__.'/templates/header.php'; ?>
+	<?php echo $header; ?>
 
 	<?php echo link_tag('assets/css/profile.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
-	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php echo $nav; ?>
 
 	<section id="content">
 		<div class="container-fluid">
@@ -151,5 +151,6 @@
 			</div>
 		</div>
 	</section>
+	<?php echo $chat; ?>
 </body>
 </html>

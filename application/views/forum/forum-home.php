@@ -3,12 +3,12 @@
 <head>
 	<title>Doctors List</title>
 
-	<?php require_once __DIR__.'/../templates/header.php'; ?>
+	<?php echo $header; ?>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 	<?php echo link_tag('assets/css/forum.css') ?>
 </head>
 <body>
-  <?php require_once __DIR__."/../templates/nav.php"; ?>
+	<?php echo $nav; ?>
 		<div id="forum-home" class="container">
 			<div class="page-header page-heading">
 				<h2 class="pull-left">Forum</h1>
@@ -101,7 +101,7 @@
 				</tbody>
 			</table>
 		</div>
-	<?php require_once __DIR__.'/../templates/footer.php'; ?>
-	<?php require_once __DIR__.'/../templates/chat.php'; ?>
+	<?php echo $footer; ?>
+	<?php echo $chat; ?>
 </body>
 </html>

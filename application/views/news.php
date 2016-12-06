@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Avocado | News</title>
-	<?php require_once __DIR__.'/templates/header.php'; ?>
+	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/news.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
-	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php echo $nav; ?>
 	<section id="n_feature">
 		<div class="container cmain">
 			<div class="row">
@@ -328,6 +328,6 @@
 			</a>
 		</div>
 	</section>
-	<?php require_once __DIR__.'/templates/footer.php'; ?>
+	<?php echo $footer; ?>
 </body>
 </html>

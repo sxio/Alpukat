@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Avocado</title>
-	<?php require_once __DIR__.'/templates/header.php'; ?>
+	<?php echo $header; ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/fade.js"></script>
 </head>
 <body>
-	<?php require_once __DIR__."/templates/nav.php"; ?>
+	<?php echo $nav; ?>
 	<div class="jumbotron text-center">
 	  	<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 	  	<h3>We specialize in Health Care Application</h3>
@@ -263,7 +263,7 @@
 			</div>
 		</div>
 	</section>
-	<?php require_once __DIR__.'/templates/footer.php'; ?>
-	<?php require_once __DIR__.'/templates/chat.php'; ?>
+	<?php echo $footer; ?>
+	<?php echo $chat; ?>
 </body>
 </html>
