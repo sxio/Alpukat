@@ -329,5 +329,6 @@
 		</div>
 	</section>
 	<?php echo $footer; ?>
+	<?php echo $chat; ?>
 </body>
 </html>
