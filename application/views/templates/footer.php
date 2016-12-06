@@ -14,7 +14,7 @@
 			</div>
 			<div class="col-sm-6 corporated">
 				<h2 class="payment text-center">Payment Partner :</h2>
-							<img class="bca" src="<?php echo base_url() ?>assets/img/banks.png">
+					<img class="bca" src="<?php echo base_url() ?>assets/img/banks.png">
 						
 			</div>
 			<div class="col-sm-3 services">
