@@ -1,5 +1,5 @@
 <?php
-	class Register extends CI_Controller{
+	class C_Register extends CI_Controller{
 		public function regis(){
 			$this->form_validation->set_rules('user_id', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean|is_unique[MSTUSER.USER_ID]');
 			$this->form_validation->set_rules('user_name', 'Full Name', 'trim|required|min_length[3]|max_length[30]|xss_clean');
@@ -11,7 +11,12 @@
 			$this->form_validation->set_rules('user_role', 'Role', 'required');
 
 			if($this->form_validation->run() == FALSE){
-				$data['title'] = "User";
+				$data['title']  = "User";
+				$data['header'] = $this->load->view('templates/header','',TRUE);
+				$data['nav']    = $this->load->view('templates/nav','',TRUE);
+				$data['footer'] = $this->load->view('templates/footer','',TRUE);
+				$data['chat']   = $this->load->view('templates/chat','',TRUE);
+
 				$data['err_regis'] = validation_errors();
 				$this->load->view('user', $data);
 			} else{

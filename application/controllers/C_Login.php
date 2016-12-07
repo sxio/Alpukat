@@ -1,5 +1,5 @@
 <?php
-	class Login extends CI_Controller{
+	class C_Login extends CI_Controller{
 		public function log_in(){
 			$this->form_validation->set_rules('LuserName', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
 			$this->form_validation->set_rules('Lpassword', 'Password', 'trim|required');
