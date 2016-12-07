@@ -178,10 +178,10 @@ body {
   padding: 60px 70px;
   /*text-align: justify;*/
 }
-#wts #myCarousel a.left_fa{
+.left_fa{
   padding-right: 100px;
 }
-#wts #myCarousel a.right_fa{
+.right_fa{
   right: 0;
   left: auto;
 }

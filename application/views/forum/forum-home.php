@@ -3,16 +3,16 @@
 <head>
 	<title>Doctors List</title>
 
-	<?php require_once __DIR__.'/../templates/header.php'; ?>
+	<?php echo $header; ?>
+
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
-	<?php echo link_tag('assets/css/forum.css') ?>
+	<?php echo link_tag('assets/css/forum/forum.css') ?>
 </head>
 <body>
-  <?php require_once __DIR__."/../templates/nav.php"; ?>
-	<section id="content">
-		<div class="container" style="margin-top: 35px">
+	<?php echo $nav; ?>
+		<div id="forum-home" class="container">
 			<div class="page-header page-heading">
-				<h1 class="pull-left">Forums</h1>
+				<h2 class="pull-left">Forum</h1>
 				<ol class="breadcrumb pull-right where-am-i">
 				  <li><a href="#">Forums</a></li>
 				  <li class="active">List of topics</li>
@@ -102,8 +102,7 @@
 				</tbody>
 			</table>
 		</div>
-	</section>
-	<?php require_once __DIR__.'/../templates/footer.php'; ?>
-	<?php require_once __DIR__.'/../templates/chat.php'; ?>
+	<?php echo $footer; ?>
+	<?php echo $chat; ?>
 </body>
 </html>

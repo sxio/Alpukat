@@ -1,0 +1,11 @@
+@import url('../nav.css');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+#content {
+  margin-top: 65px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+h3{
+	font-size: 20px;
+}

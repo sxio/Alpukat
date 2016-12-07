@@ -1,16 +1,22 @@
 body#abt{
-	background-color: lightgrey;
+	background-color: #1d4a93;
+	color: white;
 }
 #us{
-	margin-top: 50px;
-	padding-top: 90px;
+	margin-top: 70px;
+	padding: 0 50px;
+}
+#us h1#founder{
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 20px;
 }
 #us h1{
 	margin-bottom: 40px;
 }
 #us .member img{
 	width: 200px;
-	height: 250px;
+	height: 200px;
 	border-radius: 500px;
 	margin: 0 auto;
+	border: 3px solid #4286f4;
 }

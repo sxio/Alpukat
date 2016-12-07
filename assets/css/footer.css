@@ -16,7 +16,7 @@ footer.foot h4.info{
 }
 footer.foot div.surel{
   padding: 0;
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
 }
 footer.foot div.surel ul.list-unstyled li{
   padding-left: 33px;
@@ -48,11 +48,15 @@ footer.foot div.surel ul.list-unstyled li i.oval{
   border-radius: 200px;
 }
 footer.foot div.surel ul.list-unstyled li i.oval_t{
-  padding: 10px 15px;
+  padding: 11px 15px;
   border-radius: 200px;
 }
 footer.foot div.surel ul.list-unstyled li i.round{
   padding: 10px 13px;
+  border-radius: 200px;
+}
+footer.foot div.surel ul.list-unstyled li i.roundabout{
+  padding: 11px 17px;
   border-radius: 200px;
 }
 footer.foot .services{
@@ -70,6 +74,7 @@ div.cpr{
 }
 footer.foot .corporated{
   border-right: 1px solid black;
+  border-left: 1px solid black;
   /*padding-top: 0;*/
 }
 footer.foot .corporated img.bca{
