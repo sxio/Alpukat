@@ -3,7 +3,7 @@
 <head>
 	<title>Doctors List</title>
 	<?php echo $header; ?>
-	<?php echo link_tag('assets/css/booking.css') ?>
+	<?php echo link_tag('assets/css/booking/booking.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
@@ -25,13 +25,13 @@
 										Booking No
 									</label>
 									<div class="col-sm-4">
-										<input type="text" class="form-control" id="dspBookingNo">	
+										<input type="text" class="form-control" id="dspBookingNo">
 									</div>
 									<label for="BookingDate" class="col-sm-2">
 										Booking Date
 									</label>
 									<div class="col-sm-4">
-										<input type="text" class="form-control" id="BookingDate">	
+										<input type="text" class="form-control" id="BookingDate">
 									</div>
 								</div>
 								<div class="booking-detail">
@@ -47,13 +47,13 @@
 												</div>
 												<div class="form-group row">
 													<div class="col-sm-3">
-														<input type="text" class="form-control" id="DoctorsName">	
+														<input type="text" class="form-control" id="DoctorsName">
 													</div>
 													<div class="col-sm-3">
-														<input type="text" class="form-control" id="ServiceName">	
+														<input type="text" class="form-control" id="ServiceName">
 													</div>
 													<div class="col-sm-2">
-														<input type="text" class="form-control" id="BookCount">	
+														<input type="text" class="form-control" id="BookCount">
 													</div>
 													<div class="col-sm-3">
 														<input type="text" class="form-control" id="TotalAmount">
@@ -120,7 +120,7 @@
 												Other Payment
 												</label>
 												<div class="col-sm-7">
-													<input type="text" class="form-control" id="otherPayment" disabled>	
+													<input type="text" class="form-control" id="otherPayment" disabled>
 												</div>
 											</div>
 											<div class="form-group row text-left">
@@ -128,7 +128,7 @@
 													Total Payment
 												</label>
 												<div class="col-sm-7">
-													<input type="text" class="form-control" id="totalPayment" disabled>	
+													<input type="text" class="form-control" id="totalPayment" disabled>
 												</div>
 											</div>
 										</div>
@@ -137,7 +137,7 @@
 								<div class="row">
 									<div class="col-sm-6"></div>
 									<div class="col-sm-6"><button type="submit" class="btn btn-primary btnBook">Book Now</button></div>
-								</div>	
+								</div>
 							</div>
 						</div>
 						</br>

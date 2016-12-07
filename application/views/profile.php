@@ -4,7 +4,7 @@
 	<title>Doctor Profile</title>
 	<?php echo $header; ?>
 
-	<?php echo link_tag('assets/css/profile.css') ?>
+	<?php echo link_tag('assets/css/profile/profile.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body>
@@ -19,8 +19,8 @@
 							<div class="row">
 								<section>
 									<img src="assets/img/doctor.jpg" class="img-circle" id="foto">
-									
-									<h2>Personal Information</h2>	
+
+									<h2>Personal Information</h2>
 								</section>
 							</div>
 						</div>

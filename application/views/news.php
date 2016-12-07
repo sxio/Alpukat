@@ -4,7 +4,7 @@
 	<title>Avocado | News</title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
-	<?php echo link_tag('assets/css/news.css') ?>
+	<?php echo link_tag('assets/css/news/news.css') ?>
 
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
@@ -219,7 +219,7 @@
 										</a>
 									</div>
 								</div>
-							</div>	
+							</div>
 						</div>
 						<div id="menu1" class="tab-pane fade">
 								<div class="block">

@@ -15,9 +15,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<?php echo link_tag('assets/css/estore/jstarbox.css') ?>
 	<?php echo link_tag('assets/css/estore/coreSlider.css') ?>
 
-	<link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-
 	<!-- SCRIPT -->
 	<script src="<?php echo base_url('assets/js/estore/jstarbox.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/estore/simpleCart.min.js'); ?>"></script>

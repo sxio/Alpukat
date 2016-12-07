@@ -23,7 +23,6 @@ input[type="button"]{
 h1,h2,h3,h4,h5,h6{
 	padding:0 0;
 	margin:0 0;
-	font-family: 'Cagliostro', sans-serif;
 }
 p{
 	padding:0 0;
@@ -36,7 +35,6 @@ ul{
 body{
 	padding:0 0;
 	margin:0 0;
-	font-family: 'Open Sans', sans-serif;
 }
 .header-top {
     background: #1565c0;
@@ -55,7 +53,6 @@ body{
     text-transform: capitalize;
 	text-decoration: none;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
 }
 .top-right ul li {
     display: inline-block;
@@ -67,7 +64,6 @@ body{
     color:#fff;
     text-decoration: none;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
 }
 .top-right ul li.text a {
 	color:#fff;
@@ -104,7 +100,6 @@ body{
 	font-size:.95em;
     color: #fff;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
 	font-weight: 600;
 }
@@ -796,7 +791,6 @@ h3.tittle {
     font-size: 5em;
     color: #fff;
     line-height: 2em;
-    font-family: 'Cagliostro', sans-serif;
     margin-bottom: .5em;
     display: block;
 }
@@ -843,7 +837,6 @@ a.button1 {
 .callbacks_tabs a:after {
 	content: "\f111";
 	font-size: 0;
-	font-family: FontAwesome;
 	visibility: visible;
 	display: block;
 	height: 8px;
@@ -1253,7 +1246,6 @@ h3.tittle1 {
     border-radius: 3px;
     margin: 2px;
     font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     color: #777;
 }
@@ -1753,14 +1745,12 @@ h2.typoh2{
     font-size: 1.2em;
     color: #f19e1f;
     font-weight: bold;
-	font-family: 'Cagliostro', sans-serif;
 }
 p.price {
     font-size: 2em;
     margin: 0.5em 0;
     color: #AF1D0D;
     font-weight: bold;
-    font-family: 'Cagliostro', sans-serif;
 }
 .color-quality h6 {
     font-size: 1.2em;
