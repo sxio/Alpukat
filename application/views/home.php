@@ -38,7 +38,7 @@
 	</section>
 
 	<section id="o_services">
-		<h1 class="about_us text-center fades">ABOUT US</h1>
+		<h1 class="about_us text-center fades">ABOUT COMPANY</h1>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-8 fe">
@@ -51,10 +51,10 @@
 							<a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center fadesleft">
-							<a href=""><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
+							<a href="<?php echo base_url('forum') ?>"><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center fadesleft">
-							<a href=""><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
+							<a href="<?php echo base_url('estore') ?>"><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
 						</div>
 						<div class="col-sm-3 serve text-center fadesleft">
 							<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
@@ -203,6 +203,7 @@
 	<!-- BAGIAN INI (DEAL) AKAN SAYA BUAT UNTUK REVIEW PENAWARAN DARI E-SHOP KITA -->
 	<section id="deal">
 		<div class="container">
+			<h1 class="deals text-center">Best Deals From Our Shop</h1>
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="item1 fadesleft secondfade">
