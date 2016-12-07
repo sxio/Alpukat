@@ -74,10 +74,11 @@
 						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						    </div>
 						</div>
+						<h3 class="video-title">Health Video</h3>
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/9G95EYym4NM" frameborder="0" allowfullscreen></iframe>
 
 						</div>
-						<a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a>
+						<!-- <a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a> -->
 
 					</div>
 				<div class="col-sm-6 rightedge">
