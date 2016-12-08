@@ -28,13 +28,14 @@ $(document).ready(function(){
 
   var locate = window.location.pathname;
   locate = locate.split('/');
-  // alert('#'+ locate[2]);
-  $('#' + locate[2] + '_li').css({
-      'background-color':'#000'
+
+  $('#' + locate[2] + '_li').children().css({
+      'padding-top': '11px',
+      'padding-bottom': '11px',
+      'border-top': '4px solid black',
+      'border-bottom': '4px solid black',
+      'border-radius': '8px'
   });
-  // $('.navli').hover(function(){
-  //   $(this).css("background-color","black");
-  // });
 
   // Initialize the chat plugin
   $('#chat_popup').popup({
