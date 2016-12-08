@@ -112,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--banner-bottom-->
 			<div class="ban-bottom-w3l">
 				<div class="container">
-					<h3 class="tittle1">Promo</h3>
+					<h3 class="tittle1">TRENDING</h3>
 					<div class="col-md-6 ban-bottom">
 						<div class="ban-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/p1.jpg" class="img-responsive" alt=""/>

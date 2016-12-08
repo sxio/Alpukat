@@ -25,7 +25,14 @@ $(document).ready(function(){
        }
     });
   }
-  setInterval(blinker,1500);
+  $('.navli').click(function(){
+   var childrens = $(this).children().attr('href');
+   childrens.css('background-color','black');
+  });
+  // $('.navli').hover(function(){
+  //   $(this).css("background-color","black");
+  // });
+
   // Initialize the chat plugin
   $('#chat_popup').popup({
     blur: false,
@@ -37,9 +44,3 @@ $(document).ready(function(){
     alert("hello");
   });
 });
-
-//Meikelwis 25-10-16
-function blinker(){
-  $('.blink_me').fadeOut(500);
-  $('.blink_me').fadeIn(500);
-}

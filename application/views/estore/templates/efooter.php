@@ -33,9 +33,9 @@
 				<div class="col-md-3 footer-grid foot">
 					<h4>Contacts</h4>
 					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">E Comertown Rd, Westby, USA</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">1 599-033-5036</a></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> example@mail.com</a></li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">Mikroskil Kampus B</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">0812345678910</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> somebody@gmail.com</a></li>
 					</ul>
 				</div>
 			<div class="clearfix"> </div>
