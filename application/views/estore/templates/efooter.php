@@ -46,7 +46,7 @@
 	<div class="copy-section">
 		<div class="container">
 			<div class="copy-left">
-				<p>&copy; 2016 New Shop . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+				<p>&copy; 2016 New Shop . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a> | Customed by <a href="<?php echo base_url('home')?>">Avocado</a></p>
 			</div>
 			<div class="copy-right">
 				<img src="<?php echo base_url('assets/img/e-img') ?>/card.png" alt=""/>

@@ -112,6 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--banner-bottom-->
 			<div class="ban-bottom-w3l">
 				<div class="container">
+					<h3 class="tittle1">Promo</h3>
 					<div class="col-md-6 ban-bottom">
 						<div class="ban-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/p1.jpg" class="img-responsive" alt=""/>
@@ -143,7 +144,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="ban-top">
 									<img src="<?php echo base_url('assets/img/e-img') ?>/p4.jpg" class="img-responsive" alt=""/>
 									<div class="ban-text1">
-										<h4>Hand Bag</h4>
+										<h4>Nutrition</h4>
 									</div>
 								</div>
 							</div>
@@ -280,7 +281,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="accessories-w3l">
 			<div class="container">
 				<h3 class="tittle">20% Discount on</h3>
-				<span>TRENDING DESIGNS</span>
+				<span>TRENDING FITNESS EQUIPMENT</span>
 				<div class="button">
 					<a href="#" class="button1"> Shop Now</a>
 					<a href="#" class="button1"> Quick View</a>
@@ -531,7 +532,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--Products-->
 		<div class="latest-w3">
 			<div class="container">
-				<h3 class="tittle1">Latest Fashion Trends</h3>
+				<h3 class="tittle1">Most Favourite Category</h3>
 				<div class="latest-grids">
 					<div class="col-md-4 latest-grid">
 						<div class="latest-top">
@@ -548,7 +549,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l2.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Shoes</h4>
+								<h4>Equipment</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-20%</h4>
@@ -573,7 +574,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l4.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Watch</h4>
+								<h4>Sport Watch</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-45%</h4>
@@ -584,7 +585,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l5.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Bag</h4>
+								<h4>Sport Bag</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-10%</h4>
@@ -595,7 +596,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l6.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Cameras</h4>
+								<h4>Medical Equipment</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-30%</h4>

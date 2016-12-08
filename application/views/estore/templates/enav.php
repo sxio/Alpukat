@@ -18,7 +18,7 @@
 			<div class="container">
 				<div class="logo-nav">
 					<div class="logo-nav-left">
-						<h1><a href="index.html">AvoStore <span>Be Healthy with Us</span></a></h1>
+						<h1><a href="index.html">AvoStore <span>Be Healthy Be Trendy</span></a></h1>
 					</div>
 					<div class="logo-nav-left1">
 						<nav class="navbar navbar-default">
