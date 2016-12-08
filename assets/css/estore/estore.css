@@ -4,7 +4,6 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -74,6 +73,7 @@ body{
 .heder-bottom {
     padding: 1em 0;
 	background: #0d59af;
+  /*height: 100px;*/
 }
 .logo-nav-left{
 	float:left;
@@ -474,11 +474,33 @@ a.simpleCart_empty {
     background: rgba(13, 89, 175, 0.72);
     padding: 1em;
 }
+.ban-texttreatment {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background: rgba(13, 89, 175, 0.72);
+    padding: 1em;
+}
+.ban-textsupplement {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    background: rgba(13, 89, 175, 0.72);
+    padding: 1em;
+}
 .ban-text h4 {
     font-size: 2em;
     color: #fff;
 }
 .ban-text1 h4 {
+    font-size: 2em;
+    color: #fff;
+}
+.ban-texttreatment h4 {
+    font-size: 2em;
+    color: #fff;
+}
+.ban-textsupplement h4 {
     font-size: 2em;
     color: #fff;
 }
@@ -716,7 +738,7 @@ a:focus {
     border-left: 3px solid transparent;
     transform: rotate(97deg);
 }
-a.my-cart-b {
+button.my-cart-b {
     text-decoration: none;
 }
 .my-cart-b {

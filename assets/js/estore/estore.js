@@ -32,8 +32,28 @@ jQuery(document).ready(function($){
 	});
 
 	
-	
-	
+	// Kenedy 12/8/2016 for adding navbar-fixed-top
+	var scroll_start = 0;
+	var startchange = $('.heder-bottom');
+	var offset = startchange.offset();
+	if (startchange.length){
+	$(document).scroll(function() {
+	  scroll_start = $(this).scrollTop();
+	  if(scroll_start >= offset.top) {
+	      $('.heder-bottom').addClass('navbar-fixed-top');
+	      $('.heder-bottom').css('height','100px');
+	      $(".cd-header-buttons").css("top",'30px');
+	      $('.cd-search').css("top","80%");
+	      // $('.cd-search').css("position","fixed");
+
+	   } 
+	   else {
+		  $('.heder-bottom').removeClass('navbar-fixed-top');	      
+		  $(".cd-header-buttons").css("top",'70px');
+		  $('.cd-search').css("top","19%");
+	   }
+	});
+	}
 
 
 	
@@ -97,4 +117,5 @@ jQuery(document).ready(function($){
 			navigation.insertAfter('.cd-main-content');
 		}
 	}
+
 });
