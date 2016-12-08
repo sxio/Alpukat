@@ -1,6 +1,8 @@
 <footer class="foot">
 		<!-- <h1 class="text-center"></h1> -->
 		<!-- <h4 class="info text-center">This is our information</h4> -->
+	<section id="ftop">
+		
 		<div class="row">
 			<div class="col-sm-3 surel">
 				<ul class="list-unstyled">
@@ -49,8 +51,10 @@
 			  </div>
 			</div>
 		</div>
-	</footer>
+	</section>
 	<div class="cpr">
-		<p class="text-center">Copyright &copy; Avocado 2017.
-		 All Rights Reserved.</p>
+		<p class="pptc"><a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a></p>
+		<p class="cpry">Copyright &copy; Avocado 2017.
+		 All Rights Reserved. </p>
 	</div>
+	</footer>
