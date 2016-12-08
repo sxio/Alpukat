@@ -25,9 +25,12 @@ $(document).ready(function(){
        }
     });
   }
-  $('.navli').click(function(){
-   var childrens = $(this).children().attr('href');
-   childrens.css('background-color','black');
+
+  var locate = window.location.pathname;
+  locate = locate.split('/');
+  // alert('#'+ locate[2]);
+  $('#' + locate[2] + '_li').css({
+      'background-color':'#000'
   });
   // $('.navli').hover(function(){
   //   $(this).css("background-color","black");

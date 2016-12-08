@@ -20,7 +20,7 @@
 				<?php
 					if($this->session->tempdata('username') == NULL){
 				?>
-						<li class="navli"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
+						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
 				<?php } else { ?>
 						<li class="dropdown">
 							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?>
@@ -32,9 +32,9 @@
 				<?php
 					}
 				?>
-				<li class="navli"><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
-				<li class="navli"><a href="<?php echo base_url('forum') ?>"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
-				<li class="navli"><a href="<?php echo base_url('estore') ?>"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
+				<li class="navli" id="news_li"><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
+				<li class="navli" id="forum_li"><a href="<?php echo base_url('forum') ?>"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
+				<li class="navli" id="estore_li"><a href="<?php echo base_url('estore') ?>"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
 				<!-- <li><a href="<?php echo base_url('about_us') ?>"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li> -->
 			</ul>
 		</div>
