@@ -8,3 +8,4 @@
 	<!-- Include jQuery Popup Overlay -->
 	<script src="<?php echo base_url() ?>assets/js/jquery.popupoverlay.js"></script>
 	<script type="text/javascript">var baseUrl = "<?php echo base_url(); ?>";</script>
+	<!-- HEADER END -->

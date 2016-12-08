@@ -42,30 +42,30 @@
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Submenu1</h6>
-														<li><a href="products.html">Clothing</a></li>
-														<li><a href="products.html">Wallets</a></li>
-														<li><a href="products.html">Shoes</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html"> Underwear </a></li>
-														<li><a href="products.html">Accessories</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Clothing</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shoes</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>"> Underwear </a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Submenu2</h6>
-														<li><a href="products.html">Sunglasses</a></li>
-														<li><a href="products.html">Wallets,Bags</a></li>
-														<li><a href="products.html">Footwear</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html">Accessories</a></li>
-														<li><a href="products.html">Jewellery</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sunglasses</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets,Bags</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Footwear</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li>
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
-														<a href="products.html"><img src="<?php echo base_url('assets/img/e-img') ?>/woo.jpg" alt=" "/></a>
+														<a href="<?php echo base_url('estore/eproducts') ?>"><img src="<?php echo base_url('assets/img/e-img') ?>/woo.jpg" alt=" "/></a>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
-														<a href="products.html"><img src="<?php echo base_url('assets/img/e-img') ?>/woo1.jpg" alt=" "/></a>
+														<a href="<?php echo base_url('estore/eproducts') ?>"><img src="<?php echo base_url('assets/img/e-img') ?>/woo1.jpg" alt=" "/></a>
 												</div>
 												<div class="clearfix"></div>
 											</div>
@@ -78,23 +78,23 @@
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Submenu1</h6>
-														<li><a href="products.html">Clothing</a></li>
-														<li><a href="products.html">Wallets</a></li>
-														<li><a href="products.html">Shoes</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html"> Underwear </a></li>
-														<li><a href="products.html">Accessories</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Clothing</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shoes</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>"> Underwear </a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Submenu2</h6>
-														<li><a href="products.html">Sunglasses</a></li>
-														<li><a href="products.html">Wallets,Bags</a></li>
-														<li><a href="products.html">Footwear</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html">Accessories</a></li>
-														<li><a href="products.html">Jewellery</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sunglasses</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets,Bags</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Footwear</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li>
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
