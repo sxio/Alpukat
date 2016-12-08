@@ -55,6 +55,7 @@ $route['register/regis']       = 'C_Register/regis';
 $route['profile']              = 'C_Profile/view';
 $route['news']                 = 'C_News/view';
 $route['estore']               = 'C_Estore/view';
+$route['estore/(:any)']        = 'C_Estore/view/$1';
 $route['booking']              = 'C_Booking/view';
 $route['forum']                = 'C_Forum/view';
 $route['default_controller']   = 'C_Pages/view';
