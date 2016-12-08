@@ -138,30 +138,13 @@
 	</section>
 	<section id="secondpart">
 		<h1 class="tpromo text-left">Today`s promo</h1>
-		<div class="container-fluid">
-			<div class="col-sm-2 cleft">
-				<img src="<?php echo base_url() ?>assets/img/bklpk.jpg">
-			</div>
-			<div class="col-sm-8 ccenter">
-				<div class="row">
-					<div class="col-sm-12">
-						<img src="<?php echo base_url() ?>assets/img/lzd2.jpg">
-					</div>
+		<div class="container">
+			<div class="row">
+				<?php for($i=0;$i<6;$i++){ ?>
+				<div class="col-sm-2 promoimgcontainer">
+					<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
 				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
-					</div>
-					<div class="col-sm-4">
-						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
-					</div>
-					<div class="col-sm-4">
-						<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-2 cright">
-				<img src="<?php echo base_url() ?>assets/img/bklpk.jpg">
+				<?php }; ?>
 			</div>
 		</div>
 	</section>
@@ -175,11 +158,11 @@
 		</div>
 
 		<!-- Item slider-->
-		<div class="container-fluid">
+		<div class="container">
 
 		  <div class="row">
-		    <div class="col-xs-10 col-sm-10 col-md-10 hcarousel">
-		      <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+		    <div class="col-xs-12 col-sm-12 col-md-12 hcarousel">
+		      <div class="col-xs-10 col-sm-10 col-md-10 carousel carousel-showmanymoveone slide" id="itemslider">
 		        <div class="carousel-inner">
 
 		          <div class="item active">
@@ -239,10 +222,11 @@
 		        <a class="right carousel-control" href="#itemslider" data-slide="next"><img src="https://s12.postimg.org/djuh0gxst/arrow_right.png" alt="Right" class="img-responsive"></a>
 		      </div>
 		      </div>
+		      	<div class="col-xs-2 col-sm-2 col-md-2 sidead">
+		    		<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
+				</div>
 		    </div>
-		    <div class="col-xs-2 col-sm-2 col-md-2 sidead">
-		    	<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
-		    </div>
+		    
 		  </div>
 		</div>
 		<!-- Item slider end-->
@@ -257,14 +241,14 @@
 		</div>
 
 		<!-- Item slider-->
-		<div class="container-fluid">
+		<div class="container">
 
 		  <div class="row">
-		  	<div class="col-xs-2 col-sm-2 col-md-2 sidead">
-		    	<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
-		    </div>
-		    <div class="col-xs-10 col-sm-10 col-md-10 hcarousel">
-		      <div class="carousel carousel-showmanymoveone slide" id="saleslider">
+		    <div class="col-xs-12 col-sm-12 col-md-12 hcarousel">
+				<div class="col-xs-2 col-sm-2 col-md-2 sidead">
+					<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
+				</div>
+		      <div class=" col-xs-10 col-sm-10 col-md-10 carousel carousel-showmanymoveone slide" id="saleslider">
 		        <div class="carousel-inner">
 
 		          <div class="item active">
@@ -338,11 +322,11 @@
 		</div>
 
 		<!-- Item slider-->
-		<div class="container-fluid">
+		<div class="container">
 
 		  <div class="row">
-		    <div class="col-xs-10 col-sm-10 col-md-10 hcarousel">
-		      <div class="carousel carousel-showmanymoveone slide" id="topslider">
+		    <div class="col-xs-12 col-sm-12 col-md-12 hcarousel">
+		      <div class="col-xs-10 col-sm-10 col-md-10 carousel carousel-showmanymoveone slide" id="topslider">
 		        <div class="carousel-inner">
 
 		          <div class="item active">
@@ -402,29 +386,29 @@
 		        <a class="right carousel-control" href="#topslider" data-slide="next"><img src="https://s12.postimg.org/djuh0gxst/arrow_right.png" alt="Right" class="img-responsive"></a>
 		      </div>
 		      </div>
-		    </div>
 		    <div class="col-xs-2 col-sm-2 col-md-2 sidead">
 		    	<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
+		    </div>
 		    </div>
 		  </div>
 		</div>
 		<!-- Item slider end-->
 	</section>
 	<section id="topsale">
-		<h1 class="topproduct">Top Product</h1>
 		<div class="container">
+			<h1 class="topproduct">Most Favourite</h1>
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="<?php echo base_url() ?>assets/img/bklpk3.jpg">
+					<img src="<?php echo base_url() ?>assets/img/lzd4 brace.jpg">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="<?php echo base_url() ?>assets/img/bklpk3.jpg">
+					<img src="<?php echo base_url() ?>assets/img/lzd4 brace.jpg">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="<?php echo base_url() ?>assets/img/bklpk3.jpg">
+					<img src="<?php echo base_url() ?>assets/img/lzd4 brace.jpg">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="<?php echo base_url() ?>assets/img/bklpk3.jpg">
+					<img src="<?php echo base_url() ?>assets/img/lzd4 brace.jpg">
 				</div>
 			</div>
 		</div>

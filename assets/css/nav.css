@@ -9,3 +9,7 @@
 .navbar-default .container .navbar-header a.navbar-brand:hover{
 	color: black!important;
 }
+.navbar-default .navbar-nav .active a{
+   color: #000;
+   background: #d65c14;
+}

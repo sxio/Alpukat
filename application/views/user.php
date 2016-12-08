@@ -10,6 +10,7 @@
 	<?php echo link_tag('assets/css/register.css') ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 </head>
 <body id="bckimg">
 	<?php echo $nav; ?>

@@ -25,7 +25,18 @@ $(document).ready(function(){
        }
     });
   }
-  setInterval(blinker,1500);
+
+  var locate = window.location.pathname;
+  locate = locate.split('/');
+
+  $('#' + locate[2] + '_li').children().css({
+      'padding-top': '11px',
+      'padding-bottom': '11px',
+      'border-top': '4px solid black',
+      'border-bottom': '4px solid black',
+      'border-radius': '8px'
+  });
+
   // Initialize the chat plugin
   $('#chat_popup').popup({
     blur: false,
@@ -37,9 +48,3 @@ $(document).ready(function(){
     alert("hello");
   });
 });
-
-//Meikelwis 25-10-16
-function blinker(){
-  $('.blink_me').fadeOut(500);
-  $('.blink_me').fadeIn(500);
-}
