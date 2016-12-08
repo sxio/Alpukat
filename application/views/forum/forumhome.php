@@ -14,7 +14,8 @@
 				<h2 class="pull-left">Forum</h1>
 				<ol class="breadcrumb pull-right where-am-i">
 				  <li><a href="#">Forums</a></li>
-				  <li class="active">List of topics</li>
+				  <li><a href="#">List of topics</a></li>
+				  <li><a href="<?php echo base_url('forumdashboard'); ?>" >Profile</a></li>
 				</ol>
 				<div class="clearfix"></div>
 			</div>
@@ -34,7 +35,7 @@
 		    <tbody>
 				<tr>
 					<td class="text-center"><i class="fa fa-question fa-2x text-primary"></i></td>
-					<td><h4><a href="#">Frequently Asked Questions</a><br><small>Some description</small></h4></td>
+					<td><h4><a href="#">Hot Topics</a><br><small>Some description</small></h4></td>
 					<td class="text-center hidden-xs hidden-sm"><a href="#">9 542</a></td>
 					<td class="text-center hidden-xs hidden-sm"><a href="#">89 897</a></td>
 					<td class="hidden-xs hidden-sm">by <a href="#">John Doe</a><br><small><i class="fa fa-clock-o"></i> 3 months ago</small></td>
@@ -101,7 +102,6 @@
 				</tbody>
 			</table>
 		</div>
-	<?php echo $footer; ?>
 	<?php echo $chat; ?>
 </body>
 </html>

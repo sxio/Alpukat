@@ -56,6 +56,7 @@ $route['estore'] = 'estore/view';
 $route['booking'] = 'booking/view';
 // $route['profile'] = 'profile/view';
 $route['forum'] = 'forum/view';
+$route['forumdashboard'] = 'forumdashboard/view';
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
