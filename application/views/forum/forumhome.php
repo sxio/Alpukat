@@ -16,7 +16,7 @@
 				<ol class="breadcrumb pull-right where-am-i">
 				  <li><a href="#">Forums</a></li>
 				  <li><a href="#">List of topics</a></li>
-				  <li><a href="<?php echo base_url('forumdashboard'); ?>" >Profile</a></li>
+				  <li><a href="<?php echo base_url('forum/dashboard'); ?>" >Profile</a></li>
 				</ol>
 				<div class="clearfix"></div>
 			</div>
