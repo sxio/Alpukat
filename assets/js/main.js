@@ -32,9 +32,9 @@ $(document).ready(function(){
   $('#' + locate[2] + '_li').children().css({
       'padding-top': '11px',
       'padding-bottom': '11px',
-      'border-top': '4px solid black',
-      'border-bottom': '4px solid black',
-      'border-radius': '8px'
+      'border-top': '4px solid #00fffa',
+      'border-bottom': '4px solid #00fffa',
+      'border-radius': '8px',
   });
 
   // Initialize the chat plugin

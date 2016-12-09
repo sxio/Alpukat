@@ -18,7 +18,7 @@
 			<div class="container">
 				<div class="logo-nav">
 					<div class="logo-nav-left">
-						<h1><a href="index.html">AvoStore <span>Be Healthy Be Trendy</span></a></h1>
+						<h1><a href="<?PHP echo base_url('estore') ?>">AvoStore <span>Be Healthy Be Trendy</span></a></h1>
 					</div>
 					<div class="logo-nav-left1">
 						<nav class="navbar navbar-default">
@@ -33,32 +33,32 @@
 							</div>
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="" class="act">Home</a></li>
+									<!-- <li class="active"><a href="" class="act">Fitness Products</a></li> -->
 									<!-- Mega Menu -->
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Supplies & Equipment<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>Submenu1</h6>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Clothing</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shoes</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>"> Underwear </a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
+														<h6>Supplies</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Medical Supplies</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Emergency Medical Supplies</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Dental Supplies</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Industrial Supplies</a></li>
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>"> Underwear </a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li> -->
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>Submenu2</h6>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sunglasses</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets,Bags</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Footwear</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li>
+														<h6>Equipment</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Medical Equipment</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Home Medical Equipment</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Dental Equipment</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Veterinary Products</a></li>
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li> -->
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
@@ -72,43 +72,54 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fitness Products <b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>Submenu1</h6>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Clothing</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shoes</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>"> Underwear </a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
+														<h6>Accessories</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Gloves</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Exercise Balls</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Skipping Ropes</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Bottles</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sport Bag</a></li>
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li> -->
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>Submenu2</h6>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sunglasses</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Wallets,Bags</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Footwear</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
+														<h6>Gym</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Home Gyms</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Benches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Bars</a></li>
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>">Watches</a></li>
 														<li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li>
-														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li> -->
+													</ul>
+												</div>
+												<div class="col-sm-3 multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Apparel</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">T-Shirts</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Capris</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shorts</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sleeveless Tops</a></li>
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>">Accessories</a></li> -->
+														<!-- <li><a href="<?php echo base_url('estore/eproducts') ?>">Jewellery</a></li> -->
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
 													<a href="products1.html"><img src="<?php echo base_url('assets/img/e-img') ?>/woo3.jpg" alt=" "/></a>
 												</div>
-												<div class="col-sm-3 multi-gd-img">
+												<!-- <div class="col-sm-3 multi-gd-img">
 													<a href="products1.html"><img src="<?php echo base_url('assets/img/e-img') ?>/woo4.jpg" alt=" "/></a>
-												</div>
+												</div> -->
 												<div class="clearfix"></div>
 											</div>
 										</ul>
 									</li>
-									<li><a href="codes.html">Short Codes</a></li>
-									<li><a href="mail.html">Mail Us</a></li>
+									<li><a href="codes.html">Supplements</a></li>
+									<li><a href="mail.html">Nutrition</a></li>
 								</ul>
 							</div>
 						</nav>

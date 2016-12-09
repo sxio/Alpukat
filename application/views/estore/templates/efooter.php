@@ -16,14 +16,14 @@
 					<h4>My Account</h4>
 					<ul>
 						<li><a href="checkout.html">Checkout</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="registered.html"> Create Account </a></li>
+						<li><a href="<?php echo base_url('user') ?>">Login</a></li>
+						<li><a href="<?php echo base_url('user') ?>"> Create Account </a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 footer-grid">
 					<h4>Information</h4>
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="<?php echo base_url('home') ?>">Home</a></li>
 						<li><a href="products.html">Products</a></li>
 						<li><a href="codes.html">Short Codes</a></li>
 						<li><a href="mail.html">Mail Us</a></li>
