@@ -265,7 +265,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -290,7 +290,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -315,7 +315,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -343,7 +343,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -368,7 +368,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -393,7 +393,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -421,7 +421,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -446,7 +446,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -471,7 +471,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -499,7 +499,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -524,7 +524,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -549,7 +549,7 @@
 													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 												</div>
 											</div>
 										</div>
@@ -583,7 +583,7 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>
@@ -614,7 +614,7 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>
@@ -646,7 +646,7 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>
@@ -678,7 +678,7 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>
@@ -709,7 +709,7 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>

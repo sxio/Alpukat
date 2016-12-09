@@ -117,7 +117,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="ban-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/p1.jpg" class="img-responsive" alt=""/>
 							<div class="ban-text">
-								<h4>Fitness Equipment</h4>
+								<h4>GYM Equipment</h4>
 							</div>
 							<div class="ban-text2 hvr-sweep-to-top">
 								<h4>50% <span>Off/-</span></h4>
@@ -128,7 +128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="ban-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/p2.jpg" class="img-responsive" alt=""/>
 							<div class="ban-texttreatment">
-								<h4>Treatment</h4>
+								<h4>Apparel</h4>
 							</div>
 						</div>
 						<div class="ban-img">
@@ -215,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
 									<span class="size">XL / XXL / S </span>
 									<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-									<a href="#" data-text="Add To Cart" class=" my-cart-b item_add">Add To Cart</a>
+									<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
 								</div>
 							</div>
 						</div>
@@ -281,7 +281,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="accessories-w3l">
 			<div class="container">
 				<h3 class="tittle">20% Discount on</h3>
-				<span>TRENDING FITNESS EQUIPMENT</span>
+				<span>TRENDING FITNESS APPAREL</span>
 				<div class="button">
 					<a href="#" class="button1"> Shop Now</a>
 					<a href="#" class="button1"> Quick View</a>
@@ -538,7 +538,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l1.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Men</h4>
+								<h4>Men`s Apparel</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-50%</h4>
@@ -549,7 +549,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l2.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Equipment</h4>
+								<h4>Bottles</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-20%</h4>
@@ -560,7 +560,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="latest-top">
 							<img src="<?php echo base_url('assets/img/e-img') ?>/l3.jpg" class="img-responsive"  alt="">
 							<div class="latest-text">
-								<h4>Women</h4>
+								<h4>Women`s Apparel</h4>
 							</div>
 							<div class="latest-text2 hvr-sweep-to-top">
 								<h4>-50%</h4>
