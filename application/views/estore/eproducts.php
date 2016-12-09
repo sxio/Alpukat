@@ -142,7 +142,6 @@
 							});
 
 							</script>
-							<script type="text/javascript" src="js/jquery-ui.js"></script>
 						</div>
 						<div class="top-rates">
 							<h3>Top Rates products</h3>
