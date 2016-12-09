@@ -23,7 +23,10 @@
 		</div>
 		<div id="chatbox"></div>
 
-		<form name="message" action="">
+		<?php
+			$attrib = array('name' => 'message');
+			echo form_open();
+		?>
 			<input class="form-control" name="usermsg" type="text" id="usermsg"><button class="btn btn-success" id="submitmsg"><i class="fa fa-paper-plane"></i></button>
 		</form>
 	</div>

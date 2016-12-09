@@ -19,18 +19,34 @@
 
 				$data['err_regis'] = validation_errors();
 				$this->load->view('user', $data);
+
 			} else{
-				//insert data do database
-				$res = $this->register_model->insert_register();
-				if($res['code'] == 0){
-					$this->session->set_flashdata('msgRegis','<div class="alert alert-success text-center">Registration Success!</div>');
+
+				if($this->register_model->sendEmail($this->input->post('user_email'))){
+					$this->session->set_flashdata('msgRegis','<div class="alert alert-success text-center">You are Successfully Registered! Please verify your email.</div>');
+
+					//insert data do database
+					$res = $this->register_model->insert_register();
 					redirect('user');
-				} else if($res['code'] == 1062){
-					// error => duplicate
-					$this->session->set_flashdata('msgRegis','<div class="alert alert-danger text-center">Oops! Username already taken.</div>');
+
+				} else{
+					//error
+					$this->session->set_flashdata('msgRegis','<div class="alert alert-danger text-center">Oops! Try again later !!!</div>');
 					redirect('user');
 				}
 			}
+		}
+
+		public function verify($hash=NULL)
+		{
+			$verify = $this->register_model->verifyEmailID($hash);
+			if ($verify)
+			{
+				$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Your Email Address is successfully verified! Please login to access your account!</div>');
+			} else{
+				$this->session->set_flashdata('msgLogin','<div class="alert alert-danger text-center">Sorry! There is error verifying your Email Address!</div>');
+			}
+			redirect('user');
 		}
 	}
 ?>
