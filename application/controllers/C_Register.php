@@ -39,8 +39,7 @@
 
 		public function verify($hash=NULL)
 		{
-			$verify = $this->register_model->verifyEmailID($hash);
-			if ($verify)
+			if ($this->register_model->verifyEmailID($hash))
 			{
 				$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Your Email Address is successfully verified! Please login to access your account!</div>');
 			} else{
