@@ -23,7 +23,8 @@ body {
 }
 .container #myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{
-  color: white;
+  // color: white;
+  color: black;
 }
 .container .navbar-header a.navbar-brand{
   font-size: 80px;
@@ -51,19 +52,20 @@ body {
 @import url('nav.css');
 
 .jumbotron {
-  height: 650px;
+  height: 750px;
+  opacity: 100;
   background-image: url("../img/runner.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 100px;
-  color: white;
-  margin-bottom: 0;
 }
+
 .jumbotron h3 {
-  font-style: italic;
-  color: white;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 22px;
   font-weight: bold;
+
 }
 .jumbotron h1 {
   font-family: acceleration;
