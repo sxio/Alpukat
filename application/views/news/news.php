@@ -74,7 +74,7 @@
 						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						    </div>
 						</div>
-						<h3 class="video-title">Health Video</h3>
+						<!-- <h3 class="video-title">Health Video</h3> -->
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/9G95EYym4NM" frameborder="0" allowfullscreen></iframe>
 
 						</div>
