@@ -35,7 +35,7 @@ body {
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
   color: white;
   cursor: pointer;
-  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 30px black, 0 0 50px black, 0 0 100px black;
+  text-shadow: 0 0 20px rgba(0,0,0,1);
 }
 
 .container #myNavbar .nav .open>a,

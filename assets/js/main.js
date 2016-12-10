@@ -20,7 +20,7 @@ $(document).ready(function(){
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','black');
           $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
             $(this).css('color','white');
-            $(this).css('text-shadow','0 0 5px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 30px black, 0 0 50px black, 0 0 100px black')
+            $(this).css('text-shadow','0 0 20px rgba(0,0,0,1');
           }, function(){
             $(this).css('color','black');
             $(this).css('text-shadow','none');
