@@ -39,7 +39,7 @@
 			<div class="container">
 				<div class="product-agileinfo-grids w3l">
 					<div class="col-md-3 product-agileinfo-grid">
-						<div class="categories">
+						<!-- <div class="categories">
 							<h3>Categories</h3>
 							<ul class="tree-list-pad">
 								<li><input type="checkbox" checked="checked" id="item-0" /><label for="item-0"><span></span>Women's Wear</label>
@@ -118,8 +118,8 @@
 									</ul>
 								</li>
 							</ul>
-						</div>
-						<div class="price">
+						</div> -->
+						<!-- <div class="price">
 							<h3>Price Range</h3>
 							<ul class="dropdown-menu6">
 								<li>
@@ -142,7 +142,7 @@
 							});
 
 							</script>
-						</div>
+						</div> -->
 						<div class="top-rates">
 							<h3>Top Rates products</h3>
 							<div class="recent-grids">

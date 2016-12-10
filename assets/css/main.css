@@ -33,8 +33,9 @@ body {
   padding-top: 10px;
 }
 .container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
-  color: #16BFFD;
+  color: white;
   cursor: pointer;
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 30px black, 0 0 50px black, 0 0 100px black;
 }
 
 .container #myNavbar .nav .open>a,
@@ -61,6 +62,7 @@ body {
 }
 
 .jumbotron h3 {
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
   margin-bottom: 30px;
   width: 100%;
   font-size: 22px;

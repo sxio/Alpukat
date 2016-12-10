@@ -8,6 +8,7 @@
 #myNavbar ul li a:hover,
 .navbar-default .container .navbar-header a.navbar-brand:hover{
 	color: black!important;
+	text-shadow: none!important;
 }
 .navbar-default .navbar-nav .active a{
    color: #000;
