@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 		closeNav();
 	});
 
-	
+
 	// Kenedy 12/8/2016 for adding navbar-fixed-top
 	var scroll_start = 0;
 	var startchange = $('.heder-bottom');
@@ -46,9 +46,9 @@ jQuery(document).ready(function($){
 	      $('.cd-search').css("top","80%");
 	      // $('.cd-search').css("position","fixed");
 
-	   } 
+	   }
 	   else {
-		  $('.heder-bottom').removeClass('navbar-fixed-top');	      
+		  $('.heder-bottom').removeClass('navbar-fixed-top');
 		  $(".cd-header-buttons").css("top",'70px');
 		  $('.cd-search').css("top","19%");
 	   }
@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 	}
 
 
-	
+
 
 	//submenu items - go back link
 	$('.go-back').on('click', function(){
@@ -77,7 +77,7 @@ jQuery(document).ready(function($){
 
 	function toggleSearch(type) {
 		if(type=="close") {
-			//close serach 
+			//close serach
 			$('.cd-search').removeClass('is-visible');
 			$('.cd-search-trigger').removeClass('search-is-visible');
 			$('.cd-overlay').removeClass('search-is-visible');
@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
 
 	function checkWindowWidth() {
 		//check window width (scrollbar included)
-		var e = window, 
+		var e = window,
             a = 'inner';
         if (!('innerWidth' in window )) {
             a = 'client';
@@ -116,6 +116,13 @@ jQuery(document).ready(function($){
 			navigation.detach();
 			navigation.insertAfter('.cd-main-content');
 		}
+	}
+
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0);
+	} , false);
+	function hideURLbar(){
+		window.scrollTo(0,1);
 	}
 
 });
