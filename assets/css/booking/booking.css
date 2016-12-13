@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
 #booking{
-	margin-top: 40px;
+	margin-top: 50px;
 	padding: 0px;
 	font-family: 'Muli';
+	font-size: 13px;
 }
 
 table.booking-list{

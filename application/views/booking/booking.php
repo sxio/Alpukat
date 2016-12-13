@@ -15,7 +15,7 @@
 			<div class="row">
 				<div class="panel panel-info">
 					<div class="panel-heading text-center">
-						<h3>Booking Transaction</h3>
+						<?php echo $title; ?>
 					</div>
 					<div class="panel-body">
 						<div class="booking-header">
@@ -38,7 +38,6 @@
 									<div class="panel panel-success">
 										<div class="panel-heading">
 											<form>
-												<h4>Input Transactions</h4>
 												<div class="form-group row">
 													<label for="DoctorsName" class="col-sm-3"> Doctors Name</label>
 													<label for="ServiceName" class="col-sm-3"> Service Name</label>
@@ -66,7 +65,6 @@
 										</div>
 										<div class="panel-body">
 											<form id = "booking-detail text-left">
-												<h4>Detail Transactions</h4>
 												</br>
 												<div class="form-group row">
 													<table class="table booking-list table-bordered table-responsive">
@@ -150,37 +148,21 @@
 									    <thead>
 									      <tr>
 									        <th>Booking No</th>
-									        <th>DoctorName</th>
-									        <th>Total Booking</th>
 									        <th>Total Other Payment</th>
 									        <th>Total Amount</th>
-									        <th>Last Booking Date</th>
+									        <th>Booking Date</th>
 									      </tr>
 									    </thead>
 									    <tbody>
 									      <tr>
-									      	<td>BO16012343</td>
-									        <td>John</td>
-									        <td>100</td>
-									        <td>500000</td>
-									        <td>2000000</td>
-									        <td>11/01/2016</td>
-									      </tr>
-									      <tr>
-									      	<td>BO16012344</td>
-									        <td>Mary</td>
-									        <td>22</td>
-									        <td>300000</td>
-									        <td>35000000</td>
-									        <td>09/01/2016</td>
-									      </tr>
-									      <tr>
-									      	<td>BO16012348</td>
-									        <td>July</td>
-									        <td>3</td>
-									        <td>40000</td>
-									        <td>40000000</td>
-									        <td>11/02/2016</td>
+									      	<?php foreach($hist as $hist){?>
+									      		<tr>
+									      			<td><?php echo $hist->BOOKING_ID;?></td>
+									      			<td><?php echo $hist->OTHER_PAYMENT;?></td>
+									      			<td><?php echo $hist->TOTAL_PAYMENT;?></td>
+									      			<td><?php echo $hist->BOOKING_DT;?></td>
+									      		</tr>
+									      	<?php }?>
 									      </tr>
 									    </tbody>
 									</table>
