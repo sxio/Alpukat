@@ -127,11 +127,9 @@
 								</div>
 								<div class="panel-body">
 									<ul class="list-unstyled">
-										<li>Hospital Location:
+										<li>Hospital Location:</li>
 										<li><h3>Maps</h3></li>
-										<div id="map">
-											Hospital</div>
-										</li>
+										<li id="map">Hospital</li>
 										<!--Meikelwis Sisain tempat untuk ini soalnya mau buat google mapnya
 										//Surce : https://developers.google.com/maps/articles/phpsqlajax_v3
 										//Nanti baru buat soalnya mau pake db juga
