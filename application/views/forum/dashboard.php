@@ -4,8 +4,8 @@
 	<title>Profile</title>
 
 	<?php echo $header; ?>
-	<?php echo link_tag('assets/css/nav.css') ?>
-	<?php echo link_tag('assets/css/forumdashboard.css') ?>
+	<?php echo link_tag('assets/css/nav.css'); ?>
+	<?php echo link_tag('assets/css/forumdashboard.css'); ?>
 </head>
 <body>
 	<?php echo $nav; ?>

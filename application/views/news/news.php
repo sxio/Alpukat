@@ -6,7 +6,7 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/news/news.css') ?>
 
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -19,7 +19,7 @@
 						<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
 						    <div class="item active">
-						      <img src="<?php echo base_url() ?>assets/img/stomach.jpg" alt="perut">
+						      <img src="<?php echo base_url('assets/img/stomach.jpg'); ?>" alt="perut">
 						      <div class="carousel-caption">
 						        <h3>Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</h3>
 						        <a href="#">Read More...</a>
@@ -33,7 +33,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/jiwa.jpg" alt="jiwa">
+						      <img src="<?php echo base_url('assets/img/jiwa.jpg'); ?>" alt="jiwa">
 						      <div class="carousel-caption">
 						        <h3>Pertolongan Pertama untuk Masalah Kesehatan Jiwa</h3>
 						        <a href="#">Read More...</a>
@@ -47,7 +47,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/hands.jpg" alt="tangan">
+						      <img src="<?php echo base_url('assets/img/hands.jpg'); ?>" alt="tangan">
 						      <div class="carousel-caption">
 						        <h3>Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</h3>
 						        <a href="#">Read More...</a>
@@ -61,7 +61,7 @@
 						    </div>
 
 						    <div class="item">
-						      <img src="<?php echo base_url() ?>assets/img/october.jpg" alt="october">
+						      <img src="<?php echo base_url('assets/img/october.jpg'); ?>" alt="october">
 						      <div class="carousel-caption">
 						        <h3>Oktober, Bulan Terbaik untuk Mulai Berdiet</h3>
 						        <a href="#">Read More...</a>
@@ -84,7 +84,7 @@
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/stomach.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
@@ -92,7 +92,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/hands.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/hands.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</a>
@@ -100,7 +100,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/jiwa.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/jiwa.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Pertolongan Pertama untuk Masalah Kesehatan Jiwa</a>
@@ -108,7 +108,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/october.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/october.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Oktober, Bulan Terbaik untuk Mulai Berdiet</a>
@@ -116,7 +116,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/perfect.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/perfect.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 5</a>
@@ -124,7 +124,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/perfect.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/perfect.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 6</a>
@@ -132,7 +132,7 @@
 					</div>
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url() ?>assets/img/stomach.jpg"></a>
+							<a href=""><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
 							<a href="#">Berita 7</a>
@@ -159,7 +159,7 @@
 							<div class="block<?php if($i==4) echo '-last'; ?>">
 								<div class="row">
 									<div class="col-sm-3 detail_img">
-										<img src="<?php echo base_url() ?>assets/img/perfect.jpg">
+										<img src="<?php echo base_url('assets/img/perfect.jpg'); ?>">
 									</div>
 									<div class="col-sm-9 detail_news">
 										<a href="">
@@ -193,14 +193,14 @@
 				</div>
 				<div class="col-sm-4 right-ad">
 					<div class="ad">
-						<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+						<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 					</div>
 					<div class="row">
 						<div class="col-sm-6 adv">
-							<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+							<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 						</div>
 						<div class="col-sm-6 adv">
-							<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+							<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 						</div>
 					</div>
 				</div>
@@ -214,7 +214,7 @@
 				<?php for($i = 0 ; $i < 4 ; $i++) { ?>
 				<div class="col-sm-3 tip">
 					<a href="">
-					<img src="<?php echo base_url() ?>assets/img/farmers.jpg">
+					<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p></a>
 				</div>

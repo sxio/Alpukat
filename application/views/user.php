@@ -9,8 +9,8 @@
 	<?php echo link_tag('assets/css/login.css') ?>
 	<?php echo link_tag('assets/css/register.css') ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
-	<script src="<?php echo base_url() ?>assets/js/user.js"></script>
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url('assets/js/user.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body id="bckimg">
 	<?php echo $nav; ?>
@@ -60,13 +60,13 @@
 							<i class="spinner"></i>
 							<span class="state">Log in</span>
 						</button>
-					</form>
+					<?php echo form_close(); ?>
+
 				</div>
 			</div>
-			<!--	-->
+
 			<div class="tab-pane <?php echo $activeR; ?>" id="register">
 				<!-- Meikelwis 27 Nov 16 -->
-				<!-- <form action="index.html" method="post" class="register" id="formRegister"> -->
 				<?php
 					$attrib = array('class' => 'register');
 					echo form_open('register/regis', $attrib);
@@ -128,7 +128,7 @@
 							<button type="submit">Sign Up</button>
 						</div>
 					</div>
-				</form>
+				<?php echo form_close(); ?>
 
 			</div>
 		</div>

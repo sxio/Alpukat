@@ -6,8 +6,8 @@
 
 	<?php echo link_tag('assets/css/list.css') ?>
 
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/list.js"></script>
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url('assets/js/list.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -99,8 +99,8 @@
 		        <div class="col-sm-1"></div>
 			</div>
 		</div>
-		</br>
-		</br>
+		<br>
+		<br>
 		<div class="row">
 			<div class="col-sm-1">
 			</div>
@@ -128,7 +128,7 @@
 									</div>
 								</div>
 								<div class="row text-center">
-									</br>
+									<br>
 									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
 									<a href="<?php echo base_url('profile'); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
