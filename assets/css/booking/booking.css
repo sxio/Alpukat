@@ -12,6 +12,6 @@ table.booking-list{
 	margin: 0 auto;
 }
 
-.btnBook{
-	width: 100%;
+label{
+	padding-top: 7px;
 }
