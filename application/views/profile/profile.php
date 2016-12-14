@@ -5,7 +5,7 @@
 	<?php echo $header; ?>
 
 	<?php echo link_tag('assets/css/profile/profile.css') ?>
-	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -26,15 +26,15 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled info text-left">
-									<li>ID :</li>
-									<li>First Name :</li>
-									<li>Last Name :</li>
-									<li>Place , Date of Birth :</li>
-									<li>City :</li>
-									<li>Religion:</li>
-									<li>Gender  :</li>
-									<li>Address :</li>
-									<li>Status :</li>
+								<li>ID :</li>
+								<li>First Name :</li>
+								<li>Last Name :</li>
+								<li>Place , Date of Birth :</li>
+								<li>City :</li>
+								<li>Religion:</li>
+								<li>Gender  :</li>
+								<li>Address :</li>
+								<li>Status :</li>
 							</ul>
 							<!--Facebook-->
 							<button type="button" class="btn btn-fb btn-info"><i class="fa fa-facebook center"></i> Facebook</button>
@@ -51,14 +51,14 @@
 									<div class="panel panel-body text-left">
 										<ul class="list-unstyled">
 											<li><h4>Overall Visits</h4></li>
-											<ul>
-												<li>Last Week    : 999 users
-												</li>
-												<li>Last Month   :12393 users
-												</li>
-											</ul>
+											<li>
+												<ul>
+													<li>Last Week    : 999 users</li>
+													<li>Last Month   :12393 users</li>
+												</ul>
+											</li>
 											<li>Rating</li>
-											<div class="progress">
+											<li class="progress">
 												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 												70%
 												</div>
@@ -71,7 +71,7 @@
 												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:3%">
 												3%
 												</div>
-											</div>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -97,23 +97,23 @@
 						<div class="col-md-12">
 							<div class="panel panel-info">
 								<div class="panel-heading text-center">
-									<h3>Education & Experience</h3>
+									<h3>Education &amp; Experience</h3>
 								</div>
 								<div class="panel-body">
 									<ul class="list-unstyled">
 										<li>Education </li>
-										<ul>
-											<li>SD :</li>
-											<li>SMP :</li>
-											<li>SMA :</li>
-											<li>S1 :</li>
-											<li>S2 :</li>
-											<li>DR :</li>
-										</ul>
+										<li><ul>
+												<li>SD :</li>
+												<li>SMP :</li>
+												<li>SMA :</li>
+												<li>S1 :</li>
+												<li>S2 :</li>
+												<li>DR :</li>
+											</ul>
+										</li>
 										<li>Experience :</li>
 										<li>Speciality :</li>
 										<li>Certification :</li>
-										</li>
 									</ul>
 								</div>
 							</div>
@@ -128,7 +128,7 @@
 								<div class="panel-body">
 									<ul class="list-unstyled">
 										<li>Hospital Location:
-										<h3>Maps</h3>
+										<li><h3>Maps</h3></li>
 										<div id="map">
 											Hospital</div>
 										</li>
@@ -138,10 +138,11 @@
 										//api key : AIzaSyDGJqRDpxUJqXhZZ2As2luILJHG9__f9jc-->
 										<li>Schedule:</li>
 										<li>Contact Number :</li>
-										<ul>
-											<li>Telephone :</li>
-											<li>Handphone :</li>
-										</ul>
+										<li><ul>
+												<li>Telephone :</li>
+												<li>Handphone :</li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 							</div>
