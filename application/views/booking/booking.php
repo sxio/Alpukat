@@ -154,7 +154,6 @@
 									      </tr>
 									    </thead>
 									    <tbody>
-									      <tr>
 									      	<?php foreach($hist as $hist){?>
 									      		<tr>
 									      			<td><?php echo $hist->BOOKING_ID;?></td>
@@ -163,7 +162,6 @@
 									      			<td><?php echo $hist->BOOKING_DT;?></td>
 									      		</tr>
 									      	<?php }?>
-									      </tr>
 									    </tbody>
 									</table>
 								</div>
