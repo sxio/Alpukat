@@ -21,9 +21,12 @@ body {
   border: none;
   height: 20px;
 }
+.container #myNavbar > ul > li >a{
+  letter-spacing: 3px;
+}
 .container #myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{
-  // color: white;
+  /*color: white;*/
   color: black;
 }
 .container .navbar-header a.navbar-brand{
@@ -77,8 +80,8 @@ body {
 #o_services{
   color: black;
   padding: 30px 40px;
-  /*border-bottom: 5px solid #4286f4;*/
-  /*border-top: 5px solid #4286f4;*/
+  /*border-bottom: 5px solid #1565c0;*/
+  /*border-top: 5px solid #1565c0;*/
   /*margin-bottom: 5px;*/
   /*margin-top: 5px;*/
   background-image: url('../img/bg1.jpg');
@@ -93,7 +96,7 @@ body {
   margin-bottom: 40px;
 }
 #o_services .serve i{
-  background-color: #4286f4;
+  background-color: #1565c0;
   color: white;
   border-radius: 500px;
   transition: 0.2s;
@@ -115,7 +118,7 @@ body {
 }
 #o_services .serve a{
   text-decoration: none;
-  color: #4286f4;
+  color: #1565c0;
   font-weight: bold;
 }
 #o_services .serve a:hover i{
@@ -145,7 +148,7 @@ body {
   margin: 0
 }
 #startchange{
-  /*background-color: #4286f4;*/
+  /*background-color: #1565c0;*/
   /*background-image: url('../img/dots.png');*/
   padding: 60px;
   color:#545659;
@@ -162,7 +165,7 @@ body {
   border:2px solid grey;
 }
 #wts{
-  background-color: #4286f4;
+  background-color: #1565c0;
   padding: 50px;
 }
 #wts h1.say{

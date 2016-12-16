@@ -21,7 +21,7 @@
 #n_feature .container .row .leftedge {
   padding: 20px 30px;
   background-color: white;
-  border:1px solid black;
+  border:1px solid grey;
 }
 #n_feature .container .row .rightedge {
   padding: 0px 30px;
@@ -44,8 +44,8 @@
   background-color: white;
   padding: 10px;
   margin-bottom: 4.2px;
-  border:1px solid black;
-  border-left: 5px solid #001e4f;
+  border:1px solid grey;
+  /*border-left: 5px solid #001e4f;*/
 }
 #n_feature .container .row .rightedge .today_news .news_title a {
   color: black;
@@ -54,7 +54,7 @@
 }
 #n_feature .container .row .rightedge .today_news:hover {
   transform: scale(1.05, 1.1);
-  border-left: 10px solid black;
+  border-left: 10px solid #f2f2f2;
 }
 #n_feature .container .row .rightedge .news_image {
   padding: 0;

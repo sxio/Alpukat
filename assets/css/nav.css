@@ -1,5 +1,8 @@
 .navbar-default{
-	background-color: #4286f4!important;
+	background-color: #1565c0!important;
+}
+#myNavbar > ul > li >a{
+  letter-spacing: 3px;
 }
 #myNavbar > ul > li > a,
 .container .navbar-header a.navbar-brand{

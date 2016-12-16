@@ -84,10 +84,10 @@
 				<div class="col-sm-6 rightedge">
 					<div class="row today_news">
 						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
+							<a href="#"><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
 						</div>
 						<div class="col-sm-9 news_title">
-							<a href="#">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
+							<a href="<?php echo base_url('news/details'); ?>">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
 						</div>
 					</div>
 					<div class="row today_news">

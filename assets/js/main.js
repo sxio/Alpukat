@@ -6,7 +6,8 @@ $(document).ready(function(){
     $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#4286f4');
+          // #4286f4
+          $(".navbar-default").css('background-color', '#1565c0');
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','white');
           $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
             $(this).css('color','black');
@@ -20,7 +21,7 @@ $(document).ready(function(){
           $("ul.navbar-nav > li > a, .navbar-brand").css('color','black');
           $("ul.navbar-nav > li > a, .navbar-brand").hover(function(){
             $(this).css('color','white');
-            $(this).css('text-shadow','0 0 20px rgba(0,0,0,1');
+            $(this).css('text-shadow','0 0 20px rgba(0,0,0,1)');
           }, function(){
             $(this).css('color','black');
             $(this).css('text-shadow','none');
