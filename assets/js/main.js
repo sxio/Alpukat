@@ -51,7 +51,12 @@ $(document).ready(function(){
     openelement: '.chat_open',
     closeelement: '.chat_close'
   });
-  $("#chat_open").click(function(){
-    alert("hello");
+
+  // Donation popup
+  $('#donation_popup').popup({
+    type: 'tooltip',
+    transition: 'all 0.3s',
+    openelement: '.donation_open',
+    closeelement: '.donation_close'
   });
 });
