@@ -35,8 +35,22 @@
 				<li class="navli" id="news_li"><a href="<?php echo base_url('news') ?>"><i class="fa fa-newspaper-o fa-fw"></i> NEWS</a></li>
 				<li class="navli" id="forum_li"><a href="<?php echo base_url('forum') ?>"><i class="fa fa-commenting-o fa-fw"></i> FORUM</a></li>
 				<li class="navli" id="estore_li"><a href="<?php echo base_url('estore') ?>"><i class="fa fa-shopping-cart fa-fw"></i> E-STORE</a></li>
-				<!-- <li><a href="<?php echo base_url('about_us') ?>"><i class="fa fa-question-circle fa-fw"></i> ABOUT</a></li> -->
+				<li class="navli" id="donation_li"><a class="donation_open"><i class="fa fa-usd fa-fw"></i> DONATION</a></li>
 			</ul>
+		</div>
+
+		<div id="donation_popup">
+			<div class="donation_wrapper">
+				<?php
+					$attrib = array('class' => 'donation_form');
+					echo form_open('', $attrib);
+				?>
+				<i class="fa fa-envelope fa-fw"></i><input type="email" name="email" class="form-control">
+				<i class="fa fa-usd fa-fw"></i><input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
+
+				<button class="btn btn-primary form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
+				<?php echo form_close(); ?>
+			</div>
 		</div>
 	</div>
 </nav>

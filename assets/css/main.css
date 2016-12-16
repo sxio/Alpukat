@@ -74,6 +74,21 @@ body {
   font-size: 200px;
   margin-bottom: 0px;
 }
+
+/*DONATION*/
+.donation_wrapper{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1565c0;
+  margin-top: 200px;
+}
+.donation_wrapper .fa{
+  display: inline;
+}
+.donation_wrapper input{
+
+}
+
 #o_services{
   color: black;
   padding: 30px 40px;
