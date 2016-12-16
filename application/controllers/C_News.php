@@ -9,14 +9,13 @@
 			$this->load->view('news/news', $data);
 		}
 
-		public function news_details(){
+		public function news_details($page){
 			$data['title'] = 'Avocado | AvoNews';
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			$this->load->view('news/news_details', $data);
-
 		}
 	}
 ?>
