@@ -47,8 +47,8 @@
 					<div class="panel-body">
 						<kbd><?php echo 'IDR '. number_format(85000*3, 2, ',', '.'); ?></kbd>
 					</div>
-					<div class="panel-footer text-right">
-						<a href="#" class="btn btn-success"><i class="fa fa-check fa-fw"></i> Proceed</a>
+					<div class="panel-footer clearfix">
+						<a href="<?php echo base_url('estore/epayment'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
 					</div>
 				</div>
 			</div>
