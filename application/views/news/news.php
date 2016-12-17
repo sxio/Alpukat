@@ -10,10 +10,13 @@
 </head>
 <body>
 	<?php echo $nav; ?>
+	<section id="news_home_head">
+		<h4 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> Avo Health News</h4>
+		<p class="text-center">The Right Place to Learn About Health</p>
+	</section>
 	<section id="n_feature">
 		<div class="container cmain">
 			<div class="row">
-			<h2 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> News</h2>
 				<div class="col-sm-6 leftedge">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->

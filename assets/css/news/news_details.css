@@ -1,7 +1,73 @@
-#news_head{
-	padding : 50px 60px 30px 60px;
-	background-color: 
+#news_news{
+	background-color: #f2f2f2;
 }
-#news_head .avohealthnews{
-
+#news_head{
+	padding : 45px 60px 30px 60px;
+	background-color: black;
+	height: 150px;
+	border-bottom: 2px solid grey;
+	color: white;
+}
+#news_head p{
+	font-size: 13px;
+}
+#news_body{
+	width: 85%;
+	margin: 0 auto;
+	background-color: white;
+	/*padding: 30px;*/
+}
+#news_body .container{
+	padding: 30px 40px 30px 40px;	
+}
+#news_body .container .news_content img{
+	width: 100%;
+}
+#news_body h4.news_post_time{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+#news_body .news_content img.news_images{
+	margin-bottom: 20px;
+}
+#news_body .news_content p.news_text_content, #news_body .news_content p.author{
+	font-weight: lighter;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#news_body .news_content p.news_text_content{
+	border-bottom: 3px solid #e0e0e0;
+	padding-bottom: 30px;
+}
+#news_body .news_content p.author{
+	margin-top: 50px;
+	font-weight: bold;
+}
+#news_body .news_content p.news_text_content b{
+	font-size: 20px;
+}
+#tags ul{
+	background-color: skyblue;
+	padding: 10px;
+	
+}
+#tag_head{
+	background-color: black;
+	color: white;	
+	padding: 12px 10px 30px 10px;
+	margin-bottom: 0;
+}
+#tags ul > li{
+	list-style-type: none;
+	display: inline;
+	margin-right: 20px;
+}
+#news_body .details_adv{
+	/*padding-left: 50px;*/
+}
+#news_body .details_adv img{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 400px;
 }

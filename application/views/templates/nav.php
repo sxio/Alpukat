@@ -45,8 +45,12 @@
 					$attrib = array('class' => 'donation_form');
 					echo form_open('', $attrib);
 				?>
-				<i class="fa fa-envelope fa-fw"></i><input type="email" name="email" class="form-control">
-				<i class="fa fa-usd fa-fw"></i><input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span><input type="email" name="email" class="form-control">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
+				</div>
 
 				<button class="btn btn-primary form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
 				<?php echo form_close(); ?>
