@@ -6,7 +6,7 @@
 				</div>
 				<div class="top-right">
 				<ul>
-					<li><a href="<?php echo base_url('estore/echeckout'); ?>">Checkout</a></li>
+					<li><a href="<?php echo base_url('estore/ecart'); ?>"><i class="fa fa-shopping-cart fa-fw"></i> Cart</a></li>
 				</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="header-right2">
 						<div class="cart box_1">
-							<a href="<?php echo base_url('estore/echeckout'); ?>">
+							<a href="<?php echo base_url('estore/ecart'); ?>">
 								<h3> <div class="total">
 									<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 									<img src="<?php echo base_url('assets/img/e-img') ?>/bag.png" alt="" />
