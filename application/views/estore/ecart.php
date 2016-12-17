@@ -54,12 +54,12 @@
 					<tr>
 						<td colspan="4" class="text-right">Total: </td>
 						<td><?php echo number_format(85000*3, 2, ',', '.'); ?></td>
-						<td><button class="btn btn-success">Purchase <i class="fa fa-opencart fa-fw"></i></button></td>
+						<td><a href="<?php echo base_url('estore/epurchase'); ?>" class="btn btn-success">Purchase <i class="fa fa-opencart fa-fw"></i></a></td>
 					</tr>
 				</table>
 			</div>
 		</div>
-	<!-- checkout -->
+
 	</div>
 
 	<?php echo $efooter; ?>

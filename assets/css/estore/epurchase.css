@@ -1,0 +1,19 @@
+.panel{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#review{
+	margin-bottom: 25px;
+}
+#review li{
+	margin-left: 1.5%;
+	display: list-item;
+}
+#review .badge{
+	font-family: initial;
+}
+kbd{
+	font-size: 35px;
+	font-family: 'Comfortaa', cursive;
+}
