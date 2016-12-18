@@ -2,8 +2,9 @@
 
 <div class="page-header">
 	<ol class="breadcrumb">
+	  <li><a href="<?php echo base_url('forum/forumhome'); ?>" >Home</a></li>
+	  <li><a href="<?php echo base_url('forum/dashboard'); ?>" >Profile</a></li>
 	  <li><a href="<?php echo base_url('forum/forumdetail'); ?>" >Forums</a></li>
 	  <li><a href="<?php echo base_url('forum/forumdetail'); ?>" >List of topics</a></li>
-	  <li><a href="<?php echo base_url('forum/dashboard'); ?>" >Profile</a></li>
 	</ol>
 </div>
