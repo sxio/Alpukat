@@ -4,7 +4,6 @@
 	<title>Profile</title>
 
 	<?php echo $header; ?>
-	<?php echo link_tag('assets/css/nav.css'); ?>
 	<?php echo link_tag('assets/css/forumdashboard.css'); ?>
 </head>
 <body>
@@ -178,47 +177,43 @@
 	                        <div class="panel-body">
 	                            <ul class="chat">
 		                            <div class="form-group">
-	                                    <div class="checkbox">
-	                                        <label>
-	                                            <input type="checkbox" value="">
-			                                        <li class="left clearfix checkbox">
-					                                    <span class="chat-img pull-left">
-					                                    <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-					                                    </span>
-					                                    <div class="chat-body clearfix">
-					                                        <div class="header">
-					                                            <strong class="primary-font">Jack Sparrow</strong>
-					                                            <small class="pull-right text-muted">
-					                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-					                                            </small>
-					                                        </div>
-					                                        <p>
-					                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-					                                        </p>
-					                                    </div>
-				                                </li>
-	                                        </label>
-	                                    </div>
-	                                    <div class="checkbox">
-	                                        <label>
-	                                            <input type="checkbox" value="">
-		                                        <li class="right clearfix checkbox">
-				                                    <span class="chat-img pull-right">
-				                                    <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                        <label>
+                                            <input type="checkbox" value="">
+		                                        <li class="left clearfix checkbox">
+				                                    <span class="chat-img pull-left">
+				                                    <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
 				                                    </span>
 				                                    <div class="chat-body clearfix">
 				                                        <div class="header">
-				                                            <small class=" text-muted">
-				                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-				                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+				                                            <strong class="primary-font">Jack Sparrow</strong>
+				                                            <small class="pull-right text-muted">
+				                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+				                                            </small>
 				                                        </div>
 				                                        <p>
 				                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
 				                                        </p>
 				                                    </div>
-	                                			</li>
-	                                        </label>
-	                                    </div>
+			                                </li>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="">
+	                                        <li class="right clearfix checkbox">
+			                                    <span class="chat-img pull-right">
+			                                    <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+			                                    </span>
+			                                    <div class="chat-body clearfix">
+			                                        <div class="header">
+			                                            <small class=" text-muted">
+			                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+			                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+			                                        </div>
+			                                        <p>
+			                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+			                                        </p>
+			                                    </div>
+                                			</li>
+                                        </label>
 	                                </div>
 	                            </ul>
 	                        </div>

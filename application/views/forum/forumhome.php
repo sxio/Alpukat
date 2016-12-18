@@ -11,14 +11,13 @@
 <body>
 	<?php echo $nav; ?>
 		<div id="forum-home" class="container">
-			<div class="page-header page-heading">
-				<h2 class="pull-left">Forum</h1>
-				<ol class="breadcrumb pull-right where-am-i">
-				  <li><a href="#">Forums</a></li>
-				  <li><a href="#">List of topics</a></li>
+			<div class="page-header">
+				<ol class="breadcrumb">
+				  <li><h2>Forum</h2></li>
+				  <li><a href="<?php echo base_url('forum/forumdetail'); ?>" >Forums</a></li>
+				  <li><a href="<?php echo base_url('forum/forumdetail'); ?>" >List of topics</a></li>
 				  <li><a href="<?php echo base_url('forum/dashboard'); ?>" >Profile</a></li>
 				</ol>
-				<div class="clearfix"></div>
 			</div>
 			<p class="lead">This is the right place to discuss any ideas, critics, feature requests and all the ideas regarding our website. Please follow the forum rules and always check FAQ before posting to prevent duplicate posts.</p>
 			<table class="table forum table-striped">
