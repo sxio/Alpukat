@@ -21,6 +21,10 @@
 	background-color: white;
 	/*padding: 30px;*/
 }
+#news_body ol.breadcrumb{
+	background-color: transparent;
+	margin-bottom: 0;
+}
 #news_body .container{
 	padding: 30px 40px 30px 40px;	
 }

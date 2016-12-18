@@ -13,21 +13,24 @@
 	<?php echo $nav; ?>
 	<section id="news_head">
 		<h1 class="avohealthnews">Avo Health News<p>The Right Place to Learn About Health</p></h1>
-		
 	</section>
 	<section id="news_body">
-	<div id="tags">
-		<ul>
-			<li id="tag_head"> Tag </li>
-			<li><a href="">#Hipertensi</a></li>
-			<li><a href="">#JantungKoroner</a></li>
-			<li><a href="">#Tulang</a></li>
-			<li><a href="">#Menstruasi</a></li>
-			<li><a href="">#Otot</a></li>
-		</ul>
-	</div>
+		<div id="tags">
+			<ul>
+				<li id="tag_head"> Tag </li>
+				<li><a href="">#Hipertensi</a></li>
+				<li><a href="">#JantungKoroner</a></li>
+				<li><a href="">#Tulang</a></li>
+				<li><a href="">#Menstruasi</a></li>
+				<li><a href="">#Otot</a></li>
+			</ul>
+		</div>
 		<div class="container">
 			<div class="row">
+				<ol class="breadcrumb">
+				    <li><a href="<?php echo base_url('news') ?>">News</a></li>
+				    <li><a href="#">News Details</a></li>
+		  		</ol>
 				<div class="col-sm-8">
 					<h1 class="news_title">Lebih Waspada, Ini Cara Deteksi “Stroke” dalam Satu Menit</h1>
 					<h4 class="news_post_time">
