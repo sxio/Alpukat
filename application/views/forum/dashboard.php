@@ -230,11 +230,31 @@
 	                                    </button>
 	                                </span>
 	                            </div>
-	                        </div>
 	                        <!-- /.panel-footer -->
 	                    </div>
 	                 </div>
 	            </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h4>History User</h4>
+					<table class="table table-bordered booking-history">
+					<tr>
+						<th>Booking No</th>
+						<th>Total Other Payment</th>
+						<th>Total Amount</th>
+						<th>Booking Date</th>
+					</tr>
+					<?php foreach($hist as $hist){ ?>
+					<tr>
+						<td><?php echo $hist->BOOKING_ID;?></td>
+						<td><?php echo $hist->OTHER_PAYMENT;?></td>
+						<td><?php echo $hist->TOTAL_PAYMENT;?></td>
+						<td><?php echo $hist->BOOKING_DT;?></td>
+					</tr>
+					<?php }; ?>
+					</table>
+				</div>
 			</div>
 		</div>
 	<?php echo $chat; ?>

@@ -12,7 +12,6 @@
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 			$data['chat'] = $this->load->view('templates/chat','',TRUE);
 
-			$data['hist'] = $this->load->Booking_model->get_booking_hist();//13-Dec-16 Meikelwis get data
 
 			$this->load->view('booking/booking',$data);
 		}
