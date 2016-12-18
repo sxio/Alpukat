@@ -27,7 +27,7 @@
 			                            </button>
 			                            <ul class="dropdown-menu">
 					                        <div class="col-sm-12">
-						                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+						                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 						                    </div>
 				                        </ul>
 				                    </div>
