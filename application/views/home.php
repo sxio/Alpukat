@@ -77,17 +77,8 @@
 						<img src="<?php echo base_url('assets/img/avocado.png'); ?>">
 					</div>
 					<h1>What is Avocado <i class="fa fa-question-circle" aria-hidden="true"></i></h1>
-					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="text-justify">Avocado is an web based application that specialized in the world of health. We provide you so many services like health news, forum, e-store, consultation and donation as you can choose what you need. You can search for the best doctor based on the doctor experience so you will always get the best one in their field. Besides, we will always try our best to help people with the donation feature as our founders vision is that we are really hopeful that this website can help as many people as it can. Feel free to give us suggestion at the bottom of this page so we can improve our quality and services.
+					</p>
 				</div>
 			</div>
 		</div>
