@@ -12,8 +12,8 @@
 <body id="news_news">
 	<?php echo $nav; ?>
 	<section id="news_head">
-		<h1 class="avohealthnews">Avo Health News</h1>
-		<p>The Right Place to Learn About Health</p>
+		<h1 class="avohealthnews">Avo Health News<p>The Right Place to Learn About Health</p></h1>
+		
 	</section>
 	<section id="news_body">
 	<div id="tags">

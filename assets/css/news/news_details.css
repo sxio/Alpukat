@@ -2,14 +2,18 @@
 	background-color: #f2f2f2;
 }
 #news_head{
-	padding : 45px 60px 30px 60px;
+	padding : 60px 100px 60px 100px;
 	background-color: black;
-	height: 150px;
+	height: 170px;
 	border-bottom: 2px solid grey;
 	color: white;
 }
+#news_head h1.avohealthnews{
+	font-weight: bold;
+}
 #news_head p{
 	font-size: 13px;
+	font-weight: lighter;
 }
 #news_body{
 	width: 85%;

@@ -11,8 +11,7 @@
 <body>
 	<?php echo $nav; ?>
 	<section id="news_home_head">
-		<h4 class="text-center hitam"><i class="fa fa-newspaper-o fa-fw"></i> Avo Health News</h4>
-		<p class="text-center">The Right Place to Learn About Health</p>
+		<h1 class="hitam">Avo Health News <i class="fa fa-newspaper-o fa-fw"></i><p class="motto">The Right Place to Learn About Health</p></h1>
 	</section>
 	<section id="n_feature">
 		<div class="container cmain">
