@@ -39,7 +39,7 @@
 			</ul>
 		</div>
 
-		<!-- <div id="donation_popup">
+		<div id="donation_popup">
 			<div class="donation_wrapper">
 				<?php
 					$attrib = array('class' => 'donation_form');
@@ -55,6 +55,6 @@
 				<button class="btn btn-primary form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
 				<?php echo form_close(); ?>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </nav>
