@@ -184,11 +184,50 @@
 						</form>
 					</div>
 				</div>
+				<div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle text-center" data-toggle="dropdown"><h2>Donate List</h2><i class="fa fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="col-sm-12">
+                            <div class="container">
+								<div class="panel-heading">
+									<h2>Donate List</h2>
+								</div>
+								<div class="panel-body">
+									<div class="list-payment">
+										<div class="row">
+											<table class="table donate-list table-bordered table-responsive">
+												<tr>
+													<th class="col-sm-3">Donate Name</th>
+													<th class="col-sm-3">Total Amount</th>
+												</tr>
+												<tr>
+													<td class="col-sm-3">John</td>
+													<td class="col-sm-3">2000000</td>
+												</tr>
+												<tr>
+													<td class="col-sm-3">Mary</td>
+													<td class="col-sm-3">35000000</td>
+												</tr>
+												<tr>
+													<td class="col-sm-3">July</td>
+													<td class="col-sm-3">400000000</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>	
+                			</div>
+	                    </div>
+                    </ul>
+                </div>
+
+                    
 			</div>
 		</div>
 	</div>
 	<br>
-
+	
 	<!-- DONATE PAYMENT -->
 	<?php }; ?>
 </body>
