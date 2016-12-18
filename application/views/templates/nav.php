@@ -39,7 +39,7 @@
 			</ul>
 		</div>
 
-		<!-- <div id="donation_popup">
+		<div id="donation_popup">
 			<div class="donation_wrapper">
 				<?php
 					$attrib = array('class' => 'donation_form');
@@ -52,9 +52,9 @@
 					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
 				</div>
 
-				<button class="btn btn-primary form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
+				<button class="btn btn-info form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
 				<?php echo form_close(); ?>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </nav>

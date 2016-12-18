@@ -5,6 +5,7 @@
 
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/forumdashboard.css'); ?>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
