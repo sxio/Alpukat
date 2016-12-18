@@ -1,3 +1,6 @@
+.panel-info{
+	border-bottom-right-radius: 0px!important;
+}
 .payment{
   margin-top: 50px;
 }
@@ -10,4 +13,8 @@ hr{
 }
 .panel ul{
 	padding: inherit;
+}
+.pull-right button{
+	border-top-left-radius: 0px!important;
+	border-top-right-radius: 0px!important;
 }
