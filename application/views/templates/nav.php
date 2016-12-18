@@ -23,9 +23,25 @@
 						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
 				<?php } else { ?>
 						<li class="dropdown">
+							<span class="fa-stack fa-lg" id="notif">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-bell fa-stack-1x fa-inverse"></i>
+							</span>
 							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?>
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
+								<li><a href="#" id="notif_anchor">
+									<div class="panel panel-danger">
+										<div class="panel-heading text-center">
+											<i class="fa fa-bell"></i>13:30
+										</div>
+										<div class="panel-body">
+											Consultation with dr. Oz
+										</div>
+									</div>
+									</a>
+								</li>
+								<li class="divider"></li>
 								<li><a href="<?php base_url()?>logout/log_out"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 							</ul>
 						</li>

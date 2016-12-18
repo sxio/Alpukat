@@ -12,6 +12,25 @@ body {
   font-family: 'Comfortaa', cursive;
   overflow-x: hidden;
 }
+#notif{
+  /*right: 22px;*/
+  right: 16%;
+  top: 10%;
+  position: absolute;
+  font-size: 11px;
+  color: rgba(255,0,0,0.7);
+  z-index: 1000;
+  cursor: pointer;
+}
+#notif:hover{
+
+}
+.panel{
+  margin: 0 5px;
+}
+#notif_anchor{
+  padding: 0;
+}
 .navbar-fixed-top {
   background-color: transparent;
   transition: all 1s ease;
@@ -35,7 +54,7 @@ body {
   font-family: acceleration;
   padding-top: 10px;
 }
-.container #myNavbar ul li a:hover,.container .navbar-header a.navbar-brand:hover{
+.container #myNavbar > ul > li > a:hover,.container .navbar-header a.navbar-brand:hover{
   color: white;
   cursor: pointer;
   text-shadow: 0 0 20px rgba(0,0,0,1);
