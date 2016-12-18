@@ -7,8 +7,10 @@
 
 			if($param == 'estore'){
 				$this->session->set_flashdata('estore_pay',TRUE);
+				$this->session->unset_userdata('booking_pay');
 			} elseif ($param == 'booking') {
 				$this->session->set_flashdata('booking_pay',TRUE);
+				$this->session->unset_userdata('estore_pay');
 			}
 
 			$this->load->view('payment/payment', $data);

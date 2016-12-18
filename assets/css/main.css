@@ -84,14 +84,12 @@ body {
   padding: 10px;
   background-color: #1565c0;
   margin-top: 200px;
+  display: none;
 }
 .donation_wrapper .input-group{
   /*display: inline;*/
   width: 300px;
   margin-bottom: 10px;
-}
-.donation_wrapper input{
-
 }
 
 #o_services{

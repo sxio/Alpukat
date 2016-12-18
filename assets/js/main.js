@@ -52,11 +52,18 @@ $(document).ready(function(){
     closeelement: '.chat_close'
   });
 
+  $('.donation_open').click(function(){
+    $('.donation_wrapper').css('display','inherit');
+  });
+
   // Donation popup
   $('#donation_popup').popup({
     type: 'tooltip',
     transition: 'all 0.3s',
     openelement: '.donation_open',
-    closeelement: '.donation_close'
+    closeelement: '.donation_close',
+    onclose: function() {
+      $('.donation_wrapper').css('display','inherit');
+    }
   });
 });
