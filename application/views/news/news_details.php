@@ -12,7 +12,7 @@
 <body id="news_news">
 	<?php echo $nav; ?>
 	<section id="news_head">
-		<h1 class="avohealthnews">Avo Health News<p>The Right Place to Learn About Health</p></h1>
+		<h1 class="avohealthnews"><i class="fa fa-newspaper-o fa-fw"></i>Avo Health News<p>The Right Place to Learn About Health</p></h1>
 	</section>
 	<section id="news_body">
 		<div id="tags">

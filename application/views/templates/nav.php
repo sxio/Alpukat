@@ -46,10 +46,10 @@
 					echo form_open('payment/form_payment/donate', $attrib);
 				?>
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span><input type="email" name="email" class="form-control">
+					<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span><input placeholder="On Behalf Of" name="text" class="form-control">
 				</div>
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
+					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input placeholder="Amount" type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
 				</div>
 
 				<button class="btn btn-info form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>
