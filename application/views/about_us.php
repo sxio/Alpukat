@@ -23,7 +23,7 @@
 					<img class="img-responsive" src="<?php echo base_url() ?>assets/img/141112460.jpg">
 					<p class="text-center">Meikelwis Wijaya</p>
 					<p class="text-center">141112460</p>
-					<p class="text-center"><i class="founderquote">"I`m really hopeful that this website can help as many people as it can"</i></p>
+					<p class="text-center"><i class="founderquote">"Talent can take you so far but hardwork can take you anywhere"</i></p>
 				</div>
 			</div>
 			<div class="row">

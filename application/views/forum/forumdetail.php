@@ -1,8 +1,8 @@
+<!-- Meikelwis 18-12-16 Untuk forum detail -->
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Doctors List</title>
-
 	<?php echo $header; ?>
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 	<?php echo link_tag('assets/css/forum/forum.css'); ?>
