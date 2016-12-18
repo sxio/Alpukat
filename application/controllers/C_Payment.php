@@ -1,6 +1,6 @@
 <?php
 	class C_Payment extends CI_Controller{
-		public function pay($param = NULL){
+		public function view($param = NULL){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
