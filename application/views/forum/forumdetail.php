@@ -9,11 +9,9 @@
 </head>
 <body>
 	<?php echo $nav; ?>
-		<div id="forum-home" class="container">
-			<?php echo $forumnav; ?>
-		</div>
-		<div class="container">
-		<h3>Hot Topics</h3>
+		<?php echo $forumnav; ?>
+		<div id="forum-detail" class="container">
+			<h3>Forums</h3>
 			<div class="row">
 				<div class="col-sm-12">
 	             	<div class="chat-panel panel panel-default">

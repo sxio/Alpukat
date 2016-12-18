@@ -5,17 +5,16 @@
 
 	<?php echo $header; ?>
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
-	<?php echo link_tag('assets/css/forumdashboard.css'); ?>
-	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+	<?php echo link_tag('assets/css/forum/forum.css'); ?>
 </head>
 <body>
 	<?php echo $nav; ?>
+		<?php echo $forumnav; ?>
 		<div id="forum-dashboard" class="container">
-			<?php echo $forumnav; ?>
 			<div id="page-wrapper">
 	            <div class="row">
 	                <div class="col-sm-12">
-	                    <h1 class="page-header">Profile</h1>
+	                    <h3>Profile</h3>
 	                </div>
 	            </div>
 	            <div class="row">
@@ -257,6 +256,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	<?php echo $chat; ?>
 </body>
 </html>
