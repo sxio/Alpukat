@@ -164,7 +164,7 @@
 									</div>
 								</li>
 								<li class="form-group">
-									<label for="behalf" class="col-md-4 control-label">On Behalf Of</label>
+									<label for="behalf" class="col-md-4 control-label">Name</label>
 									<div class="col-md-8">
 										<input type="text" name="behalf" class="form-control">
 									</div>
