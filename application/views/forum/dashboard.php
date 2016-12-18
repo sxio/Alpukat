@@ -4,12 +4,14 @@
 	<title>Profile</title>
 
 	<?php echo $header; ?>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 	<?php echo link_tag('assets/css/forumdashboard.css'); ?>
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
 		<div id="forum-dashboard" class="container">
+			<?php echo $forumnav; ?>
 			<div id="page-wrapper">
 	            <div class="row">
 	                <div class="col-sm-12">
