@@ -1,4 +1,30 @@
 jQuery(document).ready(function($){
+	$('#myCarousel').carousel({
+		interval: 5000
+	});
+
+	$('#carousel-text').html($('#slide-content-0').html());
+
+	//Handles the carousel thumbnails
+	$('[id^=carousel-selector-]').click( function(){
+		var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+		id = parseInt(id);
+		$('#myCarousel').carousel(id);
+	});
+
+
+	// When the carousel slides, auto update the text
+	$('#myCarousel').on('slid.bs.carousel', function (e) {
+		var id = $('.item.active').data('slide-number');
+		$('#carousel-text').html($('#slide-content-'+id).html());
+	});
+
+
+
+
+
+
+
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var MqL = 1170;
 	//move nav element position according to window width
@@ -40,11 +66,11 @@ jQuery(document).ready(function($){
 	$(document).scroll(function() {
 	  scroll_start = $(this).scrollTop();
 	  if(scroll_start >= offset.top) {
-	      $('.heder-bottom').addClass('navbar-fixed-top');
-	      $('.heder-bottom').css('height','100px');
-	      $(".cd-header-buttons").css("top",'30px');
-	      $('.cd-search').css("top","80%");
-	      // $('.cd-search').css("position","fixed");
+		  $('.heder-bottom').addClass('navbar-fixed-top');
+		  $('.heder-bottom').css('height','100px');
+		  $(".cd-header-buttons").css("top",'30px');
+		  $('.cd-search').css("top","80%");
+		  // $('.cd-search').css("position","fixed");
 
 	   }
 	   else {
@@ -94,12 +120,12 @@ jQuery(document).ready(function($){
 	function checkWindowWidth() {
 		//check window width (scrollbar included)
 		var e = window,
-            a = 'inner';
-        if (!('innerWidth' in window )) {
-            a = 'client';
-            e = document.documentElement || document.body;
-        }
-        if ( e[ a+'Width' ] >= MqL ) {
+			a = 'inner';
+		if (!('innerWidth' in window )) {
+			a = 'client';
+			e = document.documentElement || document.body;
+		}
+		if ( e[ a+'Width' ] >= MqL ) {
 			return true;
 		} else {
 			return false;
@@ -108,8 +134,8 @@ jQuery(document).ready(function($){
 
 	function moveNavigation(){
 		var navigation = $('.cd-nav');
-  		var desktop = checkWindowWidth();
-        if ( desktop ) {
+		var desktop = checkWindowWidth();
+		if ( desktop ) {
 			navigation.detach();
 			navigation.insertBefore('.cd-header-buttons');
 		} else {
