@@ -1,0 +1,13 @@
+.payment{
+  margin-top: 50px;
+}
+.panel-heading h2,
+.panel-heading h3{
+	margin: 0;
+}
+hr{
+	margin-top: 0;
+}
+.panel ul{
+	padding: inherit;
+}

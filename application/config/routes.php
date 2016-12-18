@@ -49,18 +49,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['login/log_in']         = 'C_Login/log_in';
-$route['logout/log_out']       = 'C_Logout/log_out';
-$route['register/regis']       = 'C_Register/regis';
-$route['profile']              = 'C_Profile/view';
-$route['news']                 = 'C_News/view';
-$route['news/details/(:any)']  = 'C_News/news_details/$1';
-$route['estore']               = 'C_Estore/view';
-$route['estore/(:any)']        = 'C_Estore/view/$1';
-$route['booking']              = 'C_Booking/view';
-$route['forum']                = 'C_Forum/view';
-$route['forum/(:any)']         = 'C_Forum/view/$1';
-$route['default_controller']   = 'C_Pages/view';
-$route['(:any)']               = 'C_Pages/view/$1';
-$route['404_override']         = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['login/log_in']                = 'C_Login/log_in';
+$route['logout/log_out']              = 'C_Logout/log_out';
+$route['register/regis']              = 'C_Register/regis';
+$route['profile']                     = 'C_Profile/view';
+$route['news']                        = 'C_News/view';
+$route['news/details/(:any)']         = 'C_News/news_details/$1';
+$route['estore']                      = 'C_Estore/view';
+$route['estore/(:any)']               = 'C_Estore/view/$1';
+$route['booking']                     = 'C_Booking/view';
+$route['forum']                       = 'C_Forum/view';
+$route['forum/(:any)']                = 'C_Forum/view/$1';
+$route['payment/form_payment/(:any)'] = 'C_Payment/pay/$1';
+$route['default_controller']          = 'C_Pages/view';
+$route['(:any)']                      = 'C_Pages/view/$1';
+$route['404_override']                = '';
+$route['translate_uri_dashes']        = FALSE;

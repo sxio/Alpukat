@@ -14,13 +14,7 @@
 </head>
 <body>
 	<?php echo $enav; ?>
-	<!--banner-->
-	<div class="banner1">
-		<div class="container">
-			<h3><a href="<?php echo base_url('estore'); ?>">Home</a> / <a href="<?php echo base_url('estore/ecart'); ?>">Cart</a> / <span>Purchase</span></h3>
-		</div>
-	</div>
-	<!--banner-->
+
 	<br>
 	<div class="container">
 		<div class="panel panel-info">
@@ -48,7 +42,7 @@
 						<kbd><?php echo 'IDR '. number_format(85000*3, 2, ',', '.'); ?></kbd>
 					</div>
 					<div class="panel-footer clearfix">
-						<a href="<?php echo base_url('estore/epayment'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
+						<a href="<?php echo base_url('payment/form_payment/estore'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
 					</div>
 				</div>
 			</div>
