@@ -36,12 +36,12 @@
 							<th>Action</th>
 						</tr>
 						<tr>
-							<td>Avo-1</td>
+							<td>Avo-e-1</td>
 							<td>Jalan Thamrin Kampus T Lantai 3 paling ujung</td>
 							<td>BCA</td>
 							<td>123</td>
 							<td>JNE</td>
-							<td>Pending</td>
+							<td><span class="label label-warning">Pending</span></td>
 							<td><a href="#" class="btn btn-info"><i class="fa fa-list fa-fw"></i></a></td>
 						</tr>
 					</table>
@@ -57,11 +57,11 @@
 							<th>Action</th>
 						</tr>
 						<tr>
-							<td>Avo-1</td>
+							<td>Avo-d-1</td>
 							<td>BCA</td>
 							<td>123</td>
 							<td>IDR 1.000.000,00</td>
-							<td>Accepted</td>
+							<td><span class="label label-success">Accepted</span></td>
 							<td class="text-center"><a href="#" class="btn btn-info"><i class="fa fa-list fa-fw"></i></a></td>
 						</tr>
 					</table>

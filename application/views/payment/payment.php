@@ -110,8 +110,61 @@
 	<!-- ESTORE PAYMENT -->
 	<?php } elseif ($this->session->flashdata('booking_pay') !== NULL) { ?>
 	<!-- BOOKING PAYMENT -->
-
-
+	<br>
+	<div class="container payment">
+		<div class="row"></div>
+		<div class="row">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="text-center">Payment Form</h2>
+				</div>
+				<div class="panel-body">
+					<div class="col-sm-3">
+						<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" id="fotoDokter">
+					</div>
+					<div class="col-sm-8">
+						<form method="post" class="form-horizontal">
+							<ul class="list-unstyled">
+								<li class="form-group">
+									<label class="col-md-3 control-label" for="book_no">Booking No</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="book_no">
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-3 control-label" for="doctorName">Doctor Name</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="doctorName">
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-3 control-label" for="serviceName">Service Name</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="serviceName">
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-3 control-label" for="amount">Amount</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="amount">
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-3 control-label" for="date">Booking Date</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="date">
+									</div>
+								</li>
+							</ul>
+							<a href="<?php echo base_url('payment/success/booking'); ?>" name="btn_booking_pay" class="col-md-12 btn btn-primary"><b>Proceed</b></a>
+							<div class="col-md-4" id="message"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
 	<!-- BOOKING PAYMENT -->
 	<?php } elseif($this->session->flashdata('donate_pay') !== NULL) { ?>
 	<!-- DONATE PAYMENT -->

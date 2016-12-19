@@ -48,8 +48,32 @@
 	<!-- ESTORE PAYMENT -->
 	<?php } elseif ($this->session->flashdata('booking_pay') !== NULL) { ?>
 	<!-- BOOKING PAYMENT -->
-
-
+	<br>
+	<div class="container payment">
+		<div class="row">
+		</div>
+		<div class="row">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="text-center">Booking Completed Successfully</h2>
+				</div>
+				<div class="panel-body">
+					<div class="col-sm-3">
+						<span class="fa-stack fa-lg" id="check_logo">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-check fa-stack-1x fa-inverse"></i>
+						</span>
+					</div>
+					<div class="col-sm-9">
+						<h2>Thank you for booking.</h2>
+						<h2>You will receive a confirmation email shortly.</h2>
+					</div>
+					<a href="<?php echo base_url('home'); ?>" class="btn btn-default" id="btn_home"><i class="fa fa-home fa-fw"></i> Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
 	<!-- BOOKING PAYMENT -->
 	<?php } elseif($this->session->flashdata('donate_pay') !== NULL) { ?>
 	<!-- DONATE PAYMENT -->
