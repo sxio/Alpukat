@@ -17,8 +17,6 @@
 	<br>
 	<div class="container history">
 		<div class="row">
-		</div>
-		<div class="row">
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					<h2 class="text-center"><i class="fa fa-history fa-fw"></i> Payment History</h2>

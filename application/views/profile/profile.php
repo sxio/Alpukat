@@ -18,7 +18,7 @@
 						<div class="panel panel-heading">
 							<div class="row">
 								<section>
-									<img src="assets/img/doctor.jpg" class="img-circle" id="foto">
+									<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" class="img-circle" id="foto">
 
 									<h2>Personal Information</h2>
 								</section>

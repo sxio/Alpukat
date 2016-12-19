@@ -124,13 +124,13 @@
 							<div class="col-sm-2 text-left">
 								<div class="row">
 						        	<div class="profile_image">
-									<img src="<?php echo base_url() ?>assets/img/doctor.jpg">
+									<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>">
 									</div>
 								</div>
 								<div class="row text-center">
 									<br>
 									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
-									<a href="<?php echo base_url('profile'); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
+									<a href="<?php echo base_url('profile/profile'); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
@@ -156,13 +156,13 @@
 								</div>
 								<div class="row">
 									<div class="col-sm-2">
-										<img class="location" src="<?php base_url() ?>assets/img/location.png">
+										<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
 									</div>
 									<div class="col-sm-2">
-										<img class="location" src="<?php base_url() ?>assets/img/location.png">
+										<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
 									</div>
 									<div class="col-sm-2">
-										<img class="location" src="<?php base_url() ?>assets/img/location.png">
+										<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
 									</div>
 								</div>
 							</div>

@@ -42,7 +42,7 @@
 									</a>
 								</li>
 								<li class="divider"></li>
-								<li><a href="<?php echo base_url('profile/history'); ?>"><i class="fa fa-history fa-fw"></i> Payment History</a></li>
+								<li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
 								<li class="divider"></li>
 								<li><a href="<?php echo base_url('logout/log_out');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 							</ul>
