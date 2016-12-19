@@ -26,7 +26,7 @@
 
 	<div class="content">
 		<div class="products-agileinfo">
-			<h2 class="tittle">Women's Wear</h2>
+			<h2 class="tittle">Some Products</h2>
 			<div class="container">
 				<div class="product-agileinfo-grids w3l">
 					<div class="col-md-3 product-agileinfo-grid">
@@ -34,7 +34,7 @@
 							<h3>Top Rates products</h3>
 							<div class="recent-grids">
 								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/r.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Lorem ipsum dolor </a></h6>
@@ -44,7 +44,7 @@
 							</div>
 							<div class="recent-grids">
 								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/r1.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Duis aute irure </a></h6>
@@ -54,7 +54,7 @@
 							</div>
 							<div class="recent-grids">
 								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/r2.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Lorem ipsum dolor </a></h6>
@@ -64,7 +64,7 @@
 							</div>
 							<div class="recent-grids">
 								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/r3.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Ut enim ad minim </a></h6>
@@ -88,16 +88,16 @@
 							</ul>
 						</div>
 						<div class="cat-img">
-							<img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/45.jpg" alt="">
+							<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/45.jpg'); ?>" alt="">
 						</div>
 					</div>
 					<div class="col-md-9 product-agileinfon-grid1 w3l">
 						<div class="product-agileinfon-top">
 							<div class="col-md-6 product-agileinfon-top-left">
-								<img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/img1.jpg" alt="">
+								<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/sport_shoes.jpg'); ?>" alt="">
 							</div>
 							<div class="col-md-6 product-agileinfon-top-left">
-								<img class="img-responsive " src="<?php echo base_url('assets/img/e-img'); ?>/img2.jpg" alt="">
+								<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/sport_shoes.jpg'); ?>" alt="">
 							</div>
 							<div class="clearfix"></div>
 						</div>
@@ -122,372 +122,50 @@
 							<div class="clearfix"></div>
 						</div>
 						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-							<ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist">
-								<ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
-							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu1.png"></a></li>
-							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu.png"></a></li>
+							<!-- <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist"> -->
+							<ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
+								<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu1.png"></a></li>
+								<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu.png"></a></li>
 							</ul>
 							<div id="myTabContent" class="tab-content">
 								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-									<div class="product-tab">
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p6.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p5.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p21.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p22.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p14.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p13.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
+									<?php for($i = 1; $i <= 4; $i++) { ?>
 									<div class="product-tab prod1">
+										<?php for($j = 1; $j <= 3; $j++) { ?>
 										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
 											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i2.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i1.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
+												<div class="grid-arrival">
+													<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+														<div class="grid-img">
+															<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive"  alt="">
+														</div>
+													</a>
 												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
+
+												<div class="desc">
+													<h6><a href="#">Sed ut perspiciatis unde</a></h6>
 													<span class="size">XL / XXL / S </span>
 													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
+													<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i4.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i3.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i6.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i5.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
+										<?php }; ?>
 										<div class="clearfix"></div>
 									</div>
-									<div class="product-tab">
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i8.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i7.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i10.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i9.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i12.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i11.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="product-tab prod2">
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i8.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i7.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i14.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i13.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i2.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i1.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-												<div class="block">
-													<div class="starbox small ghosting"> </div>
-												</div>
-												<div class="women">
-													<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-													<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-												</div>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
+									<?php }; ?>
 								</div>
 								<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
-									<div class="product-tab1">
-										<div class="col-md-4 product-tab1-grid">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p6.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/p5.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-8 product-tab1-grid1 simpleCart_shelfItem">
-											<div class="block">
-												<div class="starbox small ghosting"> </div>
-											</div>
-											<div class="women">
-												<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-												<span class="size">XL / XXL / S </span>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
-												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
+									<?php for($i = 0; $i < 5; $i++) { ?>
 									<div class="product-tab1 prod3">
 										<div class="col-md-4 product-tab1-grid">
 											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i2.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i1.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
+												<div class="grid-arrival">
+													<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+														<div class="grid-img">
+															<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive"  alt="">
+														</div>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -500,107 +178,12 @@
 												<span class="size">XL / XXL / S </span>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
 												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
+												<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 									</div>
-									<div class="product-tab1">
-										<div class="col-md-4 product-tab1-grid">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i4.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i3.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-
-											</div>
-										</div>
-										<div class="col-md-8 product-tab1-grid1 simpleCart_shelfItem">
-											<div class="block">
-												<div class="starbox small ghosting"> </div>
-											</div>
-											<div class="women">
-												<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-												<span class="size">XL / XXL / S </span>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
-												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="product-tab1 prod3">
-										<div class="col-md-4 product-tab1-grid">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i6.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i5.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-
-											</div>
-										</div>
-										<div class="col-md-8 product-tab1-grid1 simpleCart_shelfItem">
-											<div class="block">
-												<div class="starbox small ghosting"> </div>
-											</div>
-											<div class="women">
-												<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-												<span class="size">XL / XXL / S </span>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
-												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="product-tab1">
-										<div class="col-md-4 product-tab1-grid">
-											<div class="grid-arr">
-												<div  class="grid-arrival">
-													<figure>
-														<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i8.jpg" class="img-responsive" alt="">
-															</div>
-															<div class="grid-img">
-																<img  src="<?php echo base_url('assets/img/e-img'); ?>/i7.jpg" class="img-responsive"  alt="">
-															</div>
-														</a>
-													</figure>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-8 product-tab1-grid1 simpleCart_shelfItem">
-											<div class="block">
-												<div class="starbox small ghosting"> </div>
-											</div>
-											<div class="women">
-												<h6><a href="single.html">Sed ut perspiciatis unde</a></h6>
-												<span class="size">XL / XXL / S </span>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Refert tamen, quo modo. Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. </p>
-												<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-												<button href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</button>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-
+									<?php }; ?>
 								</div>
 							</div>
 						</div>
