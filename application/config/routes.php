@@ -53,6 +53,7 @@ $route['login/log_in']                = 'C_Login/log_in';
 $route['logout/log_out']              = 'C_Logout/log_out';
 $route['register/regis']              = 'C_Register/regis';
 $route['profile']                     = 'C_Profile/view';
+$route['profile/history']             = 'C_Profile/view_history';
 $route['news']                        = 'C_News/view';
 $route['news/details/(:any)']         = 'C_News/news_details/$1';
 $route['estore']                      = 'C_Estore/view';
