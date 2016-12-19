@@ -61,6 +61,7 @@ $route['booking']                     = 'C_Booking/view';
 $route['forum']                       = 'C_Forum/view';
 $route['forum/(:any)']                = 'C_Forum/view/$1';
 $route['payment/form_payment/(:any)'] = 'C_Payment/view/$1';
+$route['payment/success/(:any)']      = 'C_Payment/pay_success/$1';
 $route['default_controller']          = 'C_Pages/view';
 $route['(:any)']                      = 'C_Pages/view/$1';
 $route['404_override']                = '';

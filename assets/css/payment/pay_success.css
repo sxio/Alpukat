@@ -1,0 +1,11 @@
+#check_logo{
+	font-size: 100px;
+	color: rgb(0,220,0);
+	float: right;
+}
+.fa-check{
+	font-size: 120px;
+}
+#btn_home{
+	margin-left: 15px;
+}

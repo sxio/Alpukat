@@ -98,7 +98,7 @@
 									</div>
 								</div>
 							</div>
-							<button name="payValidateBtn" type="submit" class="col-md-4 btn btn-primary"><b>Proceed</b></button>
+							<a href="<?php echo base_url('payment/success/estore') ?>" name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></a>
 							<div class="col-md-4" id="message"></div>
 						</form>
 					</div>
@@ -179,7 +179,7 @@
 									</div>
 								</li>
 							</ul>
-							<button name="payValidateBtn" type="submit" class="col-md-12 btn btn-primary"><b>Proceed</b></button>
+							<a href="<?php echo base_url('payment/success/donate'); ?>" name="btn_donate_pay" class="col-md-12 btn btn-primary"><b>Proceed</b></a>
 							<div class="col-md-4" id="message"></div>
 						</form>
 					</div>
@@ -216,7 +216,7 @@
 											</table>
 										</div>
 									</div>
-								</div>	
+								</div>
                 			</div>
 	                    </div>
                     </ul>
@@ -225,7 +225,7 @@
 		</div>
 	</div>
 	<br>
-	
+
 	<!-- DONATE PAYMENT -->
 	<?php }; ?>
 </body>
