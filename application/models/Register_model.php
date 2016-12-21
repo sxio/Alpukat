@@ -25,8 +25,8 @@
 			$from_email = 'avocado.mails@yahoo.com'; //change this to yours
 			$verifyLink = 'http://localhost/Avocado/C_Register/verify/' . md5($to_email);
 			$subject = 'Verify Your Email Address';
-			$message = 'Dear User,<br /><br />Please click on the below activation link to verify your email address.<br /><br />
-			<a href="' . $verifyLink . '">Click Here</a><br /><br /><br />Thanks<br />Mydomain Team';
+			$message = 'Dear User,<br><br>Please click on the below activation link to verify your email address.<br><br>
+			<a href="' . $verifyLink . '">Click Here</a><br><br><br>Thanks<br>Avocado Team';
 
 			//configure email settings
 			$config['protocol'] = 'smtp';

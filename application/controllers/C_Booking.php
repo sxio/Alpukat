@@ -1,7 +1,7 @@
 <?php
 	class C_Booking extends CI_Controller{
-		function __Construct(){
-			parent:: __Construct();
+		public function __construct(){
+			parent:: __construct();
 			$this->load->database();
 			$this->load->model('Booking_model');
 		}
