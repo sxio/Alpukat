@@ -2,11 +2,12 @@
 	class ForgotPassword_model extends CI_Model{
 		public function __construct(){
 			$this->load->database();
+			$this->load->helper('date');
 		}
 
 		public function verify_email($to_email = NULL){
 			$from_email = 'avocado.mails@yahoo.com'; //change this to yours
-			$verifyLink = 'http://localhost/Avocado/forgotPassword/reset/' . md5($to_email);
+			$verifyLink = 'http://localhost/Avocado/forgotPassword/reset/' . md5($to_email) . '/' . now();
 			$subject = 'Reset your account password';
 			$message = 'Dear User,<br><br>Please click on the below link to reset your account password.<br><br>
 			<a href="' . $verifyLink . '">Click Here</a><br><br><br>Thanks<br>';
@@ -39,7 +40,9 @@
 		}
 
 		public function reset_password(){
-
+			$this->db->where('md5(EMAIL)', $this->input->post('email_hash'));
+			$data = array('USER_PASS' => md5($this->input->post('password')));
+			return $this->db->update('MSTUSER', $data);
 		}
 	}
 ?>
