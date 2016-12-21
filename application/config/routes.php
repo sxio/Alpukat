@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['login/log_in']                = 'C_Login/log_in';
 $route['logout/log_out']              = 'C_Logout/log_out';
 $route['register/regis']              = 'C_Register/regis';
+$route['user/fpassword']              = 'C_ForgotPassword/resetpassword';
 $route['dashboard']                   = 'C_Profile/view';
 $route['profile/(:any)']              = 'C_Profile/view/$1';
 $route['news']                        = 'C_News/view';

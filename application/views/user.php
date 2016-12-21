@@ -55,7 +55,7 @@
 						<input type="password" placeholder="Password" name="Lpassword">
 						<i class="fa fa-key"></i>
 
-						<a href="#" id="forgotPass">Forgot your password <i class="fa fa-question-circle fa-fw"></i></a>
+						<a href="<?php echo base_url('user/fpassword'); ?>" id="forgotPass">Forgot your password <i class="fa fa-question-circle fa-fw"></i></a>
 						<button id="btnLogIn">
 							<i class="spinner"></i>
 							<span class="state">Log in</span>

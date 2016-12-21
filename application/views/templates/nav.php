@@ -14,7 +14,7 @@
 					if($this->session->tempdata('nama') != NULL){
 						$loginUser = $this->session->tempdata('nama');
 					} else{
-						$loginUser = "USER";
+						$loginUser = "ACCOUNT";
 					}
 				?>
 				<?php
