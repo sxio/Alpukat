@@ -1,4 +1,3 @@
-<?php if($this->session->tempdata('admin_username') == NULL) redirect('admin/login'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,7 +83,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="author">Author:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsAuthor" id="author" class="form-control" disabled value="<?php echo $this->session->tempdata('admin_username'); ?>">
+								<input type="text" name="newsAuthor" id="author" class="form-control" disabled value="<?php echo $this->session->userdata('admin_username'); ?>">
 							</div>
 						</div>
 					</div>

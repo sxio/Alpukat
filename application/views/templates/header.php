@@ -1,3 +1,11 @@
+<?php
+	if($this->session->userdata('EXPIRE') != null && (time() - $this->session->userdata('EXPIRE') > 3600)){
+		redirect('logout/log_out');
+	}
+	if($this->session->userdata('username') != null){
+		$this->session->set_userdata('EXPIRE', time());
+	}
+?>
 <?php echo link_tag('assets/css/bootstrap.min.css') ?>
 	<?php echo link_tag('assets/css/font-awesome.min.css') ?>
 	<?php echo link_tag('assets/css/main.css') ?>

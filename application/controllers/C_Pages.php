@@ -1,6 +1,9 @@
 <?php
 	class C_Pages extends CI_Controller{
 		public function view($page = 'home'){
+			if($this->session->userdata('username') != null && $page == 'user'){
+				redirect();
+			}
 			if(!file_exists(APPPATH.'/views/'.$page.'.php')){
 				show_404();
 			}

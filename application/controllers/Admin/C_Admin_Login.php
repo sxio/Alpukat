@@ -1,11 +1,13 @@
 <?php
 	class C_Admin_Login extends CI_Controller{
 		public function login(){
+			if($this->session->userdata('admin_username') != null){
+				redirect('admin');
+			}
 			$this->form_validation->set_rules('admin_username', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
 			$this->form_validation->set_rules('admin_password', 'Password', 'trim|required');
 
 			if($this->form_validation->run() == FALSE){
-				$data['title']        = "User";
 				$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 				$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
 				$data['err_login']    = validation_errors();

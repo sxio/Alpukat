@@ -11,14 +11,14 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
 				<?php
-					if($this->session->tempdata('nama') != NULL){
-						$loginUser = $this->session->tempdata('nama');
+					if($this->session->userdata('nama') != NULL){
+						$loginUser = $this->session->userdata('nama');
 					} else{
 						$loginUser = "ACCOUNT";
 					}
 				?>
 				<?php
-					if($this->session->tempdata('username') == NULL){
+					if($this->session->userdata('username') == NULL){
 				?>
 						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
 				<?php } else { ?>

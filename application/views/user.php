@@ -1,5 +1,4 @@
 <!-- Stephen 27 Nov 16 -->
-<?php if($this->session->tempdata('username') != NULL) redirect() ?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,3 @@
-<?php if($this->session->tempdata('admin_username') == NULL) redirect('admin/login'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +35,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="newsID">News ID:</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" name="newsID" id="newsID" placeholder="News ID" autofocus>
+								<input type="text" class="form-control" name="newsID" id="newsID" placeholder="News ID" autofocus value="<?php echo set_value('newsID'); ?>">
 							</div>
 						</div>
 						<div class="form-group">
@@ -72,19 +71,19 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="title">Title:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsTitle" id="title" class="form-control" placeholder="News Title">
+								<input type="text" name="newsTitle" id="title" class="form-control" placeholder="News Title" value="<?php echo set_value('newsTitle'); ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="content">Content:</label>
 							<div class="col-sm-10">
-								<textarea name="newsContent" id="content" class="form-control" placeholder="News Content"></textarea>
+								<textarea name="newsContent" id="content" class="form-control" placeholder="News Content"><?php echo set_value('newsContent'); ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="author">Author:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsAuthor" id="author" class="form-control" disabled value="<?php echo $this->session->tempdata('admin_username'); ?>">
+								<input type="text" name="newsAuthor" id="author" class="form-control" readonly value="<?php echo $this->session->userdata('admin_username'); ?>">
 							</div>
 						</div>
 					</div>

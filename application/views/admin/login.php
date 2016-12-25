@@ -1,4 +1,3 @@
-<?php if($this->session->tempdata('admin_username') != NULL) redirect('admin/home'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +15,7 @@
 			<div class="col-sm-4"></div>
 			<div class="col-sm-4">
 				<?php
-					echo form_open('Admin/C_Admin_Login/login');
+					echo form_open('admin/login');
 				?>
 					<div class="panel panel-info">
 						<div class="panel-heading text-center"><h3>Admin Login</h3></div>

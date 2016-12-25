@@ -15,8 +15,8 @@
 				foreach($query->result_array() as $mstuser){
 					if($mstuser['ACTIVE'] == 0)
 						return 0;
-					$this->session->set_tempdata('username', $mstuser['USER_ID'], 3600);
-					$this->session->set_tempdata('nama', $mstuser['USER_NAME'], 3600);
+					$this->session->set_userdata('username', $mstuser['USER_ID']);
+					$this->session->set_userdata('nama', $mstuser['USER_NAME']);
 					break;
 				}
 			}
@@ -35,8 +35,8 @@
 				foreach($query->result_array() as $mstuser){
 					if($mstuser['ACTIVE'] == 0 || $mstuser['USER_LEVEL'] != 0)
 						return 0;
-					$this->session->set_tempdata('admin_username', $mstuser['USER_ID'], 3600);
-					$this->session->set_tempdata('admin_name', $mstuser['USER_NAME'], 3600);
+					$this->session->set_userdata('admin_username', $mstuser['USER_ID']);
+					$this->session->set_userdata('admin_name', $mstuser['USER_NAME']);
 					break;
 				}
 			}
