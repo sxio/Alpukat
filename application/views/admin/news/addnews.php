@@ -25,6 +25,7 @@
 			<?php if(isset($form_error) && $form_error != null) { ?>
 				<div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
 			<?php }; ?>
+			<?php if(isset($msg) && $msg != null) echo $msg; ?>
 			<?php
 				$attrib = array('class' => 'form-horizontal');
 				echo form_open('admin/news/addnews', $attrib);
@@ -41,6 +42,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="cat">Category:</label>
 							<div class="col-sm-10">
+								<!-- CATEGORIES SHOULD GET FROM DATABASE -->
 								<select name="newsCategory" id="cat" class="form-control">
 									<option>Abortion</option>
 									<option>Acid Reflux / GERD</option>

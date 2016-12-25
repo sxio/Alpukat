@@ -23,7 +23,7 @@
 		public function addnews(){
 			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric|min_length[3]|max_length[30]|is_unique[TRHNEWS.NEWS_ID]|xss_clean');
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
-			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|alpha_numeric|min_length[10]');
+			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
@@ -34,24 +34,44 @@
 				$this->load->view('admin/news/addnews', $data);
 			} else{
 				$res = $this->News_model->insert();
-				//pause
+				if($res['code'] == 0){
+					$data['msg'] = '<div class="alert alert-success">News Addded to Database</div>';
+					$this->load->view('admin/news/addnews', $data);
+				} else{
+					####################################################################
+				}
 			}
 		}
 
-		public function editnews(){
-			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric|min_length[3]|max_length[30]|xss_clean');
+		public function listnews(){
+			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
+			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+
+			$data['lists'] = $this->News_model->get_list();
+			$this->load->view('admin/news/listnews', $data);
+		}
+
+		public function editnews($NEWS_ID = null){
+			// $this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric|min_length[3]|max_length[30]|xss_clean');
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
 			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|alpha_numeric|min_length[10]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+			$data['news']         = $this->News_model->get_news($NEWS_ID)[0];
 
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
 				$this->load->view('admin/news/editnews', $data);
 			} else{
-
+				$res = $this->News_model->update();
+				if($res['code'] == 0){
+					$data['msg'] = '<div class="alert alert-success">News Addded to Database</div>';
+					$this->load->view('admin/news/addnews', $data);
+				} else{
+					####################################################################
+				}
 			}
 		}
 	}

@@ -35,13 +35,14 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="newsID">News ID:</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" name="newsID" id="newsID" placeholder="News ID" autofocus>
+								<input type="text" class="form-control" name="newsID" id="newsID" placeholder="News ID" readonly value="<?php echo $news['NEWS_ID']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="cat">Category:</label>
 							<div class="col-sm-10">
-								<select name="newsCategory" id="cat" class="form-control">
+								<!-- CATEGORIES SHOULD GET FROM DATABASE -->
+								<select name="newsCategory" id="cat" class="form-control" autofocus>
 									<option>Abortion</option>
 									<option>Acid Reflux / GERD</option>
 									<option>Addiction</option>
@@ -71,19 +72,19 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="title">Title:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsTitle" id="title" class="form-control" placeholder="News Title">
+								<input type="text" name="newsTitle" id="title" class="form-control" placeholder="News Title" value="<?php echo $news['NEWS_TITLE']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="content">Content:</label>
 							<div class="col-sm-10">
-								<textarea name="newsContent" id="content" class="form-control" placeholder="News Content">nanti ambe data dr database</textarea>
+								<textarea name="newsContent" id="content" class="form-control" placeholder="News Content"><?php echo $news['NEWS_CONTENT']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="author">Author:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsAuthor" id="author" class="form-control" disabled value="<?php echo $this->session->userdata('admin_username'); ?>">
+								<input type="text" name="newsAuthor" id="author" class="form-control" readonly value="<?php echo $news['USER_ID']; ?>">
 							</div>
 						</div>
 					</div>

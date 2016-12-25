@@ -24,7 +24,7 @@
 				if($this->register_model->sendEmail($this->input->post('user_email'))){
 					$this->session->set_flashdata('msgRegis','<div class="alert alert-success text-center">You are Successfully Registered! Please verify your email.</div>');
 
-					//insert data do database
+					//insert data to database
 					$res = $this->register_model->insert_register();
 					redirect('user');
 

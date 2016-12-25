@@ -29,7 +29,7 @@
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/news/editnews'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+				<a href="<?php echo base_url('admin/news/listnews'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-edit fa-5x fa-fw"></i><br><h2>Edit</h2></button>
 				</a>
 			</div>
