@@ -1,9 +1,12 @@
 <?php
 	class C_Admin_Pages extends CI_Controller{
-		public function view($page = 'home'){
+		public function __construct(){
+			parent:: __construct();
 			if($this->session->userdata('admin_username') == null){
 				redirect('admin/login');
 			}
+		}
+		public function view($page = 'home'){
 			if(!file_exists(APPPATH.'/views/admin/'.$page.'.php')){
 				show_404();
 			}

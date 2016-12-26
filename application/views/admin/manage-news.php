@@ -35,7 +35,7 @@
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href=""><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+				<a href="<?php echo base_url('admin/news/addcategory'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-list fa-5x fa-fw"></i><br><h2>Add Category</h2></button>
 				</a>
 			</div>

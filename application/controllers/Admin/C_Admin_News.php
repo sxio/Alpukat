@@ -22,18 +22,16 @@
 
 		// DONE
 		public function addnews(){
-			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric_spaces|min_length[3]|max_length[30]|is_unique[TRDNEWS.NEWS_ID]|xss_clean');
+			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric_spaces|min_length[3]|max_length[10]|is_unique[TRDNEWS.NEWS_ID]|xss_clean');
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
-			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]');
+			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]|max_length[100]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
-			$data['categories']   = $this->News_model->get_categories();
 
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
-				$this->load->view('admin/news/addnews', $data);
 
 			} else{
 				// UPLOAD NEWS IMAGE
@@ -54,12 +52,13 @@
 
 				if($res['code'] == 0){
 					$data['msg'] = '<div class="alert alert-success">News Addded to Database</div>';
-					$this->load->view('admin/news/addnews', $data);
 				} else{
 					$data['msg'] = '<div class="alert alert-danger">'. $res['message'] .'</div>';
-					$this->load->view('admin/news/addnews', $data);
 				}
 			}
+			$data['categories'] = $this->News_model->get_categories()['data'];
+
+			$this->load->view('admin/news/addnews', $data);
 		}
 
 		// DONE
@@ -82,12 +81,9 @@
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
-			$data['news']         = $this->News_model->get_news($NEWS_ID)[0];
-			$data['categories']   = $this->News_model->get_categories();
 
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
-				$this->load->view('admin/news/editnews', $data);
 
 			} else{
 				// CONFIGURE UPLOAD FILES
@@ -116,13 +112,14 @@
 				$res = $this->News_model->update($news_img);
 				if($res['code'] == 0){
 					$data['msg']  = '<div class="alert alert-success">News Updated to Database</div>';
-					$data['news'] = $this->News_model->get_news($NEWS_ID)[0];
-					$this->load->view('admin/news/editnews', $data);
 				} else{
 					$data['msg'] = '<div class="alert alert-danger">'. $res['message'] .'</div>';
-					$this->load->view('admin/news/editnews', $data);
 				}
 			}
+			$data['news']       = $this->News_model->get_news($NEWS_ID)[0];
+			$data['categories'] = $this->News_model->get_categories()['data'];
+
+			$this->load->view('admin/news/editnews', $data);
 		}
 
 		// DONE
@@ -143,6 +140,31 @@
 			}
 			$this->News_model->delete($NEWS_ID);
 			redirect('admin/news/listnews');
+		}
+
+		public function addcategory(){
+			$this->form_validation->set_rules('categoryID', 'Category ID', 'trim|required|max_length[20]|is_unique[MSTCATEGORY.CAT_ID]|xss_clean');
+			$this->form_validation->set_rules('categoryName', 'Category Name', 'trim|required|max_length[30]');
+
+			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
+			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+
+
+			if($this->form_validation->run() == FALSE){
+				$data['form_error'] = validation_errors();
+			} else{
+				$res = $this->News_model->add_category();
+				if($res['code'] == 0){
+					$data['msg'] = '<div class="alert alert-success">Category Addded to Database</div>';
+				} else{
+					$data['msg'] = '<div class="alert alert-danger">'. $res['message'] .'</div>';
+				}
+			}
+
+			$data['curr_cat']     = $this->News_model->get_categories()['data'];
+			$data['num_row_cat']  = $this->News_model->get_categories()['num_rows'];
+
+			$this->load->view('admin/news/addcategory', $data);
 		}
 	}
 ?>

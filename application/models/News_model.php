@@ -40,7 +40,11 @@
 		public function get_categories(){
 			$this->db->order_by('CAT_NAME');
 			$query = $this->db->get('MSTCATEGORY');
-			return $query->result_array();
+			$data = array(
+				'data' => $query->result_array(),
+				'num_rows' => $query->num_rows()
+			);
+			return $data;
 		}
 
 		public function update($news_img){
@@ -59,6 +63,15 @@
 		public function delete($news_id){
 			$this->db->where('NEWS_ID', $news_id);
 			$this->db->delete('TRDNEWS');
+			return $this->db->error();
+		}
+
+		public function add_category(){
+			$data = array(
+				'CAT_ID' => $this->input->post('categoryID'),
+				'CAT_NAME' => $this->input->post('categoryName')
+			);
+			$this->db->insert('MSTCATEGORY', $data);
 			return $this->db->error();
 		}
 	}

@@ -1,0 +1,49 @@
+.header-fixed {
+    width: 100%;
+    text-align: center;
+}
+.header-fixed tr{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.header-fixed tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.header-fixed tr td:first-child{
+    border-right: 1px solid #ddd;
+}
+.header-fixed > thead,
+.header-fixed > tbody,
+.header-fixed > thead > tr,
+.header-fixed > tbody > tr,
+.header-fixed > thead > tr > th,
+.header-fixed > tbody > tr > td {
+    display: block;
+}
+.header-fixed > thead > tr > th{
+    text-align: center;
+    background-color: #ddd;
+}
+
+.header-fixed > tbody > tr:after,
+.header-fixed > thead > tr:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.header-fixed > tbody {
+    overflow-y: auto;
+    height: 500px;
+    font-weight: lighter;
+}
+
+.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+    width: 50%;
+    float: left;
+}
+.highlight{
+    background-color: yellow;
+}
