@@ -39,7 +39,7 @@
 #news_body .news_content img.news_images{
 	margin-bottom: 20px;
 }
-#news_body .news_content div.news_text_content p, #news_body .news_content p.author{
+#news_body .news_content div.news_text_content p, #news_body .news_content .author{
 	font-weight: lighter;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -49,8 +49,8 @@
 	padding-bottom: 30px;
 	word-spacing: 7px;
 }
-#news_body .news_content p.author{
-	margin-top: 50px;
+#news_body .news_content .author{
+	margin-top: 40px;
 	font-weight: bold;
 }
 #news_body .news_content div.news_text_content b{

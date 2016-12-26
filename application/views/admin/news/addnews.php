@@ -44,6 +44,7 @@
 							<label class="control-label col-sm-2" for="cat">Category:</label>
 							<div class="col-sm-10">
 								<select name="newsCategory" id="cat" class="form-control">
+									<option value="" hidden>-- Category --</option>
 									<?php foreach($categories as $category){ ?>
 										<option value="<?php echo $category['CAT_ID']; ?>"><?php echo $category['CAT_NAME']; ?></option>
 									<?php }; ?>
@@ -59,7 +60,14 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="image">Image:</label>
 							<div class="col-sm-10">
-								<img src="" alt="noimage" class="img-thumbnail img-responsive" id="preview">
+								<?php
+									if($news_img == "noimage.jpg" || $news_img == '' || !isset($news_img)){
+										$news_img = '';
+									} else{
+										$news_img = base_url('assets/img/news-img/'.$news_img);
+									}
+								?>
+								<img src="<?php echo $news_img; ?>" alt="noimage" class="img-thumbnail img-responsive" id="preview">
 								<input type="file" name="userfile" id="image" class="form-control">
 							</div>
 						</div>
@@ -70,13 +78,20 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="author">Author:</label>
+							<label class="control-label col-sm-2" for="newsSource">Source:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsAuthor" id="author" class="form-control" readonly value="<?php echo $this->session->userdata('admin_username'); ?>">
+								<input type="text" class="form-control" name="newsSource" id="newsSource" placeholder="News Source" autofocus value="<?php echo set_value('newsSource'); ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="postby">Posted By:</label>
+							<div class="col-sm-10">
+								<input type="text" name="newsPostedBy" id="postby" class="form-control" readonly value="<?php echo $this->session->userdata('admin_username'); ?>">
 							</div>
 						</div>
 					</div>
 					<div class="panel-footer text-right">
+						<a href="<?php echo base_url('admin/news/addnews'); ?>" class="btn btn-warning"><i class="fa fa-refresh fa-fw"></i> Reset</a>
 						<button class="btn btn-success"><i class="fa fa-paper-plane fa-fw"></i> Submit</button>
 					</div>
 				</div>

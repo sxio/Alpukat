@@ -26,7 +26,7 @@
 			<a href="<?php echo base_url('admin/news/deletenews/'. $news_detail['NEWS_ID']); ?>" class="btn btn-danger"><i class="fa fa-trash fa-fw"></i> Delete</a>
 
 			<h1><?php echo $news_detail['NEWS_TITLE']; ?></h1>
-			<h4><span class="label label-default"><?php echo nice_date($news_detail['NEWS_DT'], 'l, d m Y | h : i : s') ?></span> Author: <?php echo $news_detail['USER_NAME']; ?></h4>
+			<h4><span class="label label-default"><?php echo nice_date($news_detail['NEWS_DT'], 'l, d m Y | h : i : s') ?></span>
 		</div>
 		<div class="row">
 			<?php if($news_detail['NEWS_IMAGE'] != "noimage.jpg") { ?>
@@ -37,6 +37,14 @@
 				<?php echo $news_detail['NEWS_CONTENT']; ?>
 			</div>
 		</div>
+		<hr>
+		<div class="row">
+			<h4>Author: <?php echo $news_detail['USER_NAME']; ?></h4>
+			<h4>Source: <?php echo $news_detail['NEWS_SOURCE']; ?></h4>
+		</div>
+		<br>
+		<br>
+		<br>
 	</div>
 </body>
 </html>

@@ -40,9 +40,10 @@
 						<div class="text-justify news_text_content">
 							<?php echo $news_detail['NEWS_CONTENT']; ?>
 						</div>
-						<p class="author">
-							Author : <?php echo $news_detail['USER_NAME']; ?>
-						</p>
+						<div class="author">
+							<p>Posted By : <?php echo $news_detail['USER_NAME']; ?></p>
+							<p>Source : <?php echo $news_detail['NEWS_SOURCE']; ?></p>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-4 details_adv">

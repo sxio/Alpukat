@@ -26,13 +26,14 @@
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
 			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]|max_length[100]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');
+			$this->form_validation->set_rules('newsSource', 'News Source', 'trim|required|max_length[50]');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
 
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
-
+				$news_img = '';
 			} else{
 				// UPLOAD NEWS IMAGE
 				$config['upload_path']   = './assets/img/news-img';
@@ -57,7 +58,7 @@
 				}
 			}
 			$data['categories'] = $this->News_model->get_categories()['data'];
-
+			$data['news_img'] = $news_img;
 			$this->load->view('admin/news/addnews', $data);
 		}
 
@@ -78,6 +79,7 @@
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
 			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');
+			$this->form_validation->set_rules('newsSource', 'News Source', 'trim|required|max_length[50]');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);

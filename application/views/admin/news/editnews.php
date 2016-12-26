@@ -45,6 +45,7 @@
 							<label class="control-label col-sm-2" for="cat">Category:</label>
 							<div class="col-sm-10">
 								<select name="newsCategory" id="cat" class="form-control" autofocus>
+									<option value="" hidden>-- Category --</option>
 									<?php foreach($categories as $category){
 										if($news['NEWS_CAT'] == $category['CAT_ID']) $selected = ' selected';
 										else $selected = '';
@@ -75,9 +76,15 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="author">Author:</label>
+							<label class="control-label col-sm-2" for="newsSource">Source:</label>
 							<div class="col-sm-10">
-								<input type="text" name="newsAuthor" id="author" class="form-control" readonly value="<?php echo $news['USER_ID']; ?>">
+								<input type="text" class="form-control" name="newsSource" id="newsSource" placeholder="News Source" autofocus value="<?php echo $news['NEWS_SOURCE']; ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="postby">Posted By:</label>
+							<div class="col-sm-10">
+								<input type="text" name="newsPostedBy" id="postby" class="form-control" readonly value="<?php echo $news['USER_ID']; ?>">
 							</div>
 						</div>
 					</div>

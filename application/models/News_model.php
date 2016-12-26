@@ -13,8 +13,8 @@
 				'NEWS_CONTENT' => $this->input->post('newsContent'),
 				'NEWS_DT'      => mdate('%Y-%m-%d %H:%i:%s',now()),
 				'NEWS_CAT'     => $this->input->post('newsCategory'),
-				'USER_ID'      => $this->input->post('newsAuthor'),
-				'USER_DT'      => mdate('%Y-%m-%d %H:%i:%s',now()),
+				'USER_ID'      => $this->input->post('newsPostedBy'),
+				'NEWS_SOURCE'  => $this->input->post('newsSource'),
 				'NEWS_IMAGE'   => $news_img
 			);
 			$this->db->insert('TRDNEWS',$dataDetail);
@@ -53,6 +53,7 @@
 				'NEWS_CONTENT' => $this->input->post('newsContent'),
 				'NEWS_DT'      => mdate('%Y-%m-%d %H:%i:%s',now()),
 				'NEWS_CAT'     => $this->input->post('newsCategory'),
+				'NEWS_SOURCE'  => $this->input->post('newsSource'),
 				'NEWS_IMAGE'   => $news_img
 			);
 			$this->db->where('NEWS_ID', $this->input->post('newsID'));
