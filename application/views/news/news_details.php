@@ -31,7 +31,7 @@
 					<h1 class="news_title"><?php echo $news_detail['NEWS_TITLE']; ?></h1>
 					<h4 class="news_post_time">
 						<!-- Jumat, 16 Desember 2016 | 21:07 WIB -->
-						<?php echo nice_date($news_detail['NEWS_DT'], 'l, d F Y | h:i'); ?>
+						<?php echo nice_date($news_detail['NEWS_DT'], 'l, d F Y | H : i'); ?>
 					</h4>
 					<div class="news_content">
 						<?php if($news_detail['NEWS_IMAGE'] != "noimage.jpg") { ?>

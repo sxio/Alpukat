@@ -4,9 +4,16 @@
 			$this->load->database();
 		}
 
-		public function listmember(){
+		public function listmember($userlevel){
+			$this->db->where('USER_LEVEL', $userlevel);
+			$this->db->where('ACTIVE', 1);
 			$query = $this->db->get('MSTUSER');
-			return $query->result_array();
+
+			$data = array(
+				'data' => $query->result_array(),
+				'num_rows' => $query->num_rows()
+			);
+			return $data;
 		}
 	}
 ?>
