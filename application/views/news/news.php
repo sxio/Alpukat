@@ -84,62 +84,24 @@
 
 					</div>
 				<div class="col-sm-6 rightedge">
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href="#"><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
+					<?php
+						$i = 0;
+						foreach($news_lists as $news_list) {
+							if($i >= 6) break;
+					?>
+						<div class="row today_news">
+							<div class="col-sm-3 news_image">
+								<a href="<?php echo base_url('news/details/'. $news_list['NEWS_ID']); ?>"><img src="<?php echo base_url('assets/img/news-img/'. $news_list['NEWS_IMAGE']); ?>"></a>
+							</div>
+							<div class="col-sm-9 news_title">
+								<a href="<?php echo base_url('news/details/'. $news_list['NEWS_ID']); ?>"><?php echo $news_list['NEWS_TITLE']; ?></a>
+								<div class="news_content"><?php echo word_limiter($news_list['NEWS_CONTENT'], 15); ?></div>
+							</div>
 						</div>
-						<div class="col-sm-9 news_title">
-							<a href="<?php echo base_url('news/details'); ?>">Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/hands.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/jiwa.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Pertolongan Pertama untuk Masalah Kesehatan Jiwa</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/october.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Oktober, Bulan Terbaik untuk Mulai Berdiet</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/perfect.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 5</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/perfect.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 6</a>
-						</div>
-					</div>
-					<div class="row today_news">
-						<div class="col-sm-3 news_image">
-							<a href=""><img src="<?php echo base_url('assets/img/stomach.jpg'); ?>"></a>
-						</div>
-						<div class="col-sm-9 news_title">
-							<a href="#">Berita 7</a>
-						</div>
-					</div>
+					<?php
+						$i++;
+						}
+					?>
 				</div>
 			</div>
 		</div>

@@ -26,6 +26,8 @@ $route['payment/success/(:any)']             = 'C_Payment/pay_success/$1';
 // ADMIN
 $route['admin/news/addnews']                 = 'Admin/C_Admin_News/addnews';
 $route['admin/news/listnews']                = 'Admin/C_Admin_News/listnews';
+$route['admin/news/deletenews/(:any)']       = 'Admin/C_Admin_News/deletenews/$1';
+$route['admin/news/readmore/(:any)']         = 'Admin/C_Admin_News/readmore/$1';
 $route['admin/news/editnews/(:any)']         = 'Admin/C_Admin_News/editnews/$1';
 $route['admin/news/(:any)']                  = 'Admin/C_Admin_News/view/$1';
 $route['admin/login']                        = 'Admin/C_Admin_Login/login';

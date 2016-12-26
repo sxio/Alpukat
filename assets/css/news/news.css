@@ -162,3 +162,12 @@
   left: auto;
   padding-left: 100px;
 }
+
+/* NEWS LISTS */
+.news_content,
+.news_content a{
+  font-size: 10px!important;
+}
+.news_content a{
+  text-decoration: underline;
+}

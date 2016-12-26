@@ -1,0 +1,13 @@
+.label{
+	letter-spacing: 3px;
+	padding: 5px;
+}
+.col-sm-3{
+	height: initial;
+}
+img{
+	/*width: 100%;*/
+}
+h3{
+	margin-top: 0;
+}

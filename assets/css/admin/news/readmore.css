@@ -1,0 +1,18 @@
+.news_content{
+	text-align: justify;
+	font-weight: lighter;
+	/*letter-spacing: 3px;*/
+	line-height: 26px;
+	word-spacing: 5px;
+	font-size: 18px;
+}
+.news_content p{
+	margin-bottom: 25px;
+}
+img{
+	margin: 15px 0;
+	display: inline;
+}
+a.btn-danger{
+	margin-left: 30px;
+}
