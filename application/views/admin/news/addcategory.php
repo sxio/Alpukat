@@ -23,7 +23,7 @@
 		<div class="row">
 			<?php if(isset($form_error) && $form_error != null) { ?>
 				<div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
-			<?php }; ?>
+			<?php } ?>
 			<?php if(isset($msg) && $msg != null) echo $msg; ?>
 			<?php
 				$attrib = array('class' => 'form-horizontal');

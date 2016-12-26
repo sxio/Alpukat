@@ -8,18 +8,6 @@
 			$this->load->model('News_model');
 		}
 
-		public function view($page = null){
-			if(!file_exists(APPPATH.'/views/admin/news/'.$page.'.php')){
-				show_404();
-			}
-
-			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
-			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
-
-			$this->load->helper('html');
-			$this->load->view('admin/news/'.$page, $data);
-		}
-
 		// DONE
 		public function addnews(){
 			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric_spaces|min_length[3]|max_length[10]|is_unique[TRDNEWS.NEWS_ID]|xss_clean');

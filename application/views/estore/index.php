@@ -285,7 +285,7 @@
 							</div>
 						</div>
 					</div>
-					<?php }; ?>
+					<?php } ?>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -331,7 +331,7 @@
 									</div>
 								</div>
 							</div>
-							<?php }; ?>
+							<?php } ?>
 							<div class="clearfix"></div>
 						</div>
 					</div>

@@ -50,7 +50,7 @@
 							<td><a href="#" class="btn btn-warning"><i class="fa fa-trash fa-fw"></i> Remove</a></td>
 						</tr>
 
-					<?php }; ?>
+					<?php } ?>
 					<tr>
 						<td colspan="4" class="text-right">Total: </td>
 						<td><?php echo number_format(85000*3, 2, ',', '.'); ?></td>

@@ -23,7 +23,7 @@
 							<div class="alert alert-danger text-center err_login"><?php echo $err_login; ?></div>
 						<?php } else if($this->session->flashdata('msgLogin') != null){ ?>
 							<?php echo $this->session->flashdata('msgLogin'); ?>
-						<?php }; ?>
+						<?php } ?>
 						<div class="panel-body">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>

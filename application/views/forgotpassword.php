@@ -25,7 +25,7 @@
 						<h5>Enter your email address and we will send you a link to reset your password.</h5>
 						<input type="email" name="email" class="form-control" placeholder="Email" autofocus>
 						<br>
-						<?php if(isset($msg)) { echo $msg; }; ?>
+						<?php if(isset($msg)) { echo $msg; } ?>
 					</div>
 					<div class="panel-footer text-right">
 						<button class="btn btn-success form-control"><i class="fa fa-check fa-fw"></i> Submit</button>

@@ -280,6 +280,6 @@
 	<br>
 
 	<!-- DONATE PAYMENT -->
-	<?php }; ?>
+	<?php } ?>
 </body>
 </html>

@@ -52,7 +52,7 @@
 					<div class="panel-footer text-right">
 						<a href="<?php echo base_url('user'); ?>" class="btn btn-success form-control"><i class="fa fa-arrow-left fa-fw"></i> Login</a>
 					</div>
-					<?php }; ?>
+					<?php } ?>
 				</div>
 			</div>
 			<div class="col-sm-4"></div>

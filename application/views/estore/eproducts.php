@@ -150,10 +150,10 @@
 												</div>
 											</div>
 										</div>
-										<?php }; ?>
+										<?php } ?>
 										<div class="clearfix"></div>
 									</div>
-									<?php }; ?>
+									<?php } ?>
 								</div>
 								<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 									<?php for($i = 0; $i < 5; $i++) { ?>
@@ -183,7 +183,7 @@
 										</div>
 										<div class="clearfix"></div>
 									</div>
-									<?php }; ?>
+									<?php } ?>
 								</div>
 							</div>
 						</div>

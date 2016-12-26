@@ -6,7 +6,7 @@
 	<?php echo link_tag('assets/css/ehome.css') ?>
 	<?php echo link_tag('assets/css/nav.css') ?>
 	<?php echo link_tag('assets/css/efooter.css') ?>
-	
+
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -144,7 +144,7 @@
 				<div class="col-sm-2 promoimgcontainer">
 					<img src="<?php echo base_url() ?>assets/img/bklpk2.jpg">
 				</div>
-				<?php }; ?>
+				<?php } ?>
 			</div>
 		</div>
 	</section>
@@ -226,7 +226,7 @@
 		    		<img src="<?php echo base_url() ?>assets/img/lzd3.jpg">
 				</div>
 		    </div>
-		    
+
 		  </div>
 		</div>
 		<!-- Item slider end-->

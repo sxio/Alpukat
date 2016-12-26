@@ -1,4 +1,3 @@
-<?php if($this->session->userdata('admin_username') == NULL) redirect('admin/login'); ?>
 <!DOCTYPE html>
 <html>
 <head>

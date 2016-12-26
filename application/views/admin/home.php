@@ -43,7 +43,11 @@
 					<i class="fa fa-bell-o fa-5x fa-fw"></i><br><h2>Reminder</h2></button>
 				</a>
 			</div>
-			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<a href="<?php echo base_url('admin/manage-member'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-user fa-5x fa-fw"></i><br><h2>Member</h2></button>
+				</a>
+			</div>
 		</div>
 		<br>
 	</div>

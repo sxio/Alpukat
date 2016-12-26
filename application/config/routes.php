@@ -31,7 +31,9 @@ $route['admin/news/addcategory']             = 'Admin/C_Admin_News/addcategory';
 $route['admin/news/deletenews/(:any)']       = 'Admin/C_Admin_News/deletenews/$1';
 $route['admin/news/readmore/(:any)']         = 'Admin/C_Admin_News/readmore/$1';
 $route['admin/news/editnews/(:any)']         = 'Admin/C_Admin_News/editnews/$1';
-// $route['admin/news/(:any)']               = 'Admin/C_Admin_News/view/$1';
+//
+// MEMBER
+$route['admin/member/listmember']            = 'Admin/C_Admin_Member/listmember';
 //
 $route['admin/login']                        = 'Admin/C_Admin_Login/login';
 $route['admin/(:any)']                       = 'Admin/C_Admin_Pages/view/$1';

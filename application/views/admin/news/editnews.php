@@ -26,7 +26,7 @@
 		<div class="row">
 			<?php if(isset($form_error) && $form_error != null) { ?>
 				<div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
-			<?php }; ?>
+			<?php } ?>
 			<?php if(isset($msg) && $msg != null) echo $msg; ?>
 			<?php
 				$attrib = array('class' => 'form-horizontal');
@@ -51,7 +51,7 @@
 										else $selected = '';
 									?>
 										<option value="<?php echo $category['CAT_ID']; ?>"<?php echo $selected; ?>><?php echo $category['CAT_NAME']; ?></option>
-									<?php }; ?>
+									<?php } ?>
 								</select>
 							</div>
 						</div>

@@ -275,7 +275,7 @@
 								<td><?php echo $hist->TOTAL_PAYMENT;?></td>
 								<td><?php echo $hist->BOOKING_DT;?></td>
 							</tr>
-							<?php }; ?>
+							<?php } ?>
 						</table>
 
 						<!-- TABLE DONATE -->

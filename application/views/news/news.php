@@ -133,7 +133,7 @@
 									</div>
 								</div>
 							</div>
-							<?php }; ?>
+							<?php } ?>
 						</div>
 						<div id="menu1" class="tab-pane fade">
 								<div class="block">
@@ -182,7 +182,7 @@
 					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p></a>
 				</div>
-				<?php }; ?>
+				<?php } ?>
 			</div>
 		</div>
 	</section>

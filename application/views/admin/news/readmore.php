@@ -31,7 +31,7 @@
 		<div class="row">
 			<?php if($news_detail['NEWS_IMAGE'] != "noimage.jpg") { ?>
 				<img src="<?php echo base_url('assets/img/news-img/'. $news_detail['NEWS_IMAGE']); ?>">
-			<?php }; ?>
+			<?php } ?>
 
 			<div class="news_content">
 				<?php echo $news_detail['NEWS_CONTENT']; ?>
