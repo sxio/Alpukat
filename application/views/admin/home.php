@@ -26,8 +26,8 @@
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href=""><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-opencart fa-5x fa-fw"></i><br><h2>Estore</h2></button>
+				<a href="<?php echo base_url('admin/manage-estore'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-opencart fa-5x fa-fw"></i><br><h2>E-store</h2></button>
 				</a>
 			</div>
 			<div class="col-sm-3">

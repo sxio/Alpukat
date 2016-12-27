@@ -15,7 +15,7 @@
 			<li><a href="<?php echo base_url('admin/home'); ?>">Home</a></li>
 			<li class="active">Manage Member</li>
 		</ol>
-		<h2 class="text-center"><i class="fa fa-user fa-fw"></i> Member</h2>
+		<h2 class="text-center"><i class="fa fa-user fa-fw"></i> MEMBER</h2>
 		<br>
 		<div class="row">
 			<div class="col-sm-3">

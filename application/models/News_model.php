@@ -1,6 +1,7 @@
 <?php
 	class News_model extends CI_Model{
 		public function __construct(){
+            parent::__construct();
 			$this->load->database();
 			$this->load->helper('date');
 			date_default_timezone_set('Asia/Jakarta');

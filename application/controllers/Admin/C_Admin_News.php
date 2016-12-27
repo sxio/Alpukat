@@ -10,7 +10,7 @@
 
 		// DONE
 		public function addnews(){
-			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric_spaces|min_length[3]|max_length[10]|is_unique[TRDNEWS.NEWS_ID]|xss_clean');
+			$this->form_validation->set_rules('newsID', 'News ID', 'trim|required|alpha_numeric|min_length[3]|max_length[10]|is_unique[TRDNEWS.NEWS_ID]|xss_clean');
 			$this->form_validation->set_rules('newsCategory', 'Category', 'required');
 			$this->form_validation->set_rules('newsTitle', 'News Title', 'trim|required|min_length[10]|max_length[100]');
 			$this->form_validation->set_rules('newsContent', 'News Content', 'trim|required');

@@ -37,6 +37,10 @@ $route['admin/member/addmember']             = 'Admin/C_Admin_Member/addmember';
 $route['admin/member/addrole']               = 'Admin/C_Admin_Member/addrole';
 $route['admin/member/listmember']            = 'Admin/C_Admin_Member/listmember';
 //
+// ESTORE
+$route['admin/estore/addproduct']            = 'Admin/C_Admin_Estore/addproduct';
+$route['admin/estore/addcategory']           = 'Admin/C_Admin_Estore/addcategory';
+//
 $route['admin/login']                        = 'Admin/C_Admin_Login/login';
 $route['admin/(:any)']                       = 'Admin/C_Admin_Pages/view/$1';
 $route['admin']                              = 'Admin/C_Admin_Pages/view';
