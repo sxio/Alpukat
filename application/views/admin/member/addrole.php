@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin | Category</title>
+	<title>Admin | Add Role</title>
 	<?php echo $admin_header; ?>
 	<?php echo link_tag('assets/css/nav.css'); ?>
 	<?php echo link_tag('assets/css/admin/admin-main.css'); ?>
@@ -10,15 +10,13 @@
 </head>
 <body>
 	<?php echo $admin_nav; ?>
-
 	<div class="container-fluid margintop">
 		<ol class="breadcrumb">
 			<li><a href="<?php echo base_url('admin/home'); ?>">Home</a></li>
-			<li><a href="<?php echo base_url('admin/manage-news'); ?>">Manage News</a></li>
-			<li class="active">Add Category</li>
+			<li><a href="<?php echo base_url('admin/manage-member'); ?>">Manage Member</a></li>
+			<li class="active">Add Role</li>
 		</ol>
 	</div>
-
 	<div class="container">
 		<div class="row">
 			<?php if(isset($form_error) && $form_error != null) { ?>
@@ -27,21 +25,21 @@
 			<?php if(isset($msg) && $msg != null) echo $msg; ?>
 			<?php
 				$attrib = array('class' => 'form-horizontal');
-				echo form_open('admin/news/addcategory', $attrib);
+				echo form_open('admin/member/addrole', $attrib);
 			?>
 				<div class="panel panel-primary">
 					<div class="panel-heading"><h2 class="text-center"><i class="fa fa-list fa-fw"></i> Add Category</h2></div>
 					<div class="panel-body">
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="catID">Category ID:</label>
+							<label class="control-label col-sm-2" for="roleID">Role ID :</label>
 							<div class="col-sm-10">
-								<input type="text" name="categoryID" class="form-control" id="catID" autofocus value="<?php echo set_value('categoryID'); ?>" placeholder="Category ID">
+								<input type="number" name="roleID" class="form-control" id="roleID" autofocus placeholder="Role ID (ex: 1)">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="catName">Category Name:</label>
+							<label class="control-label col-sm-2" for="roleName">Role Name :</label>
 							<div class="col-sm-10">
-								<input type="text" name="categoryName" class="form-control" id="catName" autofocus value="<?php echo set_value('categoryName'); ?>" placeholder="Category Name">
+								<input type="text" name="roleName" class="form-control" id="roleName" placeholder="Role Name">
 							</div>
 						</div>
 					</div>
@@ -53,18 +51,18 @@
 		</div>
 		<div class="row">
 			<table class="table table-condensed header-fixed">
-				<caption>Current Categories ( <?php echo $num_row_cat; ?> )</caption>
+				<caption>Current Role ( <?php echo $num_row_role; ?> )</caption>
 				<thead>
 					<tr>
-						<th>ID</th>
-						<th>NAME</th>
+						<th>Role ID</th>
+						<th>Role</th>
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach($curr_cat as $category){ ?>
+					<?php foreach($curr_role as $role){ ?>
 						<tr>
-							<td><?php echo $category['CAT_ID']; ?></td>
-							<td><?php echo $category['CAT_NAME']; ?></td>
+							<td><?php echo $role['USER_LEVEL']; ?></td>
+							<td><?php echo $role['USER_DESC']; ?></td>
 						</tr>
 					<?php } ?>
 				</tbody>

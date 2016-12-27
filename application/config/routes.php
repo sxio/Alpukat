@@ -33,6 +33,8 @@ $route['admin/news/readmore/(:any)']         = 'Admin/C_Admin_News/readmore/$1';
 $route['admin/news/editnews/(:any)']         = 'Admin/C_Admin_News/editnews/$1';
 //
 // MEMBER
+$route['admin/member/addmember']             = 'Admin/C_Admin_Member/addmember';
+$route['admin/member/addrole']               = 'Admin/C_Admin_Member/addrole';
 $route['admin/member/listmember']            = 'Admin/C_Admin_Member/listmember';
 //
 $route['admin/login']                        = 'Admin/C_Admin_Login/login';

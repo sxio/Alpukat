@@ -19,20 +19,15 @@
 		<br>
 		<div class="row">
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/member/'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-plus fa-5x fa-fw"></i><br><h2>Add Staff</h2></button>
-				</a>
-			</div>
-<!-- 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/member/'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-edit fa-5x fa-fw"></i><br><h2>Edit Staff</h2></button>
+				<a href="<?php echo base_url('admin/member/addmember'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-user-plus fa-5x fa-fw"></i><br><h2>Add Staff</h2></button>
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/member/'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-trash fa-5x fa-fw"></i><br><h2>Delete Staff</h2></button>
+				<a href="<?php echo base_url('admin/member/addrole'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-plus-circle fa-5x fa-fw"></i><br><h2>Add Role</h2></button>
 				</a>
-			</div> -->
+			</div>
 			<div class="col-sm-3">
 				<a href="<?php echo base_url('admin/member/listmember'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-list fa-5x fa-fw"></i><br><h2>Staff List</h2></button>
