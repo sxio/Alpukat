@@ -23,14 +23,14 @@
 
 		public function get_list(){
 			$this->db->order_by('TRDNEWS.NEWS_DT','DESC');
-			$this->db->join('MSTCATEGORY','MSTCATEGORY.CAT_ID = TRDNEWS.NEWS_CAT');
+			$this->db->join('MSDCATEGORY','MSDCATEGORY.CAT_ID = TRDNEWS.NEWS_CAT');
 			$query = $this->db->get('TRDNEWS');
 			return $query->result_array();
 		}
 
 		public function get_news($NEWS_ID){
 			$this->db->order_by('TRDNEWS.NEWS_DT','DESC');
-			$this->db->join('MSTCATEGORY','MSTCATEGORY.CAT_ID = TRDNEWS.NEWS_CAT');
+			$this->db->join('MSDCATEGORY','MSDCATEGORY.CAT_ID = TRDNEWS.NEWS_CAT');
 			$this->db->join('MSTUSER','MSTUSER.USER_ID = TRDNEWS.USER_ID');
 			$this->db->where('NEWS_ID', $NEWS_ID);
 			$query = $this->db->get('TRDNEWS');
@@ -39,7 +39,8 @@
 
 		public function get_categories(){
 			$this->db->order_by('CAT_NAME');
-			$query = $this->db->get('MSTCATEGORY');
+			$this->db->where('CAT_GROUP', 1);
+			$query = $this->db->get('MSDCATEGORY');
 			$data = array(
 				'data' => $query->result_array(),
 				'num_rows' => $query->num_rows()
@@ -69,10 +70,10 @@
 
 		public function add_category(){
 			$data = array(
-				'CAT_ID' => $this->input->post('categoryID'),
+				'CAT_GROUP' => 1, //1 means News
 				'CAT_NAME' => $this->input->post('categoryName')
 			);
-			$this->db->insert('MSTCATEGORY', $data);
+			$this->db->insert('MSDCATEGORY', $data);
 			return $this->db->error();
 		}
 	}

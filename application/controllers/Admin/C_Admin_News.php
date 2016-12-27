@@ -59,7 +59,6 @@
 			$this->load->view('admin/news/listnews', $data);
 		}
 
-		// DONE
 		public function editnews($NEWS_ID = null){
 			if($NEWS_ID == null){
 				redirect('admin/news/listnews');
@@ -112,7 +111,6 @@
 			$this->load->view('admin/news/editnews', $data);
 		}
 
-		// DONE
 		public function readmore($NEWS_ID = null){
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
@@ -133,8 +131,7 @@
 		}
 
 		public function addcategory(){
-			$this->form_validation->set_rules('categoryID', 'Category ID', 'trim|required|max_length[20]|is_unique[MSTCATEGORY.CAT_ID]|xss_clean');
-			$this->form_validation->set_rules('categoryName', 'Category Name', 'trim|required|max_length[30]');
+			$this->form_validation->set_rules('categoryName', 'Category Name', 'trim|required|max_length[30]|is_unique[MSDCATEGORY.CAT_NAME]');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);

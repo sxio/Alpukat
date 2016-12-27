@@ -33,15 +33,9 @@
 					<div class="panel-heading"><h2 class="text-center"><i class="fa fa-list fa-fw"></i> Add Category</h2></div>
 					<div class="panel-body">
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="catID">Category ID:</label>
-							<div class="col-sm-10">
-								<input type="text" name="categoryID" class="form-control" id="catID" autofocus value="<?php echo set_value('categoryID'); ?>" placeholder="Category ID">
-							</div>
-						</div>
-						<div class="form-group">
 							<label class="control-label col-sm-2" for="catName">Category Name:</label>
 							<div class="col-sm-10">
-								<input type="text" name="categoryName" class="form-control" id="catName" autofocus value="<?php echo set_value('categoryName'); ?>" placeholder="Category Name">
+								<input type="text" name="categoryName" class="form-control" id="catName" autofocus placeholder="Category Name">
 							</div>
 						</div>
 					</div>
