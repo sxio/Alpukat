@@ -5,6 +5,7 @@
 			if($this->session->userdata('admin_username') == NULL){
 				redirect('admin/login');
 			}
+			$this->load->library('pagination');
 			$this->load->model('News_model');
 		}
 
@@ -55,7 +56,20 @@
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
 
-			$data['lists'] = $this->News_model->get_list();
+			// CONFIGURE PAGINATION
+			$this->config->load('pagination');
+			$config = $this->config->item('pagination');
+			$config['base_url']   = base_url(). 'admin/news/listnews';
+			$config['total_rows'] = $this->News_model->count_all();
+			$config['per_page']   = 5;
+
+			$this->pagination->initialize($config);
+			$data['pagination'] = $this->pagination->create_links();
+
+			$offset = $this->uri->segment(4);
+			$limit = $config['per_page'];
+
+			$data['lists'] = $this->News_model->get_list($limit, $offset);
 			$this->load->view('admin/news/listnews', $data);
 		}
 

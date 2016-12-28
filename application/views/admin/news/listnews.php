@@ -22,6 +22,9 @@
 
 	<div class="container">
 		<div class="row">
+			<div class="text-center">
+				<?php echo $pagination; ?>
+			</div>
 			<?php foreach($lists as $list){ ?>
 				<div class="well well-sm">
 					<div class="row">
@@ -40,6 +43,9 @@
 					</div>
 				</div>
 			<?php } ?>
+			<div class="text-center">
+				<?php echo $pagination; ?>
+			</div>
 		</div>
 	</div>
 	<br>

@@ -22,11 +22,15 @@
 			return $this->db->error();
 		}
 
-		public function get_list(){
+		public function get_list($limit, $offset){
 			$this->db->order_by('TRDNEWS.NEWS_DT','DESC');
 			$this->db->join('MSDCATEGORY','MSDCATEGORY.CAT_ID = TRDNEWS.NEWS_CAT');
-			$query = $this->db->get('TRDNEWS');
+			$query = $this->db->get('TRDNEWS', $limit, $offset);
 			return $query->result_array();
+		}
+
+		public function count_all(){
+			return $this->db->count_all('TRDNEWS');
 		}
 
 		public function get_news($NEWS_ID){
