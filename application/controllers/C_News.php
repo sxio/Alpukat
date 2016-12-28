@@ -9,7 +9,7 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			$data['news_lists'] = $this->News_model->get_list();
+			$data['news_lists'] = $this->News_model->get_list(0, 0);
 
 			$this->load->helper('html');
 			$this->load->view('news/news', $data);

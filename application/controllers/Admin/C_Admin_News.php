@@ -34,7 +34,7 @@
 					$news_img = 'noimage.jpg';
 				}else{
 					$data['upload_data'] = $this->upload->data();
-					$news_img = $data['upload_data']['file_name'];
+					$news_img            = $data['upload_data']['file_name'];
 				}
 
 				// INSERT TO DATABASE (MODEL)
@@ -47,7 +47,7 @@
 				}
 			}
 			$data['categories'] = $this->News_model->get_categories()['data'];
-			$data['news_img'] = $news_img;
+			$data['news_img']   = $news_img;
 			$this->load->view('admin/news/addnews', $data);
 		}
 
@@ -58,18 +58,20 @@
 
 			// CONFIGURE PAGINATION
 			$this->config->load('pagination');
-			$config = $this->config->item('pagination');
+			$config               = $this->config->item('pagination');
 			$config['base_url']   = base_url(). 'admin/news/listnews';
 			$config['total_rows'] = $this->News_model->count_all();
 			$config['per_page']   = 5;
 
 			$this->pagination->initialize($config);
-			$data['pagination'] = $this->pagination->create_links();
+			$data['pagination']   = $this->pagination->create_links();
 
-			$offset = $this->uri->segment(4);
-			$limit = $config['per_page'];
-
-			$data['lists'] = $this->News_model->get_list($limit, $offset);
+			$offset               = $this->uri->segment(4);
+			$limit                = $config['per_page'];
+			//
+			$data['offset']       = $offset;
+			$data['count_all']    = $config['total_rows'];
+			$data['lists']        = $this->News_model->get_list($limit, $offset);
 			$this->load->view('admin/news/listnews', $data);
 		}
 

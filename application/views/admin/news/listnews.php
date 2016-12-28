@@ -25,6 +25,14 @@
 			<div class="text-center">
 				<?php echo $pagination; ?>
 			</div>
+		</div>
+		<div class="row text-center">
+			<div class="label label-primary">
+				Showing <?php echo ($offset+1) . ' to ' .(count($lists) + $offset) . ' from ' . $count_all . ' records'; ?>
+			</div>
+		</div>
+		<br>
+		<div class="row">
 			<?php foreach($lists as $list){ ?>
 				<div class="well well-sm">
 					<div class="row">
@@ -43,6 +51,8 @@
 					</div>
 				</div>
 			<?php } ?>
+		</div>
+		<div class="row">
 			<div class="text-center">
 				<?php echo $pagination; ?>
 			</div>

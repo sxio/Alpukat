@@ -27,9 +27,8 @@ $config['pagination']['num_links']            = 5;
 // $config['pagination']['use_page_numbers']     = TRUE;
 // $config['pagination']['query_string_segment'] = 'pg';
 
-// $config['pagination']['full_tag_open']     = '<div class="pagination"><ul>';
-$config['pagination']['full_tag_open']        = '<ul class="pagination">';
-$config['pagination']['full_tag_close']       = '</ul><!--pagination-->';
+$config['pagination']['full_tag_open']        = '<!--pagination--><ul class="pagination">';
+$config['pagination']['full_tag_close']       = '</ul>';
 
 $config['pagination']['first_link']           = '&laquo;';
 $config['pagination']['first_tag_open']       = '<li class="prev page">';

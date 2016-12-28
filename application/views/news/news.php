@@ -20,61 +20,26 @@
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
-						    <div class="item active">
-						      <img src="<?php echo base_url('assets/img/stomach.jpg'); ?>" alt="perut">
-						      <div class="carousel-caption">
-						        <h3>Kombinasi Tiga Penyakit yang Bisa Perpendek Usia</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
+					  		<?php
+					  			$i = 0;
 
-						    <div class="item">
-						      <img src="<?php echo base_url('assets/img/jiwa.jpg'); ?>" alt="jiwa">
-						      <div class="carousel-caption">
-						        <h3>Pertolongan Pertama untuk Masalah Kesehatan Jiwa</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
+					  			foreach ($news_lists as $news_list) {
+						  			if($i == 0) $active = 'active';
+						  			else $active = '';
+						  			?>
+							  		<div class="item <?php echo $active; ?>">
+							  			<img src="<?php echo base_url('assets/img/news-img/'. $news_list['NEWS_IMAGE']); ?>" class="carousel-img">
+							  			<div class="carousel-caption">
+							  				<h3><?php echo $news_list['NEWS_TITLE']; ?></h3>
+							  				<a href="<?php echo base_url('news/details/'. $news_list['NEWS_ID']); ?>" class="carousel-readmore">Read more</a>
+							  			</div>
+							  			<div class="carousel-content"><p><?php echo word_limiter($news_list['NEWS_CONTENT'], 40); ?></p></div>
+							  		</div>
+						  			<?php
+					  				$i++;
+					  			}
+					  		?>
 
-						    <div class="item">
-						      <img src="<?php echo base_url('assets/img/hands.jpg'); ?>" alt="tangan">
-						      <div class="carousel-caption">
-						        <h3>Manusia Hanya Bisa Mencapai Umur Maksimal Sampai 120 Tahun?</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
-
-						    <div class="item">
-						      <img src="<?php echo base_url('assets/img/october.jpg'); ?>" alt="october">
-						      <div class="carousel-caption">
-						        <h3>Oktober, Bulan Terbaik untuk Mulai Berdiet</h3>
-						        <a href="#">Read More...</a>
-						      </div>
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						    </div>
 						</div>
 						<!-- <h3 class="video-title">Health Video</h3> -->
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/9G95EYym4NM" frameborder="0" allowfullscreen></iframe>
@@ -87,7 +52,7 @@
 					<?php
 						$i = 0;
 						foreach($news_lists as $news_list) {
-							if($i >= 6) break;
+							if($i >= 7) break;
 					?>
 						<div class="row today_news">
 							<div class="col-sm-3 news_image">

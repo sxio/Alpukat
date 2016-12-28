@@ -171,3 +171,15 @@
 .news_content a{
   text-decoration: underline;
 }
+
+.carousel-img{
+  height: 300px!important;
+  width: 100%;
+}
+.carousel-content a{
+  color: initial!important;
+  text-decoration: underline;
+}
+.carousel-readmore{
+  color: black!important;
+}

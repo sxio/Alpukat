@@ -76,7 +76,7 @@
 		public function add_category(){
 			$data = array(
 				'CAT_GROUP' => 1, //1 means News
-				'CAT_NAME' => $this->input->post('categoryName')
+				'CAT_NAME'  => $this->input->post('categoryName')
 			);
 			$this->db->insert('MSDCATEGORY', $data);
 			return $this->db->error();
