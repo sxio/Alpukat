@@ -64,7 +64,7 @@
 				$res = $this->Estore_model->add_product($estore_img);
 
 				if($res['code'] == 0){
-					$data['msg'] = '<div class="alert alert-success">News Addded to Database</div>';
+					$data['msg'] = '<div class="alert alert-success">Product Addded to Database</div>';
 				} else{
 					$data['msg'] = '<div class="alert alert-danger">'. $res['message'] .'</div>';
 				}
@@ -72,6 +72,43 @@
 			$data['categories'] = $this->Estore_model->get_categories()['data'];
 			$data['estore_img'] = $estore_img;
 			$this->load->view('admin/estore/addproduct', $data);
+		}
+
+		public function restock(){
+			$this->form_validation->set_rules('catID', 'Category ID','required');
+			$this->form_validation->set_rules('prodID', 'Product ID', 'required');
+			$this->form_validation->set_rules('prodQuan', 'Quantity', 'trim|required|is_natural_no_zero');
+
+			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
+			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+
+			if($this->form_validation->run() == FALSE){
+				$data['form_error'] = validation_errors();
+			} else {
+				$res = $this->Estore_model->restock_product();
+
+				if($res['code'] == 0){
+					$data['msg'] = '<div class="alert alert-success">Restock success</div>';
+				} else{
+					$data['msg'] = '<div class="alert alert-danger">'. $res['message'] .'</div>';
+				}			}
+
+			$data['categories'] = $this->Estore_model->get_categories()['data'];
+			$this->load->view('admin/estore/restock', $data);
+		}
+
+		// for AJAX in restock.js
+		public function GetProdutByCategory(){
+			$id = $this->input->post('catID');
+			$res = $this->Estore_model->get_product_by_category($id);
+			print_r(json_encode($res));
+		}
+
+		// for AJAX in restock.js
+		public function GetProductById(){
+			$id = $this->input->post('prodID');
+			$res = $this->Estore_model->get_product_by_id($id);
+			print_r(json_encode($res));
 		}
 	}
 ?>

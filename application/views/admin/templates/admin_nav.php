@@ -18,10 +18,8 @@
 					}
 				?>
 				<?php
-					if($this->session->userdata('admin_username') == NULL){
+					if($this->session->userdata('admin_username') != NULL){
 				?>
-						<li class="navli" id="user_li"><a href="<?php echo base_url('admin/admin_login'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginAdmin; ?></a></li>
-				<?php } else { ?>
 						<li class="dropdown">
 							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginAdmin; ?>
 							<span class="caret"></span></a>

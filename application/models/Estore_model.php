@@ -27,6 +27,22 @@
 			return $data;
 		}
 
+		public function get_product_by_category($id){
+			$this->db->where('CAT_ID', $id);
+			$query = $this->db->get('MSTPRODUCT');
+			return $query->result_array();
+		}
+
+		public function get_product_by_id($id){
+			$this->db->where('PROD_ID', $id);
+			$query = $this->db->get('MSTPRODUCT');
+			if($query->num_rows() == 1){
+				return $query->result_array();
+			} else{
+				return null;
+			}
+		}
+
 		public function add_product($img){
 			$data = array(
 				'PROD_ID'     => $this->input->post('prodID'),
@@ -38,6 +54,20 @@
 				'PROD_IMG'    => $img
 			);
 			$this->db->insert('MSTPRODUCT', $data);
+			return $this->db->error();
+		}
+
+		public function restock_product(){
+			$this->db->select('PROD_QTY_OS');
+			$this->db->where('PROD_ID', $this->input->post('prodID'));
+			$quanLama = $this->db->get('MSTPRODUCT');
+			$quanLama = $quanLama->row()->PROD_QTY_OS;
+
+			$data = array(
+				'PROD_QTY_OS' => $quanLama + $this->input->post('prodQuan')
+			);
+			$this->db->where('PROD_ID', $this->input->post('prodID'));
+			$this->db->update('MSTPRODUCT', $data);
 			return $this->db->error();
 		}
 	}

@@ -24,7 +24,7 @@
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/estore/'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+				<a href="<?php echo base_url('admin/estore/restock'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-cubes fa-5x fa-fw"></i><br><h2>Restock</h2></button>
 				</a>
 			</div>
