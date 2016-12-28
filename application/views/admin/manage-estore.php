@@ -29,8 +29,8 @@
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/estore/'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-check-square-o fa-5x fa-fw"></i><br><h2>List Payment</h2></button>
+				<a href="<?php echo base_url('admin/estore/paymentlist'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-check-square-o fa-5x fa-fw"></i><br><h2>Payment List</h2></button>
 				</a>
 			</div>
 			<div class="col-sm-3">

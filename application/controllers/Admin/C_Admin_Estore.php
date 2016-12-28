@@ -110,5 +110,12 @@
 			$res = $this->Estore_model->get_product_by_id($id);
 			print_r(json_encode($res));
 		}
+
+		public function paymentlist(){
+			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
+			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+
+			$this->load->view('admin/estore/paymentlist', $data);
+		}
 	}
 ?>
