@@ -24,4 +24,10 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	// $('.close').click(function(c){
+	// 	$(this).parent().fadeOut('slow', function(c){
+	// 		$(this).remove();
+	// 	});
+	// });
 });

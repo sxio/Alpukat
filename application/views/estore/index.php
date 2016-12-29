@@ -72,7 +72,7 @@
 								<br>
 								<p><?php echo word_limiter($prod['PROD_DESC'], 30); ?></p>
 								<br>
-								<p class="sub-text"><?php echo nice_date($prod['CREATED_AT'], 'F d, Y'); ?> - <a href="#">Read more</a></p>
+								<p class="sub-text"><?php echo nice_date($prod['CREATED_AT'], 'F d, Y'); ?> - <a href="<?php echo base_url('estore/detail/'. $prod['PROD_ID']); ?>">Read more</a></p>
 							</div>
 							<?php
 								$i++;

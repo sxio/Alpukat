@@ -3,10 +3,8 @@
 <head>
 	<title>Admin | Category</title>
 	<?php echo $admin_header; ?>
-	<?php echo link_tag('assets/css/nav.css'); ?>
-	<?php echo link_tag('assets/css/admin/admin-main.css'); ?>
-	<?php echo link_tag('assets/css/admin/news/addcategory.css'); ?>
 
+	<?php echo link_tag('assets/css/admin/news/addcategory.css'); ?>
 </head>
 <body>
 	<?php echo $admin_nav; ?>

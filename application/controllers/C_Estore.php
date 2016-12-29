@@ -6,11 +6,12 @@
 		}
 
 		public function view($page = 'index'){
-			$data['total_items'] = $this->cart->total_items();
-			$data['total']       = $this->cart->total();
+			$data['cart']          = $this->cart->contents();
+			$data['total_items']   = $this->cart->total_items();
+			$data['total']         = $this->cart->total();
 
 			$data['header']        = $this->load->view('templates/header','',TRUE);
-			$data['enav']          = $this->load->view('estore/templates/enav',$data,TRUE);
+			$data['enav']          = $this->load->view('estore/templates/enav', $data,TRUE);
 			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
 
 			$data['carousel_prod'] = $this->Estore_model->get_newest_product(0,0);
@@ -37,7 +38,8 @@
 				'id'     => $prod['PROD_ID'],
 				'qty'    => 1,
 				'price'  => $prod['PROD_PRICE'],
-				'name'   => $prod['PROD_NAME']
+				'name'   => $prod['PROD_NAME'],
+				'img'    => $prod['PROD_IMG']
 			);
 			$this->cart->insert($cart_data);
 			$data['total_items'] = $this->cart->total_items();
@@ -47,6 +49,11 @@
 
 		public function emptycart(){
 			$this->cart->destroy();
+		}
+
+		public function removeitem($rowid){
+			$this->cart->remove($rowid);
+			redirect('estore/ecart');
 		}
 	}
 ?>

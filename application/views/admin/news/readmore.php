@@ -4,8 +4,6 @@
 	<title>Admin | Read More</title>
 	<?php echo $admin_header; ?>
 
-	<?php echo link_tag('assets/css/nav.css'); ?>
-	<?php echo link_tag('assets/css/admin/admin-main.css'); ?>
 	<?php echo link_tag('assets/css/admin/news/readmore.css'); ?>
 </head>
 <body>

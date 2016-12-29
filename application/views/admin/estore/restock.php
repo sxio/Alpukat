@@ -3,8 +3,7 @@
 <head>
 	<title>Admin | Restock</title>
 	<?php echo $admin_header; ?>
-	<?php echo link_tag('assets/css/nav.css'); ?>
-	<?php echo link_tag('assets/css/admin/admin-main.css'); ?>
+
 	<?php echo link_tag('assets/css/admin/news/addcategory.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/admin/restock.js'); ?>"></script>

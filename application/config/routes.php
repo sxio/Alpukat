@@ -16,6 +16,7 @@ $route['news']                               = 'C_News/view';
 $route['news/details/(:any)']                = 'C_News/news_details/$1';
 $route['estore']                             = 'C_Estore/view';
 $route['estore/detail/(:any)']               = 'C_Estore/detail/$1';
+$route['estore/removeitem/(:any)']           = 'C_Estore/removeitem/$1';
 $route['estore/addtocart']                   = 'C_Estore/addtocart';
 $route['estore/emptycart']                   = 'C_Estore/emptycart';
 $route['estore/(:any)']                      = 'C_Estore/view/$1';
