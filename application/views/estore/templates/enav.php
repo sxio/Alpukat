@@ -121,12 +121,13 @@
 					<div class="header-right2">
 						<div class="cart box_1">
 							<a href="<?php echo base_url('estore/ecart'); ?>">
-								<h3> <div class="total">
-									<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+								<h3>
+									<div class="total" id="total">RP <?php echo number_format($total,0,'.',','); ?> (<?php echo $total_items; ?> items)</div>
 									<img src="<?php echo base_url('assets/img/e-img') ?>/bag.png" alt="" />
 								</h3>
 							</a>
-							<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+							<p id="empty_cart">Empty Cart</p>
+							<input type="hidden" id="baseURL" name="baseURL" value="<?php echo base_url(); ?>"> <!-- for ajax -->
 							<div class="clearfix"> </div>
 						</div>
 					</div>

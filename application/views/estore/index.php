@@ -9,6 +9,7 @@
 	<?php echo link_tag('assets/css/estore/estore-custom.css') ?>
 
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/estore/cart.js'); ?>"></script>
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 				setTimeout(hideURLbar, 0);

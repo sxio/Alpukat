@@ -65,6 +65,7 @@
 
 		public function get_product_by_id($id){
 			$this->db->where('PROD_ID', $id);
+			$this->db->join('MSDCATEGORY', 'MSDCATEGORY.CAT_ID = MSTPRODUCT.CAT_ID');
 			$query = $this->db->get('MSTPRODUCT');
 			if($query->num_rows() == 1){
 				return $query->result_array();

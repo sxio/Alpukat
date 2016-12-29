@@ -12,6 +12,9 @@ body {
   font-family: 'Comfortaa', cursive;
   overflow-x: hidden;
 }
+.margintop-20{
+  margin-top: 20px;
+}
 #notif{
   /*right: 22px;*/
   right: 16%;

@@ -1,3 +1,10 @@
+/*CART*/
+p#empty_cart{
+  cursor: pointer;
+  font-size: 14px;
+  text-align: right;
+}
+
 /*CAROUSEL*/
 #carousel_wrapper{
   margin-top: 30px;
