@@ -1,5 +1,10 @@
 <?php
 	class C_Register extends CI_Controller{
+		public function __construct(){
+			parent:: __construct();
+			$this->load->model('Register_model');
+		}
+
 		public function regis(){
 			$this->form_validation->set_rules('user_id', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean|is_unique[MSTUSER.USER_ID]');
 			$this->form_validation->set_rules('user_name', 'Full Name', 'trim|required|min_length[3]|max_length[30]|xss_clean');
@@ -22,11 +27,11 @@
 
 			} else{
 
-				if($this->register_model->sendEmail($this->input->post('user_email'))){
+				if($this->Register_model->sendEmail($this->input->post('user_email'))){
 					$this->session->set_flashdata('msgRegis','<div class="alert alert-success text-center">You are Successfully Registered! Please verify your email.</div>');
 
 					//insert data to database
-					$res = $this->register_model->insert_register();
+					$res = $this->Register_model->insert_register();
 					redirect('user');
 
 				} else{
@@ -39,7 +44,7 @@
 
 		public function verify($hash=NULL)
 		{
-			if ($this->register_model->verifyEmailID($hash))
+			if ($this->Register_model->verifyEmailID($hash))
 			{
 				$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Your Email Address is successfully verified! Please login to access your account!</div>');
 			} else{

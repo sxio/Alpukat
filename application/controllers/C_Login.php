@@ -1,8 +1,17 @@
 <?php
 	class C_Login extends CI_Controller{
+		public function __construct(){
+			parent:: __construct();
+			$this->load->model('Login_model');
+		}
+
 		public function log_in(){
 			$this->form_validation->set_rules('LuserName', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
 			$this->form_validation->set_rules('Lpassword', 'Password', 'trim|required');
+
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			if($this->form_validation->run() == FALSE){
 				$data['title'] = "User";
@@ -10,7 +19,7 @@
 				$this->load->view('user', $data);
 			} else{
 				//insert data do database
-				$res = $this->login_model->check_login();
+				$res = $this->Login_model->check_login();
 				if($res === 1){
 					$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Login Success!</div>');
 					sleep(1.5);

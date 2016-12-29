@@ -1,5 +1,9 @@
 <?php
 	class C_Admin_Login extends CI_Controller{
+		public function __construct(){
+			parent:: __construct();
+			$this->load->model('Login_model');
+		}
 		public function login(){
 			if($this->session->userdata('admin_username') != null){
 				redirect('admin');
@@ -14,7 +18,7 @@
 				$this->load->view('admin/login', $data);
 			} else{
 				//insert data do database
-				$res = $this->login_model->admin_login();
+				$res = $this->Login_model->admin_login();
 				if($res === 1){
 					sleep(1);
 					redirect('admin/home');

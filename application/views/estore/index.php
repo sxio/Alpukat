@@ -6,16 +6,8 @@
 
 	<!--CSS-->
 	<?php echo link_tag('assets/css/estore/estore.css') ?>
-	<!-- <?php echo link_tag('assets/css/estore/jstarbox.css') ?> -->
-	<!-- <?php echo link_tag('assets/css/estore/coreSlider.css') ?> -->
 
-	<!-- SCRIPT -->
-	<!-- <script src="<?php echo base_url('assets/js/estore/jstarbox.js'); ?>"></script> -->
-	<!-- <script src="<?php echo base_url('assets/js/estore/simpleCart.min.js'); ?>"></script> -->
-	<!-- <script src="<?php echo base_url('assets/js/estore/responsiveslides.min.js'); ?>"></script> -->
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
-	<!-- <script src="<?php echo base_url('assets/js/estore/coreSlider.js'); ?>"></script> -->
-
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 				setTimeout(hideURLbar, 0);
@@ -24,83 +16,9 @@
 				window.scrollTo(0,1);
 			}
 	</script>
-
-<!-- 	<script>
-		$(function () {
-			$("#slider").responsiveSlides({
-			auto: true,
-			nav: true,
-			speed: 500,
-			namespace: "callbacks",
-			pager: true
-		});
-	});
-	</script> -->
-<!-- 	<script type="text/javascript">
-		jQuery(function() {
-		jQuery('.starbox').each(function() {
-			var starbox = jQuery(this);
-				starbox.starbox({
-				average: starbox.attr('data-start-value'),
-				changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
-				ghosting: starbox.hasClass('ghosting'),
-				autoUpdateAverage: starbox.hasClass('autoupdate'),
-				buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
-				stars: starbox.attr('data-star-count') || 5
-				}).bind('starbox-value-changed', function(event, value) {
-				if(starbox.hasClass('random')) {
-				var val = Math.random();
-				starbox.next().text(' '+val);
-				return val;
-				}
-			})
-		});
-	});
-	</script> -->
-<!--//End-rate-->
 </head>
 <body>
 	<?php echo $enav; ?>
-	<!--header-->
-	<!--banner-->
-	<!-- <div class="banner-w3">
-		<div class="demo-1">
-			<div id="example1" class="core-slider core-slider__carousel example_1">
-				<div class="core-slider_viewport">
-					<div class="core-slider_list">
-						<div class="core-slider_item">
-							<img src="<?php echo base_url('assets/img/e-img') ?>/b1.jpg" class="img-responsive" alt="">
-						</div>
-						 <div class="core-slider_item">
-							 <img src="<?php echo base_url('assets/img/e-img') ?>/b2.jpg" class="img-responsive" alt="">
-						 </div>
-						<div class="core-slider_item">
-							  <img src="<?php echo base_url('assets/img/e-img') ?>/b3.jpg" class="img-responsive" alt="">
-						</div>
-						<div class="core-slider_item">
-							  <img src="<?php echo base_url('assets/img/e-img') ?>/b4.jpg" class="img-responsive" alt="">
-						</div>
-					 </div>
-				</div>
-				<div class="core-slider_nav">
-					<div class="core-slider_arrow core-slider_arrow__right"></div>
-					<div class="core-slider_arrow core-slider_arrow__left"></div>
-				</div>
-				<div class="core-slider_control-nav"></div>
-			</div>
-		</div>
-
-		<script>
-		$('#example1').coreSlider({
-			pauseOnHover: false,
-			interval: 3000,
-			controlNavEnabled: true
-		});
-
-		</script>
-
-	</div> -->
-	<!--banner-->
 	<!-- CAROUSEL -->
 	<div class="container">
 		<div id="carousel_wrapper">

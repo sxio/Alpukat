@@ -13,7 +13,7 @@
 			$row = $query->num_rows();
 			if($row === 1){
 				foreach($query->result_array() as $mstuser){
-					if($mstuser['ACTIVE'] == 0)
+					if($mstuser['ACTIVE'] == 0 || $mstuser['USER_LEVEL'] == 0)
 						return 0;
 					$this->session->set_userdata('username', $mstuser['USER_ID']);
 					$this->session->set_userdata('nama', $mstuser['USER_NAME']);
