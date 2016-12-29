@@ -7,6 +7,36 @@
 			date_default_timezone_set('Asia/Jakarta');
 		}
 
+		public function add_product($img){
+			$data = array(
+				'PROD_ID'     => $this->input->post('prodID'),
+				'PROD_NAME'   => $this->input->post('prodName'),
+				'CAT_ID'      => $this->input->post('prodCat'),
+				'PROD_QTY_OS' => $this->input->post('prodQuant'),
+				'PROD_PRICE'  => $this->input->post('prodPrice'),
+				'PROD_DESC'   => $this->input->post('prodDesc'),
+				'PROD_IMG'    => $img,
+				'CREATED_AT'  => mdate('%Y-%m-%d %H:%i:%s',now())
+			);
+			$this->db->insert('MSTPRODUCT', $data);
+			return $this->db->error();
+		}
+
+		public function restock_product(){
+			$this->db->select('PROD_QTY_OS');
+			$this->db->where('PROD_ID', $this->input->post('prodID'));
+			$quanLama = $this->db->get('MSTPRODUCT');
+			$quanLama = $quanLama->row()->PROD_QTY_OS;
+
+			$data = array(
+				'PROD_QTY_OS' => $quanLama + $this->input->post('prodQuan'),
+				'UPDATED_AT'  => mdate('%Y-%m-%d %H:%i:%s',now())
+			);
+			$this->db->where('PROD_ID', $this->input->post('prodID'));
+			$this->db->update('MSTPRODUCT', $data);
+			return $this->db->error();
+		}
+
 		public function add_category(){
 			$data = array(
 				'CAT_GROUP' => 2, //2 means Estore
@@ -43,32 +73,10 @@
 			}
 		}
 
-		public function add_product($img){
-			$data = array(
-				'PROD_ID'     => $this->input->post('prodID'),
-				'PROD_NAME'   => $this->input->post('prodName'),
-				'CAT_ID'      => $this->input->post('prodCat'),
-				'PROD_QTY_OS' => $this->input->post('prodQuant'),
-				'PROD_PRICE'  => $this->input->post('prodPrice'),
-				'PROD_DESC'   => $this->input->post('prodDesc'),
-				'PROD_IMG'    => $img
-			);
-			$this->db->insert('MSTPRODUCT', $data);
-			return $this->db->error();
-		}
-
-		public function restock_product(){
-			$this->db->select('PROD_QTY_OS');
-			$this->db->where('PROD_ID', $this->input->post('prodID'));
-			$quanLama = $this->db->get('MSTPRODUCT');
-			$quanLama = $quanLama->row()->PROD_QTY_OS;
-
-			$data = array(
-				'PROD_QTY_OS' => $quanLama + $this->input->post('prodQuan')
-			);
-			$this->db->where('PROD_ID', $this->input->post('prodID'));
-			$this->db->update('MSTPRODUCT', $data);
-			return $this->db->error();
+		public function get_newest_product($limit, $offset){
+			$this->db->order_by('CREATED_AT', 'DESC');
+			$query = $this->db->get('MSTPRODUCT', $limit, $offset);
+			return $query->result_array();
 		}
 	}
 ?>

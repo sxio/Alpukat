@@ -15,7 +15,7 @@
 				<div class="col-md-3 footer-grid">
 					<h4>My Account</h4>
 					<ul>
-						<li><a href="checkout.html">Checkout</a></li>
+						<li><a href="<?php echo base_url('estore/ecart'); ?>">Cart</a></li>
 						<li><a href="<?php echo base_url('user'); ?>">Login</a></li>
 						<li><a href="<?php echo base_url('user'); ?>"> Create Account </a></li>
 					</ul>

@@ -6,6 +6,7 @@
 
 	<!--CSS-->
 	<?php echo link_tag('assets/css/estore/estore.css') ?>
+	<?php echo link_tag('assets/css/estore/estore-custom.css') ?>
 
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
 	<script type="application/x-javascript">
@@ -31,23 +32,20 @@
 							<div class="carousel slide" id="myCarousel">
 								<!-- Carousel items -->
 								<div class="carousel-inner">
-									<div class="active item" data-slide-number="0">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
-
-									<div class="item" data-slide-number="1">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
-
-									<div class="item" data-slide-number="2">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
-
-									<div class="item" data-slide-number="3">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
-
-									<div class="item" data-slide-number="4">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
-
-									<div class="item" data-slide-number="5">
-									<img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></div>
+									<?php
+										$i=0;
+										foreach($carousel_prod as $prod):
+											if($i == 0) $active = 'active';
+											else $active = '';
+											// if($prod['PROD_IMG'] == 'noimage.jpg') continue;
+									?>
+									<div class="item <?php echo $active; ?>" data-slide-number="<?php echo $i; ?>">
+										<img src="<?php echo base_url('assets/img/estore-img/'.$prod['PROD_IMG']); ?>" class="carousel-img">
+									</div>
+									<?php
+										$i++;
+										endforeach;
+									?>
 								</div><!-- Carousel nav -->
 								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left"></span>
@@ -61,41 +59,24 @@
 						<div class="col-sm-4" id="carousel-text"></div>
 
 						<div id="slide-content" style="display: none;">
-							<div id="slide-content-0">
-								<h2>Slider One</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+							<?php
+								$i=0;
+								foreach($carousel_prod as $prod):
+									if($i == 0) $active = 'active';
+									else $active = '';
+									// if($prod['PROD_IMG'] == 'noimage.jpg') continue;
+							?>
+							<div id="slide-content-<?php echo $i; ?>">
+								<h2><?php echo $prod['PROD_NAME']; ?></h2>
+								<br>
+								<p><?php echo word_limiter($prod['PROD_DESC'], 30); ?></p>
+								<br>
+								<p class="sub-text"><?php echo nice_date($prod['CREATED_AT'], 'F d, Y'); ?> - <a href="#">Read more</a></p>
 							</div>
-
-							<div id="slide-content-1">
-								<h2>Slider Two</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-							</div>
-
-							<div id="slide-content-2">
-								<h2>Slider Three</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-							</div>
-
-							<div id="slide-content-3">
-								<h2>Slider Four</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-							</div>
-
-							<div id="slide-content-4">
-								<h2>Slider Five</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-							</div>
-
-							<div id="slide-content-5">
-								<h2>Slider Six</h2>
-								<p>Lorem Ipsum Dolor</p>
-								<p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-							</div>
+							<?php
+								$i++;
+								endforeach;
+							?>
 						</div>
 					</div>
 				</div>
@@ -104,29 +85,20 @@
 			<div class="row hidden-xs" id="slider-thumbs">
 				<!-- Bottom switcher of slider -->
 				<ul class="hide-bullets">
+					<?php
+						$i=0;
+						foreach($carousel_prod as $prod):
+							if($i == 0) $active = 'active';
+							else $active = '';
+							// if($prod['PROD_IMG'] == 'noimage.jpg') continue;
+					?>
 					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-0"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
+						<a class="thumbnail carousel-thumbnail" id="carousel-selector-<?php echo $i; ?>"><img src="<?php echo base_url('assets/img/estore-img/'.$prod['PROD_IMG']); ?>"></a>
 					</li>
-
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-1"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
-					</li>
-
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-2"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
-					</li>
-
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-3"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
-					</li>
-
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-4"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
-					</li>
-
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-5"><img src="<?php echo base_url('assets/img/e-img/sport_carousel_1.jpg'); ?>"></a>
-					</li>
+					<?php
+						$i++;
+						endforeach;
+					?>
 				</ul>
 			</div>
 		</div>
