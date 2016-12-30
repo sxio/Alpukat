@@ -26,7 +26,7 @@ $route['estore/(:any)']                      = 'C_Estore/view/$1';
 $route['booking']                            = 'C_Booking/view';
 $route['forum']                              = 'C_Forum/view';
 $route['forum/(:any)']                       = 'C_Forum/view/$1';
-$route['payment/form_payment/(:any)']        = 'C_Payment/view/$1';
+$route['payment/(:any)/form-payment']        = 'C_Payment/view/$1';
 $route['payment/success/(:any)']             = 'C_Payment/pay_success/$1';
 
 
