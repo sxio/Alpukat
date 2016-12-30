@@ -67,6 +67,12 @@
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
+                        <label class="col-md-4 control-label">Transport Fee </label>
+                        <div class="col-md-8">
+                            <p>: 10 Jt</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Date Transfer </label>
                         <div class="col-md-8">
                             <p>: 01-01-0001</p>
