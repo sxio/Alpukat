@@ -34,6 +34,24 @@
 						<form method="post" class="form-horizontal">
 							<ul class="list-unstyled">
 								<li class="form-group">
+									<label class="col-md-4 control-label" for="shoppingid">Shopping ID</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="shoppingid" placeholder="Your shopping id (masih ragu mau kasih nampak apa g)" disabled>
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 control-label" for="buyername">Name </label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="buyername" placeholder="Tar pake php ambek nama user" disabled>
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 control-label" for="buyeraddress">Address </label>
+									<div class="col-md-8">
+										<textarea class="form-control" rows="5" name="buyeraddress" placeholder="Please enter the address where the package should be sent"></textarea>
+									</div>
+								</li>
+								<li class="form-group">
 									<label class="col-md-4 control-label" for="banktype">Bank Name</label>
 									<div class="col-md-8">
 										<select class="form-control" name="banktype">
@@ -71,12 +89,24 @@
 									</div>
 								</li>
 								<li class="form-group">
+									<label class="col-md-4 control-label" for="transfee">Transport Fee</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="transfee" id="transfee" placeholder="Akumulasi harga langsung terjadi begitu jasa kurir dipilih" disabled>
+									</div>
+								</li>
+								<li class="form-group">
 									<label for="date_tf" class="col-md-4 control-label">Date Transfer</label>
 									<div class="col-md-8 date">
 										<select name="date_tf" class="form-control">
 											<option value=""></option>
 											<option value=""><?php echo date('d-m-Y'); ?></option>
 										</select>
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 control-label" for="grandtotal">Grand Total</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" name="grandtotal" id="paymentgrandtotal" placeholder="tarokkan nilai grand total" disabled>
 									</div>
 								</li>
 							</ul>
@@ -98,7 +128,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="<?php echo base_url('payment/success/estore') ?>" name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></a>
+							<a href="<?php echo base_url('estore/epaymentreview') ?>" name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></a>
 							<div class="col-md-4" id="message"></div>
 						</form>
 					</div>

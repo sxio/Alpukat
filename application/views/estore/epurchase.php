@@ -32,8 +32,8 @@
 				<code>If you have mistaken set the quantity or have any changes <a href="<?php echo base_url('estore/ecart'); ?>">click here</a> to back before proceed</code>
 
 				<br>
-				<p>Your order will be deliver to you address: <u><i><?php echo $user_info['USER_ADDRESS']; ?></i></u></p>
-				<p>Transport Fee: RP 0</p>
+				<!-- <p>Your order will be deliver to you address: <u><i><?php echo $user_info['USER_ADDRESS']; ?></i></u></p> -->
+				<!-- <p>Transport Fee: RP 0</p> -->
 			</div>
 			<div class="panel-footer">
 				<div class="panel panel-primary">

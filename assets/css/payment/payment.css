@@ -21,3 +21,6 @@ hr{
 #fotoDokter{
 	width: 100%;
 }
+textarea[name = "buyeraddress"]{
+	resize: none;
+}
