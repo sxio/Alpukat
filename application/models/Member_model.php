@@ -24,7 +24,7 @@
 				'USER_BIRTH' => $this->input->post('userBirth'),
 				'EMAIL' => $this->input->post('userEmail'),
 				'HANDPHONE' => $this->input->post('userHP'),
-				'TELEPHONE' => $this->input->post('userTel'),
+				'USER_ADDRESS' => $this->input->post('userAddr'),
 				'USER_LEVEL' => 0,
 				'ACTIVE' => 1
 			);

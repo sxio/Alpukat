@@ -88,16 +88,20 @@
 			if($this->session->userdata('username') == NULL){
 				redirect('user');
 			}
-			$data['cart']          = $this->cart->contents();
-			$data['total_items']   = $this->cart->total_items();
-			$data['total']         = $this->cart->total();
+			$data['cart']        = $this->cart->contents();
+			$data['total_items'] = $this->cart->total_items();
+			$data['total']       = $this->cart->total();
 
-			$data['header']        = $this->load->view('templates/header','',TRUE);
-			$data['enav']          = $this->load->view('estore/templates/enav', $data,TRUE);
-			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
+			if($data['total_items'] == 0){
+				redirect('estore/ecart');
+			}
+
+			$data['header']  = $this->load->view('templates/header','',TRUE);
+			$data['enav']    = $this->load->view('estore/templates/enav', $data,TRUE);
+			$data['efooter'] = $this->load->view('estore/templates/efooter','',TRUE);
 
 			$username = $this->session->userdata('username');
-			$data['user_info'] = $this->Estore_model->get_purchase_info($username);
+			$data['user_info'] = $this->Estore_model->get_purchase_info($username)[0];
 
 			$this->load->view('estore/epurchase', $data);
 		}

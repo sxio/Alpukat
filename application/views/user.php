@@ -104,14 +104,14 @@
 							<fieldset class="register" id="profile">
 								<legend><span class="number">2</span>Your profile</legend>
 
+								<label for="address">Address</label>
+								<input type="tel" name="address" value="<?php echo set_value('address') ?>">
+
 								<label for="date_birth">Birthday:</label>
 								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">
 
-								<label for="handphone">Handphone</label>
+								<label for="handphone">Phone Number</label>
 								<input type="tel" name="handphone" value="<?php echo set_value('handphone') ?>">
-
-								<label for="telephone">Telephone</label>
-								<input type="tel" name="telephone" value="<?php echo set_value('telephone') ?>">
 
 								<label for="job">Role:</label>
 								<select name="user_role" value="<?php echo set_value('user_role') ?>">

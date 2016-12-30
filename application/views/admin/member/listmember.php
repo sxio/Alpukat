@@ -33,8 +33,8 @@
 							<th>USER NAME</th>
 							<th>BIRTH DATE</th>
 							<th>EMAIL</th>
+							<th>ADDRESS</th>
 							<th>HANDPHONE</th>
-							<th>TELEPHONE</th>
 						</tr>
 						<?php foreach($user['data'] as $usr){ ?>
 						<tr>
@@ -42,8 +42,8 @@
 							<td><?php echo $usr['USER_NAME']; ?></td>
 							<td><?php echo nice_date($usr['USER_BIRTH'], 'd M Y'); ?></td>
 							<td><?php echo $usr['EMAIL']; ?></td>
+							<td><?php echo $usr['USER_ADDRESS']; ?></td>
 							<td><?php echo $usr['HANDPHONE']; ?></td>
-							<td><?php echo $usr['TELEPHONE']; ?></td>
 						</tr>
 						<?php } ?>
 					</table>
@@ -56,8 +56,8 @@
 							<th>USER NAME</th>
 							<th>BIRTH DATE</th>
 							<th>EMAIL</th>
+							<th>ADDRESS</th>
 							<th>HANDPHONE</th>
-							<th>TELEPHONE</th>
 						</tr>
 						<?php foreach($doctor['data'] as $dct){ ?>
 						<tr>
@@ -65,8 +65,8 @@
 							<td><?php echo $dct['USER_NAME']; ?></td>
 							<td><?php echo nice_date($dct['USER_BIRTH'], 'd M Y'); ?></td>
 							<td><?php echo $dct['EMAIL']; ?></td>
+							<td><?php echo $dct['USER_ADDRESS']; ?></td>
 							<td><?php echo $dct['HANDPHONE']; ?></td>
-							<td><?php echo $dct['TELEPHONE']; ?></td>
 						</tr>
 						<?php } ?>
 					</table>
@@ -79,8 +79,8 @@
 							<th>USER NAME</th>
 							<th>BIRTH DATE</th>
 							<th>EMAIL</th>
+							<th>ADDRESS</th>
 							<th>HANDPHONE</th>
-							<th>TELEPHONE</th>
 						</tr>
 						<?php foreach($staff['data'] as $stff){ ?>
 						<tr>
@@ -88,8 +88,8 @@
 							<td><?php echo $stff['USER_NAME']; ?></td>
 							<td><?php echo nice_date($stff['USER_BIRTH'], 'd M Y'); ?></td>
 							<td><?php echo $stff['EMAIL']; ?></td>
+							<td><?php echo $stff['USER_ADDRESS']; ?></td>
 							<td><?php echo $stff['HANDPHONE']; ?></td>
-							<td><?php echo $stff['TELEPHONE']; ?></td>
 						</tr>
 						<?php } ?>
 					</table>

@@ -9,11 +9,11 @@
 			$this->form_validation->set_rules('user_id', 'Username', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean|is_unique[MSTUSER.USER_ID]');
 			$this->form_validation->set_rules('user_name', 'Full Name', 'trim|required|min_length[3]|max_length[30]|xss_clean');
 			$this->form_validation->set_rules('user_email', 'Email', 'trim|required|valid_email|is_unique[MSTUSER.EMAIL]');
-			$this->form_validation->set_rules('user_password', 'Password', 'trim|required');
+			$this->form_validation->set_rules('user_password', 'Password', 'trim|required|min_length[6]');
 			$this->form_validation->set_rules('user_password_conf', 'Confirm Password', 'trim|required|matches[user_password]');
+			$this->form_validation->set_rules('address', 'Address', 'trim|required');
 			$this->form_validation->set_rules('date_birth', 'Birthday', 'required');
 			$this->form_validation->set_rules('handphone', 'Handphone', 'trim|required');
-			$this->form_validation->set_rules('telephone', 'Telephone', 'trim|required');
 			$this->form_validation->set_rules('user_role', 'Role', 'required');
 
 			if($this->form_validation->run() == FALSE){

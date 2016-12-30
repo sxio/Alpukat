@@ -13,9 +13,9 @@
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
 
-			$data['user'] = $this->Member_model->listmember(1);
-			$data['doctor'] = $this->Member_model->listmember(2);
-			$data['staff'] = $this->Member_model->listmember(0);
+			$data['user']         = $this->Member_model->listmember(1);
+			$data['doctor']       = $this->Member_model->listmember(2);
+			$data['staff']        = $this->Member_model->listmember(0);
 			$this->load->view('admin/member/listmember', $data);
 		}
 
@@ -27,7 +27,7 @@
 			$this->form_validation->set_rules('userBirth', 'Birthday', 'required');
 			$this->form_validation->set_rules('userEmail', 'Email', 'trim|required|valid_email|is_unique[MSTUSER.EMAIL]');
 			$this->form_validation->set_rules('userHP', 'Handphone', 'trim|required');
-			$this->form_validation->set_rules('userTel', 'Telephone', 'trim|required');
+			$this->form_validation->set_rules('userAddr', 'Address', 'trim|required');
 
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
@@ -64,7 +64,7 @@
 				}
 			}
 
-			$data['curr_role'] = $this->Member_model->get_all_roles()['data'];
+			$data['curr_role']    = $this->Member_model->get_all_roles()['data'];
 			$data['num_row_role'] = $this->Member_model->get_all_roles()['num_rows'];
 
 			$this->load->view('admin/member/addrole', $data);

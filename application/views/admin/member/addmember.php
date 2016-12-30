@@ -50,27 +50,27 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="userBirth">Birthday :</label>
-						<div class="col-sm-10">
-							<input type="date" name="userBirth" id="userBirth" class="form-control" value="<?php echo set_value('userBirth'); ?>">
-						</div>
-					</div>
-					<div class="form-group">
 						<label class="control-label col-sm-2" for="userEmail">Email :</label>
 						<div class="col-sm-10">
 							<input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email" value="<?php echo set_value('userEmail'); ?>">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="userHP">Handphone</label>
+						<label class="control-label col-sm-2" for="userAddr">Address</label>
 						<div class="col-sm-10">
-							<input type="tel" name="userHP" id="userHP" class="form-control" placeholder="Handphone" value="<?php echo set_value('userHP'); ?>">
+							<input type="tel" name="userAddr" id="userAddr" class="form-control" placeholder="Address" value="<?php echo set_value('userAddr'); ?>">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="userTel">Telephone</label>
+						<label class="control-label col-sm-2" for="userBirth">Birthday :</label>
 						<div class="col-sm-10">
-							<input type="tel" name="userTel" id="userTel" class="form-control" placeholder="Telephone" value="<?php echo set_value('userTel'); ?>">
+							<input type="date" name="userBirth" id="userBirth" class="form-control" value="<?php echo set_value('userBirth'); ?>">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="userHP">Phone Number</label>
+						<div class="col-sm-10">
+							<input type="tel" name="userHP" id="userHP" class="form-control" placeholder="Phone Number" value="<?php echo set_value('userHP'); ?>">
 						</div>
 					</div>
 				</div>

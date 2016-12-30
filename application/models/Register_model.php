@@ -12,7 +12,7 @@
 				'USER_PASS' => md5($this->input->post('user_password')),
 				'USER_BIRTH' => $this->input->post('date_birth'),
 				'HANDPHONE' => $this->input->post('handphone'),
-				'TELEPHONE' => $this->input->post('telephone'),
+				'USER_ADDRESS' => $this->input->post('address'),
 				'USER_LEVEL' => $this->input->post('user_role'),
 				'ACTIVE' => 0
 			);

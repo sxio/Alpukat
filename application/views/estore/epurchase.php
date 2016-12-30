@@ -32,14 +32,14 @@
 				<code>If you have mistaken set the quantity or have any changes <a href="<?php echo base_url('estore/ecart'); ?>">click here</a> to back before proceed</code>
 
 				<br>
-				<p>Your order will be deliver to you address: <u><i>Jalan Thamrin Kampus T lantai 3 paling ujung</i></u></p>
-				<p>Transport Fee: IDR 0,00</p>
+				<p>Your order will be deliver to you address: <u><i><?php echo $user_info['USER_ADDRESS']; ?></i></u></p>
+				<p>Transport Fee: RP 0</p>
 			</div>
 			<div class="panel-footer">
 				<div class="panel panel-primary">
 					<div class="panel-heading">Grand Total</div>
 					<div class="panel-body">
-						<kbd><?php echo 'IDR '. number_format($total, 0, ',', '.'); ?></kbd>
+						<kbd><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></kbd>
 					</div>
 					<div class="panel-footer clearfix">
 						<a href="<?php echo base_url('payment/form_payment/estore'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
