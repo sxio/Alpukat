@@ -1,17 +1,11 @@
-.margintop{
-	margin-top: 70px;
+a.flat-butt{
+  transition: all 0s!important;
+  text-align: center;
 }
-.margincenter{
-	margin: 0 auto;
+a.flat-butt:hover{
+  text-decoration: none;
+  color: white;
 }
-.err_login{
-	margin: 20px 20px 0 20px;
-}
-
-.col-sm-3{
-	height: 300px;
-}
-
 /* FLAT BUTTON */
 .flat-butt {
   display: inline-block;

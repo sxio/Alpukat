@@ -9,8 +9,11 @@ $(document).ready(function(){
 			dataType: 'json',
 			data: {prod_id: prod_id},
 			success: function(res){
+				console.log(res);
 				var harga = numeral(res.total).format('0,0');
 				$('#total').text('RP ' + harga + ' (' + res.total_items +' items)');
+				$('#modal_total_product').text(res.total_items);
+				$('#modal_total').text('RP ' + harga);
 			}
 		});
 	});

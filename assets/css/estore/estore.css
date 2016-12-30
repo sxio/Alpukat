@@ -1124,14 +1124,6 @@ h3.tittle1 {
     color: #777;
     line-height: 2em;
 }
-.modal-header {
-    min-height: 16.42857143px;
-    padding: 6px;
-    border-bottom: 1px solid #FFFFFF;
-}
-.modal-dialog {
-    width: 950px;
-}
 .color-quality-left{
 	float:left;
 }
@@ -1989,7 +1981,7 @@ a.order:hover{
 }
 .total-item,.cart-items{
 	margin-top:0em;
-	padding:5em 0;
+	/*padding:5em 0;*/
 }
 
 .total-item h3 {
@@ -2416,9 +2408,6 @@ h3.tittle1,h3.tittle {
     float: left;
     width: 60%;
 }
-.modal-dialog {
-    width: 669px;
-}
 .color-quality-right {
     float: left;
     margin-left: 1.5em;
@@ -2555,9 +2544,6 @@ h3.tittle1, h3.tittle {
 .login {
     padding: 4em 0;
 }
-.modal-dialog {
-    width: 700px;
-}
 }
 @media(max-width:667px){
 .ban-text2 {
@@ -2639,9 +2625,6 @@ a.button1 {
 .main-agileits {
     width: 63%;
 }
-.modal-dialog {
-    width: 625px;
-}
 .color-quality-right {
     float: left;
     margin-left: 0.5em;
@@ -2709,9 +2692,6 @@ a.button1 {
 }
 p.price {
     font-size: 1.5em;
-}
-.modal-dialog {
-    width: 565px;
 }
 .single-left {
     float: left;
@@ -2789,9 +2769,6 @@ p.quote {
 .total-item, .cart-items {
     margin-top: 0em;
     padding: 3em 0;
-}
-.modal-dialog {
-    width: 532px;
 }
 }
 @media(max-width:480px){
@@ -2892,9 +2869,6 @@ h3.tittle1, h3.tittle {
     width: 100%;
 	margin-top:2em;
 }
-.modal-dialog {
-    width: 445px;
-}
 .mail-grid {
     float: left;
     width: 100%;
@@ -2946,9 +2920,6 @@ h3.tittle1, h3.tittle {
 .latest-text2 {
     left: 78%;
     width: 17%;
-}
-.modal-dialog {
-    width: 378px;
 }
 .main-agileits {
     width: 88%;
@@ -3074,9 +3045,6 @@ h3.tittle1, h3.tittle {
 	.left-tab > li > a {
 		font-size: 1em;
 	}
-	.modal-dialog {
-		width: 347px;
-	}
 	.new-grid h5 {
 		font-size: 1.4em;
 	}
@@ -3094,9 +3062,6 @@ h3.tittle1, h3.tittle {
 		background-size: cover;
 		min-height: 183px;
 		padding: 2em 0;
-	}
-	.modal-dialog {
-		width: 338px;
 	}
 	.new-grid h6 {
 		font-size: 1em;
@@ -3142,9 +3107,6 @@ h3.tittle1, h3.tittle {
 .main-agileits {
     width: 97%;
     padding: 1em;
-}
-.modal-dialog {
-    width: 284px;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;

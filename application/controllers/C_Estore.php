@@ -6,6 +6,9 @@
 		}
 
 		public function view($page = 'index'){
+			if($page == 'epurchase'){
+				redirect('estore/purchase');
+			}
 			$data['cart']          = $this->cart->contents();
 			$data['total_items']   = $this->cart->total_items();
 			$data['total']         = $this->cart->total();
@@ -44,6 +47,7 @@
 			$this->cart->insert($cart_data);
 			$data['total_items'] = $this->cart->total_items();
 			$data['total']       = $this->cart->total();
+			$data['cart']        = $this->cart->contents();
 			print_r(json_encode($data));
 		}
 
@@ -54,6 +58,48 @@
 		public function removeitem($rowid){
 			$this->cart->remove($rowid);
 			redirect('estore/ecart');
+		}
+
+		public function decrease_quantity($rowid){
+			$quan_lama = $this->cart->get_item($rowid)['qty'];
+			$quan_lama -= 1;
+			if($quan_lama <= 0) $quan_lama = 0;
+			$data = array(
+				'rowid' => $rowid,
+				'qty'   => $quan_lama
+			);
+			$this->cart->update($data);
+			redirect('estore/ecart');
+		}
+
+		public function increase_quantity($rowid){
+			$quan_lama = $this->cart->get_item($rowid)['qty'];
+			$quan_lama += 1;
+			if($quan_lama >= 5) $quan_lama = 5;
+			$data = array(
+				'rowid' => $rowid,
+				'qty'   => $quan_lama
+			);
+			$this->cart->update($data);
+			redirect('estore/ecart');
+		}
+
+		public function purchase(){
+			if($this->session->userdata('username') == NULL){
+				redirect('user');
+			}
+			$data['cart']          = $this->cart->contents();
+			$data['total_items']   = $this->cart->total_items();
+			$data['total']         = $this->cart->total();
+
+			$data['header']        = $this->load->view('templates/header','',TRUE);
+			$data['enav']          = $this->load->view('estore/templates/enav', $data,TRUE);
+			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
+
+			$username = $this->session->userdata('username');
+			$data['user_info'] = $this->Estore_model->get_purchase_info($username);
+
+			$this->load->view('estore/epurchase', $data);
 		}
 	}
 ?>

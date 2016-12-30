@@ -24,11 +24,11 @@
 			<div class="panel-body">
 				<p>You've Ordered :</p>
 				<ol class="list-group" id="review">
-					<li class="list-group-item list-group-item-info">Black Backpack Multipurpose <span class="badge">1</span></li>
-					<li class="list-group-item list-group-item-info">Black Backpack Multipurpose <span class="badge">1</span></li>
-					<li class="list-group-item list-group-item-info">Black Backpack Multipurpose <span class="badge">1</span></li>
+					<?php foreach($cart as $item): ?>
+						<li class="list-group-item list-group-item-info"><?php echo $item['name']; ?> <span class="badge"><?php echo $item['qty']; ?></span></li>
+					<?php endforeach; ?>
 				</ol>
-				<h3>Total: <b><?php echo 'IDR '. number_format(85000*3, 2, ',', '.'); ?></b></h3>
+				<h3>Total: <b><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></b></h3>
 				<code>If you have mistaken set the quantity or have any changes <a href="<?php echo base_url('estore/ecart'); ?>">click here</a> to back before proceed</code>
 
 				<br>
@@ -39,7 +39,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Grand Total</div>
 					<div class="panel-body">
-						<kbd><?php echo 'IDR '. number_format(85000*3, 2, ',', '.'); ?></kbd>
+						<kbd><?php echo 'IDR '. number_format($total, 0, ',', '.'); ?></kbd>
 					</div>
 					<div class="panel-footer clearfix">
 						<a href="<?php echo base_url('payment/form_payment/estore'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>

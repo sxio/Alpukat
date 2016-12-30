@@ -7,6 +7,12 @@
 			date_default_timezone_set('Asia/Jakarta');
 		}
 
+		public function get_purchase_info($username){
+			$this->db->where('USER_ID', $username);
+			$query = $this->db->get('MSTUSER');
+			return $query->result_array();
+		}
+
 		public function add_product($img){
 			$data = array(
 				'PROD_ID'     => $this->input->post('prodID'),

@@ -4,3 +4,15 @@
 	line-height: 30px;
 	font-size: 18px;
 }
+.modal-dialog{
+	width: 70%;
+}
+.inline{
+	display: inline;
+}
+.modal-content .col-sm-4{
+	border-left: 1px solid #ddd;
+}
+.modal-body div[class^='col-sm-']{
+	min-height: 200px;
+}
