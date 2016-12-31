@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>AvoStore | Purchase</title>
+	<title>AvoStore | Review Your Items</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -27,88 +27,76 @@
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Shopping ID </label>
                         <div class="col-md-8">
-                            <p>: 979087fafasf9870987</p>
+                            <p>: <?php echo $form_input['shoppingid']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Name </label>
                         <div class="col-md-8">
-                            <p>: Nama saya Budi</p>
+                            <p>: <?php echo $form_input['buyername']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Address </label>
                         <div class="col-md-8">
-                            <p>: Alamat saya di Kutub Utara Jalan Penguin No.~ </p>
+                            <p>: <?php echo $form_input['buyeraddress']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Bank Name </label>
                         <div class="col-md-8">
-                            <p>: Bank Indonesia</p>
+                            <p>: <?php echo $form_input['banktype']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Bank Account Number </label>
                         <div class="col-md-8">
-                            <p>: 1-0481209481-094812-098</p>
+                            <p>: <?php echo $form_input['banknumber']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Bank Account Name </label>
                         <div class="col-md-8">
-                            <p>: Uvuvwevwevwe</p>
+                            <p>: <?php echo $form_input['bankAccName']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Transport By </label>
                         <div class="col-md-8">
-                            <p>: Ossas</p>
+                            <p>: <?php echo $form_input['transport']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Transport Fee </label>
                         <div class="col-md-8">
-                            <p>: 10 Jt</p>
+                            <p>: <?php echo $form_input['transfee']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Date Transfer </label>
                         <div class="col-md-8">
-                            <p>: 01-01-0001</p>
+                            <p>: <?php echo $form_input['date_tf']; ?></p>
                         </div>
                     </li>
                     <li class="list-group-item list-group-item-info">
                         <label class="col-md-4 control-label">Grand Total </label>
                         <div class="col-md-8">
-                            <p>: 10 M</p>
+                            <p>: <?php echo $form_input['grandtotal']; ?></p>
                         </div>
                     </li>
 				</ol>
-				<!-- <h3>Total: <b><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></b></h3> -->
-				<code>If you have mistaken set the value or have any changes <a href="<?php echo base_url('payment/estore/form-payment'); ?>">click here</a> to back before proceed</code>
+				<code>If you have mistaken set the value or have any changes <a href="<?php echo base_url('estore/payment/form'); ?>">click here</a> to back before proceed</code>
 
 				<br>
                 <br>
-				<!-- <p>Your order will be deliver to you address: <u><i><?php echo $user_info['USER_ADDRESS']; ?></i></u></p> -->
-				<!-- <p>Transport Fee: RP 0</p> -->
-                <a href="<?php echo base_url('payment/success/estore'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
+            </div>
+            <div class="panel-footer text-right">
+                <a href="<?php echo base_url('payment/success/estore'); ?>" class="btn btn-success"><i class="fa fa-check fa-fw"></i> Proceed</a>
 			</div>
-			<!-- <div class="panel-footer">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Grand Total</div>
-					<div class="panel-body">
-						<kbd><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></kbd>
-					</div>
-					<div class="panel-footer clearfix">
-						<a href="<?php echo base_url('payment/estore/form-payment'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</div>
+    <br>
+    <br>
 	<br>
-
-	<?php echo $efooter; ?>
 </body>
 </html>

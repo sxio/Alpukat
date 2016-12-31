@@ -101,7 +101,7 @@
 			$data['efooter'] = $this->load->view('estore/templates/efooter','',TRUE);
 
 			$username = $this->session->userdata('username');
-			$data['user_info'] = $this->Estore_model->get_purchase_info($username)[0];
+			$data['user_info'] = $this->Estore_model->get_user_info($username)[0];
 
 			$this->load->view('estore/epurchase', $data);
 		}

@@ -42,7 +42,7 @@
 						<kbd><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></kbd>
 					</div>
 					<div class="panel-footer clearfix">
-						<a href="<?php echo base_url('payment/estore/form-payment'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
+						<a href="<?php echo base_url('estore/payment/form'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
 					</div>
 				</div>
 			</div>

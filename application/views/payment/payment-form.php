@@ -7,9 +7,16 @@
 
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/payment/payment.css') ?>
-	<?php echo link_tag('assets/css/nav.css') ?>
+	<?php
+		if($this->session->flashdata('estore_pay') !== NULL){
+			echo link_tag('assets/css/estore/estore.css');
+		} else{
+			echo link_tag('assets/css/nav.css');
+		}
+	?>
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -19,7 +26,7 @@
 	?>
 	<!-- ESTORE PAYMENT -->
 	<br>
-	<div class="container payment">
+	<div class="container margintop-20">
 		<div class="row">
 
 		</div>
@@ -31,18 +38,22 @@
 				<div class="panel-body">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<form method="post" class="form-horizontal">
+						<!-- <form method="post" class="form-horizontal"> -->
+						<?php
+							$attrib = array('class' => 'form-horizontal');
+							echo form_open('estore/paymentreview', $attrib);
+						?>
 							<ul class="list-unstyled">
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="shoppingid">Shopping ID</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="shoppingid" placeholder="Your shopping id (masih ragu mau kasih nampak apa g)" disabled>
+										<input class="form-control" type="text" name="shoppingid" placeholder="Your shopping id (masih ragu mau kasih nampak apa g)" readonly>
 									</div>
 								</li>
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="buyername">Name </label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="buyername" placeholder="Tar pake php ambek nama user" disabled>
+										<input class="form-control" type="text" name="buyername" value="<?php echo $user_info['USER_NAME']; ?>" readonly>
 									</div>
 								</li>
 								<li class="form-group">
@@ -55,7 +66,7 @@
 									<label class="col-md-4 control-label" for="banktype">Bank Name</label>
 									<div class="col-md-8">
 										<select class="form-control" name="banktype">
-											<option value=""></option>
+											<option value="" hidden>-- Pick One --</option>
 											<option value="BCA">BCA</option>
 											<option value="BNI">BNI</option>
 											<option value="BRI">BRI</option>
@@ -82,7 +93,7 @@
 									<label for="transport" class="col-md-4 control-label">Transport By</label>
 									<div class="col-md-8">
 										<select class="form-control" name="transport">
-											<option value=""></option>
+											<option value="" hidden>-- Pick One --</option>
 											<option value="JNE">JNE</option>
 											<option value="TIKI">TIKI</option>
 										</select>
@@ -91,22 +102,22 @@
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="transfee">Transport Fee</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="transfee" id="transfee" placeholder="Akumulasi harga langsung terjadi begitu jasa kurir dipilih" disabled>
+										<input class="form-control" type="text" name="transfee" id="transfee" placeholder="Akumulasi harga langsung terjadi begitu jasa kurir dipilih" readonly>
 									</div>
 								</li>
 								<li class="form-group">
 									<label for="date_tf" class="col-md-4 control-label">Date Transfer</label>
 									<div class="col-md-8 date">
 										<select name="date_tf" class="form-control">
-											<option value=""></option>
-											<option value=""><?php echo date('d-m-Y'); ?></option>
+											<option value="" hidden>-- Pick One --</option>
+											<option value="<?php echo date('d-m-Y'); ?>"><?php echo date('d-m-Y'); ?></option>
 										</select>
 									</div>
 								</li>
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="grandtotal">Grand Total</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="grandtotal" id="paymentgrandtotal" placeholder="tarokkan nilai grand total" disabled>
+										<input class="form-control" type="text" name="grandtotal" id="paymentgrandtotal" value="<?php echo 'RP '. number_format($total,0,',','.'); ?>" readonly>
 									</div>
 								</li>
 							</ul>
@@ -128,9 +139,9 @@
 									</div>
 								</div>
 							</div>
-							<a href="<?php echo base_url('estore/epaymentreview') ?>" name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></a>
+							<button name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></button>
 							<div class="col-md-4" id="message"></div>
-						</form>
+						<?php echo form_close(); ?>
 					</div>
 				</div>
 			</div>

@@ -22,11 +22,12 @@ $route['estore/dec-qty/(:any)']              = 'C_Estore/decrease_quantity/$1';
 $route['estore/addtocart']                   = 'C_Estore/addtocart';
 $route['estore/emptycart']                   = 'C_Estore/emptycart';
 $route['estore/purchase']                    = 'C_Estore/purchase';
+$route['estore/paymentreview']               = 'C_Payment/estore_paymentreview';
 $route['estore/(:any)']                      = 'C_Estore/view/$1';
 $route['booking']                            = 'C_Booking/view';
 $route['forum']                              = 'C_Forum/view';
 $route['forum/(:any)']                       = 'C_Forum/view/$1';
-$route['payment/(:any)/form-payment']        = 'C_Payment/view/$1';
+$route['(:any)/payment/form']                = 'C_Payment/view/$1';
 $route['payment/success/(:any)']             = 'C_Payment/pay_success/$1';
 
 

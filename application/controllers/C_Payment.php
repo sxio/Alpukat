@@ -22,8 +22,14 @@
 				$this->session->unset_userdata('donate_pay');
 
 				$data['cart']        = $this->cart->contents();
-				$data['total_items'] =  $this->cart->total_items();
+				$data['total_items'] = $this->cart->total_items();
 				$data['total']       = $this->cart->total();
+
+				$this->load->model('Estore_model');
+				$data['user_info'] = $this->Estore_model->get_user_info($this->session->userdata('username'))[0];
+
+				$data['nav']         = $this->load->view('estore/templates/enav',$data,TRUE);
+
 			} elseif ($param == 'booking') {
 				$this->session->set_flashdata('booking_pay',TRUE);
 
@@ -36,7 +42,7 @@
 				$this->session->unset_userdata('booking_pay');
 			}
 
-			$this->load->view('payment/payment', $data);
+			$this->load->view('payment/payment-form', $data);
 		}
 
 		public function pay_success($param = NULL){
@@ -65,6 +71,22 @@
 				$this->session->unset_userdata('booking_pay');
 			}
 			$this->load->view('payment/payment_success', $data);
+		}
+
+
+		public function estore_paymentreview(){
+			$data['cart']          = $this->cart->contents();
+			$data['total_items']   = $this->cart->total_items();
+			$data['total']         = $this->cart->total();
+
+			$data['header']        = $this->load->view('templates/header','',TRUE);
+			$data['enav']          = $this->load->view('estore/templates/enav', $data,TRUE);
+			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
+
+			$data['form_input']    = $this->input->post();
+			// print_r($data['form_input']);
+			// return;
+			$this->load->view('payment/epaymentreview', $data);
 		}
 	}
 ?>

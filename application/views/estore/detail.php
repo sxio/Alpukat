@@ -8,6 +8,7 @@
 	<?php echo link_tag('assets/css/flatbutton.css') ?>
 
 	<script src="<?php echo base_url('assets/js/estore/cart.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $enav; ?>

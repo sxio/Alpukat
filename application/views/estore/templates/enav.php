@@ -109,9 +109,10 @@
 						</nav>
 					</div>
 					<div class="logo-nav-right">
-						<ul class="cd-header-buttons">
+						<!-- <ul class="cd-header-buttons">
 							<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-						</ul> <!-- cd-header-buttons -->
+						</ul> -->
+						<i class="fa fa-search fa-2x fa-fw cd-header-buttons"></i>
 						<div id="cd-search" class="cd-search">
 							<form action="#" method="post">
 								<input id="searchtrig" name="Search" type="search" placeholder="Search...">

@@ -7,7 +7,7 @@
 			date_default_timezone_set('Asia/Jakarta');
 		}
 
-		public function get_purchase_info($username){
+		public function get_user_info($username){
 			$this->db->where('USER_ID', $username);
 			$query = $this->db->get('MSTUSER');
 			return $query->result_array();
