@@ -17,6 +17,7 @@
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/estore/paymentform.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -28,9 +29,6 @@
 	<br>
 	<div class="container margintop-20">
 		<div class="row">
-
-		</div>
-		<div class="row">
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					<h2 class="text-center">Payment Form</h2>
@@ -38,7 +36,9 @@
 				<div class="panel-body">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<!-- <form method="post" class="form-horizontal"> -->
+						<?php if($this->session->flashdata('form_error') != "") { ?>
+							<div class="alert alert-danger text-center"><?php echo $this->session->flashdata('form_error'); ?></div>
+						<?php } ?>
 						<?php
 							$attrib = array('class' => 'form-horizontal');
 							echo form_open('estore/paymentreview', $attrib);
@@ -47,12 +47,13 @@
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="shoppingid">Shopping ID</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="shoppingid" placeholder="Your shopping id (masih ragu mau kasih nampak apa g)" readonly>
+										<input class="form-control" type="text" name="shoppingid" value="<?php echo uniqid('a'); ?>" readonly>
 									</div>
 								</li>
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="buyername">Name </label>
 									<div class="col-md-8">
+										<?php echo form_hidden('buyerid', $user_info['USER_ID']); ?>
 										<input class="form-control" type="text" name="buyername" value="<?php echo $user_info['USER_NAME']; ?>" readonly>
 									</div>
 								</li>
@@ -90,22 +91,6 @@
 									</div>
 								</li>
 								<li class="form-group">
-									<label for="transport" class="col-md-4 control-label">Transport By</label>
-									<div class="col-md-8">
-										<select class="form-control" name="transport">
-											<option value="" hidden>-- Pick One --</option>
-											<option value="JNE">JNE</option>
-											<option value="TIKI">TIKI</option>
-										</select>
-									</div>
-								</li>
-								<li class="form-group">
-									<label class="col-md-4 control-label" for="transfee">Transport Fee</label>
-									<div class="col-md-8">
-										<input class="form-control" type="text" name="transfee" id="transfee" placeholder="Akumulasi harga langsung terjadi begitu jasa kurir dipilih" readonly>
-									</div>
-								</li>
-								<li class="form-group">
 									<label for="date_tf" class="col-md-4 control-label">Date Transfer</label>
 									<div class="col-md-8 date">
 										<select name="date_tf" class="form-control">
@@ -115,9 +100,32 @@
 									</div>
 								</li>
 								<li class="form-group">
+									<label for="transport" class="col-md-4 control-label">Transport By</label>
+									<div class="col-md-8">
+										<select class="form-control" name="transport" id="transport">
+											<option value="" hidden>-- Pick One --</option>
+											<option value="JNE">JNE</option>
+											<option value="TIKI">TIKI</option>
+										</select>
+									</div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 control-label" for="transfee">Transport Fee</label>
+									<div class="col-md-8">
+										<div class="input-group">
+											<span class="input-group-addon">RP</span>
+											<input class="form-control" type="text" name="transfee" id="transfee" readonly>
+										</div>
+									</div>
+								</li>
+								<li class="form-group">
 									<label class="col-md-4 control-label" for="grandtotal">Grand Total</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="grandtotal" id="paymentgrandtotal" value="<?php echo 'RP '. number_format($total,0,',','.'); ?>" readonly>
+										<div class="input-group">
+											<span class="input-group-addon">RP</span>
+											<?php echo form_hidden('total', $total); ?>
+											<input class="form-control" type="text" name="grandtotal" id="paymentgrandtotal" value="<?php echo number_format($total,0,',','.'); ?>" readonly>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -139,7 +147,7 @@
 									</div>
 								</div>
 							</div>
-							<button name="btn_estore_pay" class="col-md-4 btn btn-primary"><b>Proceed</b></button>
+							<button class="col-md-4 btn btn-primary"><b>Proceed</b></button>
 							<div class="col-md-4" id="message"></div>
 						<?php echo form_close(); ?>
 					</div>

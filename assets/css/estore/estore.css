@@ -1633,9 +1633,6 @@ section#tables  p {
 .nav-tabs {
 	margin-bottom: 3em;
 }
-.alert {
-	font-size: 0.85em;
-}
 h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 	line-height:2em;
 	margin-top:0.5em;
@@ -1643,9 +1640,6 @@ h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 }
 li.list-group-item1 {
 	line-height: 2.5em;
-}
-.input-group {
-	margin-bottom: 20px;
 }
 .in-gp-tl{
 	padding:0;

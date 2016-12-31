@@ -86,7 +86,7 @@
 									<i class="fa fa-shopping-cart fa-5x"></i>
 								</div>
 								<div class="col-sm-9 text-right">
-									<div class="huge">124</div>
+									<div class="huge"><?php echo count($estore); ?></div>
 									<div>Orders!</div>
 								</div>
 							</div>
@@ -248,15 +248,23 @@
 								<th>Status</th>
 								<th>Action</th>
 							</tr>
+							<?php foreach($estore as $elist) { ?>
 							<tr>
-								<td>Avo-e-1</td>
-								<td>Jalan Thamrin Kampus T Lantai 3 paling ujung</td>
-								<td>BCA</td>
-								<td>123</td>
-								<td>JNE</td>
-								<td><span class="label label-warning">Pending</span></td>
+								<td><?php echo $elist->ORDER_ID; ?></td>
+								<td><?php echo $elist->ORDER_ADDRESS; ?></td>
+								<td><?php echo $elist->BANK_TYPE; ?></td>
+								<td><?php echo $elist->BANK_ACC_NUM; ?></td>
+								<td><?php echo $elist->TRANSPORT; ?></td>
+								<?php
+									if($elist->STATUS == 'PENDING') $label = 'warning';
+									elseif($elist->STATUS == 'ACCEPTED') $label = 'success';
+									elseif($elist->STATUS == 'REJECTED') $label = 'danger';
+									elseif($elist->STATUS == 'ON THE WAY') $label = 'info';
+								?>
+								<td><span class="label label-<?php echo $label; ?>"><?php echo $elist->STATUS; ?></span></td>
 								<td><a href="#" class="btn btn-info"><i class="fa fa-list fa-fw"></i></a></td>
 							</tr>
+							<?php } ?>
 						</table>
 
 						<!-- TABLE BOOKING -->

@@ -24,79 +24,91 @@
 			<div class="panel-body">
 				<p>Your Payment details :</p>
 				<ol class="list-group" id="review">
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Shopping ID </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['shoppingid']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Name </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['buyername']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Address </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['buyeraddress']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Bank Name </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['banktype']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Bank Account Number </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['banknumber']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Bank Account Name </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['bankAccName']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Transport By </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['transport']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Transport Fee </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['transfee']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Date Transfer </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['date_tf']; ?></p>
-                        </div>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                        <label class="col-md-4 control-label">Grand Total </label>
-                        <div class="col-md-8">
-                            <p>: <?php echo $form_input['grandtotal']; ?></p>
-                        </div>
-                    </li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Shopping ID </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['shoppingid']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Name </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['buyername']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Address </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['buyeraddress']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Bank Name </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['banktype']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Bank Account Number </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['banknumber']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Bank Account Name </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['bankAccName']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Transport By </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['transport']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Transport Fee </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['transfee']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Date Transfer </label>
+						<div class="col-md-8">
+							<p>: <?php echo $form_input['date_tf']; ?></p>
+						</div>
+					</li>
+					<li class="list-group-item list-group-item-info">
+						<label class="col-md-4 control-label">Grand Total </label>
+						<div class="col-md-8">
+							<p>: <?php echo 'RP ' . $form_input['grandtotal']; ?></p>
+						</div>
+					</li>
 				</ol>
 				<code>If you have mistaken set the value or have any changes <a href="<?php echo base_url('estore/payment/form'); ?>">click here</a> to back before proceed</code>
 
 				<br>
-                <br>
-            </div>
-            <div class="panel-footer text-right">
-                <a href="<?php echo base_url('payment/success/estore'); ?>" class="btn btn-success"><i class="fa fa-check fa-fw"></i> Proceed</a>
+				<br>
+			</div>
+			<div class="panel-footer text-right">
+				<?php echo form_open('payment/success/estore'); ?>
+				<?php echo form_hidden('shoppingid', $form_input['shoppingid']); ?>
+				<?php echo form_hidden('buyerid', $form_input['buyerid']); ?>
+				<?php echo form_hidden('buyeraddress', $form_input['buyeraddress']); ?>
+				<?php echo form_hidden('banktype', $form_input['banktype']); ?>
+				<?php echo form_hidden('banknumber', $form_input['banknumber']); ?>
+				<?php echo form_hidden('bankAccName', $form_input['bankAccName']); ?>
+				<?php echo form_hidden('date_tf', $form_input['date_tf']); ?>
+				<?php echo form_hidden('transport', $form_input['transport']); ?>
+				<?php echo form_hidden('transfee', $form_input['transfee']); ?>
+				<?php echo form_hidden('total', $form_input['total']); ?>
+				<button class="btn btn-success"><i class="fa fa-check fa-fw"></i> Proceed</button>
+				<?php echo form_close(); ?>
 			</div>
 		</div>
 	</div>
-    <br>
-    <br>
+	<br>
+	<br>
 	<br>
 </body>
 </html>

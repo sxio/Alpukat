@@ -85,5 +85,41 @@
 			$query = $this->db->get('MSTPRODUCT', $limit, $offset);
 			return $query->result_array();
 		}
+
+
+		public function add_order(){
+			$dataHeader = array(
+				'ORDER_ID'      => $this->input->post('shoppingid'),
+				'USER_ID'       => $this->input->post('buyerid'),
+				'ORDER_ADDRESS' => $this->input->post('buyeraddress'),
+				'BANK_TYPE'     => $this->input->post('banktype'),
+				'BANK_ACC_NUM'  => $this->input->post('banknumber'),
+				'BANK_ACC_NAME' => $this->input->post('bankAccName'),
+				'TRANSFER_DATE' => nice_date($this->input->post('date_tf'), 'Y-m-d'),
+				'TRANSPORT'     => $this->input->post('transport'),
+				'TRANSPORT_FEE' => $this->input->post('transfee'),
+				'ORDER_DATE'    => mdate('%Y-%m-%d %H:%i:%s',now()),
+				'STATUS'        => 'PENDING'
+			);
+			$this->db->insert('TRHORDER', $dataHeader);
+
+			foreach($this->cart->contents() as $items){
+				$dataDetail = array(
+					'USER_ID'  => $this->input->post('buyerid'),
+					'ORDER_ID' => $this->input->post('shoppingid'),
+					'PROD_ID'  => $items['id'],
+					'QUANTITY' => $items['qty'],
+					'PRICE'    => $items['price']
+				);
+				$this->db->insert('TRDORDER', $dataDetail);
+			}
+			return $this->db->error();
+		}
+
+		public function get_order_by_username($username){
+			$this->db->where('USER_ID', $username);
+			$query = $this->db->get('TRHORDER');
+			return $query->result();
+		}
 	}
 ?>
