@@ -1,8 +1,33 @@
 @import url('../nav.css');
 
+.panel{
+	margin-bottom: 30px;
+}
 .margintop{
 	margin-top: 80px;
 }
 .panel-info h3{
 	margin: 0;
+}
+.panel-body h3.orderid{
+	text-decoration: underline;
+}
+ol.listorderdetail{
+	list-style-type: none;
+	margin-top: 50px;
+}
+ol.listorderdetail label, ol.listorderdetail p{
+	font-size: 17px;
+}
+.panel-body h4.headfortablehover{
+	margin-top:50px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.panel-footer{
+	padding: 20px;
+}
+.panel-footer ol.listonpanelfooter{
+	list-style-type: none;
+	font-size: 17px;
 }
