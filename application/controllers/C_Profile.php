@@ -22,13 +22,9 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			$username = $this->session->userdata('username');
-			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id, $username);
+			$data['username'] = $this->session->userdata('username');
+			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id, $data['username']);
 
-			// $this->load->library('table');
-			// echo $this->table->generate($data['estore_hist']);
-			// print_r($data['estore_hist']);
-			// return;
 			$this->load->view('profile/history-estore', $data);
 		}
 	}

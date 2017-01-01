@@ -31,37 +31,37 @@
 								<li>
 									<label class="col-md-4 control-label">Customer Name </label>
 									<div class="col-md-8">
-										<p>: Uvuvwevwevwe</p>
+										<p>: <?php echo $estore_hist[0]['USER_NAME']; ?></p>
 									</div>
 								</li>
 								<li>
 									<label class="col-md-4 control-label">Order date </label>
 									<div class="col-md-8">
-										<p>: 01 / 01 / 0001</p>
+										<p>: <?php echo nice_date($estore_hist[0]['ORDER_DATE'], 'd / m / Y'); ?></p>
 									</div>
 								</li>
 								<li>
 									<label class="col-md-4 control-label">Bank Name </label>
 									<div class="col-md-8">
-										<p>: Bank ABC</p>
+										<p>: <?php echo $estore_hist[0]['BANK_TYPE']; ?></p>
 									</div>
 								</li>
 								<li>
 									<label class="col-md-4 control-label">Transfer Date </label>
 									<div class="col-md-8">
-										<p>: 02 / 02 / 0002</p>
+										<p>: <?php echo nice_date($estore_hist[0]['TRANSFER_DATE'], 'd / m / Y'); ?></p>
 									</div>
 								</li>
 								<li>
 									<label class="col-md-4 control-label">Transport By </label>
 									<div class="col-md-8">
-										<p>: JNE</p>
+										<p>: <?php echo $estore_hist[0]['TRANSPORT']; ?></p>
 									</div>
 								</li>
 								<li>
 									<label class="col-md-4 control-label">Transport Fee </label>
 									<div class="col-md-8">
-										<p>: 100 M</p>
+										<p>:  <?php echo $estore_hist[0]['TRANSPORT_FEE']; ?></p>
 									</div>
 								</li>
 							</ol>
@@ -72,7 +72,7 @@
 								<li>
 									<label class="col-md-4 control-label">Address </label>
 									<div class="col-md-8">
-										<p>: Uvuvwevwevwe</p>
+										<p>:  <?php echo $estore_hist[0]['ORDER_ADDRESS']; ?></p>
 									</div>
 								</li>
 								<li>
@@ -103,39 +103,33 @@
 							<table class="table table-hover">
 							    <thead>
 									<tr>
-									<th>Product ID</th>
-									<th>Product name</th>
-									<th>Unit Price</th>
-									<th>Quantity</th>
-									<th>Category</th>
-									<th>Subtotal</th>
+										<th>Product ID</th>
+										<th>Product name</th>
+										<th>Unit Price</th>
+										<th>Quantity</th>
+										<th>Category</th>
+										<th>Subtotal</th>
 									</tr>
 							    </thead>
 							    <tbody>
-									<tr>
-										<td>12345</td>
-										<td>Doe</td>
-										<td>Rp 100.000.000,-</td>
-										<td>2</td>
-										<td>Apparel</td>
-										<td>Rp 200.000.000,-</td>
-									</tr>
-									<tr>
-										<td>67891</td>
-										<td>Moe</td>
-										<td>Rp 200.000.000,-</td>
-										<td>3</td>
-										<td>Fitness Products</td>
-										<td>Rp 600.000.000,-</td>
-									</tr>
-									<tr>
-										<td>01234</td>
-										<td>Dooley</td>
-										<td>Rp 300.000.000,-</td>
-										<td>4</td>
-										<td>Medical Supplies</td>
-										<td>Rp 1.200.000.000,-</td>
-									</tr>
+							    	<?php
+							    		$quan = 0;
+							    		$subtotal = 0;
+							    		$gtotal = 0;
+							    		foreach($estore_hist as $items) {
+							    			$quan += $items['QUANTITY'];
+							    			$subtotal = $items['PRICE'] * $items['QUANTITY'];
+							    			$gtotal += $subtotal;
+							    	?>
+							    	<tr>
+							    		<td><?php echo $items['PROD_ID']; ?></td>
+							    		<td><?php echo $items['PROD_NAME']; ?></td>
+							    		<td>RP <?php echo number_format($items['PRICE'],0,',','.'); ?></td>
+							    		<td><?php echo $items['QUANTITY']; ?></td>
+							    		<td><?php echo $items['CAT_NAME']; ?></td>
+							    		<td>RP <?php echo number_format($subtotal,0,',','.'); ?></td>
+							    	</tr>
+							    	<?php } ?>
 							    </tbody>
 							  </table>
 						</div>
@@ -149,13 +143,13 @@
 							<li>
 								<label class="col-md-4 control-label">Total Items </label>
 								<div class="col-md-8">
-									<p>: 9</p>
+									<p>: <?php echo $quan; ?></p>
 								</div>
 							</li>
 							<li>
 								<label class="col-md-4 control-label">Grand Total </label>
 								<div class="col-md-8">
-									<p>: Rp 2.000.000.000,-</p>
+									<p>: RP <?php echo number_format($gtotal,0,',','.'); ?></p>
 								</div>
 							</li>
 						</ol>
