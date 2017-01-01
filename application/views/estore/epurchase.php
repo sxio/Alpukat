@@ -35,16 +35,8 @@
 				<!-- <p>Your order will be deliver to you address: <u><i><?php echo $user_info['USER_ADDRESS']; ?></i></u></p> -->
 				<!-- <p>Transport Fee: RP 0</p> -->
 			</div>
-			<div class="panel-footer">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Grand Total</div>
-					<div class="panel-body">
-						<kbd><?php echo 'RP '. number_format($total, 0, ',', '.'); ?></kbd>
-					</div>
-					<div class="panel-footer clearfix">
-						<a href="<?php echo base_url('estore/payment/form'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
-					</div>
-				</div>
+			<div class="panel-footer clearfix">
+				<a href="<?php echo base_url('estore/payment/form'); ?>" class="btn btn-success pull-right"><i class="fa fa-check fa-fw"></i> Proceed</a>
 			</div>
 		</div>
 	</div>

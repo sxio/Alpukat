@@ -1,5 +1,4 @@
 .panel{
-	width: 70%;
 	margin: 0 auto;
 }
 
@@ -16,4 +15,12 @@
 kbd{
 	font-size: 35px;
 	font-family: 'Comfortaa', cursive;
+}
+ol.items{
+	margin: 0;
+	padding: 10px 15px;
+	padding-bottom: 0;
+}
+span.total{
+	padding-right: 15px;
 }

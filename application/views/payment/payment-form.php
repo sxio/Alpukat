@@ -95,7 +95,7 @@
 									<div class="col-md-8 date">
 										<select name="date_tf" class="form-control">
 											<option value="" hidden>-- Pick One --</option>
-											<option value="<?php echo date('d-m-Y'); ?>"><?php echo date('d-m-Y'); ?></option>
+											<option value="<?php echo date('d-m-Y'); ?>"><?php echo date('d F Y'); ?></option>
 										</select>
 									</div>
 								</li>
