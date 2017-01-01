@@ -13,10 +13,17 @@
 	<div class="container-fluid margintop">
 		<div class="panel panel-info">
 			<div class="panel-heading">
-
+				<div class="row">
+					<div class="col-sm-8">
+						<h3>Order Detail</h3>
+					</div>
+					<div class="col-sm-4">
+						<span class="pull-right"><?php echo nice_date($estore_hist[0]['ORDER_DATE'], 'l, d F Y | H:i:s'); ?></span>
+					</div>
+				</div>
 			</div>
 			<div class="panel-body">
-
+				<p>Order ID: <?php echo $estore_hist[0]['ORDER_ID']; ?></p>
 			</div>
 			<div class="panel-footer">
 

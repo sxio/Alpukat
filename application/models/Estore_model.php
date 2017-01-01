@@ -126,8 +126,9 @@
 			$this->db->where('TRDORDER.ORDER_ID', $order_id);
 			$this->db->where('TRDORDER.USER_ID', $username);
 			$this->db->join('TRDORDER', 'TRHORDER.ORDER_ID = TRDORDER.ORDER_ID');
+			$this->db->join('MSTPRODUCT', 'TRDORDER.PROD_ID = MSTPRODUCT.PROD_ID');
 			$query = $this->db->get('TRHORDER');
-			return $query->result();
+			return $query->result_array();
 		}
 	}
 ?>

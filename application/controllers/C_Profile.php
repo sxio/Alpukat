@@ -27,6 +27,7 @@
 
 			// $this->load->library('table');
 			// echo $this->table->generate($data['estore_hist']);
+			// print_r($data['estore_hist']);
 			// return;
 			$this->load->view('profile/history-estore', $data);
 		}

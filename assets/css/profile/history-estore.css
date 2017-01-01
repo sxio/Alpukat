@@ -3,3 +3,6 @@
 .margintop{
 	margin-top: 80px;
 }
+.panel-info h3{
+	margin: 0;
+}

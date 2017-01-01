@@ -236,44 +236,38 @@
 						<h2 class="text-center"><i class="fa fa-history fa-fw"></i> Payment History</h2>
 					</div>
 					<div class="panel-body">
-							<!-- TABLE ESTORE -->
-							<table class="table table-condensed table-responsive table-bordered">
-								<caption>AvoStore History</caption>
-								<tr>
-									<th>Payment ID</th>
-									<th>Delivery Address</th>
-									<th>Bank</th>
-									<th>Account Number</th>
-									<th>Delivery Type</th>
-									<th>Status</th>
-									<th>Action</th>
-								</tr>
-								<?php foreach($estore as $elist) { ?>
-								<tr>
-									<td><?php echo $elist->ORDER_ID; ?></td>
-									<td><?php echo $elist->ORDER_ADDRESS; ?></td>
-									<td><?php echo $elist->BANK_TYPE; ?></td>
-									<td><?php echo $elist->BANK_ACC_NUM; ?></td>
-									<td><?php echo $elist->TRANSPORT; ?></td>
-									<?php
-										if    ($elist->STATUS == 'PENDING')    $label = 'warning';
-										elseif($elist->STATUS == 'ACCEPTED')   $label = 'success';
-										elseif($elist->STATUS == 'REJECTED')   $label = 'danger';
-										elseif($elist->STATUS == 'ON THE WAY') $label = 'info';
-									?>
-									<td><span class="label label-<?php echo $label; ?>"><?php echo $elist->STATUS; ?></span></td>
-									<td>
-									<?php
-										$attrib = array('class' => '');
-										echo form_open('dashboard/history/estore/'. $elist->ORDER_ID);
-									?>
-										<button class="btn btn-info" value="<?php echo $elist->ORDER_ID; ?>"><i class="fa fa-list fa-fw"></i></button>
-									<?php echo form_close(); ?>
-									<?php } ?>
-									</td>
-								</tr>
-							</table>
-						<?php echo form_close(); ?>
+						<!-- TABLE ESTORE -->
+						<table class="table table-condensed table-responsive table-bordered">
+							<caption>AvoStore History</caption>
+							<tr>
+								<th>Payment ID</th>
+								<th>Delivery Address</th>
+								<th>Bank</th>
+								<th>Account Number</th>
+								<th>Delivery Type</th>
+								<th>Status</th>
+								<th>Action</th>
+							</tr>
+							<?php foreach($estore as $elist) { ?>
+							<tr>
+								<td><?php echo $elist->ORDER_ID; ?></td>
+								<td><?php echo $elist->ORDER_ADDRESS; ?></td>
+								<td><?php echo $elist->BANK_TYPE; ?></td>
+								<td><?php echo $elist->BANK_ACC_NUM; ?></td>
+								<td><?php echo $elist->TRANSPORT; ?></td>
+								<?php
+									if    ($elist->STATUS == 'PENDING')    $label = 'warning';
+									elseif($elist->STATUS == 'ACCEPTED')   $label = 'success';
+									elseif($elist->STATUS == 'REJECTED')   $label = 'danger';
+									elseif($elist->STATUS == 'ON THE WAY') $label = 'info';
+								?>
+								<td><span class="label label-<?php echo $label; ?>"><?php echo $elist->STATUS; ?></span></td>
+								<td>
+								<a href="<?php echo base_url('dashboard/history/estore/'. $elist->ORDER_ID); ?>" class="btn btn-info" value="<?php echo $elist->ORDER_ID; ?>"><i class="fa fa-list fa-fw"></i></a>
+								</td>
+							</tr>
+							<?php } ?>
+						</table>
 
 						<!-- TABLE BOOKING -->
 						<table class="table table-bordered booking-history">
