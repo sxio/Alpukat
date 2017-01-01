@@ -1,9 +1,0 @@
-$(document).ready(function(){
-	$('.editbutton-menu').hide();
-	$('.editbutton').click(function(){
-		$(this).siblings('.editbutton-menu').toggle(300);
-	});
-	$('.editbutton').focusout(function(){
-		$(this).siblings('.editbutton-menu').hide(300);
-	});
-});

@@ -6,7 +6,7 @@
 
 	<?php echo link_tag('assets/css/profile/paymentlist.css'); ?>
 
-	<script src="<?php echo base_url('assets/js/admin/paymentlist.js'); ?>"></script>
+	<!-- <script src="<?php echo base_url('assets/js/admin/paymentlist.js'); ?>"></script> -->
 </head>
 <body>
 	<?php echo $admin_nav; ?>
@@ -44,17 +44,16 @@
 						if    ($list['STATUS'] == 'PENDING')    $label = 'warning';
 						elseif($list['STATUS'] == 'ACCEPTED')   $label = 'success';
 						elseif($list['STATUS'] == 'REJECTED')   $label = 'danger';
-						elseif($list['STATUS'] == 'ON THE WAY') $label = 'info';
+						elseif($list['STATUS'] == 'ONTHEWAY')   $label = 'info';
 					?>
 					<td><span class="label label-<?php echo $label; ?>"><?php echo $list['STATUS']; ?></span></td>
 					<td>
-						<button class="btn btn-info"><i class="fa fa-list fa-fw"></i></button>
-						<button class="btn btn-default editbutton"><i class="fa fa-pencil fa-fw"></i></button>
+						<a href="<?php echo base_url('dashboard/history/estore/'. $list['ORDER_ID']); ?>" target="_blank" class="btn btn-primary"><i class="fa fa-list fa-fw"></i></a>
 						<div class="editbutton-menu">
-							<button class="btn btn-success"><i class="fa fa-check fa-fw"></i></button>
-							<button class="btn btn-info"><i class="fa fa-car fa-fw"></i></button>
-							<button class="btn btn-warning"><i class="fa fa-clock-o fa-fw"></i></button>
-							<button class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></button>
+							<a href="<?php echo base_url('admin/estore/paymentlist/status/accepted/'.$list['ORDER_ID']); ?>" class="btn btn-success"><i class="fa fa-check fa-fw"></i></a>
+							<a href="<?php echo base_url('admin/estore/paymentlist/status/ontheway/'.$list['ORDER_ID']); ?>" class="btn btn-info"><i class="fa fa-car fa-fw"></i></a>
+							<a href="<?php echo base_url('admin/estore/paymentlist/status/pending/'.$list['ORDER_ID']); ?>" class="btn btn-warning"><i class="fa fa-clock-o fa-fw"></i></a>
+							<a href="<?php echo base_url('admin/estore/paymentlist/status/rejected/'.$list['ORDER_ID']); ?>" class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></a>
 						</div>
 					</td>
 				</tr>

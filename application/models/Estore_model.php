@@ -137,5 +137,15 @@
 			$query = $this->db->get('TRHORDER');
 			return $query->result_array();
 		}
+
+		public function change_status($status, $orderid){
+			$status = strtoupper($status);
+			$data = array(
+				'STATUS' => $status
+			);
+			$this->db->where('ORDER_ID', $orderid);
+			$this->db->update('TRHORDER', $data);
+			return $this->db->error();
+		}
 	}
 ?>

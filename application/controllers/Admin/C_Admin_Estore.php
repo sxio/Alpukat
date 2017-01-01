@@ -117,10 +117,16 @@
 
 			$data['elist'] = $this->Estore_model->get_all_order();
 
-			// print_r($data['elist']);
-			// return;
-
 			$this->load->view('admin/estore/paymentlist', $data);
+		}
+
+		public function changestatus($status = NULL, $orderid = NULL){
+			$res = $this->Estore_model->change_status($status, $orderid);
+			if($res['code'] == 0){
+				redirect('admin/estore/paymentlist');
+			} else{
+				echo 'Something went wrong. Please try again later';
+			}
 		}
 	}
 ?>

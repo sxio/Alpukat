@@ -6,23 +6,11 @@ table tr td{
 	vertical-align: middle!important;
 }
 table tr td:last-child{
-	width: 110px;
+	width: 250px;
 }
-
-.editbutton-menu button{
-	position: absolute;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	right: 30px;
-	margin-top: -40px;
+.editbutton{
+	display: inline;
 }
-.editbutton-menu button:nth-child(2){
-	margin-top: 15px;
-}
-.editbutton-menu button:nth-child(3){
-	margin-top: 70px;
-}
-.editbutton-menu button:last-child{
-	margin-top: 125px;
+.editbutton-menu{
+	display: inline;
 }

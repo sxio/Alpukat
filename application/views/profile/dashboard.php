@@ -259,7 +259,7 @@
 									if    ($elist->STATUS == 'PENDING')    $label = 'warning';
 									elseif($elist->STATUS == 'ACCEPTED')   $label = 'success';
 									elseif($elist->STATUS == 'REJECTED')   $label = 'danger';
-									elseif($elist->STATUS == 'ON THE WAY') $label = 'info';
+									elseif($elist->STATUS == 'ONTHEWAY')   $label = 'info';
 								?>
 								<td><span class="label label-<?php echo $label; ?>"><?php echo $elist->STATUS; ?></span></td>
 								<td>
