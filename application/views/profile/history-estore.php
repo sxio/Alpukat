@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="panel-body">
-				<p>Order ID: <?php echo $estore_hist[0]['ORDER_ID']; ?></p>
+				<h3 class="text-center">Order #<?php echo $estore_hist[0]['ORDER_ID']; ?></h3>
 			</div>
 			<div class="panel-footer">
 
