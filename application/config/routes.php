@@ -11,6 +11,7 @@ $route['forgotPassword/reset/(:any)/(:num)'] = 'C_ForgotPassword/verify_email/$1
 $route['forgotPassword/requestForgot']       = 'C_ForgotPassword/requestForgot';
 $route['forgotPassword/requestReset']        = 'C_ForgotPassword/requestReset';
 $route['dashboard']                          = 'C_Profile/view';
+$route['dashboard/history/estore/(:any)']    = 'C_Profile/history_estore/$1';
 $route['profile/(:any)']                     = 'C_Profile/view/$1';
 $route['news']                               = 'C_News/view';
 $route['news/details/(:any)']                = 'C_News/news_details/$1';

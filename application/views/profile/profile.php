@@ -150,6 +150,5 @@
 			</div>
 		</div>
 	</section>
-	<?php echo $chat; ?>
 </body>
 </html>

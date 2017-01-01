@@ -95,7 +95,17 @@
 									<div class="col-md-8 date">
 										<select name="date_tf" class="form-control">
 											<option value="" hidden>-- Pick One --</option>
-											<option value="<?php echo date('d-m-Y'); ?>"><?php echo date('d F Y'); ?></option>
+											<?php
+												$startdate = strtotime("Today");
+												$enddate = strtotime("+5 day", $startdate);
+
+												while ($startdate < $enddate) {
+											?>
+											<option value="<?php echo date('Y-m-d', $startdate); ?>"><?php echo date('d F Y', $startdate); ?></option>
+											<?php
+													$startdate = strtotime("+1 day", $startdate);
+												}
+											?>
 										</select>
 									</div>
 								</li>

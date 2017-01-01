@@ -9,13 +9,26 @@
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
-			$data['chat']   = $this->load->view('templates/chat','',TRUE);
+			//$data['chat']   = $this->load->view('templates/chat','',TRUE);
 
 			$data['estore'] = $this->Estore_model->get_order_by_username($this->session->userdata('username'));
 			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
 
-			$this->load->helper('html');
 			$this->load->view('profile/'. $param, $data);
+		}
+
+		public function history_estore($order_id){
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$username = $this->session->userdata('username');
+			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id, $username);
+
+			// $this->load->library('table');
+			// echo $this->table->generate($data['estore_hist']);
+			// return;
+			$this->load->view('profile/history-estore', $data);
 		}
 	}
 ?>

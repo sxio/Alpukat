@@ -77,7 +77,7 @@
 						<li class="list-group-item list-group-item-info">
 							<label class="col-md-4 control-label">Date Transfer </label>
 							<div class="col-md-8">
-								<p>: <?php echo $form_input['date_tf']; ?></p>
+								<p>: <?php echo nice_date($form_input['date_tf'], 'd F Y'); ?></p>
 							</div>
 						</li>
 						<li class="list-group-item list-group-item-info">

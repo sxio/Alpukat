@@ -121,5 +121,13 @@
 			$query = $this->db->get('TRHORDER');
 			return $query->result();
 		}
+
+		public function get_order_by_id($order_id, $username){
+			$this->db->where('TRDORDER.ORDER_ID', $order_id);
+			$this->db->where('TRDORDER.USER_ID', $username);
+			$this->db->join('TRDORDER', 'TRHORDER.ORDER_ID = TRDORDER.ORDER_ID');
+			$query = $this->db->get('TRHORDER');
+			return $query->result();
+		}
 	}
 ?>
