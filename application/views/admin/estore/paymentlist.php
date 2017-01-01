@@ -3,18 +3,10 @@
 <head>
 	<title>Admin | Payment List</title>
 	<?php echo $admin_header; ?>
-	<style type="text/css">
-		table th{
-			background-color: #eee;
-			text-align: center;
-		}
-		table tr td{
-			vertical-align: middle!important;
-		}
-		table tr td:last-child{
-			width: 110px;
-		}
-	</style>
+
+	<?php echo link_tag('assets/css/profile/paymentlist.css'); ?>
+
+	<script src="<?php echo base_url('assets/js/admin/paymentlist.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $admin_nav; ?>
@@ -57,7 +49,13 @@
 					<td><span class="label label-<?php echo $label; ?>"><?php echo $list['STATUS']; ?></span></td>
 					<td>
 						<button class="btn btn-info"><i class="fa fa-list fa-fw"></i></button>
-						<button class="btn btn-success"><i class="fa fa-pencil fa-fw"></i></button>
+						<button class="btn btn-default editbutton"><i class="fa fa-pencil fa-fw"></i></button>
+						<div class="editbutton-menu">
+							<button class="btn btn-success"><i class="fa fa-check fa-fw"></i></button>
+							<button class="btn btn-info"><i class="fa fa-car fa-fw"></i></button>
+							<button class="btn btn-warning"><i class="fa fa-clock-o fa-fw"></i></button>
+							<button class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></button>
+						</div>
 					</td>
 				</tr>
 				<?php endforeach; ?>

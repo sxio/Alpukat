@@ -1,0 +1,28 @@
+table th{
+	background-color: #eee;
+	text-align: center;
+}
+table tr td{
+	vertical-align: middle!important;
+}
+table tr td:last-child{
+	width: 110px;
+}
+
+.editbutton-menu button{
+	position: absolute;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	right: 30px;
+	margin-top: -40px;
+}
+.editbutton-menu button:nth-child(2){
+	margin-top: 15px;
+}
+.editbutton-menu button:nth-child(3){
+	margin-top: 70px;
+}
+.editbutton-menu button:last-child{
+	margin-top: 125px;
+}
