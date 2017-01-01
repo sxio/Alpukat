@@ -116,6 +116,11 @@
 			return $this->db->error();
 		}
 
+		public function get_all_order(){
+			$query = $this->db->get('TRHORDER');
+			return $query->result_array();
+		}
+
 		public function get_order_by_username($username){
 			$this->db->where('USER_ID', $username);
 			$query = $this->db->get('TRHORDER');

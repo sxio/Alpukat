@@ -115,6 +115,11 @@
 			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
 			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
 
+			$data['elist'] = $this->Estore_model->get_all_order();
+
+			// print_r($data['elist']);
+			// return;
+
 			$this->load->view('admin/estore/paymentlist', $data);
 		}
 	}
