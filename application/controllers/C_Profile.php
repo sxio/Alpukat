@@ -2,6 +2,9 @@
 	class C_Profile extends CI_Controller{
 		public function __construct(){
 			parent:: __construct();
+			if($this->session->userdata('username') == NULL){
+				redirect('user');
+			}
 			$this->load->model('History_model');
 			$this->load->model('Estore_model');
 			$this->load->model('Profile_model');
@@ -46,7 +49,9 @@
 					$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
 				}
 			}
-			$data['reminder_data'] = $this->Profile_model->get_reminder($this->session->userdata('username'));
+			$username = $this->session->userdata('username');
+			$data['r_calendar'] = $this->Profile_model->get_reminder($username);
+			$data['r_notif']    = $this->Profile_model->get_nearest_reminder($username);
 
 			$this->load->view('profile/reminder', $data);
 		}

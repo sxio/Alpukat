@@ -26,4 +26,9 @@
 
 .remind{
 	cursor: default;
+	margin-bottom: 2px;
+	width: 50px;
+}
+h4.text-center{
+	margin: 0;
 }
