@@ -98,3 +98,26 @@ footer.foot .cpr p.pptc{
 footer.foot .cpr p.cpry{
   font-size: 12px;
 }
+
+
+/*MEDIA QUERY SMARTPHONE*/
+@media screen and (max-width: 360px)
+              and (max-width: 414px){
+
+    /*footer.foot{
+        background-color: black;
+    }*/
+    footer.foot .corporated{
+        display: none;
+    }
+    footer.foot #ftop{
+        padding: 10px 30px;
+    }
+    div.cpr{
+      padding: 10px 50px 5px 50px;
+    }
+    div.cpr p{
+        display: inline;
+        text-align: right;
+    }
+}

@@ -21,15 +21,15 @@
 		<h1 class="text-center fades">Here Are  Our Best Doctors of The Month</h1>
 		<div class="container">
 			<div class="row text-center doc">
-				<div class="col-sm-4 fadesleft">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 fadesleft">
 					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
 					<h3>Doctor 1</h3>
 				</div>
-				<div class="col-sm-4 fadesleft">
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 fadesleft">
 					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
 					<h3>Doctor 2</h3>
 				</div>
-				<div class="col-sm-4 fadesleft">
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 fadesleft">
 					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
 					<h3>Doctor 3</h3>
 				</div>
@@ -41,39 +41,39 @@
 		<h1 class="about_us text-center fades">ABOUT COMPANY</h1>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-8 fe">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 fe">
 					<h1 class="text-center fadesleft">
 						Our Services
 					</h1>
 
 					<div class="row first_service fadesleft">
-						<div class="col-sm-3 serve text-center">
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center">
 							<a href="<?php echo base_url('news'); ?>"><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
 						</div>
-						<div class="col-sm-3 serve text-center fadesleft">
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
 							<a href="<?php echo base_url('forum'); ?>"><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
 						</div>
-						<div class="col-sm-3 serve text-center fadesleft">
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
 							<a href="<?php echo base_url('estore'); ?>"><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
 						</div>
-						<div class="col-sm-3 serve text-center fadesleft">
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
 							<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
 						</div>
 					</div>
 					<div class="row second_service fadesleft">
-						<div class="col-sm-4 serve text-center">
+						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 serve text-center">
 							<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
 						</div>
-						<div class="col-sm-4 serve text-center fadesleft">
+						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 serve text-center fadesleft">
 							<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
 						</div>
-						<div class="col-sm-4 serve text-center fadesleft">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 serve text-center fadesleft">
 							<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 explain fadesright">
-					<div class="col-sm-5 img_about">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 explain fadesright">
+					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 img_about">
 						<img src="<?php echo base_url('assets/img/avocado.png'); ?>">
 					</div>
 					<h1>What is Avocado <i class="fa fa-question-circle" aria-hidden="true"></i></h1>
@@ -102,10 +102,10 @@
 		    	<div class="item active">
 			  		<div class="container">
 				  		<div class="row">
-				  			<div class="col-sm-2">
+				  			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
 				  			</div>
-					      	<div class="carousel-caption col-sm-10">
+					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
 					        	<h3 class="text-center">Stephen</h3>
 					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -121,10 +121,10 @@
 			    <div class="item">
 			  		<div class="container">
 				  		<div class="row">
-					      	<div class="col-sm-2">
+					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
 				  			</div>
-					      	<div class="carousel-caption col-sm-10">
+					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
 					        	<h3 class="text-center">Meikelwis</h3>
 					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -140,10 +140,10 @@
 			    <div class="item">
 			  		<div class="container">
 				  		<div class="row">
-					      	<div class="col-sm-2">
+					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
 				  			</div>
-					      	<div class="carousel-caption col-sm-10">
+					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
 					        	<h3 class="text-center">Stephen Wijaya</h3>
 					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -159,10 +159,10 @@
 			    <div class="item">
 			  		<div class="container">
 				  		<div class="row">
-					      	<div class="col-sm-2">
+					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
 				  			</div>
-					      	<div class="carousel-caption col-sm-10">
+					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
 					        	<h3 class="text-center">Meikelwis Huang</h3>
 					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -196,25 +196,25 @@
 		<div class="container">
 			<h1 class="deals text-center">Best Deals From Our Shop</h1>
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 					<div class="item1 fadesleft secondfade">
 						<h1>DEAL</h1>
 						<img src="<?php echo base_url('assets/img/poster.jpg'); ?>">
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 					<div class="item1 fadesleft">
 						<h1>DEAL</h1>
 						<img src="<?php echo base_url('assets/img/poster2.jpg'); ?>">
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 					<div class="item1 fadesright">
 						<h1>DEAL</h1>
 						<img src="<?php echo base_url('assets/img/poster.jpg'); ?>">
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 					<div class="item1 fadesright secondfade">
 						<h1>DEAL</h1>
 						<img src="<?php echo base_url('assets/img/poster2.jpg'); ?>">
@@ -229,10 +229,10 @@
 		</h1>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<img class="csg" src="<?php echo base_url('assets/img/cs.jpg'); ?>">
 				</div>
-				<div class="col-sm-8">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<form class="complain">
 					  	<div class="form-group fadesleft">
 					    	<label for="email">Email address:</label>
