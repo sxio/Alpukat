@@ -4,7 +4,7 @@
 	<section id="ftop">
 
 		<div class="row">
-			<div class="col-sm-3 surel">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 surel">
 				<ul class="list-unstyled">
 					<li><a href="<?php echo base_url('about_us'); ?>"><i class="fa fa-question fa-2x roundabout" aria-hidden="true"></i></a>&nbsp;<a href="<?php echo base_url('about_us'); ?>" class="inform">About Founders</a></li>
 					<li><a href=""><i class="fa fa-map-marker fa-2x oval" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Mikroskil Gedung B</a></li>
@@ -14,11 +14,11 @@
 					<li><a href=""><i class="fa fa-instagram fa-2x round" aria-hidden="true"></i></a>&nbsp;<a href="" class="inform">Avocado</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-6 corporated">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 corporated">
 				<h2 class="payment text-center">Payment Partner :</h2>
 				<img class="bca" src="<?php echo base_url('assets/img/banks.png'); ?>">
 			</div>
-			<div class="col-sm-3 services">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 services">
 				<h3>Donation Report</h3>
 				<table class="table">
 					<tr>

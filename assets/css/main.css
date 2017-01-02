@@ -19,8 +19,6 @@ body {
   margin-top: 20px;
 }
 .notif{
-  /*right: 22px;*/
-  /*right: 16%;*/
   /*top: 10%;*/
   /*position: absolute;*/
   font-size: 11px;
@@ -55,7 +53,7 @@ body {
   color: black;
 }
 .container .navbar-header a.navbar-brand{
-  font-size: 80px;
+  font-size: 6vw;
   font-weight: normal;
   font-family: acceleration;
   padding-top: 10px;
@@ -86,21 +84,22 @@ body {
   background-image: url("../img/runner.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  padding-top: 70px;
 }
 
 .jumbotron h3 {
   text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
   margin-bottom: 30px;
   width: 100%;
-  font-size: 22px;
+  font-size: 2vw;
   font-weight: bold;
 
 }
 .jumbotron h1 {
   font-family: acceleration;
-  font-size: 200px;
-  margin-bottom: 0px;
+  font-size: 17vw;
+  margin-bottom: -50px;
 }
 
 /*DONATION*/
@@ -125,7 +124,7 @@ body {
   /*margin-bottom: 5px;*/
   /*margin-top: 5px;*/
   background-image: url('../img/bg1.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -281,4 +280,90 @@ body {
 }
 .fades{
   opacity :0;
+}
+textarea{
+    resize: none;
+}
+
+/*MEDIA QUERY SMARTPHONE*/
+@media screen and (max-width: 360px)
+              and (max-width: 414px){
+    .jumbotron {
+        height: 400px;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .jumbotron h1 {
+      font-family: acceleration;
+      font-size: 30vw;
+      margin-bottom: -20px;
+    }
+    .jumbotron h3{
+        font-size: 3.5vw;
+    }
+    #startchange h1.fades{
+        font-size:8vw;
+    }
+    #startchange .doc .col-xs-4{
+        width: 200px;
+    }
+    #startchange .doc img{
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      margin-bottom: 10px;
+      border:2px solid grey;
+    }
+
+    #o_services .explain h1{
+        font-size: 7vw;
+    }
+    #o_services .explain p{
+        font-size: 3vw;
+    }
+    #wts{
+        display: none;
+    }
+    #deal .fadesright{
+        display: none;
+    }
+    #complain_id img.csg{
+        display: none;
+    }
+    #notif{
+      /*right: 22px;*/
+      left: 31%;
+      top: 10%;
+      position: absolute;
+      font-size: 3vw;
+      color: rgba(255,0,0,0.7);
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .container .navbar-header a.navbar-brand{
+      font-size: 12vw;
+    }
+    .container #myNavbar > ul{
+        margin-top: 0;
+        background-color: #1565c0;
+        filter: blur;
+        border-bottom: 2px solid white;
+    }
+    .container #myNavbar > ul > li > a{
+        color: white;
+    }
+
+    .fadesleft{
+      opacity :1;
+      left: 0px;
+    }
+    .fadesright{
+      opacity :1;
+      right: 0px;
+    }
+    .fades{
+      opacity :1;
+    }
 }

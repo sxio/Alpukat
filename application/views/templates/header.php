@@ -17,4 +17,5 @@
 	<script src="<?php echo base_url('assets/js/jquery.popupoverlay.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/numeral.min.js'); ?>"></script>
 	<script type="text/javascript">var baseUrl = "<?php echo base_url(); ?>";</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<!-- HEADER END -->
