@@ -10,11 +10,14 @@ $route['user/fpassword']                                = 'C_ForgotPassword/view
 $route['forgotPassword/reset/(:any)/(:num)']            = 'C_ForgotPassword/verify_email/$1/$2';
 $route['forgotPassword/requestForgot']                  = 'C_ForgotPassword/requestForgot';
 $route['forgotPassword/requestReset']                   = 'C_ForgotPassword/requestReset';
-$route['dashboard']                                     = 'C_Profile/view';
-$route['dashboard/history/estore/(:any)']               = 'C_Profile/history_estore/$1';
-$route['profile/(:any)']                                = 'C_Profile/view/$1';
+
+$route['profile/dashboard']                             = 'C_Profile/dashboard';
+$route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_estore/$1';
+$route['profile/reminder']                              = 'C_Profile/reminder';
+
 $route['news']                                          = 'C_News/view';
 $route['news/details/(:any)']                           = 'C_News/news_details/$1';
+
 $route['estore']                                        = 'C_Estore/view';
 $route['estore/detail/(:any)']                          = 'C_Estore/detail/$1';
 $route['estore/removeitem/(:any)']                      = 'C_Estore/removeitem/$1';
@@ -25,9 +28,12 @@ $route['estore/emptycart']                              = 'C_Estore/emptycart';
 $route['estore/purchase']                               = 'C_Estore/purchase';
 $route['estore/paymentreview']                          = 'C_Payment/estore_paymentreview';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
+
 $route['booking']                                       = 'C_Booking/view';
+
 $route['forum']                                         = 'C_Forum/view';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
+
 $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
 $route['payment/success/(:any)']                        = 'C_Payment/pay_success/$1';
 
@@ -67,3 +73,4 @@ $route['default_controller']                            = 'C_Pages/view';
 $route['(:any)']                                        = 'C_Pages/view/$1';
 $route['404_override']                                  = '';
 $route['translate_uri_dashes']                          = FALSE;
+?>

@@ -12,21 +12,24 @@ body {
   font-family: 'Comfortaa', cursive;
   overflow-x: hidden;
 }
+.margintop{
+  margin-top: 70px;
+}
 .margintop-20{
   margin-top: 20px;
 }
-#notif{
+.notif{
   /*right: 22px;*/
-  right: 16%;
-  top: 10%;
-  position: absolute;
+  /*right: 16%;*/
+  /*top: 10%;*/
+  /*position: absolute;*/
   font-size: 11px;
   color: rgba(255,0,0,0.7);
-  z-index: 1000;
-  cursor: pointer;
+  /*z-index: 1000;*/
+  /*cursor: pointer;*/
 }
-#notif:hover{
-
+#notif_anchor .panel-body{
+  width: 200px;
 }
 .panel{
   margin: 0 5px;
