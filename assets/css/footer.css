@@ -113,6 +113,9 @@ footer.foot .cpr p.cpry{
     footer.foot #ftop{
         padding: 10px 30px;
     }
+    footer.foot .surel a.inform{
+        font-size: 3vw;
+    }
     div.cpr{
       padding: 10px 50px 5px 50px;
     }
