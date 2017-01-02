@@ -51,6 +51,7 @@ $route['admin/member/listmember']                       = 'Admin/C_Admin_Member/
 $route['admin/estore/addproduct']                       = 'Admin/C_Admin_Estore/addproduct';
 $route['admin/estore/addcategory']                      = 'Admin/C_Admin_Estore/addcategory';
 $route['admin/estore/paymentlist']                      = 'Admin/C_Admin_Estore/paymentlist';
+$route['admin/estore/payment/detail/(:any)']            = 'Admin/C_Admin_Estore/paymentdetail/$1';
 $route['admin/estore/paymentlist/status/(:any)/(:any)'] = 'Admin/C_Admin_Estore/changestatus/$1/$2';
 $route['admin/estore/restock']                          = 'Admin/C_Admin_Estore/restock';
 $route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProdutByCategory';

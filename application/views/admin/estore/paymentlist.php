@@ -5,8 +5,6 @@
 	<?php echo $admin_header; ?>
 
 	<?php echo link_tag('assets/css/profile/paymentlist.css'); ?>
-
-	<!-- <script src="<?php echo base_url('assets/js/admin/paymentlist.js'); ?>"></script> -->
 </head>
 <body>
 	<?php echo $admin_nav; ?>
@@ -48,7 +46,7 @@
 					?>
 					<td><span class="label label-<?php echo $label; ?>"><?php echo $list['STATUS']; ?></span></td>
 					<td>
-						<a href="<?php echo base_url('dashboard/history/estore/'. $list['ORDER_ID']); ?>" target="_blank" class="btn btn-primary"><i class="fa fa-list fa-fw"></i></a>
+						<a href="<?php echo base_url('admin/estore/payment/detail/'. $list['ORDER_ID']); ?>" class="btn btn-primary"><i class="fa fa-list fa-fw"></i></a>
 						<div class="editbutton-menu">
 							<a href="<?php echo base_url('admin/estore/paymentlist/status/accepted/'.$list['ORDER_ID']); ?>" class="btn btn-success"><i class="fa fa-check fa-fw"></i></a>
 							<a href="<?php echo base_url('admin/estore/paymentlist/status/ontheway/'.$list['ORDER_ID']); ?>" class="btn btn-info"><i class="fa fa-car fa-fw"></i></a>
