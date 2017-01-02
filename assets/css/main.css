@@ -285,7 +285,8 @@ textarea{
 }
 
 /*MEDIA QUERY SMARTPHONE*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 360px)
+              and (max-width: 414px){
     .jumbotron {
         height: 400px;
         padding-top: 60px;
@@ -347,8 +348,21 @@ textarea{
         margin-top: 0;
         background-color: #1565c0;
         filter: blur;
+        border-bottom: 2px solid white;
     }
     .container #myNavbar > ul > li > a{
         color: white;
+    }
+
+    .fadesleft{
+      opacity :1;
+      left: 0px;
+    }
+    .fadesright{
+      opacity :1;
+      right: 0px;
+    }
+    .fades{
+      opacity :1;
     }
 }
