@@ -1,0 +1,21 @@
+.calendar table{
+	margin: 0 auto;
+	width: 700px;
+}
+.calendar table th{
+	background-color: #eee;
+}
+.calendar table tr td{
+	width: 100px;
+}
+.calendar table,
+.calendar table th{
+	text-align: center;
+}
+.calendar table th:first-child,
+.calendar table td:first-child{
+	color: red;
+}
+.today{
+	background-color: skyblue;
+}

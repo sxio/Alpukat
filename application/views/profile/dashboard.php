@@ -263,7 +263,7 @@
 								?>
 								<td><span class="label label-<?php echo $label; ?>"><?php echo $elist->STATUS; ?></span></td>
 								<td>
-								<a href="<?php echo base_url('dashboard/history/estore/'. $elist->ORDER_ID); ?>" target="_blank" class="btn btn-info" value="<?php echo $elist->ORDER_ID; ?>"><i class="fa fa-list fa-fw"></i></a>
+								<a href="<?php echo base_url('profile/dashboard/history/estore/'. $elist->ORDER_ID); ?>" target="_blank" class="btn btn-info" value="<?php echo $elist->ORDER_ID; ?>"><i class="fa fa-list fa-fw"></i></a>
 								</td>
 							</tr>
 							<?php } ?>

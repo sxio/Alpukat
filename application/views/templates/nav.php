@@ -23,26 +23,30 @@
 						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
 				<?php } else { ?>
 						<li class="dropdown">
-							<span class="fa-stack fa-lg" id="notif">
+							<?php
+								$notif_icon_string = '<span class="fa-stack fa-lg notif">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-bell fa-stack-1x fa-inverse"></i>
-							</span>
+							</span>';
+							?>
 							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?>
+							<?php echo $notif_icon_string; ?>
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#" id="notif_anchor">
+<!-- 								<li><a href="<?php echo base_url('profile/reminder'); ?>" id="notif_anchor">
 									<div class="panel panel-danger">
 										<div class="panel-heading text-center">
-											<i class="fa fa-bell"></i>13:30
+											<i class="fa fa-clock-o"></i> 13:30
 										</div>
 										<div class="panel-body">
-											Consultation with dr. Oz
+										Consultation with dr Oz
 										</div>
 									</div>
 									</a>
-								</li>
-								<li class="divider"></li>
-								<li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
+								</li> -->
+								<!-- <li class="divider"></li> -->
+								<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
+								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
 								<li class="divider"></li>
 								<li><a href="<?php echo base_url('logout/log_out');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 							</ul>
