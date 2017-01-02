@@ -22,8 +22,7 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			$data['username'] = $this->session->userdata('username');
-			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id, $data['username']);
+			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id);
 
 			$this->load->view('profile/history-estore', $data);
 		}

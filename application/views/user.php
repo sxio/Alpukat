@@ -115,13 +115,13 @@
 
 								<label for="job">Role:</label>
 								<select name="user_role" value="<?php echo set_value('user_role') ?>">
-									<optgroup label="Doctor">
-										<option value="2">Doctor</option>
-										<option value="3">Specialist Doctor</option>
-									</optgroup>
-									<optgroup label="Pacient">
+									<!-- <optgroup label="Pacient"> -->
 										<option value="1">Pacient</option>
-									</optgroup>
+									<!-- </optgroup> -->
+									<!-- <optgroup label="Doctor"> -->
+										<option value="2">Doctor</option>
+										<!-- <option value="3">Specialist Doctor</option> -->
+									<!-- </optgroup> -->
 								</select>
 							</fieldset>
 							<button type="submit">Sign Up</button>

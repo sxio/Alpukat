@@ -120,6 +120,15 @@
 			$this->load->view('admin/estore/paymentlist', $data);
 		}
 
+		public function paymentdetail($orderid){
+			$data['admin_header'] = $this->load->view('admin/templates/admin_header','',TRUE);
+			$data['admin_nav']    = $this->load->view('admin/templates/admin_nav','',TRUE);
+
+			$data['estore_hist']  = $this->Estore_model->get_order_by_id($orderid);
+
+			$this->load->view('admin/estore/detail-order', $data);
+		}
+
 		public function changestatus($status = NULL, $orderid = NULL){
 			$res = $this->Estore_model->change_status($status, $orderid);
 			if($res['code'] == 0){
