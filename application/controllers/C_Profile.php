@@ -4,6 +4,7 @@
 			parent:: __construct();
 			$this->load->model('History_model');
 			$this->load->model('Estore_model');
+			$this->load->model('Profile_model');
 		}
 
 		public function dashboard(){
@@ -31,6 +32,21 @@
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$this->form_validation->set_rules('reminder_dt','DateTime','required');
+			$this->form_validation->set_rules('reminder_desc','Description','trim|required|max_length[100]');
+
+			if($this->form_validation->run() == FALSE){
+				$data['form_error'] = validation_errors();
+			} else{
+				$res = $this->Profile_model->add_reminder();
+				if($res['code'] == 0){
+					$data['msg'] = '<div class="alert alert-success msg">Reminder Saved</div>';
+				} else{
+					$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+				}
+			}
+			$data['reminder_data'] = $this->Profile_model->get_reminder($this->session->userdata('username'));
 
 			$this->load->view('profile/reminder', $data);
 		}

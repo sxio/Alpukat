@@ -6,10 +6,11 @@
 }
 .calendar table tr td{
 	width: 100px;
+	height: 80px;
 }
 .calendar table,
 .calendar table th{
-	text-align: center;
+	/*text-align: center;*/
 }
 .calendar table th:first-child,
 .calendar table td:first-child{
@@ -17,4 +18,12 @@
 }
 .today{
 	background-color: skyblue;
+}
+
+.msg{
+	width: 80%;
+}
+
+.remind{
+	cursor: default;
 }

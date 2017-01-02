@@ -23,6 +23,10 @@
 				startDate: year + '-' + month + '-01',
 				endDate: year + '-' + month + '-' + lastDayOfMonth
 			});
+
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
 		});
 	</script>
 </head>
@@ -31,11 +35,11 @@
 
 	<div class="container-fluid margintop">
 		<div class="row">
-			<div class="col-sm-5">
+			<div class="col-sm-4">
 				<h3>Set a Reminder</h3>
 				<?php
 					$attrib = array('class' => 'form-horizontal');
-					echo form_open('', $attrib);
+					echo form_open('profile/reminder', $attrib);
 				?>
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="date">Set Date:</label>
@@ -55,13 +59,18 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<div class="col-sm-12 text-right">
-						<button class="btn btn-success"><i class="fa fa-save fa-fw"></i> Save</button>
+					<div class="col-sm-12 clearfix">
+						<?php echo form_hidden('userid', $this->session->userdata('username')); ?>
+						<button class="btn btn-success pull-right"><i class="fa fa-save fa-fw"></i> Save</button>
+						<?php if(isset($form_error) && $form_error != null) { ?>
+						<div class="alert alert-danger msg"><?php echo $form_error; ?></div>
+						<?php } ?>
+						<?php if(isset($msg) && $msg != null) echo $msg; ?>
 					</div>
 				</div>
 				<?php echo form_close(); ?>
 			</div>
-			<div class="col-sm-7 calendar">
+			<div class="col-sm-8 calendar">
 				<?php
 					$month   = date('m');
 					$year    = date('Y');
@@ -98,7 +107,23 @@
 							if (date("w",mktime (0,0,0,$month,$d,$year)) == 0) { ?>
 								<tr><?php
 							}
-							?><td class="<?php echo $today; ?>"><?php echo $d; ?></td><?php
+							?><td class="<?php echo $today; ?> clearfix">
+								<span class="date">
+									<?php echo $d; ?>
+								</span>
+								<?php
+									// apply reminder to calender
+									foreach($reminder_data as $rdata) {
+										$tgl = nice_date($rdata['REMINDER_DT'], 'd');
+										$bln = nice_date($rdata['REMINDER_DT'], 'm');
+										$thn = nice_date($rdata['REMINDER_DT'], 'Y');
+										if($thn == $year && $bln == $month && $tgl == $d) { ?>
+											<span class="badge badge-default pull-right remind" data-toggle="tooltip" data-placement="top" title="<?php echo $rdata['REMINDER_DESC']; ?>"><?php echo nice_date($rdata['REMINDER_DT'], 'H:i'); ?></span>
+								<?php
+										}
+									}
+								?>
+							</td><?php
 							if (date("w",mktime (0,0,0,$month,$d,$year)) == 6) { ?>
 								</tr><?php
 							}
