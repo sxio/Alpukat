@@ -9,26 +9,7 @@
 	<?php echo link_tag('assets/css/bootstrap-datetimepicker.min.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/bootstrap-datetimepicker.min.js'); ?>"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var d = new Date();
-			var year = d.getFullYear();
-			var month = d.getMonth()+1;
-			var lastDayOfMonth = new Date(d.getFullYear(), d.getMonth()+1, 0).getDate();
-			$(".form_datetime").datetimepicker({
-				format: 'dd MM yyyy - hh : ii',
-				linkField: "mirror_field",
-				linkFormat: "yyyy-mm-dd hh:ii",
-				todayBtn: true,
-				startDate: year + '-' + month + '-01',
-				endDate: year + '-' + month + '-' + lastDayOfMonth
-			});
-
-			$(document).ready(function(){
-				$('[data-toggle="tooltip"]').tooltip();
-			});
-		});
-	</script>
+	<script src="<?php echo base_url('assets/js/reminder/reminder.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -81,7 +62,10 @@
 							</div>
 							<div class="panel-body">
 								<?php foreach($r_notif as $notif) { ?>
-
+								<div class="well well-sm">
+									<h4><?php echo nice_date($notif['REMINDER_DT'], 'd F Y | H : i'); ?></h4>
+									<span><?php echo $notif['REMINDER_DESC']; ?></span>
+								</div>
 								<?php } ?>
 							</div>
 						</div>
