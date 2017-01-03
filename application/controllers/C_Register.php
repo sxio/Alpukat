@@ -44,13 +44,17 @@
 
 		public function verify($hash=NULL)
 		{
-			if ($this->Register_model->verifyEmailID($hash))
+			if ($this->Register_model->verify_email_user($hash))
 			{
 				$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Your Email Address is successfully verified! Please login to access your account!</div>');
 			} else{
 				$this->session->set_flashdata('msgLogin','<div class="alert alert-danger text-center">Sorry! There is error verifying your Email Address!</div>');
 			}
 			redirect('user');
+		}
+
+		public function verify_doctor($hash = NULL){
+			//
 		}
 	}
 ?>

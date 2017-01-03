@@ -5,6 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['login/log_in']                                  = 'C_Login/log_in';
 $route['logout/log_out']                                = 'C_Logout/log_out';
 $route['register/regis']                                = 'C_Register/regis';
+$route['register/verify/(:any)']                        = 'C_Register/verify/$1';
+$route['register/verify-doctor/(:any)']                 = 'C_Register/verify_doctor/$1';
 $route['user/fpassword']                                = 'C_ForgotPassword/view';
 $route['forgotPassword/reset/(:any)/(:num)']            = 'C_ForgotPassword/verify_email/$1/$2';
 $route['forgotPassword/requestForgot']                  = 'C_ForgotPassword/requestForgot';

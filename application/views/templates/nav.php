@@ -65,7 +65,7 @@
 			<div class="donation_wrapper">
 				<?php
 					$attrib = array('class' => 'donation_form');
-					echo form_open('payment/form_payment/donate', $attrib);
+					echo form_open('donate/payment/form', $attrib);
 				?>
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span><input placeholder="Name" name="text" class="form-control">
