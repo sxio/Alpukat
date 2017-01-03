@@ -286,8 +286,7 @@ textarea{
 }
 
 /*MEDIA QUERY SMARTPHONE*/
-@media screen and (max-width: 360px)
-              and (max-width: 414px){
+@media screen and (max-width: 500px){
     .jumbotron {
         height: 400px;
         padding-top: 60px;

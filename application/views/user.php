@@ -25,8 +25,8 @@
 	<!-- Tab -->
 	<div class="container text-center" id="user">
 		<ul class="nav nav-pills">
-			<li class="<?php echo $activeL; ?>"><a href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
-			<li class="<?php echo $activeR; ?>"><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
+			<li class="<?php echo $activeL; ?> pill"><a href="#logIn" data-toggle="tab"><i class="fa fa-sign-in fa-fw"></i> Log In</a></li>
+			<li class="<?php echo $activeR; ?> pill"><a href="#register" data-toggle="tab"><i class="fa fa-sign-out fa-fw"></i> Register</a></li>
 		</ul>
 	</div>
 	<!-- Tab Content -->

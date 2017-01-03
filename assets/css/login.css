@@ -6,7 +6,7 @@
 }
 body#bckimg{
   background-image: url('../img/doctor wall 3.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -46,8 +46,8 @@ body#bckimg{
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   min-height: 100%;
   padding: 20px;
@@ -186,4 +186,38 @@ body#bckimg{
   font-weight: 800;
   font-size: 15px;
   color: #4286f4;
+}
+
+/*MEDIA QUERY SMARTPHONE*/
+@media screen and (max-width: 500px){
+    body#bckimg{
+        background-size: initial;
+    }
+    .container{
+        width: 100%;
+    }
+    #account,
+    .nav-pills{
+        width: 100%;
+    }
+    #user .nav-pills{
+        width: 100%;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    #user .nav-pills li.pill{
+        width: 100%;
+        /*left: 12.5vw;*/
+    }
+    #user .nav-pills > li a{
+      width: 100%;
+    }
+    #account .tab-content .tab-pane .wrapper{
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+    #account .tab-content .tab-pane .wrapper form{
+        width: 100%;
+    }
 }

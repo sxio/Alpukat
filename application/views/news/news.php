@@ -16,7 +16,7 @@
 	<section id="n_feature">
 		<div class="container cmain">
 			<div class="row">
-				<div class="col-sm-6 leftedge">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 leftedge">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Wrapper for slides -->
 					  	<div class="carousel-inner" role="listbox">
@@ -48,17 +48,17 @@
 						<!-- <a href="#" class="news">Go to News Page &nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a> -->
 
 					</div>
-				<div class="col-sm-6 rightedge">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 rightedge">
 					<?php
 						$i = 0;
 						foreach($news_lists as $news_list) {
 							if($i >= 7) break;
 					?>
 						<div class="row today_news">
-							<div class="col-sm-3 news_image">
+							<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 news_image">
 								<a href="<?php echo base_url('news/details/'. $news_list['NEWS_ID']); ?>"><img src="<?php echo base_url('assets/img/news-img/'. $news_list['NEWS_IMAGE']); ?>"></a>
 							</div>
-							<div class="col-sm-9 news_title">
+							<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9 news_title">
 								<a href="<?php echo base_url('news/details/'. $news_list['NEWS_ID']); ?>"><?php echo $news_list['NEWS_TITLE']; ?></a>
 								<div class="news_content"><?php echo word_limiter($news_list['NEWS_CONTENT'], 15); ?></div>
 							</div>
@@ -74,7 +74,7 @@
 	<section id="other_detail">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-8 left-nav">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 left-nav">
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 						<li><a data-toggle="tab" href="#menu1">Women`s Health</a></li>
@@ -87,10 +87,10 @@
 							<?php for($i = 0 ; $i < 5 ; $i++) { ?>
 							<div class="block<?php if($i==4) echo '-last'; ?>">
 								<div class="row">
-									<div class="col-sm-3 detail_img">
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 detail_img">
 										<img src="<?php echo base_url('assets/img/perfect.jpg'); ?>">
 									</div>
-									<div class="col-sm-9 detail_news">
+									<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 detail_news">
 										<a href="">
 											<h3>HOME</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -120,15 +120,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 right-ad">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 right-ad">
 					<div class="ad">
 						<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 					</div>
 					<div class="row">
-						<div class="col-sm-6 adv">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 adv">
 							<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 						</div>
-						<div class="col-sm-6 adv">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 adv">
 							<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 						</div>
 					</div>
@@ -141,7 +141,7 @@
 		<div class="container">
 			<div class="row">
 				<?php for($i = 0 ; $i < 4 ; $i++) { ?>
-				<div class="col-sm-3 tip">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 tip">
 					<a href="">
 					<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
