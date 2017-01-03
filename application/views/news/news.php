@@ -11,7 +11,7 @@
 <body>
 	<?php echo $nav; ?>
 	<section id="news_home_head">
-		<h1 class="hitam"><i class="fa fa-newspaper-o fa-fw"></i>Avo Health News<p class="motto">The Right Place to Learn About Health</p></h1>
+		<h1 class="hitam col-xs-12 col-md-12"><i class="fa fa-newspaper-o fa-fw"></i>Avo Health News<p class="motto">The Right Place to Learn About Health</p></h1>
 	</section>
 	<section id="n_feature">
 		<div class="container cmain">
@@ -87,10 +87,10 @@
 							<?php for($i = 0 ; $i < 5 ; $i++) { ?>
 							<div class="block<?php if($i==4) echo '-last'; ?>">
 								<div class="row">
-									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 detail_img">
+									<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 detail_img">
 										<img src="<?php echo base_url('assets/img/perfect.jpg'); ?>">
 									</div>
-									<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 detail_news">
+									<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 detail_news">
 										<a href="">
 											<h3>HOME</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -141,7 +141,7 @@
 		<div class="container">
 			<div class="row">
 				<?php for($i = 0 ; $i < 4 ; $i++) { ?>
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 tip">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 tip">
 					<a href="">
 					<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
 					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

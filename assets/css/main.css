@@ -287,6 +287,12 @@ textarea{
 
 /*MEDIA QUERY SMARTPHONE*/
 @media screen and (max-width: 500px){
+    nav.navbar .collapse ul.nav li.dropdown ul.dropdown-menu li a{
+        color: white!important;
+    }
+    .divider{
+      display: none;
+    }
     .jumbotron {
         height: 400px;
         padding-top: 60px;

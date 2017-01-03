@@ -101,8 +101,7 @@ footer.foot .cpr p.cpry{
 
 
 /*MEDIA QUERY SMARTPHONE*/
-@media screen and (max-width: 360px)
-              and (max-width: 414px){
+@media screen and (max-width: 500px){
 
     /*footer.foot{
         background-color: black;

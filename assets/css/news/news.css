@@ -186,10 +186,12 @@
 
 /*MEDIA QUERY SMARTPHONE*/
 @media screen and (max-width: 500px){
+    section#news_home_head{
+      width: 100%;
+    }
     section#news_home_head h1.hitam{
         width: 100%;
         font-size: 7vw;
-        text-align: left;
     }
     .cmain .leftedge{
         display: none;
@@ -213,6 +215,35 @@
     }
     #other_detail{
         padding: 0;
+    }
+    #other_detail .container-fluid{
+      padding: 5px;
+    }
+    #other_detail ul.nav li a{
+      font-size: 4vw;
+    }
+    #other_detail .detail_img img{
+      width: 100%;
+    }
+    #other_detail .detail_news a h3, #other_detail .detail_news a p{
+      width: 100%;
+    }
+    #tips .container .row .tip{
+      border:none;
+    }
+    #other_detail .left-nav .tab-content .block{
+      border-bottom: none;
+    }
+    section#car{
+      background-size: cover;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    section#car h1{
+      font-size: 8vw;
+    }
+    section#car .carousel-inner h3{
+      font-size: 5vw;
     }
     .right-ad{
         display: none;
