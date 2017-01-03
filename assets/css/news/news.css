@@ -188,10 +188,12 @@
 @media screen and (max-width: 500px){
     section#news_home_head{
       width: 100%;
+      padding-left: 0;
+      text-align: center;
     }
     section#news_home_head h1.hitam{
-        width: 100%;
-        font-size: 7vw;
+      width: 100%;
+      font-size: 7vw; 
     }
     .cmain .leftedge{
         display: none;
