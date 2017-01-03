@@ -9,26 +9,7 @@
 	<?php echo link_tag('assets/css/bootstrap-datetimepicker.min.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/bootstrap-datetimepicker.min.js'); ?>"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var d = new Date();
-			var year = d.getFullYear();
-			var month = d.getMonth()+1;
-			var lastDayOfMonth = new Date(d.getFullYear(), d.getMonth()+1, 0).getDate();
-			$(".form_datetime").datetimepicker({
-				format: 'dd MM yyyy - hh : ii',
-				linkField: "mirror_field",
-				linkFormat: "yyyy-mm-dd hh:ii",
-				todayBtn: true,
-				startDate: year + '-' + month + '-01',
-				endDate: year + '-' + month + '-' + lastDayOfMonth
-			});
-
-			$(document).ready(function(){
-				$('[data-toggle="tooltip"]').tooltip();
-			});
-		});
-	</script>
+	<script src="<?php echo base_url('assets/js/reminder/reminder.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -47,7 +28,7 @@
 							<label class="control-label col-sm-2" for="date">Date:</label>
 							<div class="col-sm-10">
 								<div class="input-group">
-									<input size="16" type="text" name="reminder_date" class="form-control form_datetime" readonly>
+									<input size="16" type="text" name="reminder_date" id="dt_picker" class="form-control form_datetime" readonly>
 									<span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
 								</div>
 								<br>
@@ -57,17 +38,20 @@
 						<div class="form-group">
 							<label class="control-label col-sm-2">Desc:</label>
 							<div class="col-sm-10">
-								<textarea class="form-control" name="reminder_desc"></textarea>
+								<textarea class="form-control" name="reminder_desc" id="remind_desc"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-12 clearfix">
-								<?php echo form_hidden('userid', $this->session->userdata('username')); ?>
-								<button class="btn btn-success pull-right"><i class="fa fa-save fa-fw"></i> Save</button>
+							<div class="col-sm-6">
 								<?php if(isset($form_error) && $form_error != null) { ?>
 								<div class="alert alert-danger msg"><?php echo $form_error; ?></div>
 								<?php } ?>
 								<?php if(isset($msg) && $msg != null) echo $msg; ?>
+							</div>
+							<div class="col-sm-6 text-right">
+								<?php echo form_hidden('userid', $this->session->userdata('username')); ?>
+								<button class="btn btn-danger" name="delete" value="save"><i class="fa fa-trash fa-fw"></i> Delete</button>
+								<button class="btn btn-success" name="save" value="save"><i class="fa fa-save fa-fw"></i> Save</button>
 							</div>
 						</div>
 						<?php echo form_close(); ?>
@@ -81,7 +65,10 @@
 							</div>
 							<div class="panel-body">
 								<?php foreach($r_notif as $notif) { ?>
-
+								<div class="well well-sm">
+									<h4><?php echo nice_date($notif['REMINDER_DT'], 'd F Y | H : i'); ?></h4>
+									<span><?php echo $notif['REMINDER_DESC']; ?></span>
+								</div>
 								<?php } ?>
 							</div>
 						</div>
@@ -139,7 +126,11 @@
 										$bln = nice_date($rdata['REMINDER_DT'], 'm');
 										$thn = nice_date($rdata['REMINDER_DT'], 'Y');
 										if($thn == $year && $bln == $month && $tgl == $d) { ?>
-											<span class="badge badge-default pull-right remind" data-toggle="tooltip" data-placement="top" title="<?php echo $rdata['REMINDER_DESC']; ?>"><?php echo nice_date($rdata['REMINDER_DT'], 'H : i'); ?></span>
+											<span class="badge badge-default pull-right remind" data-toggle="tooltip" data-placement="top" title="<?php echo $rdata['REMINDER_DESC']; ?>">
+												<?php echo nice_date($rdata['REMINDER_DT'], 'H : i'); ?>
+												<input type="hidden" name="r_dt" class="r_dt" value="<?php echo $rdata['REMINDER_DT']; ?>">
+												<input type="hidden" name="r_desc" class="r_desc" value="<?php echo $rdata['REMINDER_DESC']; ?>">
+											</span>
 								<?php
 										}
 									}
