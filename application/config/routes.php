@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
 // USER
 $route['login/log_in']                                  = 'C_Login/log_in';
 $route['logout/log_out']                                = 'C_Logout/log_out';
@@ -13,6 +12,7 @@ $route['forgotPassword/requestReset']                   = 'C_ForgotPassword/requ
 
 $route['profile/dashboard']                             = 'C_Profile/dashboard';
 $route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_estore/$1';
+$route['profile/reminder/delete']                       = 'C_Profile/reminder/del_reminder';
 $route['profile/reminder']                              = 'C_Profile/reminder';
 
 $route['news']                                          = 'C_News/view';

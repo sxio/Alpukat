@@ -55,5 +55,11 @@
 
 			$this->load->view('profile/reminder', $data);
 		}
+
+		public function del_reminder(){
+			$username = $this->session->userdata('username');
+			// BLOM SELESAI
+			return;
+		}
 	}
 ?>
