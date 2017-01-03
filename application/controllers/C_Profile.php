@@ -40,6 +40,7 @@
 		}
 
 		public function reminder(){
+			$username = $this->session->userdata('username');
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
@@ -47,27 +48,30 @@
 			$this->form_validation->set_rules('reminder_dt','DateTime','required');
 			$this->form_validation->set_rules('reminder_desc','Description','trim|required|max_length[100]');
 
+
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
 			} else{
-				$res = $this->Profile_model->add_reminder();
-				if($res['code'] == 0){
-					$data['msg'] = '<div class="alert alert-success msg">Reminder Saved</div>';
-				} else{
-					$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+				if($this->input->post('save')!=NULL) {
+					$res = $this->Profile_model->add_reminder();
+					if($res['code'] == 0){
+						$data['msg'] = '<div class="alert alert-success msg">Reminder Saved</div>';
+					} else{
+						$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+					}
+				} elseif($this->input->post('delete')!=NULL){
+					$res = $this->Profile_model->remove_reminder($username, $this->input->post('reminder_dt'));
+					if($res['code'] == 0){
+						$data['msg'] = '<div class="alert alert-success msg">Deleted</div>';
+					} else{
+						$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+					}
 				}
 			}
-			$username = $this->session->userdata('username');
 			$data['r_calendar'] = $this->Profile_model->get_reminder($username);
 			$data['r_notif']    = $this->Profile_model->get_nearest_reminder($username);
 
 			$this->load->view('profile/reminder', $data);
-		}
-
-		public function del_reminder(){
-			$username = $this->session->userdata('username');
-			// BLOM SELESAI
-			return;
 		}
 	}
 ?>

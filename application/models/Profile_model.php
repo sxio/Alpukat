@@ -34,9 +34,8 @@
 			return $query->result_array();
 		}
 
-		// BLOM DICOBA
 		public function remove_reminder($username, $datetime){
-			$this->db->where('USER_ID');
+			$this->db->where('USER_ID', $username);
 			$this->db->where('REMINDER_DT', $datetime);
 			$this->db->delete('MSTREMINDER');
 			return $this->db->error();
