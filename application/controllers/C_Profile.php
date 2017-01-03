@@ -10,6 +10,14 @@
 			$this->load->model('Profile_model');
 		}
 
+		public function profile_doctor(){
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$this->load->view('profile/profile', $data);
+		}
+
 		public function dashboard(){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
