@@ -20,15 +20,20 @@
             </div>
             <div class="row">
                 <div class="col-sm-8">
-                    <textarea class="form-control" rows="2" id="forum-create-title"></textarea>
+                    <?php echo form_open('C_Forum/saveData',array('name'=>'create-forum'));
+                    ?>
+                    <textarea class="form-control" rows="2" name="title"></textarea>
                     <br>
-            		<textarea class="form-control" rows="8" id="forum-create-content"></textarea>
+            		<textarea class="form-control" rows="8" name="content"></textarea>
             		<br>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-sm pull-right" id="btn-submit">
                             Submit
                         </button>
                     </span>
+                    <?php 
+                    echo form_close();
+                    ?>
                 </div>
             </div>
         </div>
