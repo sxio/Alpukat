@@ -33,18 +33,6 @@
 							<?php echo $notif_icon_string; ?>
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-<!-- 								<li><a href="<?php echo base_url('profile/reminder'); ?>" id="notif_anchor">
-									<div class="panel panel-danger">
-										<div class="panel-heading text-center">
-											<i class="fa fa-clock-o"></i> 13:30
-										</div>
-										<div class="panel-body">
-										Consultation with dr Oz
-										</div>
-									</div>
-									</a>
-								</li> -->
-								<!-- <li class="divider"></li> -->
 								<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
 								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
 								<li class="divider"></li>

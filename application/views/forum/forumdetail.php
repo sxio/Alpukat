@@ -76,6 +76,5 @@
 			</div>
 		</div>
 	</div>
-	<?php echo $chat; ?>
 </body>
 </html>
