@@ -33,8 +33,9 @@ $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
 $route['booking']                                       = 'C_Booking/view';
 
-$route['forum']                                         = 'C_Forum/view';
+$route['forum/create-forum']                            = 'C_Forum/create_forum';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
+$route['forum']                                         = 'C_Forum/view';
 
 $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
 $route['payment/success/(:any)']                        = 'C_Payment/pay_success/$1';
