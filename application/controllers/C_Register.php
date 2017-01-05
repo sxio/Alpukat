@@ -54,9 +54,48 @@
 		}
 
 		public function verify_doctor($hash = NULL){
+			$this->form_validation->set_rules('_photo', 'Photo', 'required');
+			$this->form_validation->set_rules('_cc', 'Certificate of Competence', 'required');
+			$this->form_validation->set_rules('_pl', 'Practice License', 'required');
+			$this->form_validation->set_rules('_pr', 'Proof of Registration', 'required');
+			$this->form_validation->set_rules('_cfee', 'Consultation Fee', 'trim|required');
+			$this->form_validation->set_rules('_bfee', 'Booking Fee', 'trim|required');
+
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+			$data['hash']   = $hash;
+
+			if($this->form_validation->run() == FALSE){
+				$data['form_error'] = validation_errors();
+			} else{
+				// UPLOAD PHOTOS
+				$this->load->library('upload');
+				$config['upload_path']   = './assets/img/doctor/certificate';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['overwrite']     = TRUE;
+				$config['max_size']      = 0;
+
+				$user = $this->Register_model->get_user_by_email_hash($hash)[0];
+
+				foreach($_FILES as $key => $value) {
+					$ext = pathinfo($value['name'], PATHINFO_EXTENSION);
+
+					$config['file_name'] = $user['USER_ID'] . $key . '.' . $ext;
+					$this->upload->initialize($config);
+
+					if(!$this->upload->do_upload($key)){
+						$error = $this->upload->display_errors();
+					}else{
+						$data['upload_data'][$key] = $this->upload->data();
+					}
+				}
+				//
+
+				// INSERT DATABASE
+
+				//
+			}
 
 			$this->load->view('doctor/verify_doctor', $data);
 		}

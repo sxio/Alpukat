@@ -64,5 +64,11 @@
 		public function verify_email_doctor(){
 			//
 		}
+
+		public function get_user_by_email_hash($hash){
+			$this->db->where('md5(EMAIL)', $hash);
+			$query = $this->db->get('MSTUSER');
+			return $query->result_array();
+		}
 	}
 ?>

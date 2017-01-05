@@ -18,15 +18,15 @@
 			<!-- Meikelwis 27 Nov 16 -->
 			<?php
 				$attrib = array('class' => 'register');
-				echo form_open_multipart('register/verify-doctor/1', $attrib);
+				echo form_open_multipart('register/verify-doctor/'.$hash, $attrib);
 			?>
 				<h1>Document Submit</h1>
 				<?php
 					if($this->session->flashdata('msgRegis') != NULL){
 						echo $this->session->flashdata('msgRegis');
 					}
-					if(isset($err_regis) && $err_regis != NULL){
-						$validError = "<div class='alert alert-danger text-center'>". $err_regis. "</div>";
+					if(isset($form_error) && $form_error != NULL){
+						$validError = "<div class='alert alert-danger text-center'>". $form_error. "</div>";
 						echo $validError;
 					}
 				?>
@@ -36,32 +36,32 @@
 							<div class="form-group">
 								<label class="control-label" for="image">Photo (a px x b px)</label>
 								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="userfile" class="form-control input-img">
+								<input type="file" name="_photo" class="form-control input-img">
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Certificate of Competence</label>
 								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="userfile2" class="form-control input-img">
+								<input type="file" name="_cc" class="form-control input-img">
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Practice License</label>
 								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="userfile3" class="form-control input-img">
+								<input type="file" name="_pl" class="form-control input-img">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="form-group">
 								<label class="control-label" for="image">Proof of Registration</label>
 								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="userfile4" class="form-control input-img">
+								<input type="file" name="_pr" class="form-control input-img">
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Consultation Fee</label>
-								<input type="number" name="" min="50000" step="5000">
+								<input type="number" name="_cfee" min="50000" step="5000" value="<?php echo set_value('_cfee'); ?>">
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Booking Fee</label>
-								<input type="number" name="" min="100000" step="5000">
+								<input type="number" name="_bfee" min="100000" step="5000" value="<?php echo set_value('_bfee'); ?>">
 							</div>
 						</div>
 						<button type="submit" id="docsubmit">Sign Up</button>
