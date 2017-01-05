@@ -54,7 +54,11 @@
 		}
 
 		public function verify_doctor($hash = NULL){
-			//
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$this->load->view('doctor/verify_doctor', $data);
 		}
 	}
 ?>
