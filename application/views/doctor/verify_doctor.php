@@ -22,8 +22,8 @@
 			?>
 				<h1>Document Submit</h1>
 				<?php
-					if($this->session->flashdata('msgRegis') != NULL){
-						echo $this->session->flashdata('msgRegis');
+					if($this->session->flashdata('msg') != NULL){
+						echo $this->session->flashdata('msg');
 					}
 					if(isset($form_error) && $form_error != NULL){
 						$validError = "<div class='alert alert-danger text-center'>". $form_error. "</div>";
@@ -35,25 +35,53 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="form-group">
 								<label class="control-label" for="image">Photo (a px x b px)</label>
-								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="_photo" class="form-control input-img">
+								<?php
+									if(!isset($upload_data['_photo']['file_name'])){
+										$src = '';
+									} else{
+										$src = base_url('assets/img/doctor/certificate/'. $upload_data['_photo']['file_name']);
+									}
+								?>
+								<img src="<?php echo $src; ?>" class="img-responsive img-thumbnail form-control foto" alt="noimage">
+								<input type="file" name="_photo" class="form-control input-img" required>
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Certificate of Competence</label>
-								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="_cc" class="form-control input-img">
+								<?php
+									if(!isset($upload_data['_cc']['file_name'])){
+										$src = '';
+									} else{
+										$src = base_url('assets/img/doctor/certificate/'. $upload_data['_cc']['file_name']);
+									}
+								?>
+								<img src="<?php echo $src; ?>" class="img-responsive img-thumbnail form-control foto" alt="noimage">
+								<input type="file" name="_cc" class="form-control input-img" required>
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Practice License</label>
-								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="_pl" class="form-control input-img">
+								<?php
+									if(!isset($upload_data['_pl']['file_name'])){
+										$src = '';
+									} else{
+										$src = base_url('assets/img/doctor/certificate/'. $upload_data['_pl']['file_name']);
+									}
+								?>
+								<img src="<?php echo $src; ?>" class="img-responsive img-thumbnail form-control foto" alt="noimage">
+								<input type="file" name="_pl" class="form-control input-img" required>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div class="form-group">
 								<label class="control-label" for="image">Proof of Registration</label>
-								<img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
-								<input type="file" name="_pr" class="form-control input-img">
+								<?php
+									if(!isset($upload_data['_pr']['file_name'])){
+										$src = '';
+									} else{
+										$src = base_url('assets/img/doctor/certificate/'. $upload_data['_pr']['file_name']);
+									}
+								?>
+								<img src="<?php echo $src; ?>" class="img-responsive img-thumbnail form-control foto" alt="noimage">
+								<input type="file" name="_pr" class="form-control input-img" required>
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="image">Consultation Fee</label>

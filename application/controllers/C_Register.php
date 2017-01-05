@@ -54,10 +54,6 @@
 		}
 
 		public function verify_doctor($hash = NULL){
-			$this->form_validation->set_rules('_photo', 'Photo', 'required');
-			$this->form_validation->set_rules('_cc', 'Certificate of Competence', 'required');
-			$this->form_validation->set_rules('_pl', 'Practice License', 'required');
-			$this->form_validation->set_rules('_pr', 'Proof of Registration', 'required');
 			$this->form_validation->set_rules('_cfee', 'Consultation Fee', 'trim|required');
 			$this->form_validation->set_rules('_bfee', 'Booking Fee', 'trim|required');
 
@@ -88,6 +84,7 @@
 						$error = $this->upload->display_errors();
 					}else{
 						$data['upload_data'][$key] = $this->upload->data();
+						$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">SignUp Complete. Try to <a class="" href="'. base_url('user') .'">login</a></div>');
 					}
 				}
 				//
