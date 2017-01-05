@@ -1,3 +1,7 @@
 #user .nav-pills > li.active a{
   margin: 0 auto;
 }
+.foto{
+	display: inline-block;
+	height: auto;
+}
