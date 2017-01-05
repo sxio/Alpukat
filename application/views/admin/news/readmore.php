@@ -37,7 +37,7 @@
 		</div>
 		<hr>
 		<div class="row">
-			<h4>Author: <?php echo $news_detail['USER_NAME']; ?></h4>
+			<h4>Posted By: <?php echo $news_detail['USER_NAME']; ?></h4>
 			<h4>Source: <?php echo $news_detail['NEWS_SOURCE']; ?></h4>
 		</div>
 		<br>

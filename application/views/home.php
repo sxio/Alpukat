@@ -65,10 +65,10 @@
 							<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 serve text-center fadesleft">
-							<a href=""><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
+							<a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 serve text-center fadesleft">
-							<a href=""><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+							<a href="<?php echo base_url('profile/dashboard#paymentHistory'); ?>"><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
 						</div>
 					</div>
 				</div>
