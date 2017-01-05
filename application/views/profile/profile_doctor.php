@@ -26,15 +26,10 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled info text-left">
-								<li>ID :</li>
-								<li>First Name :</li>
-								<li>Last Name :</li>
-								<li>Place , Date of Birth :</li>
-								<li>City :</li>
-								<li>Religion:</li>
-								<li>Gender  :</li>
-								<li>Address :</li>
-								<li>Status :</li>
+								<li>ID : <?php echo $data_doctor['DCT_ID']; ?></li>
+								<li>Name : <?php echo $data_doctor['USER_NAME']; ?></li>
+								<li>Date of Birth : <?php echo nice_date($data_doctor['USER_BIRTH'], 'd F Y'); ?></li>
+								<li>Address : <?php echo $data_doctor['USER_ADDRESS']; ?></li>
 							</ul>
 							<!--Facebook-->
 							<button type="button" class="btn btn-fb btn-info"><i class="fa fa-facebook center"></i> Facebook</button>
@@ -114,33 +109,6 @@
 										<li>Experience :</li>
 										<li>Speciality :</li>
 										<li>Certification :</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-info">
-								<div class="panel-heading text-center">
-									<h3>Hospital Information</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-unstyled">
-										<li>Hospital Location:</li>
-										<li><h3>Maps</h3></li>
-										<li id="map">Hospital</li>
-										<!--Meikelwis Sisain tempat untuk ini soalnya mau buat google mapnya
-										//Surce : https://developers.google.com/maps/articles/phpsqlajax_v3
-										//Nanti baru buat soalnya mau pake db juga
-										//api key : AIzaSyDGJqRDpxUJqXhZZ2As2luILJHG9__f9jc-->
-										<li>Schedule:</li>
-										<li>Contact Number :</li>
-										<li><ul>
-												<li>Telephone :</li>
-												<li>Handphone :</li>
-											</ul>
-										</li>
 									</ul>
 								</div>
 							</div>
