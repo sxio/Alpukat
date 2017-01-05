@@ -54,15 +54,23 @@
 			return $this->email->send();
 		}
 
-		public function verify_email_user($key)
+		public function verify_email($hash)
 		{
-			$this->db->where('md5(EMAIL)', $key);
+			$this->db->where('md5(EMAIL)', $hash);
 			$data = array('ACTIVE' => 1);
 			return $this->db->update('MSTUSER', $data);
 		}
 
-		public function verify_email_doctor(){
-			//
+		public function add_doctor($user, $img){
+			$data = array(
+				'DCT_ID'           => $user['USER_ID'],
+				'CONSULT_FEE'      => $this->input->post('_cfee'),
+				'BOOKING_FEE'      => $this->input->post('_bfee'),
+				'IMG_CERTIFICATE'  => $img['_cc']['file_name'],
+				'IMG_LICENSE'      => $img['_pl']['file_name'],
+				'IMG_REGISTRATION' => $img['_pr']['file_name']
+			);
+			return $this->db->insert('MSHDOCTOR', $data);
 		}
 
 		public function get_user_by_email_hash($hash){

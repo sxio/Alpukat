@@ -44,7 +44,7 @@
 
 		public function verify($hash=NULL)
 		{
-			if ($this->Register_model->verify_email_user($hash))
+			if ($this->Register_model->verify_email($hash))
 			{
 				$this->session->set_flashdata('msgLogin','<div class="alert alert-success text-center">Your Email Address is successfully verified! Please login to access your account!</div>');
 			} else{
@@ -84,14 +84,19 @@
 						$error = $this->upload->display_errors();
 					}else{
 						$data['upload_data'][$key] = $this->upload->data();
-						$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">SignUp Complete. Try to <a class="" href="'. base_url('user') .'">login</a></div>');
 					}
 				}
 				//
 
 				// INSERT DATABASE
-
+				$verify = $this->Register_model->verify_email($hash);
+				$insert = $this->Register_model->add_doctor($user, $data['upload_data']);
 				//
+				if($verify && $insert){
+					$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">SignUp Complete. Try to <a class="" href="'. base_url('user') .'">login</a></div>');
+				} else {
+					$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Whoops! Something went wrong. Please try again later.</a></div>');
+				}
 			}
 
 			$this->load->view('doctor/verify_doctor', $data);
