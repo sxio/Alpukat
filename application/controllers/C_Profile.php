@@ -21,7 +21,7 @@
 		}
 
 		public function edit_profile_doctor($userid){
-			if($userid != $this->session->userdata('username')){
+			if($userid != $this->session->userdata('username') && $this->session->userdata('user_level') != 2){
 				show_404();
 			}
 			$data['header'] = $this->load->view('templates/header','',TRUE);
