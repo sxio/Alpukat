@@ -10,12 +10,27 @@
 			$this->load->model('Profile_model');
 		}
 
-		public function profile_doctor(){
+		public function profile_doctor($userid){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			$this->load->view('profile/profile', $data);
+			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
+
+			$this->load->view('profile/profile_doctor', $data);
+		}
+
+		public function edit_profile_doctor($userid){
+			if($userid != $this->session->userdata('username') && $this->session->userdata('user_level') != 2){
+				show_404();
+			}
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
+
+			$this->load->view('profile/edit_profile_doctor', $data);
 		}
 
 		public function dashboard(){
@@ -36,7 +51,7 @@
 
 			$data['estore_hist'] = $this->Estore_model->get_order_by_id($order_id);
 
-			$this->load->view('profile/history-estore', $data);
+			$this->load->view('profile/history_estore', $data);
 		}
 
 		public function reminder(){

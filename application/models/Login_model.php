@@ -17,6 +17,7 @@
 						return 0;
 					$this->session->set_userdata('username', $mstuser['USER_ID']);
 					$this->session->set_userdata('nama', $mstuser['USER_NAME']);
+					$this->session->set_userdata('user_level', $mstuser['USER_LEVEL']);
 					break;
 				}
 			}

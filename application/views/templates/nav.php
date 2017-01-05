@@ -12,15 +12,17 @@
 			<ul class="nav navbar-nav navbar-right">
 				<?php
 					if($this->session->userdata('nama') != NULL){
-						$loginUser = $this->session->userdata('nama');
+						$userid = $this->session->userdata('username');
+						$username = $this->session->userdata('nama');
+						$userlevel = $this->session->userdata('user_level');
 					} else{
-						$loginUser = "ACCOUNT";
+						$username = "ACCOUNT";
 					}
 				?>
 				<?php
 					if($this->session->userdata('username') == NULL){
 				?>
-						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?></a></li>
+						<li class="navli" id="user_li"><a href="<?php echo base_url('user'); ?>"><i class="fa fa-user fa-fw"></i> <?php echo $username; ?></a></li>
 				<?php } else { ?>
 						<li class="dropdown">
 							<?php
@@ -29,10 +31,19 @@
 								<i class="fa fa-bell fa-stack-1x fa-inverse"></i>
 							</span>';
 							?>
-							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $loginUser; ?>
+							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $username; ?>
 							<?php echo $notif_icon_string; ?>
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
+								<?php
+									$profile_path = '';
+									if($userlevel == 2) {
+										$profile_path = base_url('profile/doctor/'. $userid);
+									} else {
+										$profile_path = base_url('');
+									}
+								?>
+								<li><a href="<?php echo $profile_path; ?>"><i class="fa fa-user fa-fw"></i> Profile</a></li>
 								<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
 								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
 								<li class="divider"></li>

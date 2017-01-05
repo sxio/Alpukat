@@ -14,6 +14,7 @@
 			$this->db->insert('MSTREMINDER', $data);
 			return $this->db->error();
 		}
+
 		public function get_reminder($username){
 			$this->db->where('USER_ID', $username);
 			$query = $this->db->get("MSTREMINDER");
@@ -39,6 +40,13 @@
 			$this->db->where('REMINDER_DT', $datetime);
 			$this->db->delete('MSTREMINDER');
 			return $this->db->error();
+		}
+
+		public function get_data_doctor($userid){
+			$this->db->where('MSHDOCTOR.DCT_ID', $userid);
+			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID');
+			$query = $this->db->get('MSHDOCTOR');
+			return $query->result_array()[0];
 		}
 	}
 ?>
