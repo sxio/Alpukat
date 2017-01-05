@@ -2907,7 +2907,7 @@ h3.tittle1, h3.tittle {
 }
 .cd-header-buttons {
 	top: 80px;
-	right: 28%;
+	right: 5%;
 }
 .ribben1 {
 	width: 45%;
@@ -3116,5 +3116,4 @@ h3.tittle1, h3.tittle {
 .cd-header-buttons {
 	top: 132px;
 	right: 85%;
-}
 }

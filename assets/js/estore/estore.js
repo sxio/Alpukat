@@ -59,6 +59,7 @@ jQuery(document).ready(function($){
 
 
 	// Kenedy 12/8/2016 for adding navbar-fixed-top
+	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	var scroll_start = 0;
 	var startchange = $('.heder-bottom');
 	var offset = startchange.offset();
@@ -67,16 +68,29 @@ jQuery(document).ready(function($){
 	  scroll_start = $(this).scrollTop();
 	  if(scroll_start >= offset.top) {
 		  $('.heder-bottom').addClass('navbar-fixed-top');
-		  $('.heder-bottom').css('height','70px');
+		  if(w >500){
+		  	$('.heder-bottom').css('height','70px');
+			$('.cd-search').css("top","100%");
+		  }
+		  else{
+			  $('.heder-bottom').css('height','32vw');
+			  $('.cd-header-buttons').css('top','15px');
+			  $('.cd-search').css("top","100%");
+			//   $('.cd-search').css("top"," 0%");
+		  }
 		  // $(".cd-header-buttons").css("top",'30px');
-		  $('.cd-search').css("top","105%");
 		  // $('.cd-search').css("position","fixed");
-
 	   }
 	   else {
 		  $('.heder-bottom').removeClass('navbar-fixed-top');
+		  if(w>500){
+			  $('.cd-search').css("top","105px");
+		  }
+		  else{
+			  $('.cd-header-buttons').css('top','80px');
+			  $('.cd-search').css("top","199px");
+	      }
 		  // $(".cd-header-buttons").css("top",'70px');
-		  $('.cd-search').css("top","19%");
 	   }
 	});
 	}

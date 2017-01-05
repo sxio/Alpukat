@@ -15,3 +15,15 @@
 .hide-bullets{
 	margin-left: 0;
 }
+
+
+/*MEDIA QUERY FOR SMARTPHONE*/
+@media screen and (max-width: 500px){
+	.nav_2{
+		right: 0;
+	}
+	.logo-nav-right .cd-header-buttons{
+		/*float: right;*/
+		margin: 0;
+	}
+}

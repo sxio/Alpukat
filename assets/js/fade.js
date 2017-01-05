@@ -1,5 +1,5 @@
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-if(w >= 414){
+if(w >= 500){
     $(document).ready(function() {
         /* Every time the window is scrolled ... */
         $(window).scroll( function(){
