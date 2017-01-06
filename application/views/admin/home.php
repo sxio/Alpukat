@@ -36,8 +36,8 @@
 		<br>
 		<div class="row">
 			<div class="col-sm-3">
-				<a href=""><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-bell-o fa-5x fa-fw"></i><br><h2>Reminder</h2></button>
+				<a href="<?php echo base_url('admin/manage-comment'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-comment fa-5x fa-fw"></i><br><h2>Suggestion</h2></button>
 				</a>
 			</div>
 			<div class="col-sm-3">

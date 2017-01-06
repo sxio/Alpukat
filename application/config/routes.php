@@ -67,12 +67,16 @@ $route['admin/estore/restock']                          = 'Admin/C_Admin_Estore/
 $route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProdutByCategory';
 $route['admin/estore/getproductbyid']                   = 'Admin/C_Admin_Estore/GetProductById';
 //
+// COMMENT
+$route['admin/comment/listcomment']                     = 'Admin/C_Admin_Comment/listcomment';
+$route['admin/comment/listcomment/(:num)']              = 'Admin/C_Admin_Comment/listcomment'; //for pagination
+//
 $route['admin/login']                                   = 'Admin/C_Admin_Login/login';
 $route['admin/(:any)']                                  = 'Admin/C_Admin_Pages/view/$1';
 $route['admin']                                         = 'Admin/C_Admin_Pages/view';
 
 
-
+$route['complain']                                      = 'C_Pages/complain';
 $route['default_controller']                            = 'C_Pages/view';
 $route['(:any)']                                        = 'C_Pages/view/$1';
 $route['404_override']                                  = '';

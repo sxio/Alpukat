@@ -29,6 +29,17 @@ body {
 #notif_anchor .panel-body{
   width: 200px;
 }
+.inline{
+  display: inline-block!important;
+  width: 100%;
+}
+#edit_gear{
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  right: 0;
+}
 .panel{
   margin: 0 5px;
 }
@@ -43,6 +54,10 @@ body {
   padding-bottom: 10px;
   border: none;
   height: 20px;
+}
+#msg{
+  display: none;
+  width: 90%;
 }
 .container #myNavbar > ul > li >a{
   letter-spacing: 3px;

@@ -17,5 +17,27 @@
 			$this->load->helper('html');
 			$this->load->view($page, $data);
 		}
+
+		public function complain(){
+			$this->form_validation->set_rules('email','Email','trim|valid_email');
+			$this->form_validation->set_rules('txt','Subject','trim');
+			$this->form_validation->set_rules('comment','Comment','trim');
+
+			if($this->form_validation->run() == FALSE){
+				$res = array(
+					'status' => 'failed',
+					'msg' => 'Whops something went wrong. Please try again later.'
+				);
+				print_r(json_encode($res));
+			} else {
+				$res = array(
+					'status' => 'success',
+					'msg' => 'Thank you for your comment.'
+				);
+				$this->load->model('Comment_model');
+				$this->Comment_model->add_comment();
+				print_r(json_encode($res));
+			}
+		}
 	}
 ?>
