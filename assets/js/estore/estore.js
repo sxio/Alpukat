@@ -50,6 +50,8 @@ jQuery(document).ready(function($){
 		}
 	});
 
+
+
 	//open search form
 	$('.cd-header-buttons').on('click', function(event){
 		event.preventDefault();
@@ -84,18 +86,25 @@ jQuery(document).ready(function($){
 	   else {
 		  $('.heder-bottom').removeClass('navbar-fixed-top');
 		  if(w>500){
-			  $('.cd-search').css("top","105px");
+			  $('.cd-search').css("top","100%");
 		  }
 		  else{
 			  $('.cd-header-buttons').css('top','80px');
-			  $('.cd-search').css("top","199px");
+			  $('.cd-search').css("top","50vw");
 	      }
 		  // $(".cd-header-buttons").css("top",'70px');
 	   }
 	});
 	}
 
-
+	//mobile cart and hamburger icon positioning
+	if(w<500){
+		$('.header-right2').insertAfter(".nav_2");
+		$('.header-right2').addClass("col-xs-6 col-sm-6");
+		$('.nav_2').addClass("col-xs-6 col-sm-6");
+		$('.navbar-collapse').addClass("col-xs-12 col-sm-12");
+		$('.navbar-collapse').insertAfter(".heder-bottom .container");
+	}
 
 
 	//submenu items - go back link

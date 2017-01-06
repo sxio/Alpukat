@@ -26,4 +26,13 @@
 		/*float: right;*/
 		margin: 0;
 	}
+	.logo-nav-left-1{
+		width: 100%!important;
+	}
+	.navbar-collapse{
+		background-color: #0d59af;
+	}
+	.navbar-collapse .navbar-nav li a{
+		color: white;
+	}
 }
