@@ -74,6 +74,7 @@
 
 				$user = $this->Register_model->get_user_by_email_hash($hash)[0];
 
+				$error = NULL;
 				foreach($_FILES as $key => $value) {
 					$ext = pathinfo($value['name'], PATHINFO_EXTENSION);
 
@@ -87,14 +88,17 @@
 					}
 				}
 				//
-
-				// INSERT DATABASE
-				$verify = $this->Register_model->verify_email($hash);
-				$insert = $this->Register_model->add_doctor($user, $data['upload_data']);
-				//
-				if($verify && $insert){
-					$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">SignUp Complete. Try to <a class="" href="'. base_url('user') .'">login</a></div>');
-				} else {
+				if(!isset($error)){
+					// INSERT DATABASE
+					$verify = $this->Register_model->verify_email($hash);
+					$insert = $this->Register_model->add_doctor($user, $data['upload_data']);
+					//
+					if($verify && $insert && !isset($error)){
+						$this->session->set_flashdata('msg', '<div class="alert alert-success text-center">SignUp Complete. Try to <a class="" href="'. base_url('user') .'">login</a></div>');
+					} else {
+						$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Whoops! Something went wrong. Please try again later.</a></div>');
+					}
+				} else{
 					$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Whoops! Something went wrong. Please try again later.</a></div>');
 				}
 			}

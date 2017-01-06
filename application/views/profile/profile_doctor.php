@@ -18,7 +18,14 @@
 						<div class="panel panel-heading">
 							<div class="row">
 								<section>
-									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $data_doctor['USER_IMG']); ?>" class="img-circle" id="foto">
+									<?php
+										if($data_doctor['USER_IMG'] == NULL){
+											$img = 'noimage.png';
+										} else {
+											$img = $data_doctor['USER_IMG'];
+										}
+									?>
+									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $img); ?>" class="img-circle" id="foto">
 									<h2>Personal Information</h2>
 								</section>
 							</div>

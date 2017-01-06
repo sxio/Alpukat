@@ -64,6 +64,7 @@
 		public function add_doctor($user, $img){
 			$data = array(
 				'DCT_ID'           => $user['USER_ID'],
+				'DCT_EDUC'         => ';;;;;',
 				'CONSULT_FEE'      => $this->input->post('_cfee'),
 				'BOOKING_FEE'      => $this->input->post('_bfee'),
 				'IMG_CERTIFICATE'  => $img['_cc']['file_name'],
