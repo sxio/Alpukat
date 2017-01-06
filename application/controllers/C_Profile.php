@@ -28,13 +28,30 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			//
 
-			//
 
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
 
 			$this->load->view('profile/edit_profile_doctor', $data);
+
+			// Array
+			// (
+			//     [_photo] =>
+			//     [docname] => Stephen Huang
+			//     [docbirth] => 1996-06-08
+			//     [docaddr] => Jalan PROF HM YAMIN SH No 254
+			//     [docabout] =>
+			//     [docSD] =>
+			//     [docSMP] =>
+			//     [docSMA] =>
+			//     [docS1] =>
+			//     [docS2] =>
+			//     [docDR] =>
+			//     [docExp] =>
+			//     [docSpec] =>
+			//     [docCert] =>
+			//     [btn_edit] =>
+			// )
 		}
 
 		public function dashboard(){

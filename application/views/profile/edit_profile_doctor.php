@@ -24,26 +24,26 @@
 									<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-									<input type="file" name="_photo" class="form-control input-img" required>
+									<input type="file" name="_photo" class="form-control input-img">
 								</div>
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docname">Name </label>
 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-								<input class="form-control" type="text" name="docname" value="<?php echo $data_doctor['USER_NAME']; ?>">
+								<input class="form-control" type="text" name="docname" value="<?php echo $data_doctor['USER_NAME']; ?>" required>
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docbirth">Date of Birth </label>
 							<div class="col-md-8">
-								<input size="16" type="text" name="docbirth" class="form-control form_datetime" value="<?php echo nice_date($data_doctor['USER_BIRTH'],'Y-m-d'); ?>" readonly>
+								<input size="16" type="text" name="docbirth" class="form-control form_datetime" value="<?php echo nice_date($data_doctor['USER_BIRTH'],'Y-m-d'); ?>" readonly required>
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docaddr">Address </label>
 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-								<textarea class="form-control" rows="5" name="docaddr" placeholder="Enter Your Address"><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
+								<textarea class="form-control" rows="5" name="docaddr" placeholder="Enter Your Address" required><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
 							</div>
 						</li>
 					</ul>
