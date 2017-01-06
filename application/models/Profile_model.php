@@ -48,5 +48,32 @@
 			$query = $this->db->get('MSHDOCTOR');
 			return $query->result_array()[0];
 		}
+
+		public function edit_data_doctor($userid){
+			$$dataUser = array(
+				'USER_NAME' => $this->input->post('docname'),
+				'USER_BIRTH' => $this->input->post('docbirth'),
+				'USER_ADDRESS' => $this->input->post('docaddr')
+			); // not done
+
+
+			$educ = '';
+			$educ .= $this->input->post('docSD') .';';
+			$educ .= $this->input->post('docSMP') .';';
+			$educ .= $this->input->post('docSMA') .';';
+			$educ .= $this->input->post('docS1') .';';
+			$educ .= $this->input->post('docS2') .';';
+			$educ .= $this->input->post('docDR');
+
+			$dataDoctor = array(
+				'DCT_EDUC' => $educ,
+				'DCT_ABOUT' => $this->input->post('docabout'),
+				'DCT_EXP' => $this->input->post('docExp'),
+				'DCT_SPECIALTY' => $this->input->post('docSpec'),
+				'DCT_CERTIFICATE' => $this->input->post('docCert')
+			);
+			$this->db->where('DCT_ID', $userid);
+			$this->db->update('MSHDOCTOR', $dataDoctor);
+		}
 	}
 ?>

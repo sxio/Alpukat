@@ -52,68 +52,69 @@
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docabout">About Me </label>
 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-								<textarea class="form-control" rows="5" name="docabout" placeholder="Please Enter Your Description Formally"></textarea>
+								<textarea class="form-control" rows="5" name="docabout" placeholder="Please Enter Your Description Formally"><?php echo $data_doctor['DCT_ABOUT']; ?></textarea>
 							</div>
 						</li>
 					</ul>
+					<?php $educ = explode(';', $data_doctor['DCT_EDUC']); ?>
 					<legend>Education &amp; Experience</legend>
 					<ul class="list-unstyled">
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docSD">SD </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docSD">
+								<input class="form-control" type="text" name="docSD" value="<?php echo $educ[0]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docSMP">SMP </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docSMP">
+								<input class="form-control" type="text" name="docSMP" value="<?php echo $educ[1]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docSMA">SMA </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docSMA">
+								<input class="form-control" type="text" name="docSMA" value="<?php echo $educ[2]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docS1">S1 </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docS1">
+								<input class="form-control" type="text" name="docS1" value="<?php echo $educ[3]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docS2">S2 </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docS2">
+								<input class="form-control" type="text" name="docS2" value="<?php echo $educ[4]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docDR">DR </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docDR">
+								<input class="form-control" type="text" name="docDR" value="<?php echo $educ[5]; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docExp">Experience </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docExp">
+								<input class="form-control" type="text" name="docExp" value="<?php echo $data_doctor['DCT_EXP']; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docSpec">Speciality </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docSpec">
+								<input class="form-control" type="text" name="docSpec" value="<?php echo $data_doctor['DCT_SPECIALTY']; ?>">
 							</div>
 						</li>
 						<li class="form-group">
 							<label class="col-md-4 control-label" for="docCert">Certification </label>
 							<div class="col-md-8">
-								<input class="form-control" type="text" name="docCert">
+								<input class="form-control" type="text" name="docCert" value="<?php echo $data_doctor['DCT_CERTIFICATE']; ?>">
 							</div>
 						</li>
 					</ul>
-					<button class="btn btn-primary" name="btn_edit"><i class="fa fa-pencil fa-fw"></i> Edit</button>
+					<button class="btn btn-primary" name="btn_edit" value="1"><i class="fa fa-pencil fa-fw"></i> Edit</button>
 				</div>
 			</div>
 		<?php echo form_close(); ?>
