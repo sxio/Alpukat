@@ -7,6 +7,7 @@
 
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/payment/payment.css') ?>
+	<?php echo link_tag('assets/css/estore/estore-custom.css') ?>
 	<?php
 		if($this->session->flashdata('estore_pay') !== NULL){
 			echo link_tag('assets/css/estore/estore.css');

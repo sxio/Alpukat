@@ -17,3 +17,8 @@ kbd{
 	font-size: 35px;
 	font-family: 'Comfortaa', cursive;
 }
+@media screen and (max-width: 500px){
+	.panel{
+		width: 100%;
+	}
+}

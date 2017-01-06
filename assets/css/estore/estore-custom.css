@@ -35,4 +35,10 @@
 	.navbar-collapse .navbar-nav li a{
 		color: white;
 	}
+	.ban-textsupplement h4{
+		font-size: 130%;
+	}
+	.tableoverflow{
+		overflow-x: auto;
+	}
 }

@@ -1,0 +1,23 @@
+@import url('../nav.css');
+.panel{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+li.form-group{
+    padding: 20px;
+}
+.btn-primary{
+    padding: 10px 30px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.img-attach{
+    padding: 0;
+}
+/*.img-thumbnail{
+    height: 80px;
+}*/
+input.input-img{
+    border: none;
+}

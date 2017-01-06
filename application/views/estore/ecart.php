@@ -8,6 +8,7 @@
 	<?php echo $header; ?>
 
 	<?php echo link_tag('assets/css/estore/estore.css') ?>
+	<?php echo link_tag('assets/css/estore/estore-custom.css') ?>
 	<?php echo link_tag('assets/css/flatbutton.css') ?>
 
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>
@@ -29,46 +30,48 @@
 		<?php if ($total_items > 0) { ?>
 		<h3>My Cart (<?php echo $total_items; ?> items)</h3>
 		<br>
-		<table class="table table-responsive table-condensed table-bordered text-center" id="table-cart">
-			<tr>
-				<th>Image</th>
-				<th>Product Name</th>
-				<th>Quantity</th>
-				<th>Price / Unit (RP)</th>
-				<th>Price (RP)</th>
-				<th>Action</th>
-			</tr>
-			<?php
-				foreach($cart as $items) { ?>
-
+		<div class="tableoverflow">
+			<table class="table table-responsive table-condensed table-bordered text-center" id="table-cart">
 				<tr>
-					<td><img src="<?php echo base_url('assets/img/estore-img/'. $items['img']); ?>" class="img-responsive img-cart"></td>
-					<td><a href="<?php echo base_url('estore/detail/'.$items['id']); ?>"><?php echo $items['name']; ?></a></td>
-					<td>
-						<?php if($items['qty'] == 1) { ?>
-							<button class="btn btn-link" disabled><i class="fa fa-minus fa-fw"></i></button>
-						<?php } else { ?>
-							<a href="<?php echo base_url('estore/dec-qty/'. $items['rowid']); ?>" class="btn btn-link"><i class="fa fa-minus fa-fw"></i></a>
-						<?php } ?>
-						<?php echo $items['qty']; ?>
-						<?php if($items['qty'] == 5) { ?>
-							<button class="btn btn-link" disabled><i class="fa fa-plus fa-fw"></i></button>
-						<?php }  else { ?>
-							<a href="<?php echo base_url('estore/inc-qty/'. $items['rowid']); ?>" class="btn btn-link"><i class="fa fa-plus fa-fw"></i></a>
-						<?php } ?>
-					</td>
-					<td><?php echo number_format($items['price'], 0, ',', '.'); ?></td>
-					<td><?php echo number_format($items['subtotal'], 0, ',', '.'); ?></td>
-					<td><a href="<?php echo base_url('estore/removeitem/'.$items['rowid']); ?>" class="btn btn-warning"><i class="fa fa-trash fa-fw"></i> Remove</a></td>
+					<th>Image</th>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Price / Unit (RP)</th>
+					<th>Price (RP)</th>
+					<th>Action</th>
 				</tr>
+				<?php
+					foreach($cart as $items) { ?>
 
-			<?php } ?>
-			<tr>
-				<td colspan="4" class="text-right">Total: </td>
-				<td><?php echo number_format($total, 0, ',', '.'); ?></td>
-				<td><a href="<?php echo base_url('estore/purchase'); ?>" class="btn btn-success">Purchase <i class="fa fa-opencart fa-fw"></i></a></td>
-			</tr>
-		</table>
+					<tr>
+						<td><img src="<?php echo base_url('assets/img/estore-img/'. $items['img']); ?>" class="img-responsive img-cart"></td>
+						<td><a href="<?php echo base_url('estore/detail/'.$items['id']); ?>"><?php echo $items['name']; ?></a></td>
+						<td>
+							<?php if($items['qty'] == 1) { ?>
+								<button class="btn btn-link" disabled><i class="fa fa-minus fa-fw"></i></button>
+							<?php } else { ?>
+								<a href="<?php echo base_url('estore/dec-qty/'. $items['rowid']); ?>" class="btn btn-link"><i class="fa fa-minus fa-fw"></i></a>
+							<?php } ?>
+							<?php echo $items['qty']; ?>
+							<?php if($items['qty'] == 5) { ?>
+								<button class="btn btn-link" disabled><i class="fa fa-plus fa-fw"></i></button>
+							<?php }  else { ?>
+								<a href="<?php echo base_url('estore/inc-qty/'. $items['rowid']); ?>" class="btn btn-link"><i class="fa fa-plus fa-fw"></i></a>
+							<?php } ?>
+						</td>
+						<td><?php echo number_format($items['price'], 0, ',', '.'); ?></td>
+						<td><?php echo number_format($items['subtotal'], 0, ',', '.'); ?></td>
+						<td><a href="<?php echo base_url('estore/removeitem/'.$items['rowid']); ?>" class="btn btn-warning"><i class="fa fa-trash fa-fw"></i> Remove</a></td>
+					</tr>
+
+				<?php } ?>
+				<tr>
+					<td colspan="4" class="text-right">Total: </td>
+					<td><?php echo number_format($total, 0, ',', '.'); ?></td>
+					<td><a href="<?php echo base_url('estore/purchase'); ?>" class="btn btn-success">Purchase <i class="fa fa-opencart fa-fw"></i></a></td>
+				</tr>
+			</table>
+		</div>
 		<?php } else { ?>
 			<h1 class="text-center">Cart is empty</h1>
 			<br>

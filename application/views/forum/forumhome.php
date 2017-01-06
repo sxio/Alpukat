@@ -4,8 +4,9 @@
 <head>
 	<title>Doctors List</title>
 	<?php echo $header; ?>
-	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 	<?php echo link_tag('assets/css/forum/forum.css'); ?>
+	
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>

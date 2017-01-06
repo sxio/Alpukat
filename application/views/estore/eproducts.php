@@ -8,6 +8,7 @@
 	<?php echo $header; ?>
 
 	<?php echo link_tag('assets/css/estore/estore.css') ?>
+	<?php echo link_tag('assets/css/estore/estore-custom.css') ?>
 	<?php echo link_tag('assets/css/estore/jquery-ui.css') ?>
 
 	<script src="<?php echo base_url('assets/js/estore/estore.js'); ?>"></script>

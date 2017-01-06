@@ -11,6 +11,7 @@
 	<?php echo link_tag('assets/css/nav.css') ?>
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/estore.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -29,13 +30,13 @@
 					<h2 class="text-center">Order Completed Successfully</h2>
 				</div>
 				<div class="panel-body">
-					<div class="col-sm-3">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
 						<span class="fa-stack fa-lg" id="check_logo">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-check fa-stack-1x fa-inverse"></i>
 						</span>
 					</div>
-					<div class="col-sm-9">
+					<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 						<h2>Thankyou for purchasing - we appreciate your business.</h2>
 						<h2>You will receive a confirmation email shortly.</h2>
 					</div>
@@ -58,13 +59,13 @@
 					<h2 class="text-center">Booking Completed Successfully</h2>
 				</div>
 				<div class="panel-body">
-					<div class="col-sm-3">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 						<span class="fa-stack fa-lg" id="check_logo">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-check fa-stack-1x fa-inverse"></i>
 						</span>
 					</div>
-					<div class="col-sm-9">
+					<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 						<h2>Thank you for booking.</h2>
 						<h2>You will receive a confirmation email shortly.</h2>
 					</div>
