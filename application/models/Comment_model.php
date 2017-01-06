@@ -13,7 +13,17 @@
 				'COMMENT' => $this->input->post('comment'),
 				'CREATED_AT' => mdate('%Y-%m-%d %H:%i:%s',now())
 			);
-			return $this->db->insert('MSTSUGGESTION', $data);
+			return $this->db->insert('MSTCOMMENT', $data);
+		}
+
+		public function count_all(){
+			return $this->db->count_all('MSTCOMMENT');
+		}
+
+		public function get_list($limit, $offset){
+			$this->db->order_by('CREATED_AT','DESC');
+			$query = $this->db->get('MSTCOMMENT', $limit, $offset);
+			return $query->result_array();
 		}
 	}
 ?>
