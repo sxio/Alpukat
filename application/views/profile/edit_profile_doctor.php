@@ -19,34 +19,53 @@
 					<div class="row">
 						<label class="col-xs-6 control-label" for="docpp">Profile Picture </label>
 						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-							<div class="col-xs-6 img-attach">
-								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
+							<div class="row">	
+								<div class="col-xs-6">
+									<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
+									<div class="col-xs-12">
+										<input type="file" name="_photo" class="form-control input-img">
+									</div>
+								</div>
+								<label class="col-xs-6 control-label" for="docname">Name </label>
+								<div class="col-xs-6">
+									<input class="form-control" type="text" name="docname" value="<?php echo $data_doctor['USER_NAME']; ?>" required>
+								<br>
+								</div>
+								<label class="col-xs-6 control-label" for="docbirth">Date of Birth </label>
+								<div class="col-xs-6">
+									<input size="16" type="text" name="docbirth" class="form-control form_datetime" value="<?php echo nice_date($data_doctor['USER_BIRTH'],'Y-m-d'); ?>" readonly required>
+								<br>
+								</div>
+								<label class="col-xs-6 control-label" for="docaddr">Address </label>
+								<div class="col-xs-6">
+									<textarea class="form-control" rows="4" name="docaddr" placeholder="Enter Your Address" required><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
+								<br>
+								</div>
 							</div>
-							<label class="col-xs-6 control-label" for="docname">Name </label>
-							<div class="col-xs-6">
-								<input class="form-control" type="text" name="docname" value="<?php echo $data_doctor['USER_NAME']; ?>" required>
+							<br>
+							<div class="row">
+								<label class="col-xs-6 control-label" for="dochp">Handphone </label>
+								<div class="col-xs-6">
+									<input class="form-control" type="text" name="dochp">
+								</div>
 							</div>
-							<label class="col-xs-6 control-label" for="docbirth">Date of Birth </label>
-							<div class="col-xs-6">
-								<input size="16" type="text" name="docbirth" class="form-control form_datetime" value="<?php echo nice_date($data_doctor['USER_BIRTH'],'Y-m-d'); ?>" readonly required>
-							</div>
-							<label class="col-xs-6 control-label" for="docaddr">Address </label>
-							<div class="col-xs-6">
-								<textarea class="form-control" rows="5" name="docaddr" placeholder="Enter Your Address" required><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
+							<br>
+							<div class="row">
+								<label class="col-xs-6 control-label" for="docemail">Email </label>
+								<div class="col-xs-6">
+									<input class="form-control" type="text" name="docemail">
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-							<input type="file" name="_photo" class="form-control input-img">
-						</div>
 					</div>
 					<br>
 					<legend>About</legend>
 					<div class="row">
 						<label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docabout">About Me </label>
-						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-							<textarea class="form-control" rows="5" name="docabout" placeholder="Please Enter Your Description Formally"><?php echo $data_doctor['DCT_ABOUT']; ?></textarea>
+						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<textarea class="form-control" rows="3" name="docabout" placeholder="Please Enter Your Description Formally"><?php echo $data_doctor['DCT_ABOUT']; ?></textarea>
 						</div>
 					</div>
 					<br>

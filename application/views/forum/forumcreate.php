@@ -15,15 +15,15 @@
 		<h3>Forums</h3>
 		<div class="panel">
 			<div class="row">
-				<div class="col-sm-3">
-					<h4>Title Topic</h4>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-sm-8">
 					<?php echo form_open('forum/create-forum'); ?>
+                        <h4>Forum Title</h4>
 						<textarea class="form-control" rows="2" name="title"></textarea>
 						<br>
+                        <h4>Forum Category</h4>
+                        <!-- <?php echo form_dropdown('category', $data['category'], set_value('category','1'));?> -->
+                        <br>
+                        <h4>Forum Content</h4>
 						<textarea class="form-control" rows="8" name="content"></textarea>
 						<br>
 						<span class="input-group-btn">
@@ -33,13 +33,13 @@
 						</span>
 					<?php echo form_close(); ?>
 				</div>
-				<div class="col-sm-4">
-					<?php if(isset($form_error) && $form_error != null) { ?>
-						<div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
-					<?php } ?>
-					<?php if(isset($msg) && $msg != null) echo $msg; ?>
-				</div>
-			</div>
+                <div class="col-sm-4">
+                    <?php if(isset($form_error) && $form_error != null) { ?>
+                        <div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
+                    <?php } ?>
+                    <?php if(isset($msg) && $msg != null) echo $msg; ?>
+                </div>
+            </div>
 		</div>
 	</div>
 </body>
