@@ -33,7 +33,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-							<button class="btn btn-success"><i class="fa fa-paper-plane fa-fw"></i> Submit</button>
+							<button class="btn btn-success"><i class="fa fa-sign-in fa-fw"></i> Login</button>
 						</div>
 					</div>
 				<?php echo form_close(); ?>

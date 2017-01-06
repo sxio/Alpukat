@@ -28,6 +28,10 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
+			//
+
+			//
+
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
 
 			$this->load->view('profile/edit_profile_doctor', $data);
