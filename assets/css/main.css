@@ -55,6 +55,10 @@ body {
   border: none;
   height: 20px;
 }
+#msg{
+  display: none;
+  width: 90%;
+}
 .container #myNavbar > ul > li >a{
   letter-spacing: 3px;
 }

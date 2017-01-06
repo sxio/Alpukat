@@ -10,15 +10,15 @@
 <body>
 	<?php echo $nav; ?>
 	<div class="jumbotron text-center">
-	  	<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
-	  	<h3>We specialize in Health Care Application</h3>
-	  	<form class="form-inline" action="list">
-	    	<input type="text" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
-	    	<a href="list" type="button" class="btn btn-info">Search</a>
-	  	</form>
+		<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
+		<h3>We specialize in Health Care Application</h3>
+		<form class="form-inline" action="list">
+			<input type="text" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
+			<a href="list" type="button" class="btn btn-info">Search</a>
+		</form>
 	</div>
 	<section id="startchange">
-		<h1 class="text-center fades">Here Are  Our Best Doctors of The Month</h1>
+		<h1 class="text-center fades">Here Are Our Best Doctors of The Month</h1>
 		<div class="container">
 			<div class="row text-center doc">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 fadesleft">
@@ -89,96 +89,89 @@
 		</h1>
 	<!-- carousel start -->
 		<div id="myCarousel" class="carousel slide fadesleft" data-ride="carousel">
-		  <!-- Indicators -->
-		  	<!-- <ol class="carousel-indicators">
-		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    	<li data-target="#myCarousel" data-slide-to="1"></li>
-		    	<li data-target="#myCarousel" data-slide-to="2"></li>
-		    	<li data-target="#myCarousel" data-slide-to="3"></li>
-		  	</ol> -->
 
-		  <!-- Wrapper for slides -->
-		  	<div class="carousel-inner in" role="listbox">
-		    	<div class="item active">
-			  		<div class="container">
-				  		<div class="row">
-				  			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
-				  			</div>
-					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					        	<h3 class="text-center">Stephen</h3>
-					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					      	</div>
-				    	</div>
-				  	</div>
-		  		</div>
+		<!-- Wrapper for slides -->
+			<div class="carousel-inner in" role="listbox">
+				<div class="item active">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
+							</div>
+							<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<h3 class="text-center">Stephen</h3>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			    <div class="item">
-			  		<div class="container">
-				  		<div class="row">
-					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
-				  			</div>
-					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					        	<h3 class="text-center">Meikelwis</h3>
-					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					      	</div>
-				    	</div>
-				  	</div>
-		  		</div>
+				<div class="item">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
+							</div>
+							<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<h3 class="text-center">Meikelwis</h3>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			    <div class="item">
-			  		<div class="container">
-				  		<div class="row">
-					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
-				  			</div>
-					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					        	<h3 class="text-center">Stephen Wijaya</h3>
-					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					      	</div>
-				    	</div>
-				  	</div>
-		  		</div>
+				<div class="item">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
+							</div>
+							<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<h3 class="text-center">Stephen Wijaya</h3>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			    <div class="item">
-			  		<div class="container">
-				  		<div class="row">
-					      	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					      		<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
-				  			</div>
-					      	<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					        	<h3 class="text-center">Meikelwis Huang</h3>
-					        	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					      	</div>
-				    	</div>
-				  	</div>
-		  		</div>
-		  	</div>
-		  	<!-- <a class="carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		  		<span class="fa fa-chevron-circle-left fa-fw" aria-hidden="true"></span>
-		    	<span class="sr-only">Previous</span>
-		  	</a> -->
+				<div class="item">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" alt="Chania">
+							</div>
+							<div class="carousel-caption col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<h3 class="text-center">Meikelwis Huang</h3>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <a class="carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="fa fa-chevron-circle-left fa-fw" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a> -->
 		  <!-- Left and right controls -->
 			<a class="left_fa carousel-control" href="#myCarousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -233,24 +226,26 @@
 					<img class="csg" src="<?php echo base_url('assets/img/cs.jpg'); ?>">
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<form class="complain">
-					  	<div class="form-group fadesleft">
-					    	<label for="email">Email address:</label>
-					    	<input type="email" class="form-control" id="email" required>
-					  	</div>
-					  	<div class="form-group fadesleft">
-					    	<label for="txt">Subject:</label>
-					    	<input type="text" class="form-control" id="txt" required>
-					  	</div>
-					  	<!-- <div class="checkbox">
-					    	<label><input type="checkbox"> Remember me</label>
-					  	</div> -->
-					  	<div class="form-group fadesleft">
-					    	<label for="comment">Comment:</label>
-	      					<textarea class="form-control" rows="5" id="comment" required></textarea>
-					  	</div>
-					  	<button type="submit" class="btn btn-info">Submit</button>
-					</form>
+				<?php
+					$attrib = array('class' => 'complain');
+					echo form_open('', $attrib);
+				?>
+						<div class="form-group fadesleft">
+							<label for="email">Email address:</label>
+							<input type="email" class="form-control" name="email" id="email" required>
+						</div>
+						<div class="form-group fadesleft">
+							<label for="txt">Subject:</label>
+							<input type="text" class="form-control" name="txt" id="txt" required>
+						</div>
+						<div class="form-group fadesleft">
+							<label for="comment">Comment:</label>
+							<textarea class="form-control" rows="5" name="comment" id="comment" required></textarea>
+						</div>
+						<input type="hidden" name="base_url" id="base_url" value="<?php echo base_url(); ?>">
+						<button id="submit" class="btn btn-info">Submit</button>
+						<div id="msg" class="alert"></div>
+					<?php echo form_close(); ?>
 				</div>
 			</div>
 		</div>

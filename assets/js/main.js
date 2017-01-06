@@ -30,6 +30,29 @@ $(document).ready(function(){
     });
   }
 
+  $('#submit').click(function(event){
+    event.preventDefault();
+    var email = $('#email').val();
+    var txt = $('#txt').val();
+    var comment = $('#comment').val();
+    var base_url = $('#base_url').val();
+    $.ajax({
+      url: base_url + 'complain',
+      type: 'POST',
+      dataType: 'json',
+      data: {email: email, txt: txt, comment: comment},
+      success: function(res){
+        $('#msg').css('display', 'inline-block');
+        if(res.status == 'failed'){
+          $('#msg').removeClass().addClass('alert alert-danger');
+        } else{
+          $('#msg').removeClass().addClass('alert alert-success');
+        }
+        $('#msg').text(res.msg);
+      }
+    });
+  });
+
   var locate = window.location.pathname;
   locate = locate.split('/');
 
@@ -38,10 +61,7 @@ $(document).ready(function(){
       'padding-top': '8px',
       'padding-bottom': '8px',
       'border-top': '3px solid white',
-      'border-bottom': '3px solid white',
-      // 'border-right': '3px solid #f2f2f2',
-      // 'border-left': '3px solid #f2f2f2'
-      // 'border-radius': '8px'
+      'border-bottom': '3px solid white'
   });
 
   // Initialize the chat plugin

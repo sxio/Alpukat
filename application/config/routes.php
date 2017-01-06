@@ -72,7 +72,7 @@ $route['admin/(:any)']                                  = 'Admin/C_Admin_Pages/v
 $route['admin']                                         = 'Admin/C_Admin_Pages/view';
 
 
-
+$route['complain']                                      = 'C_Pages/complain';
 $route['default_controller']                            = 'C_Pages/view';
 $route['(:any)']                                        = 'C_Pages/view/$1';
 $route['404_override']                                  = '';
