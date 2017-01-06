@@ -3,13 +3,15 @@
     margin-top: 60px;
     margin-bottom: 20px;
 }
+ul.list-unstyled{
+    margin-bottom: 50px;
+}
 li.form-group{
     padding: 20px;
 }
 .btn-primary{
     padding: 10px 30px;
     float: right;
-    margin-top: 20px;
     margin-left: 20px;
 }
 .img-attach{

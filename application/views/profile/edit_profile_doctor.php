@@ -14,7 +14,7 @@
               <legend>Personal Information</legend>
               <ul class="list-unstyled">
                   <li class="form-group">
-                      <label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docname">Profile Picture </label>
+                      <label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docpp">Profile Picture </label>
                       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                           <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 img-attach">
                               <img src="" class="img-responsive img-thumbnail form-control foto" alt="noimage">
@@ -39,7 +39,16 @@
                   <li class="form-group">
                       <label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docaddr">Address </label>
                       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                          <textarea class="form-control" rows="5" name="docaddr" placeholder="Enter your Address"></textarea>
+                          <textarea class="form-control" rows="5" name="docaddr" placeholder="Enter Your Address"></textarea>
+                      </div>
+                  </li>
+              </ul>
+              <legend>About</legend>
+              <ul class="list-unstyled">
+                  <li class="form-group">
+                      <label class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label" for="docabout">About Me </label>
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <textarea class="form-control" rows="5" name="docabout" placeholder="Please Enter Your Description Formally"></textarea>
                       </div>
                   </li>
               </ul>
