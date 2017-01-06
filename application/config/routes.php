@@ -41,6 +41,7 @@ $route['forum']                                         = 'C_Forum/view';
 $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
 $route['payment/success/(:any)']                        = 'C_Payment/pay_success/$1';
 
+$route['search/list']                                   = 'C_Pages/search';
 
 // ADMIN
 // NEWS

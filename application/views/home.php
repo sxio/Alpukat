@@ -12,9 +12,9 @@
 	<div class="jumbotron text-center">
 		<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 		<h3>We specialize in Health Care Application</h3>
-		<form class="form-inline" action="list">
-			<input type="text" class="form-control" size="50" placeholder="Doctor`s Name or Hospital`s Name" required autofocus>
-			<a href="list" type="button" class="btn btn-info">Search</a>
+		<form action="search/list" class="form-inline" method="get">
+			<input type="text" class="form-control" size="50" name="src" placeholder="Doctor`s Name" required autofocus>
+			<button class="btn btn-info">Search</button>
 		</form>
 	</div>
 	<section id="startchange">
@@ -251,6 +251,5 @@
 		</div>
 	</section>
 	<?php echo $footer; ?>
-	<?php echo $chat; ?>
 </body>
 </html>

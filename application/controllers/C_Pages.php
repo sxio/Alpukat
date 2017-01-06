@@ -12,12 +12,11 @@
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
-			$data['chat']   = $this->load->view('templates/chat','',TRUE);
 
-			$this->load->helper('html');
 			$this->load->view($page, $data);
 		}
 
+		// suggestion and critics
 		public function complain(){
 			$this->form_validation->set_rules('email','Email','trim|valid_email');
 			$this->form_validation->set_rules('txt','Subject','trim');
@@ -38,6 +37,19 @@
 				$this->Comment_model->add_comment();
 				print_r(json_encode($res));
 			}
+		}
+
+		public function search(){
+			$name = $this->input->get('src', TRUE);
+
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$this->load->model('Search_model');
+			$data['doctor_search'] = $this->Search_model->get_doctor_by_name($name);
+
+			$this->load->view('list', $data);
 		}
 	}
 ?>

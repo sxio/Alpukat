@@ -120,26 +120,27 @@
 						</div>
 					</div>
 					<div class="panel panel-body">
+						<?php foreach($doctor_search as $dct): ?>
 						<div class="row">
 							<div class="col-sm-2 text-left">
 								<div class="row">
 						        	<div class="profile_image">
-									<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>">
+									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $dct['USER_IMG']); ?>">
 									</div>
 								</div>
 								<div class="row text-center">
 									<br>
 									<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
-									<a href="<?php echo base_url('profile/doctor'); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
+									<a href="<?php echo base_url('profile/doctor/'. $dct['USER_ID']); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
-								<h2 class="name"><a href="#">dr. Dokter 1</a></h2>
-								<h3 class="specialist">Specialist : Ahli Bedah</h3>
-								<h4 class="experience">Experience :30 Tahun</h4>
+								<h2 class="name"><a href="#"><?php echo $dct['USER_NAME']; ?></a></h2>
+								<h3 class="specialist">Specialist : <?php echo $dct['DCT_SPECIALTY']; ?></h3>
+								<h4 class="experience">Experience : <?php echo $dct['DCT_EXP']; ?></h4>
 								<div class="hargadanwaktu">
 									<div class="harga">
-										<i class="fa fa-money fa-fw"></i> <span class="nilai"><strong>Rp 100.000,-</strong></span>
+										<i class="fa fa-money fa-fw"></i> <span class="nilai"><strong>Rp <?php echo $dct['CONSULT_FEE']; ?></strong></span>
 									</div>
 									<div class="waktu">
 										<i class="fa fa-clock-o fa-fw"></i>
@@ -167,6 +168,7 @@
 								</div>
 							</div>
 						</div>
+					<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -175,8 +177,5 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<?php echo $chat; ?>
-	</footer>
 </body>
 </html>

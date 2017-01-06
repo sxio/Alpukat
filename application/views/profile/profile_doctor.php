@@ -18,8 +18,7 @@
 						<div class="panel panel-heading">
 							<div class="row">
 								<section>
-									<img src="<?php echo base_url('assets/img/doctor.jpg'); ?>" class="img-circle" id="foto">
-
+									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $data_doctor['USER_IMG']); ?>" class="img-circle" id="foto">
 									<h2>Personal Information</h2>
 								</section>
 							</div>
@@ -98,17 +97,17 @@
 									<ul class="list-unstyled">
 										<li>Education </li>
 										<li><ul>
-												<li>SD :</li>
-												<li>SMP :</li>
-												<li>SMA :</li>
-												<li>S1 :</li>
-												<li>S2 :</li>
-												<li>DR :</li>
+												<li>SD : <?php echo explode(';', $data_doctor['DCT_EDUC'])[0]; ?></li>
+												<li>SMP : <?php echo explode(';', $data_doctor['DCT_EDUC'])[1]; ?></li>
+												<li>SMA : <?php echo explode(';', $data_doctor['DCT_EDUC'])[2]; ?></li>
+												<li>S1 : <?php echo explode(';', $data_doctor['DCT_EDUC'])[3]; ?></li>
+												<li>S2 : <?php echo explode(';', $data_doctor['DCT_EDUC'])[4]; ?></li>
+												<li>DR : <?php echo explode(';', $data_doctor['DCT_EDUC'])[5]; ?></li>
 											</ul>
 										</li>
-										<li>Experience :</li>
-										<li>Speciality :</li>
-										<li>Certification :</li>
+										<li>Experience : <?php echo $data_doctor['DCT_EXP']; ?></li>
+										<li>Speciality : <?php echo $data_doctor['DCT_SPECIALTY']; ?></li>
+										<li>Certification : <?php echo $data_doctor['DCT_CERTIFICATE']; ?></li>
 									</ul>
 								</div>
 							</div>
