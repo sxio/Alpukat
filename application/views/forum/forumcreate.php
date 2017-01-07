@@ -21,7 +21,7 @@
 						<textarea class="form-control" rows="2" name="title"></textarea>
 						<br>
                         <h4>Forum Category</h4>
-                        <!-- <?php echo form_dropdown('category', $data['category'], set_value('category','1'));?> -->
+                        <?php echo form_dropdown('category', $category_list, set_value('category','1'));?>
                         <br>
                         <h4>Forum Content</h4>
 						<textarea class="form-control" rows="8" name="content"></textarea>

@@ -4,15 +4,17 @@
 			$this->load->database();
 		}
 		public function get_category(){
-			$this->db->order_by('CAT_NAME');
+
 			$this->db->where('CAT_GROUP',3);
-			$query = $this->db->get('MSDCATEGORY');
-			
-			$data = array(
-				'data' => $query->result_array,
-				'num_rows' => $query->num_rows()
-			);
-			return $data;
+			$this->db->order_by('CAT_NAME');
+			$result = $this->db->get('MSDCATEGORY');
+			$return = array();
+			if($result->num_rows() > 0){
+				foreach ($result->result_array() as $row) {
+					$return[$row['CAT_NAME']] = $row['CAT_NAME'];
+				}
+			};
+			return $return;
 		}
 		public function add_forum(){
             $data = array(

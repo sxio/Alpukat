@@ -1,34 +1,27 @@
 <?php
 	class C_Forum extends CI_Controller{
-		public function __construct(){
+		function __construct(){
 			parent:: __construct();
 		 	$this->load->model('Forum_model');
 		}
-
-		public function view($page = "forumhome"){
+		function view($page = "forumhome"){
 			$data['title']    = "forumhome";
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
+
+			$data['category_list'] = $this->Forum_model->get_category();
+
 			$this->load->view('forum/'.$page, $data);
-
-		}
-		public function validate_dropdown($str){
-			return $str == '0' ? FALSE : TRUE;
 		}
 
-		public function create_forum(){
+		function create_forum(){
 			$this->form_validation->set_rules('title', 'Title', 'trim|required|max_length[150]|xss_clean');
-			//$this->form_validation->set_rules('category','Category','callback_validate_dropdown');
-			//$this->form_validation->set_message('select_validate', 'This %s is a default value');
+
+			$this->form_validation->set_rules('category', 'Category', 'trim|required|max_length[30]');
 			$this->form_validation->set_rules('content', 'Content', 'trim|required');
-			
-			$data['header']   = $this->load->view('templates/header','',TRUE);
-			$data['nav']      = $this->load->view('templates/nav','',TRUE);
-			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
 			if($this->form_validation->run() == FALSE){
 				$data['form_error'] = validation_errors();
@@ -41,6 +34,13 @@
 					$data['msg'] = '<div class="alert alert-success">'. $res['message'] .'</div>';
 			 	}
 			}
+			$data['header']   = $this->load->view('templates/header','',TRUE);
+			$data['nav']      = $this->load->view('templates/nav','',TRUE);
+			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+			$data['footer']   = $this->load->view('templates/footer','',TRUE);
+
+			$data['category_list'] = $this->Forum_model->get_category();
+			
 			$this->load->view('forum/forumcreate', $data);
 		}
 	}
