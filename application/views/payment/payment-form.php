@@ -46,12 +46,6 @@
 						?>
 							<ul class="list-unstyled">
 								<li class="form-group">
-									<label class="col-md-4 control-label" for="shoppingid">Shopping ID</label>
-									<div class="col-md-8">
-										<input class="form-control" type="text" name="shoppingid" value="<?php echo uniqid('a'); ?>" readonly>
-									</div>
-								</li>
-								<li class="form-group">
 									<label class="col-md-4 control-label" for="buyername">Name </label>
 									<div class="col-md-8">
 										<?php echo form_hidden('buyerid', $user_info['USER_ID']); ?>

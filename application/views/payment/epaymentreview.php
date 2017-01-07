@@ -30,7 +30,7 @@
 						<li class="list-group-item list-group-item-info">
 							<label class="col-md-4 control-label">Shopping ID </label>
 							<div class="col-md-8">
-								<p>: <?php echo $form_input['shoppingid']; ?></p>
+								<p>: <b><?php echo $this->Sequences_model->concat(1, $form_input['date_tf']); ?></b></p>
 							</div>
 						</li>
 						<li class="list-group-item list-group-item-info">
@@ -95,7 +95,6 @@
 				</div>
 				<div class="panel-footer text-right">
 					<?php echo form_open('payment/success/estore'); ?>
-					<?php echo form_hidden('shoppingid', $form_input['shoppingid']); ?>
 					<?php echo form_hidden('buyerid', $form_input['buyerid']); ?>
 					<?php echo form_hidden('buyeraddress', $form_input['buyeraddress']); ?>
 					<?php echo form_hidden('banktype', $form_input['banktype']); ?>
