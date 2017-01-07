@@ -24,3 +24,12 @@ hr{
 textarea[name = "buyeraddress"]{
 	resize: none;
 }
+
+@media screen and (max-width: 500px){
+	#donate_list ul{
+		width: 100%;
+	}
+	#donate_list ul.dropdown-menu .col-sm-12, #donate_list ul.dropdown-menu .col-sm-12 .container{
+		padding: 0;
+	}
+}

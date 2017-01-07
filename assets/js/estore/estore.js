@@ -78,21 +78,17 @@ jQuery(document).ready(function($){
 			  $('.heder-bottom').css('height','32vw');
 			  $('.cd-header-buttons').css('top','15px');
 			  $('.cd-search').css("top","100%");
-			//   $('.cd-search').css("top"," 0%");
 		  }
-		  // $(".cd-header-buttons").css("top",'30px');
-		  // $('.cd-search').css("position","fixed");
 	   }
 	   else {
 		  $('.heder-bottom').removeClass('navbar-fixed-top');
 		  if(w>500){
-			  $('.cd-search').css("top","100%");
+			  $('.cd-search').css("top","17%");
 		  }
 		  else{
 			  $('.cd-header-buttons').css('top','80px');
 			  $('.cd-search').css("top","50vw");
 	      }
-		  // $(".cd-header-buttons").css("top",'70px');
 	   }
 	});
 	}

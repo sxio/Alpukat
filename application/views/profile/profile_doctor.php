@@ -14,7 +14,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4 text-center">
-					<div class="panel panel-success">
+					<div class="panel panel-success psi">
 						<div class="panel panel-heading">
 							<div class="row">
 								<section>
@@ -45,7 +45,7 @@
 							<button type="button" class="btn btn-ins btn-primary"><i class="fa fa-instagram center"></i> Instagram</button>
 							<hr>
 							<div class="row">
-								<div class="panel panel-warning">
+								<div class="panel panel-warning visits">
 									<div class="panel panel-heading">
 										<h3>Overview</h3>
 									</div>

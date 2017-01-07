@@ -17,3 +17,29 @@ h3{
 .panel-heading{
     margin: 0;
 }
+hr{
+    margin: 5px;
+}
+.psi .panel-body{
+    padding-bottom: 0;
+}
+.visits{
+    margin: 0;
+    border-radius: 0px!important;
+}
+.visits .panel{
+    border-radius: 0px!important;
+}
+.visits .panel-body{
+    margin: 0;
+}
+
+@media screen and (max-width: 500px){
+    #foto{
+        width: 95%;
+        /*height: 400px;*/
+    }
+    .psi{
+        margin-bottom: 20px;
+    }
+}

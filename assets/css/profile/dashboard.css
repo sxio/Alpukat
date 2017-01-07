@@ -15,5 +15,5 @@
 	padding-bottom: 15px;
 }
 .tableoverflow{
-	overflow-x: auto;
+	overflow-x: scroll;
 }
