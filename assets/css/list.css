@@ -9,7 +9,7 @@ input.filter{
 	display: inline-block;
 }
 input#findDoctor{
-	width: 46.65%;
+	width: 87%;
 	display: inline-block;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
@@ -30,4 +30,9 @@ img{
 	border-bottom-left-radius: 0;
 	border-left: 0;
 	margin-top: -2px;
+}
+.col-sm-9 .panel-heading{
+    margin: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
