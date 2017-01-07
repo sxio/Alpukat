@@ -50,30 +50,50 @@
 		}
 
 		public function edit_data_doctor($userid){
-			$$dataUser = array(
+			$dataUser = array(
 				'USER_NAME' => $this->input->post('docname'),
 				'USER_BIRTH' => $this->input->post('docbirth'),
+				'EMAIL' => $this->input->post('docemail'),
+				'HANDPHONE' => $this->input->post('docHP'),
 				'USER_ADDRESS' => $this->input->post('docaddr')
-			); // not done
-
-
-			$educ = '';
-			$educ .= $this->input->post('docSD') .';';
-			$educ .= $this->input->post('docSMP') .';';
-			$educ .= $this->input->post('docSMA') .';';
-			$educ .= $this->input->post('docS1') .';';
-			$educ .= $this->input->post('docS2') .';';
-			$educ .= $this->input->post('docDR');
-
-			$dataDoctor = array(
-				'DCT_EDUC' => $educ,
-				'DCT_ABOUT' => $this->input->post('docabout'),
-				'DCT_EXP' => $this->input->post('docExp'),
-				'DCT_SPECIALTY' => $this->input->post('docSpec'),
-				'DCT_CERTIFICATE' => $this->input->post('docCert')
 			);
-			$this->db->where('DCT_ID', $userid);
-			$this->db->update('MSHDOCTOR', $dataDoctor);
+			$this->db->where('USER_ID', $userid);
+			$is_updated = $this->db->update('MSTUSER', $dataUser);
+
+			if($is_updated){
+				$educ = '';
+				$educ .= $this->input->post('docSD') .';';
+				$educ .= $this->input->post('docSMP') .';';
+				$educ .= $this->input->post('docSMA') .';';
+				$educ .= $this->input->post('docS1') .';';
+				$educ .= $this->input->post('docS2') .';';
+				$educ .= $this->input->post('docDR');
+
+				$dataDoctor = array(
+					'DCT_EDUC' => $educ,
+					'DCT_ABOUT' => $this->input->post('docabout'),
+					'DCT_EXP' => $this->input->post('docExp'),
+					'DCT_SPECIALTY' => $this->input->post('docSpec'),
+					'DCT_CERTIFICATE' => $this->input->post('docCert')
+				);
+				$this->db->where('DCT_ID', $userid);
+				$this->db->update('MSHDOCTOR', $dataDoctor);
+			}
+			return $this->db->error();
+		}
+
+		public function update_img($userid, $img){
+			$this->db->where('USER_ID', $userid);
+			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
+			if(file_exists('./assets/img/doctor/certificate/'. $old_img)){
+				unlink('./assets/img/doctor/certificate/'. $old_img);
+			}
+
+			$data = array(
+				'USER_IMG' => $img
+			);
+			$this->db->where('USER_ID', $userid);
+			return $this->db->update('MSTUSER', $data);
 		}
 	}
 ?>
