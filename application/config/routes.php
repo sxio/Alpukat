@@ -46,7 +46,7 @@ $route['search/list']                                   = 'C_Pages/search';
 // ADMIN
 // Master CATEGORY
 $route['admin/category/addmastercategory']              = 'Admin/C_Admin_MasterCategory/addcategory';
-//
+
 // NEWS
 $route['admin/news/addnews']                            = 'Admin/C_Admin_News/addnews';
 $route['admin/news/listnews']                           = 'Admin/C_Admin_News/listnews';
