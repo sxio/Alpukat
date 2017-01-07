@@ -10,7 +10,8 @@
 
 			$data = array('SEQ_VALUE' => ($value+1));
 			$this->db->where('SEQ_ID', $seq_id);
-			$this->db->update('MSTSEQUENCES');
+			$this->db->update('MSTSEQUENCES', $data);
+			return $this->db->error();
 		}
 
 		public function concat($seq_id, $param){
