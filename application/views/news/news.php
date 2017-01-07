@@ -84,21 +84,28 @@
 
 					<div class="tab-content">
 						<div id="home" class="tab-pane fade in active">
-							<?php for($i = 0 ; $i < 5 ; $i++) { ?>
-							<div class="block<?php if($i==4) echo '-last'; ?>">
+							<?php
+								$i = 0;
+								foreach($news_lists as $news) {
+									if($i == 5) break;
+							?>
+							<div class="block">
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 detail_img">
-										<img src="<?php echo base_url('assets/img/perfect.jpg'); ?>">
+										<img src="<?php echo base_url('assets/img/news-img/'. $news['NEWS_IMAGE']); ?>">
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 detail_news">
-										<a href="">
-											<h3>HOME</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<a href="<?php echo base_url('news/details/'. $news['NEWS_ID']); ?>">
+											<h3><?php echo $news['NEWS_TITLE']; ?></h3>
+											<p><?php echo word_limiter($news['NEWS_CONTENT'], 20); ?></p>
 										</a>
 									</div>
 								</div>
 							</div>
-							<?php } ?>
+							<?php
+									$i++;
+								}
+							?>
 						</div>
 						<div id="menu1" class="tab-pane fade">
 								<div class="block">
