@@ -45,6 +45,11 @@
 					<i class="fa fa-user fa-5x fa-fw"></i><br><h2>Member</h2></button>
 				</a>
 			</div>
+			<div class="col-sm-3">
+				<a href="<?php echo base_url('admin/manage-category'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-list fa-5x fa-fw"></i><br><h2>M. Category</h2></button>
+				</a>
+			</div>
 		</div>
 		<br>
 	</div>

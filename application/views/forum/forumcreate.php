@@ -11,18 +11,17 @@
 <body>
 	<?php echo $nav; ?>
 	<?php echo $forumnav; ?>
-	<div class="container">
+	<div id ="forum-create" class="container">
 		<h3>Forums</h3>
 		<div class="panel">
 			<div class="row">
 				<div class="col-sm-8">
 					<?php echo form_open('forum/create-forum'); ?>
-                        <h4>Forum Title</h4>
-						<textarea class="form-control" rows="2" name="title"></textarea>
+                        <h4>Forum Topics</h4>
+                        <?php echo form_dropdown('category', $category_list, set_value('category','1'),'class="category"');?>
 						<br>
-                        <h4>Forum Category</h4>
-                        <?php echo form_dropdown('category', $category_list, set_value('category','1'));?>
-                        <br>
+                        <h4>Forum Title</h4>
+                        <textarea class="form-control" rows="2" name="title"></textarea>
                         <h4>Forum Content</h4>
 						<textarea class="form-control" rows="8" name="content"></textarea>
 						<br>

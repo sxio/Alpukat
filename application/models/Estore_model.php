@@ -88,8 +88,10 @@
 
 
 		public function add_order(){
+			$shopid = $this->Sequences_model->get_seq(1);
+			$shopid = $this->Sequences_model->concat(1, $this->input->post('date_tf'));
 			$dataHeader = array(
-				'ORDER_ID'      => $this->input->post('shoppingid'),
+				'ORDER_ID'      => $shopid,
 				'USER_ID'       => $this->input->post('buyerid'),
 				'ORDER_ADDRESS' => $this->input->post('buyeraddress'),
 				'BANK_TYPE'     => $this->input->post('banktype'),
@@ -102,11 +104,12 @@
 				'STATUS'        => 'PENDING'
 			);
 			$this->db->insert('TRHORDER', $dataHeader);
+			$this->Sequences_model->update_seq(1);
 
 			foreach($this->cart->contents() as $items){
 				$dataDetail = array(
 					'USER_ID'  => $this->input->post('buyerid'),
-					'ORDER_ID' => $this->input->post('shoppingid'),
+					'ORDER_ID' => $shopid,
 					'PROD_ID'  => $items['id'],
 					'QUANTITY' => $items['qty'],
 					'PRICE'    => $items['price']
