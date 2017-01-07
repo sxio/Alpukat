@@ -1,26 +1,12 @@
 #check_logo{
 	font-size: 100px;
 	color: rgb(0,220,0);
-	float: right;
 }
 .fa-check{
 	font-size: 120px;
 }
 #btn_home{
 	margin-left: 15px;
-}
-
-@media screen and (max-width: 500px){
-	/*.panel-body .col-xs-12{
-		text-align: center;
-	}*/
-	/*.fa-stack{
-		width: 100%!important;
-	}*/
-	/*.panel-body .col-sm-12{
-		text-align: center;
-	}*/
-	#check_logo{
-		float: none;
-	}
+	margin-top: 20px;
+	float: right;
 }

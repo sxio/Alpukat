@@ -21,10 +21,10 @@
 		<div class="panel panel-info">
 			<div class="panel-heading">
 				<div class="row">
-					<div class="col-sm-8">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<h3>Order Detail</h3>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<span class="pull-right"><?php echo nice_date($estore_hist[0]['ORDER_DATE'], 'l, d F Y | H:i:s'); ?></span>
 					</div>
 				</div>

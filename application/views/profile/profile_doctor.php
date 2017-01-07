@@ -94,6 +94,7 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
+					<br>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-info">

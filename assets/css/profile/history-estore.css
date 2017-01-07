@@ -12,8 +12,7 @@
 .panel-body h3.orderid{
 	text-decoration: underline;
 }
-ol.listorderdetail{
-	list-style-type: none;
+ul.listorderdetail{
 	margin-top: 50px;
 }
 ol.listorderdetail label, ol.listorderdetail p{
@@ -30,4 +29,17 @@ ol.listorderdetail label, ol.listorderdetail p{
 .panel-footer ol.listonpanelfooter{
 	list-style-type: none;
 	font-size: 17px;
+}
+
+@media screen and (max-width: 500px){
+	.centering_text{
+		text-align: center;
+	}
+	ol.listorderdetail{
+		width: 100%;
+		padding: 0;
+	}
+	.tableoverflow{
+		overflow-x: auto;
+	}
 }
