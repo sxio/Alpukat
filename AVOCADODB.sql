@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.13-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: AVOCADODB
 -- ------------------------------------------------------
--- Server version	10.1.16-MariaDB
+-- Server version	10.1.13-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -403,7 +403,7 @@ CREATE TABLE `MSTSEQUENCES` (
   `SEQ_NAME` varchar(30) NOT NULL,
   `SEQ_VALUE` int(11) NOT NULL,
   PRIMARY KEY (`SEQ_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -413,7 +413,8 @@ CREATE TABLE `MSTSEQUENCES` (
 LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
-INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',1);
+INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',8);
+INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',1);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -665,6 +666,32 @@ LOCK TABLES `TRDDOCTOR` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `TRDFORUM`
+--
+
+DROP TABLE IF EXISTS `TRDFORUM`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `TRDFORUM` (
+  `FORUM_ID` varchar(20) NOT NULL,
+  `DETAIL_ID` int(11) NOT NULL,
+  `USER_ID` varchar(15) NOT NULL,
+  `USER_DT` datetime NOT NULL,
+  `FORUM_DESC` text NOT NULL,
+  PRIMARY KEY (`FORUM_ID`,`DETAIL_ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `TRDFORUM`
+--
+
+LOCK TABLES `TRDFORUM` WRITE;
+/*!40000 ALTER TABLE `TRDFORUM` DISABLE KEYS */;
+/*!40000 ALTER TABLE `TRDFORUM` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `TRDGRADING`
 --
 
@@ -873,14 +900,14 @@ DROP TABLE IF EXISTS `TRHFORUM`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TRHFORUM` (
-  `FORUM_ID` int(10) NOT NULL AUTO_INCREMENT,
+  `FORUM_ID` varchar(20) NOT NULL,
   `FORUM_TITLE` varchar(150) NOT NULL,
   `FORUM_CAT` int(10) NOT NULL,
   `FORUM_CONTENT` text NOT NULL,
   `USER_ID` varchar(15) NOT NULL,
   `USER_DT` datetime NOT NULL,
   PRIMARY KEY (`FORUM_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -889,7 +916,13 @@ CREATE TABLE `TRHFORUM` (
 
 LOCK TABLES `TRHFORUM` WRITE;
 /*!40000 ALTER TABLE `TRHFORUM` DISABLE KEYS */;
-INSERT INTO `TRHFORUM` VALUES (39,'Isi Forum',23,'Isi Title','sxioo','2017-01-07 14:41:26');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-001','Ini Tentang Kesehatan',23,'Forum ini membahas tentang kesehatan','sxioo','2017-01-07 16:55:59');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-002','Forum estore',23,'Forum membahas tentang estore','sxioo','2017-01-07 16:57:49');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-003','Ini tentang Forum',23,'isi Tentang Forum','sxioo','2017-01-07 18:18:03');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-004','213123',23,'12312312','sxioo','2017-01-07 18:18:55');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-005','131232',23,'123123123','sxioo','2017-01-07 18:19:34');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-006','12312321',23,'13123123','sxioo','2017-01-07 18:20:54');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-007','123123213',23,'123123123123','sxioo','2017-01-07 18:21:46');
 /*!40000 ALTER TABLE `TRHFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1019,4 +1052,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-07 16:46:47
+-- Dump completed on 2017-01-07 18:47:06

@@ -17,11 +17,17 @@
 		public function concat($seq_id, $param){
 			$value = $this->get_seq($seq_id);
 			if($seq_id == 1){
-				// ESTORE PARAM = date
+				// PARAM = date
+				// ESTORE
 				$prefix = 'ESB-' . nice_date($param, 'Ymd') . '-';
 			} elseif($seq_id == 2) {
-				// FORUM PARAM = date
+				// PARAM = date
+				// FORUM
 				$prefix = 'FRM-' . nice_date($param, 'Ymd') . '-';
+			} elseif($seq_id == 3) {
+				// PARAM = date
+				// FORUM DETAIL
+				$prefix = 'FRD-' . nice_date($param, 'Ymd') . '-';
 			}
 			return $prefix . str_pad($value, 3, '0', STR_PAD_LEFT);
 		}

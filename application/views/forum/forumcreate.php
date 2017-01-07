@@ -16,9 +16,9 @@
 		<div class="panel">
 			<div class="row">
 				<div class="col-sm-8">
-					<?php echo form_open('forum/create-forum'); ?>
+					<?php echo form_open('forum/createforum'); ?>
                         <h4>Forum Topics</h4>
-                        <?php echo form_dropdown('category', $category_list, set_value('category','1'),'class="category"');?>
+                        <?php echo form_dropdown('category', $category_list, set_value('category','1'),'class="category form-control"');?>
 						<br>
                         <h4>Forum Title</h4>
                         <textarea class="form-control" rows="2" name="title"></textarea>

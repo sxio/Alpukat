@@ -18,15 +18,24 @@
 			};
 			return $return;
 		}
+		function get_forum(){
+			$this->db->order_by('FORUM_ID');
+			$result = $this->db->get('TRHFORUM');
+			return $result->result_array();
+		}
 		function add_forum($username){
+			$forumid = $this->Sequences_model->get_seq(2);
+			$forumid = $this->Sequences_model->concat(2, mdate('%Y-%m-%d %H:%i:%s',now()));
             $data = array(
-				'FORUM_TITLE'   => $this->input->post('title'),
+            	'FORUM_ID' => $forumid,
+				'FORUM_TITLE'=> $this->input->post('title'),
 				'FORUM_CAT' => $this->input->post('category'),
 				'FORUM_CONTENT' => $this->input->post('content'),
 				'USER_ID' => $username,
 				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
             );
             $this->db->insert('TRHFORUM',$data);
+            $this->Sequences_model->update_seq(2);
             return $this->db->error();
 		}
 	}
