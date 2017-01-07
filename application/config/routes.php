@@ -34,7 +34,9 @@ $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
 $route['booking']                                       = 'C_Booking/view';
 
-$route['forum/create-forum']                            = 'C_Forum/create_forum';
+$route['forum/createforum']                             = 'C_Forum/create_forum';
+$route['forum/forumlist']                            	= 'C_Forum/forum';
+$route['forum/detail-forum']                            = 'C_Forum/detail_forum';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
 
@@ -68,7 +70,7 @@ $route['admin/estore/paymentlist']                      = 'Admin/C_Admin_Estore/
 $route['admin/estore/payment/detail/(:any)']            = 'Admin/C_Admin_Estore/paymentdetail/$1';
 $route['admin/estore/paymentlist/status/(:any)/(:any)'] = 'Admin/C_Admin_Estore/changestatus/$1/$2';
 $route['admin/estore/restock']                          = 'Admin/C_Admin_Estore/restock';
-$route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProdutByCategory';
+$route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProductByCategory';
 $route['admin/estore/getproductbyid']                   = 'Admin/C_Admin_Estore/GetProductById';
 //
 // COMMENT

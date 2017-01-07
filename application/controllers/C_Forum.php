@@ -17,11 +17,36 @@
 
 		}
 
+		
+
+		public function forum(){
+			$data['header']   = $this->load->view('templates/header','',TRUE);
+			$data['nav']      = $this->load->view('templates/nav','',TRUE);
+			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+			$data['footer']   = $this->load->view('templates/footer','',TRUE);
+
+			$data['forum_list'] = $this->Forum_model->get_forum();
+			$this->load->view('forum/forumlist', $data);
+		}		
+
+		// public function forum_detail($forum_id){
+		// 	$data['header']   = $this->load->view('templates/header','',TRUE);
+		// 	$data['nav']      = $this->load->view('templates/nav','',TRUE);
+		// 	$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+		// 	$data['footer']   = $this->load->view('templates/footer','',TRUE);
+
+		// 	$data['forum_list'] = $this->Forum_model->get_forum();
+
+		// 	$this->load->view('forum/'.$forum_id, $data);
+		// }
+
 		public function create_forum(){
+			if($this->session->userdata('username') == NULL){
+				redirect('user');
+			}
 			$username = $this->session->userdata('username');
 			$this->form_validation->set_rules('title', 'Title', 'trim|required|max_length[150]|xss_clean');
 			$this->form_validation->set_rules('content', 'Content', 'trim|required');
-			;
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
@@ -40,7 +65,7 @@
 			}
 
 			$data['category_list'] = $this->Forum_model->get_category();
-			$this->load->view('forum/forumcreate', $data);
+			redirect('forum/forumlist');
 		}
 	}
 ?>

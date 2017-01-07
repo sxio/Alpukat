@@ -12,23 +12,31 @@
 		<?php echo $forumnav; ?>
 		<div id="forum-detail" class="container">
 			<h3>Forums</h3>
-			<div class="row">
-				<div class="col-sm-12">
-	             	<div class="chat-panel panel panel-default">
-	                    <div class="panel-heading">
-	                        <div class="row">
-	                        	<div class="col-sm-3">
-	                        		<h4>Topic 1</h4>
-	                        	</div>
-	                        	
-	                        </div>
-	                    </div>
-	                    <div class="panel-body">
-	                        
-	                    </div>
-	                </div>
-	            </div>
-			</div>
+			<?php
+				foreach($forum_list as $forum_list){
+				?>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="chat-panel panel panel-default">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-sm-3">
+										<h4><?php echo $forum_list['FORUM_CAT']; ?></h4>
+										<h4><?php echo $forum_list['FORUM_TITLE']; ?></h4>
+									</div>	
+								</div>
+							</div>
+							<div class="panel-body">
+								<h4><?php echo $forum_list['FORUM_CONTENT'];?></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<?php
+				}
+			?>
+			
 		</div>
 	</div>
 </body>
