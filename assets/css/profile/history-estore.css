@@ -40,7 +40,7 @@ ol.listorderdetail label, ol.listorderdetail p{
 		padding: 0;
 	}
 	.tableoverflow{
-		overflow-x: auto;
+		overflow-x: scroll;
 	}
 	.panel-footer{
 		padding: 0;
