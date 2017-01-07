@@ -86,4 +86,14 @@ $(document).ready(function(){
       $('.donation_wrapper').css('display','inherit');
     }
   });
+
+
+  //detail order
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  if(w < 500){
+      $('.centering_text span').removeClass('pull-right');
+  }
+  else{
+      $('.centering_text span').addClass('pull-right');
+  }
 });

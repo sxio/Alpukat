@@ -100,6 +100,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background: contain;
   padding-top: 70px;
 }
 
@@ -313,6 +314,7 @@ textarea{
         padding-top: 60px;
         padding-left: 20px;
         padding-right: 20px;
+        background-size: cover;
     }
     .jumbotron h1 {
       font-family: acceleration;
@@ -375,6 +377,7 @@ textarea{
     .fadesleft{
       opacity :1;
       left: 0px;
+      margin-bottom: 20px;
     }
     .fadesright{
       opacity :1;
