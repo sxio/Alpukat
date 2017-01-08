@@ -42,6 +42,12 @@
 			return $this->db->error();
 		}
 
+		public function get_data_user($userid){
+			$this->db->where('USER_ID', $userid);
+			$query = $this->db->get('MSTUSER');
+			return $query->result_array()[0];
+		}
+
 		public function get_data_doctor($userid){
 			$this->db->where('MSTUSER.USER_ID', $userid);
 			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'right');
@@ -77,7 +83,10 @@
 					'DCT_CERTIFICATE' => $this->input->post('docCert')
 				);
 				$this->db->where('DCT_ID', $userid);
-				$this->db->update('MSHDOCTOR', $dataDoctor);
+				$res = $this->db->update('MSHDOCTOR', $dataDoctor);
+				if($res){
+					$this->session->set_userdata('nama', $this->input->post('docname'));
+				}
 			}
 			return $this->db->error();
 		}
