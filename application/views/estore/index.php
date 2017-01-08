@@ -169,7 +169,7 @@
 							</div>
 
 							<div class="desc">
-								<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo $item['PROD_NAME']; ?></a></h6>
+								<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo character_limiter($item['PROD_NAME'], 20); ?></a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
 								<p ><em class="item_price">RP <?php echo number_format($item['PROD_PRICE'],0,',','.'); ?></em></p>
 								<!-- <button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button> -->
@@ -215,7 +215,7 @@
 									</div>
 
 									<div class="desc">
-										<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo $item['PROD_NAME']; ?></a></h6>
+										<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo character_limiter($item['PROD_NAME'], 20); ?></a></h6>
 										<!-- <span class="size">XL / XXL / S </span> -->
 										<p><em class="item_price">RP <?php echo number_format($item['PROD_PRICE'],0,',','.'); ?></em></p>
 										<!-- <button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button> -->
