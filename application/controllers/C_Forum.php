@@ -51,18 +51,18 @@
 			 	} else{
 					$data['msg'] = '<div class="alert alert-success">'. $res['message'] .'</div>';
 			 	}
-				redirect('forum/forumlist');
+				redirect('forum/list');
 			}
+		}
 		//detail	
 		function detail_forum($forum_id){
-				$data['header']   = $this->load->view('templates/header','',TRUE);
-				$data['nav']      = $this->load->view('templates/nav','',TRUE);
-				$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-				$data['footer']   = $this->load->view('templates/footer','',TRUE);
-
-				$data['forum_list'] = $this->Forum_model->get_forum_by_id($forum_id);
-				$this->load->view('forum/forumdetail', $data);
-			}
+			$data['header']   = $this->load->view('templates/header','',TRUE);
+			$data['nav']      = $this->load->view('templates/nav','',TRUE);
+			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+			$data['footer']   = $this->load->view('templates/footer','',TRUE);
+			
+			$data['forum_list'] = $this->Forum_model->get_forum_by_id($forum_id);
+			$this->load->view('forum/forumdetail', $data);
 		}
 	}
 ?>

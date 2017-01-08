@@ -86,6 +86,17 @@
 			$this->load->view('profile/dashboard', $data);
 		}
 
+		public function payment_history(){
+			$userid = $this->session->userdata('username');
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+
+			$data['estore'] = $this->Estore_model->get_order_by_username($userid);
+			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
+
+			$this->load->view('profile/payment_history', $data);
+		}
+
 		public function history_estore($order_id){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);

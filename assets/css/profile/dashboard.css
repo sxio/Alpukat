@@ -17,11 +17,6 @@
 .tableoverflow{
 	overflow-x: scroll;
 }
-@media screen and (max-width: 500px){
-	.panel-primary, .panel-default{
-		margin-bottom: 20px;
-	}
-}
 
 #profile-user img{
 	width: 100%;
@@ -35,4 +30,24 @@
 }
 #profile-user .panel-body{
 	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px){
+	.panel-primary, .panel-default{
+		margin-bottom: 20px;
+	}
+	#profile-user .panel-primary{
+		margin: 0;
+	}
+	#profile-user img{
+		margin-bottom: 20px;
+	}
+	#profile-user .panel-body{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#profile-user .panel-body li label, #profile-user .panel-body .col-xs-12{
+		padding: 0;
+		font-size: 3.5vw;
+	}
 }

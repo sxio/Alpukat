@@ -46,6 +46,7 @@
 								?>
 									<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
 								<?php } ?>
+								<li><a href="<?php echo base_url('profile/payment-history'); ?>"><i class="fa fa-history fa-fw"></i> Payment History</a></li>
 								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
 								<li class="divider"></li>
 								<li><a href="<?php echo base_url('logout/log_out');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>

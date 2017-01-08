@@ -96,4 +96,8 @@ $(document).ready(function(){
   else{
       $('.centering_text span').addClass('pull-right');
   }
+
+
+  //doctor profile comment
+    $("[data-toggle=tooltip]").tooltip();
 });
