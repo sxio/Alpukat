@@ -1,10 +1,12 @@
 <?php
 	class Forum_model extends CI_Model{
 		function __construct(){
+
 			$this->load->database();
 			$this->load->helper('date');
 			date_default_timezone_set('Asia/Jakarta');
 		}
+		//header
 		function get_category(){
 
 			$this->db->select('CAT_ID,CAT_NAME',3);
@@ -42,6 +44,15 @@
             $this->db->insert('TRHFORUM',$data);
             $this->Sequences_model->update_seq(2);
             return $this->db->error();
+		}
+		//detail
+		function get_forum_by_id(){
+			$this->db->select('A.FORUM_ID,A.FORUM_TITLE,B.CAT_NAME,A.FORUM_CONTENT,A.USER_ID,A.USER_DT');
+			$this->db->from('TRHFORUM A');
+			$this->db->join('MSDCATEGORY B','A.FORUM_CAT = B.CAT_ID','LEFT');
+			$this->db->order_by('A.FORUM_ID');
+			$result = $this->db->get();
+			return $result->result_array();
 		}
 	}
 ?>

@@ -1,11 +1,11 @@
 <?php
 	class C_Forum extends CI_Controller{
-		public function __construct(){
+		function __construct(){
 			parent:: __construct();
 		 	$this->load->model('Forum_model');
 		}
 
-		public function view($page = "forumhome"){
+		function view($page = "forumhome"){
 			$data['title']    = "forumhome";
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
@@ -16,31 +16,18 @@
 			$this->load->view('forum/'.$page, $data);
 
 		}
-
-		
-
-		public function forum(){
+		//header
+		function forum(){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
-			$data['forum_list'] = $this->Forum_model->get_forum();
+			$data['forum_list'] = $this->Forum_model->get_forum(1);
 			$this->load->view('forum/forumlist', $data);
 		}		
 
-		// public function forum_detail($forum_id){
-		// 	$data['header']   = $this->load->view('templates/header','',TRUE);
-		// 	$data['nav']      = $this->load->view('templates/nav','',TRUE);
-		// 	$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-		// 	$data['footer']   = $this->load->view('templates/footer','',TRUE);
-
-		// 	$data['forum_list'] = $this->Forum_model->get_forum();
-
-		// 	$this->load->view('forum/'.$forum_id, $data);
-		// }
-
-		public function create_forum(){
+		function create_forum(){
 			if($this->session->userdata('username') == NULL){
 				redirect('user');
 			}
@@ -51,7 +38,7 @@
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
-			
+
 		 	$data['category_list'] = $this->Forum_model->get_category();
 			if($this->form_validation->run() == FALSE){
 				$this->session->set_flashdata('msg',validation_errors());
@@ -66,8 +53,16 @@
 			 	}
 				redirect('forum/forumlist');
 			}
+		//detail	
+		function detail_forum($forum_id){
+				$data['header']   = $this->load->view('templates/header','',TRUE);
+				$data['nav']      = $this->load->view('templates/nav','',TRUE);
+				$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+				$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
-			
+				$data['forum_list'] = $this->Forum_model->get_forum_by_id($forum_id);
+				$this->load->view('forum/forumdetail', $data);
+			}
 		}
 	}
 ?>
