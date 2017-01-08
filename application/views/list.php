@@ -36,7 +36,7 @@
 							<!-- dropdown list -->
 							<div class="dropdown" id="drop">
 								<form>
-									<legend>DETAIL DOCTOR</legend>
+									<legend>Gender</legend>
 								    <div class="radio">
 										<label><input type="radio" name="optradio">Male</label>
 									</div>
