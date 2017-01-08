@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.13-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: AVOCADODB
 -- ------------------------------------------------------
--- Server version	10.1.13-MariaDB
+-- Server version	10.1.16-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -527,7 +527,7 @@ INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf9
 INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','',0,2,1);
 INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','',0,0,1);
 INSERT INTO `MSTUSER` VALUES ('sxio','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','Jalan PROF HM YAMIN SH No 133','',0,1,1);
-INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen Huang','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','083199773608','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',0,2,1);
+INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',0,2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1052,4 +1052,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-07 18:47:06
+-- Dump completed on 2017-01-07 23:40:27

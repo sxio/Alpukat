@@ -29,30 +29,35 @@
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			if($this->input->post('btn_edit')){
-				$this->Profile_model->edit_data_doctor($userid);
+				if(!empty($_FILES['_photo'])){
+					// UPLOAD IMAGE
+					$config['upload_path']   = './assets/img/doctor/certificate';
+					$config['allowed_types'] = 'gif|jpg|png';
+					$config['overwrite']     = TRUE;
+					$config['max_size']      = 0;
+					$ext = pathinfo($_FILES['_photo']['name'], PATHINFO_EXTENSION);
+					$config['file_name'] = $userid . '_photo' . '.' . $ext;
+					$this->load->library('upload');
+					$this->upload->initialize($config);
+					if(!$this->upload->do_upload('_photo')){
+						$error = $this->upload->display_errors();
+					}else{
+						$data['upload_data'] = $this->upload->data();
+					}
+					if(!isset($error)){
+						$this->Profile_model->update_img($userid, $data['upload_data']['file_name']);
+					}
+				}
+				$res = $this->Profile_model->edit_data_doctor($userid);
+				if($res['code'] == 0){
+					$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Edit Success</div>');
+				} else {
+					$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">'. $res['message'] .'</div>');
+				}
 			}
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
 
 			$this->load->view('profile/edit_profile_doctor', $data);
-
-			// Array
-			// (
-			//     [_photo] =>
-			//     [docname] => Stephen Huang
-			//     [docbirth] => 1996-06-08
-			//     [docaddr] => Jalan PROF HM YAMIN SH No 254
-			//     [docabout] =>
-			//     [docSD] =>
-			//     [docSMP] =>
-			//     [docSMA] =>
-			//     [docS1] =>
-			//     [docS2] =>
-			//     [docDR] =>
-			//     [docExp] =>
-			//     [docSpec] =>
-			//     [docCert] =>
-			//     [btn_edit] =>
-			// )
 		}
 
 		public function dashboard(){
