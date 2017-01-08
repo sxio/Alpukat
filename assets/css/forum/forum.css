@@ -30,3 +30,10 @@
 .reply{
 	display: none;
 }
+blockquote{
+	background-color: #ddd;
+	border-color: blue;
+}
+.masuk{
+	margin-left: 40px!important;
+}

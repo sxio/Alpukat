@@ -59,20 +59,45 @@
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
-			$data['forum_header'] = $this->Forum_model->get_forum_by_id($parent_id);
+			$data['forum_header'] = $this->Forum_model->get_forum_header_by_id($parent_id)[0];
 			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
+
+			// foreach($data['forum_detail'] as $subdetail){
+			// 	$data['forum_detail'][$subdetail['DETAIL_ID']] = $this->Forum_model->get_children_from_detail($subdetail['DETAIL_ID']);
+			// }
+			// foreach ($data['forum_detail'] as $key => $value) {
+			// 	$data['forum_detail'][$key]['sub'] = $this->Forum_model->get_children_from_detail($value['DETAIL_ID']);
+			// }
+			// print_r($data['forum_detail']);
+			// return;
+
 			$this->load->view('forum/forumdetail', $data);
 		}
 
-		function reply(){
-			$username = $this->session->userdata('username');
-			$id = $this->input->post('id');
-			$content = $this->input->post('content');
+		function reply($parent_id){
+			$data['header']   = $this->load->view('templates/header','',TRUE);
+			$data['nav']      = $this->load->view('templates/nav','',TRUE);
+			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
-			$res = $this->Forum_model->add_forum_detail($id, $content, $username);
-			print_r(json_encode($res));
+			$data['forum_parent'] = $this->Forum_model->get_forum_parent_by_id($parent_id);
+
+			$this->load->view('forum/forumreply', $data);
 		}
+
+		function add_reply($parent_id){
+			$username = $this->session->userdata('username');
+			$content = $this->input->post('f_content');
+
+			$res = $this->Forum_model->add_forum_detail($parent_id, $content, $username);
+			$header_id = $this->Forum_model->get_header_id_by_grandchild_id($parent_id);
+
+			redirect('forum/detail/'. $header_id);
+		}
+
+		// function tes($id){
+		// 	print_r($this->Forum_model->get_header_id_by_grandchild_id($id));
+		// 	return;
+		// }
 	}
 ?>

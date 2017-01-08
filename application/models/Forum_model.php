@@ -32,12 +32,50 @@
 			return $result->result_array();
 		}
 
-		function get_forum_by_id($forum_id){
+		function get_forum_header_by_id($forum_id){
 			$this->db->where('FORUM_ID', $forum_id);
 			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRHFORUM.USER_ID');
 			$query = $this->db->get('TRHFORUM');
-			return $query->result_array()[0];
+			return $query->result_array();
 		}
+
+		function get_forum_parent_by_id($parent_id){
+			$header = $this->get_forum_header_by_id($parent_id);
+			if($header == NULL){
+				$this->db->where('DETAIL_ID', $parent_id);
+				$this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRDFORUM.USER_ID');
+				$query = $this->db->get('TRDFORUM');
+				return $query->result_array()[0];
+			} else{
+				return $header[0];
+			}
+		}
+
+		function get_header_id_by_grandchild_id($grd_id){
+			$id = array(array('PARENT_ID' => $grd_id));
+
+			while($id != NULL) {
+				$temp_id = $id;
+				$this->db->select('PARENT_ID');
+				$this->db->from('TRDFORUM');
+				$this->db->where('DETAIL_ID', $id[0]['PARENT_ID']);
+				$id = $this->db->get()->result_array();
+			}
+
+			$this->db->where('FORUM_ID', $temp_id[0]['PARENT_ID']);
+			$query = $this->db->get('TRHFORUM');
+			return $query->result_array()[0]['FORUM_ID'];
+		}
+
+		// function get_children_from_detail($id){
+		// 	$this->db->where('PARENT_ID', $id);
+		// 	$query = $this->db->get('TRDFORUM');
+		// 	$data = array(
+		// 		'data' => $query->result_array(),
+		// 		'num_row' => $query->num_rows()
+		// 	);
+		// 	return $data;
+		// }
 
 		function add_forum($username){
 			$forumid = $this->Sequences_model->concat(2, mdate('%Y-%m-%d %H:%i:%s',now()));

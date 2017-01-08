@@ -39,7 +39,8 @@ $route['booking']                                       = 'C_Booking/view';
 $route['forum/create']                                  = 'C_Forum/create_forum';
 $route['forum/list']                                    = 'C_Forum/forum';
 $route['forum/detail/(:any)']                           = 'C_Forum/detail_forum/$1';
-$route['forum/reply']                                   = 'C_Forum/reply';
+$route['forum/reply/(:any)']                            = 'C_Forum/reply/$1';
+$route['forum/add-reply/(:any)']                        = 'C_Forum/add_reply/$1';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
 
