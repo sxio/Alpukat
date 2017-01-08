@@ -18,11 +18,11 @@
 				<div class="col-sm-3">
 					<!-- <div class="col-sm-10 text-left"> -->
 						<!-- <div class="row"> -->
-		                	<legend>FIND DIRECTLY</legend>
+		                	<legend>Search</legend>
 		                	<div class="row">
 								<div class="col-sm-12">
 		                			<form id="profile_search">
-					                    <input type="text" class="form-control"  placeholder="Find Doctor Directly" id="findDoctor"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
+					                    <input type="text" class="form-control"  placeholder="Search Your Doctor" id="findDoctor"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
 	                				</form>
 								</div>
 							</div>
