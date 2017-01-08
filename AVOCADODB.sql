@@ -212,10 +212,12 @@ CREATE TABLE `MSTPRODUCT` (
 
 LOCK TABLES `MSTPRODUCT` WRITE;
 /*!40000 ALTER TABLE `MSTPRODUCT` DISABLE KEYS */;
-INSERT INTO `MSTPRODUCT` VALUES ('ANTI1','Antibiotic Super',16,603,30000,'<p>This is an Antibiotic</p>','noimage.jpg','2016-12-28 00:00:00','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('Baby1','Himalaya Baby Cream 100ml',18,100,300000,'<p>Himalaya&rsquo;s Baby Cream is specially formulated to protect the little one&#39;s roughen cheeks, &#39;crawler&#39;s knee&#39;, gentle nose and rubbed elbows. This cream protects against irritating humidity and windburn. Its ingredients works together to moisturize the baby&#39;s skin and maintain its natural softness. Uses under doctor&#39;s advice</p>','baby-cream_2.jpg','2016-12-29 15:17:07','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('STET1','Stethoscope White',15,1005,500000,'<p>White Stethoscope is the best</p>','ste1.jpg','2016-12-25 00:00:00','2016-12-29 23:03:58');
-INSERT INTO `MSTPRODUCT` VALUES ('STET2','Stethoscope Black',15,1501,600000,'<p>This is a black stethoscope</p>','Lucifer.jpg','2016-12-26 00:00:00','0000-00-00 00:00:00');
+INSERT INTO `MSTPRODUCT` VALUES ('anti001','Antibiotic 1',16,50,50000,'<p>Anntibiotic 1</p>','antibiotic1.jpg','2017-01-08 14:41:01','2017-01-08 14:55:07');
+INSERT INTO `MSTPRODUCT` VALUES ('baby001','Baby Care 1',18,50,50000,'<p>Baby 1</p>','900.jpg','2017-01-08 14:42:00','2017-01-08 14:55:12');
+INSERT INTO `MSTPRODUCT` VALUES ('eye001','Glasses minus',21,50,300000,'<p>Glasses 1</p>','glasses.jpg','2017-01-08 14:44:32','2017-01-08 14:55:18');
+INSERT INTO `MSTPRODUCT` VALUES ('sport001','TreadMill super',19,50,1000000,'<p>Treadmill 1</p>','treadmill.jpg','2017-01-08 14:47:12','2017-01-08 14:55:23');
+INSERT INTO `MSTPRODUCT` VALUES ('stet001','Stethoscope Blue',15,50,400000,'<p>Stethoscope 1</p>','stet.jpg','2017-01-08 14:48:37','2017-01-08 14:55:26');
+INSERT INTO `MSTPRODUCT` VALUES ('vita001','Vitacimin Yellow',20,50,300000,'<p>Vitacimin 1</p>','vitacimin.jpg','2017-01-08 14:51:28','2017-01-08 14:55:28');
 /*!40000 ALTER TABLE `MSTPRODUCT` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -559,7 +561,6 @@ CREATE TABLE `TRDORDER` (
 
 LOCK TABLES `TRDORDER` WRITE;
 /*!40000 ALTER TABLE `TRDORDER` DISABLE KEYS */;
-INSERT INTO `TRDORDER` VALUES ('sxio','ESB-20170108-005','Baby1',1,300000);
 /*!40000 ALTER TABLE `TRDORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -761,7 +762,6 @@ CREATE TABLE `TRHORDER` (
 
 LOCK TABLES `TRHORDER` WRITE;
 /*!40000 ALTER TABLE `TRHORDER` DISABLE KEYS */;
-INSERT INTO `TRHORDER` VALUES ('ESB-20170108-005','sxio','asd','BCA','123','123','2017-01-08','TIKI',0,'2017-01-07 16:43:02','PENDING');
 /*!40000 ALTER TABLE `TRHORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -830,4 +830,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-08 14:03:48
+-- Dump completed on 2017-01-08 15:08:45

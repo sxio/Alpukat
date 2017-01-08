@@ -15,6 +15,10 @@
 .hide-bullets{
 	margin-left: 0;
 }
+.newest_arrival_foto{
+	width: 245px;
+	height: 245px;
+}
 
 
 /*MEDIA QUERY FOR SMARTPHONE*/
@@ -41,5 +45,5 @@
 	.tableoverflow{
 		overflow-x: auto;
 	}
-	
+
 }

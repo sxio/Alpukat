@@ -98,7 +98,7 @@
 		}
 
 		// for AJAX in restock.js
-		public function GetProdutByCategory(){
+		public function GetProductByCategory(){
 			$id = $this->input->post('catID');
 			$res = $this->Estore_model->get_product_by_category($id);
 			print_r(json_encode($res));
