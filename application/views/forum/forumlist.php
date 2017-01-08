@@ -22,7 +22,7 @@
 								<div class="row">
 									<div class="col-sm-3">
 										<h3>Topic : <?php echo $forum_list['CAT_NAME']; ?></h4>
-										<h4>Title : <?php echo $forum_list['FORUM_TITLE']; ?></h4>
+										<h4><a href="<?php echo base_url('forum/detail/'. $forum_list['FORUM_ID']); ?>">Title : <?php echo $forum_list['FORUM_TITLE']; ?></a></h4>
 									</div>
 									<div class="col-sm-9">
 										<h5 class="pull-right">Posted by : <?php echo $forum_list['USER_ID']; ?> <?php echo $forum_list['USER_DT']; ?></h4>
@@ -39,7 +39,7 @@
 				<?php
 				}
 			?>
-			
+
 		</div>
 	</div>
 </body>

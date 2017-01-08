@@ -25,7 +25,7 @@
 
 			$data['forum_list'] = $this->Forum_model->get_forum(1);
 			$this->load->view('forum/forumlist', $data);
-		}		
+		}
 
 		function create_forum(){
 			if($this->session->userdata('username') == NULL){
@@ -54,15 +54,25 @@
 				redirect('forum/list');
 			}
 		}
-		//detail	
-		function detail_forum($forum_id){
+		//detail
+		function detail_forum($parent_id){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
-			
-			$data['forum_list'] = $this->Forum_model->get_forum_by_id($forum_id);
+
+			$data['forum_header'] = $this->Forum_model->get_forum_by_id($parent_id);
+			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
 			$this->load->view('forum/forumdetail', $data);
+		}
+
+		function reply(){
+			$username = $this->session->userdata('username');
+			$id = $this->input->post('id');
+			$content = $this->input->post('content');
+
+			$res = $this->Forum_model->add_forum_detail($id, $content, $username);
+			print_r(json_encode($res));
 		}
 	}
 ?>

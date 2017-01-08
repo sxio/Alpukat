@@ -48,11 +48,6 @@
 	</div>
 	<script type="text/javascript">
 		CKEDITOR.replace('content');
-
-		document.getElementById('image').onchange = function(event){
-			var img = document.getElementById('preview');
-			img.src = URL.createObjectURL(event.target.files[0]);
-		}
 	</script>
 </body>
 </html>
