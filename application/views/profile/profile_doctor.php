@@ -90,41 +90,82 @@
 						</div>
 					</div>
 					<br>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-info">
-								<div class="panel-heading text-center">
-									<h3>Education &amp; Experience</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-unstyled">
-										<li>Education </li>
-										<li><ul>
-												<?php
-													if($data_doctor['DCT_EDUC'] == NULL){
-														$data_doctor['DCT_EDUC'] = ';;;;;';
-													}
-													$educ = explode(';', $data_doctor['DCT_EDUC']);
-												?>
-												<li>SD : <?php echo $educ[0]; ?></li>
-												<li>SMP : <?php echo $educ[1]; ?></li>
-												<li>SMA : <?php echo $educ[2]; ?></li>
-												<li>S1 : <?php echo $educ[3]; ?></li>
-												<li>S2 : <?php echo $educ[4]; ?></li>
-												<li>DR : <?php echo $educ[5]; ?></li>
-											</ul>
-										</li>
-										<li>Experience : <?php echo $data_doctor['DCT_EXP']; ?></li>
-										<li>Speciality : <?php echo $data_doctor['DCT_SPECIALTY']; ?></li>
-										<li>Certification : <?php echo $data_doctor['DCT_CERTIFICATE']; ?></li>
+					<div class="panel panel-info">
+						<div class="panel-heading text-center">
+							<h3>Education &amp; Experience</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="list-unstyled">
+								<li>Education </li>
+								<li><ul>
+										<?php
+											if($data_doctor['DCT_EDUC'] == NULL){
+												$data_doctor['DCT_EDUC'] = ';;;;;';
+											}
+											$educ = explode(';', $data_doctor['DCT_EDUC']);
+										?>
+										<li>SD : <?php echo $educ[0]; ?></li>
+										<li>SMP : <?php echo $educ[1]; ?></li>
+										<li>SMA : <?php echo $educ[2]; ?></li>
+										<li>S1 : <?php echo $educ[3]; ?></li>
+										<li>S2 : <?php echo $educ[4]; ?></li>
+										<li>DR : <?php echo $educ[5]; ?></li>
 									</ul>
-								</div>
+								</li>
+								<li>Experience : <?php echo $data_doctor['DCT_EXP']; ?></li>
+								<li>Speciality : <?php echo $data_doctor['DCT_SPECIALTY']; ?></li>
+								<li>Certification : <?php echo $data_doctor['DCT_CERTIFICATE']; ?></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<div class="widget-area no-padding blank">
+							<div class="status-upload">
+								<form>
+									<textarea placeholder="Please comments politely" ></textarea>
+									<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+								</form>
+							</div><!-- Status Upload  -->
+						</div><!-- Widget Area -->
+					</div>
+					<br>
+					<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+						<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-10 col-md-10">
+						<div class="panel panel-default">
+							<div class="panel-heading panel-heading-comments">
+								<strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+							</div>
+							<div class="panel-body">
+								Panel content
 							</div>
 						</div>
 					</div>
+
+
+					<!-- <div class="row"> -->
+						<!-- <div class="col-sm-2">
+							<div class="thumbnail">
+								<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+							</div>
+						</div>
+
+						<div class="col-sm-10">
+							<div class="panel panel-default">
+								<div class="panel-heading panel-heading-comments">
+									<strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+								</div>
+								<div class="panel-body">
+									Panel content
+								</div>
+							</div>
+						</div> -->
+					<!-- </div> -->
+				</div>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	</section>
 </body>
 </html>
