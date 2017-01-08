@@ -17,17 +17,20 @@
 				?>
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="chat-panel panel panel-default">
+						<div class="panel panel-info">
 							<div class="panel-heading">
 								<div class="row">
 									<div class="col-sm-3">
-										<h4><?php echo $forum_list['FORUM_CAT']; ?></h4>
-										<h4><?php echo $forum_list['FORUM_TITLE']; ?></h4>
-									</div>	
+										<h3>Topic : <?php echo $forum_list['CAT_NAME']; ?></h4>
+										<h4>Title : <?php echo $forum_list['FORUM_TITLE']; ?></h4>
+									</div>
+									<div class="col-sm-9">
+										<h5 class="pull-right">Posted by : <?php echo $forum_list['USER_ID']; ?> <?php echo $forum_list['USER_DT']; ?></h4>
+									</div>
 								</div>
 							</div>
 							<div class="panel-body">
-								<h4><?php echo $forum_list['FORUM_CONTENT'];?></h4>
+								<p><?php echo $forum_list['FORUM_CONTENT'];?></p>
 							</div>
 						</div>
 					</div>

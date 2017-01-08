@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.13-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: AVOCADODB
 -- ------------------------------------------------------
--- Server version	10.1.16-MariaDB
+-- Server version	10.1.13-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -212,10 +212,12 @@ CREATE TABLE `MSTPRODUCT` (
 
 LOCK TABLES `MSTPRODUCT` WRITE;
 /*!40000 ALTER TABLE `MSTPRODUCT` DISABLE KEYS */;
-INSERT INTO `MSTPRODUCT` VALUES ('ANTI1','Antibiotic Super',16,603,30000,'<p>This is an Antibiotic</p>','noimage.jpg','2016-12-28 00:00:00','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('Baby1','Himalaya Baby Cream 100ml',18,100,300000,'<p>Himalaya&rsquo;s Baby Cream is specially formulated to protect the little one&#39;s roughen cheeks, &#39;crawler&#39;s knee&#39;, gentle nose and rubbed elbows. This cream protects against irritating humidity and windburn. Its ingredients works together to moisturize the baby&#39;s skin and maintain its natural softness. Uses under doctor&#39;s advice</p>','baby-cream_2.jpg','2016-12-29 15:17:07','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('STET1','Stethoscope White',15,1005,500000,'<p>White Stethoscope is the best</p>','ste1.jpg','2016-12-25 00:00:00','2016-12-29 23:03:58');
-INSERT INTO `MSTPRODUCT` VALUES ('STET2','Stethoscope Black',15,1501,600000,'<p>This is a black stethoscope</p>','Lucifer.jpg','2016-12-26 00:00:00','0000-00-00 00:00:00');
+INSERT INTO `MSTPRODUCT` VALUES ('anti001','Antibiotic 1',16,50,50000,'<p>Anntibiotic 1</p>','antibiotic1.jpg','2017-01-08 14:41:01','2017-01-08 14:55:07');
+INSERT INTO `MSTPRODUCT` VALUES ('baby001','Baby Care 1',18,50,50000,'<p>Baby 1</p>','900.jpg','2017-01-08 14:42:00','2017-01-08 14:55:12');
+INSERT INTO `MSTPRODUCT` VALUES ('eye001','Glasses minus',21,50,300000,'<p>Glasses 1</p>','glasses.jpg','2017-01-08 14:44:32','2017-01-08 14:55:18');
+INSERT INTO `MSTPRODUCT` VALUES ('sport001','TreadMill super',19,50,1000000,'<p>Treadmill 1</p>','treadmill.jpg','2017-01-08 14:47:12','2017-01-08 14:55:23');
+INSERT INTO `MSTPRODUCT` VALUES ('stet001','Stethoscope Blue',15,50,400000,'<p>Stethoscope 1</p>','stet.jpg','2017-01-08 14:48:37','2017-01-08 14:55:26');
+INSERT INTO `MSTPRODUCT` VALUES ('vita001','Vitacimin Yellow',20,50,300000,'<p>Vitacimin 1</p>','vitacimin.jpg','2017-01-08 14:51:28','2017-01-08 14:55:28');
 /*!40000 ALTER TABLE `MSTPRODUCT` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,7 +269,7 @@ CREATE TABLE `MSTSEQUENCES` (
 LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
-INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',8);
+INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',12);
 INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',1);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -305,7 +307,7 @@ INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf9
 INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','',0,2,1);
 INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','',0,0,1);
 INSERT INTO `MSTUSER` VALUES ('sxio','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','Jalan PROF HM YAMIN SH No 133','',0,1,1);
-INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',0,2,1);
+INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen Huang','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',0,2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -559,7 +561,6 @@ CREATE TABLE `TRDORDER` (
 
 LOCK TABLES `TRDORDER` WRITE;
 /*!40000 ALTER TABLE `TRDORDER` DISABLE KEYS */;
-INSERT INTO `TRDORDER` VALUES ('sxio','ESB-20170108-005','Baby1',1,300000);
 /*!40000 ALTER TABLE `TRDORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -701,6 +702,10 @@ INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-004','213123',23,'12312312','sxioo'
 INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-005','131232',23,'123123123','sxioo','2017-01-07 18:19:34');
 INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-006','12312321',23,'13123123','sxioo','2017-01-07 18:20:54');
 INSERT INTO `TRHFORUM` VALUES ('FRM-20170107-007','123123213',23,'123123123123','sxioo','2017-01-07 18:21:46');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-008','123123',23,'<p>1231231123</p>','sxioo','2017-01-08 15:57:13');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-009','123123',23,'<p>1231231123</p>','sxioo','2017-01-08 15:57:28');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-010','123123123',23,'<p>aphen <strong>siao</strong></p>','sxioo','2017-01-08 15:57:42');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-011','123123',23,'<p>123123123</p>','sxioo','2017-01-08 16:05:00');
 /*!40000 ALTER TABLE `TRHFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -761,7 +766,6 @@ CREATE TABLE `TRHORDER` (
 
 LOCK TABLES `TRHORDER` WRITE;
 /*!40000 ALTER TABLE `TRHORDER` DISABLE KEYS */;
-INSERT INTO `TRHORDER` VALUES ('ESB-20170108-005','sxio','asd','BCA','123','123','2017-01-08','TIKI',0,'2017-01-07 16:43:02','PENDING');
 /*!40000 ALTER TABLE `TRHORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -830,4 +834,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-08 14:03:48
+-- Dump completed on 2017-01-08 16:09:13

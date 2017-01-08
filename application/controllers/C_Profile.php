@@ -20,13 +20,22 @@
 			$this->load->view('profile/profile_doctor', $data);
 		}
 
+		public function edit_profile_user($userid){
+
+
+
+
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$this->load->view('profile/edit_profile_user', $data);
+		}
+
 		public function edit_profile_doctor($userid){
 			if($userid != $this->session->userdata('username') || $this->session->userdata('user_level') != 2){
 				show_404();
 			}
-			$data['header'] = $this->load->view('templates/header','',TRUE);
-			$data['nav']    = $this->load->view('templates/nav','',TRUE);
-			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			if($this->input->post('btn_edit')){
 				if(!empty($_FILES['_photo'])){
@@ -57,15 +66,21 @@
 			}
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
 
-			$this->load->view('profile/edit_profile_doctor', $data);
-		}
-
-		public function dashboard(){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
-			$data['estore'] = $this->Estore_model->get_order_by_username($this->session->userdata('username'));
+			$this->load->view('profile/edit_profile_doctor', $data);
+		}
+
+		public function dashboard(){
+			$userid = $this->session->userdata('username');
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$data['user']   = $this->Profile_model->get_data_user($userid);
+			$data['estore'] = $this->Estore_model->get_order_by_username($userid);
 			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
 
 			$this->load->view('profile/dashboard', $data);

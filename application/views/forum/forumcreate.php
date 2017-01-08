@@ -7,6 +7,7 @@
 	<?php echo link_tag('assets/css/forum/forum.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+	<script src="//cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -33,13 +34,25 @@
 					<?php echo form_close(); ?>
 				</div>
                 <div class="col-sm-4">
-                    <?php if(isset($form_error) && $form_error != null) { ?>
-                        <div class="alert alert-danger text-center"><?php echo $form_error; ?></div>
-                    <?php } ?>
-                    <?php if(isset($msg) && $msg != null) echo $msg; ?>
-                </div>
+	                <?php
+	                	if($this->session->flashdata('msg') != NULL){
+            		?>
+                		<div class="alert alert-danger">
+                			<?php echo $this->session->flashdata('msg');?>
+                		</div>
+            		<?php
+	                } ?>
+	            </div>
             </div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		CKEDITOR.replace('content');
+
+		document.getElementById('image').onchange = function(event){
+			var img = document.getElementById('preview');
+			img.src = URL.createObjectURL(event.target.files[0]);
+		}
+	</script>
 </body>
 </html>

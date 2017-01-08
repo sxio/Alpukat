@@ -24,37 +24,67 @@
 									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 										<ul class="list-unstyled">
 											<li>
+<<<<<<< HEAD
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="username">Username </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="username">: Sxioo</p>
+=======
+												<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="username">Username </label>
+												<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+													<p name="username">: <?php echo $user['USER_ID']; ?></p>
+>>>>>>> 7bf89d779ec7f94c9946057a1af38cef41a8e480
 												<br>
 												</div>
 											</li>
 											<li>
+<<<<<<< HEAD
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="userbirth">Birth </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="userbirth">: 01-01-01</p>
+=======
+												<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="userbirth">Birth </label>
+												<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+													<p name="userbirth">: <?php echo nice_date($user['USER_BIRTH'], 'd F Y'); ?></p>
+>>>>>>> 7bf89d779ec7f94c9946057a1af38cef41a8e480
 												<br>
 												</div>
 											</li>
 											<li>
+<<<<<<< HEAD
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="useremail">Email </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="useremail">: Stephen_huang@yahoo.com</p>
+=======
+												<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="useremail">Email </label>
+												<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+													<p name="useremail">: <?php echo $user['EMAIL']; ?></p>
+>>>>>>> 7bf89d779ec7f94c9946057a1af38cef41a8e480
 												<br>
 												</div>
 											</li>
 											<li>
+<<<<<<< HEAD
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="userphone">Phone Number </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="userphone">: 08123456789</p>
+=======
+												<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="userphone">Phone Number </label>
+												<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+													<p name="userphone">: <?php echo $user['HANDPHONE']; ?></p>
+>>>>>>> 7bf89d779ec7f94c9946057a1af38cef41a8e480
 												<br>
 												</div>
 											</li>
 											<li>
+<<<<<<< HEAD
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="useraddr">User Address </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="useraddr">: Jalan Prof.H.M.Yamin No.254</p>
+=======
+												<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="useraddr">User Address </label>
+												<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+													<p name="useraddr">: <?php echo $user['USER_ADDRESS'] ?></p>
+>>>>>>> 7bf89d779ec7f94c9946057a1af38cef41a8e480
 												<br>
 												</div>
 											</li>
@@ -62,7 +92,7 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary profile-user-edit" type="button" name="button"><i class="fa fa-pencil fa-fw"></i> Edit </button>
+							<a href="<?php echo base_url('profile/edit/'. $user['USER_ID']); ?>" class="btn btn-primary profile-user-edit"><i class="fa fa-pencil fa-fw"></i> Edit </a>
 						</div>
 					</div>
 				</div>

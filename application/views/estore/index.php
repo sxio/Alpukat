@@ -157,22 +157,22 @@
 			<div class="container">
 				<h2 class="tittle">New Arrivals</h2>
 				<div class="arrivals-grids">
-					<?php for($i = 0; $i < 4; $i++) { ?>
+					<?php foreach($newest_arrival as $item) { ?>
 					<div class="col-md-3 arrival-grid simpleCart_shelfItem">
 						<div class="grid-arr">
 							<div class="grid-arrival">
 								<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal">
 									<div class="grid-img">
-										<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive"  alt="">
+										<img src="<?php echo base_url('assets/img/estore-img/'. $item['PROD_IMG']); ?>" class="img-responsive newest_arrival_foto" alt="">
 									</div>
 								</a>
 							</div>
 
 							<div class="desc">
-								<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+								<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo $item['PROD_NAME']; ?></a></h6>
+								<!-- <span class="size">XL / XXL / S </span> -->
+								<p ><em class="item_price">RP <?php echo number_format($item['PROD_PRICE'],0,',','.'); ?></em></p>
+								<!-- <button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button> -->
 							</div>
 						</div>
 					</div>
@@ -203,22 +203,22 @@
 				<div class="slider">
 					<div class="callbacks_container">
 						<div class="caption">
-							<?php for($i = 0; $i < 4; $i++) { ?>
+							<?php foreach($newest_arrival as $item) { ?>
 							<div class="col-md-3 cap-left simpleCart_shelfItem">
 								<div class="grid-arr">
 									<div class="grid-arrival">
-										<a href="#">
+										<a href="" class="new-gri" data-toggle="modal" data-target="#myModal">
 											<div class="grid-img">
-												<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt="">
+												<img src="<?php echo base_url('assets/img/estore-img/'. $item['PROD_IMG']); ?>" class="img-responsive newest_arrival_foto" alt="">
 											</div>
 										</a>
 									</div>
 
 									<div class="desc">
-										<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-										<span class="size">XL / XXL / S </span>
-										<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
-										<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+										<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo $item['PROD_NAME']; ?></a></h6>
+										<!-- <span class="size">XL / XXL / S </span> -->
+										<p><em class="item_price">RP <?php echo number_format($item['PROD_PRICE'],0,',','.'); ?></em></p>
+										<!-- <button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button> -->
 									</div>
 								</div>
 							</div>

@@ -36,18 +36,16 @@
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<?php
-									$profile_path = '';
-									$edit_path = '';
 									if($userlevel == 2) {
 										$profile_path = base_url('profile/doctor/'. $userid);
 										$edit_path = base_url('profile/doctor/edit/'. $userid);
-									} else {
-										$profile_path = base_url('');
-										$edit_path = base_url('');
-									}
 								?>
-								<li><a href="<?php echo $profile_path; ?>" class="inline"><i class="fa fa-user fa-fw"></i> Profile</a><a href="<?php echo $edit_path; ?>" class="pull-right" id="edit_gear"><i class="fa fa-gear"></i></a></li>
-								<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
+									<li><a href="<?php echo $profile_path; ?>" class="inline"><i class="fa fa-user fa-fw"></i> Profile</a><a href="<?php echo $edit_path; ?>" class="pull-right" id="edit_gear"><i class="fa fa-gear"></i></a></li>
+								<?php
+									} elseif($userlevel == 1) {
+								?>
+									<li><a href="<?php echo base_url('profile/dashboard'); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
+								<?php } ?>
 								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
 								<li class="divider"></li>
 								<li><a href="<?php echo base_url('logout/log_out');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>

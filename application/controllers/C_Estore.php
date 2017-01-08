@@ -18,6 +18,7 @@
 			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
 
 			$data['carousel_prod'] = $this->Estore_model->get_newest_product(0,0);
+			$data['newest_arrival'] = $this->Estore_model->get_newest_product(4,0);
 
 			$this->load->view('estore/'. $page, $data);
 		}
