@@ -15,6 +15,7 @@ $route['forgotPassword/requestReset']                   = 'C_ForgotPassword/requ
 $route['profile/dashboard']                             = 'C_Profile/dashboard';
 $route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_estore/$1';
 $route['profile/reminder']                              = 'C_Profile/reminder';
+$route['profile/payment-history']                       = 'C_Profile/payment_history';
 $route['profile/edit/(:any)']                           = 'C_Profile/edit_profile_user/$1';
 $route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
