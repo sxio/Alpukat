@@ -29,7 +29,7 @@
 								<h3><?php echo $forum_parent['FORUM_CONTENT']; ?></h3>
 							</div>
 							<div class="panel-body">
-								<textarea name="f_content"></textarea>
+								<textarea name="f_content" required></textarea>
 							</div>
 							<div class="panel-footer clearfix">
 								<button class="btn btn-success pull-right" name="btnSubmit">Submit</button>

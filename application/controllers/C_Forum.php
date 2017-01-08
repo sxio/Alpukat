@@ -63,15 +63,6 @@
 			$data['forum_header'] = $this->Forum_model->get_forum_header_by_id($parent_id)[0];
 			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
 
-			// foreach($data['forum_detail'] as $subdetail){
-			// 	$data['forum_detail'][$subdetail['DETAIL_ID']] = $this->Forum_model->get_children_from_detail($subdetail['DETAIL_ID']);
-			// }
-			// foreach ($data['forum_detail'] as $key => $value) {
-			// 	$data['forum_detail'][$key]['sub'] = $this->Forum_model->get_children_from_detail($value['DETAIL_ID']);
-			// }
-			// print_r($data['forum_detail']);
-			// return;
-
 			$this->load->view('forum/forumdetail', $data);
 		}
 
