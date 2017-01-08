@@ -24,14 +24,14 @@
 									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 										<ul class="list-unstyled">
 											<li>
-												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="username">Username </label>
+												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="username">Name </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="username">: <?php echo $user['USER_ID']; ?></p>
 												<br>
 												</div>
 											</li>
 											<li>
-												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="userbirth">Birth </label>
+												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="userbirth">Date of Birth </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
 													<p name="userbirth">: <?php echo nice_date($user['USER_BIRTH'], 'd F Y'); ?></p>
 												<br>

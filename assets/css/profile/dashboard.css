@@ -14,9 +14,6 @@
 	padding-right: 15px;
 	padding-bottom: 15px;
 }
-.tableoverflow{
-	overflow-x: scroll;
-}
 
 #profile-user img{
 	width: 100%;
@@ -49,5 +46,8 @@
 	#profile-user .panel-body li label, #profile-user .panel-body .col-xs-12{
 		padding: 0;
 		font-size: 3.5vw;
+	}
+	.tableoverflow{
+		overflow-x: scroll;
 	}
 }

@@ -50,14 +50,14 @@
 								<textarea class="form-control" rows="4" name="docaddr" placeholder="Enter Your Address" required><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
 							<br>
 							</div>
-                            <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Handphone </label>
+                            <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Phone Number </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                                 <input class="form-control" type="text" name="docHP" value="<?php echo $data_doctor['HANDPHONE']; ?>">
                             <br>
                             </div>
                             <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Email </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="text" name="docemail" value="<?php echo $data_doctor['EMAIL']; ?>">
+                                <input class="form-control" type="email" name="docemail" value="<?php echo $data_doctor['EMAIL']; ?>">
                             </div>
 							<!-- </div> -->
 						</div>

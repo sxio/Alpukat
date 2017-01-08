@@ -19,8 +19,17 @@
 	width: 245px;
 	height: 245px;
 }
-
-
+.modal-dialog{
+	top: 10%;
+	width: 80%;
+}
+.modal-content h3.review{
+	float: left;
+	font-weight: bolder;
+}
+.my-cart-b{
+	padding: 10px 20px 10px 20px;
+}
 /*MEDIA QUERY FOR SMARTPHONE*/
 @media screen and (max-width: 500px){
 	.nav_2{
