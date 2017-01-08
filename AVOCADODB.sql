@@ -70,29 +70,6 @@ INSERT INTO `MSDCATEGORY` VALUES (26,1,'Mati suri','','');
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSDGRPMENU`
---
-
-DROP TABLE IF EXISTS `MSDGRPMENU`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSDGRPMENU` (
-  `GRP_MENU_ID` varchar(10) NOT NULL,
-  `GRP_MENU_LIST` varchar(30) NOT NULL,
-  `GRP_MENU_DESC` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSDGRPMENU`
---
-
-LOCK TABLES `MSDGRPMENU` WRITE;
-/*!40000 ALTER TABLE `MSDGRPMENU` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSDGRPMENU` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSHCATEGORY`
 --
 
@@ -154,55 +131,6 @@ INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn','bed
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSHGRPMENU`
---
-
-DROP TABLE IF EXISTS `MSHGRPMENU`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSHGRPMENU` (
-  `GRP_MENU_ID` varchar(10) NOT NULL,
-  `GRP_MENU_NAME` varchar(30) NOT NULL,
-  PRIMARY KEY (`GRP_MENU_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSHGRPMENU`
---
-
-LOCK TABLES `MSHGRPMENU` WRITE;
-/*!40000 ALTER TABLE `MSHGRPMENU` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSHGRPMENU` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSHPACIENT`
---
-
-DROP TABLE IF EXISTS `MSHPACIENT`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSHPACIENT` (
-  `PCT_ID` varchar(10) NOT NULL,
-  `PCT_NAME` varchar(30) NOT NULL,
-  `PCT_ADDR` varchar(50) NOT NULL,
-  `PCT_EMAIL` varchar(15) NOT NULL,
-  `USER_ID` varchar(10) NOT NULL,
-  PRIMARY KEY (`PCT_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSHPACIENT`
---
-
-LOCK TABLES `MSHPACIENT` WRITE;
-/*!40000 ALTER TABLE `MSHPACIENT` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSHPACIENT` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSTCITY`
 --
 
@@ -258,58 +186,6 @@ INSERT INTO `MSTCOMMENT` VALUES (6,'ossas@ossas.com','This is Ossas','Uvuvwevwev
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSTCUSTOMER`
---
-
-DROP TABLE IF EXISTS `MSTCUSTOMER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTCUSTOMER` (
-  `CUST_ID` varchar(10) NOT NULL,
-  `CUST_NAME` varchar(30) NOT NULL,
-  `CUSTOMER_JOIN_DT` datetime NOT NULL,
-  `EMAIL` varchar(15) NOT NULL,
-  `CUST_ADDR` varchar(50) NOT NULL,
-  `CUST_RCV_ADDR` varchar(50) NOT NULL,
-  `CUST_NO_REK` int(20) NOT NULL,
-  `USER_ID` varchar(10) NOT NULL,
-  PRIMARY KEY (`CUST_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTCUSTOMER`
---
-
-LOCK TABLES `MSTCUSTOMER` WRITE;
-/*!40000 ALTER TABLE `MSTCUSTOMER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTCUSTOMER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTGENDER`
---
-
-DROP TABLE IF EXISTS `MSTGENDER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTGENDER` (
-  `GEND_ID` varchar(10) NOT NULL,
-  `GEND_DESC` varchar(30) NOT NULL,
-  PRIMARY KEY (`GEND_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTGENDER`
---
-
-LOCK TABLES `MSTGENDER` WRITE;
-/*!40000 ALTER TABLE `MSTGENDER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTGENDER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSTPRODUCT`
 --
 
@@ -341,28 +217,6 @@ INSERT INTO `MSTPRODUCT` VALUES ('Baby1','Himalaya Baby Cream 100ml',18,100,3000
 INSERT INTO `MSTPRODUCT` VALUES ('STET1','Stethoscope White',15,1005,500000,'<p>White Stethoscope is the best</p>','ste1.jpg','2016-12-25 00:00:00','2016-12-29 23:03:58');
 INSERT INTO `MSTPRODUCT` VALUES ('STET2','Stethoscope Black',15,1501,600000,'<p>This is a black stethoscope</p>','Lucifer.jpg','2016-12-26 00:00:00','0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `MSTPRODUCT` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTRELIGION`
---
-
-DROP TABLE IF EXISTS `MSTRELIGION`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTRELIGION` (
-  `RLG_ID` varchar(10) NOT NULL,
-  `RLG_DESC` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTRELIGION`
---
-
-LOCK TABLES `MSTRELIGION` WRITE;
-/*!40000 ALTER TABLE `MSTRELIGION` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTRELIGION` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -416,82 +270,6 @@ INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
 INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',8);
 INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',1);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTSERVICE`
---
-
-DROP TABLE IF EXISTS `MSTSERVICE`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTSERVICE` (
-  `SERV_ID` varchar(10) NOT NULL,
-  `SERV_DESC` varchar(30) NOT NULL,
-  `PRICE` int(11) NOT NULL,
-  PRIMARY KEY (`SERV_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTSERVICE`
---
-
-LOCK TABLES `MSTSERVICE` WRITE;
-/*!40000 ALTER TABLE `MSTSERVICE` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTSERVICE` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTSUPPLIER`
---
-
-DROP TABLE IF EXISTS `MSTSUPPLIER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTSUPPLIER` (
-  `SUPP_ID` varchar(10) NOT NULL,
-  `SUPP_NAME` varchar(30) NOT NULL,
-  `SUPP_JOIN_DT` datetime NOT NULL,
-  `EMAIL` varchar(15) NOT NULL,
-  `SUPP_ADDR` varchar(50) NOT NULL,
-  `SUPP_DLV_ADDR` varchar(50) NOT NULL,
-  `SUPP_NO_REK` int(20) NOT NULL,
-  `USER_NAME` varchar(10) NOT NULL,
-  PRIMARY KEY (`SUPP_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTSUPPLIER`
---
-
-LOCK TABLES `MSTSUPPLIER` WRITE;
-/*!40000 ALTER TABLE `MSTSUPPLIER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTSUPPLIER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTTYPESCORING`
---
-
-DROP TABLE IF EXISTS `MSTTYPESCORING`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTTYPESCORING` (
-  `TYPESCORE_ID` varchar(10) NOT NULL,
-  `TYPESCORE_DESC` int(11) NOT NULL,
-  PRIMARY KEY (`TYPESCORE_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTTYPESCORING`
---
-
-LOCK TABLES `MSTTYPESCORING` WRITE;
-/*!40000 ALTER TABLE `MSTTYPESCORING` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTTYPESCORING` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1052,4 +830,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-07 23:40:27
+-- Dump completed on 2017-01-08 14:03:48

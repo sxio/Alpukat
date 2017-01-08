@@ -21,8 +21,8 @@
 		                	<legend>Search</legend>
 		                	<div class="row">
 								<div class="col-sm-12">
-		                			<form id="profile_search">
-					                    <input type="text" class="form-control"  placeholder="Search Your Doctor" id="findDoctor"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
+		                			<form action="list" id="profile_search" class="form-inline" method="get">
+					                    <input type="text" class="form-control" size="50" name="src" placeholder="Search Your Doctor" id="findDoctor" value="<?php echo $this->input->get('src'); ?>"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
 	                				</form>
 								</div>
 							</div>
@@ -122,7 +122,13 @@
 							<div class="col-sm-2 text-left">
 								<div class="row">
 						        	<div class="profile_image">
-									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $dct['USER_IMG']); ?>">
+						        	<?php
+					        			$img = $dct['USER_IMG'];
+						        		if($img == NULL){
+						        			$img = 'noimage.png';
+						        		}
+						        	?>
+									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $img); ?>">
 									</div>
 								</div>
 								<div class="row text-center">
@@ -132,7 +138,7 @@
 								</div>
 							</div>
 							<div class="col-sm-4 profile_singkat">
-								<h2 class="name"><a href="#"><?php echo $dct['USER_NAME']; ?></a></h2>
+								<h2 class="name"><a href="<?php echo base_url('profile/doctor/'. $dct['USER_ID']); ?>"><?php echo $dct['USER_NAME']; ?></a></h2>
 								<h3 class="specialist">Specialist : <?php echo $dct['DCT_SPECIALTY']; ?></h3>
 								<h4 class="experience">Experience : <?php echo $dct['DCT_EXP']; ?></h4>
 								<div class="hargadanwaktu">

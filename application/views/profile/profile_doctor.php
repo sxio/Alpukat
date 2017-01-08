@@ -32,7 +32,7 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled info text-left">
-								<li>ID : <?php echo $data_doctor['DCT_ID']; ?></li>
+								<li>ID : <?php echo $data_doctor['USER_ID']; ?></li>
 								<li>Name : <?php echo $data_doctor['USER_NAME']; ?></li>
 								<li>Date of Birth : <?php echo nice_date($data_doctor['USER_BIRTH'], 'd F Y'); ?></li>
 								<li>Address : <?php echo $data_doctor['USER_ADDRESS']; ?></li>
@@ -100,12 +100,18 @@
 									<ul class="list-unstyled">
 										<li>Education </li>
 										<li><ul>
-												<li>SD : <?php echo explode(';', $data_doctor['DCT_EDUC'])[0]; ?></li>
-												<li>SMP : <?php echo explode(';', $data_doctor['DCT_EDUC'])[1]; ?></li>
-												<li>SMA : <?php echo explode(';', $data_doctor['DCT_EDUC'])[2]; ?></li>
-												<li>S1 : <?php echo explode(';', $data_doctor['DCT_EDUC'])[3]; ?></li>
-												<li>S2 : <?php echo explode(';', $data_doctor['DCT_EDUC'])[4]; ?></li>
-												<li>DR : <?php echo explode(';', $data_doctor['DCT_EDUC'])[5]; ?></li>
+												<?php
+													if($data_doctor['DCT_EDUC'] == NULL){
+														$data_doctor['DCT_EDUC'] = ';;;;;';
+													}
+													$educ = explode(';', $data_doctor['DCT_EDUC']);
+												?>
+												<li>SD : <?php echo $educ[0]; ?></li>
+												<li>SMP : <?php echo $educ[1]; ?></li>
+												<li>SMA : <?php echo $educ[2]; ?></li>
+												<li>S1 : <?php echo $educ[3]; ?></li>
+												<li>S2 : <?php echo $educ[4]; ?></li>
+												<li>DR : <?php echo $educ[5]; ?></li>
 											</ul>
 										</li>
 										<li>Experience : <?php echo $data_doctor['DCT_EXP']; ?></li>
