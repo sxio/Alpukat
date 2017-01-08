@@ -15,6 +15,7 @@ $route['forgotPassword/requestReset']                   = 'C_ForgotPassword/requ
 $route['profile/dashboard']                             = 'C_Profile/dashboard';
 $route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_estore/$1';
 $route['profile/reminder']                              = 'C_Profile/reminder';
+$route['profile/edit/(:any)']                           = 'C_Profile/edit_profile_user/$1';
 $route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
 
@@ -35,7 +36,7 @@ $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 $route['booking']                                       = 'C_Booking/view';
 
 $route['forum/createforum']                             = 'C_Forum/create_forum';
-$route['forum/forumlist']                            	= 'C_Forum/forum';
+$route['forum/forumlist']                               = 'C_Forum/forum';
 $route['forum/detail-forum']                            = 'C_Forum/detail_forum';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
