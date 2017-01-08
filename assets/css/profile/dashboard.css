@@ -17,3 +17,8 @@
 .tableoverflow{
 	overflow-x: scroll;
 }
+@media screen and (max-width: 500px){
+	.panel-primary, .panel-default{
+		margin-bottom: 20px;
+	}
+}
