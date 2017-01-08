@@ -51,9 +51,11 @@
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
-
+			
+		 	$data['category_list'] = $this->Forum_model->get_category();
 			if($this->form_validation->run() == FALSE){
-				$data['form_error'] = validation_errors();
+				$this->session->set_flashdata('msg',validation_errors());
+				$this->load->view('forum/forumcreate',$data);
 			} else{
 				// insert to database
 			 	$res = $this->Forum_model->add_forum($username);
@@ -62,10 +64,10 @@
 			 	} else{
 					$data['msg'] = '<div class="alert alert-success">'. $res['message'] .'</div>';
 			 	}
+				redirect('forum/forumlist');
 			}
 
-			$data['category_list'] = $this->Forum_model->get_category();
-			redirect('forum/forumlist');
+			
 		}
 	}
 ?>
