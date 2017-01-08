@@ -36,9 +36,9 @@ $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
 $route['booking']                                       = 'C_Booking/view';
 
-$route['forum/createforum']                             = 'C_Forum/create_forum';
-$route['forum/forumlist']                               = 'C_Forum/forum';
-$route['forum/detail-forum']                            = 'C_Forum/detail_forum';
+$route['forum/create']                                  = 'C_Forum/create_forum';
+$route['forum/list']                                    = 'C_Forum/forum';
+$route['forum/detail/(:any)']                           = 'C_Forum/detail_forum/$1';
 $route['forum/(:any)']                                  = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
 
