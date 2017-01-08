@@ -1,1 +1,29 @@
-/*css*/
+@import url('../nav.css');
+.panel{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+ul.list-unstyled{
+    margin-bottom: 50px;
+}
+li.form-group{
+    padding: 20px;
+}
+.btn-primary{
+    padding: 10px 30px;
+    float: right;
+    margin-left: 20px;
+}
+input.input-img{
+    border: none;
+}
+.foto{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#_photo{
+	display: none;
+}
