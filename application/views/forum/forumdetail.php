@@ -36,19 +36,25 @@
 						</div>
 						<div class="panel-footer">
 							<?php
-								foreach($forum_detail as $fd):
+								function print_tree($forum_detail){
+									foreach($forum_detail as $key => $value):
+										// if(is_array($key)){
+										// 	print_tree($value);
+										// }
 							?>
 								<blockquote>
-									<h5 class="pull-right"><?php echo $fd['USER_DT']; ?> <?php echo $fd['USER_ID']; ?></h5>
-									<p><?php echo $fd['FORUM_CONTENT']; ?></p>
+									<h5 class="pull-right"><?php echo $value['USER_DT']; ?> <?php echo $value['USER_ID']; ?></h5>
+									<p><?php echo $value['FORUM_CONTENT']; ?></p>
 
 									<div class="btn-wrapper">
-										<a href="<?php echo base_url('forum/reply/'. $fd['DETAIL_ID']); ?>" class="btn btn-warning pull-right btn-reply">Reply</a>
+										<a href="<?php echo base_url('forum/reply/'. $value['DETAIL_ID']); ?>" class="btn btn-warning pull-right btn-reply">Reply</a>
 										<div class="clearfix"></div>
 									</div>
 								</blockquote>
 							<?php
-								endforeach;
+									endforeach;
+								}
+								print_tree($forum_detail);
 							?>
 						</div>
 

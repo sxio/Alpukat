@@ -23,7 +23,7 @@
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
-			$data['forum_list'] = $this->Forum_model->get_forum(1);
+			$data['forum_list'] = $this->Forum_model->get_forum_header();
 			$this->load->view('forum/forumlist', $data);
 		}
 
@@ -63,10 +63,16 @@
 			$data['forum_header'] = $this->Forum_model->get_forum_header_by_id($parent_id)[0];
 			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
 
+			// var_dump($data['forum_detail']);
+			// print_r($data['forum_detail']);
+			// return;
 			$this->load->view('forum/forumdetail', $data);
 		}
 
 		function reply($parent_id){
+			if($this->session->userdata('username') == NULL){
+				redirect('user');
+			}
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
