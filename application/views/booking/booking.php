@@ -55,7 +55,7 @@
 										<input type="text" class="form-control" id="TotalAmount">
 									</div>
 									<div class="col-sm-1">
-										<button type="submit" class="btn btn-primary btnAdd">Add</button>
+										<button id="addItem" type="submit" class="btn btn-primary" >Add</button>
 									</div>
 								</div>
 							</div>
@@ -70,29 +70,8 @@
 										<th class="col-sm-1">Nav</th>
 										<th></th>
 									</tr>
-									<tr>
-										<td class="col-sm-2">John</td>
-										<td class="col-sm-3">Doe</td>
-										<td class="col-sm-2">1</td>
-										<td class="col-sm-3">2000000</td>
-										<th class="col-sm-1"><button type="submit" class="btn btn-success btnEdit">Edit</button></th>
-										<th class="col-sm-1"><button type="submit" class="btn btn-danger btnDelete">Delete</button></th>
-									</tr>
-									<tr>
-										<td class="col-sm-2">Mary</td>
-										<td class="col-sm-3">Moe</td>
-										<td class="col-sm-2">3</td>
-										<td class="col-sm-3">35000000</td>
-										<th class="col-sm-1"><button type="submit" class="btn btn-success btnEdit">Edit</button></th>
-										<th class="col-sm-1"><button type="submit" class="btn btn-danger btnDelete">Delete</button></th>
-									</tr>
-									<tr>
-										<td class="col-sm-2">July</td>
-										<td class="col-sm-3">Dooley</td>
-										<td class="col-sm-2">4</td>
-										<td class="col-sm-3">400000000</td>
-										<th class="col-sm-1"><button type="submit" class="btn btn-success btnEdit">Edit</button></th>
-										<th class="col-sm-1"><button type="submit" class="btn btn-danger btnDelete">Delete</button></th>
+									<tr id="DetailBooking">
+										
 									</tr>
 								</table>
 							</div>
@@ -141,5 +120,20 @@
 	<!-- c/ #booking -->
 
 	<?php echo $chat; ?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#addItem").click(function(){
+				
+			})
+		});
+		// function addRow(){
+		// 	 var newDiv = document.createElement("td");
+		// 	 var newContent = document.createTextNode("Doctor DoctorName");
+		// 	 var content = document.getElementById("DetailBooking");
+		// 	 var DoctorsName = document.getElementById("DoctorsName");
+		// 	 newDiv.appendChild(DoctorsName);
+		// 	 content.appendChild(newDiv);
+		// }
+	</script>
 </body>
 </html>
