@@ -14,6 +14,8 @@
 				'FORUM_TITLE'=> $this->input->post('title'),
 				'FORUM_CAT' => $this->input->post('category'),
 				'FORUM_CONTENT' => $this->input->post('content'),
+				'FORUM_LAST_POST' => $forumid,
+				'REPLY_NUM' => 0,
 				'USER_ID' => $username,
 				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
 			);
@@ -34,6 +36,17 @@
 			);
 			$this->db->insert('TRDFORUM',$data);
 			$this->Sequences_model->update_seq(3);
+
+
+			$header_id = $this->get_id_header_by_nested_child_id($detailid);
+			$num = $this->db->get_where('TRHFORUM', array('FORUM_ID' => $header_id))->result_array()[0]['REPLY_NUM'];
+
+			$dataUpdate = array(
+				'FORUM_LAST_POST' => $detailid,
+				'REPLY_NUM' => $num+1
+			);
+			$this->db->where('FORUM_ID', $header_id);
+			$this->db->update('TRHFORUM', $dataUpdate);
 			return $this->db->error();
 		}
 
@@ -69,6 +82,15 @@
 			return $query->result_array();
 		}
 
+		public function get_forum_header_by_user($userid){
+			$this->db->order_by('TRHFORUM.USER_DT', 'DESC');
+			$this->db->where('TRHFORUM.USER_ID', $userid);
+			$this->db->join('MSDCATEGORY', 'FORUM_CAT = CAT_ID');
+			$this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
+			$query = $this->db->get('TRHFORUM');
+			return $query->result_array();
+		}
+
 		public function get_forum_parent_by_id($parent_id){
 			$header = $this->get_forum_header_by_id($parent_id);
 			if($header == NULL){
@@ -81,7 +103,7 @@
 			}
 		}
 
-		public function get_header_id_by_grandchild_id($grd_id){
+		public function get_id_header_by_nested_child_id($grd_id){
 			$id = array(array('PARENT_ID' => $grd_id));
 
 			while($id != NULL) {

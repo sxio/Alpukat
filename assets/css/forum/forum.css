@@ -42,10 +42,11 @@ blockquote{
 blockquote h4{
 	line-height: 26px;
 	word-spacing: 3px;
+	font-size: 16px;
+}
+blockquote a.btn{
+	padding: 0;
 }
 .forum-margin{
 	margin-left: 40px!important;
-}
-a.btn{
-	padding: 0;
 }

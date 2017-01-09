@@ -243,7 +243,7 @@ CREATE TABLE `MSTREMINDER` (
 
 LOCK TABLES `MSTREMINDER` WRITE;
 /*!40000 ALTER TABLE `MSTREMINDER` DISABLE KEYS */;
-INSERT INTO `MSTREMINDER` VALUES ('sxio','2017-01-05 17:20:00','Presentasi SIM');
+INSERT INTO `MSTREMINDER` VALUES ('sxio','2017-01-12 17:20:00','Presentasi PKTI Coding');
 /*!40000 ALTER TABLE `MSTREMINDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -269,8 +269,8 @@ CREATE TABLE `MSTSEQUENCES` (
 LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
-INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',22);
-INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',42);
+INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',2);
+INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',5);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,7 +468,10 @@ CREATE TABLE `TRDFORUM` (
 
 LOCK TABLES `TRDFORUM` WRITE;
 /*!40000 ALTER TABLE `TRDFORUM` DISABLE KEYS */;
-INSERT INTO `TRDFORUM` VALUES ('FRM-20170108-014','FRD-20170109-041','sxio','2017-01-09 21:59:36','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-001','FRD-20170109-002','sxio','2017-01-09 23:16:06','<p>jklkjljkljkl</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-002','FRD-20170109-003','sxio','2017-01-09 23:20:09','<p>asdasdasdasdasdzxc</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-002','FRD-20170109-004','sxio','2017-01-09 23:22:09','<p>1234567890-=</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRM-20170109-001','FRD-20170109-001','sxio','2017-01-09 23:15:59','<p>dfgdfgdfgd</p>\r\n');
 /*!40000 ALTER TABLE `TRDFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -684,6 +687,8 @@ CREATE TABLE `TRHFORUM` (
   `FORUM_TITLE` varchar(150) NOT NULL,
   `FORUM_CAT` int(10) NOT NULL,
   `FORUM_CONTENT` text NOT NULL,
+  `FORUM_LAST_POST` varchar(20) NOT NULL,
+  `REPLY_NUM` int(11) NOT NULL,
   `USER_ID` varchar(15) NOT NULL,
   `USER_DT` datetime NOT NULL,
   PRIMARY KEY (`FORUM_ID`)
@@ -696,8 +701,7 @@ CREATE TABLE `TRHFORUM` (
 
 LOCK TABLES `TRHFORUM` WRITE;
 /*!40000 ALTER TABLE `TRHFORUM` DISABLE KEYS */;
-INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-014','Forum Title',23,'<p>Forum Content</p>','sxio','2017-01-08 16:49:13');
-INSERT INTO `TRHFORUM` VALUES ('FRM-20170108-021','ini header 2',23,'<p>header 2</p>','sxio','2017-01-08 19:22:04');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170109-001','qwe',24,'<p>asd</p>','FRD-20170109-004',4,'sxio','2017-01-09 23:15:49');
 /*!40000 ALTER TABLE `TRHFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -826,4 +830,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-09 22:14:28
+-- Dump completed on 2017-01-09 23:25:38

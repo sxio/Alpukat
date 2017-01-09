@@ -6,21 +6,19 @@
 		}
 
 		public function view(){
+			$username = $this->session->userdata('username');
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
-			$data['category_list'] = $this->Forum_model->get_category();
+			$data['my_forum'] = $this->Forum_model->get_forum_header_by_user($username);
 			$this->load->view('forum/forumhome', $data);
-
 		}
 		//header
 		public function list_forum(){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
 			$data['forum_list'] = $this->Forum_model->get_forum_header();
 			$this->load->view('forum/forumlist', $data);
@@ -36,7 +34,6 @@
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
-			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
 		 	$data['category_list'] = $this->Forum_model->get_category();
 			if($this->form_validation->run() == FALSE){
@@ -74,6 +71,7 @@
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
+			$data['header_id'] = $this->Forum_model->get_id_header_by_nested_child_id($parent_id);
 			$data['forum_parent'] = $this->Forum_model->get_forum_parent_by_id($parent_id);
 
 			$this->load->view('forum/forumreply', $data);
@@ -83,10 +81,11 @@
 			$username = $this->session->userdata('username');
 			$content = $this->input->post('f_content');
 
+			$reply_id = $this->Sequences_model->concat(3, mdate('%Y-%m-%d %H:%i:%s',now()));
 			$res = $this->Forum_model->add_forum_detail($parent_id, $content, $username);
-			$header_id = $this->Forum_model->get_header_id_by_grandchild_id($parent_id);
+			$header_id = $this->Forum_model->get_id_header_by_nested_child_id($parent_id);
 
-			redirect('forum/detail/'. $header_id);
+			redirect('forum/detail/'. $header_id. '#'. $reply_id);
 		}
 	}
 ?>

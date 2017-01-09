@@ -31,7 +31,7 @@
 
 						<div class="panel-body">
 							<p><?php echo $forum_header['FORUM_CONTENT']; ?></p>
-							<strong class="primary-font"><?php echo $forum_header['USER_NAME']; ?></strong>
+							<strong class="primary-font"><?php echo $forum_header['USER_NAME']; ?> ( <?php echo $forum_header['USER_ID']; ?> )</strong>
 							<a href="<?php echo base_url('forum/reply/' . $forum_header['FORUM_ID']); ?>" class="btn btn-link pull-right">Reply</a>
 							<div class="clearfix"></div>
 						</div>
@@ -42,7 +42,7 @@
 										for($i = 0; $i < $fd['LEVEL']; $i++) { ?>
 											<div class="forum-margin"><?php
 										} ?>
-										<blockquote>
+										<blockquote id="<?php echo $fd['DETAIL_ID']; ?>">
 											<h5>by <?php echo $fd['USER_ID']; ?> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
 											<h4 class="text-justify"><?php echo $fd['FORUM_CONTENT']; ?></h4>
 

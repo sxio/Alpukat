@@ -25,14 +25,15 @@
 					?>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<span class="pull-right"><?php echo nice_date($forum_parent['USER_DT'], 'd F Y, H:i:s'); ?></span>
-								<h3><?php echo $forum_parent['FORUM_CONTENT']; ?></h3>
+								<h5><?php echo nice_date($forum_parent['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
+								<h4 class="text-justify"><?php echo $forum_parent['FORUM_CONTENT']; ?></h4>
 							</div>
 							<div class="panel-body">
 								<textarea name="f_content" required></textarea>
 							</div>
-							<div class="panel-footer clearfix">
-								<button class="btn btn-success pull-right" name="btnSubmit">Submit</button>
+							<div class="panel-footer text-right">
+								<a href="<?php echo base_url('forum/detail/'. $header_id); ?>" class="btn btn-warning" name="btnSubmit">Cancel</a>
+								<button class="btn btn-success" name="btnSubmit">Submit</button>
 							</div>
 						</div>
 					<?php echo form_close(); ?>
