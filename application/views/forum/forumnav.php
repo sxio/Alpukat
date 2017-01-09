@@ -4,7 +4,7 @@
 	<div class="page-header">
 		<ul class="list-unstyled list-inline">
 		  <li><a href="<?php echo base_url('profile/dashboard'); ?>" >Profile</a></li>
-		  <li><a href="<?php echo base_url('forum/home'); ?>" >Home</a></li>
+		  <li><a href="<?php echo base_url('forum'); ?>" >Home</a></li>
 		  <li><a href="<?php echo base_url('forum/create'); ?>" >Create Forum</a></li>
 		  <li><a href="<?php echo base_url('forum/list'); ?>" >List of Topics</a></li>
 		  <!-- <li><a href="<?php echo base_url('forum/detail'); ?>" >Forums</a></li> -->

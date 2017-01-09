@@ -1,23 +1,22 @@
 <?php
 	class C_Forum extends CI_Controller{
-		function __construct(){
+		public function __construct(){
 			parent:: __construct();
 		 	$this->load->model('Forum_model');
 		}
 
-		function view($page = "forumhome"){
-			$data['title']    = "forumhome";
+		public function view(){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 			$data['footer']   = $this->load->view('templates/footer','',TRUE);
 
 			$data['category_list'] = $this->Forum_model->get_category();
-			$this->load->view('forum/'.$page, $data);
+			$this->load->view('forum/forumhome', $data);
 
 		}
 		//header
-		function forum(){
+		public function list_forum(){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
@@ -27,7 +26,7 @@
 			$this->load->view('forum/forumlist', $data);
 		}
 
-		function create_forum(){
+		public function create_forum(){
 			if($this->session->userdata('username') == NULL){
 				redirect('user');
 			}
@@ -54,8 +53,9 @@
 				redirect('forum/list');
 			}
 		}
+
 		//detail
-		function detail_forum($parent_id){
+		public function detail_forum($parent_id){
 			$data['header']   = $this->load->view('templates/header','',TRUE);
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
@@ -63,13 +63,10 @@
 			$data['forum_header'] = $this->Forum_model->get_forum_header_by_id($parent_id)[0];
 			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
 
-			// var_dump($data['forum_detail']);
-			// print_r($data['forum_detail']);
-			// return;
 			$this->load->view('forum/forumdetail', $data);
 		}
 
-		function reply($parent_id){
+		public function reply($parent_id){
 			if($this->session->userdata('username') == NULL){
 				redirect('user');
 			}
@@ -82,7 +79,7 @@
 			$this->load->view('forum/forumreply', $data);
 		}
 
-		function add_reply($parent_id){
+		public function add_reply($parent_id){
 			$username = $this->session->userdata('username');
 			$content = $this->input->post('f_content');
 
@@ -91,10 +88,5 @@
 
 			redirect('forum/detail/'. $header_id);
 		}
-
-		// function tes($id){
-		// 	print_r($this->Forum_model->get_header_id_by_grandchild_id($id));
-		// 	return;
-		// }
 	}
 ?>

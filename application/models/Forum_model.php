@@ -97,31 +97,23 @@
 			return $query->result_array()[0]['FORUM_ID'];
 		}
 
-		// public function get_children_from_detail($id){
-		//  $this->db->where('PARENT_ID', $id);
-		//  $query = $this->db->get('TRDFORUM');
-		//  $data = array(
-		//      'data' => $query->result_array(),
-		//      'num_row' => $query->num_rows()
-		//  );
-		//  return $data;
-		// }
-
 		private $f_detail = array();
 
-		public function get_forum_detail($parent_id){
+		public function get_forum_detail($parent_id, $level = 0){
 			$this->db->order_by('USER_DT');
 			$this->db->where('PARENT_ID', $parent_id);
 			$query = $this->db->get('TRDFORUM');
-			$temp = $query->result_array();
+			$f_detail = $query->result_array();
 
-			$f_detail = $temp;
-
-			if($temp != NULL){
-				for($i = 0; $i < $query->num_rows(); $i++){
-					$f_detail[$i] += $this->get_forum_detail($temp[$i]['DETAIL_ID']);
+			//head comment
+			if ($f_detail != null) {
+				for($i = 0; $i < count($f_detail); $i++) {
+					$childrens = $this->get_forum_detail($f_detail[$i]['DETAIL_ID'], $level+1);
+					$f_detail[$i]['LEVEL'] = $level;
+					$f_detail[$i]['CHILDREN'] = $childrens;
 				}
 			}
+
 			return $f_detail;
 		}
 	}

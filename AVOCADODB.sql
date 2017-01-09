@@ -270,7 +270,7 @@ LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
 INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',22);
-INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',25);
+INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',42);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,14 +468,7 @@ CREATE TABLE `TRDFORUM` (
 
 LOCK TABLES `TRDFORUM` WRITE;
 /*!40000 ALTER TABLE `TRDFORUM` DISABLE KEYS */;
-INSERT INTO `TRDFORUM` VALUES ('FRD-20170108-017','FRD-20170108-019','sxio','2017-01-08 21:28:20','<p>AA</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRD-20170108-017','FRD-20170108-020','sxio','2017-01-08 21:28:24','<p>AB</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRD-20170108-018','FRD-20170109-023','sxio','2017-01-09 16:08:48','<p>BB</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRD-20170108-019','FRD-20170108-022','sxio','2017-01-08 22:23:11','<p>AAA</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRD-20170108-019','FRD-20170109-024','sxio','2017-01-09 16:24:34','<p>AAB</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRM-20170108-014','FRD-20170108-017','sxio','2017-01-08 21:28:13','<p>A</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRM-20170108-014','FRD-20170108-018','sxio','2017-01-08 21:28:17','<p>B</p>\r\n');
-INSERT INTO `TRDFORUM` VALUES ('FRM-20170108-021','FRD-20170108-021','sxio','2017-01-08 22:08:18','<p>ini balas ke header 2</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRM-20170108-014','FRD-20170109-041','sxio','2017-01-09 21:59:36','<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n');
 /*!40000 ALTER TABLE `TRDFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -833,4 +826,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-09 16:44:25
+-- Dump completed on 2017-01-09 22:14:28
