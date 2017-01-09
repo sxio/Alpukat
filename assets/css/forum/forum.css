@@ -32,8 +32,20 @@
 }
 blockquote{
 	background-color: #ddd;
-	border-color: blue;
+	border-color: #1565c0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
 }
-.masuk{
+blockquote h4{
+	line-height: 26px;
+	word-spacing: 3px;
+}
+.forum-margin{
 	margin-left: 40px!important;
+}
+a.btn{
+	padding: 0;
 }

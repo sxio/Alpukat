@@ -1,3 +1,4 @@
+<?php //print_r($forum_detail); //die; ?>
 <!-- Meikelwis 18-12-16 Untuk forum detail -->
 <!DOCTYPE html>
 <html>
@@ -31,27 +32,28 @@
 						<div class="panel-body">
 							<p><?php echo $forum_header['FORUM_CONTENT']; ?></p>
 							<strong class="primary-font"><?php echo $forum_header['USER_NAME']; ?></strong>
-							<a href="<?php echo base_url('forum/reply/' . $forum_header['FORUM_ID']); ?>" class="btn btn-warning pull-right btn-reply">Reply</a>
+							<a href="<?php echo base_url('forum/reply/' . $forum_header['FORUM_ID']); ?>" class="btn btn-link pull-right">Reply</a>
 							<div class="clearfix"></div>
 						</div>
 						<div class="panel-footer">
 							<?php
 								function print_tree($forum_detail){
-									foreach($forum_detail as $key => $value):
-										// if(is_array($key)){
-										// 	print_tree($value);
-										// }
-							?>
-								<blockquote>
-									<h5 class="pull-right"><?php echo $value['USER_DT']; ?> <?php echo $value['USER_ID']; ?></h5>
-									<p><?php echo $value['FORUM_CONTENT']; ?></p>
+									foreach ($forum_detail as $fd):
+										for($i = 0; $i < $fd['LEVEL']; $i++) { ?>
+											<div class="forum-margin"><?php
+										} ?>
+										<blockquote>
+											<h5>by <?php echo $fd['USER_ID']; ?> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
+											<h4 class="text-justify"><?php echo $fd['FORUM_CONTENT']; ?></h4>
 
-									<div class="btn-wrapper">
-										<a href="<?php echo base_url('forum/reply/'. $value['DETAIL_ID']); ?>" class="btn btn-warning pull-right btn-reply">Reply</a>
-										<div class="clearfix"></div>
-									</div>
-								</blockquote>
-							<?php
+											<div class="btn-wrapper clearfix">
+												<a href="<?php echo base_url('forum/reply/'. $fd['DETAIL_ID']); ?>" class="btn btn-link pull-right">Reply</a>
+											</div>
+										</blockquote><?php
+										for($i = 0; $i < $fd['LEVEL']; $i++) { ?>
+											</div><?php
+										}
+										print_tree($fd['CHILDREN']);
 									endforeach;
 								}
 								print_tree($forum_detail);
