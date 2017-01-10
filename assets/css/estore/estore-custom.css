@@ -30,6 +30,11 @@
 .my-cart-b{
 	padding: 10px 20px 10px 20px;
 }
+.logo-nav-right .cd-header-buttons{
+	margin: 25px 0 0 0;
+	right: 250px;
+}
+
 /*MEDIA QUERY FOR SMARTPHONE*/
 @media screen and (max-width: 500px){
 	.nav_2{
@@ -38,6 +43,7 @@
 	.logo-nav-right .cd-header-buttons{
 		/*float: right;*/
 		margin: 0;
+		right: 20px;
 	}
 	.logo-nav-left-1{
 		width: 100%!important;

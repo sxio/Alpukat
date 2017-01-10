@@ -70,7 +70,7 @@
 			$this->db->select('A.FORUM_ID,A.FORUM_TITLE,B.CAT_NAME,A.FORUM_CONTENT,A.USER_ID,A.USER_DT');
 			$this->db->from('TRHFORUM A');
 			$this->db->join('MSDCATEGORY B','A.FORUM_CAT = B.CAT_ID','LEFT');
-			$this->db->order_by('A.FORUM_ID');
+			$this->db->order_by('A.USER_DT', 'DESC');
 			$result = $this->db->get();
 			return $result->result_array();
 		}
@@ -94,8 +94,8 @@
 		public function get_forum_header_by_num_post($limit){
 			$this->db->order_by('TRHFORUM.REPLY_NUM', 'DESC');
 			$this->db->join('MSDCATEGORY', 'FORUM_CAT = CAT_ID');
-			$this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
-			$this->db->limit(5);
+			// $this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
+			$this->db->limit($limit);
 			$query = $this->db->get('TRHFORUM');
 			return $query->result_array();
 		}

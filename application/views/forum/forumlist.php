@@ -25,7 +25,7 @@
 										<h4><a href="<?php echo base_url('forum/detail/'. $forum_list['FORUM_ID']); ?>">Title : <?php echo $forum_list['FORUM_TITLE']; ?></a></h4>
 									</div>
 									<div class="col-sm-9">
-										<h5 class="pull-right">Posted by : <?php echo $forum_list['USER_ID']; ?> <?php echo $forum_list['USER_DT']; ?></h4>
+										<h5 class="pull-right">Posted by : <?php echo $forum_list['USER_ID']; ?> <?php echo $forum_list['USER_DT']; ?><br><span class="pull-right"><?php echo timespan(mysql_to_unix($forum_list['USER_DT']), now(), 1); ?> ago</span></h4>
 									</div>
 								</div>
 							</div>
