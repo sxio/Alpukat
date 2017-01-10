@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.13-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: AVOCADODB
 -- ------------------------------------------------------
--- Server version	10.1.16-MariaDB
+-- Server version	10.1.13-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -259,7 +259,7 @@ CREATE TABLE `MSTSEQUENCES` (
   `SEQ_NAME` varchar(30) NOT NULL,
   `SEQ_VALUE` int(11) NOT NULL,
   PRIMARY KEY (`SEQ_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,8 +269,9 @@ CREATE TABLE `MSTSEQUENCES` (
 LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
-INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',2);
+INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',3);
 INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',8);
+INSERT INTO `MSTSEQUENCES` VALUES (4,'Booking',3);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -337,6 +338,62 @@ INSERT INTO `MSTUSERLEVEL` VALUES (2,'Doctor');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `TMPDETAIL`
+--
+
+DROP TABLE IF EXISTS `TMPDETAIL`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `TMPDETAIL` (
+  `ID` varchar(20) NOT NULL,
+  `DT` datetime NOT NULL,
+  `VALUE1` int(11) NOT NULL,
+  `VALUE2` int(11) NOT NULL,
+  `VALUE3` int(11) NOT NULL,
+  `VALUE4` varchar(10) NOT NULL,
+  `VALUE5` varchar(15) NOT NULL,
+  `VALUE6` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `TMPDETAIL`
+--
+
+LOCK TABLES `TMPDETAIL` WRITE;
+/*!40000 ALTER TABLE `TMPDETAIL` DISABLE KEYS */;
+/*!40000 ALTER TABLE `TMPDETAIL` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `TMPHEADER`
+--
+
+DROP TABLE IF EXISTS `TMPHEADER`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `TMPHEADER` (
+  `ID` varchar(20) NOT NULL,
+  `DT` datetime NOT NULL,
+  `VALUE2` int(11) NOT NULL,
+  `VALUE3` varchar(10) NOT NULL,
+  `VALUE4` varchar(15) NOT NULL,
+  `VALUE5` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `TMPHEADER`
+--
+
+LOCK TABLES `TMPHEADER` WRITE;
+/*!40000 ALTER TABLE `TMPHEADER` DISABLE KEYS */;
+INSERT INTO `TMPHEADER` VALUES ('BO-20170110-001','2017-01-10 00:00:00',0,'sxioo','','2017-01-10 21:46:16');
+INSERT INTO `TMPHEADER` VALUES ('BO-20170110-002','2017-01-10 00:00:00',0,'sxioo','','2017-01-10 21:46:20');
+/*!40000 ALTER TABLE `TMPHEADER` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `TRDADDCHATTING`
 --
 
@@ -370,15 +427,13 @@ DROP TABLE IF EXISTS `TRDBOOKING`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TRDBOOKING` (
-  `BOOKING_ID` varchar(10) NOT NULL,
+  `BOOKING_ID` varchar(20) NOT NULL,
   `DCT_ID` varchar(10) NOT NULL,
-  `SERV_ID` varchar(10) NOT NULL,
+  `SERV_ID` int(11) NOT NULL,
   `BOOK_COUNT` int(11) NOT NULL,
   `TOTAL_AMOUNT` int(11) NOT NULL,
   `USER_ID` varchar(10) NOT NULL,
-  `USER_NAME` varchar(15) NOT NULL,
-  `USER_DT` datetime NOT NULL,
-  PRIMARY KEY (`BOOKING_ID`)
+  `USER_DT` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -632,12 +687,10 @@ DROP TABLE IF EXISTS `TRHBOOKING`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TRHBOOKING` (
-  `BOOKING_ID` varchar(10) NOT NULL,
+  `BOOKING_ID` varchar(20) NOT NULL,
   `BOOKING_DT` date NOT NULL,
-  `OTHER_PAYMENT` int(11) NOT NULL,
   `TOTAL_PAYMENT` int(11) NOT NULL,
   `USER_ID` varchar(10) NOT NULL,
-  `USER_NAME` varchar(15) NOT NULL,
   `USER_DT` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -648,8 +701,6 @@ CREATE TABLE `TRHBOOKING` (
 
 LOCK TABLES `TRHBOOKING` WRITE;
 /*!40000 ALTER TABLE `TRHBOOKING` DISABLE KEYS */;
-INSERT INTO `TRHBOOKING` VALUES ('BO1312001','2016-12-13',100000,10000000,'MEIKELWIS','MEIKELWIS','2016-12-13');
-INSERT INTO `TRHBOOKING` VALUES ('BO1312002','2016-12-12',200000,3000000,'MEIKELWIS','MEIKELWIS','2016-12-13');
 /*!40000 ALTER TABLE `TRHBOOKING` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -704,6 +755,7 @@ CREATE TABLE `TRHFORUM` (
 LOCK TABLES `TRHFORUM` WRITE;
 /*!40000 ALTER TABLE `TRHFORUM` DISABLE KEYS */;
 INSERT INTO `TRHFORUM` VALUES ('FRM-20170109-001','qwe',24,'<p>asd</p>','FRD-20170110-007',7,'sxio','2017-01-09 23:15:49');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170110-002','123123',23,'<p>123123</p>','FRM-20170110-002',0,'sxioo','2017-01-10 21:47:06');
 /*!40000 ALTER TABLE `TRHFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -832,4 +884,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-10 17:26:20
+-- Dump completed on 2017-01-10 21:51:18
