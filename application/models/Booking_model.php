@@ -10,10 +10,9 @@
 			$bookingid = $this->Sequences_model->concat(4, mdate('%Y-%m-%d %H:%i:%s',now()));
 			return $bookingid;
 		}
-		public function add_temp_booking($username){
-			$booking_id = $this->Sequences_model->concat(4, mdate('%Y-%m-%d %H:%i:%s',now()));
+		public function add_temp_booking($username,$bookingid){
 			$data = array(
-				'ID' => $booking_id,
+				'ID' => $bookingid,
 				'DT' => $this->input->post('bookingdt'),
 				'VALUE3' => $username,
 				'VALUE5' => mdate('%Y-%m-%d %H:%i:%s',now())
@@ -22,6 +21,16 @@
 			$this->Sequences_model->update_seq(4);
 			return $this->db->error();
 		}
-		
+		// public function add_temp_detail_booking($username){
+		// 	$data = array(
+		// 		'ID' => $booking_id,
+		// 		'DT' => $this->input->post('bookingdt'),
+		// 		'VALUE3' => $username,
+		// 		'VALUE5' => mdate('%Y-%m-%d %H:%i:%s',now())
+		// 	);
+		// 	$this->db->insert('TMPHEADER',$data);
+		// 	$this->Sequences_model->update_seq(4);
+		// 	return $this->db->error();
+		// }
 	}
 ?>

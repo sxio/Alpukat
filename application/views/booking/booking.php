@@ -18,24 +18,52 @@
 				</div>
 				<div class="panel-body">
 					<!-- BOOKING HEAD -->
-					<?php echo form_open('booking/create'); ?>
-						<div class="booking-header">
-							<div class="form-group row">
-								<label for="dspBookingNo" class="col-sm-2">Booking No</label>
-								<div class="col-sm-4">
-									<input type="text" class="form-control" disabled value="<?php echo $bookingid ?>">
-								</div>
-								<label for="BookingDate" class="col-sm-2">Booking Date</label>
-								<div class="col-sm-4">
-									<input type="date" class="form-control" name="bookingdt">
-								</div>
+							<?php echo form_open('booking/create'); ?>
+								<div class="booking-header">
+									<div class="form-group row">
+										<label for="dspBookingNo" class="col-sm-2">Booking No</label>
+										<div class="col-sm-4">
+											<input type="text" class="form-control" disabled value="<?php echo $bookingid ?>">
+										</div>
+										<label for="BookingDate" class="col-sm-2">Booking Date</label>
+										<div class="col-sm-4">
+											<input type="date" class="form-control" name="bookingdt">
+										</div>
+									</div>
+									<?php echo form_open('booking/adddetail') ?>
+										<div class="booking-detail">
+											<div class="panel panel-success">
+												<div class="panel-heading">
+													<div class="form-group row">
+														<label class="col-sm-3"> Doctors Name</label>
+														<label class="col-sm-2"> Consult Fee</label>
+														<label class="col-sm-2"> Count</label>
+														<label class="col-sm-2"> Total Amount</label>
+													</div>
+													<div class="form-group row">
+														<div class="col-sm-3">
+															<input type="text" class="form-control" name="doctorid">
+														</div>
+														<div class="col-sm-2">
+															<input type="text" class="form-control" name="consultfee">
+														</div>
+														<div class="col-sm-2">
+															<input type="text" class="form-control" name="count">
+														</div>
+														<div class="col-sm-2">
+															<input type="text" class="form-control" name="totalamount">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div> 
+									<?php echo form_close(); ?>
+									<div class="row">
+										<div class="col-sm-6"></div>
+										<div class="col-sm-6"><button type="submit" class="btn btn-primary form-control">Book Now</button>
+									</div>
+								<?php echo form_close(); ?>
 							</div>
-						</div>
-			            <div class="row">
-							<div class="col-sm-6"></div>
-							<div class="col-sm-6"><button type="submit" class="btn btn-primary form-control">Book Now</button></div>
-						</div>
-					<?php echo form_close(); ?>
 					<div class="col-sm-4">
 		                <?php
 		                	if($this->session->flashdata('msg') != NULL){
@@ -47,52 +75,6 @@
 		                } ?>
 		            </div>
 					<!-- BOOKING DETAIL -->
-						<!-- <div class="booking-detail">
-							<div class="panel panel-success">
-								<div class="panel-heading">
-									<div class="form-group row">
-										<label for="DoctorsName" class="col-sm-3"> Doctors Name</label>
-										<label for="ServiceName" class="col-sm-3"> Service Name</label>
-										<label for="BookCount" class="col-sm-2"> Book Count</label>
-										<label for="TotalAmount" class="col-sm-3"> Total Amount</label>
-									</div>
-									<div class="form-group row">
-										<div class="col-sm-3">
-											<input type="text" class="form-control" id="DoctorsName">
-										</div>
-										<div class="col-sm-3">
-											<input type="text" class="form-control" id="ServiceName">
-										</div>
-										<div class="col-sm-2">
-											<input type="text" class="form-control" id="BookCount">
-										</div>
-										<div class="col-sm-3">
-											<input type="text" class="form-control" id="TotalAmount">
-										</div>
-										<div class="col-sm-1">
-											<button id="addItem" type="submit" class="btn btn-primary" >Add</button>
-										</div>
-									</div>
-								</div>
-								<div class="panel-body">
-									<br>
-									<table class="table booking-list table-bordered table-responsive">
-										<tr>
-											<th class="col-sm-2">DoctorName</th>
-											<th class="col-sm-3">ServiceName</th>
-											<th class="col-sm-2">Count</th>
-											<th class="col-sm-3">Total Amount</th>
-											<th class="col-sm-1">Nav</th>
-											<th></th>
-										</tr>
-										<tr id="DetailBooking">
-											
-										</tr>
-									</table>
-								</div>
-							</div>
-							<!-- close Panel Success -->
-					</div> 
 					<!-- close Booking detail -->
 					<!-- <div class="row">
 						<div class="col-sm-6"></div>
