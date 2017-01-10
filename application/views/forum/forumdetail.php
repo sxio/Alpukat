@@ -1,9 +1,8 @@
-<?php //print_r($forum_detail); //die; ?>
 <!-- Meikelwis 18-12-16 Untuk forum detail -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Forum List</title>
+	<title>Forum Detail</title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/forum/forum.css'); ?>
 
@@ -23,7 +22,7 @@
 									<h4><?php echo $forum_header['FORUM_TITLE']; ?></h4>
 								</div>
 								<div class="col-sm-9">
-									<span class="pull-right"><?php echo nice_date($forum_header['USER_DT'], 'd F Y, H:i:s'); ?></span>
+									<span class="pull-right">by <?php echo $forum_header['USER_NAME']; ?> -- <?php echo nice_date($forum_header['USER_DT'], 'd F Y, H:i:s'); ?></span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -31,7 +30,7 @@
 
 						<div class="panel-body">
 							<p><?php echo $forum_header['FORUM_CONTENT']; ?></p>
-							<strong class="primary-font"><?php echo $forum_header['USER_NAME']; ?> ( <?php echo $forum_header['USER_ID']; ?> )</strong>
+							<strong class="primary-font"></strong>
 							<a href="<?php echo base_url('forum/reply/' . $forum_header['FORUM_ID']); ?>" class="btn btn-link pull-right">Reply</a>
 							<div class="clearfix"></div>
 						</div>
@@ -43,7 +42,7 @@
 											<div class="forum-margin"><?php
 										} ?>
 										<blockquote id="<?php echo $fd['DETAIL_ID']; ?>">
-											<h5>by <?php echo $fd['USER_ID']; ?> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
+											<h5>by <?php echo $fd['USER_NAME']; ?> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
 											<h4 class="text-justify"><?php echo $fd['FORUM_CONTENT']; ?></h4>
 
 											<div class="btn-wrapper clearfix">

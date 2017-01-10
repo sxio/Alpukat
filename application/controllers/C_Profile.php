@@ -21,13 +21,14 @@
 		}
 
 		public function edit_profile_user($userid){
-
-
-
-
+			if($this->session->userdata('username') != $userid){
+				show_404();
+			}
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$data['user'] = $this->Profile_model->get_data_user($userid);
 
 			$this->load->view('profile/edit_profile_user', $data);
 		}

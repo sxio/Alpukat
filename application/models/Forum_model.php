@@ -91,6 +91,15 @@
 			return $query->result_array();
 		}
 
+		public function get_forum_header_by_num_post($limit){
+			$this->db->order_by('TRHFORUM.REPLY_NUM', 'DESC');
+			$this->db->join('MSDCATEGORY', 'FORUM_CAT = CAT_ID');
+			$this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
+			$this->db->limit(5);
+			$query = $this->db->get('TRHFORUM');
+			return $query->result_array();
+		}
+
 		public function get_forum_parent_by_id($parent_id){
 			$header = $this->get_forum_header_by_id($parent_id);
 			if($header == NULL){
@@ -124,6 +133,7 @@
 		public function get_forum_detail($parent_id, $level = 0){
 			$this->db->order_by('USER_DT');
 			$this->db->where('PARENT_ID', $parent_id);
+			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRDFORUM.USER_ID');
 			$query = $this->db->get('TRDFORUM');
 			$f_detail = $query->result_array();
 

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Doctors List</title>
+	<title>Create Forum</title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/forum/forum.css'); ?>
 

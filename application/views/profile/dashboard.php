@@ -13,11 +13,14 @@
 			<h3>Profile</h3>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<img src="<?php echo base_url('assets/img/cs.jpg') ?>" alt="">
+					<img src="<?php echo base_url('assets/img/user/'. $user['USER_IMG']); ?>" class="img-responsive img-circle img-thumbnail" alt="">
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="panel panel-primary">
-						<div class="panel-heading">Your Information Details</div>
+						<div class="panel-heading">
+							Your Information Details
+								<a href="<?php echo base_url('profile/edit/'. $user['USER_ID']); ?>" class="btn btn-default profile-user-edit pull-right" data-toggle="tooltip" title="Edit Profile"><i class="fa fa-pencil fa-fw"></i></a>
+						</div>
 						<div class="panel-body">
 							<div class="container">
 								<div class="row">
@@ -62,7 +65,6 @@
 									</div>
 								</div>
 							</div>
-							<a href="<?php echo base_url('profile/edit/'. $user['USER_ID']); ?>" class="btn btn-primary profile-user-edit"><i class="fa fa-pencil fa-fw"></i> Edit </a>
 						</div>
 					</div>
 				</div>

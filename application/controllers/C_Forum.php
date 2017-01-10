@@ -12,6 +12,7 @@
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
 			$data['my_forum'] = $this->Forum_model->get_forum_header_by_user($username);
+			$data['hot_topics'] = $this->Forum_model->get_forum_header_by_num_post(7);
 			$this->load->view('forum/forumhome', $data);
 		}
 		//header

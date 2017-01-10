@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Edit Doctor`s Profile </title>
+	<title>Edit Profile </title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/profile/edit_profile_user.css') ?>
 	<?php echo link_tag('assets/css/bootstrap-datetimepicker.min.css') ?>
@@ -12,7 +12,7 @@
 <body>
 	<?php echo $nav; ?>
 	<div class="container">
-		<!-- <?php echo form_open_multipart('profile/doctor/edit/'. $data_doctor['USER_ID']); ?> -->
+		<?php echo form_open_multipart('profile/user/edit/'. $user['USER_ID']); ?>
 			<div class="panel panel-info">
 				<div class="panel-heading">Edit Your Profile</div>
 				<div class="panel-body">
@@ -28,7 +28,7 @@
                     <div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
 							<label for="_photo">
-								<img src="" class="img-responsive img-thumbnail foto" alt="noimage">
+								<img src="<?php echo base_url('assets/img/user/'. $user['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
 							</label>
 							<div class="col-xs-12">
 								<input type="file" name="_photo" id="_photo" class="form-control input-img">
@@ -37,32 +37,33 @@
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docname">Name </label>
 							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-								<input class="form-control" type="text" name="docname" value="" required>
+								<input class="form-control" type="text" name="usrname" value="<?php echo $user['USER_NAME']; ?>" required>
 							<br>
 							</div>
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docbirth">Date of Birth </label>
 							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-								<input size="16" type="text" name="docbirth" class="form-control form_datetime" value="" readonly required>
+								<input size="16" type="text" name="usrbirth" class="form-control form_datetime" value="<?php echo $user['USER_BIRTH']; ?>" readonly required>
 							<br>
 							</div>
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Email </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="email" name="docemail" value="">
+                                <input class="form-control" type="email" name="usremail" value="<?php echo $user['EMAIL']; ?>">
 								<br>
                             </div>
                             <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Phone Number </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="text" name="docHP" value="">
+                                <input class="form-control" type="text" name="usrHP" value="<?php echo $user['HANDPHONE']; ?>">
                             <br>
                             </div>
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docaddr">Address </label>
 							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-								<textarea class="form-control" rows="4" name="docaddr" placeholder="Enter Your Address" required></textarea>
+								<textarea class="form-control" rows="4" name="usraddr" placeholder="Enter Your Address" required><?php echo $user['USER_ADDRESS']; ?></textarea>
 							</div>
 						</div>
 					</div>
 					<br>
 					<button class="btn btn-primary" name="btn_edit" value="1"><i class="fa fa-pencil fa-fw"></i> Edit</button>
+					<a href="<?php echo base_url('profile/dashboard'); ?>" class="btn btn-warning" name="btn_edit" value="1"><i class="fa fa-remove fa-fw"></i> Cancel</a>
 				</div>
 			</div>
 		<?php echo form_close(); ?>

@@ -8,10 +8,11 @@
 			$data = array(
 				'USER_ID'      => $this->input->post('user_id'),
 				'USER_NAME'    => $this->input->post('user_name'),
-				'EMAIL'        => $this->input->post('user_email'),
 				'USER_PASS'    => md5($this->input->post('user_password')),
 				'USER_BIRTH'   => $this->input->post('date_birth'),
+				'EMAIL'        => $this->input->post('user_email'),
 				'HANDPHONE'    => $this->input->post('handphone'),
+				'USER_IMG'     => 'noimage.png',
 				'USER_ADDRESS' => $this->input->post('address'),
 				'USER_LEVEL'   => $this->input->post('user_role'),
 				'ACTIVE'       => 0
