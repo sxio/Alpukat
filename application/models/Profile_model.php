@@ -91,7 +91,11 @@
 			return $this->db->error();
 		}
 
-		public function update_img($userid, $img){
+		public function edit_data_user($userid){
+
+		}
+
+		public function update_img_doctor($userid, $img){
 			$this->db->where('USER_ID', $userid);
 			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
 			if(file_exists('./assets/img/doctor/certificate/'. $old_img)){

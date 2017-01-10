@@ -19,7 +19,11 @@
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							Your Information Details
+							<?php
+								if($this->session->userdata('username') == $this->uri->segment(3)) {
+							 ?>
 								<a href="<?php echo base_url('profile/edit/'. $user['USER_ID']); ?>" class="btn btn-default profile-user-edit pull-right" data-toggle="tooltip" title="Edit Profile"><i class="fa fa-pencil fa-fw"></i></a>
+							<?php }	 ?>
 						</div>
 						<div class="panel-body">
 							<div class="container">

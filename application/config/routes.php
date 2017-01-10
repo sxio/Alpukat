@@ -12,7 +12,7 @@ $route['forgotPassword/reset/(:any)/(:num)']            = 'C_ForgotPassword/veri
 $route['forgotPassword/requestForgot']                  = 'C_ForgotPassword/requestForgot';
 $route['forgotPassword/requestReset']                   = 'C_ForgotPassword/requestReset';
 
-$route['profile/dashboard']                             = 'C_Profile/dashboard';
+$route['profile/dashboard/(:any)']                      = 'C_Profile/dashboard/$1';
 $route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_estore/$1';
 $route['profile/reminder']                              = 'C_Profile/reminder';
 $route['profile/payment-history']                       = 'C_Profile/payment_history';
@@ -41,7 +41,7 @@ $route['forum/list']                                    = 'C_Forum/list_forum';
 $route['forum/detail/(:any)']                           = 'C_Forum/detail_forum/$1';
 $route['forum/reply/(:any)']                            = 'C_Forum/reply/$1';
 $route['forum/add-reply/(:any)']                        = 'C_Forum/add_reply/$1';
-// $route['forum/(:any)']                                  = 'C_Forum/view/$1';
+// $route['forum/(:any)']                               = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
 
 $route['(:any)/payment/form']                           = 'C_Payment/view/$1';

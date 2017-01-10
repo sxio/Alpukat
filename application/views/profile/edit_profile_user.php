@@ -12,7 +12,7 @@
 <body>
 	<?php echo $nav; ?>
 	<div class="container">
-		<?php echo form_open_multipart('profile/user/edit/'. $user['USER_ID']); ?>
+		<?php echo form_open_multipart('profile/edit/'. $user['USER_ID']); ?>
 			<div class="panel panel-info">
 				<div class="panel-heading">Edit Your Profile</div>
 				<div class="panel-body">
@@ -23,7 +23,7 @@
 						</div>
 					</legend>
 					<div class="row">
-						<label class="col-xs-12 col-sm-12 col-md-6 col-lg-6 control-label" for="docpp">Profile Picture </label>
+						<label class="col-xs-12 col-sm-12 col-md-6 col-lg-6 control-label" for="usrpp">Profile Picture </label>
                     </div>
                     <div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
@@ -47,12 +47,12 @@
 							</div>
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Email </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="email" name="usremail" value="<?php echo $user['EMAIL']; ?>">
+                                <input class="form-control" type="email" name="usremail" value="<?php echo $user['EMAIL']; ?>" required>
 								<br>
                             </div>
                             <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Phone Number </label>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="text" name="usrHP" value="<?php echo $user['HANDPHONE']; ?>">
+                                <input class="form-control" type="text" name="usrHP" value="<?php echo $user['HANDPHONE']; ?>" required>
                             <br>
                             </div>
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docaddr">Address </label>
@@ -63,7 +63,7 @@
 					</div>
 					<br>
 					<button class="btn btn-primary" name="btn_edit" value="1"><i class="fa fa-pencil fa-fw"></i> Edit</button>
-					<a href="<?php echo base_url('profile/dashboard'); ?>" class="btn btn-warning" name="btn_edit" value="1"><i class="fa fa-remove fa-fw"></i> Cancel</a>
+					<a href="<?php echo base_url('profile/dashboard/'. $user['USER_ID']); ?>" class="btn btn-warning" value="1"><i class="fa fa-remove fa-fw"></i> Cancel</a>
 				</div>
 			</div>
 		<?php echo form_close(); ?>
