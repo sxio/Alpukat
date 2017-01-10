@@ -1,0 +1,10 @@
+@import url('../nav.css');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.container{
+	font-family: 'Muli';
+}
+#booking{
+	margin-top: 60px;
+	margin-bottom: 0px;
+}

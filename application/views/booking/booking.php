@@ -3,7 +3,7 @@
 <head>
 	<title>Doctors List</title>
 	<?php echo $header; ?>
-	<?php echo link_tag('assets/css/booking/booking.css') ?>
+	<?php echo link_tag('assets/css/booking/booking.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
