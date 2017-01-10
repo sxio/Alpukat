@@ -3,8 +3,10 @@
 <head>
 	<title>Profile</title>
 	<?php echo $header; ?>
-	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 	<?php echo link_tag('assets/css/profile/dashboard.css'); ?>
+	<?php echo link_tag('assets/css/smoke.min.css'); ?>
+	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/smoke.min.js'); ?>"></script>
 </head>
 <body>
 	<?php echo $nav; ?>
@@ -33,7 +35,7 @@
 											<li>
 												<label class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label" for="username">Name </label>
 												<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
-													<p name="username">: <?php echo $user['USER_ID']; ?></p>
+													<p name="username">: <?php echo $user['USER_NAME']; ?></p>
 												<br>
 												</div>
 											</li>
@@ -299,5 +301,20 @@
 			<br>
 		</div>
 	</div>
+	<?php
+		if($this->session->flashdata('msg') != null){
+	?>
+			<script>
+				$.smkAlert({
+				text: 'Edit Success',
+				type: 'success',
+				position:'top-center',
+				time: 3,
+				icon: 'fa fa-check fa-fw'
+			  });
+			</script>
+	<?
+		}
+	?>
 </body>
 </html>

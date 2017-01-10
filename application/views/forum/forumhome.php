@@ -40,7 +40,7 @@
 								<td><a href="<?php echo base_url('forum/detail/'. $ht['FORUM_ID']); ?>"><?php echo $ht['FORUM_TITLE']; ?></a></td>
 								<td class="text-center hidden-xs hidden-sm"><?php echo $ht['CAT_NAME']; ?></td>
 								<td class="text-center hidden-xs hidden-sm"><?php echo $ht['REPLY_NUM']; ?></td>
-								<td class="hidden-xs hidden-sm">by <a href="<?php echo base_url('forum/detail/'.$ht['FORUM_ID']. '#'. $ht['FORUM_LAST_POST']); ?>"><?php echo $ht['USER_ID']; ?></a><br><small><i class="fa fa-clock-o"></i> <?php echo timespan(mysql_to_unix($ht['USER_DT']), now(), 1) . ' ago'; ?></small></td>
+								<td class="hidden-xs hidden-sm">by <a href="<?php echo base_url('forum/detail/'.$ht['FORUM_ID']. '#'. $ht['FORUM_LAST_POST']); ?>"><?php echo $ht['LAST_POST_ID']; ?></a><br><small><i class="fa fa-clock-o"></i> <?php echo timespan(mysql_to_unix($ht['LAST_POST_DT']), now(), 1) . ' ago'; ?></small></td>
 							</tr>
 							<?php endforeach; ?>
 						</tbody>

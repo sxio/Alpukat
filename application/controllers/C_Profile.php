@@ -35,15 +35,20 @@
 // usremail
 // usrHP
 // usraddr
-			$this->form_validation->set_rules('usrname','Name','trim');
-			$this->form_validation->set_rules('usremail','Email','trim|valid_email|is_unique[MSTUSER.EMAIL]');
-			$this->form_validation->set_rules('usrHP','Phone Number','trim');
-			$this->form_validation->set_rules('usraddr','Address','trim');
-
-			if($this->form_validation->run() == FALSE){
-				//
+			if($this->input->post('btn_edit')) {
+				$this->form_validation->set_rules('usrname','Name','trim');
+				$this->form_validation->set_rules('usremail','Email','trim|valid_email');
+				$this->form_validation->set_rules('usrHP','Phone Number','trim');
+				$this->form_validation->set_rules('usraddr','Address','trim');
+				if($this->form_validation->run() == FALSE){
+					$this->session->set_flashdata('msg', validation_errors());
+					redirect('profile/dashboard/'. $userid);
+				} else {
+					$res = $this->Profile_model->edit_data_user($userid);
+					$this->session->set_flashdata('msg', 'berhasil');
+					redirect('profile/dashboard/'. $userid);
+				}
 			}
-
 			$this->load->view('profile/edit_profile_user', $data);
 		}
 
@@ -89,6 +94,9 @@
 		}
 
 		public function dashboard($userid){
+			if($this->session->userdata('user_level') == 2){
+				redirect('profile/doctor/'. $userid);
+			}
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);

@@ -92,7 +92,19 @@
 		}
 
 		public function edit_data_user($userid){
-
+			$data = array(
+				'USER_NAME'    => $this->input->post('usrname'),
+				'USER_BIRTH'   => $this->input->post('usrbirth'),
+				'EMAIL'        => $this->input->post('usremail'),
+				'HANDPHONE'    => $this->input->post('usrHP'),
+				'USER_ADDRESS' => $this->input->post('usraddr')
+			);
+			$this->db->where('USER_ID', $userid);
+			$res = $this->db->update('MSTUSER', $data);
+			if($res){
+				$this->session->set_userdata('nama', $this->input->post('usrname'));
+			}
+			return $res;
 		}
 
 		public function update_img_doctor($userid, $img){
