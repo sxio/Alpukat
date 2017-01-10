@@ -92,7 +92,12 @@
 		}
 
 		public function edit_data_user($userid){
-
+			// $data = array(
+			// 	'' => $this->input->post(),
+			// 	'' => $this->input->post(),
+			// 	'' => $this->input->post(),
+			// 	'' => $this->input->post()
+			// );
 		}
 
 		public function update_img_doctor($userid, $img){

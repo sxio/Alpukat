@@ -35,13 +35,17 @@
 // usremail
 // usrHP
 // usraddr
-			$this->form_validation->set_rules('usrname','Name','trim');
-			$this->form_validation->set_rules('usremail','Email','trim|valid_email|is_unique[MSTUSER.EMAIL]');
-			$this->form_validation->set_rules('usrHP','Phone Number','trim');
-			$this->form_validation->set_rules('usraddr','Address','trim');
+			if($this->input->post('btn_edit')) {
+				$this->form_validation->set_rules('usrname','Name','trim');
+				$this->form_validation->set_rules('usremail','Email','trim|valid_email|is_unique[MSTUSER.EMAIL]');
+				$this->form_validation->set_rules('usrHP','Phone Number','trim');
+				$this->form_validation->set_rules('usraddr','Address','trim');
 
-			if($this->form_validation->run() == FALSE){
-				//
+				if($this->form_validation->run() == FALSE){
+
+				} else {
+
+				}
 			}
 
 			$this->load->view('profile/edit_profile_user', $data);
