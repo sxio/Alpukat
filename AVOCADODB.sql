@@ -70,29 +70,6 @@ INSERT INTO `MSDCATEGORY` VALUES (26,1,'Mati suri','','');
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSDGRPMENU`
---
-
-DROP TABLE IF EXISTS `MSDGRPMENU`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSDGRPMENU` (
-  `GRP_MENU_ID` varchar(10) NOT NULL,
-  `GRP_MENU_LIST` varchar(30) NOT NULL,
-  `GRP_MENU_DESC` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSDGRPMENU`
---
-
-LOCK TABLES `MSDGRPMENU` WRITE;
-/*!40000 ALTER TABLE `MSDGRPMENU` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSDGRPMENU` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSHCATEGORY`
 --
 
@@ -154,55 +131,6 @@ INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn','bed
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSHGRPMENU`
---
-
-DROP TABLE IF EXISTS `MSHGRPMENU`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSHGRPMENU` (
-  `GRP_MENU_ID` varchar(10) NOT NULL,
-  `GRP_MENU_NAME` varchar(30) NOT NULL,
-  PRIMARY KEY (`GRP_MENU_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSHGRPMENU`
---
-
-LOCK TABLES `MSHGRPMENU` WRITE;
-/*!40000 ALTER TABLE `MSHGRPMENU` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSHGRPMENU` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSHPACIENT`
---
-
-DROP TABLE IF EXISTS `MSHPACIENT`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSHPACIENT` (
-  `PCT_ID` varchar(10) NOT NULL,
-  `PCT_NAME` varchar(30) NOT NULL,
-  `PCT_ADDR` varchar(50) NOT NULL,
-  `PCT_EMAIL` varchar(15) NOT NULL,
-  `USER_ID` varchar(10) NOT NULL,
-  PRIMARY KEY (`PCT_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSHPACIENT`
---
-
-LOCK TABLES `MSHPACIENT` WRITE;
-/*!40000 ALTER TABLE `MSHPACIENT` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSHPACIENT` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSTCITY`
 --
 
@@ -258,58 +186,6 @@ INSERT INTO `MSTCOMMENT` VALUES (6,'ossas@ossas.com','This is Ossas','Uvuvwevwev
 UNLOCK TABLES;
 
 --
--- Table structure for table `MSTCUSTOMER`
---
-
-DROP TABLE IF EXISTS `MSTCUSTOMER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTCUSTOMER` (
-  `CUST_ID` varchar(10) NOT NULL,
-  `CUST_NAME` varchar(30) NOT NULL,
-  `CUSTOMER_JOIN_DT` datetime NOT NULL,
-  `EMAIL` varchar(15) NOT NULL,
-  `CUST_ADDR` varchar(50) NOT NULL,
-  `CUST_RCV_ADDR` varchar(50) NOT NULL,
-  `CUST_NO_REK` int(20) NOT NULL,
-  `USER_ID` varchar(10) NOT NULL,
-  PRIMARY KEY (`CUST_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTCUSTOMER`
---
-
-LOCK TABLES `MSTCUSTOMER` WRITE;
-/*!40000 ALTER TABLE `MSTCUSTOMER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTCUSTOMER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTGENDER`
---
-
-DROP TABLE IF EXISTS `MSTGENDER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTGENDER` (
-  `GEND_ID` varchar(10) NOT NULL,
-  `GEND_DESC` varchar(30) NOT NULL,
-  PRIMARY KEY (`GEND_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTGENDER`
---
-
-LOCK TABLES `MSTGENDER` WRITE;
-/*!40000 ALTER TABLE `MSTGENDER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTGENDER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `MSTPRODUCT`
 --
 
@@ -336,33 +212,13 @@ CREATE TABLE `MSTPRODUCT` (
 
 LOCK TABLES `MSTPRODUCT` WRITE;
 /*!40000 ALTER TABLE `MSTPRODUCT` DISABLE KEYS */;
-INSERT INTO `MSTPRODUCT` VALUES ('ANTI1','Antibiotic Super',16,603,30000,'<p>This is an Antibiotic</p>','noimage.jpg','2016-12-28 00:00:00','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('Baby1','Himalaya Baby Cream 100ml',18,100,300000,'<p>Himalaya&rsquo;s Baby Cream is specially formulated to protect the little one&#39;s roughen cheeks, &#39;crawler&#39;s knee&#39;, gentle nose and rubbed elbows. This cream protects against irritating humidity and windburn. Its ingredients works together to moisturize the baby&#39;s skin and maintain its natural softness. Uses under doctor&#39;s advice</p>','baby-cream_2.jpg','2016-12-29 15:17:07','0000-00-00 00:00:00');
-INSERT INTO `MSTPRODUCT` VALUES ('STET1','Stethoscope White',15,1005,500000,'<p>White Stethoscope is the best</p>','ste1.jpg','2016-12-25 00:00:00','2016-12-29 23:03:58');
-INSERT INTO `MSTPRODUCT` VALUES ('STET2','Stethoscope Black',15,1501,600000,'<p>This is a black stethoscope</p>','Lucifer.jpg','2016-12-26 00:00:00','0000-00-00 00:00:00');
+INSERT INTO `MSTPRODUCT` VALUES ('anti001','Antibiotic 1',16,50,50000,'<p>Anntibiotic 1</p>','antibiotic1.jpg','2017-01-08 14:41:01','2017-01-08 14:55:07');
+INSERT INTO `MSTPRODUCT` VALUES ('baby001','Baby Care 1',18,50,50000,'<p>Baby 1</p>','900.jpg','2017-01-08 14:42:00','2017-01-08 14:55:12');
+INSERT INTO `MSTPRODUCT` VALUES ('eye001','Glasses minus',21,50,300000,'<p>Glasses 1</p>','glasses.jpg','2017-01-08 14:44:32','2017-01-08 14:55:18');
+INSERT INTO `MSTPRODUCT` VALUES ('sport001','TreadMill super',19,50,1000000,'<p>Treadmill 1</p>','treadmill.jpg','2017-01-08 14:47:12','2017-01-08 14:55:23');
+INSERT INTO `MSTPRODUCT` VALUES ('stet001','Stethoscope Blue',15,50,400000,'<p>Stethoscope 1</p>','stet.jpg','2017-01-08 14:48:37','2017-01-08 14:55:26');
+INSERT INTO `MSTPRODUCT` VALUES ('vita001','Vitacimin Yellow',20,50,300000,'<p>Vitacimin 1</p>','vitacimin.jpg','2017-01-08 14:51:28','2017-01-08 14:55:28');
 /*!40000 ALTER TABLE `MSTPRODUCT` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTRELIGION`
---
-
-DROP TABLE IF EXISTS `MSTRELIGION`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTRELIGION` (
-  `RLG_ID` varchar(10) NOT NULL,
-  `RLG_DESC` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTRELIGION`
---
-
-LOCK TABLES `MSTRELIGION` WRITE;
-/*!40000 ALTER TABLE `MSTRELIGION` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTRELIGION` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -387,7 +243,7 @@ CREATE TABLE `MSTREMINDER` (
 
 LOCK TABLES `MSTREMINDER` WRITE;
 /*!40000 ALTER TABLE `MSTREMINDER` DISABLE KEYS */;
-INSERT INTO `MSTREMINDER` VALUES ('sxio','2017-01-05 17:20:00','Presentasi SIM');
+INSERT INTO `MSTREMINDER` VALUES ('sxio','2017-01-12 17:20:00','Presentasi PKTI Coding');
 /*!40000 ALTER TABLE `MSTREMINDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -403,7 +259,7 @@ CREATE TABLE `MSTSEQUENCES` (
   `SEQ_NAME` varchar(30) NOT NULL,
   `SEQ_VALUE` int(11) NOT NULL,
   PRIMARY KEY (`SEQ_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -412,85 +268,10 @@ CREATE TABLE `MSTSEQUENCES` (
 
 LOCK TABLES `MSTSEQUENCES` WRITE;
 /*!40000 ALTER TABLE `MSTSEQUENCES` DISABLE KEYS */;
-INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',7);
-INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',1);
+INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',6);
+INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',2);
+INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',8);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTSERVICE`
---
-
-DROP TABLE IF EXISTS `MSTSERVICE`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTSERVICE` (
-  `SERV_ID` varchar(10) NOT NULL,
-  `SERV_DESC` varchar(30) NOT NULL,
-  `PRICE` int(11) NOT NULL,
-  PRIMARY KEY (`SERV_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTSERVICE`
---
-
-LOCK TABLES `MSTSERVICE` WRITE;
-/*!40000 ALTER TABLE `MSTSERVICE` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTSERVICE` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTSUPPLIER`
---
-
-DROP TABLE IF EXISTS `MSTSUPPLIER`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTSUPPLIER` (
-  `SUPP_ID` varchar(10) NOT NULL,
-  `SUPP_NAME` varchar(30) NOT NULL,
-  `SUPP_JOIN_DT` datetime NOT NULL,
-  `EMAIL` varchar(15) NOT NULL,
-  `SUPP_ADDR` varchar(50) NOT NULL,
-  `SUPP_DLV_ADDR` varchar(50) NOT NULL,
-  `SUPP_NO_REK` int(20) NOT NULL,
-  `USER_NAME` varchar(10) NOT NULL,
-  PRIMARY KEY (`SUPP_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTSUPPLIER`
---
-
-LOCK TABLES `MSTSUPPLIER` WRITE;
-/*!40000 ALTER TABLE `MSTSUPPLIER` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTSUPPLIER` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `MSTTYPESCORING`
---
-
-DROP TABLE IF EXISTS `MSTTYPESCORING`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `MSTTYPESCORING` (
-  `TYPESCORE_ID` varchar(10) NOT NULL,
-  `TYPESCORE_DESC` int(11) NOT NULL,
-  PRIMARY KEY (`TYPESCORE_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `MSTTYPESCORING`
---
-
-LOCK TABLES `MSTTYPESCORING` WRITE;
-/*!40000 ALTER TABLE `MSTTYPESCORING` DISABLE KEYS */;
-/*!40000 ALTER TABLE `MSTTYPESCORING` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -509,7 +290,6 @@ CREATE TABLE `MSTUSER` (
   `HANDPHONE` char(15) NOT NULL,
   `USER_ADDRESS` varchar(150) NOT NULL,
   `USER_IMG` varchar(100) NOT NULL,
-  `GRP_MENU_ID` int(11) NOT NULL,
   `USER_LEVEL` int(11) NOT NULL,
   `ACTIVE` int(11) DEFAULT NULL,
   PRIMARY KEY (`USER_ID`)
@@ -522,11 +302,11 @@ CREATE TABLE `MSTUSER` (
 
 LOCK TABLES `MSTUSER` WRITE;
 /*!40000 ALTER TABLE `MSTUSER` DISABLE KEYS */;
-INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','','',0,0,1);
-INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','',0,2,1);
-INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','',0,0,1);
-INSERT INTO `MSTUSER` VALUES ('sxio','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','Jalan PROF HM YAMIN SH No 133','',0,1,1);
-INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen Huang','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','083199773608','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',0,2,1);
+INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','','noimage.png',0,1);
+INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','noimage.png',2,1);
+INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','noimage.png',0,1);
+INSERT INTO `MSTUSER` VALUES ('sxio','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','Jalan PROF HM YAMIN SH No 133','noimage.png',1,1);
+INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen Huang','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -665,6 +445,39 @@ LOCK TABLES `TRDDOCTOR` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `TRDFORUM`
+--
+
+DROP TABLE IF EXISTS `TRDFORUM`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `TRDFORUM` (
+  `PARENT_ID` varchar(20) NOT NULL,
+  `DETAIL_ID` varchar(20) NOT NULL,
+  `USER_ID` varchar(15) NOT NULL,
+  `USER_DT` datetime NOT NULL,
+  `FORUM_CONTENT` text NOT NULL,
+  PRIMARY KEY (`PARENT_ID`,`DETAIL_ID`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `TRDFORUM`
+--
+
+LOCK TABLES `TRDFORUM` WRITE;
+/*!40000 ALTER TABLE `TRDFORUM` DISABLE KEYS */;
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-001','FRD-20170109-002','sxio','2017-01-09 23:16:06','<p>jklkjljkljkl</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-001','FRD-20170110-005','sxio','2017-01-10 16:08:42','<p>asdkitgasdgkjasd</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-001','FRD-20170110-006','sxio','2017-01-10 17:08:40','<p>fuck your ass</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-002','FRD-20170109-003','sxio','2017-01-09 23:20:09','<p>asdasdasdasdasdzxc</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-002','FRD-20170109-004','sxio','2017-01-09 23:22:09','<p>1234567890-=</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRD-20170109-004','FRD-20170110-007','sxio','2017-01-10 17:18:11','<p>Ass (dari hp)</p>\r\n');
+INSERT INTO `TRDFORUM` VALUES ('FRM-20170109-001','FRD-20170109-001','sxio','2017-01-09 23:15:59','<p>dfgdfgdfgd</p>\r\n');
+/*!40000 ALTER TABLE `TRDFORUM` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `TRDGRADING`
 --
 
@@ -754,8 +567,6 @@ CREATE TABLE `TRDORDER` (
 
 LOCK TABLES `TRDORDER` WRITE;
 /*!40000 ALTER TABLE `TRDORDER` DISABLE KEYS */;
-INSERT INTO `TRDORDER` VALUES ('sxio','ESB-20170108-005','Baby1',1,300000);
-INSERT INTO `TRDORDER` VALUES ('sxioo','ESB-20170109-006','Baby1',1,300000);
 /*!40000 ALTER TABLE `TRDORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -874,14 +685,16 @@ DROP TABLE IF EXISTS `TRHFORUM`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TRHFORUM` (
-  `FORUM_ID` int(10) NOT NULL AUTO_INCREMENT,
+  `FORUM_ID` varchar(20) NOT NULL,
   `FORUM_TITLE` varchar(150) NOT NULL,
   `FORUM_CAT` int(10) NOT NULL,
   `FORUM_CONTENT` text NOT NULL,
+  `FORUM_LAST_POST` varchar(20) NOT NULL,
+  `REPLY_NUM` int(11) NOT NULL,
   `USER_ID` varchar(15) NOT NULL,
   `USER_DT` datetime NOT NULL,
   PRIMARY KEY (`FORUM_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -890,7 +703,7 @@ CREATE TABLE `TRHFORUM` (
 
 LOCK TABLES `TRHFORUM` WRITE;
 /*!40000 ALTER TABLE `TRHFORUM` DISABLE KEYS */;
-INSERT INTO `TRHFORUM` VALUES (39,'Isi Forum',23,'Isi Title','sxioo','2017-01-07 14:41:26');
+INSERT INTO `TRHFORUM` VALUES ('FRM-20170109-001','qwe',24,'<p>asd</p>','FRD-20170110-007',7,'sxio','2017-01-09 23:15:49');
 /*!40000 ALTER TABLE `TRHFORUM` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -951,8 +764,6 @@ CREATE TABLE `TRHORDER` (
 
 LOCK TABLES `TRHORDER` WRITE;
 /*!40000 ALTER TABLE `TRHORDER` DISABLE KEYS */;
-INSERT INTO `TRHORDER` VALUES ('ESB-20170108-005','sxio','asd','BCA','123','123','2017-01-08','TIKI',0,'2017-01-07 16:43:02','PENDING');
-INSERT INTO `TRHORDER` VALUES ('ESB-20170109-006','sxioo','Jalan','BNI','14123','afsadfasdf','2017-01-09','TIKI',0,'2017-01-07 17:37:17','PENDING');
 /*!40000 ALTER TABLE `TRHORDER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1021,4 +832,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-10 21:21:19
+-- Dump completed on 2017-01-10 21:31:29
