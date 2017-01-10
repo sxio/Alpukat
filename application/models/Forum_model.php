@@ -103,9 +103,11 @@
 				$this->db->where('DETAIL_ID', $data[$i]['FORUM_LAST_POST']);
 				$last_id = $this->db->get('TRDFORUM')->result_array();
 				if($last_id != NULL){
-					$data[$i]['LAST_ID'] = $last_id[0]['USER_ID'];
+					$data[$i]['LAST_POST_ID'] = $last_id[0]['USER_ID'];
+					$data[$i]['LAST_POST_DT'] = $last_id[0]['USER_DT'];
 				} else {
-					$data[$i]['LAST_ID'] = $data[$i]['USER_ID'];
+					$data[$i]['LAST_POST_ID'] = $data[$i]['USER_ID'];
+					$data[$i]['LAST_POST_DT'] = $data[$i]['USER_DT'];
 				}
 			}
 			return $data;
