@@ -33,7 +33,7 @@
 								<ul class="nav navbar-nav">
 									<!-- Mega Menu -->
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Supplies &amp; Equipment<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="col-sm-3 multi-gd-img">
@@ -55,16 +55,48 @@
 													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
-													<a href="<?php echo base_url('estore/eproducts') ?>"><img src="<?php echo base_url('assets/img/e-img') ?>/woo.jpg" alt=" "/></a>
+													<ul class="multi-column-dropdown">
+														<h6>Accessories</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Gloves</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Exercise Balls</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Skipping Ropes</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Bottles</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sport Bag</a></li>
+													</ul>
 												</div>
 												<div class="col-sm-3 multi-gd-img">
-													<a href="<?php echo base_url('estore/eproducts') ?>"><img src="<?php echo base_url('assets/img/e-img') ?>/woo1.jpg" alt=" "/></a>
+													<ul class="multi-column-dropdown">
+														<h6>Gym</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Home Gyms</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Benches</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Bars</a></li>
+													</ul>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<br>
+											<div class="row">
+												<div class="col-sm-3 multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Apparel</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">T-Shirts</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Capris</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Shorts</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Sleeveless Tops</a></li>
+													</ul>
+												</div>
+												<div class="col-sm-3 multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Others</h6>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Supplement</a></li>
+														<li><a href="<?php echo base_url('estore/eproducts') ?>">Nutrition</a></li>
+													</ul>
 												</div>
 												<div class="clearfix"></div>
 											</div>
 										</ul>
 									</li>
-									<li class="dropdown">
+									<!-- <li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fitness Products <b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
@@ -103,7 +135,7 @@
 										</ul>
 									</li>
 									<li><a href="codes.html">Supplements</a></li>
-									<li><a href="mail.html">Nutrition</a></li>
+									<li><a href="mail.html">Nutrition</a></li> -->
 								</ul>
 							</div>
 						</nav>
