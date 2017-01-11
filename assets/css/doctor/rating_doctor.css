@@ -3,7 +3,7 @@ body#rating_doctor{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px -100px;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 .rating_container{
     margin-top: 50px;
@@ -27,18 +27,19 @@ body#rating_doctor{
 }
 .input_container{
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 #docrating_img{
     width: 220px;
     height: 220px;
     border: 2px solid black;
-    margin-bottom: 30px;
+    /*margin-bottom: 10px;*/
     border-radius: 100%;
 }
 #input_button{
     /*margin-right: 30px;*/
     float: right;
+    /*margin-top: -30px;*/
 }
 
 @media screen and (max-width: 500px){
@@ -52,5 +53,8 @@ body#rating_doctor{
         height: 100%;
         margin-left: 0;
     }
+    /*#input_button{
+        margin-top: 0;
+    }*/
 
 }

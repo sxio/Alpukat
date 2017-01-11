@@ -6,6 +6,8 @@
 
         <?php echo link_tag('assets/css/doctor/rating_doctor.css') ?>
         <?php echo link_tag('assets/css/nav.css') ?>
+
+        <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
     </head>
     <body id="rating_doctor">
         <?php echo $nav ?>
@@ -26,21 +28,21 @@
                         <label class="control-label" for="docfriendly">Friendliness </label>
                         <br>
                         <div class="col-xs-12 input_container">
-                            <input class="bottom_only" type="number" max=10 min=0 name="docfriendly" value="" required>
+                            <input class="bottom_only" id="docfriendly" type="number" max=10 min=0 name="docfriendly" value="" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <label class="control-label" for="docexpert">Expertise </label>
                         <br>
                         <div class="col-xs-12 input_container">
-                            <input class="bottom_only" type="number" max=10 min=0 name="docexpert" value="" required>
+                            <input class="bottom_only" id="docexpert" type="number" max=10 min=0 name="docexpert" value="" required>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <label class="control-label" for="doctime">On Time </label>
                         <br>
                         <div class="col-xs-12 input_container">
-                            <input class="bottom_only" type="number" max=10 min=0 name="doctime" value="" required>
+                            <input class="bottom_only" id="doctime" type="number" max=10 min=0 name="doctime" value="" required>
                             <br>
                         </div>
                     </div>
@@ -48,10 +50,17 @@
                         <label class="control-label" for="docpro">Professionalism </label>
                         <br>
                         <div class="col-xs-12 input_container">
-                            <input class="bottom_only" type="number" max=10 min=0 name="docpro" value="" required>
+                            <input class="bottom_only" id="docpro" type="number" max=10 min=0 name="docpro" value="" required>
                             <br>
                         </div>
                     </div>
+                    <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <label class="control-label" for="docOA">Overall </label>
+                        <br>
+                        <div class="col-xs-12 input_container">
+                            <input class="bottom_only" type="number" max=10 min=0 name="docOA" value="" disabled>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="row">

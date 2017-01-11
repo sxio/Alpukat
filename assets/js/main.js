@@ -102,6 +102,11 @@ $(document).ready(function(){
     $("[data-toggle=tooltip]").tooltip();
 
   //doctor rating
-
+    $('#input_button').on("click",function(){
+        if($('#docfriendly').val()>10 || $('#docexpert').val()>10 || $('#doctime').val()>10 || $('#docpro').val()>10)
+        {
+            alert('Rate number must between 0 - 10');
+        }
+    });
 
 });
