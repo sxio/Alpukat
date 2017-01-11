@@ -13,10 +13,10 @@
 
 		public function view_profile($userid){
 			$user = $this->Profile_model->get_data_user($userid);
-			if($user['USER_LEVEL'] == 2){
-				redirect('profile/doctor/'. $userid);
-			} elseif($user['USER_LEVEL'] == 1) {
+			if($user['USER_LEVEL'] == 1){
 				redirect('profile/dashboard/'. $userid);
+			} else if ($user['USER_LEVEL'] == 2) {
+				redirect('profile/doctor/'. $userid);
 			}
 		}
 
@@ -129,9 +129,6 @@
 		}
 
 		public function dashboard($userid){
-			if($this->session->userdata('user_level') == 2){
-				redirect('profile/doctor/'. $userid);
-			}
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
