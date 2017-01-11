@@ -171,7 +171,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -241,7 +241,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- /.panel-heading -->
+						/.panel-heading
 						<div class="panel-body">
 							<ul class="chat">
 								<div class="form-group">
@@ -283,7 +283,7 @@
 								</div>
 							</ul>
 						</div>
-						<!-- /.panel-body -->
+						/.panel-body
 						<div class="panel-footer">
 							<div class="input-group">
 								<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
@@ -293,11 +293,11 @@
 									</button>
 								</span>
 							</div>
-							<!-- /.panel-footer -->
+							/.panel-footer
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<br>
 		</div>
 	</div>
