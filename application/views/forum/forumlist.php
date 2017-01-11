@@ -33,11 +33,11 @@
 						<div class="panel panel-info">
 							<div class="panel-heading">
 								<div class="row">
-									<div class="col-sm-3">
+									<div class="col-sm-8 forum_list_headline">
 										<h2><a href="<?php echo base_url('forum/detail/'. $forum_list['FORUM_ID']); ?>"><?php echo $forum_list['FORUM_TITLE']; ?></a></h2>
 										<h4>Topic : <?php echo $forum_list['CAT_NAME']; ?></h4>
 									</div>
-									<div class="col-sm-9">
+									<div class="col-sm-4">
 										<h5 class="pull-right">by <a href="<?php echo base_url('profile/view/'. $forum_list['USER_ID']); ?>"><?php echo $forum_list['USER_ID']; ?></a> -- <?php echo nice_date($forum_list['USER_DT'], 'l, d F Y, h:i A'); ?><br><span class="pull-right"><?php echo timespan(mysql_to_unix($forum_list['USER_DT']), now(), 1); ?> ago</span></h4>
 									</div>
 								</div>
