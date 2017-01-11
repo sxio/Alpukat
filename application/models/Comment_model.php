@@ -39,5 +39,12 @@
 			$this->Sequences_model->update_seq(5);
 			return $this->db->error();
 		}
+
+		public function get_comment($dctid){
+			$this->db->where('DCT_ID', $dctid);
+			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSTDCTCOMMENT.USER_ID');
+			$query = $this->db->get('MSTDCTCOMMENT');
+			return $query->result_array();
+		}
 	}
 ?>

@@ -130,30 +130,38 @@
 							</ul>
 						</div>
 					</div>
+					<?php
+						$level = $me['USER_LEVEL'];
+						if($level != 2) {
+					?>
 					<div class="col-xs-12 col-sm-12">
 						<div class="widget-area no-padding blank">
 							<div class="status-upload">
-								<?php echo form_open('profile/doctor/comment'); ?>
+								<?php echo form_open('profile/doctor/comment/'. $this->uri->segment(3)); ?>
 									<textarea placeholder="Please comments politely" name="comment" required></textarea>
 									<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
 								<?php echo form_close(); ?>
 							</div><!-- Status Upload  -->
 						</div><!-- Widget Area -->
 					</div>
-					<br>
-					<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
-						<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-10 col-md-10">
-						<div class="panel panel-default">
-							<div class="panel-heading panel-heading-comments">
-								<strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+					<?php foreach($comments as $comment): ?>
+						<div class="wrapper">
+							<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+								<img class="img-responsive user-photo" src="<?php echo base_url('assets/img/user/'. $comment['USER_IMG']); ?>">
 							</div>
-							<div class="panel-body">
-								Panel content
+							<div class="col-xs-9 col-sm-9 col-md-10 col-md-10">
+								<div class="panel panel-default">
+									<div class="panel-heading panel-heading-comments">
+										<strong><a href="<?php echo base_url('profile/view/'.$comment['USER_ID']); ?>"><?php echo $comment['USER_ID']; ?></a></strong> <span class="text-muted"><?php echo timespan(mysql_to_unix($comment['USER_DT']), now(), 1) ?> ago</span>
+									</div>
+									<div class="panel-body">
+										<?php echo $comment['COMMENT_CONTENT']; ?>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+				<?php endforeach; ?>
+				<?php } ?>
 				</div>
 			</div>
 		</div>

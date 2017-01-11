@@ -27,6 +27,8 @@
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
+			$data['comments'] = $this->Comment_model->get_comment($userid);
+			$data['me'] = $this->Profile_model->get_data_user($this->session->userdata('username'));
 
 			$this->load->view('profile/profile_doctor', $data);
 		}
@@ -198,9 +200,10 @@
 			$this->load->view('profile/reminder', $data);
 		}
 
-		public function add_doctor_comment($userid){
-			$this->Comment_model->add_doctor_comment();
-			redirect('profile/doctor/'. $userid);
+		public function add_doctor_comment($dctid){
+			$userid = $this->session->userdata('username');
+			$this->Comment_model->add_doctor_comment($dctid, $userid);
+			redirect('profile/doctor/'. $dctid);
 		}
 	}
 ?>
