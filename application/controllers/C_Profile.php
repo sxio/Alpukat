@@ -20,6 +20,14 @@
 			$this->load->view('profile/profile_doctor', $data);
 		}
 
+		// KENEDY LUKITO --> RATING DOCTOR
+		public function rating_doctor(){
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+			$this->load->view('doctor/rating_doctor', $data);
+		}
+
 		public function edit_profile_user($userid){
 			if($this->session->userdata('username') != $userid){
 				show_404();

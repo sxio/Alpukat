@@ -19,6 +19,7 @@ $route['profile/payment-history']                       = 'C_Profile/payment_his
 $route['profile/edit/(:any)']                           = 'C_Profile/edit_profile_user/$1';
 $route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
+$route['profile/doctor/mail/rating']                    = 'C_Profile/rating_doctor';//KENEDY LUKITO --> RATING DOCTOR
 
 $route['news']                                          = 'C_News/view';
 $route['news/details/(:any)']                           = 'C_News/news_details/$1';

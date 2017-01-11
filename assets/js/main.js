@@ -100,4 +100,8 @@ $(document).ready(function(){
 
   //doctor profile comment
     $("[data-toggle=tooltip]").tooltip();
+
+  //doctor rating
+
+
 });
