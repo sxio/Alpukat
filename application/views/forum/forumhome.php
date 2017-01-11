@@ -19,6 +19,19 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-lg-6">
+					<form method="get" action="<?php echo base_url('forum/search'); ?>">
+						<div class="input-group">
+							<span class="input-group-addon">Search</span>
+							<input type="text" class="form-control" placeholder="Forum Title or Content" autofocus name="src">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit">Go!</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-12">
 					<table class="table forum table-striped">
 						<thead>

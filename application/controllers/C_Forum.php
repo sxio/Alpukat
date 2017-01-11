@@ -27,6 +27,19 @@
 
 			$this->load->view('forum/forumhome', $data);
 		}
+
+		public function search_forum(){
+			$search = $this->input->get('src', TRUE);
+			$data['header']   = $this->load->view('templates/header','',TRUE);
+			$data['nav']      = $this->load->view('templates/nav','',TRUE);
+			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
+
+			$this->load->model('Search_model');
+			$data['f_search'] = $this->Search_model->get_forum_search($search);
+
+			$this->load->view('forum/forumsearch', $data);
+		}
+
 		//header
 		public function list_forum(){
 			$data['header']   = $this->load->view('templates/header','',TRUE);

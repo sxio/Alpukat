@@ -16,5 +16,17 @@
 				return array();
 			}
 		}
+
+		public function get_forum_search($search){
+			$this->db->like('FORUM_TITLE', $search);
+			$this->db->or_like('FORUM_CONTENT', $search);
+			$this->db->join('MSDCATEGORY', 'TRHFORUM.FORUM_CAT = MSDCATEGORY.CAT_ID');
+			$query = $this->db->get('TRHFORUM');
+			if($query->num_rows() > 0){
+				return $query->result_array();
+			} else {
+				return array();
+			}
+		}
 	}
 ?>
