@@ -51,28 +51,40 @@
 									</div>
 									<div class="panel panel-body text-left">
 										<ul class="list-unstyled">
-											<li><h4>Overall Visits</h4></li>
+											<!-- <li><h4>Overall Visits</h4></li>
 											<li>
 												<ul>
 													<li>Last Week    : 999 users</li>
 													<li>Last Month   :12393 users</li>
 												</ul>
-											</li>
+											</li> -->
 											<li>Rating</li>
-											<li class="progress">
-												<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-												70%
-												</div>
-												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:20%">
-												20%
-												</div>
-												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:7%">
-												7%
-												</div>
-												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:3%">
-												3%
+											<li>
+												<label class="col-md-4 control-label">Friendliness </label>
+												<div class="col-md-8">
+													<p>2.5/10</p>
 												</div>
 											</li>
+											<li>
+												<label class="col-md-4 control-label">Expertise </label>
+												<div class="col-md-8">
+													<p>2.5/10</p>
+												</div>
+											</li>
+											<li>
+												<label class="col-md-4 control-label">On Time </label>
+												<div class="col-md-8">
+													<p>2.5/10</p>
+												</div>
+											</li>
+											<li>
+												<label class="col-md-4 control-label">Professionalism </label>
+												<div class="col-md-8">
+													<p>2.5/10</p>
+												</div>
+											</li>
+											<h4>NOTE : 2.5 -> RATA2 PENILAIAN
+											; 10  -> NILAI MAKSIMAL YANG MUNGKIN DIDAPATKAN</h4>
 										</ul>
 									</div>
 								</div>
