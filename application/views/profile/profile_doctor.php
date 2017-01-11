@@ -32,10 +32,30 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled info text-left">
-								<li>ID : <?php echo $data_doctor['USER_ID']; ?></li>
-								<li>Name : <?php echo $data_doctor['USER_NAME']; ?></li>
-								<li>Date of Birth : <?php echo nice_date($data_doctor['USER_BIRTH'], 'd F Y'); ?></li>
-								<li>Address : <?php echo $data_doctor['USER_ADDRESS']; ?></li>
+								<li>
+									<label class="col-xs-4 control-label">ID</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['USER_ID']; ?></p>
+									</div>
+								</li>
+								<li>
+									<label class="col-xs-4 control-label">Nama</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['USER_NAME']; ?></p>
+									</div>
+								</li>
+								<li>
+									<label class="col-xs-4 control-label">Date of Birth</label>
+									<div class="col-xs-8">
+										<p>: <?php echo nice_date($data_doctor['USER_BIRTH'], 'd F Y'); ?></p>
+									</div>
+								</li>
+								<li>
+									<label class="col-xs-4 control-label">Address</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['USER_ADDRESS']; ?></p>
+									</div>
+								</li>
 							</ul>
 							<!--Facebook-->
 							<!-- <button type="button" class="btn btn-fb btn-info"><i class="fa fa-facebook center"></i> Facebook</button> -->
@@ -43,7 +63,7 @@
 							<!-- <button type="button" class="btn btn-gplus btn-danger"><i class="fa fa-google-plus center"></i> Google +</button> -->
 							<!--Instagram-->
 							<!-- <button type="button" class="btn btn-ins btn-primary"><i class="fa fa-instagram center"></i> Instagram</button> -->
-							<hr>
+							<!-- <hr> -->
 							<div class="row location_pic">
 								<h3>Practice Location</h3>
 								<div class="col-xs-12">
@@ -124,25 +144,71 @@
 						</div>
 						<div class="panel-body">
 							<ul class="list-unstyled">
-								<li>Education </li>
-								<li><ul>
+								<li>Education : </li>
+								<li>
+									<ul class="list-unstyled">
 										<?php
 											if($data_doctor['DCT_EDUC'] == NULL){
 												$data_doctor['DCT_EDUC'] = ';;;;;';
 											}
 											$educ = explode(';', $data_doctor['DCT_EDUC']);
 										?>
-										<li>SD : <?php echo $educ[0]; ?></li>
-										<li>SMP : <?php echo $educ[1]; ?></li>
-										<li>SMA : <?php echo $educ[2]; ?></li>
-										<li>S1 : <?php echo $educ[3]; ?></li>
-										<li>S2 : <?php echo $educ[4]; ?></li>
-										<li>DR : <?php echo $educ[5]; ?></li>
+										<li>
+											<label class="col-xs-4 control-label">SD</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[0]; ?></p>
+											</div>
+										</li>
+										<li>
+											<label class="col-xs-4 control-label">SMP</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[1]; ?></p>
+											</div>
+										</li>
+										<li>
+											<label class="col-xs-4 control-label">SMA</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[2]; ?></p>
+											</div>
+										</li>
+										<li>
+											<label class="col-xs-4 control-label">S1</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[3]; ?></p>
+											</div>
+										</li>
+										<li>
+											<label class="col-xs-4 control-label">S2</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[4]; ?></p>
+											</div>
+										</li>
+										<li>
+											<label class="col-xs-4 control-label">DR</label>
+											<div class="col-xs-8">
+												<p>: <?php echo $educ[5]; ?></p>
+											</div>
+										</li>
 									</ul>
 								</li>
-								<li>Experience : <?php echo $data_doctor['DCT_EXP']; ?></li>
-								<li>Speciality : <?php echo $data_doctor['DCT_SPECIALTY']; ?></li>
-								<li>Certification : <?php echo $data_doctor['DCT_CERTIFICATE']; ?></li>
+								<li>
+									<label class="col-xs-4 control-label">Experience</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['DCT_EXP']; ?></p>
+									</div>
+								</li>
+								<li>
+									<label class="col-xs-4 control-label">Speciality</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['DCT_SPECIALTY']; ?></p>
+									</div>
+								</li>
+								<li>
+									<label class="col-xs-4 control-label">Certification</label>
+									<div class="col-xs-8">
+										<p>: <?php echo $data_doctor['DCT_CERTIFICATE']; ?></p>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
