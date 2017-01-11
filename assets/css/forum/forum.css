@@ -56,3 +56,7 @@ blockquote a.btn{
 #forum-list .col-sm-9 a{
 	text-decoration: underline;
 }
+/*KENEDY 1-11-2017*/
+.forum_list_headline a{
+	text-decoration: none!important;
+}

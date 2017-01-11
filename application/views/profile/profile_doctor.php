@@ -38,11 +38,11 @@
 								<li>Address : <?php echo $data_doctor['USER_ADDRESS']; ?></li>
 							</ul>
 							<!--Facebook-->
-							<button type="button" class="btn btn-fb btn-info"><i class="fa fa-facebook center"></i> Facebook</button>
+							<!-- <button type="button" class="btn btn-fb btn-info"><i class="fa fa-facebook center"></i> Facebook</button> -->
 							<!--Google +-->
-							<button type="button" class="btn btn-gplus btn-danger"><i class="fa fa-google-plus center"></i> Google +</button>
+							<!-- <button type="button" class="btn btn-gplus btn-danger"><i class="fa fa-google-plus center"></i> Google +</button> -->
 							<!--Instagram-->
-							<button type="button" class="btn btn-ins btn-primary"><i class="fa fa-instagram center"></i> Instagram</button>
+							<!-- <button type="button" class="btn btn-ins btn-primary"><i class="fa fa-instagram center"></i> Instagram</button> -->
 							<hr>
 							<div class="row">
 								<div class="panel panel-warning visits">

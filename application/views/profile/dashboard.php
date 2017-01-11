@@ -313,7 +313,7 @@
 				icon: 'fa fa-check fa-fw'
 			  });
 			</script>
-	<?
+	<?php
 		}
 	?>
 </body>
