@@ -145,7 +145,7 @@
 						</div><!-- Widget Area -->
 					</div>
 					<?php foreach($comments as $comment): ?>
-						<div class="wrapper">
+						<div class="row comments_row">
 							<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
 								<img class="img-responsive user-photo" src="<?php echo base_url('assets/img/user/'. $comment['USER_IMG']); ?>">
 							</div>

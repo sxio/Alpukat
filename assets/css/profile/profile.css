@@ -33,6 +33,9 @@ hr{
 .visits .panel-body{
     margin: 0;
 }
+.comments_row{
+    padding-right: 20px;
+}
 
 
 
@@ -142,6 +145,9 @@ body .no-padding {
         /*height: 400px;*/
     }
     .psi{
+        margin-bottom: 20px;
+    }
+    .comments_row{
         margin-bottom: 20px;
     }
 
