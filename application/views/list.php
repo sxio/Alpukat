@@ -38,7 +38,7 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
-							<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Type Doctor <i class="fa fa-plus fa-fw exp"></i>
+							<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Doctor`s Specialty <i class="fa fa-plus fa-fw exp"></i>
 							</a>
 							<div id="thelist" class="collapse">
 								<?php foreach($doc_cat as $cat): ?>
