@@ -22,7 +22,7 @@
 									<h4><?php echo $forum_header['FORUM_TITLE']; ?></h4>
 								</div>
 								<div class="col-sm-9">
-									<span class="pull-right">by <?php echo $forum_header['USER_NAME']; ?> -- <?php echo nice_date($forum_header['USER_DT'], 'd F Y, H:i:s'); ?></span>
+									<span class="pull-right">by <a href="<?php echo base_url('profile/view/'. $forum_header['USER_ID']); ?>"><?php echo $forum_header['USER_ID']; ?></a> -- <?php echo nice_date($forum_header['USER_DT'], 'd F Y, H:i:s'); ?></span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -42,7 +42,7 @@
 											<div class="forum-margin"><?php
 										} ?>
 										<blockquote id="<?php echo $fd['DETAIL_ID']; ?>">
-											<h5>by <?php echo $fd['USER_NAME']; ?> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
+											<h5>by <a href="<?php echo base_url('profile/view/'. $fd['USER_ID']); ?>"><?php echo $fd['USER_ID']; ?></a> -- <?php echo nice_date($fd['USER_DT'], 'l, d F Y, h:i A'); ?></h5>
 											<h4 class="text-justify"><?php echo $fd['FORUM_CONTENT']; ?></h4>
 
 											<div class="btn-wrapper clearfix">

@@ -8,6 +8,16 @@
 			$this->load->model('History_model');
 			$this->load->model('Estore_model');
 			$this->load->model('Profile_model');
+			$this->load->model('Forum_model');
+		}
+
+		public function view_profile($userid){
+			$user = $this->Profile_model->get_data_user($userid);
+			if($user['USER_LEVEL'] == 2){
+				redirect('profile/doctor/'. $userid);
+			} elseif($user['USER_LEVEL'] == 1) {
+				redirect('profile/dashboard/'. $userid);
+			}
 		}
 
 		public function profile_doctor($userid){
@@ -37,12 +47,7 @@
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 			$data['user'] = $this->Profile_model->get_data_user($userid);
-// _photo
-// usrname
-// usrbirth
-// usremail
-// usrHP
-// usraddr
+
 			if($this->input->post('btn_edit')) {
 				$this->form_validation->set_rules('usrname','Name','trim');
 				$this->form_validation->set_rules('usremail','Email','trim|valid_email');
@@ -133,6 +138,7 @@
 
 			$data['user']   = $this->Profile_model->get_data_user($userid);
 			$data['estore'] = $this->Estore_model->get_order_by_username($userid);
+			$data['forum']  = $this->Forum_model->get_forum_header_by_username($userid);
 			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
 
 			$this->load->view('profile/dashboard', $data);

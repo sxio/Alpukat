@@ -1,4 +1,3 @@
-<!-- <?php print_r($hot_topics); //die; ?> -->
 <!-- Meikelwis 18-12-16 Untuk Forum home -->
 <!DOCTYPE html>
 <html>

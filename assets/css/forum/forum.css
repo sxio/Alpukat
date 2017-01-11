@@ -50,3 +50,9 @@ blockquote a.btn{
 .forum-margin{
 	margin-left: 40px!important;
 }
+#forum-list h2{
+	margin-top: 5px;
+}
+#forum-list .col-sm-9 a{
+	text-decoration: underline;
+}

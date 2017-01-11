@@ -6,6 +6,9 @@
 			$this->load->helper('date');
 			date_default_timezone_set('Asia/Jakarta');
 		}
+		public function count_all(){
+			return $this->db->count_all('TRHFORUM');
+		}
 
 		public function add_forum($username){
 			$forumid = $this->Sequences_model->concat(2, mdate('%Y-%m-%d %H:%i:%s',now()));
@@ -37,13 +40,13 @@
 			$this->db->insert('TRDFORUM',$data);
 			$this->Sequences_model->update_seq(3);
 
-
 			$header_id = $this->get_id_header_by_nested_child_id($detailid);
-			$num = $this->db->get_where('TRHFORUM', array('FORUM_ID' => $header_id))->result_array()[0]['REPLY_NUM'];
+			$children = $this->get_forum_detail($header_id, 0);
+			$num = count($children, COUNT_RECURSIVE) / 17;
 
 			$dataUpdate = array(
 				'FORUM_LAST_POST' => $detailid,
-				'REPLY_NUM' => $num+1
+				'REPLY_NUM' => $num
 			);
 			$this->db->where('FORUM_ID', $header_id);
 			$this->db->update('TRHFORUM', $dataUpdate);
@@ -66,23 +69,23 @@
 			return $return;
 		}
 
-		public function get_forum_header(){
+		public function get_forum_header($limit, $offset){
 			$this->db->select('A.FORUM_ID,A.FORUM_TITLE,B.CAT_NAME,A.FORUM_CONTENT,A.USER_ID,A.USER_DT');
 			$this->db->from('TRHFORUM A');
 			$this->db->join('MSDCATEGORY B','A.FORUM_CAT = B.CAT_ID','LEFT');
 			$this->db->order_by('A.USER_DT', 'DESC');
+			$this->db->limit($limit, $offset);
 			$result = $this->db->get();
 			return $result->result_array();
 		}
 
 		public function get_forum_header_by_id($forum_id){
 			$this->db->where('FORUM_ID', $forum_id);
-			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRHFORUM.USER_ID');
 			$query = $this->db->get('TRHFORUM');
 			return $query->result_array();
 		}
 
-		public function get_forum_header_by_user($userid){
+		public function get_forum_header_by_username($userid){
 			$this->db->order_by('TRHFORUM.USER_DT', 'DESC');
 			$this->db->where('TRHFORUM.USER_ID', $userid);
 			$this->db->join('MSDCATEGORY', 'FORUM_CAT = CAT_ID');
@@ -146,7 +149,7 @@
 		public function get_forum_detail($parent_id, $level = 0){
 			$this->db->order_by('USER_DT');
 			$this->db->where('PARENT_ID', $parent_id);
-			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRDFORUM.USER_ID');
+			// $this->db->join('MSTUSER', 'MSTUSER.USER_ID = TRDFORUM.USER_ID');
 			$query = $this->db->get('TRDFORUM');
 			$f_detail = $query->result_array();
 

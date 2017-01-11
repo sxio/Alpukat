@@ -3,6 +3,7 @@
 		public function __construct(){
 			parent:: __construct();
 		 	$this->load->model('Forum_model');
+			$this->load->library('pagination');
 		}
 
 		public function view(){
@@ -11,8 +12,19 @@
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
-			$data['my_forum'] = $this->Forum_model->get_forum_header_by_user($username);
 			$data['hot_topics'] = $this->Forum_model->get_forum_header_by_num_post(7);
+			$data['my_forum'] = $this->Forum_model->get_forum_header_by_username($username);
+
+
+			for($i = 0; $i < count($data['hot_topics']); $i++){
+				$detail = $this->Forum_model->get_forum_detail($data['hot_topics'][$i]['FORUM_ID'], 0);
+				if(count($detail) == 0){
+					$data['hot_topics'][$i]['REPLY_NUM'] = 0;
+				} else {
+					$data['hot_topics'][$i]['REPLY_NUM'] = count($detail, COUNT_RECURSIVE) / (count($detail[0]) + 1);
+				}
+			}
+
 			$this->load->view('forum/forumhome', $data);
 		}
 		//header
@@ -21,7 +33,24 @@
 			$data['nav']      = $this->load->view('templates/nav','',TRUE);
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
-			$data['forum_list'] = $this->Forum_model->get_forum_header();
+			// CONFIGURE PAGINATION
+			$this->config->load('pagination');
+			$config                = $this->config->item('pagination');
+			$config['base_url']    = base_url(). 'forum/list';
+			$config['total_rows']  = $this->Forum_model->count_all();
+			$config['per_page']    = 10;
+			$config['uri_segment'] = 3;
+
+			$this->pagination->initialize($config);
+			$data['pagination']   = $this->pagination->create_links();
+
+			$offset               = $this->uri->segment(3);
+			$limit                = $config['per_page'];
+			//
+			$data['offset']       = $offset;
+			$data['count_all']    = $config['total_rows'];
+
+			$data['forum_list'] = $this->Forum_model->get_forum_header($limit, $offset);
 			$this->load->view('forum/forumlist', $data);
 		}
 
@@ -59,12 +88,12 @@
 			$data['forumnav'] = $this->load->view('forum/forumnav','',TRUE);
 
 			$data['forum_header'] = $this->Forum_model->get_forum_header_by_id($parent_id)[0];
-			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id);
+			$data['forum_detail'] = $this->Forum_model->get_forum_detail($parent_id, 0);
 
 			$this->load->view('forum/forumdetail', $data);
 		}
 
-		public function reply($parent_id){
+		public function reply($parent_id){ // VIEW
 			if($this->session->userdata('username') == NULL){
 				redirect('user');
 			}

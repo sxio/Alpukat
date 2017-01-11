@@ -20,6 +20,7 @@ $route['profile/edit/(:any)']                           = 'C_Profile/edit_profil
 $route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
 $route['profile/doctor/mail/rating']                    = 'C_Profile/rating_doctor';//KENEDY LUKITO --> RATING DOCTOR
+$route['profile/view/(:any)']                           = 'C_Profile/view_profile/$1';
 
 $route['news']                                          = 'C_News/view';
 $route['news/details/(:any)']                           = 'C_News/news_details/$1';
@@ -42,6 +43,7 @@ $route['booking/success/(:any)']                        = 'C_Payment/pay_success
 
 $route['forum/create']                                  = 'C_Forum/create_forum';
 $route['forum/list']                                    = 'C_Forum/list_forum';
+$route['forum/list/(:num)']                             = 'C_Forum/list_forum/$1'; //for pagination
 $route['forum/detail/(:any)']                           = 'C_Forum/detail_forum/$1';
 $route['forum/reply/(:any)']                            = 'C_Forum/reply/$1';
 $route['forum/add-reply/(:any)']                        = 'C_Forum/add_reply/$1';

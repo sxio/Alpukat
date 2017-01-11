@@ -89,12 +89,12 @@
 									<i class="fa fa-comments fa-5x"></i>
 								</div>
 								<div class="col-sm-9 text-right">
-									<div class="huge">26</div>
-									<div>Discussion Forum!</div>
+									<div class="huge"><?php echo count($forum); ?></div>
+									<div>My Forum!</div>
 								</div>
 							</div>
 						</div>
-						<a href="<?php echo base_url('forum/forumdetail'); ?>" >
+						<a href="<?php echo base_url('forum'); ?>" >
 							<div class="panel-footer">
 								<span class="pull-left">View Details</span>
 								<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -156,7 +156,7 @@
 								</div>
 								<div class="col-sm-9 text-right">
 									<div class="huge"><?php echo count($estore); ?></div>
-									<div>Orders!</div>
+									<div>My Orders!</div>
 								</div>
 							</div>
 						</div>
