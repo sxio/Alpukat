@@ -46,11 +46,11 @@
 								<?php if(isset($form_error) && $form_error != null) { ?>
 								<div class="alert alert-danger msg"><?php echo $form_error; ?></div>
 								<?php } ?>
-								<?php if(isset($msg) && $msg != null) echo $msg; ?>
+								<?php if($this->session->flashdata('msg') != null) echo $this->session->flashdata('msg'); ?>
 							</div>
 							<div class="col-sm-6 text-right">
 								<?php echo form_hidden('userid', $this->session->userdata('username')); ?>
-								<button class="btn btn-danger" name="delete" value="save"><i class="fa fa-trash fa-fw"></i> Delete</button>
+								<button class="btn btn-danger" name="delete" value="delete"><i class="fa fa-trash fa-fw"></i> Delete</button>
 								<button class="btn btn-success" name="save" value="save"><i class="fa fa-save fa-fw"></i> Save</button>
 							</div>
 						</div>

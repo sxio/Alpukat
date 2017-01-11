@@ -32,7 +32,11 @@
 							</span>';
 							?>
 							<a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $username; ?>
-							<?php echo $notif_icon_string; ?>
+							<?php
+								if($this->session->userdata('reminder') != NULL){
+										echo $notif_icon_string;
+									}
+							?>
 							<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<?php
@@ -47,7 +51,11 @@
 									<li><a href="<?php echo base_url('profile/dashboard/'. $userid); ?>"><i class="fa fa-th-large fa-fw"></i> Dashboard</a></li>
 								<?php } ?>
 								<li><a href="<?php echo base_url('profile/payment-history'); ?>"><i class="fa fa-history fa-fw"></i> Payment History</a></li>
-								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php echo $notif_icon_string; ?></a></li>
+								<li><a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell fa-fw"></i> Reminder <?php
+									if($this->session->userdata('reminder') != NULL){
+										echo $notif_icon_string;
+									}
+								?></a></li>
 								<li class="divider"></li>
 								<li><a href="<?php echo base_url('logout/log_out');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
 							</ul>
