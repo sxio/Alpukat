@@ -3,7 +3,7 @@ body#rating_doctor{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px -100px;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
 }
 .rating_container{
     margin-top: 50px;
