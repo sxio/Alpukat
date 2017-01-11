@@ -42,7 +42,7 @@
 
 			$header_id = $this->get_id_header_by_nested_child_id($detailid);
 			$children = $this->get_forum_detail($header_id, 0);
-			$num = count($children, COUNT_RECURSIVE) / 17;
+			$num = count($children, COUNT_RECURSIVE) / (count($children[0]) + 1);
 
 			$dataUpdate = array(
 				'FORUM_LAST_POST' => $detailid,
@@ -89,9 +89,23 @@
 			$this->db->order_by('TRHFORUM.USER_DT', 'DESC');
 			$this->db->where('TRHFORUM.USER_ID', $userid);
 			$this->db->join('MSDCATEGORY', 'FORUM_CAT = CAT_ID');
-			$this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
+			// $this->db->join('TRDFORUM', 'TRDFORUM.DETAIL_ID = TRHFORUM.FORUM_LAST_POST');
 			$query = $this->db->get('TRHFORUM');
-			return $query->result_array();
+			$data = $query->result_array();
+
+			for($i = 0; $i < count($data); $i++){
+				$this->db->where('DETAIL_ID', $data[$i]['FORUM_LAST_POST']);
+				$last_id = $this->db->get('TRDFORUM')->result_array();
+				if($last_id != NULL){
+					$data[$i]['LAST_POST_ID'] = $last_id[0]['USER_ID'];
+					$data[$i]['LAST_POST_DT'] = $last_id[0]['USER_DT'];
+				} else {
+					$data[$i]['LAST_POST_ID'] = $data[$i]['USER_ID'];
+					$data[$i]['LAST_POST_DT'] = $data[$i]['USER_DT'];
+				}
+			}
+
+			return $data;
 		}
 
 		public function get_forum_header_by_num_post($limit){

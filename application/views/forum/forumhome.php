@@ -23,10 +23,8 @@
 					<table class="table forum table-striped">
 						<thead>
 							<tr>
-								<th class="cell-stat"></th>
-								<th>
-									<h3>Hot Topics</h3>
-								</th>
+								<th class="cell-stat hidden-xs hidden-sm"></th>
+								<th><h3>Hot Topics</h3></th>
 								<th class="cell-stat text-center hidden-xs hidden-sm">Topics</th>
 								<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
 								<th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
@@ -35,7 +33,7 @@
 						<tbody>
 							<?php foreach($hot_topics as $ht): ?>
 							<tr>
-								<td></td>
+								<td class="hidden-xs hidden-sm"></td>
 								<td><a href="<?php echo base_url('forum/detail/'. $ht['FORUM_ID']); ?>"><?php echo $ht['FORUM_TITLE']; ?></a></td>
 								<td class="text-center hidden-xs hidden-sm"><?php echo $ht['CAT_NAME']; ?></td>
 								<td class="text-center hidden-xs hidden-sm"><?php echo $ht['REPLY_NUM']; ?></td>
@@ -48,7 +46,7 @@
 					<table class="table forum table-striped">
 						<thead>
 							<tr>
-								<th class="cell-stat"></th>
+								<th class="cell-stat hidden-xs hidden-sm"></th>
 								<th><h3>Created Forum</h3></th>
 								<th class="cell-stat text-center hidden-xs hidden-sm">Topics</th>
 								<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
@@ -58,11 +56,11 @@
 						<tbody>
 							<?php foreach($my_forum as $forum): ?>
 							<tr>
-								<td></td>
+								<td class="hidden-xs hidden-sm"></td>
 								<td><a href="<?php echo base_url('forum/detail/'. $forum['FORUM_ID']); ?>"><?php echo $forum['FORUM_TITLE']; ?></a></td>
 								<td class="text-center"><?php echo $forum['CAT_NAME']; ?></td>
 								<td class="text-center"><?php echo $forum['REPLY_NUM']; ?></td>
-								<td class="hidden-xs hidden-sm">by <a href="<?php echo base_url('forum/detail/'.$forum['FORUM_ID']. '#'. $forum['FORUM_LAST_POST']); ?>"><?php echo $forum['USER_ID']; ?></a><br><small><i class="fa fa-clock-o"></i> <?php echo timespan(mysql_to_unix($forum['USER_DT']), now(), 1) . ' ago'; ?></small></td>
+								<td class="hidden-xs hidden-sm">by <a href="<?php echo base_url('forum/detail/'.$forum['FORUM_ID']. '#'. $forum['FORUM_LAST_POST']); ?>"><?php echo $forum['LAST_POST_ID']; ?></a><br><small><i class="fa fa-clock-o"></i> <?php echo timespan(mysql_to_unix($forum['LAST_POST_DT']), now(), 1) . ' ago'; ?></small></td>
 							</tr>
 							<?php endforeach; ?>
 						</tbody>
