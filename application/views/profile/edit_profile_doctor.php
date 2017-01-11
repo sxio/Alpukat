@@ -120,7 +120,8 @@
 						</div>
 					</div>
 					<br>
-					<legend>Practice Location</legend>
+					<br>
+					<legend>Practice Location ( Map Picture of the Location )</legend>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
 							<label for="_photo">
