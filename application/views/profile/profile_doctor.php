@@ -133,10 +133,10 @@
 					<div class="col-xs-12 col-sm-12">
 						<div class="widget-area no-padding blank">
 							<div class="status-upload">
-								<form>
-									<textarea placeholder="Please comments politely" ></textarea>
+								<?php echo form_open('profile/doctor/comment'); ?>
+									<textarea placeholder="Please comments politely" name="comment" required></textarea>
 									<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
-								</form>
+								<?php echo form_close(); ?>
 							</div><!-- Status Upload  -->
 						</div><!-- Widget Area -->
 					</div>
@@ -158,5 +158,9 @@
 			</div>
 		</div>
 	</section>
+	<br>
+	<br>
+	<br>
+	<br>
 </body>
 </html>

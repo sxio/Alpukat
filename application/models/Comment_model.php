@@ -25,5 +25,19 @@
 			$query = $this->db->get('MSTCOMMENT', $limit, $offset);
 			return $query->result_array();
 		}
+
+		public function add_doctor_comment($dctid, $userid){
+			$id = $this->Sequences_model->concat(5, mdate('%Y-%m-%d %H:%i:%s',now()));
+			$data = array(
+				'DCT_ID' => $dctid,
+				'COMMENT_ID' => $id,
+				'COMMENT_CONTENT' => $this->input->post('comment'),
+				'USER_ID' => $userid,
+				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
+			);
+			$this->db->insert('MSTDCTCOMMENT', $data);
+			$this->Sequences_model->update_seq(5);
+			return $this->db->error();
+		}
 	}
 ?>

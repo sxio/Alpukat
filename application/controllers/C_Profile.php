@@ -9,6 +9,7 @@
 			$this->load->model('Estore_model');
 			$this->load->model('Profile_model');
 			$this->load->model('Forum_model');
+			$this->load->model('Comment_model');
 		}
 
 		public function view_profile($userid){
@@ -195,6 +196,11 @@
 			$data['r_notif']    = $this->Profile_model->get_nearest_reminder($username);
 
 			$this->load->view('profile/reminder', $data);
+		}
+
+		public function add_doctor_comment($userid){
+			$this->Comment_model->add_doctor_comment();
+			redirect('profile/doctor/'. $userid);
 		}
 	}
 ?>

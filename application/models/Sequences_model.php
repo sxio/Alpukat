@@ -28,11 +28,14 @@
 				// PARAM = date
 				// FORUM DETAIL
 				$prefix = 'FRD-' . nice_date($param, 'Ymd') . '-';
-			}
-			elseif($seq_id == 4) {
+			} elseif($seq_id == 4) {
 				// PARAM = date
 				// BOOKING
 				$prefix = 'BO-' . nice_date($param, 'Ymd') . '-';
+			} elseif($seq_id == 5){
+				// PARAM = date
+				// DOCTOR COMMENT
+				$prefix = 'DC-' . nice_date($param, 'Ymd') . '-';
 			}
 			return $prefix . str_pad($value, 3, '0', STR_PAD_LEFT);
 		}

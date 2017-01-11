@@ -17,9 +17,10 @@ $route['profile/dashboard/history/estore/(:any)']       = 'C_Profile/history_est
 $route['profile/reminder']                              = 'C_Profile/reminder';
 $route['profile/payment-history']                       = 'C_Profile/payment_history';
 $route['profile/edit/(:any)']                           = 'C_Profile/edit_profile_user/$1';
-$route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
 $route['profile/doctor/mail/rating']                    = 'C_Profile/rating_doctor';//KENEDY LUKITO --> RATING DOCTOR
+$route['profile/doctor/comment/(:any)']                 = 'C_Profile/add_doctor_comment/$1';
+$route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/view/(:any)']                           = 'C_Profile/view_profile/$1';
 
 $route['news']                                          = 'C_News/view';
@@ -48,7 +49,6 @@ $route['forum/search']                                  = 'C_Forum/search_forum'
 $route['forum/detail/(:any)']                           = 'C_Forum/detail_forum/$1';
 $route['forum/reply/(:any)']                            = 'C_Forum/reply/$1';
 $route['forum/add-reply/(:any)']                        = 'C_Forum/add_reply/$1';
-// $route['forum/(:any)']                               = 'C_Forum/view/$1';
 $route['forum']                                         = 'C_Forum/view';
 
 $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
