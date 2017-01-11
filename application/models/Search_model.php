@@ -9,9 +9,19 @@
 			$this->db->like('USER_NAME', $name);
 			$this->db->where('USER_LEVEL', 2);
 			$this->db->join('MSTUSER','MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'right');
-			$query = $this->db->get('MSHDOCTOR');
-			if($query->num_rows() > 0){
-				return $query->result_array();
+			$query = $this->db->get('MSHDOCTOR')->result_array();
+
+			if(count($query) > 0){
+				for ($i = 0; $i < count($query); $i++) {
+					$this->db->where('CAT_ID', $query[$i]['DCT_SPECIALTY']);
+					$q = $this->db->get('MSDCATEGORY')->result_array();
+					if(count($q) > 0){
+						$query[$i]['CAT_NAME'] = $q[0]['CAT_NAME'];
+					} else {
+						$query[$i]['CAT_NAME'] = '';
+					}
+				}
+				return $query;
 			} else {
 				return array();
 			}
@@ -27,6 +37,13 @@
 			} else {
 				return array();
 			}
+		}
+
+		public function get_doctor_cat(){
+			$this->db->order_by('CAT_NAME');
+			$this->db->where('CAT_GROUP', 4);
+			$query = $this->db->get('MSDCATEGORY');
+			return $query->result_array();
 		}
 	}
 ?>

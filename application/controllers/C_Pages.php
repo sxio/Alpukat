@@ -48,7 +48,7 @@
 
 			$this->load->model('Search_model');
 			$data['doctor_search'] = $this->Search_model->get_doctor_by_name($name);
-
+			$data['doc_cat'] = $this->Search_model->get_doctor_cat();
 			$this->load->view('list', $data);
 		}
 	}

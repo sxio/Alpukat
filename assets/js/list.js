@@ -8,4 +8,8 @@ $(document).ready(function(){
 	$("#thelist").on("show.bs.collapse", function(){
 		$("#expcoll").html('Doctor`s Specialty <i class="fa fa-minus fa-fw exp"></i>');
 	});
+
+	$('input[name=doc_cat]:radio').change(function(){
+
+	});
 });
