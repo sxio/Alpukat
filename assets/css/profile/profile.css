@@ -36,7 +36,13 @@ hr{
 .comments_row{
     padding-right: 20px;
 }
-
+.location_pic{
+    padding: 10px;
+}
+#practice_loc{
+    width: 100%;
+    height: 100%;
+}
 
 
 /*COMMENT BOX*/

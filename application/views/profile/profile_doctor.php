@@ -44,6 +44,22 @@
 							<!--Instagram-->
 							<!-- <button type="button" class="btn btn-ins btn-primary"><i class="fa fa-instagram center"></i> Instagram</button> -->
 							<hr>
+							<div class="row location_pic">
+								<h3>Practice Location</h3>
+								<div class="col-xs-12">
+									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
+								</div>
+							</div>
+							<div class="row location_pic">
+								<div class="col-xs-12">
+									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
+								</div>
+							</div>
+							<div class="row location_pic">
+								<div class="col-xs-12">
+									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
+								</div>
+							</div>
 							<div class="row">
 								<div class="panel panel-warning visits">
 									<div class="panel panel-heading">

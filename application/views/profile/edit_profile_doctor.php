@@ -120,6 +120,33 @@
 						</div>
 					</div>
 					<br>
+					<legend>Practice Location</legend>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+							<label for="_photo">
+								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							</label>
+							<div class="col-xs-12">
+								<input type="file" name="_photo" id="_photo" class="form-control input-img">
+							</div>
+                        </div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+							<label for="_photo">
+								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							</label>
+							<div class="col-xs-12">
+								<input type="file" name="_photo" id="_photo" class="form-control input-img">
+							</div>
+                        </div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+							<label for="_photo">
+								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							</label>
+							<div class="col-xs-12">
+								<input type="file" name="_photo" id="_photo" class="form-control input-img">
+							</div>
+                        </div>
+					</div>
 					<button class="btn btn-primary" name="btn_edit" value="1"><i class="fa fa-pencil fa-fw"></i> Edit</button>
 				</div>
 			</div>
