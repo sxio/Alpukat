@@ -306,8 +306,8 @@
 	?>
 			<script>
 				$.smkAlert({
-				text: 'Edit Success',
-				type: 'success',
+				text: '<?php echo $this->session->flashdata('msg'); ?>',
+				type: 'info',
 				position:'top-center',
 				time: 3,
 				icon: 'fa fa-check fa-fw'

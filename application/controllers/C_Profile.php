@@ -52,8 +52,30 @@
 					$this->session->set_flashdata('msg', validation_errors());
 					redirect('profile/dashboard/'. $userid);
 				} else {
+					// UPLOAD PHOTO
+					$this->load->library('upload');
+					$config['upload_path']   = './assets/img/user';
+					$config['allowed_types'] = 'gif|jpg|png';
+					$config['overwrite']     = TRUE;
+					$config['max_size']      = 0;
+
+					$ext = pathinfo($_FILES['_photo']['name'], PATHINFO_EXTENSION);
+					$config['file_name'] = $userid . '_photo' . '.' . $ext;
+					$this->upload->initialize($config);
+
+					if(!empty($_FILES['_photo']['name'])){
+						if(!$this->upload->do_upload('_photo')){
+							$error = $this->upload->display_errors();
+							$this->session->set_flashdata('msg', $error);
+						}else{
+							$img = $this->upload->data();
+							$this->Profile_model->update_img_user($userid, $img['file_name']);
+						}
+					}
+
 					$res = $this->Profile_model->edit_data_user($userid);
-					$this->session->set_flashdata('msg', 'berhasil');
+					$this->session->set_flashdata('msg', 'Edit Profile Success');
+
 					redirect('profile/dashboard/'. $userid);
 				}
 			}

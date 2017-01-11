@@ -107,6 +107,20 @@
 			return $res;
 		}
 
+		public function update_img_user($userid, $img){
+			$this->db->where('USER_ID', $userid);
+			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
+			if(file_exists('./assets/img/user/'. $old_img)){
+				unlink('./assets/img/user/'. $old_img);
+			}
+
+			$data = array(
+				'USER_IMG' => $img
+			);
+			$this->db->where('USER_ID', $userid);
+			return $this->db->update('MSTUSER', $data);
+		}
+
 		public function update_img_doctor($userid, $img){
 			$this->db->where('USER_ID', $userid);
 			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
