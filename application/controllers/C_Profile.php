@@ -179,25 +179,28 @@
 				$data['form_error'] = validation_errors();
 			} else{
 				if($this->input->post('save')!=NULL) {
-					$res = $this->Profile_model->add_reminder();
+					$res = $this->Reminder_model->add_reminder();
 					if($res['code'] == 0){
-						$data['msg'] = '<div class="alert alert-success msg">Reminder Saved</div>';
+						$this->session->set_flashdata('msg', '<div class="alert alert-success msg">Reminder Saved</div>');
 					} else{
-						$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+						$this->session->set_flashdata('msg', '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>');
 					}
 				} elseif($this->input->post('delete')!=NULL){
-					$res = $this->Profile_model->remove_reminder($username, $this->input->post('reminder_dt'));
+					$res = $this->Reminder_model->remove_reminder($username, $this->input->post('reminder_dt'));
 					if($res['code'] == 0){
-						$data['msg'] = '<div class="alert alert-success msg">Deleted</div>';
+						$this->session->set_flashdata('msg', '<div class="alert alert-success msg">Deleted</div>');
 					} else{
-						$data['msg'] = '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>';
+						$this->session->set_flashdata('msg', '<div class="alert alert-danger msg">Something went wrong. Please try again.</div>');
 					}
 				}
 			}
-			$data['r_calendar'] = $this->Profile_model->get_reminder($username);
-			$data['r_notif']    = $this->Profile_model->get_nearest_reminder($username);
+			$data['r_calendar'] = $this->Reminder_model->get_reminder($username);
+			$data['r_notif']    = $this->Reminder_model->get_nearest_reminder($username);
 
 			$this->load->view('profile/reminder', $data);
+			if($this->input->post('save') || $this->input->post('delete')){
+				redirect('profile/reminder');
+			}
 		}
 
 		public function add_doctor_comment($dctid){
