@@ -99,14 +99,8 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
-										</div>
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
-										</div>
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
+										<div class="col-sm-12" style="height: 180px;">
+											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/sxioo_loc.jpg'); ?>">
 										</div>
 									</div>
 								</div>

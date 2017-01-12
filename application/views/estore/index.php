@@ -348,7 +348,7 @@
 							<div class="desc">
 								<h6><a href="#">Jacket</a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p ><del>Rp 500.000,-</del><em class="item_price">Rp 200.000,-</em></p>
+								<p ><del>Rp 500.000,-</del><em class="item_price"><em>Rp 200.000,-</em></p>
 								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 							</div>
 						</div>
