@@ -21,5 +21,12 @@
 			);
 			return $data;
 		}
+
+		public function get_doctor_cat(){
+			$this->db->order_by('CAT_NAME');
+			$this->db->where('CAT_GROUP', 4);
+			$query = $this->db->get('MSDCATEGORY');
+			return $query->result_array();
+		}
 	}
 ?>

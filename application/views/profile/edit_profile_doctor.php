@@ -112,7 +112,15 @@
 						</div>
 						<label class="col-xs-2 control-label" for="docSpec">Speciality </label>
 						<div class="col-md-2">
-							<input class="form-control" type="text" name="docSpec" value="<?php echo $data_doctor['DCT_SPECIALTY']; ?>">
+							<select name="docSpec" class="form-control">
+								<option hidden>-- Specialty --</option>
+								<?php foreach($dct_cat as $cat) {
+									if($data_doctor['DCT_SPECIALTY'] == $cat['CAT_ID']) $selected = 'selected';
+									else $selected = '';
+								?>
+								<option value="<?php echo $cat['CAT_ID']; ?>" <?php echo $selected; ?>><?php echo $cat['CAT_NAME']; ?></option>
+								<?php } ?>
+							</select>
 						</div>
 						<label class="col-xs-2 control-label" for="docCert">Certification </label>
 						<div class="col-md-2">

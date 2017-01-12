@@ -10,6 +10,7 @@
 			$this->load->model('Profile_model');
 			$this->load->model('Forum_model');
 			$this->load->model('Comment_model');
+			$this->load->model('Category_model');
 		}
 
 		public function view_profile($userid){
@@ -123,6 +124,7 @@
 				}
 			}
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
+			$data['dct_cat'] = $this->Category_model->get_doctor_cat();
 
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);

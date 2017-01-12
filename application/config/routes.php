@@ -55,6 +55,7 @@ $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
 $route['payment/success/(:any)']                        = 'C_Payment/pay_success/$1';
 
 $route['search/list']                                   = 'C_Pages/search';
+$route['search/list-category']                          = 'C_Pages/search_category';
 
 // ADMIN
 // Master CATEGORY
@@ -83,6 +84,9 @@ $route['admin/estore/paymentlist/status/(:any)/(:any)'] = 'Admin/C_Admin_Estore/
 $route['admin/estore/restock']                          = 'Admin/C_Admin_Estore/restock';
 $route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProductByCategory';
 $route['admin/estore/getproductbyid']                   = 'Admin/C_Admin_Estore/GetProductById';
+//
+// DOCTOR
+$route['admin/doctor/add-category']                     = 'Admin/C_Admin_Doctor/add_category';
 //
 // COMMENT
 $route['admin/comment/listcomment']                     = 'Admin/C_Admin_Comment/listcomment';
