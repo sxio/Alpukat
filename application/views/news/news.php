@@ -109,20 +109,80 @@
 						</div>
 						<div id="menu1" class="tab-pane fade">
 								<div class="block">
-								<h3>HOME</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<?php
+										$i = 0;
+										foreach($news_lists as $news) {
+											if($i == 3) break;
+									?>
+									<div class="block">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 detail_img">
+												<img src="<?php echo base_url('assets/img/news-img/'. $news['NEWS_IMAGE']); ?>">
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 detail_news">
+												<a href="<?php echo base_url('news/details/'. $news['NEWS_ID']); ?>">
+													<h3><?php echo $news['NEWS_TITLE']; ?></h3>
+													<p><?php echo word_limiter($news['NEWS_CONTENT'], 20); ?></p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<?php
+											$i++;
+										}
+									?>
 							</div>
 						</div>
 						<div id="menu2" class="tab-pane fade">
 								<div class="block">
-								<h3>HOME</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<?php
+										$i = 0;
+										foreach($news_lists as $news) {
+											if($i == 4) break;
+									?>
+									<div class="block">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 detail_img">
+												<img src="<?php echo base_url('assets/img/news-img/'. $news['NEWS_IMAGE']); ?>">
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 detail_news">
+												<a href="<?php echo base_url('news/details/'. $news['NEWS_ID']); ?>">
+													<h3><?php echo $news['NEWS_TITLE']; ?></h3>
+													<p><?php echo word_limiter($news['NEWS_CONTENT'], 20); ?></p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<?php
+											$i++;
+										}
+									?>
 							</div>
 						</div>
 						<div id="menu3" class="tab-pane fade">
 							<div class="block">
-								<h3>HOME</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<?php
+									$i = 0;
+									foreach($news_lists as $news) {
+										if($i == 2) break;
+								?>
+								<div class="block">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 detail_img">
+											<img src="<?php echo base_url('assets/img/news-img/'. $news['NEWS_IMAGE']); ?>">
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 detail_news">
+											<a href="<?php echo base_url('news/details/'. $news['NEWS_ID']); ?>">
+												<h3><?php echo $news['NEWS_TITLE']; ?></h3>
+												<p><?php echo word_limiter($news['NEWS_CONTENT'], 20); ?></p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<?php
+										$i++;
+									}
+								?>
 							</div>
 						</div>
 					</div>
@@ -151,8 +211,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 tip">
 					<a href="">
 					<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
-					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p></a>
+					<p class="text-justify">Women's Health Tips for Heart, Mind, and Body</p></a>
 				</div>
 				<?php } ?>
 			</div>
