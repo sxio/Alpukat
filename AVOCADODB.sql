@@ -122,6 +122,7 @@ CREATE TABLE `MSHDOCTOR` (
   `IMG_CERTIFICATE` varchar(50) NOT NULL,
   `IMG_LICENSE` varchar(50) NOT NULL,
   `IMG_REGISTRATION` varchar(50) NOT NULL,
+  `IMG_LOC` varchar(50) NOT NULL,
   PRIMARY KEY (`DCT_ID`),
   CONSTRAINT `MSHDOCTOR_ibfk_1` FOREIGN KEY (`DCT_ID`) REFERENCES `MSTUSER` (`USER_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -133,7 +134,7 @@ CREATE TABLE `MSHDOCTOR` (
 
 LOCK TABLES `MSHDOCTOR` WRITE;
 /*!40000 ALTER TABLE `MSHDOCTOR` DISABLE KEYS */;
-INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn',31,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg');
+INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn',31,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg','sxioo_loc.jpg');
 /*!40000 ALTER TABLE `MSHDOCTOR` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -374,7 +375,7 @@ INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf9
 INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','noimage.png',2,1);
 INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','noimage.png',0,1);
 INSERT INTO `MSTUSER` VALUES ('sxio','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','112123','Jalan PROF HM YAMIN SH No 133','sxio_photo.png',1,1);
-INSERT INTO `MSTUSER` VALUES ('sxioo','Stephen Huang','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',2,1);
+INSERT INTO `MSTUSER` VALUES ('sxioo','dr Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','081234567890','Jalan PROF HM YAMIN SH No 254','sxioo_photo.jpg',2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -959,4 +960,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-12 14:57:46
+-- Dump completed on 2017-01-12 16:24:01

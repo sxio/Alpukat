@@ -85,17 +85,42 @@
 		}
 
 		public function update_img_doctor($userid, $img){
-			$this->db->where('USER_ID', $userid);
-			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
-			if(file_exists('./assets/img/doctor/certificate/'. $old_img)){
-				unlink('./assets/img/doctor/certificate/'. $old_img);
+
+			if(!empty($img['_photo']['file_name'])) {
+				$data = array(
+					'USER_IMG' => $img['_photo']['file_name']
+				);
+				$this->db->where('USER_ID', $userid);
+				$this->db->update('MSTUSER', $data);
+
+			}
+			if (!empty($img['_loc']['file_name'])) {
+				$data = array(
+					'IMG_LOC' => $img['_loc']['file_name']
+				);
+				$this->db->where('DCT_ID', $userid);
+				$this->db->update('MSHDOCTOR', $data);
 			}
 
-			$data = array(
-				'USER_IMG' => $img
-			);
+			return $this->db->error();
+		}
+
+		public function delete_old_photo($userid){
 			$this->db->where('USER_ID', $userid);
-			return $this->db->update('MSTUSER', $data);
+			$old_img = $this->db->get('MSTUSER')->result_array()[0]['USER_IMG'];
+
+			if(file_exists('./assets/img/doctor/'. $old_img)){
+				unlink('./assets/img/doctor/'. $old_img);
+			}
+		}
+
+		public function delete_old_location($userid){
+			$this->db->where('DCT_ID', $userid);
+			$old_img_loc = $this->db->get('MSHDOCTOR')->result_array()[0]['IMG_LOC'];
+
+			if(file_exists('./assets/img/doctor/'. $old_img_loc)){
+				unlink('./assets/img/doctor/'. $old_img_loc);
+			}
 		}
 	}
 ?>

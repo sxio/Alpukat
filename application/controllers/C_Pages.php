@@ -64,6 +64,11 @@
 			$cat_id = $this->input->get('doc_cat');
 			$name = $this->input->get('src');
 
+			if($cat_id == NULL){
+
+				redirect('search/list?src='. $name);
+			}
+
 			$data['doctor_search'] = $this->Search_model->get_doctor_by_name_and_category($cat_id, $name);
 			$data['doc_cat'] = $this->Category_model->get_doctor_cat();
 

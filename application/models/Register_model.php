@@ -70,7 +70,8 @@
 				'BOOKING_FEE'      => $this->input->post('_bfee'),
 				'IMG_CERTIFICATE'  => $img['_cc']['file_name'],
 				'IMG_LICENSE'      => $img['_pl']['file_name'],
-				'IMG_REGISTRATION' => $img['_pr']['file_name']
+				'IMG_REGISTRATION' => $img['_pr']['file_name'],
+				'IMG_LOC'          => $user . '_dummy_data.jpg'
 			);
 			return $this->db->insert('MSHDOCTOR', $data);
 		}

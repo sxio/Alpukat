@@ -29,6 +29,6 @@ input.input-img{
 	height: 300px;
     cursor: pointer;
 }
-#_photo{
-	display: none;
+.input-img{
+	display: none!important;
 }

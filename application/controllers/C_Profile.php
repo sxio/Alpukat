@@ -97,25 +97,36 @@
 			}
 
 			if($this->input->post('btn_edit')){
-				if(!empty($_FILES['_photo'])){
-					// UPLOAD IMAGE
-					$config['upload_path']   = './assets/img/doctor/certificate';
-					$config['allowed_types'] = 'gif|jpg|png';
-					$config['overwrite']     = TRUE;
-					$config['max_size']      = 0;
-					$ext = pathinfo($_FILES['_photo']['name'], PATHINFO_EXTENSION);
-					$config['file_name'] = $userid . '_photo' . '.' . $ext;
-					$this->load->library('upload');
-					$this->upload->initialize($config);
-					if(!$this->upload->do_upload('_photo')){
-						$error = $this->upload->display_errors();
-					}else{
-						$data['upload_data'] = $this->upload->data();
+				// UPLOAD IMAGE
+				$config['upload_path']   = './assets/img/doctor';
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['overwrite']     = TRUE;
+				$config['max_size']      = 0;
+				$this->load->library('upload');
+
+				$error = NULL;
+				foreach ($_FILES as $key => $value) {
+					$data['upload_data'][$key]['file_name'] = '';
+
+					if(!empty($value['name'])){
+						$ext = pathinfo($value['name'], PATHINFO_EXTENSION);
+
+						$config['file_name'] = $userid . $key . '.' . $ext;
+						$this->upload->initialize($config);
+
+						if(!$this->upload->do_upload($key)){
+							$error[$key] = $this->upload->display_errors();
+						} else {
+							$data['upload_data'][$key] = $this->upload->data();
+						}
+					} else {
+						continue;
 					}
-					if(!isset($error)){
-						$this->Profile_model->update_img_doctor($userid, $data['upload_data']['file_name']);
-					}
+
 				}
+
+				$this->Profile_model->update_img_doctor($userid, $data['upload_data']);
+
 				$res = $this->Profile_model->edit_data_doctor($userid);
 				if($res['code'] == 0){
 					$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Edit Success</div>');

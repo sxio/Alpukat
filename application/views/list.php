@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<legend>Search</legend>
-					<form action="list-category" id="profile_search" method="get">
+					<form action="listc" id="profile_search" method="get">
 						<div class="row">
 							<div class="col-sm-12">
 									<input type="text" class="form-control" size="50" name="src" placeholder="Search Your Doctor" id="findDoctor" value="<?php echo $this->input->get('src'); ?>"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
@@ -68,7 +68,7 @@
 												$img = 'noimage.png';
 											}
 										?>
-										<img src="<?php echo base_url('assets/img/doctor/certificate/'. $img); ?>">
+										<img src="<?php echo base_url('assets/img/doctor/'. $img); ?>">
 										</div>
 									</div>
 									<div class="row text-center">
