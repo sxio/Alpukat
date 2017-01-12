@@ -1236,12 +1236,13 @@ h3.tittle1 {
 /*-- quantity-end --*/
 /*--products--*/
 .banner1 {
-	background: url(../../img/e-img/b1.jpg) no-repeat 0px 0px;
+	background: url(../../img/e-img/sport_carousel_1.jpg) no-repeat 0px 0px;
 	background-size: cover;
-	-webkit-background-size: cover;
+    background-position: 0 -150px;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	-ms-background-size: cover;
+	-ms-background-size: cover;*/
 	min-height: 190px;
 	padding: 6em 0 0;
 	text-align: center;

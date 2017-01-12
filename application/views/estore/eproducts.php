@@ -27,7 +27,7 @@
 
 	<div class="content">
 		<div class="products-agileinfo">
-			<h2 class="tittle">Some Products</h2>
+			<h2 class="tittle">Products</h2>
 			<div class="container">
 				<div class="product-agileinfo-grids w3l">
 					<div class="col-md-3 product-agileinfo-grid">
@@ -38,8 +38,8 @@
 									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
 								</div>
 								<div class="recent-right">
-									<h6 class="best2"><a href="single.html">Lorem ipsum dolor </a></h6>
-									<p><del>$100.00</del> <em class="item_price">$09.00</em></p>
+									<h6 class="best2"><a href="single.html">Supplement </a></h6>
+									<p><del>Rp 1.000.000,-</del> <em class="item_price">Rp 999.999,-</em></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -49,7 +49,7 @@
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Duis aute irure </a></h6>
-									<p><del>$100.00</del> <em class="item_price">$19.00</em></p>
+									<p><del>Rp 2.000.000,-</del> <em class="item_price">Rp 899.999,-</em></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -59,7 +59,7 @@
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Lorem ipsum dolor </a></h6>
-									<p><del>$100.00</del> <em class="item_price">$39.00</em></p>
+									<p><del>Rp 3.000.000,-</del> <em class="item_price">Rp 799.999,-</em></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -69,7 +69,7 @@
 								</div>
 								<div class="recent-right">
 									<h6 class="best2"><a href="single.html">Ut enim ad minim </a></h6>
-									<p><em class="item_price">$39.00</em></p>
+									<p><em class="item_price">Rp 390.000,-</em></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -102,7 +102,8 @@
 							</div>
 							<div class="clearfix"></div>
 						</div>
-						<div class="mens-toolbar">
+						<br>
+						<!-- <div class="mens-toolbar">
 							<p >Showing 1–9 of 21 results</p>
 							 <p class="showing">Sorting By
 								<select>
@@ -121,7 +122,7 @@
 								</select>
 							  </p>
 							<div class="clearfix"></div>
-						</div>
+						</div> -->
 						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 							<!-- <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist"> -->
 							<ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
@@ -144,9 +145,9 @@
 												</div>
 
 												<div class="desc">
-													<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-													<span class="size">XL / XXL / S </span>
-													<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
+													<h6><a href="#">Treadmill</a></h6>
+													<!-- <span class="size">XL / XXL / S </span> -->
+													<p ><del>Rp 6.000.000,-</del><em class="item_price">Rp 10.000,-</em></p>
 													<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 												</div>
 											</div>

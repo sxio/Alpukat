@@ -52,6 +52,11 @@
 										<p>: <?php echo nice_date($estore_hist[0]['TRANSFER_DATE'], 'd / m / Y'); ?></p>
 									</div>
 								</li>
+							</ol>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<ul class="listorderdetail list-unstyled">
 								<li>
 									<label class="col-xs-6 control-label">Transport By </label>
 									<div class="col-xs-6">
@@ -64,18 +69,13 @@
 										<p>:  <?php echo $estore_hist[0]['TRANSPORT_FEE']; ?></p>
 									</div>
 								</li>
-							</ol>
-						</div>
-
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<ul class="listorderdetail list-unstyled">
 								<li>
 									<label class="col-xs-6 control-label">Address </label>
 									<div class="col-xs-6">
 										<p>:  <?php echo $estore_hist[0]['ORDER_ADDRESS']; ?></p>
 									</div>
 								</li>
-								<li>
+								<!-- <li>
 									<label class="col-xs-6 control-label">Province </label>
 									<div class="col-xs-6">
 										<p>: North Sumatra</p>
@@ -92,7 +92,7 @@
 									<div class="col-xs-6">
 										<p>: 9814709184</p>
 									</div>
-								</li>
+								</li> -->
 							</ol>
 						</div>
 					</div>

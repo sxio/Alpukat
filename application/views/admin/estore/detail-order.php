@@ -82,7 +82,7 @@
 										<p>:  <?php echo $estore_hist[0]['ORDER_ADDRESS']; ?></p>
 									</div>
 								</li>
-								<li>
+								<!-- <li>
 									<label class="col-md-4 control-label">Province </label>
 									<div class="col-md-8">
 										<p>: North Sumatra</p>
@@ -99,7 +99,7 @@
 									<div class="col-md-8">
 										<p>: 9814709184</p>
 									</div>
-								</li>
+								</li> -->
 							</ol>
 						</div>
 					</div>

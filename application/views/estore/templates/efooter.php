@@ -4,13 +4,13 @@
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid">
 					<h4>About </h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					<div class="social-icon">
+					<p>AvoStore is the place where you can buy healthy products, sports apparel, and other stuff to support your work.</p>
+					<!-- <div class="social-icon">
 						<a href="#"><i class="icon"></i></a>
 						<a href="#"><i class="icon1"></i></a>
 						<a href="#"><i class="icon2"></i></a>
 						<a href="#"><i class="icon3"></i></a>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-md-3 footer-grid">
 					<h4>My Account</h4>
