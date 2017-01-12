@@ -6,7 +6,6 @@
 
 	<?php echo link_tag('assets/css/list.css') ?>
 
-	<script src="<?php echo base_url('assets/js/list.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
@@ -27,9 +26,8 @@
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Doctor`s Specialty <i class="fa fa-plus fa-fw exp"></i>
-								</a>
-								<div id="thelist" class="collapse">
+								<h4 id="expcoll" href="#"> Doctor's Specialty</h4>
+								<div id="thelist">
 									<?php foreach($doc_cat as $cat):
 										if($this->input->get('doc_cat') == $cat['CAT_ID']) $checked = 'checked';
 										else $checked = '';

@@ -39,13 +39,6 @@
 			}
 		}
 
-		public function get_doctor_cat(){
-			$this->db->order_by('CAT_NAME');
-			$this->db->where('CAT_GROUP', 4);
-			$query = $this->db->get('MSDCATEGORY');
-			return $query->result_array();
-		}
-
 		public function get_doctor_by_name_and_category($cat_id, $name){
 			$this->db->where('MSTUSER.USER_LEVEL', 2);
 			$this->db->where('DCT_SPECIALTY', $cat_id);

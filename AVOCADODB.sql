@@ -133,7 +133,7 @@ CREATE TABLE `MSHDOCTOR` (
 
 LOCK TABLES `MSHDOCTOR` WRITE;
 /*!40000 ALTER TABLE `MSHDOCTOR` DISABLE KEYS */;
-INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn',28,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg');
+INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn',31,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg');
 /*!40000 ALTER TABLE `MSHDOCTOR` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -959,4 +959,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-12 14:40:29
+-- Dump completed on 2017-01-12 14:57:46
