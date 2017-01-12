@@ -6,8 +6,8 @@
 		}
 		//MEIKELWIS RAPIIN CODING
 		function get_booking_hist(){
-			$this->db->select('BOOKING_ID,BOOKING_DT,TOTAL_PAYMENT');
-			$query = $this->db->get('TRHBOOKING');
+			$this->db->select('BOOKING_ID,BOOKING_DT,TOTAL_AMOUNT');
+			$query = $this->db->get('TRDBOOKING');
 			return $query->result();
 		}
 

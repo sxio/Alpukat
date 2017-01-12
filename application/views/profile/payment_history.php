@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 	<title>Avocado | Payment History</title>
@@ -57,16 +57,14 @@
 							<caption>Booking History</caption>
 							<tr>
 								<th>Booking No</th>
-								<th>Total Other Payment</th>
-								<th>Total Amount</th>
 								<th>Booking Date</th>
+								<th>Total Amount</th>
 							</tr>
 							<?php foreach($hist as $hist){ ?>
 							<tr>
 								<td><?php echo $hist->BOOKING_ID;?></td>
-								<td><?php echo $hist->OTHER_PAYMENT;?></td>
-								<td><?php echo $hist->TOTAL_PAYMENT;?></td>
-								<td><?php echo $hist->BOOKING_DT;?></td>
+								<td><?php echo nice_date($hist->BOOKING_DT,"Y-m-d");?></td>
+								<td><?php echo $hist->TOTAL_AMOUNT;?></td>
 							</tr>
 							<?php } ?>
 						</table>
