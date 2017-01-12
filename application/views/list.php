@@ -73,7 +73,7 @@
 									</div>
 									<div class="row text-center">
 										<br>
-										<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
+										<a href="<?php echo base_url('booking/'. $dct['DCT_ID']); ?>" class="btn btn-primary btnBooking">Booking</a>
 										<a href="<?php echo base_url('profile/doctor/'. $dct['USER_ID']); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 									</div>
 								</div>

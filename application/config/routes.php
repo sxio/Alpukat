@@ -38,7 +38,7 @@ $route['estore/paymentreview']                          = 'C_Payment/estore_paym
 $route['estore/products/(:any)']                        = 'C_Estore/product/$1';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
-$route['booking']                                       = 'C_Booking/view';
+$route['booking/(:any)']                                = 'C_Booking/view/$1';
 $route['booking/create']                                = 'C_Booking/create_booking';
 $route['booking/adddetail']                             = 'C_Booking/add_detail_booking';
 $route['booking/success/(:any)']                        = 'C_Payment/pay_success/$1';

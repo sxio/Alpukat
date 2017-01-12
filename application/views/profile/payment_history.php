@@ -58,13 +58,13 @@
 							<tr>
 								<th>Booking No</th>
 								<th>Booking Date</th>
-								<th>Total Amount</th>
+								<th>Fee</th>
 							</tr>
 							<?php foreach($hist as $hist){ ?>
 							<tr>
 								<td><?php echo $hist->BOOKING_ID;?></td>
 								<td><?php echo nice_date($hist->BOOKING_DT,"Y-m-d");?></td>
-								<td><?php echo $hist->TOTAL_AMOUNT;?></td>
+								<td>Rp <?php echo number_format($hist->TOTAL_AMOUNT,0,',','.');?></td>
 							</tr>
 							<?php } ?>
 						</table>
@@ -78,17 +78,15 @@
 								<th>Bank</th>
 								<th>Account Number</th>
 								<th>Amount</th>
-								<th>Status</th>
-								<th>Action</th>
 							</tr>
+							<?php foreach($donate as $don) { ?>
 							<tr>
-								<td>Avo-d-1</td>
-								<td>BCA</td>
-								<td>123</td>
-								<td>IDR 1.000.000,00</td>
-								<td><span class="label label-success">Accepted</span></td>
-								<td class="text-center"><a href="#" class="btn btn-info"><i class="fa fa-list fa-fw"></i></a></td>
+								<td><?php echo $don['DONATE_ID']; ?></td>
+								<td><?php echo $don['BANK_TYPE']; ?></td>
+								<td><?php echo $don['BANK_ACC_NUM']; ?></td>
+								<td>Rp <?php echo number_format($don['AMOUNT'], 0, ',','.'); ?></td>
 							</tr>
+							<?php } ?>
 						</table>
 					</div>
 				</div>

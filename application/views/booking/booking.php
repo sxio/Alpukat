@@ -40,7 +40,7 @@
 													</div>
 													<div class="form-group row">
 														<div class="col-sm-3">
-															<?php echo form_dropdown('doctorid', $doctor_list);?>
+															<input type="text" name="doctorid" value="<?php echo $doctor_list['DCT_ID']; ?>" readonly class="form-control">
 														</div>
 														<div class="col-sm-3">
 															<input type="text" class="form-control" name="servid">
@@ -54,7 +54,7 @@
 													</div>
 												</div>
 											</div>
-										</div> 
+										</div>
 									</div>
 								<?php echo form_close(); ?>
 							</div>
@@ -91,7 +91,7 @@
 							</div>
 						</div>
 					</div> -->
-					
+
 
 				</div>
 				<!-- close Panel Body -->
@@ -106,7 +106,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#addItem").click(function(){
-				
+
 			})
 		});
 		// function addRow(){

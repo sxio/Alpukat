@@ -4,14 +4,15 @@
 			parent:: __construct();
 			$this->load->database();
 			$this->load->model('Booking_model');
+			$this->load->model('Profile_model');
 		}
-		public function view(){
+		public function view($id = null){
 			$bookingid = $this->Booking_model->get_booking_id();
 			$data['title'] = 'Booking Transactions';
 			$data['bookingid'] = $bookingid;
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav'] = $this->load->view('templates/nav','',TRUE);
-		 	$data['doctor_list'] = $this->Booking_model->get_doctor();
+		 	$data['doctor_list'] = $this->Profile_model->get_data_doctor($id);
 
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 			$data['chat'] = $this->load->view('templates/chat','',TRUE);
@@ -23,7 +24,7 @@
 			}
 			$username = $this->session->userdata('username');
 			$bookingid = $this->Booking_model->get_booking_id();
-			
+
 			$this->form_validation->set_rules('bookingdt', 'Booking date', 'trim|required');
 			$this->form_validation->set_rules('servid', ' Service', 'trim|required');
 			$this->form_validation->set_rules('count', 'Count', 'trim|required');
@@ -50,7 +51,7 @@
 					$data['msg'] = '<div class="alert alert-success">'. $res['message'] .'</div>';
 			 	}
 			}
+			redirect('payment/success/booking');
 		}
-
 	}
 ?>

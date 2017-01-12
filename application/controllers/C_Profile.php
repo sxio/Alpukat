@@ -11,6 +11,7 @@
 			$this->load->model('Forum_model');
 			$this->load->model('Comment_model');
 			$this->load->model('Category_model');
+			$this->load->model('Donate_model');
 		}
 
 		public function view_profile($userid){
@@ -164,6 +165,7 @@
 
 			$data['estore'] = $this->Estore_model->get_order_by_username($userid);
 			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
+			$data['donate'] = $this->Donate_model->get_donation();
 
 			$this->load->view('profile/payment_history', $data);
 		}

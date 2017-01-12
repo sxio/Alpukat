@@ -1,4 +1,4 @@
-<?php 
+<?php
 	class Booking_model extends CI_Model{
 		public function __construct(){
 			parent:: __construct();
@@ -24,12 +24,15 @@
 			return $bookingid;
 		}
 		public function add_booking($username,$bookingid){
+			$this->load->model('Profile_model');
+			$dct = $this->Profile_model->get_data_doctor($this->input->post('doctorid'));
 			$data = array(
 				'BOOKING_ID' => $bookingid,
 				'BOOKING_DT' => $this->input->post('bookingdt'),
 				'DCT_ID' => $this->input->post('doctorid'),
 				'SERV_ID' => $this->input->post('servid'),
 				'BOOK_COUNT' => $this->input->post('count'),
+				'TOTAL_AMOUNT' => $dct['CONSULT_FEE'],
 				'USER_ID' => $username,
 				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
 			);
