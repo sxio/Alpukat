@@ -344,7 +344,7 @@ LOCK TABLES `MSTSEQUENCES` WRITE;
 INSERT INTO `MSTSEQUENCES` VALUES (1,'Estore_Pembelian',8);
 INSERT INTO `MSTSEQUENCES` VALUES (2,'Forum',24);
 INSERT INTO `MSTSEQUENCES` VALUES (3,'Forum_detail',30);
-INSERT INTO `MSTSEQUENCES` VALUES (4,'Booking',23);
+INSERT INTO `MSTSEQUENCES` VALUES (4,'Booking',24);
 INSERT INTO `MSTSEQUENCES` VALUES (5,'Doctor Comment',7);
 INSERT INTO `MSTSEQUENCES` VALUES (6,'Donation',10);
 /*!40000 ALTER TABLE `MSTSEQUENCES` ENABLE KEYS */;
@@ -380,10 +380,9 @@ LOCK TABLES `MSTUSER` WRITE;
 /*!40000 ALTER TABLE `MSTUSER` DISABLE KEYS */;
 INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','','noimage.png',0,1);
 INSERT INTO `MSTUSER` VALUES ('Bahamut','Kenedy','25d55ad283aa400af464c76d713c07ad','2017-01-12','kenedylukito@yahoo.com','081234567890','Jalan jalan','noimage.png',1,0);
-INSERT INTO `MSTUSER` VALUES ('dokter','dokter','5f4dcc3b5aa765d61d8327deb882cf99','2017-01-13','141110868@students.mikroskil.a','123','123','noimage.png',1,0);
 INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','afe538dc69067417dc87c310230ab881','1997-01-06','meikelwis.wijaya@gmail.com','12312','123123','noimage.png',2,1);
-INSERT INTO `MSTUSER` VALUES ('ossas','Uvuvwevwevwe Ossas','aec676f7d23170153bf9f2cb2cc4d052','2016-12-31','ossas@ossas.com','789456321','Afrika Selatan','noimage.png',0,1);
-INSERT INTO `MSTUSER` VALUES ('sxio','Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-03','chronolegionaire@yahoo.com','11111','Afrika','sxio_photo.jpg',1,1);
+INSERT INTO `MSTUSER` VALUES ('osas','osas','5f4dcc3b5aa765d61d8327deb882cf99','2017-12-31','141110868@students.mikroskil.a','1234567','Afrika','noimage.png',2,0);
+INSERT INTO `MSTUSER` VALUES ('sxio','Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-03','chronolegionaire@yahoo.com','11111','Afrika','sxio_photo.png',1,1);
 INSERT INTO `MSTUSER` VALUES ('sxioo','dr Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','1111','kl','sxioo_photo.jpg',2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -533,6 +532,7 @@ LOCK TABLES `TRDBOOKING` WRITE;
 INSERT INTO `TRDBOOKING` VALUES ('BO-20170112-020','2017-01-12 00:00:00','sxioo','Konsul',1,0,'sxio','2017-01-12 18:57:26');
 INSERT INTO `TRDBOOKING` VALUES ('BO-20170112-021','2017-01-12 00:00:00','sxioo','Konsul',1,0,'sxio','2017-01-12 19:00:00');
 INSERT INTO `TRDBOOKING` VALUES ('BO-20170112-022','2017-01-20 00:00:00','sxioo','ntaha apa',5,50000,'sxio','2017-01-12 19:02:44');
+INSERT INTO `TRDBOOKING` VALUES ('BO-20170112-023','2017-01-13 00:00:00','sxioo','Konsultasi',1,50000,'sxio','2017-01-12 23:37:27');
 /*!40000 ALTER TABLE `TRDBOOKING` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -988,4 +988,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-12 20:20:51
+-- Dump completed on 2017-01-12 23:39:16

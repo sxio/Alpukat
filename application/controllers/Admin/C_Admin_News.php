@@ -27,7 +27,7 @@
 				// UPLOAD NEWS IMAGE
 				$config['upload_path']   = './assets/img/news-img';
 				$config['allowed_types'] = 'gif|jpg|png';
-				$config['max_size']      = '2048';
+				$config['max_size']      = 0;
 				$this->load->library('upload', $config);
 				if(!$this->upload->do_upload()){
 					$error = $this->upload->display_errors();
@@ -94,7 +94,7 @@
 				// CONFIGURE UPLOAD FILES
 				$config['upload_path']   = './assets/img/news-img';
 				$config['allowed_types'] = 'gif|jpg|png';
-				$config['max_size']      = '2048';
+				$config['max_size']      = 0;
 				$this->load->library('upload', $config);
 				if(!$this->upload->do_upload()){
 					$error = $this->upload->display_errors();

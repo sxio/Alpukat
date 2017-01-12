@@ -101,22 +101,5 @@
 		<!-- c/ row -->
 	</div>
 	<!-- c/ #booking -->
-
-	<?php echo $chat; ?>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#addItem").click(function(){
-
-			})
-		});
-		// function addRow(){
-		// 	 var newDiv = document.createElement("td");
-		// 	 var newContent = document.createTextNode("Doctor DoctorName");
-		// 	 var content = document.getElementById("DetailBooking");
-		// 	 var DoctorsName = document.getElementById("DoctorsName");
-		// 	 newDiv.appendChild(DoctorsName);
-		// 	 content.appendChild(newDiv);
-		// }
-	</script>
 </body>
 </html>

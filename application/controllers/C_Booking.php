@@ -15,7 +15,7 @@
 		 	$data['doctor_list'] = $this->Profile_model->get_data_doctor($id);
 
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
-			$data['chat'] = $this->load->view('templates/chat','',TRUE);
+
 			$this->load->view('booking/booking',$data);
 		}
 		public function create_booking(){
