@@ -281,6 +281,34 @@ INSERT INTO `MSTPRODUCT` VALUES ('vita001','Vitacimin Yellow',20,50,300000,'<p>V
 UNLOCK TABLES;
 
 --
+-- Table structure for table `MSTRATING`
+--
+
+DROP TABLE IF EXISTS `MSTRATING`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `MSTRATING` (
+  `RATING_ID` varchar(15) NOT NULL,
+  `USER_ID` varchar(15) NOT NULL,
+  `DOCTOR_ID` varchar(15) NOT NULL,
+  `FRIENDLINESS` int(11) DEFAULT NULL,
+  `ESPERTISE` int(11) DEFAULT NULL,
+  `ON_TIME` int(11) DEFAULT NULL,
+  `PROFESSIONALISM` int(11) DEFAULT NULL,
+  PRIMARY KEY (`RATING_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `MSTRATING`
+--
+
+LOCK TABLES `MSTRATING` WRITE;
+/*!40000 ALTER TABLE `MSTRATING` DISABLE KEYS */;
+/*!40000 ALTER TABLE `MSTRATING` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `MSTREMINDER`
 --
 
@@ -952,4 +980,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-12 10:45:04
+-- Dump completed on 2017-01-12 15:07:20
