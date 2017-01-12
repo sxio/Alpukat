@@ -35,6 +35,7 @@ $route['estore/addtocart']                              = 'C_Estore/addtocart';
 $route['estore/emptycart']                              = 'C_Estore/emptycart';
 $route['estore/purchase']                               = 'C_Estore/purchase';
 $route['estore/paymentreview']                          = 'C_Payment/estore_paymentreview';
+$route['estore/products/(:any)']                        = 'C_Estore/product/$1';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
 $route['booking']                                       = 'C_Booking/view';

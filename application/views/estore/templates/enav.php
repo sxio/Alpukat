@@ -38,6 +38,18 @@
 											<div class="row">
 												<div class="col-sm-3 multi-gd-img">
 													<ul class="multi-column-dropdown">
+
+														<?php foreach($categories as $cat) { ?>
+														<li><a href="<?php echo base_url('estore/products/'. $cat['CAT_ID']); ?>"><?php echo $cat['CAT_NAME']; ?></a></li>
+														<?php } ?>
+													</ul>
+												</div>
+											</div>
+										</ul>
+										<!-- <ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="col-sm-3 multi-gd-img">
+													<ul class="multi-column-dropdown">
 														<h6>Supplies</h6>
 														<li><a href="<?php echo base_url('estore/eproducts') ?>">Medical Supplies</a></li>
 														<li><a href="<?php echo base_url('estore/eproducts') ?>">Emergency Medical Supplies</a></li>
@@ -94,7 +106,7 @@
 												</div>
 												<div class="clearfix"></div>
 											</div>
-										</ul>
+										</ul> -->
 									</li>
 									<!-- <li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fitness Products <b class="caret"></b></a>
