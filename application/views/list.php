@@ -100,7 +100,7 @@
 									</div>
 									<div class="row">
 										<div class="col-sm-12" style="height: 180px;">
-											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/sxioo_loc.jpg'); ?>">
+											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/'. $dct['IMG_LOC']); ?>" alt='no image'>
 										</div>
 									</div>
 								</div>
