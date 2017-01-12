@@ -111,40 +111,61 @@
 		<!--banner-bottom-->
 		<div class="ban-bottom-w3l">
 			<div class="container">
-				<h3 class="tittle1">TRENDING</h3>
-				<div class="col-md-6 ban-bottom">
-					<div class="ban-top">
-						<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt=""/>
-						<div class="ban-text">
-							<h4>GYM Equipment</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 ban-bottom3">
-					<div class="ban-top">
-						<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt=""/>
-						<div class="ban-texttreatment">
-							<h4>Apparel</h4>
-						</div>
-					</div>
-					<div class="ban-img">
-						<div class=" ban-bottom1">
-							<div class="ban-top">
-								<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt=""/>
-								<div class="ban-textsupplement">
-									<h4>Supplement</h4>
-								</div>
+				<div class="row">
+					<h3 class="tittle1">TRENDING</h3>
+					<div class="col-md-6 ban-bottom">
+						<div class="ban-top">
+							<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt=""/>
+							<div class="ban-text">
+								<h4>GYM Equipment</h4>
 							</div>
 						</div>
-						<div class="ban-bottom2">
-							<div class="ban-top">
-								<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive" alt=""/>
-								<div class="ban-text1">
-									<h4>Nutrition</h4>
+						<div class="ban-img">
+							<div class=" ban-bottom1">
+								<div class="ban-top">
+									<img src="<?php echo base_url('assets/img/e-img/emergency.jpg'); ?>" class="img-responsive" alt=""/>
+									<div class="ban-textsupplement">
+										<h4>Emergency</h4>
+									</div>
 								</div>
 							</div>
+							<div class="ban-bottom2">
+								<div class="ban-top">
+									<img src="<?php echo base_url('assets/img/estore-img/glasses.jpg'); ?>" class="img-responsive" alt=""/>
+									<div class="ban-text1">
+										<h4>Accessories</h4>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
 						</div>
-						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 ban-bottom3">
+						<div class="ban-top">
+							<img src="<?php echo base_url('assets/img/e-img/fitness outfit.jpg'); ?>" class="img-responsive" alt=""/>
+							<div class="ban-texttreatment">
+								<h4>Apparel</h4>
+							</div>
+						</div>
+						<div class="ban-img">
+							<div class=" ban-bottom1">
+								<div class="ban-top">
+									<img src="<?php echo base_url('assets/img/estore-img/antibiotic1.jpg'); ?>" class="img-responsive" alt=""/>
+									<div class="ban-textsupplement">
+										<h4>Supplement</h4>
+									</div>
+								</div>
+							</div>
+							<div class="ban-bottom2">
+								<div class="ban-top">
+									<img src="<?php echo base_url('assets/img/estore-img/900.jpg'); ?>" class="img-responsive" alt=""/>
+									<div class="ban-text1">
+										<h4>Nutrition</h4>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
@@ -325,9 +346,9 @@
 							</div>
 
 							<div class="desc">
-								<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
+								<h6><a href="#">Jacket</a></h6>
+								<!-- <span class="size">XL / XXL / S </span> -->
+								<p ><del>Rp 500.000,-</del><em class="item_price">Rp 200.000,-</em></p>
 								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 							</div>
 						</div>
@@ -343,9 +364,9 @@
 							</div>
 
 							<div class="desc">
-								<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
+								<h6><a href="#">Sport Watch</a></h6>
+								<!-- <span class="size">XL / XXL / S </span> -->
+								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.0000,-</em></p>
 								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 							</div>
 						</div>
@@ -361,9 +382,9 @@
 							</div>
 
 							<div class="desc">
-								<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
+								<h6><a href="#">Bag</a></h6>
+								<!-- <span class="size">XL / XXL / S </span> -->
+								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.000,-</em></p>
 								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 							</div>
 						</div>
@@ -378,9 +399,9 @@
 								</a>
 							</div>
 							<div class="desc">
-								<h6><a href="#">Sed ut perspiciatis unde</a></h6>
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price">$70.00</em></p>
+								<h6><a href="#">Bag</a></h6>
+								<!-- <span class="size">XL / XXL / S </span> -->
+								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.0000,-</em></p>
 								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
 							</div>
 						</div>

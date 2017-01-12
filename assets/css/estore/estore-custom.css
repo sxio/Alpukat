@@ -34,6 +34,15 @@
 	margin: 25px 0 0 0;
 	right: 250px;
 }
+.ban-bottom > .ban-top > img{
+	height: 500px;
+}
+.ban-bottom3 > .ban-top > img{
+	height: 500px;
+}
+.ban-bottom1>.ban-top>img, .ban-bottom2>.ban-top>img{
+	height: 200px;
+}
 
 /*MEDIA QUERY FOR SMARTPHONE*/
 @media screen and (max-width: 500px){
