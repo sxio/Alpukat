@@ -11,6 +11,7 @@
 			$this->load->model('Forum_model');
 			$this->load->model('Comment_model');
 			$this->load->model('Category_model');
+			$this->load->model('Booking_model');
 			$this->load->model('Donate_model');
 		}
 
@@ -154,6 +155,7 @@
 			$data['estore'] = $this->Estore_model->get_order_by_username($userid);
 			$data['forum']  = $this->Forum_model->get_forum_header_by_username($userid);
 			$data['hist']   = $this->History_model->get_booking_hist();//13-Dec-16 Meikelwis get data
+			$data['booking'] = $this->Booking_model->get_booking_by_userid($userid);
 
 			$this->load->view('profile/dashboard', $data);
 		}

@@ -40,5 +40,11 @@
 			$this->Sequences_model->update_seq(4);
 			return $this->db->error();
 		}
+
+		public function get_booking_by_userid($userid){
+			$this->db->where('USER_ID', $userid);
+			$query = $this->db->get('TRDBOOKING');
+			return $query->result_array();
+		}
 	}
 ?>

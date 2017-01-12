@@ -22,6 +22,12 @@
 			return $this->db->error();
 		}
 
+		public function get_donation_by_userid($userid){
+			$this->db->where('USER_ID', $userid);
+			$query = $this->db->get('MSTDONATE');
+			return $query->result_array();
+		}
+
 		public function get_donation(){
 			return $this->db->get('MSTDONATE')->result_array();
 		}
