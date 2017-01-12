@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="dropdown" id="drop">
+					<!-- <div class="dropdown" id="drop">
 						<form>
 							<legend>Gender</legend>
 							<div class="radio">
@@ -35,7 +35,7 @@
 								<label><input type="radio" name="optradio">Female</label>
 							</div>
 						</form>
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="col-sm-12">
 							<a id="expcoll" data-toggle="collapse" data-target="#thelist" href="#"> Doctor`s Specialty <i class="fa fa-plus fa-fw exp"></i>
