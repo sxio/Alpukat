@@ -45,5 +45,15 @@
 			$query = $this->db->get('MSDCATEGORY');
 			return $query->result_array();
 		}
+
+		public function get_doctor_by_name_and_category($cat_id, $name){
+			$this->db->where('MSTUSER.USER_LEVEL', 2);
+			$this->db->where('DCT_SPECIALTY', $cat_id);
+			$this->db->like('MSTUSER.USER_NAME', $name);
+			$this->db->join('MSTUSER','MSTUSER.USER_ID = MSHDOCTOR.DCT_ID');
+			$this->db->join('MSDCATEGORY','MSDCATEGORY.CAT_ID = MSHDOCTOR.DCT_SPECIALTY');
+			$query = $this->db->get('MSHDOCTOR')->result_array();
+			return $query;
+		}
 	}
 ?>

@@ -51,5 +51,20 @@
 			$data['doc_cat'] = $this->Search_model->get_doctor_cat();
 			$this->load->view('list', $data);
 		}
+
+		public function search_category(){
+			$data['header'] = $this->load->view('templates/header','',TRUE);
+			$data['nav']    = $this->load->view('templates/nav','',TRUE);
+			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$cat_id = $this->input->get('doc_cat');
+			$name = $this->input->get('src');
+
+			$this->load->model('Search_model');
+			$data['doctor_search'] = $this->Search_model->get_doctor_by_name_and_category($cat_id, $name);
+			$data['doc_cat'] = $this->Search_model->get_doctor_cat();
+
+			$this->load->view('list', $data);
+		}
 	}
 ?>

@@ -8,9 +8,4 @@ $(document).ready(function(){
 	});
 
 	$("#expcoll").click();
-
-
-	$('input[name=doc_cat]:radio').change(function(){
-
-	});
 });

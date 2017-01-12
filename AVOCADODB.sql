@@ -115,7 +115,7 @@ CREATE TABLE `MSHDOCTOR` (
   `DCT_EDUC` varchar(100) NOT NULL,
   `DCT_ABOUT` text NOT NULL,
   `DCT_EXP` text NOT NULL,
-  `DCT_SPECIALTY` text NOT NULL,
+  `DCT_SPECIALTY` int(11) NOT NULL,
   `DCT_CERTIFICATE` text NOT NULL,
   `CONSULT_FEE` int(11) NOT NULL,
   `BOOKING_FEE` int(11) NOT NULL,
@@ -133,7 +133,7 @@ CREATE TABLE `MSHDOCTOR` (
 
 LOCK TABLES `MSHDOCTOR` WRITE;
 /*!40000 ALTER TABLE `MSHDOCTOR` DISABLE KEYS */;
-INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn','bedah','bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg');
+INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','5 thn',28,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg');
 /*!40000 ALTER TABLE `MSHDOCTOR` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -959,4 +959,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-12 13:57:03
+-- Dump completed on 2017-01-12 14:40:29
