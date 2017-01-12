@@ -84,6 +84,9 @@ $route['admin/estore/restock']                          = 'Admin/C_Admin_Estore/
 $route['admin/estore/getproductbycategory']             = 'Admin/C_Admin_Estore/GetProductByCategory';
 $route['admin/estore/getproductbyid']                   = 'Admin/C_Admin_Estore/GetProductById';
 //
+// DOCTOR
+$route['admin/doctor/add-category']                     = 'Admin/C_Admin_Doctor/add_category';
+//
 // COMMENT
 $route['admin/comment/listcomment']                     = 'Admin/C_Admin_Comment/listcomment';
 $route['admin/comment/listcomment/(:num)']              = 'Admin/C_Admin_Comment/listcomment'; //for pagination

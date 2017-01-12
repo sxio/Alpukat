@@ -22,24 +22,24 @@
 					<i class="fa fa-opencart fa-5x fa-fw"></i><br><h2>E-store</h2></button>
 				</a>
 			</div>
-			<!-- <div class="col-sm-3">
-				<a href=""><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-dollar fa-5x fa-fw"></i><br><h2>Donation</h2></button>
-				</a>
-			</div> -->
 			<div class="col-sm-3">
 				<a href="<?php echo base_url('admin/manage-comment'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-comment fa-5x fa-fw"></i><br><h2>Suggestion</h2></button>
 				</a>
 			</div>
 			<div class="col-sm-3">
-				<a href="<?php echo base_url('admin/manage-member'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
-					<i class="fa fa-user fa-5x fa-fw"></i><br><h2>Member</h2></button>
+				<a href="<?php echo base_url('admin/manage-doctor'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-user-md fa-5x fa-fw"></i><br><h2>Doctor</h2></button>
 				</a>
 			</div>
 		</div>
 		<br>
 		<div class="row">
+			<div class="col-sm-3">
+				<a href="<?php echo base_url('admin/manage-member'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
+					<i class="fa fa-user fa-5x fa-fw"></i><br><h2>Member</h2></button>
+				</a>
+			</div>
 			<div class="col-sm-3">
 				<a href="<?php echo base_url('admin/manage-category'); ?>"><button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt">
 					<i class="fa fa-list fa-5x fa-fw"></i><br><h2>M. Category</h2></button>
