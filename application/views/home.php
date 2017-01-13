@@ -13,7 +13,7 @@
 		<h1>Avocado</h1><!--// Meikelwis 25/10/16-->
 		<h3>We specialize in Health Care Application</h3>
 		<form action="search/list" class="form-inline" method="get">
-			<input type="text" class="form-control" size="50" name="src" placeholder="Doctor`s Name" required autofocus>
+			<input type="text" class="form-control" size="50" name="src" placeholder="Doctor`s Name" required autofocus id="searchbar">
 			<button class="btn btn-info">Search</button>
 		</form>
 	</div>
@@ -42,27 +42,32 @@
 
 					<div class="row first_service fadesleft">
 						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center">
-							<a href="<?php echo base_url('news'); ?>"><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br><a href=""><h4 for="new">News</h4></a>
+							<a href="<?php echo base_url('news'); ?>"><i class="fa fa-newspaper-o fa-fw fa-4x new"></i></a><br>
+							<a href="<?php echo base_url('news'); ?>"><h4 for="new">News</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
-							<a href="<?php echo base_url('forum'); ?>"><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br><a href=""><h4>Forum</h4></a>
+							<a href="<?php echo base_url('forum'); ?>"><i class="fa fa-commenting-o fa-fw fa-5x forums"></i></a><br>
+							<a href="<?php echo base_url('forum'); ?>"><h4>Forum</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
-							<a href="<?php echo base_url('estore'); ?>"><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br><a href=""><h4>E-Store</h4></a>
+							<a href="<?php echo base_url('estore'); ?>"><i class="fa fa-shopping-cart fa-fw fa-5x store"></i></a><br>
+							<a href="<?php echo base_url('estore'); ?>"><h4>E-Store</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
-							<a href=""><i class="fa fa-smile-o fa-fw fa-5x consul"></i></a><br><a href=""><h4>Consultation</h4></a>
+							<a href="#searchbar"><i class="fa fa-book fa-fw fa-5x consul"></i></a><br>
+							<a href="#searchbar"><h4>Booking</h4></a>
 						</div>
 					</div>
 					<div class="row second_service fadesleft">
 						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 serve text-center">
-							<a href=""><i class="fa fa-money fa-fw fa-4x money"></i></a><br><a href=""><h4>Donate</h4></a>
+							<a href="<?php echo base_url('donate/payment/form'); ?>"><i class="fa fa-money fa-fw fa-4x money"></i></a><br>
+							<a href="<?php echo base_url('donate/payment/form'); ?>"><h4>Donate</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 serve text-center fadesleft">
-							<a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href=""><h4>Reminder</h4></a>
+							<a href="<?php echo base_url('profile/reminder'); ?>"><i class="fa fa-bell-o fa-fw fa-5x bell"></i></a><br><a href="<?php echo base_url('profile/reminder'); ?>"><h4>Reminder</h4></a>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 serve text-center fadesleft">
-							<a href="<?php echo base_url('profile/dashboard#paymentHistory'); ?>"><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href=""><h4>History</h4></a>
+							<a href="<?php echo base_url('profile/payment-history'); ?>"><i class="fa fa-history fa-fw fa-5x histo"></i></a><br><a href="<?php echo base_url('profile/payment-history'); ?>"><h4>History</h4></a>
 						</div>
 					</div>
 				</div>
