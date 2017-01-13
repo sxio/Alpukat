@@ -6,6 +6,7 @@
 				redirect('user');
 			}
 			$this->load->model('Estore_model');
+			$this->load->model('Donate_model');
 			$this->load->library('cart');
 		}
 		public function view($param = NULL){
@@ -40,6 +41,10 @@
 
 				$this->session->unset_userdata('estore_pay');
 				$this->session->unset_userdata('booking_pay');
+
+				$data['d_name'] = $this->input->post('d_name');
+				$data['d_amount'] = $this->input->post('d_amount');
+				$data['d_hist'] = $this->Donate_model->get_donation();
 			}
 
 			$this->load->view('payment/payment-form', $data);
@@ -79,6 +84,46 @@
 
 				$this->session->unset_userdata('estore_pay');
 				$this->session->unset_userdata('booking_pay');
+
+				$this->form_validation->set_rules('b_number','Bank Account Number','trim');
+				$this->form_validation->set_rules('b_acc_name','Bank Account Name','trim');
+				$this->form_validation->set_rules('b_amount','Amount','trim');
+				$this->form_validation->set_rules('b_behalf','Name','trim');
+
+				if($this->form_validation->run() == FALSE){
+					$this->session->set_flashdata('msg','Whoops something went wrong');
+				} else {
+					$res = $this->Donate_model->add_donation();
+					if($res['code'] == 0) {
+						$this->session->set_flashdata('msg','berhasil');
+					} else {
+						$this->session->set_flashdata('msg','Whoops something went wrong');
+					}
+				}
+			} elseif ($param == 'rating') {
+				$userid = $this->session->userdata('username');
+				$this->session->set_flashdata('rating',TRUE);
+
+				$this->session->unset_userdata('estore_pay');
+				$this->session->unset_userdata('booking_pay');
+				$this->session->unset_userdata('donate_pay');
+
+				$this->form_validation->set_rules('docfriendly','Friendliness','trim|numeric');
+				$this->form_validation->set_rules('docexpert','Expertise','trim|numeric');
+				$this->form_validation->set_rules('doctime','On Time field','trim|numeric');
+				$this->form_validation->set_rules('docpro','Professionalism','trim|numeric');
+
+				if($this->form_validation->run() == FALSE){
+					$this->session->set_flashdata('msg', validation_errors());
+				} else {
+					$this->load->model('Rating_model');
+					$res = $this->Rating_model->add_rating();
+
+					if($res['code'] != 0){
+						echo 'Whoops! Something went wrong. Please try again later';
+						die;
+					}
+				}
 			}
 			$this->load->view('payment/payment_success', $data);
 		}

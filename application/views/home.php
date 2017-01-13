@@ -21,18 +21,12 @@
 		<h1 class="text-center fades">Here Are Our Best Doctors of The Month</h1>
 		<div class="container">
 			<div class="row text-center doc">
+				<?php foreach($top_3_doctor as $dct) { ?>
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 fadesleft">
-					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
-					<h3>Doctor 1</h3>
+					<a href="<?php echo base_url('profile/doctor/'.$dct['DOCTOR_ID']); ?>"><img src="<?php echo base_url('assets/img/doctor/'. $dct['USER_IMG']); ?>"></a>
+					<h3><?php echo $dct['USER_NAME']; ?></h3>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 fadesleft">
-					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
-					<h3>Doctor 2</h3>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 fadesleft">
-					<a href=""><img src="<?php echo base_url('assets/img/doctor.jpg'); ?>"></a>
-					<h3>Doctor 3</h3>
-				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</section>

@@ -105,7 +105,7 @@
 								<legend><span class="number">2</span>Your profile</legend>
 
 								<label for="address">Address</label>
-								<input type="tel" name="address" value="<?php echo set_value('address') ?>">
+								<input type="text" name="address" value="<?php echo set_value('address') ?>">
 
 								<label for="date_birth">Birthday:</label>
 								<input type="date" name="date_birth"  value="<?php echo set_value('date_birth') ?>">

@@ -36,6 +36,14 @@
 				// PARAM = date
 				// DOCTOR COMMENT
 				$prefix = 'DC-' . nice_date($param, 'Ymd') . '-';
+			} elseif($seq_id == 6){
+				// PARAM = date
+				// DOCTOR COMMENT
+				$prefix = 'DO-' . nice_date($param, 'Ymd') . '-';
+			} elseif ($seq_id == 7) {
+				// PARAM = date
+				// DOCTOR COMMENT
+				$prefix = 'RT-' . nice_date($param, 'Ymd') . '-';
 			}
 			return $prefix . str_pad($value, 3, '0', STR_PAD_LEFT);
 		}

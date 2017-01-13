@@ -8,7 +8,7 @@
 		public function get_doctor_by_name($name){
 			$this->db->like('USER_NAME', $name);
 			$this->db->where('USER_LEVEL', 2);
-			$this->db->join('MSTUSER','MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'right');
+			$this->db->join('MSTUSER','MSTUSER.USER_ID = MSHDOCTOR.DCT_ID');
 			$query = $this->db->get('MSHDOCTOR')->result_array();
 
 			if(count($query) > 0){

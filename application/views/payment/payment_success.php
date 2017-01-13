@@ -106,6 +106,35 @@
 	<br>
 
 	<!-- DONATE PAYMENT -->
+
+	<?php } elseif($this->session->flashdata('rating') !== NULL) { ?>
+	<!-- RATING SUCCESS -->
+	<br>
+	<div class="container payment">
+		<div class="row">
+		</div>
+		<div class="row">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="text-center">Donation Completed Successfully</h2>
+				</div>
+				<div class="panel-body">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
+						<span class="fa-stack fa-lg" id="check_logo">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-check fa-stack-1x fa-inverse"></i>
+						</span>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 text-center">
+						<h2>Thankyou for rating - we appreciate your evaluation.</h2>
+					</div>
+					<a href="<?php echo base_url('home'); ?>" class="btn btn-default" id="btn_home"><i class="fa fa-home fa-fw"></i> Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- RATING SUCCESS -->
 	<?php } ?>
 </body>
 </html>

@@ -73,7 +73,13 @@
 						</div>
 					</div>
 					<br>
-					<?php $educ = explode(';', $data_doctor['DCT_EDUC']); ?>
+					<?php
+						if(!empty($data_doctor['DCT_EDUC'])){
+							$educ = explode(';', $data_doctor['DCT_EDUC']);
+						} else {
+							$educ = explode(';', ';;;;;;');
+						}
+					?>
 					<legend>Education &amp; Experience</legend>
 					<div class="row">
 						<label class="col-xs-4 col-sm-4 col-md-2 col-lg-2 control-label" for="docSD">SD </label>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Doctors List</title>
+	<title>Booking</title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/booking/booking.css'); ?>
+	<?php echo link_tag('assets/css/bootstrap-datetimepicker.min.css'); ?>
 
+	<script src="<?php echo base_url('assets/js/bootstrap-datetimepicker.min.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
 <body>
@@ -23,11 +25,11 @@
 									<div class="form-group row">
 										<label for="dspBookingNo" class="col-sm-2">Booking No</label>
 										<div class="col-sm-4">
-											<input type="text" class="form-control" disabled value="<?php echo $bookingid ?>">
+											<input type="text" class="form-control" readonly value="<?php echo $bookingid ?>">
 										</div>
 										<label for="BookingDate" class="col-sm-2">Booking Date</label>
 										<div class="col-sm-4">
-											<input type="date" class="form-control" name="bookingdt">
+											<input type="text" class="form-control" required name="bookingdt" id="bookingdt" value="<?php echo mdate('%Y-%m-%d',now()); ?>">
 										</div>
 									</div>
 										<div class="booking-detail">
@@ -40,13 +42,13 @@
 													</div>
 													<div class="form-group row">
 														<div class="col-sm-3">
-															<?php echo form_dropdown('doctorid', $doctor_list);?>
+															<input type="text" required name="doctorid" value="<?php echo $doctor_list['DCT_ID']; ?>" readonly class="form-control">
 														</div>
 														<div class="col-sm-3">
-															<input type="text" class="form-control" name="servid">
+															<input type="text" class="form-control" required name="servid">
 														</div>
 														<div class="col-sm-3">
-															<input type="text" class="form-control" name="count">
+															<input type="text" class="form-control" required name="count">
 														</div>
 														<div class="row">
 															<div class="col-sm-3"><button type="submit" class="btn btn-primary form-control">Book Now</button>
@@ -54,7 +56,7 @@
 													</div>
 												</div>
 											</div>
-										</div> 
+										</div>
 									</div>
 								<?php echo form_close(); ?>
 							</div>
@@ -91,7 +93,7 @@
 							</div>
 						</div>
 					</div> -->
-					
+
 
 				</div>
 				<!-- close Panel Body -->
@@ -101,22 +103,13 @@
 		<!-- c/ row -->
 	</div>
 	<!-- c/ #booking -->
+	<script>
+		$("#bookingdt").datetimepicker({
+			format: 'yyyy-mm-dd',
+			minView: 2,
+			startDate: '<?php echo mdate('%Y-%m-%d',now()); ?>'
 
-	<?php echo $chat; ?>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#addItem").click(function(){
-				
-			})
 		});
-		// function addRow(){
-		// 	 var newDiv = document.createElement("td");
-		// 	 var newContent = document.createTextNode("Doctor DoctorName");
-		// 	 var content = document.getElementById("DetailBooking");
-		// 	 var DoctorsName = document.getElementById("DoctorsName");
-		// 	 newDiv.appendChild(DoctorsName);
-		// 	 content.appendChild(newDiv);
-		// }
 	</script>
 </body>
 </html>

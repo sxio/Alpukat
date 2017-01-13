@@ -77,10 +77,10 @@
 					echo form_open('donate/payment/form', $attrib);
 				?>
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span><input placeholder="Name" name="text" class="form-control" required>
+					<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span><input placeholder="Name" name="d_name" class="form-control" required>
 				</div>
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input placeholder="Amount" type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false" required>
+					<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span><input placeholder="Amount" type="number" name="d_amount" class="form-control" min="10000" step="10000" onkeydown="return false" required>
 				</div>
 
 				<button class="btn btn-info form-control"><i class="fa fa-paper-plane fa-fw"></i> Donate</button>

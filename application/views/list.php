@@ -73,7 +73,7 @@
 									</div>
 									<div class="row text-center">
 										<br>
-										<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
+										<a href="<?php echo base_url('booking/'. $dct['DCT_ID']); ?>" class="btn btn-primary btnBooking">Booking</a>
 										<a href="<?php echo base_url('profile/doctor/'. $dct['USER_ID']); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 									</div>
 								</div>
@@ -100,7 +100,7 @@
 									</div>
 									<div class="row">
 										<div class="col-sm-12" style="height: 180px;">
-											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/sxioo_loc.jpg'); ?>">
+											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/'. $dct['IMG_LOC']); ?>" alt='no image'>
 										</div>
 									</div>
 								</div>

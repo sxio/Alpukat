@@ -18,7 +18,7 @@ $route['profile/reminder']                              = 'C_Profile/reminder';
 $route['profile/payment-history']                       = 'C_Profile/payment_history';
 $route['profile/edit/(:any)']                           = 'C_Profile/edit_profile_user/$1';
 $route['profile/doctor/edit/(:any)']                    = 'C_Profile/edit_profile_doctor/$1';
-$route['profile/doctor/mail/rating']                    = 'C_Profile/rating_doctor';//KENEDY LUKITO --> RATING DOCTOR
+$route['profile/doctor/rating/(:any)/(:any)']           = 'C_Profile/rating_doctor/$1/$2';//KENEDY LUKITO --> RATING DOCTOR
 $route['profile/doctor/comment/(:any)']                 = 'C_Profile/add_doctor_comment/$1';
 $route['profile/doctor/(:any)']                         = 'C_Profile/profile_doctor/$1';
 $route['profile/view/(:any)']                           = 'C_Profile/view_profile/$1';
@@ -35,12 +35,14 @@ $route['estore/addtocart']                              = 'C_Estore/addtocart';
 $route['estore/emptycart']                              = 'C_Estore/emptycart';
 $route['estore/purchase']                               = 'C_Estore/purchase';
 $route['estore/paymentreview']                          = 'C_Payment/estore_paymentreview';
+$route['estore/products/(:any)']                        = 'C_Estore/product/$1';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
-$route['booking']                                       = 'C_Booking/view';
+$route['booking/manage/(:any)/(:any)']                  = 'C_Booking/manage/$1/$2';
 $route['booking/create']                                = 'C_Booking/create_booking';
 $route['booking/adddetail']                             = 'C_Booking/add_detail_booking';
 $route['booking/success/(:any)']                        = 'C_Payment/pay_success/$1';
+$route['booking/(:any)']                                = 'C_Booking/view/$1';
 
 $route['forum/create']                                  = 'C_Forum/create_forum';
 $route['forum/list']                                    = 'C_Forum/list_forum';

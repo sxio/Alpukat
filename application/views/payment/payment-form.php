@@ -235,13 +235,16 @@
 				<div class="panel-body">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<form method="post" class="form-horizontal">
+						<?php
+							$attrib = array('class' => 'form-horizontal');
+							echo form_open('payment/success/donate', $attrib);
+						?>
 							<ul class="list-unstyled">
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="banktype">Bank Name</label>
 									<div class="col-md-8">
-										<select class="form-control" name="banktype">
-											<option value=""></option>
+										<select class="form-control" name="b_type" required>
+											<option value="" hidden>-- Bank Type --</option>
 											<option value="BCA">BCA</option>
 											<option value="BNI">BNI</option>
 											<option value="BRI">BRI</option>
@@ -255,40 +258,40 @@
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="banknumber">Bank Account Number</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="banknumber" placeholder="Your bank account number">
+										<input class="form-control" type="text" name="b_number" placeholder="Your bank account number" required>
 									</div>
 								</li>
 								<li class="form-group">
 									<label class="col-md-4 control-label" for="bankAccName">Bank Account Name</label>
 									<div class="col-md-8">
-										<input class="form-control" type="text" name="bankAccName" id="bankAccName" placeholder="Your bank account name">
+										<input class="form-control" type="text" name="b_acc_name" id="bankAccName" placeholder="Your bank account name" required>
 									</div>
 								</li>
 								<li class="form-group">
 									<label for="number" class="col-md-4 control-label">Amount</label>
 									<div class="col-md-8">
-										<input type="number" name="number" class="form-control" min="10000" step="10000" onkeydown="return false">
+										<input type="number" name="b_amount" class="form-control" min="10000" step="10000" onkeydown="return false" value="<?php echo $d_amount; ?>" required>
 									</div>
 								</li>
 								<li class="form-group">
 									<label for="behalf" class="col-md-4 control-label">Name</label>
 									<div class="col-md-8">
-										<input type="text" name="behalf" class="form-control">
+										<input type="text" name="b_behalf" class="form-control" value="<?php echo $d_name; ?>" required>
 									</div>
 								</li>
 								<li class="form-group">
 									<label for="date_tf" class="col-md-4 control-label">Date Transfer</label>
 									<div class="col-md-8 date">
-										<select name="date_tf" class="form-control">
-											<option value=""></option>
-											<option value=""><?php echo date('d-m-Y'); ?></option>
+										<select name="date_tf" class="form-control" required>
+											<option value="" hidden>-- Date --</option>
+											<option value="<?php echo date('Y-m-d'); ?>"><?php echo date('d-m-Y'); ?></option>
 										</select>
 									</div>
 								</li>
 							</ul>
-							<a href="<?php echo base_url('payment/success/donate'); ?>" name="btn_donate_pay" class="col-md-12 btn btn-primary"><b>Proceed</b></a>
+							<button name="btn_donate_pay" class="col-md-12 btn btn-primary"><b>Proceed</b></button>
 							<div class="col-md-4" id="message"></div>
-						</form>
+						<?php echo form_close(); ?>
 					</div>
 				</div>
 				<div class="btn-group" id="donate_list">
@@ -308,18 +311,12 @@
 													<th class="col-sm-3">Donate Name</th>
 													<th class="col-sm-3">Total Amount</th>
 												</tr>
+												<?php foreach($d_hist as $hist) { ?>
 												<tr>
-													<td class="col-sm-3">John</td>
-													<td class="col-sm-3">2000000</td>
+													<td class="col-sm-3"><?php echo $hist['DONOR_NAME']; ?></td>
+													<td class="col-sm-3">Rp <?php echo number_format($hist['AMOUNT'],0,',','.'); ?></td>
 												</tr>
-												<tr>
-													<td class="col-sm-3">Mary</td>
-													<td class="col-sm-3">35000000</td>
-												</tr>
-												<tr>
-													<td class="col-sm-3">July</td>
-													<td class="col-sm-3">400000000</td>
-												</tr>
+												<?php } ?>
 											</table>
 										</div>
 									</div>

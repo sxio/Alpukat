@@ -71,7 +71,7 @@
 				'IMG_CERTIFICATE'  => $img['_cc']['file_name'],
 				'IMG_LICENSE'      => $img['_pl']['file_name'],
 				'IMG_REGISTRATION' => $img['_pr']['file_name'],
-				'IMG_LOC'          => $user . '_dummy_data.jpg'
+				'IMG_LOC'          => $user['USER_ID'] . '_dummy_data.jpg'
 			);
 			return $this->db->insert('MSHDOCTOR', $data);
 		}
@@ -79,7 +79,7 @@
 		public function get_user_by_email_hash($hash){
 			$this->db->where('md5(EMAIL)', $hash);
 			$query = $this->db->get('MSTUSER');
-			return $query->result_array();
+			return $query->result_array()[0];
 		}
 	}
 ?>
