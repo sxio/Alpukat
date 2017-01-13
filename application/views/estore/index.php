@@ -208,10 +208,9 @@
 		<div class="accessories-w3l">
 			<div class="container">
 				<h3 class="tittle">20% Discount on</h3>
-				<span>TRENDING FITNESS APPAREL</span>
+				<span>SPORT EQUIPMENT</span>
 				<div class="button">
-					<a href="#" class="button1"> Shop Now</a>
-					<a href="#" class="button1"> Quick View</a>
+					<a href="<?php echo base_url('estore/products/19'); ?>" class="button1"> Shop Now</a>
 				</div>
 			</div>
 		</div>
@@ -348,8 +347,7 @@
 							<div class="desc">
 								<h6><a href="#">Jacket</a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p ><del>Rp 500.000,-</del><em class="item_price"><em>Rp 200.000,-</em></p>
-								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+								<p><em class="item_price"><em>Rp 200.000,-</em></p>
 							</div>
 						</div>
 					</div>
@@ -366,8 +364,7 @@
 							<div class="desc">
 								<h6><a href="#">Sport Watch</a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.0000,-</em></p>
-								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+								<p><em class="item_price"><em>Rp 200.0000,-</em></p>
 							</div>
 						</div>
 					</div>
@@ -384,8 +381,7 @@
 							<div class="desc">
 								<h6><a href="#">Bag</a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.000,-</em></p>
-								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+								<p><em class="item_price"><em>Rp 200.000,-</em></p>
 							</div>
 						</div>
 					</div>
@@ -401,8 +397,7 @@
 							<div class="desc">
 								<h6><a href="#">Bag</a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p ><del>Rp 500.000</del><em class="item_price"><em>Rp 200.0000,-</em></p>
-								<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+								<p><em class="item_price"><em>Rp 200.0000,-</em></p>
 							</div>
 						</div>
 					</div>
@@ -413,65 +408,6 @@
 		<!-- BEST SELLER -->
 	</div>
 	<!--content-->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content modal-info">
-				<div class="modal-header">
-					<h3 class="review">REVIEW</h3>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				</div>
-				<div class="modal-body">
-					<div class="news-gr">
-						<div class="col-md-5 new-grid1">
-						<img src="<?php echo base_url('assets/img/e-img') ?>/p5.jpg" class="img-responsive" alt="">
-						</div>
-							<div class="col-md-7 new-grid">
-								<h5>Ten desc's Cotton Viscose fabric Grey Shrug</h5>
-								<h6>Quick Overview</h6>
-								<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-								<div class="color-quality">
-									<div class="color-quality-left">
-										<button class="btn btn-danger my-cart-btn my-cart-b">Buy</button>
-									</div>
-									<!-- <div class="color-quality-right">
-										<h6>Quality :</h6>
-										<div class="quantity">
-											<div class="quantity-select">
-												<div class="entry value-minus1">&nbsp;</div>
-												<div class="entry value1"><span>1</span></div>
-												<div class="entry value-plus1 active">&nbsp;</div>
-											</div>
-										</div>
-										quantity
-												<script>
-												$('.value-plus1').on('click', function(){
-													var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
-													divUpd.text(newVal);
-												});
-
-												$('.value-minus1').on('click', function(){
-													var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
-													if(newVal>=1) divUpd.text(newVal);
-												});
-												</script>
-											quantity
-									</div> -->
-									<div class="clearfix"> </div>
-								</div>
-							<!-- <div class="desc">
-								<span class="size">XL / XXL / S </span>
-								<p ><del>$100.00</del><em class="item_price"> $70.00 </em></p>
-								<div class="add">
-								<button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="<?php echo base_url('assets/img/e-img') ?>/of2.png">Add to Cart</button>
-								</div>
-							</div> -->
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<?php echo $efooter; ?>
 
