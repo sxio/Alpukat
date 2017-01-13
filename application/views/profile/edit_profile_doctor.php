@@ -24,17 +24,17 @@
 					</legend>
 					<div class="row">
 						<label class="col-xs-12 col-sm-12 col-md-6 col-lg-6 control-label" for="docpp">Profile Picture </label>
-                    </div>
-                    <div class="row">
+					</div>
+					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
 							<label for="_photo">
-								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
+								<img src="<?php echo base_url('assets/img/doctor/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail foto" alt="noimage">
 							</label>
 							<div class="col-xs-12">
 								<input type="file" name="_photo" id="_photo" class="form-control input-img">
 							</div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docname">Name </label>
 							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 								<input class="form-control" type="text" name="docname" value="<?php echo $data_doctor['USER_NAME']; ?>" required>
@@ -50,19 +50,19 @@
 								<textarea class="form-control" rows="4" name="docaddr" placeholder="Enter Your Address" required><?php echo $data_doctor['USER_ADDRESS']; ?></textarea>
 							<br>
 							</div>
-                            <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Phone Number </label>
-                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="text" name="docHP" value="<?php echo $data_doctor['HANDPHONE']; ?>">
-                            <br>
-                            </div>
-                            <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Email </label>
-                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                <input class="form-control" type="email" name="docemail" value="<?php echo $data_doctor['EMAIL']; ?>">
-                            </div>
+							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Phone Number </label>
+							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+								<input class="form-control" type="text" name="docHP" value="<?php echo $data_doctor['HANDPHONE']; ?>">
+							<br>
+							</div>
+							<label class="col-xs-12 col-sm-12 col-md-3 col-lg-3 control-label" for="docemail">Email </label>
+							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+								<input class="form-control" type="email" name="docemail" value="<?php echo $data_doctor['EMAIL']; ?>">
+							</div>
 							<!-- </div> -->
 						</div>
-                        <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        </div> -->
+						<!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						</div> -->
 					</div>
 					<br>
 					<legend>About</legend>
@@ -132,29 +132,29 @@
 					<legend>Practice Location ( Map Picture of the Location )</legend>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
-							<label for="_photo">
-								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							<label for="_loc">
+								<img src="<?php echo base_url('assets/img/doctor/'.$data_doctor['IMG_LOC']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
 							</label>
 							<div class="col-xs-12">
-								<input type="file" name="_photo" id="_photo" class="form-control input-img">
+								<input type="file" name="_loc" id="_loc" class="form-control input-img">
 							</div>
-                        </div>
+						</div>
+						<!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+							<label for="_loc2">
+								<img src="<?php echo base_url('assets/img/doctor/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							</label>
+							<div class="col-xs-12">
+								<input type="file" name="_loc2" id="_loc2" class="form-control input-img">
+							</div>
+						</div>
 						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
-							<label for="_photo">
-								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
+							<label for="_loc3">
+								<img src="<?php echo base_url('assets/img/doctor/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
 							</label>
 							<div class="col-xs-12">
-								<input type="file" name="_photo" id="_photo" class="form-control input-img">
+								<input type="file" name="_loc3" id="_loc3" class="form-control input-img">
 							</div>
-                        </div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
-							<label for="_photo">
-								<img src="<?php echo base_url('assets/img/doctor/certificate/'.$data_doctor['USER_IMG']); ?>" class="img-responsive img-thumbnail fotolokasi" alt="noimage">
-							</label>
-							<div class="col-xs-12">
-								<input type="file" name="_photo" id="_photo" class="form-control input-img">
-							</div>
-                        </div>
+						</div> -->
 					</div>
 					<button class="btn btn-primary" name="btn_edit" value="1"><i class="fa fa-pencil fa-fw"></i> Edit</button>
 				</div>
@@ -169,7 +169,7 @@
 		});
 
 		$('.input-img').change(function(event){
-			$('.foto').attr('src', URL.createObjectURL(event.target.files[0]));
+			$(this).parent().siblings().children().attr('src', URL.createObjectURL(event.target.files[0]));
 		});
 	</script>
 </body>

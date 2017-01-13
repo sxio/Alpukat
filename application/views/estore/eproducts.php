@@ -30,134 +30,49 @@
 			<h2 class="tittle">Products</h2>
 			<div class="container">
 				<div class="product-agileinfo-grids w3l">
-					<div class="col-md-3 product-agileinfo-grid">
-						<div class="top-rates">
-							<h3>Top Rates products</h3>
-							<div class="recent-grids">
-								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
-								</div>
-								<div class="recent-right">
-									<h6 class="best2"><a href="single.html">Supplement </a></h6>
-									<p><del>Rp 1.000.000,-</del> <em class="item_price">Rp 999.999,-</em></p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="recent-grids">
-								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
-								</div>
-								<div class="recent-right">
-									<h6 class="best2"><a href="single.html">Duis aute irure </a></h6>
-									<p><del>Rp 2.000.000,-</del> <em class="item_price">Rp 899.999,-</em></p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="recent-grids">
-								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
-								</div>
-								<div class="recent-right">
-									<h6 class="best2"><a href="single.html">Lorem ipsum dolor </a></h6>
-									<p><del>Rp 3.000.000,-</del> <em class="item_price">Rp 799.999,-</em></p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="recent-grids">
-								<div class="recent-left">
-									<a href="single.html"><img class="img-responsive" src="<?php echo base_url('assets/img/e-img/supplement.jpg'); ?>" alt=""></a>
-								</div>
-								<div class="recent-right">
-									<h6 class="best2"><a href="single.html">Ut enim ad minim </a></h6>
-									<p><em class="item_price">Rp 390.000,-</em></p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="brand-w3l">
-							<h3>Brands Filter</h3>
-							<ul>
-								<li><a href="#">Ralph Lauren</a></li>
-								<li><a href="#">adidas</a></li>
-								<li><a href="#">Bottega Veneta</a></li>
-								<li><a href="#">Valentino</a></li>
-								<li><a href="#">Nike</a></li>
-								<li><a href="#">Burberry</a></li>
-								<li><a href="#">Michael Kors</a></li>
-								<li><a href="#">Louis Vuitton</a></li>
-								<li><a href="#">Jimmy Choo</a></li>
-							</ul>
-						</div>
-						<div class="cat-img">
-							<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/45.jpg'); ?>" alt="">
-						</div>
-					</div>
-					<div class="col-md-9 product-agileinfon-grid1 w3l">
-						<div class="product-agileinfon-top">
+					<div class="col-md-12 product-agileinfon-grid1 w3l">
+						<!-- <div class="product-agileinfon-top">
 							<div class="col-md-6 product-agileinfon-top-left">
 								<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/sport_shoes.jpg'); ?>" alt="">
 							</div>
 							<div class="col-md-6 product-agileinfon-top-left">
 								<img class="img-responsive" src="<?php echo base_url('assets/img/e-img/sport_shoes.jpg'); ?>" alt="">
 							</div>
-							<div class="clearfix"></div>
-						</div>
-						<br>
-						<!-- <div class="mens-toolbar">
-							<p >Showing 1–9 of 21 results</p>
-							 <p class="showing">Sorting By
-								<select>
-									  <option value=""> Name</option>
-									  <option value="">  Rate</option>
-										<option value=""> Color </option>
-										<option value=""> Price </option>
-								</select>
-							  </p>
-							  <p>Show
-								<select>
-									  <option value=""> 9</option>
-									  <option value="">  10</option>
-										<option value=""> 11 </option>
-										<option value=""> 12 </option>
-								</select>
-							  </p>
 							<div class="clearfix"></div>
 						</div> -->
+						<br>
 						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-							<!-- <ul id="myTab" class="nav1 nav1-tabs left-tab" role="tablist"> -->
-							<ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
+							<!-- <ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
 								<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu1.png"></a></li>
 								<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src="<?php echo base_url('assets/img/e-img'); ?>/menu.png"></a></li>
-							</ul>
+							</ul> -->
 							<div id="myTabContent" class="tab-content">
 								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-									<?php for($i = 1; $i <= 4; $i++) { ?>
 									<div class="product-tab prod1">
-										<?php for($j = 1; $j <= 3; $j++) { ?>
+										<?php foreach($product as $prod) { ?>
 										<div class="col-md-4 product-tab-grid simpleCart_shelfItem">
 											<div class="grid-arr">
 												<div class="grid-arrival">
-													<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+													<a href="<?php echo base_url('estore/detail/'. $prod['PROD_ID']); ?>" class="new-gri" data-toggle="modal" data-target="#myModal1">
 														<div class="grid-img">
-															<img src="<?php echo base_url('assets/img/e-img/treadmill.jpg'); ?>" class="img-responsive"  alt="">
+															<img src="<?php echo base_url('assets/img/estore-img/'. $prod['PROD_IMG']); ?>" class="img-responsive"  alt="">
 														</div>
 													</a>
 												</div>
 
 												<div class="desc">
-													<h6><a href="#">Treadmill</a></h6>
+													<h6><a href="#"><?php echo $prod['PROD_NAME']; ?></a></h6>
 													<!-- <span class="size">XL / XXL / S </span> -->
-													<p ><del>Rp 6.000.000,-</del><em class="item_price">Rp 10.000,-</em></p>
-													<button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button>
+													<p><em class="item_price">Rp <?php echo number_format($prod['PROD_PRICE'],0,',','.'); ?></em></p>
+													<a href="<?php echo base_url('estore/detail/'. $prod['PROD_ID']); ?>" class="btn btn-primary">Details</a>
 												</div>
 											</div>
 										</div>
 										<?php } ?>
 										<div class="clearfix"></div>
 									</div>
-									<?php } ?>
 								</div>
-								<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+								<!-- <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 									<?php for($i = 0; $i < 5; $i++) { ?>
 									<div class="product-tab1 prod3">
 										<div class="col-md-4 product-tab1-grid">
@@ -186,7 +101,7 @@
 										<div class="clearfix"></div>
 									</div>
 									<?php } ?>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

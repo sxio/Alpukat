@@ -35,12 +35,13 @@ $route['estore/addtocart']                              = 'C_Estore/addtocart';
 $route['estore/emptycart']                              = 'C_Estore/emptycart';
 $route['estore/purchase']                               = 'C_Estore/purchase';
 $route['estore/paymentreview']                          = 'C_Payment/estore_paymentreview';
+$route['estore/products/(:any)']                        = 'C_Estore/product/$1';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
-$route['booking']                                       = 'C_Booking/view';
 $route['booking/create']                                = 'C_Booking/create_booking';
 $route['booking/adddetail']                             = 'C_Booking/add_detail_booking';
 $route['booking/success/(:any)']                        = 'C_Payment/pay_success/$1';
+$route['booking/(:any)']                                = 'C_Booking/view/$1';
 
 $route['forum/create']                                  = 'C_Forum/create_forum';
 $route['forum/list']                                    = 'C_Forum/list_forum';
@@ -55,7 +56,7 @@ $route['(:any)/payment/form']                           = 'C_Payment/view/$1';
 $route['payment/success/(:any)']                        = 'C_Payment/pay_success/$1';
 
 $route['search/list']                                   = 'C_Pages/search';
-$route['search/list-category']                          = 'C_Pages/search_category';
+$route['search/listc']                                  = 'C_Pages/search_category';
 
 // ADMIN
 // Master CATEGORY

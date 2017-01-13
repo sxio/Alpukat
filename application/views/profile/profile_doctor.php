@@ -25,7 +25,7 @@
 											$img = $data_doctor['USER_IMG'];
 										}
 									?>
-									<img src="<?php echo base_url('assets/img/doctor/certificate/'. $img); ?>" class="img-circle" id="foto">
+									<img src="<?php echo base_url('assets/img/doctor/'. $img); ?>" class="img-circle" id="foto">
 									<h2>Personal Information</h2>
 								</section>
 							</div>
@@ -67,10 +67,10 @@
 							<div class="row location_pic">
 								<h3>Practice Location</h3>
 								<div class="col-xs-12">
-									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
+									<img id="practice_loc" src="<?php echo base_url('assets/img/doctor/'. $data_doctor['IMG_LOC']); ?>" class="img-responsive img-thumbnail" alt="">
 								</div>
 							</div>
-							<div class="row location_pic">
+							<!-- <div class="row location_pic">
 								<div class="col-xs-12">
 									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
 								</div>
@@ -79,7 +79,7 @@
 								<div class="col-xs-12">
 									<img id="practice_loc" src="<?php echo base_url('assets/img/practice_loc.png') ?>" class="img-responsive img-thumbnail" alt="">
 								</div>
-							</div>
+							</div> -->
 							<div class="row">
 								<div class="panel panel-warning visits">
 									<div class="panel panel-heading">

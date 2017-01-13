@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<legend>Search</legend>
-					<form action="list-category" id="profile_search" method="get">
+					<form action="listc" id="profile_search" method="get">
 						<div class="row">
 							<div class="col-sm-12">
 									<input type="text" class="form-control" size="50" name="src" placeholder="Search Your Doctor" id="findDoctor" value="<?php echo $this->input->get('src'); ?>"><button class="btn btn-default" id="icon-search"><i class="fa fa-search"></i></button>
@@ -68,12 +68,12 @@
 												$img = 'noimage.png';
 											}
 										?>
-										<img src="<?php echo base_url('assets/img/doctor/certificate/'. $img); ?>">
+										<img src="<?php echo base_url('assets/img/doctor/'. $img); ?>">
 										</div>
 									</div>
 									<div class="row text-center">
 										<br>
-										<a href="<?php echo base_url('booking'); ?>" type="button" class="btn btn-primary btnBooking">Booking</a>
+										<a href="<?php echo base_url('booking/'. $dct['DCT_ID']); ?>" class="btn btn-primary btnBooking">Booking</a>
 										<a href="<?php echo base_url('profile/doctor/'. $dct['USER_ID']); ?>" type="button" class="btn btn-danger btnProfile">Profile</a>
 									</div>
 								</div>
@@ -99,14 +99,8 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
-										</div>
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
-										</div>
-										<div class="col-sm-2">
-											<img class="location" src="<?php echo base_url('assets/img/location.png'); ?>">
+										<div class="col-sm-12" style="height: 180px;">
+											<img class="location" style="height: 100%;" src="<?php echo base_url('assets/img/doctor/'. $dct['IMG_LOC']); ?>" alt='no image'>
 										</div>
 									</div>
 								</div>

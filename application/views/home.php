@@ -230,17 +230,17 @@
 					$attrib = array('class' => 'complain');
 					echo form_open('', $attrib);
 				?>
-						<div class="form-group fadesleft">
+						<!-- <div class="form-group fadesleft">
 							<label for="email">Email address:</label>
 							<input type="email" class="form-control" name="email" id="email" required>
-						</div>
+						</div> -->
 						<div class="form-group fadesleft">
 							<label for="txt">Subject:</label>
 							<input type="text" class="form-control" name="txt" id="txt" required>
 						</div>
 						<div class="form-group fadesleft">
 							<label for="comment">Comment:</label>
-							<textarea class="form-control" rows="5" name="comment" id="comment" required></textarea>
+							<textarea class="form-control" rows="9" name="comment" id="comment" required></textarea>
 						</div>
 						<input type="hidden" name="base_url" id="base_url" value="<?php echo base_url(); ?>">
 						<button id="submit" class="btn btn-info">Submit</button>

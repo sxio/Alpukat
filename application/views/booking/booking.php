@@ -30,37 +30,31 @@
 											<input type="date" class="form-control" name="bookingdt">
 										</div>
 									</div>
-									<?php echo form_open('booking/adddetail') ?>
 										<div class="booking-detail">
 											<div class="panel panel-success">
 												<div class="panel-heading">
 													<div class="form-group row">
-														<label class="col-sm-3"> Doctors Name</label>
-														<label class="col-sm-2"> Consult Fee</label>
-														<label class="col-sm-2"> Count</label>
-														<label class="col-sm-2"> Total Amount</label>
+														<label class="col-sm-3"> Doctors Id</label>
+														<label class="col-sm-3"> Service Name</label>
+														<label class="col-sm-3"> Count</label>
 													</div>
 													<div class="form-group row">
 														<div class="col-sm-3">
-															<input type="text" class="form-control" name="doctorid">
+															<input type="text" name="doctorid" value="<?php echo $doctor_list['DCT_ID']; ?>" readonly class="form-control">
 														</div>
-														<div class="col-sm-2">
-															<input type="text" class="form-control" name="consultfee">
+														<div class="col-sm-3">
+															<input type="text" class="form-control" name="servid">
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-3">
 															<input type="text" class="form-control" name="count">
 														</div>
-														<div class="col-sm-2">
-															<input type="text" class="form-control" name="totalamount">
+														<div class="row">
+															<div class="col-sm-3"><button type="submit" class="btn btn-primary form-control">Book Now</button>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div> 
-									<?php echo form_close(); ?>
-									<div class="row">
-										<div class="col-sm-6"></div>
-										<div class="col-sm-6"><button type="submit" class="btn btn-primary form-control">Book Now</button>
+										</div>
 									</div>
 								<?php echo form_close(); ?>
 							</div>
@@ -97,7 +91,7 @@
 							</div>
 						</div>
 					</div> -->
-					
+
 
 				</div>
 				<!-- close Panel Body -->
@@ -107,22 +101,5 @@
 		<!-- c/ row -->
 	</div>
 	<!-- c/ #booking -->
-
-	<?php echo $chat; ?>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#addItem").click(function(){
-				
-			})
-		});
-		// function addRow(){
-		// 	 var newDiv = document.createElement("td");
-		// 	 var newContent = document.createTextNode("Doctor DoctorName");
-		// 	 var content = document.getElementById("DetailBooking");
-		// 	 var DoctorsName = document.getElementById("DoctorsName");
-		// 	 newDiv.appendChild(DoctorsName);
-		// 	 content.appendChild(newDiv);
-		// }
-	</script>
 </body>
 </html>

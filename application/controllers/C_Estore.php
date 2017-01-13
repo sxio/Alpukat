@@ -12,6 +12,7 @@
 			$data['cart']          = $this->cart->contents();
 			$data['total_items']   = $this->cart->total_items();
 			$data['total']         = $this->cart->total();
+			$data['categories']    = $this->Estore_model->get_categories()['data'];
 
 			$data['header']        = $this->load->view('templates/header','',TRUE);
 			$data['enav']          = $this->load->view('estore/templates/enav', $data,TRUE);
@@ -26,6 +27,7 @@
 		public function detail($prod_id){
 			$data['total_items'] = $this->cart->total_items();
 			$data['total']       = $this->cart->total();
+			$data['categories']    = $this->Estore_model->get_categories()['data'];
 
 			$data['header']      = $this->load->view('templates/header','',TRUE);
 			$data['enav']        = $this->load->view('estore/templates/enav', $data,TRUE);
@@ -49,6 +51,7 @@
 			$data['total_items'] = $this->cart->total_items();
 			$data['total']       = $this->cart->total();
 			$data['cart']        = $this->cart->contents();
+			$data['categories']    = $this->Estore_model->get_categories()['data'];
 			print_r(json_encode($data));
 		}
 
@@ -92,6 +95,7 @@
 			$data['cart']        = $this->cart->contents();
 			$data['total_items'] = $this->cart->total_items();
 			$data['total']       = $this->cart->total();
+			$data['categories']    = $this->Estore_model->get_categories()['data'];
 
 			if($data['total_items'] == 0){
 				redirect('estore/ecart');
@@ -105,6 +109,21 @@
 			$data['user_info'] = $this->Estore_model->get_user_info($username)[0];
 
 			$this->load->view('estore/epurchase', $data);
+		}
+
+		public function product($prod_id){
+			$data['cart']          = $this->cart->contents();
+			$data['total_items']   = $this->cart->total_items();
+			$data['total']         = $this->cart->total();
+			$data['categories']    = $this->Estore_model->get_categories()['data'];
+
+			$data['header']        = $this->load->view('templates/header','',TRUE);
+			$data['enav']          = $this->load->view('estore/templates/enav', $data, TRUE);
+			$data['efooter']       = $this->load->view('estore/templates/efooter','',TRUE);
+
+			$data['product'] = $this->Estore_model->get_product_by_category($prod_id);
+
+			$this->load->view('estore/eproducts', $data);
 		}
 	}
 ?>

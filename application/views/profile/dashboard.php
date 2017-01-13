@@ -81,7 +81,7 @@
 		<div id="page-wrapper">
 			<h3>Details</h3>
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<div class="row">
@@ -102,7 +102,7 @@
 							</div>
 						</a>
 					</div>
-				</div>
+				</div><!--
 				<div class="col-sm-3">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
@@ -124,8 +124,8 @@
 							</div>
 						</a>
 					</div>
-				</div>
-				<div class="col-sm-3">
+				</div> -->
+				<div class="col-sm-4">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<div class="row">
@@ -133,12 +133,12 @@
 									<i class="fa fa-tasks fa-5x"></i>
 								</div>
 								<div class="col-sm-9 text-right">
-									<div class="huge">12</div>
+									<div class="huge"><?php echo count($booking); ?></div>
 									<div>Bookings!</div>
 								</div>
 							</div>
 						</div>
-						<a href="#">
+						<a href="<?php echo base_url('profile/payment-history'); ?>">
 							<div class="panel-footer">
 								<span class="pull-left">View Details</span>
 								<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -147,7 +147,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<div class="row">
@@ -160,7 +160,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#">
+						<a href="<?php echo base_url('profile/payment-history'); ?>">
 							<div class="panel-footer">
 								<span class="pull-left">View Details</span>
 								<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
