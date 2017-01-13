@@ -56,5 +56,15 @@
 			}
 			redirect('payment/success/booking');
 		}
+
+		public function manage($status){
+			$userlevel = $this->session->userdata('user_level');
+			if($userlevel != 2){
+				show_404();
+			}
+			$res = $this->Booking_model->update_status($status);
+			print_r($res); die;
+			redirect('profile/payment-history');
+		}
 	}
 ?>

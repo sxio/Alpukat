@@ -163,9 +163,17 @@
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 
+			$user = $this->Profile_model->get_data_user($userid);
+
 			$data['estore'] = $this->Estore_model->get_order_by_userid($userid);
-			$data['hist']   = $this->Booking_model->get_booking_by_userid($userid);//13-Dec-16 Meikelwis get data
 			$data['donate'] = $this->Donate_model->get_donation_by_userid($userid);
+			if($user['USER_LEVEL'] == 1) {
+				$data['hist']   = $this->Booking_model->get_booking_by_userid($userid);
+				$data['is_doctor'] = FALSE;
+			} elseif ($user['USER_LEVEL'] == 2) {
+				$data['hist']   = $this->Booking_model->get_booking_for_doctor_manage($userid);
+				$data['is_doctor'] = TRUE;
+			}
 
 			$this->load->view('profile/payment_history', $data);
 		}

@@ -53,6 +53,10 @@
 					</div>
 
 					<!-- TABLE BOOKING -->
+					<?php
+						// FOR USER
+						if(!$is_doctor) {
+					?>
 					<div class="tableoverflow">
 						<table class="table table-bordered booking-history">
 							<caption>Booking History</caption>
@@ -60,6 +64,7 @@
 								<tr>
 									<th>Booking No</th>
 									<th>Doctor</th>
+									<th>Service</th>
 									<th>Booking Date</th>
 									<th>Fee</th>
 									<th>Status</th>
@@ -70,7 +75,8 @@
 								<tr>
 									<td><?php echo $hist['BOOKING_ID'];?></td>
 									<td><a href="<?php echo base_url('profile/doctor/'.$hist['DCT_ID']); ?>"><?php echo $hist['DCT_ID'];?></a></td>
-									<td><?php echo nice_date($hist['BOOKING_DT'],"d M Y");?></td>
+									<td><?php echo $hist['SERV_ID']; ?></td>
+									<td><?php echo nice_date($hist['BOOKING_DT'],"d M Y"); ?></td>
 									<td>Rp <?php echo number_format($hist['TOTAL_AMOUNT'],0,',','.');?></td>
 									<?php
 										if ($hist['STATUS'] == 'PENDING') $label = 'warning';
@@ -84,6 +90,48 @@
 							</tbody>
 						</table>
 					</div>
+					<?php } elseif ($is_doctor) {
+							// FOR DOCTOR MANAGE BOOKING
+					?>
+					<div class="tableoverflow">
+						<table class="table table-bordered booking-history">
+							<caption>Booking History</caption>
+							<thead>
+								<tr>
+									<th>Booking No</th>
+									<th>Service</th>
+									<th>Booking Date</th>
+									<th>Fee</th>
+									<th>Status</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach($hist as $hist){ ?>
+								<tr>
+									<td><?php echo $hist['BOOKING_ID'];?></td>
+									<td><?php echo $hist['SERV_ID']; ?></td>
+									<td><?php echo nice_date($hist['BOOKING_DT'],"d M Y"); ?></td>
+									<td>Rp <?php echo number_format($hist['TOTAL_AMOUNT'],0,',','.');?></td>
+									<?php
+										if ($hist['STATUS'] == 'PENDING') $label = 'warning';
+										elseif ($hist['STATUS'] == 'REJECTED') $label = 'danger';
+										elseif ($hist['STATUS'] == 'ACCEPTED') $label = 'info';
+										elseif ($hist['STATUS'] == 'DONE') $label = 'success';
+									?>
+									<td><span class="label label-<?php echo $label; ?>"><?php echo $hist['STATUS']; ?></span></td>
+									<td>
+										<a href="<?php echo base_url('booking/manage/accepted'); ?>" class="btn btn-info"><i class="fa fa-check fa-fw"></i></a>
+										<a href="<?php echo base_url('booking/manage/rejected'); ?>" class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></a>
+										<a href="<?php echo base_url('booking/manage/done'); ?>" class="btn btn-success"><i class="fa fa-check-square-o fa-fw"></i></a>
+									</td>
+								</tr>
+								<?php } ?>
+							</tbody>
+						</table>
+					</div>
+					<?php
+					} ?>
 					<!-- TABLE DONATE -->
 					<div class="tableoverflow">
 						<table class="table table-condensed table-responsive table-bordered">

@@ -47,5 +47,19 @@
 			$query = $this->db->get('TRDBOOKING');
 			return $query->result_array();
 		}
+
+		public function get_booking_for_doctor_manage($dct_id) {
+			$this->db->where('DCT_ID', $dct_id);
+			$query = $this->db->get('TRDBOOKING');
+			return $query->result_array();
+		}
+
+		public function update_status($status){
+			$data = array(
+				'STATUS' => strtoupper($status)
+			);
+			$this->db->where('DCT_ID', $dct_id);
+			return $this->db->update('TRDBOOKING', $data);
+		}
 	}
 ?>
