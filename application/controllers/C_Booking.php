@@ -2,6 +2,9 @@
 	class C_Booking extends CI_Controller{
 		public function __construct(){
 			parent:: __construct();
+			if($this->session->userdata('username') == null || $this->session->userdata('user_level') == 2){
+				redirect('user');
+			}
 			$this->load->database();
 			$this->load->model('Booking_model');
 			$this->load->model('Profile_model');
@@ -29,14 +32,14 @@
 			$this->form_validation->set_rules('servid', ' Service', 'trim|required');
 			$this->form_validation->set_rules('count', 'Count', 'trim|required');
 
-			$data['title'] = 'Booking Transactions';
-			$data['header'] = $this->load->view('templates/header','',TRUE);
-			$data['bookingid'] = $bookingid;
-			$data['nav'] = $this->load->view('templates/nav','',TRUE);
-		 	$data['doctor_list'] = $this->Booking_model->get_doctor();
+			$data['title']       = 'Booking Transactions';
+			$data['header']      = $this->load->view('templates/header','',TRUE);
+			$data['bookingid']   = $bookingid;
+			$data['nav']         = $this->load->view('templates/nav','',TRUE);
+			$data['doctor_list'] = $this->Booking_model->get_doctor();
 
-			$data['footer'] = $this->load->view('templates/footer','',TRUE);
-			$data['chat'] = $this->load->view('templates/chat','',TRUE);
+			$data['footer']      = $this->load->view('templates/footer','',TRUE);
+			$data['chat']        = $this->load->view('templates/chat','',TRUE);
 
 
 			if($this->form_validation->run() == FALSE){

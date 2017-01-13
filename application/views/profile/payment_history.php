@@ -4,6 +4,7 @@
 	<title>Avocado | Payment History</title>
 	<?php echo $header; ?>
 	<?php echo link_tag('assets/css/profile/dashboard.css'); ?>
+	<?php echo link_tag('assets/css/profile/paymentHistory.css'); ?>
 
 	<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </head>
@@ -19,7 +20,7 @@
 					<!-- TABLE ESTORE -->
 					<div class="tableoverflow">
 						<table class="table table-condensed table-responsive table-bordered">
-							<caption>AvoStore History</caption>
+							<caption>Estore History</caption>
 							<tr>
 								<th>Payment ID</th>
 								<th>Delivery Address</th>
@@ -55,18 +56,32 @@
 					<div class="tableoverflow">
 						<table class="table table-bordered booking-history">
 							<caption>Booking History</caption>
-							<tr>
-								<th>Booking No</th>
-								<th>Booking Date</th>
-								<th>Fee</th>
-							</tr>
-							<?php foreach($hist as $hist){ ?>
-							<tr>
-								<td><?php echo $hist->BOOKING_ID;?></td>
-								<td><?php echo nice_date($hist->BOOKING_DT,"Y-m-d");?></td>
-								<td>Rp <?php echo number_format($hist->TOTAL_AMOUNT,0,',','.');?></td>
-							</tr>
-							<?php } ?>
+							<thead>
+								<tr>
+									<th>Booking No</th>
+									<th>Doctor</th>
+									<th>Booking Date</th>
+									<th>Fee</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php foreach($hist as $hist){ ?>
+								<tr>
+									<td><?php echo $hist['BOOKING_ID'];?></td>
+									<td><a href="<?php echo base_url('profile/doctor/'.$hist['DCT_ID']); ?>"><?php echo $hist['DCT_ID'];?></a></td>
+									<td><?php echo nice_date($hist['BOOKING_DT'],"d M Y");?></td>
+									<td>Rp <?php echo number_format($hist['TOTAL_AMOUNT'],0,',','.');?></td>
+									<?php
+										if ($hist['STATUS'] == 'PENDING') $label = 'warning';
+										elseif ($hist['STATUS'] == 'REJECTED') $label = 'danger';
+										elseif ($hist['STATUS'] == 'ACCEPTED') $label = 'info';
+										elseif ($hist['STATUS'] == 'DONE') $label = 'success';
+									?>
+									<td><span class="label label-<?php echo $label; ?>"><?php echo $hist['STATUS']; ?></span></td>
+								</tr>
+								<?php } ?>
+							</tbody>
 						</table>
 					</div>
 					<!-- TABLE DONATE -->

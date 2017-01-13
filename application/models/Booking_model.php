@@ -34,7 +34,8 @@
 				'BOOK_COUNT' => $this->input->post('count'),
 				'TOTAL_AMOUNT' => $dct['CONSULT_FEE'],
 				'USER_ID' => $username,
-				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
+				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now()),
+				'STATUS' => 'PENDING'
 			);
 			$this->db->insert('TRDBOOKING',$data);
 			$this->Sequences_model->update_seq(4);

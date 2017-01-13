@@ -124,8 +124,8 @@
 			return $query->result_array();
 		}
 
-		public function get_order_by_username($username){
-			$this->db->where('USER_ID', $username);
+		public function get_order_by_userid($user_id){
+			$this->db->where('USER_ID', $user_id);
 			$query = $this->db->get('TRHORDER');
 			return $query->result();
 		}
