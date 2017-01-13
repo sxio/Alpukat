@@ -68,6 +68,7 @@
 									<th>Booking Date</th>
 									<th>Fee</th>
 									<th>Status</th>
+									<th>Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -83,8 +84,15 @@
 										elseif ($hist['STATUS'] == 'REJECTED') $label = 'danger';
 										elseif ($hist['STATUS'] == 'ACCEPTED') $label = 'info';
 										elseif ($hist['STATUS'] == 'DONE') $label = 'success';
+
+										if($hist['STATUS'] != 'DONE'){
+											$disabled = 'disabled';
+										} else {
+											$disabled = '';
+										}
 									?>
 									<td><span class="label label-<?php echo $label; ?>"><?php echo $hist['STATUS']; ?></span></td>
+									<td><a href="<?php echo base_url('profile/doctor/rating/'. $hist['DCT_ID']); ?>" class="btn btn-warning" <?php echo $disabled; ?>><i class="fa fa-star fa-fw"></i></a></td>
 								</tr>
 								<?php } ?>
 							</tbody>
