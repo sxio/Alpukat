@@ -137,6 +137,7 @@ CREATE TABLE `MSHDOCTOR` (
 LOCK TABLES `MSHDOCTOR` WRITE;
 /*!40000 ALTER TABLE `MSHDOCTOR` DISABLE KEYS */;
 INSERT INTO `MSHDOCTOR` VALUES ('meikelwis',';;;;;','','',0,'',50000,100000,'meikelwis_cc.jpg','meikelwis_pl.jpg','meikelwis_pr.jpg','Array_dummy_data.jpg');
+INSERT INTO `MSHDOCTOR` VALUES ('stephen',';;;;;','','',0,'',50000,100000,'stephen_cc.jpg','stephen_pl.jpg','stephen_pr.jpg','stephen_dummy_data.jpg');
 INSERT INTO `MSHDOCTOR` VALUES ('sxioo','m1;m2;m3;m4;m5;m6','Lorem','10 thn',31,'bedah-bedah',50000,100000,'sxioo_cc.jpg','sxioo_pl.jpg','sxioo_pr.jpg','sxioo_loc.jpg');
 /*!40000 ALTER TABLE `MSHDOCTOR` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -414,6 +415,7 @@ LOCK TABLES `MSTUSER` WRITE;
 INSERT INTO `MSTUSER` VALUES ('admin','Stephen','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','chronolegionaire@yahoo.com','123','','noimage.png',0,1);
 INSERT INTO `MSTUSER` VALUES ('Bahamut','Kenedy','96e79218965eb72c92a549dd5a330112','2017-01-11','141110043@students.mikroskil.a','081234567890','jalan','noimage.png',2,0);
 INSERT INTO `MSTUSER` VALUES ('meikelwis','meikelwis','513231e44fe39f5ca7bf664ec591276c','2017-01-08','meikelwis.wijaya@gmail.com','21323123123213','Alamat','noimage.png',2,1);
+INSERT INTO `MSTUSER` VALUES ('stephen','stephen','5f4dcc3b5aa765d61d8327deb882cf99','2017-12-31','chronolegionaire1996@gmail.com','123','asd','noimage.png',2,1);
 INSERT INTO `MSTUSER` VALUES ('sxio','Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-03','chronolegionaire@yahoo.com','11111','Afrika','sxio_photo.png',1,1);
 INSERT INTO `MSTUSER` VALUES ('sxioo','dr Osas','5f4dcc3b5aa765d61d8327deb882cf99','1996-06-08','stephen.huang96@gmail.com','1111','kl','sxioo_photo.jpg',2,1);
 /*!40000 ALTER TABLE `MSTUSER` ENABLE KEYS */;
@@ -1020,4 +1022,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-13 20:47:00
+-- Dump completed on 2017-01-13 21:17:39
