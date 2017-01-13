@@ -121,9 +121,9 @@
 									?>
 									<td><span class="label label-<?php echo $label; ?>"><?php echo $hist['STATUS']; ?></span></td>
 									<td>
-										<a href="<?php echo base_url('booking/manage/accepted'); ?>" class="btn btn-info"><i class="fa fa-check fa-fw"></i></a>
-										<a href="<?php echo base_url('booking/manage/rejected'); ?>" class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></a>
-										<a href="<?php echo base_url('booking/manage/done'); ?>" class="btn btn-success"><i class="fa fa-check-square-o fa-fw"></i></a>
+										<a href="<?php echo base_url('booking/manage/accepted/'.$hist['BOOKING_ID']); ?>" class="btn btn-info"><i class="fa fa-check fa-fw"></i></a>
+										<a href="<?php echo base_url('booking/manage/rejected/'.$hist['BOOKING_ID']); ?>" class="btn btn-danger"><i class="fa fa-remove fa-fw"></i></a>
+										<a href="<?php echo base_url('booking/manage/done/'.$hist['BOOKING_ID']); ?>" class="btn btn-success"><i class="fa fa-check-square-o fa-fw"></i></a>
 									</td>
 								</tr>
 								<?php } ?>

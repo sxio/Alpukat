@@ -54,11 +54,12 @@
 			return $query->result_array();
 		}
 
-		public function update_status($status){
+		public function update_status($status, $book_id){
 			$data = array(
 				'STATUS' => strtoupper($status)
 			);
-			$this->db->where('DCT_ID', $dct_id);
+			$this->db->where('DCT_ID', $this->session->userdata('username'));
+			$this->db->where('BOOKING_ID', $book_id);
 			return $this->db->update('TRDBOOKING', $data);
 		}
 	}
