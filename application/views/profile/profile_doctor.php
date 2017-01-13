@@ -83,44 +83,34 @@
 							<div class="row">
 								<div class="panel panel-warning visits">
 									<div class="panel panel-heading">
-										<h3>Overview</h3>
+										<h3>Rating</h3>
 									</div>
 									<div class="panel panel-body text-left">
 										<ul class="list-unstyled">
-											<!-- <li><h4>Overall Visits</h4></li>
-											<li>
-												<ul>
-													<li>Last Week    : 999 users</li>
-													<li>Last Month   :12393 users</li>
-												</ul>
-											</li> -->
-											<li>Rating</li>
 											<li>
 												<label class="col-md-4 control-label">Friendliness </label>
 												<div class="col-md-8">
-													<p>2.5/10</p>
+													<p><?php echo number_format($rating['F'],1,',','.'); ?> / 10</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">Expertise </label>
 												<div class="col-md-8">
-													<p>2.5/10</p>
+													<p><?php echo number_format($rating['E'],1,',','.'); ?> / 10</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">On Time </label>
 												<div class="col-md-8">
-													<p>2.5/10</p>
+													<p><?php echo number_format($rating['T'],1,',','.'); ?> / 10</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">Professionalism </label>
 												<div class="col-md-8">
-													<p>2.5/10</p>
+													<p><?php echo number_format($rating['P'],1,',','.'); ?> / 10</p>
 												</div>
 											</li>
-											<h4>NOTE : 2.5 -> RATA2 PENILAIAN
-											; 10  -> NILAI MAKSIMAL YANG MUNGKIN DIDAPATKAN</h4>
 										</ul>
 									</div>
 								</div>

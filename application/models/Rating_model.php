@@ -6,11 +6,11 @@
 
         public function add_rating(){
             $rating_id = $this->Sequences_model->concat(7, mdate('%Y-%m-%d %H:%i:%s',now()));
-            print_r($rating_id); die;
+
             $data = array(
                 'RATING_ID' => $rating_id,
                 'USER_ID' => $this->session->userdata('username'),
-                'DOCTOR_ID' => $this->input->post('dct_id'),
+                'DOCTOR_ID' => $this->input->post('doc_id'),
                 'FRIENDLINESS' => $this->input->post('docfriendly'),
                 'EXPERTISE' => $this->input->post('docexpert'),
                 'ON_TIME' => $this->input->post('doctime'),
@@ -19,6 +19,13 @@
             $res = $this->db->insert('MSTRATING', $data);
             $this->Sequences_model->update_seq(7);
             return $this->db->error();
+        }
+
+        public function get_rating_by_doctor_id($dct_id){
+            $this->db->select('TRUNCATE(AVG(FRIENDLINESS), 1) as F, TRUNCATE(AVG(EXPERTISE),1) as E, TRUNCATE(AVG(ON_TIME),1) as T, TRUNCATE(AVG(PROFESSIONALISM),1) as P');
+            $this->db->where('DOCTOR_ID', $dct_id);
+            $query = $this->db->get('MSTRATING');
+            return $query->result_array()[0];
         }
     }
  ?>

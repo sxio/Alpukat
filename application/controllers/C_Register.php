@@ -67,13 +67,12 @@
 			} else{
 				// UPLOAD PHOTOS
 				$this->load->library('upload');
-				$config['upload_path']   = './assets/img/doctor/certificate';
+				$config['upload_path']   = './assets/img/doctor';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['overwrite']     = TRUE;
 				$config['max_size']      = 0;
 
-				$user = $this->Register_model->get_user_by_email_hash($hash)[0];
-
+				$user = $this->Register_model->get_user_by_email_hash($hash);
 				$error = NULL;
 				foreach($_FILES as $key => $value) {
 					$ext = pathinfo($value['name'], PATHINFO_EXTENSION);
@@ -85,6 +84,7 @@
 						$error = $this->upload->display_errors();
 					}else{
 						$data['upload_data'][$key] = $this->upload->data();
+				// print_r($user); die;
 					}
 				}
 				//

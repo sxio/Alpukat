@@ -13,7 +13,7 @@
 
 		public function get_data_doctor($userid){
 			$this->db->where('MSTUSER.USER_ID', $userid);
-			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID');
+			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'right');
 			$query = $this->db->get('MSHDOCTOR');
 			return $query->result_array()[0];
 		}

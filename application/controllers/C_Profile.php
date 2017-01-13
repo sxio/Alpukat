@@ -12,6 +12,7 @@
 			$this->load->model('Category_model');
 			$this->load->model('Booking_model');
 			$this->load->model('Donate_model');
+			$this->load->model('Rating_model');
 		}
 
 		public function view_profile($userid){
@@ -31,6 +32,7 @@
 			$data['data_doctor'] = $this->Profile_model->get_data_doctor($userid);
 			$data['comments'] = $this->Comment_model->get_comment($userid);
 			$data['me'] = $this->Profile_model->get_data_user($this->session->userdata('username'));
+			$data['rating'] = $this->Rating_model->get_rating_by_doctor_id($userid);
 
 			$this->load->view('profile/profile_doctor', $data);
 		}
