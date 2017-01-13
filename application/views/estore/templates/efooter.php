@@ -2,7 +2,7 @@
 	<div class="footer-w3l">
 		<div class="container">
 			<div class="footer-grids">
-				<div class="col-md-3 footer-grid">
+				<div class="col-md-4 footer-grid">
 					<h4>About </h4>
 					<p>AvoStore is the place where you can buy healthy products, sports apparel, and other stuff to support your work.</p>
 					<!-- <div class="social-icon">
@@ -12,7 +12,7 @@
 						<a href="#"><i class="icon3"></i></a>
 					</div> -->
 				</div>
-				<div class="col-md-3 footer-grid">
+				<div class="col-md-4 footer-grid">
 					<h4>My Account</h4>
 					<ul>
 						<li><a href="<?php echo base_url('estore/ecart'); ?>">Cart</a></li>
@@ -20,7 +20,7 @@
 						<li><a href="<?php echo base_url('user'); ?>"> Create Account </a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 footer-grid">
+				<!-- <div class="col-md-4 footer-grid">
 					<h4>Information</h4>
 					<ul>
 						<li><a href="<?php echo base_url('home'); ?>">Home</a></li>
@@ -29,8 +29,8 @@
 						<li><a href="mail.html">Mail Us</a></li>
 						<li><a href="products1.html">products1</a></li>
 					</ul>
-				</div>
-				<div class="col-md-3 footer-grid foot">
+				</div> -->
+				<div class="col-md-4 footer-grid foot">
 					<h4>Contacts</h4>
 					<ul>
 						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">Mikroskil Kampus B</a></li>
