@@ -37,10 +37,11 @@
 		}
 
 		// KENEDY LUKITO --> RATING DOCTOR
-		public function rating_doctor(){
+		public function rating_doctor($userid){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+			$data['doc'] = $this->Profile_model->get_data_doctor($userid);
 			$this->load->view('doctor/rating_doctor', $data);
 		}
 

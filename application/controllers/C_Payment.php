@@ -101,6 +101,54 @@
 					}
 				}
 			}
+			// }elseif ($param == 'donate') {
+			// 	$this->session->set_flashdata('donate_pay',TRUE);
+			//
+			// 	$this->session->unset_userdata('estore_pay');
+			// 	$this->session->unset_userdata('booking_pay');
+			//
+			// 	$this->form_validation->set_rules('b_number','Bank Account Number','trim');
+			// 	$this->form_validation->set_rules('b_acc_name','Bank Account Name','trim');
+			// 	$this->form_validation->set_rules('b_amount','Amount','trim');
+			// 	$this->form_validation->set_rules('b_behalf','Name','trim');
+			//
+			// 	if($this->form_validation->run() == FALSE){
+			// 		$this->session->set_flashdata('msg','Whoops something went wrong');
+			// 	} else {
+			// 		$res = $this->Donate_model->add_donation();
+			// 		if($res['code'] == 0) {
+			// 			$this->session->set_flashdata('msg','berhasil');
+			// 		} else {
+			// 			$this->session->set_flashdata('msg','Whoops something went wrong');
+			// 		}
+			// 	}
+			// }
+			elseif ($param == 'rating') {
+				$userid = $this->session->userdata('username');
+				$this->session->set_flashdata('rating',TRUE);
+
+				$this->session->unset_userdata('estore_pay');
+				$this->session->unset_userdata('booking_pay');
+				$this->session->unset_userdata('donate_pay');
+
+				$this->form_validation->set_rules('docfriendly','Friendliness','trim|numeric');
+				$this->form_validation->set_rules('docexpert','Expertise','trim|numeric');
+				$this->form_validation->set_rules('doctime','On Time field','trim|numeric');
+				$this->form_validation->set_rules('docpro','Professionalism','trim|numeric');
+
+				if($this->form_validation->run() == FALSE){
+					$this->session->set_flashdata('msg', validation_errors());
+				} else {
+					// print_r($this->input->post()); die;
+					$this->load->model('Rating_model');
+					$res = $this->Rating_model->add_rating();
+					var_dump($res); die;
+					if($res['code'] != 0){
+						echo 'Whoops! Something went wrong. Please try again later';
+						die;
+					}
+				}
+			}
 			$this->load->view('payment/payment_success', $data);
 		}
 
