@@ -13,9 +13,14 @@
 
 		public function get_data_doctor($userid){
 			$this->db->where('MSTUSER.USER_ID', $userid);
-			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'right');
+			$this->db->join('MSTUSER', 'MSTUSER.USER_ID = MSHDOCTOR.DCT_ID', 'left');
+			// echo $this->db->get_compiled_select(); die;
 			$query = $this->db->get('MSHDOCTOR');
-			return $query->result_array()[0];
+			if($query->num_rows() > 0) {
+				return $query->result_array()[0];
+			} else {
+				return $query->result_array();
+			}
 		}
 
 		public function edit_data_doctor($userid){

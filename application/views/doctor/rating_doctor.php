@@ -26,6 +26,7 @@
                         <div class="col-xs-12 input_container">
                             <input class="bottom_only" type="text" name="dct_name" value="<?php echo $doc['USER_NAME']; ?>" required disabled>
                             <input type="hidden" name="doc_id" value="<?php echo $doc['DCT_ID']; ?>">
+                            <input type="hidden" name="book_id" value="<?php echo $this->uri->segment(5); ?>">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

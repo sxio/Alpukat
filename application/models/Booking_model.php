@@ -43,7 +43,7 @@
 		}
 
 		public function get_booking_by_userid($userid){
-			$this->db->where('USER_ID', $userid);
+			$this->db->where('TRDBOOKING.USER_ID', $userid);
 			$query = $this->db->get('TRDBOOKING');
 			return $query->result_array();
 		}

@@ -90,25 +90,25 @@
 											<li>
 												<label class="col-md-4 control-label">Friendliness </label>
 												<div class="col-md-8">
-													<p><?php echo number_format($rating['F'],1,',','.'); ?> / 10</p>
+													<p><?php echo number_format($rating['F'],1,'.',','); ?> / 10.0</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">Expertise </label>
 												<div class="col-md-8">
-													<p><?php echo number_format($rating['E'],1,',','.'); ?> / 10</p>
+													<p><?php echo number_format($rating['E'],1,'.',','); ?> / 10.0</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">On Time </label>
 												<div class="col-md-8">
-													<p><?php echo number_format($rating['T'],1,',','.'); ?> / 10</p>
+													<p><?php echo number_format($rating['T'],1,'.',','); ?> / 10.0</p>
 												</div>
 											</li>
 											<li>
 												<label class="col-md-4 control-label">Professionalism </label>
 												<div class="col-md-8">
-													<p><?php echo number_format($rating['P'],1,',','.'); ?> / 10</p>
+													<p><?php echo number_format($rating['P'],1,'.',','); ?> / 10.0</p>
 												</div>
 											</li>
 										</ul>

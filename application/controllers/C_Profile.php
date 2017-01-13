@@ -33,16 +33,23 @@
 			$data['comments'] = $this->Comment_model->get_comment($userid);
 			$data['me'] = $this->Profile_model->get_data_user($this->session->userdata('username'));
 			$data['rating'] = $this->Rating_model->get_rating_by_doctor_id($userid);
+			$data['rating']['sum'] = $data['rating']['F'] + $data['rating']['E'] + $data['rating']['T'] + $data['rating']['P'];
 
 			$this->load->view('profile/profile_doctor', $data);
 		}
 
 		// KENEDY LUKITO --> RATING DOCTOR
-		public function rating_doctor($userid){
+		public function rating_doctor($userid, $book_id){
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 			$data['doc'] = $this->Profile_model->get_data_doctor($userid);
+			if(empty($data['doc'])){
+				show_404();
+			}
+			if($this->Rating_model->is_duplicate_booking_id($book_id)){
+				show_404();
+			}
 			$this->load->view('doctor/rating_doctor', $data);
 		}
 
@@ -170,8 +177,12 @@
 
 			$data['estore'] = $this->Estore_model->get_order_by_userid($userid);
 			$data['donate'] = $this->Donate_model->get_donation_by_userid($userid);
+
 			if($user['USER_LEVEL'] == 1) {
 				$data['hist']   = $this->Booking_model->get_booking_by_userid($userid);
+				for($i = 0; $i < count($data['hist']); $i++){
+					$data['hist'][$i]['RATED'] = $this->Rating_model->is_duplicate_booking_id($data['hist'][$i]['BOOKING_ID']);
+				}
 				$data['is_doctor'] = FALSE;
 			} elseif ($user['USER_LEVEL'] == 2) {
 				$data['hist']   = $this->Booking_model->get_booking_for_doctor_manage($userid);

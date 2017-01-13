@@ -4,6 +4,7 @@
 			parent:: __construct();
 			$this->load->model('Category_model');
 			$this->load->model('Search_model');
+			$this->load->model('Rating_model');
 		}
 		public function view($page = 'home'){
 			if($this->session->userdata('username') != null && $page == 'user'){
@@ -17,6 +18,11 @@
 			$data['header'] = $this->load->view('templates/header','',TRUE);
 			$data['nav']    = $this->load->view('templates/nav','',TRUE);
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
+
+			$data['top_3_doctor'] = $this->Rating_model->get_rating_top_3();
+
+			// print_r($data['top_3_doctor']);
+			// die;
 
 			$this->load->view($page, $data);
 		}

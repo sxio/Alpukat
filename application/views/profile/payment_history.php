@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Avocado | Payment History</title>
@@ -90,9 +90,15 @@
 										} else {
 											$disabled = '';
 										}
+										if($hist['RATED'] == TRUE){
+											$color = 'success';
+											$disabled = 'disabled';
+										} else {
+											$color = 'warning';
+										}
 									?>
 									<td><span class="label label-<?php echo $label; ?>"><?php echo $hist['STATUS']; ?></span></td>
-									<td><a href="<?php echo base_url('profile/doctor/rating/'. $hist['DCT_ID']); ?>" class="btn btn-warning" <?php echo $disabled; ?>><i class="fa fa-star fa-fw"></i></a></td>
+									<td><a href="<?php echo base_url('profile/doctor/rating/'. $hist['DCT_ID'] . '/' .$hist['BOOKING_ID']); ?>" class="btn btn-<?php echo $color; ?>" <?php echo $disabled; ?>><i class="fa fa-star fa-fw"></i></a></td>
 								</tr>
 								<?php } ?>
 							</tbody>
