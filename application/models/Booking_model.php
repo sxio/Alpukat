@@ -34,7 +34,8 @@
 				'BOOK_COUNT' => $this->input->post('count'),
 				'TOTAL_AMOUNT' => $dct['CONSULT_FEE'],
 				'USER_ID' => $username,
-				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now())
+				'USER_DT' => mdate('%Y-%m-%d %H:%i:%s',now()),
+				'STATUS' => 'PENDING'
 			);
 			$this->db->insert('TRDBOOKING',$data);
 			$this->Sequences_model->update_seq(4);
@@ -45,6 +46,21 @@
 			$this->db->where('USER_ID', $userid);
 			$query = $this->db->get('TRDBOOKING');
 			return $query->result_array();
+		}
+
+		public function get_booking_for_doctor_manage($dct_id) {
+			$this->db->where('DCT_ID', $dct_id);
+			$query = $this->db->get('TRDBOOKING');
+			return $query->result_array();
+		}
+
+		public function update_status($status, $book_id){
+			$data = array(
+				'STATUS' => strtoupper($status)
+			);
+			$this->db->where('DCT_ID', $this->session->userdata('username'));
+			$this->db->where('BOOKING_ID', $book_id);
+			return $this->db->update('TRDBOOKING', $data);
 		}
 	}
 ?>

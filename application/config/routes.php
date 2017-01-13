@@ -38,10 +38,11 @@ $route['estore/paymentreview']                          = 'C_Payment/estore_paym
 $route['estore/products/(:any)']                        = 'C_Estore/product/$1';
 $route['estore/(:any)']                                 = 'C_Estore/view/$1';
 
+$route['booking/manage/(:any)/(:any)']                  = 'C_Booking/manage/$1/$2';
 $route['booking/create']                                = 'C_Booking/create_booking';
 $route['booking/adddetail']                             = 'C_Booking/add_detail_booking';
 $route['booking/success/(:any)']                        = 'C_Payment/pay_success/$1';
-$route['booking/(:any)']                                = 'C_Booking/view/$1';
+// $route['booking/(:any)']                                = 'C_Booking/view/$1';
 
 $route['forum/create']                                  = 'C_Forum/create_forum';
 $route['forum/list']                                    = 'C_Forum/list_forum';
