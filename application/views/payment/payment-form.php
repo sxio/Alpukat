@@ -295,13 +295,13 @@
 					</div>
 				</div>
 				<div class="btn-group" id="donate_list">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle text-center" data-toggle="dropdown"><h2>Donate List</h2><i class="fa fa-chevron-down"></i>
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle text-center" data-toggle="dropdown"><h2>Donor List</h2><i class="fa fa-chevron-down"></i>
                     </button>
                     <ul class="dropdown-menu">
                         <div class="col-sm-12">
                             <div class="container">
 								<div class="panel-heading">
-									<h2>Donate List</h2>
+									<h2>Donor List</h2>
 								</div>
 								<div class="panel-body">
 									<div class="list-payment">
