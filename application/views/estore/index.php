@@ -249,158 +249,33 @@
 				</div>
 			</div>
 		</div>
-		<!--Products-->
-
-		<!-- <div class="latest-w3">
-			<div class="container">
-				<h3 class="tittle1">Most Favourite Category</h3>
-				<div class="latest-grids">
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>Men`s Apparel</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-50%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>Bottles</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-20%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>desc`s Apparel</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-50%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="latest-grids">
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>Sport Watch</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-45%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>Sport Bag</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-10%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 latest-grid">
-						<div class="latest-top">
-							<img src="<?php echo base_url('assets/img/e-img//l4.jpg'); ?>" class="img-responsive"  alt="">
-							<div class="latest-text">
-								<h4>Medical Equipment</h4>
-							</div>
-							<div class="latest-text2 hvr-sweep-to-top">
-								<h4>-30%</h4>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div> -->
 
 		<!-- BEST SELLER -->
 		<div class="new-arrivals-w3agile">
 			<div class="container">
 				<h3 class="tittle1">Best Sellers</h3>
 				<div class="arrivals-grids">
-					<div class="col-md-3 arrival-grid simpleCart_shelfItem">
+					<?php foreach($newest_arrival as $item) { ?>
+					<div class="col-md-3 cap-left simpleCart_shelfItem">
 						<div class="grid-arr">
 							<div class="grid-arrival">
-								<a href="#">
+								<a href="" class="new-gri" data-toggle="modal" data-target="#myModal">
 									<div class="grid-img">
-										<img src="<?php echo base_url('assets/img/e-img/p28.jpg'); ?>" class="img-responsive" alt="">
+										<img src="<?php echo base_url('assets/img/estore-img/'. $item['PROD_IMG']); ?>" class="img-responsive newest_arrival_foto" alt="">
 									</div>
 								</a>
 							</div>
 
 							<div class="desc">
-								<h6><a href="#">Jacket</a></h6>
+								<h6><a href="<?php echo base_url('estore/detail/'. $item['PROD_ID']); ?>"><?php echo character_limiter($item['PROD_NAME'], 20); ?></a></h6>
 								<!-- <span class="size">XL / XXL / S </span> -->
-								<p><em class="item_price"><em>Rp 200.000,-</em></p>
+								<p><em class="item_price">RP <?php echo number_format($item['PROD_PRICE'],0,',','.'); ?></em></p>
+								<!-- <button href="#" data-text="Add To Cart" class="btn btn-primary">Add To Cart</button> -->
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-						<div class="grid-arr">
-							<div class="grid-arrival">
-								<a href="#">
-									<div class="grid-img">
-										<img src="<?php echo base_url('assets/img/e-img/p30.jpg'); ?>" class="img-responsive" alt="">
-									</div>
-								</a>
-							</div>
+					<?php } ?>
 
-							<div class="desc">
-								<h6><a href="#">Sport Watch</a></h6>
-								<!-- <span class="size">XL / XXL / S </span> -->
-								<p><em class="item_price"><em>Rp 200.0000,-</em></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-						<div class="grid-arr">
-							<div class="grid-arrival">
-								<a href="#">
-									<div class="grid-img">
-										<img src="<?php echo base_url('assets/img/e-img/s2.jpg'); ?>" class="img-responsive" alt="">
-									</div>
-								</a>
-							</div>
-
-							<div class="desc">
-								<h6><a href="#">Bag</a></h6>
-								<!-- <span class="size">XL / XXL / S </span> -->
-								<p><em class="item_price"><em>Rp 200.000,-</em></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-						<div class="grid-arr">
-							<div class="grid-arrival">
-								<a href="#">
-									<div class="grid-img">
-										<img src="<?php echo base_url('assets/img/e-img/s2.jpg'); ?>" class="img-responsive" alt="">
-									</div>
-								</a>
-							</div>
-							<div class="desc">
-								<h6><a href="#">Bag</a></h6>
-								<!-- <span class="size">XL / XXL / S </span> -->
-								<p><em class="item_price"><em>Rp 200.0000,-</em></p>
-							</div>
-						</div>
-					</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>

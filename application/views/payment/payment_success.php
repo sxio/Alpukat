@@ -116,7 +116,7 @@
 		<div class="row">
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h2 class="text-center">Donation Completed Successfully</h2>
+					<h2 class="text-center">Rate Completed Successfully</h2>
 				</div>
 				<div class="panel-body">
 					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">

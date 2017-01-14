@@ -188,30 +188,14 @@
 		<div class="container">
 			<h1 class="deals text-center">Best Deals From Our Shop</h1>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<div class="item1 fadesleft secondfade">
-						<h1>DEAL</h1>
-						<img src="<?php echo base_url('assets/img/poster.jpg'); ?>">
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<div class="item1 fadesleft">
-						<h1>DEAL</h1>
-						<img src="<?php echo base_url('assets/img/poster2.jpg'); ?>">
-					</div>
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-					<div class="item1 fadesright">
-						<h1>DEAL</h1>
-						<img src="<?php echo base_url('assets/img/poster.jpg'); ?>">
-					</div>
-				</div>
+				<?php foreach($best_deal as $best) { ?>
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 					<div class="item1 fadesright secondfade">
-						<h1>DEAL</h1>
-						<img src="<?php echo base_url('assets/img/poster2.jpg'); ?>">
+						<!-- <h1><?php echo $best[''] ?></h1> -->
+						<img src="<?php echo base_url('assets/img/estore-img/'. $best['PROD_IMG']); ?>">
 					</div>
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</section>

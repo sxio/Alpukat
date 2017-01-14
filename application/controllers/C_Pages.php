@@ -5,6 +5,7 @@
 			$this->load->model('Category_model');
 			$this->load->model('Search_model');
 			$this->load->model('Rating_model');
+			$this->load->model('Estore_model');
 		}
 		public function view($page = 'home'){
 			if($this->session->userdata('username') != null && $page == 'user'){
@@ -20,6 +21,7 @@
 			$data['footer'] = $this->load->view('templates/footer','',TRUE);
 
 			$data['top_3_doctor'] = $this->Rating_model->get_rating_top_3();
+			$data['best_deal'] = $this->Estore_model->get_newest_product(4,0);
 
 			// print_r($data['top_3_doctor']);
 			// die;
