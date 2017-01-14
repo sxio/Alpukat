@@ -54,8 +54,8 @@
 							<a href="<?php echo base_url('estore'); ?>"><h4>E-Store</h4></a>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 serve text-center fadesleft">
-							<a href="#searchbar"><i class="fa fa-book fa-fw fa-5x consul"></i></a><br>
-							<a href="#searchbar"><h4>Booking</h4></a>
+							<a href=""><i class="fa fa-book fa-fw fa-5x consul"></i></a><br>
+							<a href=""><h4>Booking</h4></a>
 						</div>
 					</div>
 					<div class="row second_service fadesleft">

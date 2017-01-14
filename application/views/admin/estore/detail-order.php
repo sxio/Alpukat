@@ -31,10 +31,11 @@
 			</div>
 			<div class="panel-body">
 				<h3 class="text-center orderid">Order #<?php echo $estore_hist[0]['ORDER_ID']; ?></h3>
+				<br>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6">
-							<ol class="listorderdetail">
+							<ol class="listorderdetail list-unstyled">
 								<li>
 									<label class="col-md-4 control-label">Customer Name </label>
 									<div class="col-md-8">
@@ -75,7 +76,7 @@
 						</div>
 
 						<div class="col-sm-6">
-							<ol class="listorderdetail">
+							<ol class="listorderdetail list-unstyled">
 								<li>
 									<label class="col-md-4 control-label">Address </label>
 									<div class="col-md-8">

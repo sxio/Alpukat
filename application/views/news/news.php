@@ -209,9 +209,9 @@
 			<div class="row">
 				<?php for($i = 0 ; $i < 4 ; $i++) { ?>
 				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 tip">
-					<a href="">
+					
 					<img src="<?php echo base_url('assets/img/farmers.jpg'); ?>">
-					<p class="text-justify">Women's Health Tips for Heart, Mind, and Body</p></a>
+					<p class="text-justify">Women's Health Tips for Heart, Mind, and Body</p>
 				</div>
 				<?php } ?>
 			</div>

@@ -134,7 +134,7 @@
 								</div>
 								<div class="col-sm-9 text-right">
 									<div class="huge"><?php echo count($estore); ?></div>
-									<div>My Orders!</div>
+									<div>My Estore Orders!</div>
 								</div>
 							</div>
 						</div>
