@@ -39,7 +39,7 @@
 						<button class="flat-butt flat-double-butt flat-info-butt flat-info-double-butt text-center" id="addtocart" data-toggle="modal" data-target="#info"><i class="fa fa-opencart fa-fw"></i> Add to Cart</button>
 					</div>
 					<div class="col-sm-4">
-						<a href="" class="btn btn-link"><b>How to buy</b><i class="fa fa-question fa-fw"></i></a>
+						<!-- <a href="" class="btn btn-link"><b>How to buy</b><i class="fa fa-question fa-fw"></i></a> -->
 					</div>
 				</div>
 			</div>

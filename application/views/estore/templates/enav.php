@@ -2,7 +2,7 @@
 		<div class="header-top">
 			<div class="container">
 				 <div class="top-left">
-					<a href="<?php echo base_url('home') ?>"> Help  <i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a>
+					<a href="<?php echo base_url('home') ?>"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a>
 				</div>
 				<div class="top-right">
 				<ul>

@@ -44,8 +44,10 @@ h3{
 #n_feature .container .row .leftedge #myCarousel {
   box-shadow: 50px;
 }
-#n_feature .container .row .leftedge #myCarousel .carousel-inner a {
-  color: white;
+#n_feature .container .row .leftedge #myCarousel .carousel-inner .carousel-caption a {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 #n_feature .container .row .leftedge #myCarousel .carousel-inner .carousel-caption {
   top: 30%;
